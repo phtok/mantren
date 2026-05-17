@@ -71,8 +71,12 @@ a { color: inherit; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.2rem;
+  padding: 1rem 2rem;
   background: var(--bg);
+}
+
+@media (min-width: 700px) {
+  .topbar { padding: 1rem 3rem; }
 }
 
 .topbar-title {
@@ -104,7 +108,11 @@ a { color: inherit; }
 main {
   max-width: 980px;
   margin: 0 auto;
-  padding: 2rem 1.2rem 4rem;
+  padding: 2rem 2rem 4rem;
+}
+
+@media (min-width: 700px) {
+  main { padding: 2.5rem 3rem 5rem; }
 }
 
 main.center {
@@ -116,8 +124,8 @@ main.center {
 /* ─────────────── Index / TOC ─────────────── */
 
 .index-intro {
-  text-align: center;
-  margin: 3rem 0 3.5rem;
+  text-align: left;
+  margin: 2rem 0 3rem;
 }
 
 .index-title {
@@ -199,19 +207,20 @@ main.center {
 
 .mantra {
   max-width: 720px;
-  margin: 0 auto;
-  padding: 2rem 0;
+  margin: 0;
+  padding: 1.5rem 0 2rem;
 }
 
 .mantra-head {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2.5rem;
   color: var(--muted);
   font-size: 0.85rem;
   letter-spacing: 0.02em;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  align-items: flex-start;
+  gap: 0.3rem;
 }
 
 .mantra-number {
@@ -315,8 +324,8 @@ body.show-trias .part:nth-of-type(3n+0) .lines { border-left: 2px solid color-mi
 /* ─────────────── Suche ─────────────── */
 
 .search-box {
-  margin: 0 auto 2rem;
-  max-width: 480px;
+  margin: 0 0 2.5rem;
+  max-width: 520px;
   display: block;
 }
 
@@ -330,7 +339,7 @@ body.show-trias .part:nth-of-type(3n+0) .lines { border-left: 2px solid color-mi
   font-size: 1rem;
   padding: 0.5rem 0;
   outline: none;
-  text-align: center;
+  text-align: left;
 }
 
 .search-input::placeholder { color: var(--muted-soft); }
@@ -343,13 +352,17 @@ body.show-trias .part:nth-of-type(3n+0) .lines { border-left: 2px solid color-mi
 /* ─────────────── Footer ─────────────── */
 
 .site-footer {
-  max-width: 720px;
+  max-width: 980px;
   margin: 0 auto;
-  padding: 6rem 1.2rem 2rem;
+  padding: 6rem 2rem 2rem;
   color: var(--muted-soft);
   font-size: 0.78rem;
-  text-align: center;
+  text-align: left;
   line-height: 1.55;
+}
+
+@media (min-width: 700px) {
+  .site-footer { padding: 6rem 3rem 2rem; }
 }
 
 .site-footer a {
