@@ -9,15 +9,22 @@ interface Props {
 
 const { title = 'Mantren', description = 'Rudolf Steiners mantrisches Spätwerk', center = false } = Astro.props;
 const fullTitle = title === 'Mantren' ? title : `${title} – Mantren`;
+
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
+const fontUrl = `${base}fonts/inclusive-sans.woff2`;
+const faviconUrl = `${base}favicon.svg`;
+const manifestUrl = `${base}manifest.webmanifest`;
+const homeUrl = base;
 ---
 <!doctype html>
 <html lang="de">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" href="/fonts/inclusive-sans.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
+    <link rel="icon" type="image/svg+xml" href={faviconUrl} />
+    <link rel="manifest" href={manifestUrl} />
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#101418" media="(prefers-color-scheme: dark)" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,7 +47,7 @@ const fullTitle = title === 'Mantren' ? title : `${title} – Mantren`;
   </head>
   <body>
     <header class="topbar">
-      <a class="topbar-title" href="/">Mantren</a>
+      <a class="topbar-title" href={homeUrl}>Mantren</a>
       <div class="topbar-actions">
         <button class="icon-btn" id="trias-toggle" type="button" title="Dreigliedrigkeit hervorheben" aria-pressed="false">∴</button>
         <button class="icon-btn" id="theme-toggle" type="button" title="Hell / Dunkel">◐</button>

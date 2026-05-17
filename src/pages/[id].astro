@@ -14,22 +14,24 @@ const chapter = chapters.find((c) => c.id === mantra.chapter);
 const pageTitle = mantra.title
   ? `${mantra.number ? mantra.number + ' · ' : ''}${mantra.title}`
   : mantra.number || chapter?.title || 'Mantra';
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 ---
 <Base title={pageTitle}>
   <MantraView mantra={mantra} />
 
   <nav class="pager">
     {prev ? (
-      <a class="pager-prev" href={`/${prev.id}`} data-pager="prev">
+      <a class="pager-prev" href={`${base}${prev.id}`} data-pager="prev">
         <span class="pager-arrow">←</span>
         <span class="pager-num">{prev.number || prev.id}</span>
       </a>
     ) : <span />}
 
-    <a class="pager-home" href="/">Index</a>
+    <a class="pager-home" href={base}>Index</a>
 
     {next ? (
-      <a class="pager-next" href={`/${next.id}`} data-pager="next">
+      <a class="pager-next" href={`${base}${next.id}`} data-pager="next">
         <span class="pager-num">{next.number || next.id}</span>
         <span class="pager-arrow">→</span>
       </a>

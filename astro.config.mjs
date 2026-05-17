@@ -1,11 +1,19 @@
 import { defineConfig } from 'astro/config';
 import AstroPWA from '@vite-pwa/astro';
 
+// GitHub Pages: Projekt-Site unter https://phtok.github.io/mantren/
+const site = 'https://phtok.github.io';
+const base = '/mantren';
+
 export default defineConfig({
-  site: 'https://mantren.app',
+  site,
+  base,
+  trailingSlash: 'ignore',
   integrations: [
     AstroPWA({
       registerType: 'autoUpdate',
+      base: `${base}/`,
+      scope: `${base}/`,
       includeAssets: ['favicon.svg', 'fonts/*.woff2'],
       manifest: {
         name: 'Mantren',
@@ -15,22 +23,19 @@ export default defineConfig({
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
-        start_url: '/',
+        start_url: `${base}/`,
+        scope: `${base}/`,
         icons: [
           {
-            src: '/icon-192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/icon-512.png',
-            sizes: '512x512',
-            type: 'image/png',
+            src: 'favicon.svg',
+            sizes: 'any',
+            type: 'image/svg+xml',
+            purpose: 'any',
           },
         ],
       },
       workbox: {
-        navigateFallback: '/',
+        navigateFallback: `${base}/`,
         globPatterns: ['**/*.{js,css,html,woff2,svg,png,ico,webmanifest}'],
       },
     }),
