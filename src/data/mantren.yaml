@@ -11,14 +11,8 @@
 # Reihenfolge nach Wunsch: Erste / Zweite / Dritte Tafel, dann 1–19+.
 
 chapters:
-  - id: erste-tafel
-    title: Erste Tafel
-
-  - id: zweite-tafel
-    title: Zweite Tafel
-
-  - id: dritte-tafel
-    title: Dritte Tafel
+  - id: die-tafeln
+    title: Die Tafeln
 
   - id: geschichte-der-verwandlung
     title: Geschichte der Verwandlung
@@ -37,10 +31,11 @@ chapters:
     range: 17–19+
 
 mantren:
-  # ───────────────────────── ERSTE TAFEL ─────────────────────────
+  # ───────────────────────── DIE TAFELN ─────────────────────────
   - id: erste-tafel
-    chapter: erste-tafel
+    chapter: die-tafeln
     number: ""
+    title: Erste Tafel
     parts:
       - regie: "Das Weltenwort:"
         lines:
@@ -61,10 +56,10 @@ mantren:
           - "Weil du des Denkens Kraft"
           - "Verlierst im Zeitvernichtungsstrom."
 
-  # ───────────────────────── ZWEITE TAFEL ────────────────────────
   - id: zweite-tafel
-    chapter: zweite-tafel
+    chapter: die-tafeln
     number: ""
+    title: Zweite Tafel
     parts:
       - regie: "Aus den Weltentiefen:"
         lines:
@@ -79,10 +74,10 @@ mantren:
           - "Des eignen Wesens Wahrheit"
           - "Dir kraftvoll erst erobern musst."
 
-  # ───────────────────────── DRITTE TAFEL ────────────────────────
   - id: dritte-tafel
-    chapter: dritte-tafel
+    chapter: die-tafeln
     number: ""
+    title: Dritte Tafel
     parts:
       - regie: "Aus den Seelentiefen:"
         lines:
