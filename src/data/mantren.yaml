@@ -1,0 +1,1078 @@
+# Rudolf Steiners mantrisches Spätwerk – Mantren der Ersten Klasse
+# Quelle: GA 270, 4. Auflage 2020. Lesefassung von Bodo von Plato,
+# Elke Schmitter und Anke Steinmetz, Berlin Februar 2024.
+# Für Richard Serra.
+#
+# Konventionen:
+#   regie  – Sprecherrolle, Regieanweisung. Wird gegraut dargestellt.
+#   section – Zwischenüberschrift (z. B. „Leben", „Liebe", „Frommsein").
+#   lines  – Verszeilen. Beginnt eine Zeile mit "/", wird sie eingerückt.
+#
+# Reihenfolge nach Wunsch: Erste / Zweite / Dritte Tafel, dann 1–19+.
+
+chapters:
+  - id: erste-tafel
+    title: Erste Tafel
+
+  - id: zweite-tafel
+    title: Zweite Tafel
+
+  - id: dritte-tafel
+    title: Dritte Tafel
+
+  - id: geschichte-der-verwandlung
+    title: Geschichte der Verwandlung
+    range: 1–7
+
+  - id: leib-in-neuer-umgebung
+    title: Leib in neuer Umgebung
+    range: 8–10
+
+  - id: zusammenleben-mit-hierarchien
+    title: Zusammenleben mit Hierarchien
+    range: 11–16
+
+  - id: kosmische-wesen-bezeugen
+    title: Kosmische Wesen bezeugen
+    range: 17–19+
+
+mantren:
+  # ───────────────────────── ERSTE TAFEL ─────────────────────────
+  - id: erste-tafel
+    chapter: erste-tafel
+    number: ""
+    parts:
+      - regie: "Das Weltenwort:"
+        lines:
+          - "O Mensch, erkenne dich selbst!"
+          - "So tönt das Weltenwort."
+          - "Du hörst es seelenkräftig,"
+          - "Du fühlst es geistgewaltig."
+          - "Wer spricht so weltenmächtig?"
+          - "Wer spricht so herzinniglich?"
+          - "Wirkt es durch des Raumes Weitenstrahlung"
+          - "In deines Sinnes Seinserleben?"
+          - "Tönt es durch der Zeiten Wellenweben"
+          - "In deines Lebens Werdestrom?"
+          - "Bist du es selbst, der sich"
+          - "Im Raumesfühlen, im Zeiterleben"
+          - "Das Wort erschafft, dich fremd"
+          - "Erfühlend in Raumes Seelenleere,"
+          - "Weil du des Denkens Kraft"
+          - "Verlierst im Zeitvernichtungsstrom."
+
+  # ───────────────────────── ZWEITE TAFEL ────────────────────────
+  - id: zweite-tafel
+    chapter: zweite-tafel
+    number: ""
+    parts:
+      - regie: "Aus den Weltentiefen:"
+        lines:
+          - "Erkenne erst den ernsten Hüter,"
+          - "Der vor des Geisterlandes Pforten steht,"
+          - "Den Einlass deiner Sinnenkraft"
+          - "Und deines Verstandes Macht verwehrend,"
+          - "Weil du im Sinnesweben"
+          - "Und im Gedankenbilden"
+          - "Aus Raumeswesenlosigkeit,"
+          - "Aus Zeiten Truggewalten"
+          - "Des eignen Wesens Wahrheit"
+          - "Dir kraftvoll erst erobern musst."
+
+  # ───────────────────────── DRITTE TAFEL ────────────────────────
+  - id: dritte-tafel
+    chapter: dritte-tafel
+    number: ""
+    parts:
+      - regie: "Aus den Seelentiefen:"
+        lines:
+          - "Ich trat in diese Sinnes-Welt,"
+          - "Des Denkens Erbe mit mir führend,"
+          - "Eines Gottes Kraft hat mich hereingeführt."
+          - "Der Tod, er steht an des Weges Ende."
+          - "Ich will des Christus Wesen fühlen."
+          - "Es weckt in Stoffes-Sterben Geist-Geburt."
+          - "Im Geiste find' ich so die Welt"
+          - "Und erkenne mich im Weltenwerden."
+
+  # ──────────────── GESCHICHTE DER VERWANDLUNG ───────────────────
+  - id: "1.1"
+    chapter: geschichte-der-verwandlung
+    number: "1.1"
+    title: Erdengründe
+    parts:
+      - regie: "Aus dem Leben des Geistes:"
+        lines:
+          - "Wo auf Erdengründen, Farb' an Farbe,"
+          - "Sich das Leben schaffend offenbart;"
+          - "Wo aus Erdenstoffen, Form an Form,"
+          - "Sich das Lebenslose ausgestaltet;"
+          - "Wo erfühlende Wesen, willenskräftig,"
+          - "Sich am eignen Dasein freudig wärmen;"
+          - "Wo du selbst, o Mensch, das Leibessein"
+          - "Dir aus Erd' und Luft und Licht erwirbst:"
+          - "Da betrittst du deines Eigenwesens"
+          - "Tiefe, nachtbedeckte, kalte Finsternis;"
+          - "Du erfragest im Dunkel der Weiten"
+          - "Nimmer, wer du bist und warst und werdest."
+          - "Für dein Eigensein finstert der Tag"
+          - "Sich zur Seelennacht, zum Geistesdunkel;"
+          - "Und du wendest seelensorgend dich"
+          - "An das Licht, das aus Finsternissen kraftet."
+
+  - id: "1.2"
+    chapter: geschichte-der-verwandlung
+    number: "1.2"
+    parts:
+      - lines:
+          - "Und aus Finsternissen hellet sich"
+          - "– Dich im Ebenbilde offenbarend,"
+          - "Doch zum Gleichnis auch dich bildend,"
+          - "Ernstes Geisteswort im Weltenäther,"
+          - "Deinem Herzen hörbar, kraftvoll wirkend –"
+          - "Dir der Geistesbote, der allein"
+          - "Dir den Weg erleuchten kann;"
+          - "Vor ihm breiten sich die Sinnesfelder,"
+          - "Hinter ihm, da gähnen Abgrundtiefen."
+          - "Und vor seinen finstern Geistesfeldern,"
+          - "Dicht am gähnenden Abgrund des Seins,"
+          - "Da ertönt sein urgewaltig Schöpferwort:"
+          - "Sieh, ich bin der Erkenntnis einzig Tor."
+
+  - id: "1.3"
+    chapter: geschichte-der-verwandlung
+    number: "1.3"
+    title: Daseinswort
+    parts:
+      - regie: "Der Geistesbote:"
+        lines:
+          - "Aus den Weiten der Raumeswesen,"
+          - "Die im Lichte das Sein erleben,"
+          - "Aus dem Schritte des Zeitenganges,"
+          - "Der im Schaffen das Wirken findet,"
+          - "Aus den Tiefen des Herzempfindens,"
+          - "Wo im Selbst sich die Welt ergründet:"
+          - "Da ertönet im Seelensprechen,"
+          - "Da erleuchtet aus Geistgedanken"
+          - "Das aus göttlichen Heileskräften"
+          - "In den Weltengestaltungsmächten"
+          - "Wellend wirkende Daseinswort:"
+          - "O, du Mensch, erkenne dich selbst."
+
+  - id: "1.4"
+    chapter: geschichte-der-verwandlung
+    number: "1.4"
+    title: Drei Tiere
+    parts:
+      - regie: "Der Hüter der Schwelle:"
+        lines:
+          - "Doch du musst den Abgrund achten;"
+          - "Sonst verschlingen seine Tiere"
+          - "Dich, wenn du an mir vorübereilt'st;"
+          - "Sie hat deine Weltenzeit in dir"
+          - "Als Erkenntnisfeinde hingestellt."
+      - lines:
+          - "Schau das erste Tier, den Rücken krumm,"
+          - "Knochenhaft das Haupt, von dürrem Leib,"
+          - "Ganz von stumpfem Blau ist seine Haut;"
+          - "Deine Furcht vor Geistes-Schöpfer-Sein"
+          - "Schuf das Ungetüm in deinem Willen;"
+          - "Dein Erkenntnismut nur überwindet es."
+      - lines:
+          - "Schau das zweite Tier, es zeigt die Zähne"
+          - "Im verzerrten Angesicht, es lügt im Spotten,"
+          - "Gelb mit grauem Einschlag ist sein Leib;"
+          - "Dein Hass auf Geistes-Offenbarung"
+          - "Schuf den Schwächling dir im Fühlen;"
+          - "Dein Erkenntnisfeuer muss ihn zähmen."
+      - lines:
+          - "Schau das dritte Tier, mit gespaltnem Maul,"
+          - "Glasig ist sein Auge, schlaff die Haltung,"
+          - "Schmutzigrot erscheint dir die Gestalt;"
+          - "Dein Zweifel an Geistes-Licht-Gewalt"
+          - "Schuf dir dies Gespenst in deinem Denken;"
+          - "Dem Erkenntnisschaffen muss es weichen."
+      - lines:
+          - "Erst wenn die drei von dir besiegt,"
+          - "Werden Flügel deiner Seele wachsen,"
+          - "Um den Abgrund zu übersetzen,"
+          - "Der dich trennet vom Erkenntnisfelde,"
+          - "Dem sich deine Herzenssehnsucht"
+          - "Heilerstrebend weihen möchte."
+
+  - id: "2"
+    chapter: geschichte-der-verwandlung
+    number: "2"
+    parts:
+      - regie: "Der Hüter spricht:"
+        lines:
+          - "Des dritten Tieres glasig Auge,"
+          - "Es ist das böse Gegenbild"
+          - "Des Denkens, das in dir sich selbst"
+          - "Verleugnet und den Tod sich wählet,"
+          - "Absagend Geistgewalten, die es"
+          - "Vor seinem Erdenleben geistig"
+          - "In Geistesfeldern lebend hielten."
+      - lines:
+          - "Des zweiten Tieres Spottgesicht,"
+          - "Es ist die böse Gegenkraft"
+          - "Des Fühlens, das die eigne Seele"
+          - "Aushöhlet und Lebensleerheit"
+          - "In ihr erschafft statt Geistgehalt,"
+          - "Der vor dem Erdensein erleuchtend"
+          - "Aus Geistessonnenmacht ihr ward."
+      - lines:
+          - "Des ersten Tieres Knochengeist,"
+          - "Er ist die böse Schöpfermacht"
+          - "Des Wollens, die den eignen Leib"
+          - "Entfremdet deiner Seelenkraft"
+          - "Und ihn den Gegenmächten weiht,"
+          - "Die Weltensein dem Göttersein"
+          - "In Zukunftzeiten rauben wollen."
+
+  - id: "3"
+    chapter: geschichte-der-verwandlung
+    number: "3"
+    title: Willens-Stoß
+    parts:
+      - regie: "Der Hüter spricht zum Menschen:"
+        lines:
+          - "Sieh in dir Gedankenweben:"
+          - "Weltenschein erlebest du,"
+          - "Selbstheitsein verbirgt sich dir;"
+          - "Tauche unter in den Schein:"
+          - "Ätherwesen weht in dir;"
+          - "Selbstheitsein, es soll verehren"
+          - "Deines Geistes Führerwesen."
+      - lines:
+          - "Vernimm in dir Gefühle-Strömen:"
+          - "Es mengen Schein und Sein sich dir,"
+          - "Die Selbstheit neigt dem Scheine sich;"
+          - "So tauche unter in scheinendes Sein:"
+          - "Und Welten-Seelenkräfte sind in dir;"
+          - "Die Selbstheit, sie soll bedenken"
+          - "Der eignen Seele Lebensmächte."
+      - lines:
+          - "Lass walten in dir den Willens-Stoß:"
+          - "Der steigt aus allem Scheineswesen"
+          - "Mit Eigensein erschaffend auf;"
+          - "Ihm wende zu all dein Leben:"
+          - "Der ist erfüllt von Welten-Geistesmacht;"
+          - "Dein Eigensein, es soll ergreifen"
+          - "Weltschöpfermacht im Geistes-Ich."
+
+  - id: "4"
+    chapter: geschichte-der-verwandlung
+    number: "4"
+    title: Tiefe–Weite–Höhe
+    parts:
+      - regie: "Der Hüter spricht:"
+        lines:
+          - "Fühle wie die Erdentiefen"
+          - "Ihre Kräfte deinem Wesen"
+          - "In die Leibesglieder drängen."
+          - "Du verlierest dich in ihnen,"
+          - "Wenn du deinen Willen machtlos"
+          - "Ihrem Streben anvertrauest;"
+          - "Sie verfinstern dir das Ich."
+      - lines:
+          - "Fühle wie aus Weltenweiten"
+          - "Göttermächte ihre Geisteshelle"
+          - "Dir ins Seelenwesen leuchten lassen."
+          - "Finde dich in ihnen liebend,"
+          - "Und sie schaffen weisheitwebend"
+          - "Dich als Selbst in ihren Kreisen"
+          - "Stark zum guten Geistesschaffen."
+      - lines:
+          - "Fühle wie in Himmelshöhen"
+          - "Selbstsein selbstlos leben kann,"
+          - "Wenn es geisterfüllt Gedankenmächten"
+          - "In dem Höhenstreben folgen will"
+          - "Und in Tapferkeit das Wort vernimmt,"
+          - "Das von oben gnadevoll ertönet"
+          - "In des Menschen wahre Wesenheit."
+
+  - id: "5"
+    chapter: geschichte-der-verwandlung
+    number: "5"
+    title: Es kämpft
+    parts:
+      - regie: "Weitere Rede des Hüters:"
+        lines:
+          - "Es kämpft das Licht mit finstren Mächten"
+          - "In jenem Reiche, wo dein Denken"
+          - "In Geistesdasein dringen möchte."
+          - "Du findest, lichtwärts strebend,"
+          - "Dein Selbst vom Geiste dir genommen;"
+          - "Du kannst, wenn Finstres dich verlockt,"
+          - "Im Stoff das Selbst verlieren."
+      - lines:
+          - "Es kämpft das Warme mit dem Kalten"
+          - "In jenem Reiche, wo dein Fühlen"
+          - "Im Geistesweben leben möchte."
+          - "Du findest, Wärme liebend,"
+          - "Dein Selbst in Geisteslust verwehend;"
+          - "Du kannst, wenn Kälte dich verhärtet,"
+          - "Im Leid das Selbst verstäuben."
+      - lines:
+          - "Es kämpft das Leben mit dem Tode"
+          - "In jenem Reiche, wo dein Wollen"
+          - "Im Geistesschaffen walten möchte."
+          - "Du findest, Leben fassend,"
+          - "Dein Selbst in Geistesmacht verschwinden;"
+          - "Du kannst, wenn Todesmacht dich bändigt,"
+          - "Im Nichts das Selbst verkrampfen."
+
+  - id: "6"
+    chapter: geschichte-der-verwandlung
+    number: "6"
+    title: Erdenwerte
+    parts:
+      - regie: "Der Hüter mahnt:"
+        lines:
+          - "Du steigst ins Erden-Wesenhafte"
+          - "Mit deines Willens Kraftentfaltung;"
+          - "Betritt als Denker du das Erdensein,"
+          - "Es wird Gedankenmacht dir dich"
+          - "Als deine eigne Tierheit zeigen;"
+          - "Die Furcht vor deinem Selbst"
+          - "Muss dir in Seelen-Mut sich wandeln."
+      - lines:
+          - "Du lebest mit dem Wasserwesen"
+          - "Nur durch des Fühlens Traumesweben;"
+          - "Durchdring erwachend Wassersein,"
+          - "Es wird die Seele sich in dir"
+          - "Als dumpfes Pflanzendasein geben;"
+          - "Und Lahmheit deines Selbst"
+          - "Muss dich zum Wachen führen."
+      - lines:
+          - "Du sinnest in dem Lüftewehen"
+          - "Nur in Gedächtnis-Bilderformen;"
+          - "Ergreife wollend Lüftewesen,"
+          - "Es wird die eigne Seele dich"
+          - "Als kalterstarrter Stein bedroh'n;"
+          - "Doch deiner Selbstheit Kälte-Tod,"
+          - "Er muss dem Geistesfeuer weichen."
+      - lines:
+          - "Du hältst von Lichtes-Scheines-Macht"
+          - "Gedanken nur im Innern fest;"
+          - "Wenn Lichtesschein in dir sich selber denkt,"
+          - "So wird unwahres Geisteswesen"
+          - "In dir als Selbstheitwahn ersteh´n;"
+          - "Besinnung auf die Erdennöte"
+          - "Wird dich im Menschensein erhalten."
+      - lines:
+          - "Du hältst vom Weltgestalten"
+          - "Gefühle nur im Innern fest;"
+          - "Wenn Weltenform in dir sich selber fühlt,"
+          - "So wird ohnmächtig Geist-Erleben"
+          - "In dir das Selbstheitsein ersticken;"
+          - "Doch Liebe zu den Erdenwerten"
+          - "Wird dir die Menschenseele retten."
+      - lines:
+          - "Du hältst vom Weltenleben"
+          - "Das Wollen nur im Innern fest;"
+          - "Wenn Weltenleben dich voll erfasst,"
+          - "So wird vernichtend Geistes-Lust"
+          - "In dir das Selbst-Erleben töten;"
+          - "Doch Erdenwollen geist-ergeben,"
+          - "Es lässt den Gott im Menschen walten."
+
+  - id: "7.1"
+    chapter: geschichte-der-verwandlung
+    number: "7.1"
+    title: Schau die Drei
+    parts:
+      - regie: "Der Hüter der Schwelle:"
+        lines:
+          - "O schau die Drei,"
+          - "Sie sind die Eins,"
+          - "Wenn du die Menschenprägung"
+          - "Im Erdendasein trägst."
+          - "Erlebe des Kopfes Weltgestalt."
+          - "Empfinde des Herzens Weltenschlag."
+          - "Erdenke der Glieder Weltenkraft."
+          - "Sie sind die Drei,"
+          - "Die Drei, die als das Eins"
+          - "Im Erdendasein leben."
+
+  - id: "7.2"
+    chapter: geschichte-der-verwandlung
+    number: "7.2"
+    parts:
+      - regie: "Der Hüter ruft:"
+        lines:
+          - "Des Kopfes Geist,"
+          - "Du kannst ihn wollen;"
+          - "Und Wollen wird dir"
+          - "Der Sinne vielgestaltig Himmelsweben;"
+          - "Du webest in der Weisheit."
+      - lines:
+          - "Des Herzens Seele,"
+          - "Du kannst sie fühlen;"
+          - "Und Fühlen wird dir"
+          - "Des Denkens-Wollens / Wollens-Denkens"
+          - "keimerweckend Weltenleben;"
+          - "Du lebest in dem Scheine."
+      - lines:
+          - "Der Glieder Kraft,"
+          - "Du kannst sie denken;"
+          - "Und Denken wird dir"
+          - "Des Wollens zielerfassend Menschenstreben;"
+          - "Du strebest in der Tugend."
+
+  - id: "7.3"
+    chapter: geschichte-der-verwandlung
+    number: "7.3"
+    parts:
+      - regie: "Der Hüter spricht:"
+        lines:
+          - "Tritt ein"
+          - "Das Tor ist geöffnet"
+          - "Du wirst ein wahrer Mensch werden."
+
+  # ──────────────── LEIB IN NEUER UMGEBUNG ───────────────────
+  - id: "8"
+    chapter: leib-in-neuer-umgebung
+    number: "8"
+    title: Willenszauberwesen
+    parts:
+      - regie: "Der Hüter:"
+        lines:
+          - "Sieh hinter des Denkens Sinneslicht,"
+          - "Wie in der finstren Geisteszelle"
+          - "Wollen sich hebt aus Leibestiefen;"
+          - "Lasse fließen durch deiner Seele Stärke"
+          - "Totes Denken in das Weltennichts;"
+          - "Und das Wollen, es erstehet"
+          - "Als Weltgedankenschaffen."
+      - lines:
+          - "Sieh in des Fühlens Seelenweben,"
+          - "Wie in dem Träumedämmern"
+          - "Leben aus Weltenfernen strömt;"
+          - "Lass in Schlaf durch die Herzensruhe"
+          - "Menschenfühlen still verwehen;"
+          - "Und das Weltenleben geistert"
+          - "Als Menschenwesensmacht."
+      - lines:
+          - "Sieh über des Wollens Leibeswirken,"
+          - "Wie in schlafende Wirkensfelder"
+          - "Denken sich senkt aus Haupteskräften;"
+          - "Lass durch die Seelenschau zu Licht"
+          - "Menschenwollen sich verwandlen;"
+          - "Und das Denken, es erscheinet"
+          - "Als Willenszauberwesen."
+
+  - id: "9.1"
+    chapter: leib-in-neuer-umgebung
+    number: "9.1"
+    title: Ruhesterne
+    parts:
+      - regie: "Der Hüter:"
+      - section: "Leben"
+        lines:
+          - "O Mensch,"
+          - "/ertaste in deines Leibes ganzem Sein,"
+          - "Wie Erdenkräfte dir im Dasein Stütze sind."
+      - lines:
+          - "O Mensch,"
+          - "/erlebe in deines Tastens ganzem Kreis,"
+          - "Wie Wasserwesen dir im Dasein Bildner sind."
+      - lines:
+          - "O Mensch,"
+          - "/erfühle in deines Lebens ganzem Weben,"
+          - "Wie Luftgewalten dir im Dasein Pfleger sind."
+      - lines:
+          - "O Mensch,"
+          - "/erdenke in deines Fühlens ganzem Strömen,"
+          - "Wie Feuermächte dir im Dasein Helfer sind."
+      - regie: "Zusammenfassend die Elemente der Erde:"
+        lines:
+          - "O Mensch,"
+          - "/erschaue dich in der Elemente Reich."
+      - section: "Liebe"
+        lines:
+          - "O Mensch,"
+          - "/so lasse walten in deiner Seele Tiefen"
+          - "Der Wandelsterne weltenweisende Mächte."
+      - regie: "Zusammenfassend die Bewegung der Wandelsterne:"
+        lines:
+          - "O Mensch,"
+          - "/erwese dich durch den Weltenkreis."
+      - section: "Frommsein"
+        lines:
+          - "O Mensch,"
+          - "/erhalte dir in deines Geistes Schaffen"
+          - "Der Ruhesterne himmelkündende Worte."
+      - regie: "Zusammenfassend den Sinn der Ruhesterne:"
+        lines:
+          - "O Mensch,"
+          - "/erschaffe dich durch die Himmelsweisheit."
+
+  - id: "9.2"
+    chapter: leib-in-neuer-umgebung
+    number: "9.2"
+    title: Trag'
+    parts:
+      - regie: "Der Hüter:"
+        lines:
+          - "Trag' in Denk-Erleben"
+          - "Das als reines Sinnen"
+          - "In der Seele lichtvoll glänzt"
+          - "Fühlen und Wollen"
+          - "Und du bist Geist"
+          - "Unter reinen Geistern."
+      - lines:
+          - "Trag' in Fühlenskräfte"
+          - "Die als edle Liebe"
+          - "Durch die Seele wärmend weben"
+          - "Denken und Wollen"
+          - "Und du bist Seele"
+          - "Im Reich der Geister."
+      - lines:
+          - "Trag' in Willensmächte"
+          - "Die als Geistestriebe"
+          - "Um die Seele wirkend leben"
+          - "Denken und Fühlen"
+          - "Und du schaust dich selbst"
+          - "Als Leib aus Geisteshöhen."
+
+  - id: "10"
+    chapter: leib-in-neuer-umgebung
+    number: "10"
+    title: Zeuget mich
+    parts:
+      - regie: "Der Mensch erlebt meditierend:"
+        lines:
+          - "Ich lebe in dem finstren Erdbereich."
+          - "Ich webe in dem Schein der Sterne."
+          - "Ich lese in der Geister Taten."
+          - "Ich höre in der Götter Sprache."
+      - regie: "Der Mensch hört aus Geistestiefen und antwortet aus dem Herzen – ein Zwiegespräch:"
+        lines:
+          - "Ich lebe in dem finstren Erdbereich,"
+          - "Sehnend stimmt mich der Erde Finsternis."
+          - "Ich webe in dem Schein der Sterne,"
+          - "Tröstend ist mir der Sterne Schein."
+          - "Ich lese in der Geister Taten,"
+          - "Lehrend sind mir der Geister Taten."
+          - "Ich höre in der Götter Sprache,"
+          - "Schaffend ist mir der Götter Sprache."
+      - regie: "Der Mensch bekräftigt das Zwiegespräch aus dem Willen:"
+        lines:
+          - "Ich lebe in dem finstren Erdbereich,"
+          - "Sehnend stimmt mich der Erde Finsternis,"
+          - "Der Erde Finsternis verlöschet mich."
+          - "Ich webe in dem Schein der Sterne,"
+          - "Tröstend ist mir der Sterne Schein,"
+          - "Der Sterne Schein erwecket mich."
+          - "Ich lese in der Geister Taten,"
+          - "Lehrend sind mir der Geister Taten,"
+          - "Der Geister Taten rufen mich."
+          - "Ich höre in der Götter Sprache,"
+          - "Schaffend ist mir der Götter Sprache,"
+          - "Der Götter Sprache zeuget mich."
+
+  # ──────────────── ZUSAMMENLEBEN MIT HIERARCHIEN ───────────────────
+  - id: "11.1"
+    chapter: zusammenleben-mit-hierarchien
+    number: "11.1"
+    title: Tempelbau
+    parts:
+      - regie: "Klang aus dem Weltenraum:"
+        lines:
+          - "Welten-Sternen-Stätten,"
+          - "Götter-Heimat-Orte!"
+      - regie: "Inneres Echo der Seele:"
+        lines:
+          - "Spricht in Haupteshöhe"
+          - "Menschen-Geistes-Strahlung"
+          - "Das ‹Ich bin›:"
+      - regie: "Der Engel zu den Göttern:"
+        lines:
+          - "So lebet Ihr im Erdenleibe"
+          - "Als Menschen-Wesenheit."
+
+  - id: "11.2"
+    chapter: zusammenleben-mit-hierarchien
+    number: "11.2"
+    parts:
+      - regie: "Klang aus dem Weltenumkreis:"
+        lines:
+          - "Welten-Sonnen-Kreise,"
+          - "Geister-Wirkens-Wege!"
+      - regie: "Echo der Seele:"
+        lines:
+          - "Tönt in Herzensmitte"
+          - "Menschen-Seelen-Weben"
+          - "Das ‹Ich lebe›:"
+      - regie: "Der Engel zu den Geistern:"
+        lines:
+          - "So schreitet Ihr im Erdenwandel"
+          - "Als Menschen-Schöpferkraft."
+
+  - id: "11.3"
+    chapter: zusammenleben-mit-hierarchien
+    number: "11.3"
+    parts:
+      - regie: "Klang aus den Weltentiefen:"
+        lines:
+          - "Welten-Grundes-Mächte,"
+          - "Schöpfer-Liebes-Glänzen!"
+      - regie: "Echo der Seele:"
+        lines:
+          - "Schafft in Leibesgliedern"
+          - "Menschen-Wirkens-Strömung"
+          - "Das ‹Ich will›:"
+      - regie: "Der Engel zu Schöpfer-Mächten:"
+        lines:
+          - "So strebet Ihr im Erdenwerke"
+          - "Als Menschen-Sinnes-Taten."
+
+  - id: "12.1"
+    chapter: zusammenleben-mit-hierarchien
+    number: "12.1"
+    title: Felder
+    parts:
+      - regie: "Aus dem Weltenall, dem Bereich der dritten Hierarchie: Vernimm des Denkens Feld:"
+      - regie: "Der Hüter:"
+        lines:
+          - "Es spricht, der dir die Wege"
+          - "Von Erdensein zu Erdensein"
+          - "Im Geisteslichte weisen will:"
+      - regie: "Angeloi:"
+        lines:
+          - "Blick' auf deiner Sinne Leuchtewesen."
+      - regie: "Hüter:"
+        lines:
+          - "Es spricht, der dich zu Seelen"
+          - "Im stoffbefreiten Seinsgebiete"
+          - "Auf Seelenschwingen tragen will:"
+      - regie: "Archangeloi:"
+        lines:
+          - "Blick' auf deines Denkens Kräftewirken."
+      - regie: "Hüter:"
+        lines:
+          - "Es spricht, der unter Geistern"
+          - "Im erdenfernen Schöpferfelde"
+          - "Den Daseinsgrund dir geben will:"
+      - regie: "Archai:"
+        lines:
+          - "Blick' auf der Erinnerung Bildgestalten."
+
+  - id: "12.2"
+    chapter: zusammenleben-mit-hierarchien
+    number: "12.2"
+    parts:
+      - regie: "Aus dem Weltenall, dem Bereich der zweiten Hierarchie: Vernimm des Fühlens Feld:"
+      - regie: "Hüter:"
+        lines:
+          - "Es spricht, der als Gedanke"
+          - "Aus Geistes-Sonnenstrahlen"
+          - "Dich zum Weltendasein ruft:"
+      - regie: "Exusiai:"
+        lines:
+          - "Fühl' in deines Atems Lebensregung."
+      - regie: "Hüter:"
+        lines:
+          - "Es spricht, der Weltendasein"
+          - "Aus Sternen-Lebenskräften"
+          - "Dir in Geistesreichen schenket:"
+      - regie: "Dynamis:"
+        lines:
+          - "Fühl' in deines Blutes Wellenweben."
+      - regie: "Hüter:"
+        lines:
+          - "Es spricht, der dir den Geistes-Sinn"
+          - "In lichten Götter-Höhenreichen"
+          - "Aus Erdenwollen schaffen will:"
+      - regie: "Kyriotetes:"
+        lines:
+          - "Fühl' der Erde mächtig Widerstreben."
+
+  - id: "13"
+    chapter: zusammenleben-mit-hierarchien
+    number: "13"
+    parts:
+      - regie: "Aus dem Weltenall, dem Bereich der ersten Hierarchie: Vernimm des Willens Feld:"
+      - regie: "Hüter:"
+        lines:
+          - "Es spricht, der die Weltenkräfte, die dumpfen"
+          - "Aus den Erden-Untergründen, den finstren"
+          - "In deiner Glieder Regsamkeiten lenket:"
+      - regie: "Sitze / Throne:"
+        lines:
+          - "Blick' auf deiner Triebe Feuer-Wesen."
+      - regie: "Hüter:"
+        lines:
+          - "Es spricht, der die Geistesstrahlen, die hellen"
+          - "Aus Gottes-Wirkensfeldern, gnadevoll"
+          - "In deinem Blute kreisen lässt:"
+      - regie: "Blitze / Cherubine:"
+        lines:
+          - "Blick' auf des Gewissens Seelen-Führung."
+      - regie: "Hüter:"
+        lines:
+          - "Es spricht, der das Menschensein, das vollbrachte"
+          - "Durch Tode und Geburten, sinngerecht"
+          - "Zum Atmen bringt in gegenwärt'ger Zeit:"
+      - regie: "Hitze / Seraphine:"
+        lines:
+          - "Blick' auf deines Schicksales Geistes-Prüfung."
+
+  - id: "14.1"
+    chapter: zusammenleben-mit-hierarchien
+    number: "14.1"
+    title: Wo ist
+    parts:
+      - regie: "Der Hüter fragt:"
+        lines:
+          - "Wo ist der Erde Festigkeit,"
+          - "/die dich stützte?"
+      - regie: "Christus:"
+        lines:
+          - "Ich verlasse ihren Grund,"
+          - "/so lang der Geist mich trägt."
+      - regie: "Luzifer:"
+        lines:
+          - "Ich fühle wonnig,"
+          - "/dass ich fortan der Stütze nicht bedarf."
+      - regie: "Ahriman:"
+        lines:
+          - "Ich will durch Geistes Kraft"
+          - "/fester noch sie hämmern."
+
+  - id: "14.2"
+    chapter: zusammenleben-mit-hierarchien
+    number: "14.2"
+    parts:
+      - regie: "Hüter:"
+        lines:
+          - "Wo ist des Wassers Bildekraft,"
+          - "/die dich durchdrang?"
+      - regie: "Christus:"
+        lines:
+          - "Mein Leben verlöscht sie,"
+          - "/so lang der Geist mich formt."
+      - regie: "Luzifer:"
+        lines:
+          - "Mein Leben zerschmilzt sie,"
+          - "/dass ich erlöst von ihr werde."
+      - regie: "Ahriman:"
+        lines:
+          - "Mein Leben befestigt sie,"
+          - "/dass ich sie ins Geistgebiet versetze."
+
+  - id: "14.3"
+    chapter: zusammenleben-mit-hierarchien
+    number: "14.3"
+    parts:
+      - regie: "Hüter:"
+        lines:
+          - "Wo ist der Lüfte Reizgewalt,"
+          - "/die dich erweckte?"
+      - regie: "Christus:"
+        lines:
+          - "Meine Seele atmet Himmelsluft,"
+          - "/so lang der Geist um mich besteht."
+      - regie: "Luzifer:"
+        lines:
+          - "Meine Seele achtet ihrer nicht"
+          - "/in Geistes Seligkeit."
+      - regie: "Ahriman:"
+        lines:
+          - "Meine Seele saugt sie auf,"
+          - "/dass ich göttlich schaffen lerne."
+
+  - id: "14.4"
+    chapter: zusammenleben-mit-hierarchien
+    number: "14.4"
+    parts:
+      - regie: "Hüter:"
+        lines:
+          - "Wo ist des Feuers Reinigung,"
+          - "/die dir das Ich erflammte?"
+      - regie: "Christus:"
+        lines:
+          - "Mein Ich lodert im Gottesfeuer,"
+          - "/so lang der Geist mich zündet."
+      - regie: "Luzifer:"
+        lines:
+          - "Mein Ich hat Flammenmacht"
+          - "/durch Geistes Sonnenkraft."
+      - regie: "Ahriman:"
+        lines:
+          - "Mein Ich hat Eigenfeuer,"
+          - "/das rein durch Selbstentfaltung flammt."
+
+  - id: "15.1"
+    chapter: zusammenleben-mit-hierarchien
+    number: "15.1"
+    title: Was wird
+    parts:
+      - regie: "Der Hüter fragt weiter:"
+        lines:
+          - "Was wird aus der Erde Festigkeit,"
+          - "die dich stützte?"
+      - regie: "Aus der dritten Hierarchie antworten"
+      - regie: "Angeloi:"
+        lines:
+          - "Empfinde,"
+          - "/wie wir in deinem Denken empfinden."
+      - regie: "Archangelo:"
+        lines:
+          - "Erlebe,"
+          - "/wie wir in deinem Fühlen erleben."
+      - regie: "Archai:"
+        lines:
+          - "Schaue,"
+          - "/wie wir in deinem Wollen schauen."
+
+  - id: "15.2"
+    chapter: zusammenleben-mit-hierarchien
+    number: "15.2"
+    parts:
+      - regie: "Der Hüter:"
+        lines:
+          - "Was wird aus des Wassers Bildekraft,"
+          - "die dich durchdrang?"
+      - regie: "Aus der zweiten Hierarchie antworten"
+      - regie: "Exusiai:"
+        lines:
+          - "Erkenne Geistes-Welten-Schaffen"
+          - "im Menschen-Körper-Schaffen."
+      - regie: "Dynamis:"
+        lines:
+          - "Erfühle Geistes-Welten-Leben"
+          - "im Menschen-Körper-Leben."
+      - regie: "Kyriotetes:"
+        lines:
+          - "Wolle Geistes-Welt-Geschehen"
+          - "im Menschen-Körper-Sein."
+
+  - id: "15.3"
+    chapter: zusammenleben-mit-hierarchien
+    number: "15.3"
+    parts:
+      - regie: "Der Hüter:"
+        lines:
+          - "Was wird aus der Lüfte Reizgewalt,"
+          - "die dich erweckte?"
+      - regie: "Aus der ersten Hierarchie antworten"
+      - regie: "Throne:"
+        lines:
+          - "Ergreife wissend Innen-Sein"
+          - "in deinem Gottes-Welten-Sein."
+      - regie: "Cherubine:"
+        lines:
+          - "Erwarme am Innen-Leben"
+          - "in deinem Gottes-Welten-Leben."
+      - regie: "Seraphine:"
+        lines:
+          - "Erweck' in dir Innen-Licht"
+          - "in deinem Gottes-Welten-Licht."
+
+  - id: "16.1"
+    chapter: zusammenleben-mit-hierarchien
+    number: "16.1"
+    parts:
+      - regie: "Der Hüter spricht:"
+        lines:
+          - "Was wird aus des Feuers Reinigung,"
+          - "die dir das Ich entflammte?"
+      - regie: "Im Chor der Hierarchien sprechen Angeloi, Exusiai und Throne:"
+        lines:
+          - "Erwecke dir in Weltenätherweiten"
+          - "die Lebensflammenschrift."
+      - regie: "Im Chor der Hierarchien Archangeloi, Dynamis und Cherubine:"
+        lines:
+          - "Erschaffe dir in Zeitenwellenkreisen"
+          - "die Seelensühnekräfte."
+      - regie: "Im Chor der Hierarchien Archai, Kyriotetes und Seraphine:"
+        lines:
+          - "Erbitte dir in ew'gen Wesentaten"
+          - "die Geisterlösermächte."
+
+  - id: "16.2"
+    chapter: zusammenleben-mit-hierarchien
+    number: "16.2"
+    title: Hat verstanden
+    parts:
+      - regie: "Hüter:"
+        lines:
+          - "Hat verstanden dein Geist?"
+      - regie: "Ich:"
+        lines:
+          - "Der Weltengeist in mir"
+          - "Er hielt den Atem an"
+          - "Und seine Gegenwart"
+          - "Mög' erleuchten mein Ich."
+      - regie: "Hüter:"
+        lines:
+          - "Hat begriffen deine Seele?"
+      - regie: "Ich:"
+        lines:
+          - "Die Weltenseelen in mir"
+          - "Sie lebten im Sternenrat"
+          - "Und ihre Harmonien"
+          - "Mögen klingend schaffen mein Ich."
+      - regie: "Hüter:"
+        lines:
+          - "Hat erlebt dein Leib?"
+      - regie: "Ich:"
+        lines:
+          - "Die Weltenkräfte in mir"
+          - "Sie richten Menschentaten"
+          - "Und ihre Wahrspruchworte"
+          - "Mögen lenken mir das Ich."
+
+  # ──────────────── KOSMISCHE WESEN BEZEUGEN ───────────────────
+  - id: "17"
+    chapter: kosmische-wesen-bezeugen
+    number: "17"
+    title: Farbenbogen
+    parts:
+      - regie: "Der Hüter:"
+        lines:
+          - "Sieh' des Äther-Farbenbogens"
+          - "Lichtgewalt'ges Rund,"
+          - "Lass' durch deiner Augen"
+          - "Lichterschaffene Kraft"
+          - "Dein Ich den Kreis durchdringen,"
+          - "Und dann schau von jenseit'ger Warte"
+          - "Farbenflutend die Weltenschale."
+      - regie: "Angeloi, Archangeloi, Archai:"
+        lines:
+          - "Empfind' unsrer Gedanken"
+          - "Farbenatmend Leben"
+          - "In der Schale Lichtesfluten;"
+          - "Wir tragen Sinnenschein"
+          - "In Geistes-Wesensreiche"
+          - "Und wenden weltdurchdrungen"
+          - "Uns höhern Geistern dienend zu."
+      - regie: "Exusiai, Dynamis, Kyriotetes:"
+        lines:
+          - "Euer Empfangenes"
+          - "Aus totem Sinnenschein Belebtes:"
+          - "Wir wecken es im Sein;"
+          - "Wir schenken es den Strahlen,"
+          - "Die des Stoffes Nichtigkeit"
+          - "In des Geistes Wesenheit"
+          - "Liebewebend offenbaren."
+      - regie: "Throne, Cherubine, Seraphine:"
+        lines:
+          - "In deinen Willenswelten"
+          - "Fühl' unser Weltenwirken;"
+          - "Geist erglänzt im Stoffe,"
+          - "Wenn wir denkend schaffen;"
+          - "Geist erschafft im Stoffe,"
+          - "Wenn wir wollend leben;"
+          - "Welt ist Ich-wollend Geistes-Wort."
+
+  - id: "18"
+    chapter: kosmische-wesen-bezeugen
+    number: "18"
+    title: Wir brauchen
+    parts:
+      - regie: "Angeloi:"
+        lines:
+          - "Es denken die Menschenwesen!"
+          - "Wir brauchen das Licht der Höhen,"
+          - "Dass wir im Denken leuchten können."
+      - regie: "Dynamis:"
+        lines:
+          - "Empfanget das Licht der Höhen,"
+          - "Dass ihr im Denken leuchten könnt,"
+          - "Wenn Menschenwesen denken."
+      - regie: "Archangeloi:"
+        lines:
+          - "Es fühlen die Menschenwesen!"
+          - "Wir brauchen die Seelenwärme,"
+          - "Dass wir im Fühlen leben können."
+      - regie: "Kyriotetes und Exusiai:"
+        lines:
+          - "Empfanget die Seelenwärme,"
+          - "Dass ihr im Fühlen leben könnt,"
+          - "Wenn Menschenwesen fühlen."
+      - regie: "Archai:"
+        lines:
+          - "Es wollen die Menschenwesen!"
+          - "Wir brauchen die Tiefenkraft,"
+          - "Dass wir im Wollen wirken können."
+      - regie: "Kyriotetes, Dynamis und Exusiai:"
+        lines:
+          - "Empfanget die Tiefenkraft,"
+          - "Dass ihr im Wollen wirken könnt,"
+          - "Wenn Menschenwesen wollen."
+
+  - id: "19.1"
+    chapter: kosmische-wesen-bezeugen
+    number: "19.1"
+    title: Es ist Ich
+    parts:
+      - regie: "Der Hüter spricht aus der Ferne; das Menschen-Ich weiß sich im Bereich des seraphisch-cherubinisch-Throne-getragenen Geistes-Wortes:"
+        lines:
+          - "Wer spricht im Geistes-Wort,"
+          - "Mit der Stimme,"
+          - "Die im Weltenfeuer lodert?"
+      - regie: "Aus dem Reich der ersten Hierarchie:"
+        lines:
+          - "Es sprechen Sternen-Flammen,"
+          - "Es flammen seraph'sche Feuer-Mächte;"
+          - "Sie flammen auch in meinem Herzen."
+          - "In des Urseins Liebe-Quell"
+          - "Findet Menschen-Herz"
+          - "Schaffendes Geistes-Flammen-Sprechen:"
+          - "Es ist Ich."
+
+  - id: "19.2"
+    chapter: kosmische-wesen-bezeugen
+    number: "19.2"
+    parts:
+      - regie: "Der Hüter spricht aus der Ferne:"
+        lines:
+          - "Was denkt im Geistes-Wort,"
+          - "Mit Gedanken,"
+          - "Die aus Weltenseelen bilden?"
+      - regie: "Aus dem Reich der ersten Hierarchie:"
+        lines:
+          - "Es denken der Sterne Leuchter,"
+          - "Es leuchten cherubin´sche Bilde-Kräfte;"
+          - "Sie leuchten auch in meinem Haupte."
+          - "In des Urseins Lichtes-Quell"
+          - "Findet Menschen-Haupt"
+          - "Denkendes Seelen-Bilde-Wirken:"
+          - "Es ist Ich."
+
+  - id: "19.3"
+    chapter: kosmische-wesen-bezeugen
+    number: "19.3"
+    parts:
+      - regie: "Der Hüter spricht aus der Ferne:"
+        lines:
+          - "Was kraftet im Geistes-Wort,"
+          - "Mit Kräften,"
+          - "Die im Weltenleibe leben?"
+      - regie: "Aus dem Reich der ersten Hierarchie:"
+        lines:
+          - "Es kraftet der Sternen-Welten-Leib,"
+          - "Es leiben der Throne Trag-Gewalten;"
+          - "Sie leiben auch in meinen Gliedern."
+          - "In des Urseins Lebens-Quell"
+          - "Finden Menschen-Glieder"
+          - "Kraftendes Welten-Träger-Walten:"
+          - "Es ist Ich."
+
+  - id: "19+"
+    chapter: kosmische-wesen-bezeugen
+    number: "19+"
+    title: Feuermächte
+    parts:
+      - lines:
+          - "Seraphisch Feuermächte"
+          - "Aus meinem Herzen strahlet ihr"
+          - "Cherubinisch Bildekräfte"
+          - "In meinem Haupte scheinet ihr"
+          - "Der Throne Traggewalten"
+          - "In meinen Gliedern kraftet ihr"
+          - "Mein Ich ist IHR."

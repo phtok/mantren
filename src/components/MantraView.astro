@@ -1,0 +1,47 @@
+---
+import type { Mantra } from '../lib/mantren';
+import { chapters } from '../lib/mantren';
+
+interface Props {
+  mantra: Mantra;
+}
+
+const { mantra } = Astro.props;
+const chapter = chapters.find((c) => c.id === mantra.chapter);
+
+function renderLine(line: string) {
+  if (line.startsWith('/')) {
+    return { text: line.slice(1), indent: true };
+  }
+  return { text: line, indent: false };
+}
+---
+<article class="mantra">
+  <header class="mantra-head">
+    {chapter && <div class="mantra-chapter">{chapter.title}</div>}
+    {mantra.number && <div class="mantra-number">{mantra.number}</div>}
+    {mantra.title && <h1 class="mantra-title">{mantra.title}</h1>}
+  </header>
+
+  <div class="mantra-body">
+    {mantra.parts.map((part) => (
+      <section class="part">
+        {part.regie && <p class="regie">{part.regie}</p>}
+        {part.section && <h2 class="section-head">{part.section}</h2>}
+        {part.lines && part.lines.length > 0 && (
+          <p class="lines">
+            {part.lines.map((raw, i) => {
+              const { text, indent } = renderLine(raw);
+              return (
+                <>
+                  <span class={`line${indent ? ' line-indent' : ''}`}>{text}</span>
+                  {i < part.lines!.length - 1 && '\n'}
+                </>
+              );
+            })}
+          </p>
+        )}
+      </section>
+    ))}
+  </div>
+</article>

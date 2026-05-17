@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+import { chapters, mantrenByChapter } from '../lib/mantren';
+---
+<Base title="Mantren">
+  <div class="index-intro">
+    <h1 class="index-title">Mantren</h1>
+    <p class="index-subtitle">Rudolf Steiners mantrisches Spätwerk</p>
+  </div>
+
+  <label class="search-box">
+    <input
+      class="search-input"
+      type="search"
+      id="toc-search"
+      placeholder="Suchen — Nummer, Titel, Wort"
+      autocomplete="off"
+      autocorrect="off"
+      spellcheck="false"
+    />
+  </label>
+
+  {chapters.map((chapter) => {
+    const list = mantrenByChapter(chapter.id);
+    if (list.length === 0) return null;
+    return (
+      <section class="toc-chapter" data-chapter-id={chapter.id}>
+        <div class="toc-chapter-head">
+          <h2 class="toc-chapter-title">{chapter.title}</h2>
+          {chapter.range && <span class="toc-chapter-range">{chapter.range}</span>}
+        </div>
+        <ul class="toc-list">
+          {list.map((m) => (
+            <li>
+              <a
+                class="toc-link"
+                href={`/${m.id}`}
+                data-search={`${m.number} ${m.title ?? ''} ${chapter.title}`.toLowerCase()}
+              >
+                <span class="toc-number">{m.number || '—'}</span>
+                <span class={`toc-title${m.title ? '' : ' toc-title-untitled'}`}>
+                  {m.title ?? chapter.title}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    );
+  })}
+
+  <script is:inline>
+    (function () {
+      var input = document.getElementById('toc-search');
+      if (!input) return;
+      var links = Array.from(document.querySelectorAll('.toc-link'));
+      var chapters = Array.from(document.querySelectorAll('.toc-chapter'));
+
+      input.addEventListener('input', function (e) {
+        var q = (e.target.value || '').trim().toLowerCase();
+        links.forEach(function (a) {
+          var hay = a.getAttribute('data-search') || '';
+          var match = !q || hay.indexOf(q) !== -1;
+          a.parentElement.classList.toggle('is-hidden', !match);
+        });
+        chapters.forEach(function (sec) {
+          var any = Array.from(sec.querySelectorAll('.toc-link')).some(function (a) {
+            return !a.parentElement.classList.contains('is-hidden');
+          });
+          sec.classList.toggle('is-empty', !any);
+        });
+      });
+
+      input.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+          var first = links.find(function (a) {
+            return !a.parentElement.classList.contains('is-hidden');
+          });
+          if (first) first.click();
+        }
+      });
+    })();
+  </script>
+</Base>

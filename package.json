@@ -1,0 +1,18 @@
+{
+  "name": "mantren",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "@vite-pwa/astro": "^0.5.0",
+    "yaml": "^2.6.0"
+  }
+}
