@@ -38,10 +38,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
                 href={`${base}${m.id}`}
                 data-search={`${m.number} ${m.title ?? ''} ${chapter.title}`.toLowerCase()}
               >
-                <span class="toc-number">{m.number || '—'}</span>
-                <span class={`toc-title${m.title ? '' : ' toc-title-untitled'}`}>
-                  {m.title ?? chapter.title}
-                </span>
+                <span class="toc-number">{m.number || ''}</span>
+                {m.title && <span class="toc-title">{m.title}</span>}
               </a>
             </li>
           ))}

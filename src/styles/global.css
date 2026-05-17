@@ -6,14 +6,6 @@
   src: url('/fonts/inclusive-sans.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Inclusive Sans';
-  font-style: italic;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url('/fonts/inclusive-sans-italic.woff2') format('woff2');
-}
-
 :root {
   color-scheme: light;
   --font-sans: 'Inclusive Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -199,10 +191,6 @@ main.center {
   font-size: 1rem;
 }
 
-.toc-title-untitled {
-  color: var(--muted);
-}
-
 /* ─────────────── Mantra-Seite ─────────────── */
 
 .mantra {
@@ -254,7 +242,6 @@ main.center {
 .regie {
   color: var(--muted);
   font-size: 0.85rem;
-  font-style: italic;
   line-height: 1.4;
   margin: 0;
   text-align: left;
