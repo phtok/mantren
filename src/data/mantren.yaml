@@ -96,7 +96,7 @@ mantren:
     number: "1.1"
     title: Erdengründe
     parts:
-      - regie: "Aus dem Leben des Geistes:"
+      - regie: "Für den Anfang – der Hüter spricht:"
         lines:
           - "Wo auf Erdengründen, Farb' an Farbe,"
           - "Sich das Leben schaffend offenbart;"
@@ -119,7 +119,8 @@ mantren:
     chapter: geschichte-der-verwandlung
     number: "1.2"
     parts:
-      - lines:
+      - regie: "Im Anblick der Schwelle:"
+        lines:
           - "Und aus Finsternissen hellet sich"
           - "– Dich im Ebenbilde offenbarend,"
           - "Doch zum Gleichnis auch dich bildend,"
@@ -139,7 +140,7 @@ mantren:
     number: "1.3"
     title: Daseinswort
     parts:
-      - regie: "Der Geistesbote:"
+      - regie: "An der Schwelle – der Hüter am Abgrund:"
         lines:
           - "Aus den Weiten der Raumeswesen,"
           - "Die im Lichte das Sein erleben,"
@@ -159,7 +160,7 @@ mantren:
     number: "1.4"
     title: Drei Tiere
     parts:
-      - regie: "Der Hüter der Schwelle:"
+      - regie: "Der Hüter spricht ganz am Abgrund des Seins:"
         lines:
           - "Doch du musst den Abgrund achten;"
           - "Sonst verschlingen seine Tiere"
@@ -261,7 +262,7 @@ mantren:
     number: "4"
     title: Tiefe–Weite–Höhe
     parts:
-      - regie: "Der Hüter spricht:"
+      - regie: "Der Hüter belehrt Wollen, Fühlen, Denken:"
         lines:
           - "Fühle wie die Erdentiefen"
           - "Ihre Kräfte deinem Wesen"
@@ -292,7 +293,7 @@ mantren:
     number: "5"
     title: Es kämpft
     parts:
-      - regie: "Weitere Rede des Hüters:"
+      - regie: "Der Hüter am Abgrund – Gleichgewicht fordernd:"
         lines:
           - "Es kämpft das Licht mit finstren Mächten"
           - "In jenem Reiche, wo dein Denken"
@@ -323,7 +324,7 @@ mantren:
     number: "6"
     title: Erdenwerte
     parts:
-      - regie: "Der Hüter mahnt:"
+      - regie: "Der Hüter mit allerbedeutsamstem Ernst:"
         lines:
           - "Du steigst ins Erden-Wesenhafte"
           - "Mit deines Willens Kraftentfaltung;"
@@ -348,7 +349,8 @@ mantren:
           - "Als kalterstarrter Stein bedroh'n;"
           - "Doch deiner Selbstheit Kälte-Tod,"
           - "Er muss dem Geistesfeuer weichen."
-      - lines:
+      - regie: "Der Hüter spricht, wie wenn das Weltenwort selber ertönte:"
+        lines:
           - "Du hältst von Lichtes-Scheines-Macht"
           - "Gedanken nur im Innern fest;"
           - "Wenn Lichtesschein in dir sich selber denkt,"
@@ -378,7 +380,7 @@ mantren:
     number: "7.1"
     title: Schau die Drei
     parts:
-      - regie: "Der Hüter der Schwelle:"
+      - regie: "Der Hüter mahnt:"
         lines:
           - "O schau die Drei,"
           - "Sie sind die Eins,"
@@ -395,7 +397,7 @@ mantren:
     chapter: geschichte-der-verwandlung
     number: "7.2"
     parts:
-      - regie: "Der Hüter ruft:"
+      - regie: "Des Hüters letzte Mahnung:"
         lines:
           - "Des Kopfes Geist,"
           - "Du kannst ihn wollen;"
@@ -420,8 +422,7 @@ mantren:
     chapter: geschichte-der-verwandlung
     number: "7.3"
     parts:
-      - regie: "Der Hüter spricht:"
-        lines:
+      - lines:
           - "Tritt ein"
           - "Das Tor ist geöffnet"
           - "Du wirst ein wahrer Mensch werden."
@@ -432,7 +433,7 @@ mantren:
     number: "8"
     title: Willenszauberwesen
     parts:
-      - regie: "Der Hüter:"
+      - regie: "Der Hüter wird in der sich hellenden Finsternis gehört also:"
         lines:
           - "Sieh hinter des Denkens Sinneslicht,"
           - "Wie in der finstren Geisteszelle"
@@ -463,7 +464,7 @@ mantren:
     number: "9.1"
     title: Ruhesterne
     parts:
-      - regie: "Der Hüter:"
+      - regie: "Die Lehre des Hüters:"
       - section: "Leben"
         lines:
           - "O Mensch,"
@@ -509,8 +510,7 @@ mantren:
     number: "9.2"
     title: Trag'
     parts:
-      - regie: "Der Hüter:"
-        lines:
+      - lines:
           - "Trag' in Denk-Erleben"
           - "Das als reines Sinnen"
           - "In der Seele lichtvoll glänzt"
@@ -574,7 +574,7 @@ mantren:
     number: "11.1"
     title: Tempelbau
     parts:
-      - regie: "Klang aus dem Weltenraum:"
+      - regie: "Aus dem Weltenraum:"
         lines:
           - "Welten-Sternen-Stätten,"
           - "Götter-Heimat-Orte!"
@@ -592,7 +592,7 @@ mantren:
     chapter: zusammenleben-mit-hierarchien
     number: "11.2"
     parts:
-      - regie: "Klang aus dem Weltenumkreis:"
+      - regie: "Aus dem Weltenumkreis:"
         lines:
           - "Welten-Sonnen-Kreise,"
           - "Geister-Wirkens-Wege!"
@@ -610,7 +610,7 @@ mantren:
     chapter: zusammenleben-mit-hierarchien
     number: "11.3"
     parts:
-      - regie: "Klang aus den Weltentiefen:"
+      - regie: "Aus den Weltentiefen:"
         lines:
           - "Welten-Grundes-Mächte,"
           - "Schöpfer-Liebes-Glänzen!"
@@ -619,7 +619,7 @@ mantren:
           - "Schafft in Leibesgliedern"
           - "Menschen-Wirkens-Strömung"
           - "Das ‹Ich will›:"
-      - regie: "Der Engel zu Schöpfer-Mächten:"
+      - regie: "Der Engel zu den Schöpfer-Mächten:"
         lines:
           - "So strebet Ihr im Erdenwerke"
           - "Als Menschen-Sinnes-Taten."
@@ -695,7 +695,7 @@ mantren:
           - "Es spricht, der die Weltenkräfte, die dumpfen"
           - "Aus den Erden-Untergründen, den finstren"
           - "In deiner Glieder Regsamkeiten lenket:"
-      - regie: "Sitze / Throne:"
+      - regie: "Throne:"
         lines:
           - "Blick' auf deiner Triebe Feuer-Wesen."
       - regie: "Hüter:"
@@ -703,7 +703,7 @@ mantren:
           - "Es spricht, der die Geistesstrahlen, die hellen"
           - "Aus Gottes-Wirkensfeldern, gnadevoll"
           - "In deinem Blute kreisen lässt:"
-      - regie: "Blitze / Cherubine:"
+      - regie: "Cherubine:"
         lines:
           - "Blick' auf des Gewissens Seelen-Führung."
       - regie: "Hüter:"
@@ -711,7 +711,7 @@ mantren:
           - "Es spricht, der das Menschensein, das vollbrachte"
           - "Durch Tode und Geburten, sinngerecht"
           - "Zum Atmen bringt in gegenwärt'ger Zeit:"
-      - regie: "Hitze / Seraphine:"
+      - regie: "Seraphine:"
         lines:
           - "Blick' auf deines Schicksales Geistes-Prüfung."
 
@@ -720,10 +720,11 @@ mantren:
     number: "14.1"
     title: Wo ist
     parts:
-      - regie: "Der Hüter fragt:"
+      - regie: "Hüter:"
         lines:
           - "Wo ist der Erde Festigkeit,"
           - "/die dich stützte?"
+      - regie: "Die Seele antwortet in dreifacher Weise – von Christus, Luzifer und Ahriman inspiriert:"
       - regie: "Christus:"
         lines:
           - "Ich verlasse ihren Grund,"
@@ -814,7 +815,7 @@ mantren:
         lines:
           - "Empfinde,"
           - "/wie wir in deinem Denken empfinden."
-      - regie: "Archangelo:"
+      - regie: "Archangeloi:"
         lines:
           - "Erlebe,"
           - "/wie wir in deinem Fühlen erleben."
@@ -875,15 +876,15 @@ mantren:
         lines:
           - "Was wird aus des Feuers Reinigung,"
           - "die dir das Ich entflammte?"
-      - regie: "Im Chor der Hierarchien sprechen Angeloi, Exusiai und Throne:"
+      - regie: "Im Chor der drei Hierarchien sprechen Angeloi, Exusiai, Throne:"
         lines:
           - "Erwecke dir in Weltenätherweiten"
           - "die Lebensflammenschrift."
-      - regie: "Im Chor der Hierarchien Archangeloi, Dynamis und Cherubine:"
+      - regie: "Archangeloi, Dynamis, Cherubine:"
         lines:
           - "Erschaffe dir in Zeitenwellenkreisen"
           - "die Seelensühnekräfte."
-      - regie: "Im Chor der Hierarchien Archai, Kyriotetes und Seraphine:"
+      - regie: "Archai, Kyriotetes, Seraphine:"
         lines:
           - "Erbitte dir in ew'gen Wesentaten"
           - "die Geisterlösermächte."
@@ -1024,7 +1025,7 @@ mantren:
     chapter: kosmische-wesen-bezeugen
     number: "19.2"
     parts:
-      - regie: "Der Hüter spricht aus der Ferne:"
+      - regie: "Der Hüter aus der Ferne:"
         lines:
           - "Was denkt im Geistes-Wort,"
           - "Mit Gedanken,"
@@ -1043,7 +1044,7 @@ mantren:
     chapter: kosmische-wesen-bezeugen
     number: "19.3"
     parts:
-      - regie: "Der Hüter spricht aus der Ferne:"
+      - regie: "Der Hüter aus der Ferne:"
         lines:
           - "Was kraftet im Geistes-Wort,"
           - "Mit Kräften,"
