@@ -1,0 +1,282 @@
+{
+  "_schema": {
+    "beschreibung": "Begleitkommentar zu den Klassenmantren. Schlüssel = Strophen-ID der App. Felder: titel, incipit, rolle, vortrag, anker, quelle, parallelstellen[], kerngedanken{kurz|kompakt|ausfuehrlich[]}, zitate[].",
+    "verknuepfung": "vortrag + anker zeigen in vortraege.json (Deeplink). parallelstellen erhalten vortrag/anker, sobald die jeweilige Stunde aufbereitet ist (derzeit nur Erste Stunde -> Verweise als Textbeleg).",
+    "seitenkonvention": "Druckseiten der Erstausgabe GA 270 (Archiv-Marken #SE270x-NNN)."
+  },
+  "meta": {
+    "werk": "Esoterische Unterweisungen für die erste Klasse der Freien Hochschule für Geisteswissenschaft am Goetheanum 1924",
+    "ga": "270",
+    "baende": {
+      "270a": "1.–9. Stunde; Zu den Mantramtexten der Ersten Stunde",
+      "270b": "10.–19. Stunde; Tafeltexte der 17. Stunde",
+      "270c": "Wiederholungsstunden; Prager u. Berner Einzelstunden; Notizen"
+    },
+    "stand": "Erste Stunde gefüllt und mit vortraege.json verknüpft; übrige Stunden folgen."
+  },
+  "tafeln": {
+    "erste-tafel": {
+      "titel": "Erste Tafel – Das Weltenwort",
+      "incipit": "O Mensch, erkenne dich selbst! / So tönt das Weltenwort …",
+      "rolle": "Wandtafeltext / Weltenwort; eröffnet die mantrische Reihe in den Wiederholungsstunden.",
+      "vortrag": null,
+      "anker": null,
+      "quelle": {
+        "ga": "270c",
+        "stunde": "Erste Wiederholungsstunde",
+        "ort": "Dornach",
+        "datum": "1924-09-06",
+        "seiten": "14–15",
+        "wiederholung_in_stunde": null,
+        "anmerkung": "Status: Entwurf – wird mit den Wiederholungsstunden ausgearbeitet."
+      },
+      "parallelstellen": [],
+      "kerngedanken": {
+        "kurz": "",
+        "kompakt": "",
+        "ausfuehrlich": []
+      },
+      "zitate": []
+    },
+    "zweite-tafel": {
+      "status": "todo"
+    },
+    "dritte-tafel": {
+      "status": "todo"
+    }
+  },
+  "strophen": {
+    "1.1": {
+      "titel": "Erdengründe",
+      "incipit": "Wo auf Erdengründen, Farb' an Farbe …",
+      "rolle": "Erste »eherne Tafel« / erste Stimmung der Ersten Stunde.",
+      "vortrag": "stunde-1",
+      "anker": "m1",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Erste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-02-15",
+        "seiten": "24–25",
+        "wiederholung_in_stunde": "38",
+        "anmerkung": "In der Ersten Stunde noch nicht an die Tafel geschrieben; Tafelfassung erst in der 1./2. Wiederholungsstunde. Sprechvariante laut Stenogramm: »aus den Finsternissen« statt »aus Finsternissen«, »urgewaltiges« statt »urgewaltig«."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 44–45",
+          "art": "Rekapitulation",
+          "vortrag": null,
+          "anker": null
+        },
+        {
+          "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 17–18",
+          "art": "Wiederholungsstunde",
+          "vortrag": null,
+          "anker": null
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Die Sinneswelt ist schön, groß und göttlich-offenbar, gibt aber auf die Frage »Erkenne dich selbst« keine Antwort. Der Tag »finstert sich zur Seelennacht«, und der Mensch wendet sich seelensorgend dem »Licht, das aus Finsternissen kraftet« zu.",
+        "kompakt": "Mit diesem Mantram beginnt die Schule – als erste »eherne Tafel« und erste Stimmung. Mineral, Pflanze, Tier und der eigene Leib sind göttlich-geistige Offenbarung; doch gerade das eigene Wesen ist aus dieser äußeren Natur nicht gewoben. Die Frage »Warum bleibt finster und stumm um uns jenes Wesenhafte, aus dem wir selber sind?« soll nicht als Entbehrung, sondern als Gnade erlebt werden: der Mensch muss sich erst »zum seelendurchwärmten, geisterstarkten Menschen machen«, um als Geist im Menschen den Geist in der Welt zu finden. Es ist die Grundstimmung, mit der man – unvorbereitet und daher gefährdet – an die Grenze zwischen Sinnes- und Geisteswelt tritt.",
+        "ausfuehrlich": [
+          "Funktion: erste der vier Stimmungen der Ersten Stunde; bewusst nicht angeschrieben, sondern »vor Herzen und Seelen« gebracht – Identifikation, nicht Lektüre.",
+          "Erste Strophe (»Wo …«): Lob der Sinnenwelt – Leben in Farbe (Pflanze), Form im Leblosen (Mineral), willenskräftige fühlende Wesen (Tier), der menschliche Leib aus Erd', Luft und Licht.",
+          "Zweite Strophe (»Da betrittst du …«): Genau in dieser Schönheit findet der Mensch sein Eigenwesen nicht; es bleibt »nachtbedeckte, kalte Finsternis«.",
+          "Wendepunkt: der Tag wird zur »Seelennacht«; die Hinwendung zum »Licht, das aus Finsternissen kraftet« leitet die Schwellensituation ein.",
+          "Steiners Deutung (2. Stunde): das wiederholte Erleben dieser Stimmung »kraftet« die Impulse herauf, die in die geistige Welt hinauftragen.",
+          "Praxis: immer wieder vor die Seele zu rücken; bereitet auf den Hüter (1.2) vor – ohne Vorbereitung würde der Geist den Menschen »zerschmettern«."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Dasjenige, was gewissermaßen wie eine erste eherne Tafel über unserer Schule stehen soll, das möchte ich zuallererst nunmehr vor Ihre Herzen, vor Ihre Seelen bringen.",
+          "quelle": "GA 270a, S. 23"
+        },
+        {
+          "text": "Das Naturdasein … es gibt uns nimmermehr Auskunft über uns selbst.",
+          "quelle": "GA 270a, S. 25"
+        },
+        {
+          "text": "Wir müssen eben uns erst selber zum Menschen machen, zum seelendurchwärmten, geisterstarkten Menschen machen, damit wir als Geist im Menschen finden den Geist in der Welt.",
+          "quelle": "GA 270a, S. 26"
+        },
+        {
+          "text": "Das tiefe Erleben dessen, daß … diese Welt uns keine Antwort gibt auf die Frage, was wir selber sind … das kraftet herauf aus der Seele diejenigen Impulse, welche uns hinauftragen können in die geistige Welt.",
+          "quelle": "GA 270a, S. 45 (2. Stunde)"
+        }
+      ]
+    },
+    "1.2": {
+      "titel": "Erdengründe (1.2) – Im Anblick der Schwelle",
+      "incipit": "Und aus Finsternissen hellet sich …",
+      "rolle": "Zweite Stimmung: Erscheinen des Geistesboten / Hüters der Schwelle.",
+      "vortrag": "stunde-1",
+      "anker": "m2",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Erste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-02-15",
+        "seiten": "27–28",
+        "wiederholung_in_stunde": "38–39",
+        "anmerkung": null
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 46",
+          "art": "Rekapitulation",
+          "vortrag": null,
+          "anker": null
+        },
+        {
+          "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 17–18",
+          "art": "Wiederholungsstunde – Schilderung des Hüters",
+          "vortrag": null,
+          "anker": null
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "An der Grenze von Sinnes- und Geisteswelt erscheint der Geistesbote / Hüter der Schwelle – menschenähnlich und doch schattenhaft, »Ebenbild« und »Gleichnis« zugleich. Sein Schöpferwort: »Sieh, ich bin der Erkenntnis einzig Tor.«",
+        "kompakt": "Aus den Finsternissen erhellt sich zuerst der Geistesbote selbst: riesengroß und doch schattenhaft, dem Menschen ähnlich, aber wie zu seinem Gleichnis gebildet. Vor ihm breiten sich die Sinnesfelder, hinter ihm gähnen die Abgrundtiefen. Er steht zum Heil des unvorbereiteten Menschen an der Schwelle und mahnt, dass niemand ohne den entsprechenden Ernst Einlass suchen soll in das, was jenseits des gähnenden Abgrundes liegt. Ohne diesen Schutz würde das volle Licht des Geistes den Menschen »zerschmettern«, in seine Nichtigkeit zurückwerfen. »Zum Ernste mahnt der ernste Geistesbote.«",
+        "ausfuehrlich": [
+          "Zweite der vier Stimmungen; folgt unmittelbar auf 1.1.",
+          "Gestalt des Hüters: Lichtwerdung aus der Finsternis; menschenähnlich, ins »riesengroß Gewaltige« ausgebildet, zugleich schattenhaft (»zum Gleichnis des Menschen bloß«).",
+          "Topographie der Schwelle: vor ihm die Sinnesfelder, hinter ihm die Abgrundtiefen – Schlüsselbild für die ganze Reihe.",
+          "Schöpferwort: »Sieh, ich bin der Erkenntnis einzig Tor« – der Hüter ist nicht Hindernis, sondern Tor.",
+          "Schutzfunktion (2. Stunde): der Hüter warnt davor, »unvorbereitet in die geistige Welt hinüberzuwollen«.",
+          "Leitmotiv Ernst: kennzeichnet die ganze Schule; nicht Sentimentalität, sondern Haltbarkeit des Geistesstrebens."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Daher steht an der Grenze zwischen Sinneswelt und Geisteswelt jener Götterbote, jener Geistesbote … der mahnend zu uns spricht, wie wir sein sollen und was wir ablegen sollen.",
+          "quelle": "GA 270a, S. 26"
+        },
+        {
+          "text": "Zum Ernste mahnt der ernste Geistesbote.",
+          "quelle": "GA 270a, S. 28"
+        },
+        {
+          "text": "Deshalb steht an der Grenze … jener Hüter, der mit seinem Ernst Menschen warnt davor, unvorbereitet in die geistige Welt hinüberzuwollen.",
+          "quelle": "GA 270a, S. 46 (2. Stunde)"
+        }
+      ]
+    },
+    "1.3": {
+      "titel": "Daseinswort",
+      "incipit": "Aus den Weiten der Raumeswesen …",
+      "rolle": "Dritte Stimmung: das über den Abgrund herübertönende Daseinswort.",
+      "vortrag": "stunde-1",
+      "anker": "m3",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Erste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-02-15",
+        "seiten": "28–29",
+        "wiederholung_in_stunde": "39",
+        "anmerkung": null
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 47",
+          "art": "Rekapitulation",
+          "vortrag": null,
+          "anker": null
+        },
+        {
+          "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 14–15",
+          "art": "Wiederholungsstunde – Weltenwort »O Mensch, erkenne dich selbst«",
+          "vortrag": null,
+          "anker": null
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Der Hüter weist über den Abgrund in die noch dunkle Geistesregion. Aus Raumeswesen, Zeitengang und Herzempfinden ertönt das »Daseinswort«: »O, du Mensch, erkenne dich selbst.«",
+        "kompakt": "Während der Mensch noch diesseits in den Sinnesfeldern steht, weist der Hüter in die scheinbare, die »Maja-Finsternis« hinein, die sich durch Geist-Erkenntnis erst hellen muss. Aus den Weiten der Raumeswesen, aus dem Schritt des Zeitenganges und aus den Tiefen des Herzempfindens ertönt zunächst leise und in »Abstraktionen, die uns nur Richtlinien geben sollen«, das aus göttlichen Heileskräften wirkende Daseinswort: »O, du Mensch, erkenne dich selbst.« Wer es tief genug empfindet, dem wird der Rückblick auf sich selbst zu einer ersten, noch vorbereitenden Selbsterkenntnis. Die drei Wege – Raum, Zeit, Herz – führen über einen einzigen Abgrund zu einem einzigen göttlich-geistigen Urquell.",
+        "ausfuehrlich": [
+          "Dritte der vier Stimmungen; der Hüter spricht nun selbst und weist hinüber.",
+          "Die jenseitige Region erscheint noch als Finsternis – ausdrücklich als »Maja-Finsternis«, Schein, der sich erst durch Geist-Erkenntnis hellt.",
+          "Drei Quellen des Wortes: Raumeswesen (Licht/Sein), Zeitengang (Schaffen/Wirken), Herzempfinden (Selbst/Welt).",
+          "Charakter zunächst »leise« und abstrakt – Orientierung, Richtlinie, noch nicht Erkenntnis selbst.",
+          "Die drei Abgründe (Raum, Zeit, Herz) sind ein einziger Abgrund; die drei Wege führen zu einem einzigen göttlich-geistigen Urquell.",
+          "Wirkung (2. Stunde): Zurückblicken wird zur ersten Selbsterkenntnis, Vorstufe der wahren Selbst- und Welterkenntnis."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Und diese drei Abgründe, sie sind nicht drei Abgründe, sie sind ein einziger Abgrund.",
+          "quelle": "GA 270a, S. 30"
+        },
+        {
+          "text": "Da spricht er, hinweisend auf diese scheinbare Finsternis, auf diese Maja-Finsternis …",
+          "quelle": "GA 270a, S. 46 (2. Stunde)"
+        },
+        {
+          "text": "Wer das Wort … tief genug empfinden kann, der wird gewahr … wie das Zurückblicken … eine erste Selbsterkenntnis wird.",
+          "quelle": "GA 270a, S. 47 (2. Stunde)"
+        }
+      ]
+    },
+    "1.4": {
+      "titel": "Drei Tiere",
+      "incipit": "Doch du musst den Abgrund achten …",
+      "rolle": "Vierte Stimmung: die drei Tiere am Abgrund des Seins.",
+      "vortrag": "stunde-1",
+      "anker": "m4",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Erste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-02-15",
+        "seiten": "32–34",
+        "wiederholung_in_stunde": "39–40",
+        "anmerkung": "Textvarianten: »Zu den Mantramtexten der Ersten Stunde«, S. 42 – 4. Zeile der 3. Strophe »Dein Haß« (Tafel/Handschrift) vs. gesprochen »Der Haß«; bei der Wiederholung S. 40 »Schmutzigrot erscheint die Gestalt dir«."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 48–50",
+          "art": "Rekapitulation mit ausführlicher Deutung",
+          "vortrag": null,
+          "anker": null
+        },
+        {
+          "ref": "GA 270c, Zweite Wiederholungsstunde",
+          "art": "Wiederholungsstunde / Tafeltext (folgt)",
+          "vortrag": null,
+          "anker": null
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Der Abgrund muss geachtet werden: drei Tiere – die Unreinheiten des eigenen Wollens, Fühlens und Denkens – steigen auf. Erst wenn sie besiegt sind, wachsen der Seele Flügel, um den Abgrund zum Erkenntnisfeld zu übersetzen.",
+        "kompakt": "Vor dem Übersetzen des Abgrunds zeigen sich im »furchtbaren, aber wahren Abbilde« drei Tiere als Erkenntnisfeinde. Erstes Tier (knochig, stumpfblau): die Furcht vor dem Geistes-Schöpfer-Sein im Willen – von ahrimanischer Seite eingepflanzt, oft als scheinlogische Gründe getarnt; nur Erkenntnismut überwindet sie. Zweites Tier (gelb-grau, spottend): der Hass bzw. die Spottlust gegen Geistes-Offenbarung im Fühlen – nur das innere Feuer, das »Erkenntnisfeuer«, zähmt es. Drittes Tier (schmutzigrot, glasig): der Zweifel an der Geistes-Licht-Gewalt, die Schlaffheit/Bequemlichkeit des Denkens (»die Welt als Kino«) – es muss dem »Erkenntnisschaffen«, dem aktiven Denken weichen. Erst nach dem Sieg über alle drei wachsen der Seele Flügel über den Abgrund zum Erkenntnisfeld, dem sich die Herzenssehnsucht heilerstrebend weihen möchte.",
+        "ausfuehrlich": [
+          "Vierte und abschließende Stimmung der Ersten Stunde; bildet mit 1.1–1.3 den vollständigen Schwellengang.",
+          "1. Tier – Wille: Furcht vor Geistes-Schöpfer-Sein → Erkenntnismut. Von ahrimanischer Seite eingepflanzt; tarnt sich als scheinlogische Gründe; bloßes »ich habe keine Furcht« genügt nicht.",
+          "2. Tier – Fühlen: Hass/Spott auf Geistes-Offenbarung → Erkenntnisfeuer; nur durch dünne Wand vom Bewusstsein getrennt, lauert in Kunst, Literatur, Gesellschaft.",
+          "3. Tier – Denken: Zweifel an Geistes-Licht-Gewalt, Schlaffheit/Bequemlichkeit (»die Welt als Kino«) → Erkenntnisschaffen, aktives Denken.",
+          "Bild des Hüters: er charakterisiert jedes Tier sinnlich genau und zeigt es als Spiegelbild des im Menschen selbst lauernden Erkenntnisfeindes.",
+          "Ergebnis: »Flügel deiner Seele« – Geistiges/Seelisches/Wirkendes des Seins entheben der Erdenschwere; Übersetzen des Abgrunds zum Erkenntnisfeld."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Das … sind die drei großen Erkenntnisfeinde der Gegenwart, des gegenwärtigen Menschen.",
+          "quelle": "GA 270a, S. 34"
+        },
+        {
+          "text": "In Wahrheit ist es der Geist der Furcht … der, indem er zum Kopfe heraufspukt, sich metamorphosiert als logische Gründe. Furcht ist es.",
+          "quelle": "GA 270a, S. 34"
+        },
+        {
+          "text": "… jenes Denken, das aus der ganzen Welt ein Kino machen möchte … weil man dann nicht zu denken braucht.",
+          "quelle": "GA 270a, S. 35"
+        },
+        {
+          "text": "Im esoterischen Leben wirkt nichts anderes als die Wahrheit.",
+          "quelle": "GA 270a, S. 52 (2. Stunde)"
+        }
+      ]
+    }
+  }
+}
