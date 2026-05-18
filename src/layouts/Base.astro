@@ -5,9 +5,11 @@ interface Props {
   title?: string;
   description?: string;
   center?: boolean;
+  chapter?: string;
+  number?: string;
 }
 
-const { title = 'Mantren', description = 'Rudolf Steiners mantrisches Spätwerk', center = false } = Astro.props;
+const { title = 'Mantren', description = 'Rudolf Steiners mantrisches Spätwerk', center = false, chapter, number } = Astro.props;
 const fullTitle = title === 'Mantren' ? title : `${title} – Mantren`;
 
 const rawBase = import.meta.env.BASE_URL;
@@ -46,8 +48,18 @@ const homeUrl = base;
     </script>
   </head>
   <body>
-    <header class="topbar">
-      <a class="topbar-title" href={homeUrl}>Mantren</a>
+    <header class="topbar" id="topbar">
+      {chapter ? (
+        <a class="topbar-meta-link" href={homeUrl} aria-label="Zum Index">
+          <span class="topbar-line1">
+            <span class="topbar-site">Mantren</span>
+            {number && <span class="topbar-num">{number}</span>}
+          </span>
+          <span class="topbar-chapter">{chapter}</span>
+        </a>
+      ) : (
+        <a class="topbar-title" href={homeUrl}>Mantren</a>
+      )}
       <div class="topbar-actions">
         <button class="icon-btn" id="theme-toggle" type="button" title="Hell / Dunkel">◐</button>
       </div>
@@ -68,6 +80,32 @@ const homeUrl = base;
             var isDark = html.classList.toggle('theme-invert');
             try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
           });
+        }
+
+        // Topbar bei Runterscrollen ausblenden, bei Hochscrollen wieder zeigen
+        var topbar = document.getElementById('topbar');
+        if (topbar) {
+          var lastY = window.scrollY;
+          var ticking = false;
+          var update = function () {
+            var y = window.scrollY;
+            var dy = y - lastY;
+            if (y < 64) {
+              topbar.classList.remove('topbar-hidden');
+            } else if (dy > 4) {
+              topbar.classList.add('topbar-hidden');
+            } else if (dy < -4) {
+              topbar.classList.remove('topbar-hidden');
+            }
+            lastY = y;
+            ticking = false;
+          };
+          window.addEventListener('scroll', function () {
+            if (!ticking) {
+              window.requestAnimationFrame(update);
+              ticking = true;
+            }
+          }, { passive: true });
         }
 
         document.addEventListener('keydown', function (e) {
