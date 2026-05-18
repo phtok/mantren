@@ -394,6 +394,58 @@ main.center {
 .toc-link.is-hidden { display: none; }
 .toc-chapter.is-empty { display: none; }
 
+/* ─────────────── Offline-Vorladen ─────────────── */
+
+.offline-pane {
+  margin: 0 0 2.5rem;
+}
+
+.offline-btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.9rem 0.5rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.offline-btn:hover {
+  background: var(--petrol-soft);
+  border-color: var(--muted-soft);
+}
+
+.offline-status {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.offline-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--muted-soft);
+  flex-shrink: 0;
+  transition: background 0.25s;
+}
+
+.offline-pane.is-ready .offline-dot {
+  background: #58a576;
+}
+
+.offline-pane.is-ready .offline-status-text {
+  color: var(--text);
+}
+
 /* ─────────────── Suchergebnisse ─────────────── */
 
 .search-results {
