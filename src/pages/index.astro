@@ -47,18 +47,14 @@ const offlineUrls = [
     />
   </label>
 
-  <div id="search-results" class="search-results" hidden></div>
-
-  <div class="offline-pane" id="offline-pane">
+  <div class="offline-pane" id="offline-pane" aria-live="polite">
     <button class="offline-btn" id="offline-btn" type="button">
       <span class="offline-dot"></span>
-      <span class="offline-btn-text">Für Offline-Nutzung vorladen</span>
+      <span class="offline-text">offline laden</span>
     </button>
-    <div class="offline-status" id="offline-status" hidden aria-live="polite">
-      <span class="offline-dot"></span>
-      <span class="offline-status-text"></span>
-    </div>
   </div>
+
+  <div id="search-results" class="search-results" hidden></div>
 
   <div id="toc">
     {chapters.map((chapter) => {
@@ -92,60 +88,50 @@ const offlineUrls = [
     (function () {
       var pane = document.getElementById('offline-pane');
       var btn = document.getElementById('offline-btn');
-      var btnText = btn && btn.querySelector('.offline-btn-text');
-      var statusEl = document.getElementById('offline-status');
-      var statusText = statusEl && statusEl.querySelector('.offline-status-text');
+      var btnText = btn && btn.querySelector('.offline-text');
       var urlsEl = document.getElementById('offline-urls');
-      if (!pane || !btn || !statusEl || !urlsEl) return;
+      if (!pane || !btn || !urlsEl) return;
 
       var urls = JSON.parse(urlsEl.textContent || '[]');
       var STORAGE_KEY = 'offline-ready-v1';
 
       function showReady() {
-        btn.hidden = true;
-        statusEl.hidden = false;
         pane.classList.add('is-ready');
-        statusText.textContent = 'Offline bereit — alle ' + urls.length + ' Seiten geladen';
+        pane.classList.remove('is-loading');
+        btn.disabled = true;
+        btnText.textContent = 'offline bereit';
       }
 
       function showProgress(done, total) {
-        btn.hidden = true;
-        statusEl.hidden = false;
+        pane.classList.add('is-loading');
         pane.classList.remove('is-ready');
-        statusText.textContent = 'Lade … ' + done + ' von ' + total;
+        btn.disabled = true;
+        btnText.textContent = 'lädt … ' + done + ' / ' + total;
       }
 
-      function showButton() {
-        btn.hidden = false;
-        statusEl.hidden = true;
-        pane.classList.remove('is-ready');
-        btnText.textContent = 'Für Offline-Nutzung vorladen';
-      }
-
-      function showUnsupported() {
-        pane.hidden = true;
+      function showIdle() {
+        pane.classList.remove('is-ready', 'is-loading');
+        btn.disabled = false;
+        btnText.textContent = 'offline laden';
       }
 
       if (!('serviceWorker' in navigator)) {
-        showUnsupported();
+        pane.hidden = true;
         return;
       }
 
-      // Falls schon mal erfolgreich vorgeladen und SW aktiv: direkt "bereit"
       navigator.serviceWorker.getRegistration().then(function (reg) {
-        var swActive = reg && reg.active;
         var flag = false;
         try { flag = localStorage.getItem(STORAGE_KEY) === '1'; } catch (e) {}
-        if (swActive && flag) {
+        if (reg && reg.active && flag) {
           showReady();
         } else {
-          showButton();
+          showIdle();
         }
       });
 
       btn.addEventListener('click', function () {
         var total = urls.length;
-        var done = 0;
         showProgress(0, total);
         var batchSize = 6;
         var idx = 0;
@@ -161,8 +147,7 @@ const offlineUrls = [
           Promise.all(batch.map(function (u) {
             return fetch(u, { credentials: 'same-origin' }).catch(function () {});
           })).then(function () {
-            done = idx;
-            if (done > total) done = total;
+            var done = idx > total ? total : idx;
             showProgress(done, total);
             runBatch();
           });

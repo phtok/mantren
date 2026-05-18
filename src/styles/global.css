@@ -369,7 +369,7 @@ main.center {
 /* ─────────────── Suche ─────────────── */
 
 .search-box {
-  margin: 0 0 2.5rem;
+  margin: 0 0 0.7rem;
   max-width: 520px;
   display: block;
 }
@@ -398,52 +398,54 @@ main.center {
 
 .offline-pane {
   margin: 0 0 2.5rem;
+  font-size: 0.78rem;
 }
 
 .offline-btn {
   appearance: none;
-  border: 1px solid var(--line);
+  border: 0;
   background: transparent;
-  color: var(--text);
+  color: var(--muted);
   font: inherit;
-  font-size: 0.85rem;
-  padding: 0.5rem 0.9rem 0.5rem 0.7rem;
-  border-radius: 999px;
+  font-size: inherit;
+  padding: 0.2rem 0;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  gap: 0.55rem;
-  transition: background 0.15s, border-color 0.15s;
+  gap: 0.45rem;
+  transition: color 0.15s;
 }
 
-.offline-btn:hover {
-  background: var(--petrol-soft);
-  border-color: var(--muted-soft);
+.offline-btn:not(:disabled) {
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
 }
 
-.offline-status {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  font-size: 0.85rem;
-  color: var(--muted);
+.offline-btn:not(:disabled):hover {
+  color: var(--text);
+  text-decoration-color: var(--muted);
+}
+
+.offline-btn:disabled {
+  cursor: default;
 }
 
 .offline-dot {
-  width: 0.55rem;
-  height: 0.55rem;
+  width: 0.42rem;
+  height: 0.42rem;
   border-radius: 50%;
   background: var(--muted-soft);
   flex-shrink: 0;
   transition: background 0.25s;
 }
 
-.offline-pane.is-ready .offline-dot {
-  background: #58a576;
+.offline-pane.is-loading .offline-dot {
+  background: var(--muted);
 }
 
-.offline-pane.is-ready .offline-status-text {
-  color: var(--text);
+.offline-pane.is-ready .offline-dot {
+  background: #58a576;
 }
 
 /* ─────────────── Suchergebnisse ─────────────── */
