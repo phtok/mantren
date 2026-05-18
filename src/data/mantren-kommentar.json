@@ -12,7 +12,7 @@
       "270b": "10.–19. Stunde; Tafeltexte der 17. Stunde",
       "270c": "Wiederholungsstunden; Prager u. Berner Einzelstunden; Notizen"
     },
-    "stand": "Erste Stunde gefüllt und mit vortraege.json verknüpft; übrige Stunden folgen."
+    "stand": "Erste und Zweite Stunde gefüllt und verknüpft; 1.1–1.4 mit Deeplinks in stunde-2. Übrige Stunden folgen."
   },
   "tafeln": {
     "erste-tafel": {
@@ -65,8 +65,8 @@
         {
           "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 44–45",
           "art": "Rekapitulation",
-          "vortrag": null,
-          "anker": null
+          "vortrag": "stunde-2",
+          "anker": "m1-rekap"
         },
         {
           "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 17–18",
@@ -102,7 +102,7 @@
         },
         {
           "text": "Das tiefe Erleben dessen, daß … diese Welt uns keine Antwort gibt auf die Frage, was wir selber sind … das kraftet herauf aus der Seele diejenigen Impulse, welche uns hinauftragen können in die geistige Welt.",
-          "quelle": "GA 270a, S. 45 (2. Stunde)"
+          "quelle": "GA 270a, S. 45 (Zweite Stunde)"
         }
       ]
     },
@@ -125,8 +125,8 @@
         {
           "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 46",
           "art": "Rekapitulation",
-          "vortrag": null,
-          "anker": null
+          "vortrag": "stunde-2",
+          "anker": "m3-hinfuehrung"
         },
         {
           "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 17–18",
@@ -158,7 +158,7 @@
         },
         {
           "text": "Deshalb steht an der Grenze … jener Hüter, der mit seinem Ernst Menschen warnt davor, unvorbereitet in die geistige Welt hinüberzuwollen.",
-          "quelle": "GA 270a, S. 46 (2. Stunde)"
+          "quelle": "GA 270a, S. 45 (Zweite Stunde)"
         }
       ]
     },
@@ -181,8 +181,8 @@
         {
           "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 47",
           "art": "Rekapitulation",
-          "vortrag": null,
-          "anker": null
+          "vortrag": "stunde-2",
+          "anker": "m3-rekap"
         },
         {
           "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 14–15",
@@ -210,11 +210,11 @@
         },
         {
           "text": "Da spricht er, hinweisend auf diese scheinbare Finsternis, auf diese Maja-Finsternis …",
-          "quelle": "GA 270a, S. 46 (2. Stunde)"
+          "quelle": "GA 270a, S. 46 (Zweite Stunde)"
         },
         {
           "text": "Wer das Wort … tief genug empfinden kann, der wird gewahr … wie das Zurückblicken … eine erste Selbsterkenntnis wird.",
-          "quelle": "GA 270a, S. 47 (2. Stunde)"
+          "quelle": "GA 270a, S. 47 (Zweite Stunde)"
         }
       ]
     },
@@ -237,14 +237,20 @@
         {
           "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 48–50",
           "art": "Rekapitulation mit ausführlicher Deutung",
-          "vortrag": null,
-          "anker": null
+          "vortrag": "stunde-2",
+          "anker": "m4-tier1"
         },
         {
           "ref": "GA 270c, Zweite Wiederholungsstunde",
           "art": "Wiederholungsstunde / Tafeltext (folgt)",
           "vortrag": null,
           "anker": null
+        },
+        {
+          "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 54–63 – drei Hüter-Sprüche zu Denken/Fühlen/Wollen",
+          "art": "Weiterführung – zusätzliche Mantren",
+          "vortrag": "stunde-2",
+          "anker": "spruch-denken"
         }
       ],
       "kerngedanken": {
@@ -274,7 +280,7 @@
         },
         {
           "text": "Im esoterischen Leben wirkt nichts anderes als die Wahrheit.",
-          "quelle": "GA 270a, S. 52 (2. Stunde)"
+          "quelle": "GA 270a, S. 52 (Zweite Stunde)"
         }
       ]
     }
