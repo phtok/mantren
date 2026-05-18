@@ -269,15 +269,6 @@ main.center {
   display: block;
 }
 
-.line-indent {
-  padding-left: 1.4rem;
-}
-
-/* Optional: Dreigliedrigkeit hervorheben */
-body.show-trias .part:nth-of-type(3n+1) .lines { border-left: 2px solid color-mix(in oklab, var(--muted) 30%, transparent); padding-left: 0.8rem; }
-body.show-trias .part:nth-of-type(3n+2) .lines { border-left: 2px solid color-mix(in oklab, var(--muted) 55%, transparent); padding-left: 0.8rem; }
-body.show-trias .part:nth-of-type(3n+0) .lines { border-left: 2px solid color-mix(in oklab, var(--muted) 80%, transparent); padding-left: 0.8rem; }
-
 /* ─────────────── Pager (vor/zurück) ─────────────── */
 
 .pager {
@@ -336,33 +327,93 @@ body.show-trias .part:nth-of-type(3n+0) .lines { border-left: 2px solid color-mi
 .toc-link.is-hidden { display: none; }
 .toc-chapter.is-empty { display: none; }
 
-/* ─────────────── Footer ─────────────── */
+/* ─────────────── Suchergebnisse ─────────────── */
 
-.site-footer {
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 6rem 2rem 2rem;
-  color: var(--muted-soft);
-  font-size: 0.78rem;
-  text-align: left;
-  line-height: 1.55;
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0.5rem 0 3rem;
 }
 
-@media (min-width: 700px) {
-  .site-footer { padding: 6rem 3rem 2rem; }
-}
-
-.site-footer a {
+.result-count {
   color: var(--muted);
-  text-decoration: none;
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
 }
 
-.site-footer a:hover { text-decoration: underline; }
+.result {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+  transition: opacity 0.15s;
+}
+
+.result:hover { opacity: 0.7; }
+
+.result-head {
+  display: grid;
+  grid-template-columns: 3rem 1fr auto;
+  gap: 0.8rem;
+  align-items: baseline;
+  margin-bottom: 0.4rem;
+}
+
+.result-num {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.result-title {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.result-chapter {
+  font-size: 0.8rem;
+  color: var(--muted-soft);
+}
+
+.result-title.result-chapter {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.result-snippets {
+  margin-left: 3.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.snippet {
+  margin: 0;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+mark {
+  background: var(--petrol-soft);
+  color: var(--text);
+  padding: 0 0.15em;
+  border-radius: 2px;
+}
+
+.no-results {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 1rem 0;
+}
 
 /* ─────────────── Druckansicht ─────────────── */
 
 @media print {
-  .topbar, .pager, .site-footer { display: none; }
+  .topbar, .pager { display: none; }
   body { background: white; color: black; }
   .mantra { page-break-after: always; }
 }
