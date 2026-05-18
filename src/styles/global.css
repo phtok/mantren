@@ -531,24 +531,24 @@ mark {
   margin: 1rem 0;
 }
 
-/* ─────────────── Mehr-Links auf Index ─────────────── */
+/* ─────────────── Index-Fußzeile ─────────────── */
 
-.more-links {
-  margin: 0 0 2.5rem;
-  font-size: 0.85rem;
+.index-footer {
+  margin: 4rem 0 0;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.78rem;
+  text-align: left;
 }
 
-.more-link {
+.index-footer-link {
+  color: var(--muted-soft);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.index-footer-link:hover {
   color: var(--muted);
-  text-decoration: underline;
-  text-decoration-color: var(--line);
-  text-underline-offset: 3px;
-  transition: color 0.15s, text-decoration-color 0.15s;
-}
-
-.more-link:hover {
-  color: var(--text);
-  text-decoration-color: var(--muted);
 }
 
 /* ─────────────── Vorträge — Index ─────────────── */
@@ -761,6 +761,12 @@ mark {
   gap: 1.6rem;
 }
 
+.klappe-tabs {
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
 .klappe-tabs input[type="radio"] {
   position: absolute;
   opacity: 0;
@@ -771,27 +777,32 @@ mark {
 }
 
 .klappe-tabs label {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  margin: 0 0.3rem 0 0;
-  font-size: 0.78rem;
-  color: var(--muted);
-  background: var(--petrol-soft);
-  border-radius: 1rem;
+  display: inline;
   cursor: pointer;
-  transition: background 0.15s, color 0.15s;
+  color: var(--muted-soft);
+  transition: color 0.15s;
 }
 
-.klappe-tabs label:hover { color: var(--text); }
+.klappe-tabs label::after {
+  content: " · ";
+  color: var(--muted-soft);
+  margin: 0 0.05rem 0 0.3rem;
+}
+
+.klappe-tabs label:last-of-type::after {
+  content: "";
+  margin: 0;
+}
+
+.klappe-tabs label:hover { color: var(--muted); }
 
 .klappe-tabs input:checked + label {
-  background: var(--petrol);
-  color: var(--on-petrol);
+  color: var(--text);
 }
 
 .klappe-tabs input:focus-visible + label {
-  outline: 2px solid var(--text);
-  outline-offset: 2px;
+  outline: 1px dotted var(--muted);
+  outline-offset: 3px;
 }
 
 /* Tab-Strip-Container: alle labels nebeneinander, depths darunter.
