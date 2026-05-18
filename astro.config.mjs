@@ -9,6 +9,12 @@ export default defineConfig({
   site,
   base,
   trailingSlash: 'ignore',
+  build: {
+    // CSS direkt ins HTML einbetten — vermeidet Hash-Mismatch zwischen
+    // HTML und CSS-Datei bei PWA-Updates (alte HTML referenziert sonst
+    // einen CSS-Hash, der nach dem Deploy nicht mehr existiert).
+    inlineStylesheets: 'always',
+  },
   integrations: [
     AstroPWA({
       registerType: 'autoUpdate',
