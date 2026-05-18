@@ -7,9 +7,10 @@ interface Props {
   center?: boolean;
   chapter?: string;
   number?: string;
+  section?: string;
 }
 
-const { title = 'Mantren', description = 'Rudolf Steiners mantrisches Spätwerk', center = false, chapter, number } = Astro.props;
+const { title = 'Mantren', description = 'Rudolf Steiners mantrisches Spätwerk', center = false, chapter, number, section } = Astro.props;
 const fullTitle = title === 'Mantren' ? title : `${title} – Mantren`;
 
 const rawBase = import.meta.env.BASE_URL;
@@ -56,7 +57,7 @@ const homeUrl = base;
             {number && <span class="topbar-num">{number}</span>}
           </span>
           <span class="topbar-chapter">{chapter}</span>
-          <span class="topbar-section" id="topbar-section"></span>
+          {section && <span class="topbar-section">{section}</span>}
         </a>
       ) : (
         <a class="topbar-title" href={homeUrl}>Mantren</a>
@@ -109,38 +110,16 @@ const homeUrl = base;
           }, { passive: true });
         }
 
-        // Dritte Header-Zeile zeigt aktuellen Titel oder Zwischentitel
-        var sectionEl = document.getElementById('topbar-section');
-        if (sectionEl) {
-          var headings = Array.prototype.slice.call(
-            document.querySelectorAll('h1.mantra-title, h2.section-head')
-          );
-          if (headings.length) {
-            var currentText = '';
-            var pickActive = function () {
-              var off = (topbar ? topbar.offsetHeight : 0) + 8;
-              var lastAbove = null;
-              for (var i = 0; i < headings.length; i++) {
-                if (headings[i].getBoundingClientRect().top <= off) {
-                  lastAbove = headings[i];
-                } else {
-                  break;
-                }
-              }
-              return lastAbove || headings[0];
-            };
-            var refresh = function () {
-              var active = pickActive();
-              var text = active ? active.textContent.trim() : '';
-              if (text !== currentText) {
-                currentText = text;
-                sectionEl.textContent = text;
-              }
-            };
-            refresh();
-            window.addEventListener('scroll', refresh, { passive: true });
-            window.addEventListener('resize', refresh);
-          }
+        // Pager fährt vom unteren Bildschirmrand ein, sobald man am Doku-Ende ist
+        var pager = document.querySelector('.pager');
+        if (pager) {
+          var updatePager = function () {
+            var atBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 16;
+            pager.classList.toggle('pager-visible', atBottom);
+          };
+          updatePager();
+          window.addEventListener('scroll', updatePager, { passive: true });
+          window.addEventListener('resize', updatePager);
         }
 
         document.addEventListener('keydown', function (e) {
