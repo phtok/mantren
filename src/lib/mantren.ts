@@ -48,3 +48,15 @@ export function neighbours(id: string): { prev?: Mantra; next?: Mantra } {
 export function mantrenByChapter(chapterId: string): Mantra[] {
   return mantren.filter((m) => m.chapter === chapterId);
 }
+
+export function rollingTitle(id: string): string | undefined {
+  const idx = mantren.findIndex((m) => m.id === id);
+  if (idx < 0) return undefined;
+  const target = mantren[idx];
+  for (let i = idx; i >= 0; i--) {
+    const m = mantren[i];
+    if (m.chapter !== target.chapter) break;
+    if (m.title) return m.title;
+  }
+  return undefined;
+}

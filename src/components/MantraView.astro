@@ -15,11 +15,6 @@ function renderLine(line: string) {
 }
 ---
 <article class="mantra">
-  {mantra.title && (
-    <header class="mantra-head">
-      <h1 class="mantra-title">{mantra.title}</h1>
-    </header>
-  )}
 
   <div class="mantra-body">
     {mantra.parts.map((part) => (
