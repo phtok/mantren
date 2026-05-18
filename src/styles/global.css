@@ -121,6 +121,18 @@ a { color: inherit; }
   display: block;
 }
 
+.topbar-section {
+  font-size: 0.85rem;
+  color: var(--text);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.topbar-section:empty { display: none; }
+
 .topbar-actions {
   display: flex;
   gap: 0.8rem;

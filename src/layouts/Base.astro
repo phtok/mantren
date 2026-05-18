@@ -56,6 +56,7 @@ const homeUrl = base;
             {number && <span class="topbar-num">{number}</span>}
           </span>
           <span class="topbar-chapter">{chapter}</span>
+          <span class="topbar-section" id="topbar-section"></span>
         </a>
       ) : (
         <a class="topbar-title" href={homeUrl}>Mantren</a>
@@ -90,7 +91,7 @@ const homeUrl = base;
           var update = function () {
             var y = window.scrollY;
             var dy = y - lastY;
-            if (y < 64) {
+            if (y < 96) {
               topbar.classList.remove('topbar-hidden');
             } else if (dy > 4) {
               topbar.classList.add('topbar-hidden');
@@ -106,6 +107,40 @@ const homeUrl = base;
               ticking = true;
             }
           }, { passive: true });
+        }
+
+        // Dritte Header-Zeile zeigt aktuellen Titel oder Zwischentitel
+        var sectionEl = document.getElementById('topbar-section');
+        if (sectionEl) {
+          var headings = Array.prototype.slice.call(
+            document.querySelectorAll('h1.mantra-title, h2.section-head')
+          );
+          if (headings.length) {
+            var currentText = '';
+            var pickActive = function () {
+              var off = (topbar ? topbar.offsetHeight : 0) + 8;
+              var lastAbove = null;
+              for (var i = 0; i < headings.length; i++) {
+                if (headings[i].getBoundingClientRect().top <= off) {
+                  lastAbove = headings[i];
+                } else {
+                  break;
+                }
+              }
+              return lastAbove || headings[0];
+            };
+            var refresh = function () {
+              var active = pickActive();
+              var text = active ? active.textContent.trim() : '';
+              if (text !== currentText) {
+                currentText = text;
+                sectionEl.textContent = text;
+              }
+            };
+            refresh();
+            window.addEventListener('scroll', refresh, { passive: true });
+            window.addEventListener('resize', refresh);
+          }
         }
 
         document.addEventListener('keydown', function (e) {
