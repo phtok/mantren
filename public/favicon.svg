@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect width="64" height="64" fill="#000"/>
-  <text x="32" y="48" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="48" fill="#fff">M</text>
+  <path d="M434 164 651 700H773V0H685V562L484 62H389L183 562V0H95V700H217Z"
+        fill="#fff"
+        transform="translate(32 32) scale(0.06 -0.06) translate(-434 -350)"/>
 </svg>
