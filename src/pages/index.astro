@@ -1,7 +1,24 @@
 ---
 import Base from '../layouts/Base.astro';
-import { chapters, mantrenByChapter } from '../lib/mantren';
+import { chapters, mantren, mantrenByChapter } from '../lib/mantren';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const searchIndex = mantren.map((m) => {
+  const chapter = chapters.find((c) => c.id === m.chapter);
+  const lines: string[] = [];
+  for (const part of m.parts) {
+    if (part.regie) lines.push(part.regie);
+    if (part.section) lines.push(part.section);
+    if (part.lines) for (const ln of part.lines) lines.push(ln);
+  }
+  return {
+    href: `${base}${m.id}`,
+    number: m.number ?? '',
+    title: m.title ?? '',
+    chapter: chapter?.title ?? '',
+    lines,
+  };
+});
 ---
 <Base title="Mantren">
   <div class="index-intro">
@@ -21,61 +38,131 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     />
   </label>
 
-  {chapters.map((chapter) => {
-    const list = mantrenByChapter(chapter.id);
-    if (list.length === 0) return null;
-    return (
-      <section class="toc-chapter" data-chapter-id={chapter.id}>
-        <div class="toc-chapter-head">
-          <h2 class="toc-chapter-title">{chapter.title}</h2>
-          {chapter.range && <span class="toc-chapter-range">{chapter.range}</span>}
-        </div>
-        <ul class="toc-list">
-          {list.map((m) => (
-            <li>
-              <a
-                class="toc-link"
-                href={`${base}${m.id}`}
-                data-search={`${m.number} ${m.title ?? ''} ${chapter.title}`.toLowerCase()}
-              >
-                <span class="toc-number">{m.number || ''}</span>
-                {m.title && <span class="toc-title">{m.title}</span>}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
-    );
-  })}
+  <div id="search-results" class="search-results" hidden></div>
+
+  <div id="toc">
+    {chapters.map((chapter) => {
+      const list = mantrenByChapter(chapter.id);
+      if (list.length === 0) return null;
+      return (
+        <section class="toc-chapter" data-chapter-id={chapter.id}>
+          <div class="toc-chapter-head">
+            <h2 class="toc-chapter-title">{chapter.title}</h2>
+            {chapter.range && <span class="toc-chapter-range">{chapter.range}</span>}
+          </div>
+          <ul class="toc-list">
+            {list.map((m) => (
+              <li>
+                <a class="toc-link" href={`${base}${m.id}`}>
+                  <span class="toc-number">{m.number || ''}</span>
+                  {m.title && <span class="toc-title">{m.title}</span>}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      );
+    })}
+  </div>
+
+  <script type="application/json" id="search-data" set:html={JSON.stringify(searchIndex)} />
 
   <script is:inline>
     (function () {
       var input = document.getElementById('toc-search');
-      if (!input) return;
-      var links = Array.from(document.querySelectorAll('.toc-link'));
-      var chapters = Array.from(document.querySelectorAll('.toc-chapter'));
+      var resultsEl = document.getElementById('search-results');
+      var tocEl = document.getElementById('toc');
+      var dataEl = document.getElementById('search-data');
+      if (!input || !resultsEl || !tocEl || !dataEl) return;
+
+      var data = JSON.parse(dataEl.textContent || '[]');
+
+      function escapeHtml(s) {
+        return String(s).replace(/[&<>"']/g, function (c) {
+          return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+        });
+      }
+
+      function highlight(line, ql) {
+        var lower = line.toLowerCase();
+        var out = '';
+        var i = 0;
+        while (i <= line.length) {
+          var idx = lower.indexOf(ql, i);
+          if (idx < 0) { out += escapeHtml(line.slice(i)); break; }
+          out += escapeHtml(line.slice(i, idx));
+          out += '<mark>' + escapeHtml(line.slice(idx, idx + ql.length)) + '</mark>';
+          i = idx + ql.length;
+        }
+        return out;
+      }
+
+      function render(q) {
+        if (!q) {
+          resultsEl.hidden = true;
+          tocEl.hidden = false;
+          resultsEl.innerHTML = '';
+          return;
+        }
+        tocEl.hidden = true;
+        resultsEl.hidden = false;
+        var ql = q.toLowerCase();
+        var html = '';
+        var mantraCount = 0;
+        var hitCount = 0;
+        for (var i = 0; i < data.length; i++) {
+          var m = data[i];
+          var titleMatch = m.title && m.title.toLowerCase().indexOf(ql) >= 0;
+          var numberMatch = m.number && m.number.toLowerCase().indexOf(ql) >= 0;
+          var matches = [];
+          for (var j = 0; j < m.lines.length; j++) {
+            if (m.lines[j].toLowerCase().indexOf(ql) >= 0) matches.push(m.lines[j]);
+          }
+          if (!matches.length && !titleMatch && !numberMatch) continue;
+          mantraCount++;
+          hitCount += matches.length;
+          html += '<a class="result" href="' + escapeHtml(m.href) + '">';
+          html += '<div class="result-head">';
+          html += '<span class="result-num">' + escapeHtml(m.number) + '</span>';
+          var titleHtml = m.title ? (titleMatch ? highlight(m.title, ql) : escapeHtml(m.title)) : '';
+          var chapterHtml = escapeHtml(m.chapter);
+          if (titleHtml) {
+            html += '<span class="result-title">' + titleHtml + '</span>';
+            html += '<span class="result-chapter">' + chapterHtml + '</span>';
+          } else {
+            html += '<span class="result-title result-chapter">' + chapterHtml + '</span>';
+          }
+          html += '</div>';
+          if (matches.length) {
+            html += '<div class="result-snippets">';
+            for (var k = 0; k < matches.length; k++) {
+              html += '<p class="snippet">' + highlight(matches[k], ql) + '</p>';
+            }
+            html += '</div>';
+          }
+          html += '</a>';
+        }
+        if (!html) {
+          resultsEl.innerHTML = '<p class="no-results">Keine Treffer.</p>';
+        } else {
+          var summary = mantraCount + (mantraCount === 1 ? ' Mantra' : ' Mantren');
+          if (hitCount > 0) summary += ', ' + hitCount + (hitCount === 1 ? ' Fundstelle' : ' Fundstellen');
+          resultsEl.innerHTML = '<p class="result-count">' + summary + '</p>' + html;
+        }
+      }
 
       input.addEventListener('input', function (e) {
-        var q = (e.target.value || '').trim().toLowerCase();
-        links.forEach(function (a) {
-          var hay = a.getAttribute('data-search') || '';
-          var match = !q || hay.indexOf(q) !== -1;
-          a.parentElement.classList.toggle('is-hidden', !match);
-        });
-        chapters.forEach(function (sec) {
-          var any = Array.from(sec.querySelectorAll('.toc-link')).some(function (a) {
-            return !a.parentElement.classList.contains('is-hidden');
-          });
-          sec.classList.toggle('is-empty', !any);
-        });
+        render((e.target.value || '').trim());
       });
 
       input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') {
-          var first = links.find(function (a) {
-            return !a.parentElement.classList.contains('is-hidden');
-          });
+          var first = resultsEl.querySelector('a.result') || tocEl.querySelector('a.toc-link');
           if (first) first.click();
+        }
+        if (e.key === 'Escape') {
+          input.value = '';
+          render('');
         }
       });
     })();
