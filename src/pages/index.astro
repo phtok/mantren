@@ -9,7 +9,9 @@ const searchIndex = mantren.map((m) => {
   for (const part of m.parts) {
     if (part.regie) lines.push(part.regie);
     if (part.section) lines.push(part.section);
-    if (part.lines) for (const ln of part.lines) lines.push(ln);
+    if (part.lines) for (const ln of part.lines) {
+      lines.push(ln.startsWith('/') ? ln.slice(1) : ln);
+    }
   }
   return {
     href: `${base}${m.id}`,

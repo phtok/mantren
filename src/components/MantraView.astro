@@ -9,9 +9,9 @@ const { mantra } = Astro.props;
 
 function renderLine(line: string) {
   if (line.startsWith('/')) {
-    return { text: line.slice(1), indent: true };
+    return { text: line.slice(1), cont: true };
   }
-  return { text: line, indent: false };
+  return { text: line, cont: false };
 }
 ---
 <article class="mantra">
@@ -23,13 +23,10 @@ function renderLine(line: string) {
         {part.section && <h2 class="section-head">{part.section}</h2>}
         {part.lines && part.lines.length > 0 && (
           <p class="lines">
-            {part.lines.map((raw, i) => {
-              const { text, indent } = renderLine(raw);
+            {part.lines.map((raw) => {
+              const { text, cont } = renderLine(raw);
               return (
-                <>
-                  <span class={`line${indent ? ' line-indent' : ''}`}>{text}</span>
-                  {i < part.lines!.length - 1 && '\n'}
-                </>
+                <span class={`line${cont ? ' line-cont' : ''}`}>{text}</span>
               );
             })}
           </p>
