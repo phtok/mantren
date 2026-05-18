@@ -2,6 +2,18 @@
 import Base from '../layouts/Base.astro';
 import { vortraege } from '../lib/vortraege';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const searchIndex = vortraege.map((v) => ({
+  href: `${base}${v.id}`,
+  titel: v.titel,
+  meta: `${v.ort} · ${v.datum} · GA ${v.ga}, S. ${v.seiten}`,
+  abschnitte: v.abschnitte.map((a) => ({
+    anker: a.anker,
+    titel: a.titel || '',
+    seite: a.seite || '',
+    text: a.text || '',
+  })),
+}));
 ---
 <Base title="Vorträge">
   <div class="index-intro">
@@ -12,16 +24,172 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   {vortraege.length === 0 ? (
     <p class="vortrag-empty">Noch keine Vorträge eingepflegt.</p>
   ) : (
-    <ul class="vortrag-list">
-      {vortraege.map((v) => (
-        <li>
-          <a class="vortrag-link" href={`${base}${v.id}`}>
-            <span class="vortrag-link-titel">{v.titel}</span>
-            <span class="vortrag-link-meta">{v.ort} · {v.datum} · GA {v.ga}, S. {v.seiten}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
+    <>
+      <label class="search-box">
+        <input
+          class="search-input"
+          type="search"
+          id="vortrag-search"
+          placeholder="Suchen — Wort, Titel, Datum"
+          autocomplete="off"
+          autocorrect="off"
+          spellcheck="false"
+        />
+      </label>
+
+      <div id="vortrag-search-results" class="search-results" hidden></div>
+
+      <ul class="vortrag-list" id="vortrag-list">
+        {vortraege.map((v) => (
+          <li>
+            <a class="vortrag-link" href={`${base}${v.id}`}>
+              <span class="vortrag-link-titel">{v.titel}</span>
+              <span class="vortrag-link-meta">{v.ort} · {v.datum} · GA {v.ga}, S. {v.seiten}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+
+      <script type="application/json" id="vortrag-search-data" set:html={JSON.stringify(searchIndex)} />
+
+      <script is:inline>
+        (function () {
+          var input = document.getElementById('vortrag-search');
+          var resultsEl = document.getElementById('vortrag-search-results');
+          var listEl = document.getElementById('vortrag-list');
+          var dataEl = document.getElementById('vortrag-search-data');
+          if (!input || !resultsEl || !listEl || !dataEl) return;
+
+          var data = JSON.parse(dataEl.textContent || '[]');
+
+          function escapeHtml(s) {
+            return String(s).replace(/[&<>"']/g, function (c) {
+              return ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c];
+            });
+          }
+
+          function highlight(text, ql) {
+            var lower = text.toLowerCase();
+            var out = '';
+            var i = 0;
+            while (i <= text.length) {
+              var idx = lower.indexOf(ql, i);
+              if (idx < 0) { out += escapeHtml(text.slice(i)); break; }
+              out += escapeHtml(text.slice(i, idx));
+              out += '<mark>' + escapeHtml(text.slice(idx, idx + ql.length)) + '</mark>';
+              i = idx + ql.length;
+            }
+            return out;
+          }
+
+          function snippet(text, ql, context) {
+            var lower = text.toLowerCase();
+            var idx = lower.indexOf(ql);
+            if (idx < 0) return null;
+            var start = Math.max(0, idx - context);
+            var end = Math.min(text.length, idx + ql.length + context);
+            // Auf Wortgrenze ausdehnen
+            while (start > 0 && /\S/.test(text.charAt(start - 1)) && idx - start < context + 20) start--;
+            while (end < text.length && /\S/.test(text.charAt(end)) && end - (idx + ql.length) < context + 20) end++;
+            var prefix = start > 0 ? '… ' : '';
+            var suffix = end < text.length ? ' …' : '';
+            return prefix + text.slice(start, end).replace(/\n+/g, ' ') + suffix;
+          }
+
+          function render(q) {
+            if (!q) {
+              resultsEl.hidden = true;
+              listEl.hidden = false;
+              resultsEl.innerHTML = '';
+              return;
+            }
+            listEl.hidden = true;
+            resultsEl.hidden = false;
+            var ql = q.toLowerCase();
+            var html = '';
+            var vortragCount = 0;
+            var hitCount = 0;
+
+            for (var i = 0; i < data.length; i++) {
+              var v = data[i];
+              var titelMatch = v.titel.toLowerCase().indexOf(ql) >= 0;
+              var metaMatch = v.meta.toLowerCase().indexOf(ql) >= 0;
+              var hits = [];
+
+              for (var j = 0; j < v.abschnitte.length; j++) {
+                var a = v.abschnitte[j];
+                var inTitel = a.titel && a.titel.toLowerCase().indexOf(ql) >= 0;
+                var inText = a.text && a.text.toLowerCase().indexOf(ql) >= 0;
+                if (inTitel || inText) {
+                  hits.push({
+                    anker: a.anker,
+                    titel: a.titel,
+                    seite: a.seite,
+                    snippet: inText ? snippet(a.text, ql, 60) : null,
+                    titelMatch: inTitel,
+                  });
+                }
+              }
+
+              if (!hits.length && !titelMatch && !metaMatch) continue;
+              vortragCount++;
+              hitCount += hits.length;
+
+              html += '<section class="result-vortrag">';
+              html += '<a class="result-vortrag-head" href="' + escapeHtml(v.href) + '">';
+              html += '<span class="result-vortrag-titel">' + (titelMatch ? highlight(v.titel, ql) : escapeHtml(v.titel)) + '</span>';
+              html += '<span class="result-vortrag-meta">' + (metaMatch ? highlight(v.meta, ql) : escapeHtml(v.meta)) + '</span>';
+              html += '</a>';
+
+              if (hits.length) {
+                html += '<ul class="result-vortrag-hits">';
+                for (var k = 0; k < hits.length; k++) {
+                  var h = hits[k];
+                  var url = v.href + '#' + h.anker;
+                  html += '<li><a class="result-hit" href="' + escapeHtml(url) + '">';
+                  if (h.titel) {
+                    html += '<span class="result-hit-titel">' + (h.titelMatch ? highlight(h.titel, ql) : escapeHtml(h.titel)) + '</span>';
+                  }
+                  if (h.seite) {
+                    html += '<span class="result-hit-seite">S. ' + escapeHtml(h.seite) + '</span>';
+                  }
+                  if (h.snippet) {
+                    html += '<p class="result-hit-snippet">' + highlight(h.snippet, ql) + '</p>';
+                  }
+                  html += '</a></li>';
+                }
+                html += '</ul>';
+              }
+
+              html += '</section>';
+            }
+
+            if (!html) {
+              resultsEl.innerHTML = '<p class="no-results">Keine Treffer.</p>';
+            } else {
+              var summary = vortragCount + (vortragCount === 1 ? ' Vortrag' : ' Vorträge');
+              if (hitCount > 0) summary += ', ' + hitCount + (hitCount === 1 ? ' Fundstelle' : ' Fundstellen');
+              resultsEl.innerHTML = '<p class="result-count">' + summary + '</p>' + html;
+            }
+          }
+
+          input.addEventListener('input', function (e) {
+            render((e.target.value || '').trim());
+          });
+
+          input.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+              var first = resultsEl.querySelector('a.result-hit') || resultsEl.querySelector('a.result-vortrag-head') || listEl.querySelector('a.vortrag-link');
+              if (first) first.click();
+            }
+            if (e.key === 'Escape') {
+              input.value = '';
+              render('');
+            }
+          });
+        })();
+      </script>
+    </>
   )}
 
   <p class="vortrag-back">

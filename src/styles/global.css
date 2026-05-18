@@ -600,6 +600,76 @@ mark {
 
 .vortrag-back a:hover { color: var(--text); }
 
+/* ─────────────── Vortrags-Treffer (Suche) ─────────────── */
+
+.result-vortrag {
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.result-vortrag-head {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 0.6rem;
+  transition: opacity 0.15s;
+}
+
+.result-vortrag-head:hover { opacity: 0.7; }
+
+.result-vortrag-titel {
+  display: block;
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.result-vortrag-meta {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.result-vortrag-hits {
+  list-style: none;
+  margin: 0.4rem 0 0;
+  padding: 0;
+}
+
+.result-hit {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-left: 2px solid var(--petrol-soft);
+  margin: 0.3rem 0;
+  transition: border-color 0.15s, opacity 0.15s;
+}
+
+.result-hit:hover {
+  border-left-color: var(--muted);
+  opacity: 0.9;
+}
+
+.result-hit-titel {
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.result-hit-seite {
+  font-size: 0.75rem;
+  color: var(--muted-soft);
+  margin-left: 0.5rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.result-hit-snippet {
+  margin: 0.25rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 /* ─────────────── Vortrag-Seite ─────────────── */
 
 .vortrag {
