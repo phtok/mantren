@@ -272,6 +272,7 @@ main.center {
   line-height: 1.4;
   margin: 0;
   text-align: left;
+  white-space: pre-line;
 }
 
 .section-head {
@@ -312,7 +313,7 @@ main.center {
     display: inline;
   }
   .line-cont::before {
-    content: "";
+    content: " ";
   }
 }
 

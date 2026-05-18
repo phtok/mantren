@@ -629,7 +629,7 @@ mantren:
     number: "12.1"
     title: Felder
     parts:
-      - regie: "Aus dem Weltenall, dem Bereich der dritten Hierarchie: Vernimm des Denkens Feld:"
+      - regie: "Aus dem Weltenall, dem Bereich der dritten Hierarchie:\nVernimm des Denkens Feld:"
       - regie: "Der Hüter:"
         lines:
           - "Es spricht, der dir die Wege"
@@ -659,7 +659,7 @@ mantren:
     chapter: zusammenleben-mit-hierarchien
     number: "12.2"
     parts:
-      - regie: "Aus dem Weltenall, dem Bereich der zweiten Hierarchie: Vernimm des Fühlens Feld:"
+      - regie: "Aus dem Weltenall, dem Bereich der zweiten Hierarchie:\nVernimm des Fühlens Feld:"
       - regie: "Hüter:"
         lines:
           - "Es spricht, der als Gedanke"
@@ -689,7 +689,7 @@ mantren:
     chapter: zusammenleben-mit-hierarchien
     number: "13"
     parts:
-      - regie: "Aus dem Weltenall, dem Bereich der ersten Hierarchie: Vernimm des Willens Feld:"
+      - regie: "Aus dem Weltenall, dem Bereich der ersten Hierarchie:\nVernimm des Willens Feld:"
       - regie: "Hüter:"
         lines:
           - "Es spricht, der die Weltenkräfte, die dumpfen"
