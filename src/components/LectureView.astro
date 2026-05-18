@@ -1,0 +1,49 @@
+---
+import type { Vortrag } from '../lib/vortraege';
+
+interface Props {
+  vortrag: Vortrag;
+}
+
+const { vortrag } = Astro.props;
+---
+<article class="vortrag">
+  <header class="vortrag-head">
+    <h1 class="vortrag-titel">{vortrag.titel}</h1>
+    <p class="vortrag-meta">
+      <span>{vortrag.ort}</span>
+      <span class="vortrag-meta-sep">·</span>
+      <time datetime={vortrag.datum}>{vortrag.datum}</time>
+      <span class="vortrag-meta-sep">·</span>
+      <span>GA {vortrag.ga}, S. {vortrag.seiten}</span>
+    </p>
+  </header>
+
+  <div class="vortrag-body">
+    {vortrag.abschnitte.map((a) => {
+      const isVerse = a.typ === 'mantram' || a.typ === 'wiederholung';
+      const paragraphs = !isVerse && a.text ? a.text.split('\n\n') : [];
+      const verseLines = isVerse && a.text ? a.text.split('\n') : [];
+      return (
+        <section id={a.anker} class={`abschnitt abschnitt-${a.typ}`}>
+          {a.seite && <span class="abschnitt-seite" aria-label={`Druckseite ${a.seite}`}>{a.seite}</span>}
+          {a.titel && <h2 class="abschnitt-titel">{a.titel}</h2>}
+          {isVerse && verseLines.length > 0 && (
+            <div class="vortrag-lines">
+              {verseLines.map((line) => (
+                line === '' ? <div class="line-break" aria-hidden="true"></div> : <span class="line">{line}</span>
+              ))}
+            </div>
+          )}
+          {!isVerse && paragraphs.map((p) => <p class="abschnitt-text">{p}</p>)}
+          {a.bild && (
+            <figure class="abschnitt-bild">
+              <img src={a.bild} alt={a.alt || ''} />
+              {a.quelle && <figcaption>{a.quelle}</figcaption>}
+            </figure>
+          )}
+        </section>
+      );
+    })}
+  </div>
+</article>

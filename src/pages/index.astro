@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { chapters, mantren, mantrenByChapter } from '../lib/mantren';
+import { vortraege } from '../lib/vortraege';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const searchIndex = mantren.map((m) => {
@@ -25,6 +26,8 @@ const searchIndex = mantren.map((m) => {
 const offlineUrls = [
   base,
   ...mantren.map((m) => `${base}${m.id}`),
+  `${base}vortraege`,
+  ...vortraege.map((v) => `${base}${v.id}`),
   `${base}fonts/inclusive-sans.woff2`,
   `${base}favicon.svg`,
 ];
@@ -55,6 +58,12 @@ const offlineUrls = [
   </div>
 
   <div id="search-results" class="search-results" hidden></div>
+
+  {vortraege.length > 0 && (
+    <p class="more-links">
+      <a class="more-link" href={`${base}vortraege`}>Vorträge der Klassenstunden →</a>
+    </p>
+  )}
 
   <div id="toc">
     {chapters.map((chapter) => {

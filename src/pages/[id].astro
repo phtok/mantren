@@ -1,39 +1,90 @@
 ---
 import Base from '../layouts/Base.astro';
 import MantraView from '../components/MantraView.astro';
-import { mantren, neighbours, chapters, rollingTitle } from '../lib/mantren';
+import KommentarKlappe from '../components/KommentarKlappe.astro';
+import LectureView from '../components/LectureView.astro';
+import { mantren, neighbours, chapters, rollingTitle, type Mantra } from '../lib/mantren';
+import { vortraege, vortragNeighbours, type Vortrag } from '../lib/vortraege';
+import { kommentarFor } from '../lib/kommentar';
+
+type Props =
+  | { kind: 'mantra'; mantra: Mantra }
+  | { kind: 'vortrag'; vortrag: Vortrag };
 
 export function getStaticPaths() {
-  return mantren.map((m) => ({ params: { id: m.id }, props: { mantra: m } }));
+  const mantraPaths = mantren.map((m) => ({
+    params: { id: m.id },
+    props: { kind: 'mantra' as const, mantra: m },
+  }));
+  const vortragPaths = vortraege.map((v) => ({
+    params: { id: v.id },
+    props: { kind: 'vortrag' as const, vortrag: v },
+  }));
+  return [...mantraPaths, ...vortragPaths];
 }
 
-const { mantra } = Astro.props;
-const { prev, next } = neighbours(mantra.id);
-const chapter = chapters.find((c) => c.id === mantra.chapter);
-const section = rollingTitle(mantra.id);
-
-const pageTitle = section
-  ? `${mantra.number ? mantra.number + ' · ' : ''}${section}`
-  : mantra.number || chapter?.title || 'Mantra';
-
+const props = Astro.props as Props;
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+let pageTitle = 'Mantren';
+let chapter: string | undefined;
+let number: string | undefined;
+let section: string | undefined;
+let prevHref: string | null = null;
+let prevLabel = '';
+let nextHref: string | null = null;
+let nextLabel = '';
+let homeHref = base;
+
+if (props.kind === 'mantra') {
+  const m = props.mantra;
+  const { prev, next } = neighbours(m.id);
+  const chapterMeta = chapters.find((c) => c.id === m.chapter);
+  section = rollingTitle(m.id);
+  pageTitle = section
+    ? `${m.number ? m.number + ' · ' : ''}${section}`
+    : (m.number || chapterMeta?.title || 'Mantra');
+  chapter = chapterMeta?.title;
+  number = m.number;
+  prevHref = prev ? `${base}${prev.id}` : null;
+  prevLabel = prev ? (prev.number || prev.id) : '';
+  nextHref = next ? `${base}${next.id}` : null;
+  nextLabel = next ? (next.number || next.id) : '';
+  homeHref = base;
+} else {
+  const v = props.vortrag;
+  const { prev, next } = vortragNeighbours(v.id);
+  pageTitle = v.titel;
+  chapter = `${v.ort} · ${v.datum} · GA ${v.ga}, S. ${v.seiten}`;
+  number = v.titel;
+  section = undefined;
+  prevHref = prev ? `${base}${prev.id}` : null;
+  prevLabel = prev ? prev.titel : '';
+  nextHref = next ? `${base}${next.id}` : null;
+  nextLabel = next ? next.titel : '';
+  homeHref = `${base}vortraege`;
+}
+
+const kommentar = props.kind === 'mantra' ? kommentarFor(props.mantra.id) : undefined;
 ---
-<Base title={pageTitle} chapter={chapter?.title} number={mantra.number} section={section}>
-  <MantraView mantra={mantra} />
+<Base title={pageTitle} chapter={chapter} number={number} section={section}>
+  {props.kind === 'mantra' && <MantraView mantra={props.mantra} />}
+  {props.kind === 'mantra' && kommentar && <KommentarKlappe kommentar={kommentar} mantraId={props.mantra.id} />}
+  {props.kind === 'vortrag' && <LectureView vortrag={props.vortrag} />}
 
   <nav class="pager">
-    {prev ? (
-      <a class="pager-prev" href={`${base}${prev.id}`} data-pager="prev">
+    {prevHref ? (
+      <a class="pager-prev" href={prevHref} data-pager="prev">
         <span class="pager-arrow">←</span>
-        <span class="pager-num">{prev.number || prev.id}</span>
+        <span class="pager-num">{prevLabel}</span>
       </a>
     ) : <span />}
 
-    <a class="pager-home" href={base}>Index</a>
+    <a class="pager-home" href={homeHref}>Index</a>
 
-    {next ? (
-      <a class="pager-next" href={`${base}${next.id}`} data-pager="next">
-        <span class="pager-num">{next.number || next.id}</span>
+    {nextHref ? (
+      <a class="pager-next" href={nextHref} data-pager="next">
+        <span class="pager-num">{nextLabel}</span>
         <span class="pager-arrow">→</span>
       </a>
     ) : <span />}

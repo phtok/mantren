@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import { vortraege } from '../lib/vortraege';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<Base title="Vorträge">
+  <div class="index-intro">
+    <h1 class="index-title">Vorträge</h1>
+    <p class="index-subtitle">Klassenstunden der Freien Hochschule für Geisteswissenschaft</p>
+  </div>
+
+  {vortraege.length === 0 ? (
+    <p class="vortrag-empty">Noch keine Vorträge eingepflegt.</p>
+  ) : (
+    <ul class="vortrag-list">
+      {vortraege.map((v) => (
+        <li>
+          <a class="vortrag-link" href={`${base}${v.id}`}>
+            <span class="vortrag-link-titel">{v.titel}</span>
+            <span class="vortrag-link-meta">{v.ort} · {v.datum} · GA {v.ga}, S. {v.seiten}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <p class="vortrag-back">
+    <a href={base}>← Zum Mantren-Index</a>
+  </p>
+</Base>

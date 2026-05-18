@@ -1,0 +1,107 @@
+---
+import type { Kommentar } from '../lib/kommentar';
+
+interface Props {
+  kommentar: Kommentar;
+  mantraId: string;
+}
+
+const { kommentar, mantraId } = Astro.props;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+const vortragLink = kommentar.vortrag && kommentar.anker
+  ? `${base}${kommentar.vortrag}#${kommentar.anker}`
+  : null;
+
+const q = kommentar.quelle;
+const quelleParts = [q.stunde, q.ort, q.datum, `GA ${q.ga}, S. ${q.seiten}`].filter(Boolean);
+const quelleLine = quelleParts.join(' · ');
+const tabName = `klappe-${mantraId.replace(/\./g, '-')}`;
+
+const k = kommentar.kerngedanken;
+const hasKurz = !!k.kurz;
+const hasKompakt = !!k.kompakt;
+const hasAusf = !!(k.ausfuehrlich && k.ausfuehrlich.length);
+const defaultTab = hasKompakt ? 'kompakt' : hasKurz ? 'kurz' : 'ausf';
+---
+<details class="klappe">
+  <summary class="klappe-summary">
+    <span class="klappe-marker" aria-hidden="true"></span>
+    <span class="klappe-label">Kommentar</span>
+    {kommentar.rolle && <span class="klappe-rolle">{kommentar.rolle}</span>}
+  </summary>
+
+  <div class="klappe-body">
+    <div class="klappe-tabs">
+      {hasKurz && (
+        <input type="radio" name={tabName} id={`${tabName}-kurz`} value="kurz" checked={defaultTab === 'kurz'} />
+      )}
+      {hasKurz && <label for={`${tabName}-kurz`}>kurz</label>}
+      {hasKompakt && (
+        <input type="radio" name={tabName} id={`${tabName}-kompakt`} value="kompakt" checked={defaultTab === 'kompakt'} />
+      )}
+      {hasKompakt && <label for={`${tabName}-kompakt`}>kompakt</label>}
+      {hasAusf && (
+        <input type="radio" name={tabName} id={`${tabName}-ausf`} value="ausf" checked={defaultTab === 'ausf'} />
+      )}
+      {hasAusf && <label for={`${tabName}-ausf`}>ausführlich</label>}
+
+      {hasKurz && (
+        <div class="klappe-depth klappe-kurz">
+          <p>{k.kurz}</p>
+        </div>
+      )}
+      {hasKompakt && (
+        <div class="klappe-depth klappe-kompakt">
+          <p>{k.kompakt}</p>
+        </div>
+      )}
+      {hasAusf && (
+        <div class="klappe-depth klappe-ausf">
+          <ul>
+            {k.ausfuehrlich.map((line) => <li>{line}</li>)}
+          </ul>
+        </div>
+      )}
+    </div>
+
+    {kommentar.zitate && kommentar.zitate.length > 0 && (
+      <div class="klappe-zitate">
+        {kommentar.zitate.map((z) => (
+          <blockquote class="klappe-zitat">
+            <p>{z.text}</p>
+            <cite>{z.quelle}</cite>
+          </blockquote>
+        ))}
+      </div>
+    )}
+
+    {kommentar.parallelstellen && kommentar.parallelstellen.length > 0 && (
+      <div class="klappe-parallel">
+        <h3 class="klappe-section-head">Parallelstellen</h3>
+        <ul>
+          {kommentar.parallelstellen.map((p) => {
+            const link = p.vortrag && p.anker ? `${base}${p.vortrag}#${p.anker}` : null;
+            return (
+              <li>
+                {link ? <a href={link}>{p.ref}</a> : <span>{p.ref}</span>}
+                {p.art && <span class="klappe-parallel-art"> – {p.art}</span>}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    )}
+
+    <div class="klappe-quelle">
+      <span class="klappe-quelle-text">{quelleLine}</span>
+      {q.wiederholung_in_stunde && (
+        <span class="klappe-quelle-wdh">Wiederholung in Stunde {q.wiederholung_in_stunde}</span>
+      )}
+      {q.anmerkung && <p class="klappe-anmerkung">{q.anmerkung}</p>}
+      {vortragLink && (
+        <a class="klappe-zur-stelle" href={vortragLink}>Zur Vortragsstelle →</a>
+      )}
+    </div>
+  </div>
+</details>
