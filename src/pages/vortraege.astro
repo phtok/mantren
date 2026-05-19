@@ -1,17 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 import { vortraege } from '../lib/vortraege';
+import { tx } from '../lib/typografie';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const searchIndex = vortraege.map((v) => ({
   href: `${base}${v.id}`,
-  titel: v.titel,
-  meta: `${v.ort} · ${v.datum} · GA ${v.ga}, S. ${v.seiten}`,
+  titel: tx(v.titel),
+  meta: tx(`${v.ort} · ${v.datum} · GA ${v.ga}, S. ${v.seiten}`),
   abschnitte: v.abschnitte.map((a) => ({
     anker: a.anker,
-    titel: a.titel || '',
+    titel: tx(a.titel || ''),
     seite: a.seite || '',
-    text: a.text || '',
+    text: tx(a.text || ''),
   })),
 }));
 ---
@@ -43,8 +44,8 @@ const searchIndex = vortraege.map((v) => ({
         {vortraege.map((v) => (
           <li>
             <a class="vortrag-link" href={`${base}${v.id}`}>
-              <span class="vortrag-link-titel">{v.titel}</span>
-              <span class="vortrag-link-meta">{v.ort} · {v.datum} · GA {v.ga}, S. {v.seiten}</span>
+              <span class="vortrag-link-titel">{tx(v.titel)}</span>
+              <span class="vortrag-link-meta">{tx(v.ort)} · {v.datum} · GA {v.ga}, S. {v.seiten}</span>
             </a>
           </li>
         ))}

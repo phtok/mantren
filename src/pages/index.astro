@@ -2,23 +2,24 @@
 import Base from '../layouts/Base.astro';
 import { chapters, mantren, mantrenByChapter } from '../lib/mantren';
 import { vortraege } from '../lib/vortraege';
+import { tx } from '../lib/typografie';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const searchIndex = mantren.map((m) => {
   const chapter = chapters.find((c) => c.id === m.chapter);
   const lines: string[] = [];
   for (const part of m.parts) {
-    if (part.regie) lines.push(part.regie);
-    if (part.section) lines.push(part.section);
+    if (part.regie) lines.push(tx(part.regie));
+    if (part.section) lines.push(tx(part.section));
     if (part.lines) for (const ln of part.lines) {
-      lines.push(ln.startsWith('/') ? ln.slice(1) : ln);
+      lines.push(tx(ln.startsWith('/') ? ln.slice(1) : ln));
     }
   }
   return {
     href: `${base}${m.id}`,
     number: m.number ?? '',
-    title: m.title ?? '',
-    chapter: chapter?.title ?? '',
+    title: tx(m.title ?? ''),
+    chapter: tx(chapter?.title ?? ''),
     lines,
   };
 });
@@ -66,7 +67,7 @@ const offlineUrls = [
       return (
         <section class="toc-chapter" data-chapter-id={chapter.id}>
           <div class="toc-chapter-head">
-            <h2 class="toc-chapter-title">{chapter.title}</h2>
+            <h2 class="toc-chapter-title">{tx(chapter.title)}</h2>
             {chapter.range && <span class="toc-chapter-range">{chapter.range}</span>}
           </div>
           <ul class="toc-list">
@@ -74,7 +75,7 @@ const offlineUrls = [
               <li>
                 <a class="toc-link" href={`${base}${m.id}`}>
                   <span class="toc-number">{m.number || ''}</span>
-                  {m.title && <span class="toc-title">{m.title}</span>}
+                  {m.title && <span class="toc-title">{tx(m.title)}</span>}
                 </a>
               </li>
             ))}
