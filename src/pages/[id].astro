@@ -71,7 +71,6 @@ const pageKommentar = kommentare && kommentare.mode === 'page' ? kommentare.entr
 const perPartKommentare = kommentare && kommentare.mode === 'per-part' ? kommentare.entries : undefined;
 const tafel = kommentare ? firstTafelbild(kommentare.entries) : undefined;
 const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${base}${tafel.bild}`) : null;
-const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vortrag}#${tafel.anker}` : null;
 ---
 <Base title={tx(pageTitle)} chapter={tx(chapter)} number={number} section={tx(section)}>
   {props.kind === 'mantra' && (
@@ -88,7 +87,6 @@ const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vo
             <button
               type="button"
               class="tafel-trigger js-tafel-trigger"
-              data-deeplink={tafelDeeplink ?? ''}
               aria-label="Wandtafelzeichnung vergrößern"
             >
               <img src={tafelImgSrc} alt={tx(tafel.beschreibung)} loading="lazy" decoding="async" />
