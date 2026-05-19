@@ -862,8 +862,72 @@ mark {
   gap: 1.6rem;
 }
 
+/* ─────────────── Vorlesefunktion (Web Speech API) ─────────────── */
+
+.tts-player {
+  margin: 0.4rem 0 1.6rem;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--petrol-soft);
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.tts-btn {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.55rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background 0.15s, color 0.15s;
+}
+.tts-btn:hover {
+  background: var(--bg);
+}
+.tts-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.tts-icon { font-size: 0.8em; line-height: 1; }
+.tts-label { letter-spacing: 0.01em; }
+
+.tts-rate {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.tts-rate-label { color: var(--muted-soft); font-size: 0.78rem; }
+.tts-rate input[type="range"] {
+  width: 6rem;
+  accent-color: var(--text);
+}
+
+.tts-note {
+  margin-left: auto;
+  color: var(--muted-soft);
+  font-size: 0.75rem;
+}
+
 .abschnitt {
   scroll-margin-top: 5rem;
+  transition: background-color 0.2s ease;
+  border-radius: 4px;
+}
+
+.abschnitt.tts-current {
+  background-color: var(--petrol-soft);
+  box-shadow: -0.6rem 0 0 var(--petrol-soft), 0.6rem 0 0 var(--petrol-soft);
 }
 
 .abschnitt-seite {
