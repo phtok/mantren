@@ -727,5 +727,439 @@
         "quelle": "GA 270i (14.3.1924)"
       }
     ]
+  },
+  "stunde-6": {
+    "titel": "Sechste Stunde",
+    "ort": "Dornach",
+    "datum": "1924-03-21",
+    "ga": "270a",
+    "seiten": "141–167",
+    "gruppe": "Geschichte der Verwandlung",
+    "abschnitte": [
+      {
+        "anker": "einleitung",
+        "seite": "141",
+        "typ": "text",
+        "titel": "Einleitung – Verwandtschaft mit den Reichen der Natur",
+        "text": "Meine lieben Freunde! Es sind ja die Wahrheiten, die der Mensch lernen kann von dem Hüter der Schwelle, an die wir in diesen Betrachtungen herantreten. Die fortwährende Ermahnung des Hüters besteht darin, dass der Mensch gewahr werde, wie er im geistigen Leben seelisch vorwärtskommt, wenn er sich sein wahres Verhältnis zur Welt zum Bewusstsein bringt.\n\nDer Mensch lernt die Welt zunächst kennen, indem er um sich herum die Reiche der Natur sieht – Tierreich, Pflanzenreich, Mineralreich –, jene Reiche, die außer seiner eigenen Wesenheit liegen. Er wird im gewöhnlichen Bewusstsein nur wenig gewahr, wie er aus dieser ganzen Welt herausgewachsen ist, wie es in ihm eine tiefe Verwandtschaft zu ihr gibt. Man muss vorschreiten zu einem selbsterkennenden Sich-Hineinfühlen in die Welt – und darf dann nicht stehenbleiben bei dem, wie die Dinge sich dem äußeren Anblick darbieten, sondern zurückgehen zu dem, was sich zwischen den Dingen offenbart: zur Welt der Elemente."
+      },
+      {
+        "anker": "schema",
+        "seite": "143",
+        "typ": "deutung",
+        "titel": "Das Elemente-Schema – Unterwelt und Oberwelt",
+        "text": "Unsere Füße setzen auf den Boden der festen Erde. Über dem Erdigen liegt das Wässerige, darüber das Luftförmige, darüber das Wärmehafte; und gehen wir vom Substantiellen ins Ätherische, so kommen wir ins Licht, in die Weltgestaltung (den großen Chemismus des Kosmos) und als Höchstes ins Weltenleben (Lebensäther).\n\nDer Mensch steht nicht in allen diesen Elementen mit gleicher innerer Verwandtschaft. Voll verwandt lebt er nur im Element der Wärme. Außerordentlich nahe stehen ihm noch Luft und Licht. Aber dem Wasser steht er schon ferner, der Erde noch ferner – im Unbewussten; und ebenso liegen Weltgestaltung und Weltenleben im Unbewussten. Der offenbarste Einfluss geht vom mittelsten Element, der Wärme, aus.\n\nDaher erhielten in den alten Mysterien die Schüler die Mahnung: Vertrauet dem Feuer, der Luft, dem Licht; doch werdet vorsichtig der Unterwelt gegenüber (Wasser, Erde) und der Oberwelt gegenüber (Weltgestaltung, Weltenleben). Denn weil die Beziehungen so stark ins Unbewusste hineingestellt sind, treten in Weltenleben und Weltgestaltung die Verlockungen Luzifers auf, in Erde und Wasser die Verführungen Ahrimans."
+      },
+      {
+        "anker": "verwandtschaft",
+        "seite": "148",
+        "typ": "deutung",
+        "titel": "Imaginatives Fühlen: Tierheit, Pflanzenheit, Mineralwesen",
+        "text": "Steigt der Mensch zum imaginativen Leben auf, dann fühlt er gerade diese Verwandtschaft mit den Elementen. Er darf dann nicht in die Welt hinausschauen, sondern muss erfühlen, was in ihm und in der Welt zugleich ist.\n\nWird man der Verwandtschaft mit der Erde gewahr, dann fühlt man sich nicht mehr in seiner Menschheit, sondern in seiner Tierheit – die innige Verwandtschaft des menschlichen Willens mit der Tierheit. Man bekommt Furcht vor sich selber. Diese Furcht soll man nicht in sich steckenbleiben lassen, sondern in eine höhere Seelenkraft, in Seelenmut verwandeln.\n\nFühlt man sich eins mit dem Wassersein, wird man gewahr: von Wasser wegen wären wir Pflanze; das Gefühl hat ein träumendes Wesen, die Tendenz, pflanzenhaft zu sein. Das Gefühl der Lahmheit muss sich umwandeln zum inneren Weckruf.\n\nWird man gewahr, wie man im Luftwesen lebt, dann sieht man, wie alles Denken nichts anderes ist als ein verfeinertes Atmen. Sublimiertes Atmen ist Denken. Wird man sich als Denker und zugleich als Atmer gewahr, dann fühlt man diese Atmungsprozesse wie ein organisiertes Mineral, einen organisierten Stein, der einen erfüllt – ein Mineralisierungsprozess (der Kohlenstoff, die Kohle: innerlich im Menschen «der Stein der Weisen»)."
+      },
+      {
+        "anker": "m-u-erde",
+        "seite": "152",
+        "typ": "mantram",
+        "titel": "Unterwelt-Mantram (Erde) – «Du steigst ins Erden-Wesenhafte»",
+        "text": "Du steigst ins Erden-Wesenhafte\nMit deines Willens Kraftentfaltung;\nBetritt als Denker du das Erdensein,\nEs wird Gedankenmacht dir dich\nAls deine eigne Tierheit zeigen;\nDie Furcht vor deinem Selbst\nMuß dir in Seelen-Mut sich wandeln."
+      },
+      {
+        "anker": "m-u-wasser",
+        "seite": "154",
+        "typ": "mantram",
+        "titel": "Unterwelt-Mantram (Wasser) – «Du lebest mit dem Wasserwesen»",
+        "text": "Du lebest mit dem Wasserwesen\nNur durch des Fühlens Traumesweben;\nDurchdring erwachend Wassersein,\nEs wird die Seele sich in dir\nAls dumpfes Pflanzendasein geben;\nUnd Lahmheit deines Selbst\nMuß dich zum Wachen führen."
+      },
+      {
+        "anker": "m-u-luft",
+        "seite": "156",
+        "typ": "mantram",
+        "titel": "Unterwelt-Mantram (Luft) – «Du sinnest in dem Lüftewehen»",
+        "text": "Du sinnest in dem Lüftewehen\nNur in Gedächtnis-Bilderformen;\nErgreife wollend Lüftewesen,\nEs wird die eigne Seele dich\nAls kalterstarrter Stein bedrohn;\nDoch deiner Selbstheit Kälte-Tod,\nEr muß dem Geistesfeuer weichen."
+      },
+      {
+        "anker": "unterwelt-deutung",
+        "seite": "157",
+        "typ": "deutung",
+        "titel": "Furcht – Lahmheit – Kältetod und ihre Verwandlung",
+        "text": "Das sind die drei Ermahnungen des Hüters gegenüber der Unterwelt, der Welt der unteren Elemente: wie der Mensch durch seine Verwandtschaft mit dem Erdenwesen seine Tierheit gewahr werden muss, durch die Verwandtschaft mit dem Wasserwesen seine eigene Pflanzenheit, durch die Verwandtschaft mit dem Lufteswesen sein eigenes Mineralwesen. Furcht, Lahmheit, Tod müssen sich als negative Eigenschaften entwickeln, müssen sich aber metamorphosieren in Seelenmut, Weckekraft und belebendes Feuer. Erst das Angstfühlen vor dem Hinuntersteigen in die Tierheit, dann das Ohnmachtfühlen in der Lahmheit des Pflanzenseins, dann die Sehnsucht, gegenüber dem auskühlenden Steinesdasein das belebende Feuer zu entwickeln."
+      },
+      {
+        "anker": "oberwelt-hinfuehrung",
+        "seite": "159",
+        "typ": "deutung",
+        "titel": "Die luziferische Verlockung von Licht/Gestaltung/Leben",
+        "text": "So wie wir nach unten in Ahrimans Reich kommen und vor seinen Versuchungskünsten ermahnt werden, so dringen wir auf der anderen Seite, indem wir ins Esoterische hineinwollen, in Licht, Weltgestaltung, Weltenleben. Wir leben im Lichte, indem wir Gedanken bilden; das Denken ist für den, der zur Imagination aufsteigt, ein leises Atemverhauchen, das vom innerlich aufgenommenen Lichte durchleuchtet wird. Da tritt die Verlockung Luzifers heran – etwas ungeheuer Schönes, eine wahre innere Wollust; Luzifer will den Menschen den irdischen Elementen entreißen und ihn zur Unzeit zum unreifen, verkümmerten Engel machen. Daher die dreifache Mahnung des Hüters gegenüber der Oberwelt:"
+      },
+      {
+        "anker": "m-o-licht",
+        "seite": "160",
+        "typ": "mantram",
+        "titel": "Oberwelt-Mantram (Licht) – «Du hältst von Lichtes-Scheines-Macht»",
+        "text": "Du hältst von Lichtes-Scheines-Macht\nGedanken nur im Innern fest;\nWenn Lichtesschein in dir sich selber denkt,\nSo wird unwahres Geisteswesen\nIn dir als Selbstheitwahn erstehn;\nBesinnung auf die Erdennöte\nWird dich im Menschensein erhalten."
+      },
+      {
+        "anker": "m-o-gestalt",
+        "seite": "162",
+        "typ": "mantram",
+        "titel": "Oberwelt-Mantram (Weltgestaltung) – «Du hältst vom Weltgestalten»",
+        "text": "Du hältst vom Weltgestalten\nGefühle nur im Innern fest;\nWenn Weltenform in dir sich selber fühlt,\nSo wird ohnmächtig Geist-Erleben\nIn dir das Selbstheitsein ersticken;\nDoch Liebe zu den Erdenwerten\nWird dir die Menschenseele retten."
+      },
+      {
+        "anker": "m-o-leben",
+        "seite": "163",
+        "typ": "mantram",
+        "titel": "Oberwelt-Mantram (Weltenleben) – «Du hältst vom Weltenleben»",
+        "text": "Du hältst vom Weltenleben\nDas Wollen nur im Innern fest;\nWenn Weltenleben dich voll erfaßt,\nSo wird vernichtend Geistes-Lust\nIn dir das Selbst-Erleben töten;\nDoch Erdenwollen geist-ergeben,\nEs läßt den Gott im Menschen walten."
+      },
+      {
+        "anker": "oberwelt-deutung",
+        "seite": "164",
+        "typ": "deutung",
+        "titel": "Engel zur Unzeit – die gottergebene Glut-Liebe",
+        "text": "Man kann sein kosmisches Ziel nur erreichen, wenn man zur rechten Zeit Engel wird – während des Jupiterdaseins. Luzifers Verführung besteht darin, den Menschen zur Unzeit, noch während des Erdendaseins, zum verkümmerten Engel zu machen; dann wäre die Menschenseele verloren. Am intensivsten ist die Verlockung im Weltenleben: bewusst im allgemeinen Weltenleben leben heißt, den Tod als einzelnes Wesen erfahren – wie das Insekt, das aus Gier nach dem Lichte in die Flamme fliegt. Nur ein gottergebenes, geistergebenes Erdenwollen, durchdrungen von hingebender Glut-Liebe, bewahrt davor, ein degenerierter Engel zu werden, statt Mensch zu bleiben, solange das Menschsein notwendig ist."
+      },
+      {
+        "anker": "schluss",
+        "seite": "165",
+        "typ": "text",
+        "text": "Es ist die Praxis des Erkennens, die in diesen Stunden vorgeführt wird – nicht eine Schilderung theoretischer Dinge. Das Herzhafte erleben Sie, wenn Sie die wahre Voraussetzung haben: dass dasjenige, was hier gesagt wird, die Unterweisung des Hüters der Schwelle selber ist, entstanden unmittelbar aus dem, was man im Gespräche mit dem Hüter erhalten kann. Nicht Theorien zu geben ist die Absicht, sondern die geistige Welt selber sprechen zu lassen. Deshalb wurde in der ersten Klassenstunde gesagt, dass diese Schule als eingesetzt aus der geistigen Welt selber angesehen werden soll. Das war das Wesen aller Mysterienschulen und muss es bleiben. Ohne den Ernst, den ein jeglicher Angehöriger dieser Klasse in sich rege machen soll, kann niemand wirkliches Mitglied dieser Schule sein."
+      },
+      {
+        "anker": "tafel",
+        "seite": "167",
+        "typ": "tafelzeichnung",
+        "titel": "Wandtafelzeichnung zur Sechsten Stunde",
+        "bild": "assets/tafeln/stunde-6.jpg",
+        "alt": "Wandtafel Rudolf Steiners vom 21. März 1924: links untereinander die Elementenreihe «Weltenleben / Weltgestaltung / Licht / Wärme / Luft / Wasser / Erde» mit farbigen Kreuzen (Wärme rot, Licht und Luft gelb, die übrigen blau); rechts daneben die Klammern und die Namen «Luzifer» (oben) und «Ahriman» (unten); darunter eine helle Flammenfigur; unten das Datum «21. März 24».",
+        "quelle": "GA 270i, Wandtafelzeichnungen, Tafel zur Sechsten Stunde (21.3.1924)",
+        "text": "Das vollständige Elemente-Schema dieser Stunde: die sieben Elementenstufen, oben die luziferische, unten die ahrimanische Versuchungsregion, die mittlere Wärme als die dem Menschen voll verwandte Stufe. Unmittelbare Lese- und Meditationshilfe zu den sechs Mantren (Unterwelt und Oberwelt)."
+      }
+    ],
+    "tafelzeichnungen": [
+      {
+        "anker": "tafel",
+        "bild": "assets/tafeln/stunde-6.jpg",
+        "quelle": "GA 270i (21.3.1924)"
+      }
+    ]
+  },
+  "stunde-7": {
+    "titel": "Siebente Stunde",
+    "ort": "Dornach",
+    "datum": "1924-04-11",
+    "ga": "270a",
+    "seiten": "169–189",
+    "gruppe": "Geschichte der Verwandlung",
+    "abschnitte": [
+      {
+        "anker": "einleitung",
+        "seite": "169",
+        "typ": "text",
+        "titel": "Einleitung – Prinzipien der Schule",
+        "text": "Meine lieben Freunde! Es sind nun eine ganze Anzahl neuer Mitglieder dieser Schule heute hier eingetroffen, und deshalb obliegt es mir, noch einmal einiges über die Prinzipien dieser Schule zu sagen.\n\nDiese Schule bildet den esoterischen Einschlag derjenigen anthroposophischen Bewegung, die mit der Weihnachtstagung am Goetheanum ihre Erneuerung gefunden hat. Früher war die Anthroposophische Gesellschaft eine Art Verwaltungsgesellschaft für anthroposophischen Inhalt; seit Weihnachten handelt es sich darum, dass Anthroposophie nicht nur gepflegt, sondern getan wird. Wer dieser Schule als Mitglied beitritt, erklärt damit, dass er ein wirklicher Repräsentant der anthroposophischen Bewegung sein will. Es muss ein gegenseitiges Verhältnis sein: der Vorstand am Goetheanum kann auch Mitgliedern, die ihm nicht als Repräsentanten erscheinen, die Mitgliedschaft streichen.\n\nZu den ersten Pflichten eines esoterischen Schülers gehört es, dass er sich nicht bloß verpflichtet fühlt, dasjenige zu sagen, wovon er glaubt, dass es wahr ist, sondern dass er prüft, ob dasjenige, was er sagt, wirklich objektive Wahrheit ist. Denn nicht-wahre Aussagen, auch aus gutem Willen, wirken innerhalb einer okkulten Bewegung zerstörend. Diese Schule soll als nicht von Menschen begründet angesehen werden, sondern als aus dem Willen der die Welt regierenden geistigen Mächte eingesetzt."
+      },
+      {
+        "anker": "gegner",
+        "seite": "172",
+        "typ": "text",
+        "titel": "Der Ernst der Lage – die Gegner der Bewegung",
+        "text": "Man darf nicht vergessen – und dies bleibt im Umkreise der Schule –, dass jetzt von maßgebenden Persönlichkeiten gesagt wird: diejenigen, welche das Prinzip der römischen Kirche vertreten, würden alles daransetzen, das Heilige Römische Reich Deutscher Nation wieder aufzurichten, um die gefährlichsten Bewegungen der Gegenwart auszurotten – und das seien die anthroposophische Bewegung und die Bewegung zur religiösen Erneuerung. Daran sieht man, dass Anthroposophie von den Gegnern gewichtiger genommen wird als von vielen innerhalb der Mitgliedschaft. Es kommt bei einer im Geiste gründenden Bewegung nicht auf die Zahl der Mitglieder an, sondern auf die Kraft, die ihr aus der geistigen Welt innewohnt; das sehen die Gegner und wählen darum scharfe Mittel. Nur aus vollem, aktivem Ernst heraus können wir den Fels errichten, den wir für die Schwierigkeiten der Zukunft brauchen."
+      },
+      {
+        "anker": "ausserhalb",
+        "seite": "174",
+        "typ": "deutung",
+        "titel": "Bewusst außerhalb des physischen Leibes",
+        "text": "Nicht eher kann man davon sprechen, dass die Begegnung mit dem Hüter der Schwelle wirksam erfolgt sei, bis man nicht die Erfahrung gemacht hat, was es heißt, mit seiner menschlichen Wesenheit in Ich und astralischem Leib außer dem physischen Leibe zu sein. Im physischen Leibe eingeschlossen, nimmt der Mensch nur die Sinneswelt wahr, die ein Abglanz einer geistigen Welt ist, ohne zu enthüllen, wovon sie ein Abglanz ist.\n\nAus dem Leibe herauszugehen ist nicht schwierig – der Mensch tut es jedesmal beim Einschlafen; aber dann ist sein Bewusstsein bis zur Unbewusstheit hinuntergedämpft. Bei der Erringung höherer Erkenntnisse handelt es sich darum, dass dieses Herausgehen mit voller, bewusster Besonnenheit vollzogen wird, so dass der Mensch außerhalb des physischen Leibes die geistige Welt so wahrnimmt, wie er innerhalb seiner mit den Sinnen die physische wahrnimmt. Ist der Mensch genügend vorbereitet, so nimmt der Hüter der Schwelle die wahre Wesenheit des Menschen heraus; sie kann den Abgrund überflügeln mit den Mitteln der letzten mantrischen Sprüche. Dann kann der Mensch von jenseits der Schwelle sein eigenes physisches Wesen betrachten."
+      },
+      {
+        "anker": "drei-hinfuehrung",
+        "seite": "176",
+        "typ": "deutung",
+        "titel": "Der Mensch schaut sich als Dreiheit",
+        "text": "Das ist der erste große Eindruck wirklicher Erkenntnis: wenn der Hüter sagen kann: Siehe, da drüben bist du, wie du äußerlich in der physischen Welt erscheinst; bei mir bist du, wie du deinem inneren Wesen nach bist. Und dann erklingt über den Abgrund hin ein bedeutsames Wort, das dem Menschen vergegenwärtigt, wie anders er sich schaut – als eine Dreiheit, die sich seelisch in Denken, Fühlen und Wollen ausdrückt: drei Menschen, die nur durch den physischen Leib für die physische Welt in eins zusammengezogen sind. So ertönt es von den Lippen des Hüters:"
+      },
+      {
+        "anker": "m-drei",
+        "seite": "177",
+        "typ": "mantram",
+        "titel": "Mantram – «O schau die Drei»",
+        "text": "O schau die Drei\nSie sind die Eins\nWenn du die Menschenprägung\nIm Erdendasein trägst.\n\nErlebe des Kopfes Weltgestalt\nEmpfinde des Herzens Weltenschlag\nErdenke der Glieder Weltenkraft\n\nSie sind die Drei\nDie Drei, die als das Eins\nIm Erdendasein leben."
+      },
+      {
+        "anker": "drei-deutung",
+        "seite": "178",
+        "typ": "deutung",
+        "titel": "Kopf/Herz/Glieder – die drei Zeichen",
+        "text": "Der Hüter deutet hin, wie die Drei – die sich sofort trennen, wenn der Mensch den physischen Leib verlässt – im Verhältnis zu diesem Leibe aussehen. Das menschliche Haupt ist ein Abbild des himmlischen Weltenalls: bei «Erlebe des Kopfes Weltgestalt» macht man das nach oben gerichtete Zeichen. Durch das Herz geht der Weltenrhythmus, der als Weltenmusik ertönt: bei «Empfinde des Herzens Weltenschlag» das nach oben und unten weisende Zeichen. Die Weltenkraft der Glieder ist in der Schwerkraft von unten konzentriert: bei «Erdenke der Glieder Weltenkraft» das nach unten gerichtete Zeichen. Danach mache man die Sinne stumpf, schließe die Augen, habe eine Weile dunkel um sich, damit man ganz in der Atmosphäre der Worte lebt – so versetzt man sich in jene Sphäre, die bei der Einweihung real erlebt werden kann."
+      },
+      {
+        "anker": "umkehr-hinfuehrung",
+        "seite": "182",
+        "typ": "deutung",
+        "titel": "Die Umkehrung jenseits der Schwelle",
+        "text": "In der Sinneswelt sitzt das Denken im Haupte, mit einem leisen Wollen beigemischt, das einen Gedanken in den anderen überführt. Sobald man über die Schwelle kommt, wird es umgekehrt: wenig Denken an das Haupt gebunden und viel ausgebreitetes Wollen. In diesem Wollen, das sonst schlafend ist, verspürt man den Geist, wie er aus dem Kosmos das menschliche Haupt als sein kugeliges Abbild gestaltet. Daher ruft der Hüter jenseits der Schwelle die Worte zu:"
+      },
+      {
+        "anker": "m-umkehr",
+        "seite": "182",
+        "typ": "mantram",
+        "titel": "Mantram – «Des Kopfes Geist, du kannst ihn wollen»",
+        "text": "Des Kopfes Geist,\nDu kannst ihn wollen;\nUnd Wollen wird dir\nDer Sinne vielgestaltig Himmelsweben;\nDu webest in der Weisheit.\n\nDes Herzens Seele,\nDu kannst sie fühlen;\nUnd Fühlen wird dir\nDes Denkens keimerweckend Weltenleben;\nDu lebest in dem Scheine.\n\nDer Glieder Kraft,\nDu kannst sie denken;\nUnd Denken wird dir\nDes Wollens zielerfassend Menschenstreben;\nDu strebest in der Tugend."
+      },
+      {
+        "anker": "umkehr-deutung",
+        "seite": "185",
+        "typ": "deutung",
+        "titel": "Weisheit – Schein – Tugend; Himmelsweben/Weltenleben/Menschenstreben",
+        "text": "Man sieht nun, dass alles, was die Augen als Farben, die Ohren als Töne, der Mensch als Wärme und Kälte wahrnimmt, in der geistigen Welt ein Wollen ist. Erkennt man, wie das Herz die Seele birgt, so betrachtet man das Denken nicht als Eigenschaft des Kopfes, sondern des Herzens – dann gehört das Denken nicht dem einzelnen Menschen, sondern der Welt. Und als drittes: was sonst im Kopfe konzentriert gemeint ist, das Denken, wird hier mit den Gliedmaßen in Zusammenhang gebracht, das Wollen wird zum Denken.\n\nSo hat man die völlige Umkehrung in der geistigen Welt: Wollen oben im Haupte (webende Weltenweisheit – «Du webest in der Weisheit»), Fühlen in der Mitte (Weltenschein, in dem alle Geistwesen erstrahlen – «Du lebest in dem Scheine»), Denken unten an den Gliedmaßen (Menschenstreben, das als Tugend lebt – «Du strebest in der Tugend»). Himmelsweben – Weltenleben – Menschenstreben."
+      },
+      {
+        "anker": "m-tor",
+        "seite": "187",
+        "typ": "mantram",
+        "titel": "Das Tor-Wort – «Tritt ein»",
+        "text": "Tritt ein\nDas Tor ist geöffnet\nDu wirst\nEin wahrer Mensch werden."
+      },
+      {
+        "anker": "tor-deutung",
+        "seite": "187",
+        "typ": "deutung",
+        "titel": "Der dreifach dreifache Ernst",
+        "text": "Das sind die Mahnungen, die der Hüter ertönen lässt, indem er uns zugleich sagt: «Tritt ein / Das Tor ist geöffnet / Du wirst / Ein wahrer Mensch werden.» Das sind die Worte, die seit ungezählten Jahrtausenden an allen Pforten in die geistige Welt mahnend und aufmunternd erklangen. Sagt man sich das erste Mal: ich will bekennen, dass ich noch nicht ein Mensch war und es durch die Einsicht in die geistige Welt werde – ernst ist diese erste Mahnung; ernster die zweite; des Ernstes höchste Prägung trägt die dritte. Diesen dreifach dreifachen Ernst in den Tiefen der Seele aufzubringen, gibt eine Ahnung, was es heißt, durch Erkenntnis ein Mensch zu werden. Es war eine Pause in diesem Ringen seit dem Heraufkommen der fünften nachatlantischen Kulturepoche; die Pause ist nach dem Willen der die Menschheit leitenden geistigen Wesenheiten zu Ende."
+      },
+      {
+        "anker": "m-drei-wiederholung",
+        "seite": "188",
+        "typ": "wiederholung",
+        "titel": "Schlusswiederholung – «O schau die Drei»",
+        "text": "O schau die Drei\nSie sind die Eins\nWenn du die Menschenprägung\nIm Erdendasein trägst.\n\nErlebe des Kopfes Weltgestalt\nEmpfinde des Herzens Weltenschlag\nErdenke der Glieder Weltenkraft\n\nSie sind die Drei\nDie Drei, die als das Eins\nIm Erdendasein leben."
+      },
+      {
+        "anker": "tafel",
+        "seite": "189",
+        "typ": "tafelzeichnung",
+        "titel": "Wandtafelzeichnung zur Siebenten Stunde",
+        "bild": "assets/tafeln/stunde-7.jpg",
+        "alt": "Wandtafel Rudolf Steiners vom 11. April 1924: oben eine rote, geschwungene Linie, die einen Bogen über einen Abgrund bildet; links die Beschriftung «Sinne», rechts «Geist», in der Mitte eine gelbe Figur an der Schwelle; darunter das Tor-Wort «Tritt ein / Das Tor ist geöffnet / Du wirst / Ein wahrer Mensch werden»; unten das Datum «11. April 24».",
+        "quelle": "GA 270i, Wandtafelzeichnungen, Tafel zur Siebenten Stunde (11.4.1924)",
+        "text": "Die Schwellen-Schwingung zwischen Sinnen- und Geistesseite mit dem an der Pforte aller Mysterien erklingenden Tor-Wort. Unmittelbare Lese- und Meditationshilfe zu den Mantren dieser Stunde."
+      }
+    ],
+    "tafelzeichnungen": [
+      {
+        "anker": "tafel",
+        "bild": "assets/tafeln/stunde-7.jpg",
+        "quelle": "GA 270i (11.4.1924)"
+      }
+    ]
+  },
+  "stunde-8": {
+    "titel": "Achte Stunde",
+    "ort": "Dornach",
+    "datum": "1924-04-18",
+    "ga": "270a",
+    "seiten": "191–215",
+    "gruppe": "Geschichte der Verwandlung",
+    "abschnitte": [
+      {
+        "anker": "einleitung",
+        "seite": "191",
+        "typ": "text",
+        "titel": "Einleitung – Bewegung und Gesellschaft seit der Weihnachtstagung",
+        "text": "Meine lieben Freunde! Da heute eine größere Anzahl von Freunden in der Klasse erscheint, die vorher nicht anwesend waren, obliegt es mir, mit einleitenden Worten über die Einrichtung der Schule zu sprechen. Bis zur Weihnachtstagung musste streng auseinandergehalten werden: anthroposophische Bewegung und Anthroposophische Gesellschaft. Die anthroposophische Bewegung stellt das Einfließen der geistigen Weistümer in die Menschheitszivilisation dar – sie ist da, weil es den die Welt lenkenden geistigen Mächten als das richtige erscheint. Die Anthroposophische Gesellschaft war als Verwaltungsgesellschaft begründet.\n\nSeit der Weihnachtstagung ist das Gegenteil der Fall: alles, was durch die Anthroposophische Gesellschaft geschieht, muss selber Anthroposophie sein. Jedes einzelne Tun muss esoterischen Charakter haben. Anthroposophische Bewegung und Anthroposophische Gesellschaft sind nunmehr identisch geworden. Der Dornacher Vorstand ist ein Initiativ-Vorstand; die Gesellschaft ist auf das menschliche Verhältnis begründet, nicht auf Bürokratismus."
+      },
+      {
+        "anker": "schule",
+        "seite": "195",
+        "typ": "text",
+        "titel": "Die Freie Hochschule als Mysterienschule",
+        "text": "Mitglied der Anthroposophischen Gesellschaft wird man aus dem inneren Herzensdrang, das anthroposophische Weisheitsgut kennenzulernen. Aus dieser allgemeinen Mitgliedschaft kann nach einer gewissen Zeit (vorläufig mindestens zwei Jahre) um die Mitgliedschaft der Freien Hochschule für Geisteswissenschaft angesucht werden. Bei dieser Hochschule übernimmt man ernste Verpflichtungen: man will ein echter Repräsentant der anthroposophischen Sache vor der Welt sein. Freiheit bedingt, dass alle Beteiligten frei sind – auch die Leitung der Schule muss frei sein, erklären zu können, mit wem sie zusammenarbeiten will; sie kann die Mitgliedschaft auch erlöschen lassen.\n\nDiese Schule muss aufgefasst werden nicht als Einsetzung durch menschlichen Impuls, sondern von seiten der geistigen Welt – ein Ratschluss der geistigen Welt ist eingeholt worden. Sie muss sich zu einer wirklichen Mysterienschule unserer Zeit entwickeln und wird dadurch die Seele der anthroposophischen Bewegung sein. In der Zukunft muss aller Firlefanz aufhören, der davor zurückzuckt, sich frank und frei zu bekennen: Ich bin da als Repräsentant der vom Goetheanum ausgehenden Anthroposophie."
+      },
+      {
+        "anker": "weltenwort-hinfuehrung",
+        "seite": "199",
+        "typ": "deutung",
+        "titel": "Das Weltenwort aus dem Kosmos",
+        "text": "Nun möchte ich – ohne dass Sie etwas notieren, dass Sie zunächst nur anhören – jene mantrische Formel aussprechen, welche hinweist auf dasjenige, was durch alle Zeiten, ausgehend von den Mysterien und für die Mysterien ausgehend von der in den Sternen geschriebenen Schrift, in das Menschenherz hereintönt als die große Aufforderung, nach wirklicher Selbsterkenntnis zu streben. Diese Aufforderung «O Mensch, erkenne dich selbst!» ertönt aus dem ganzen Kosmos heraus. Aus den Ruhesternen des Tierkreises tönt der Gehalt des Weltenwortes; aus den Bewegungen der Wandelsterne der Weltenherzensgehalt; durch die Elemente (Erde, Wasser, Feuer, Luft) wird der Willensimpuls in diese Worte eingegossen. So lassen wir das zum Menschen ertönende Weltenwort auf unsere Seele wirken:"
+      },
+      {
+        "anker": "m-weltenwort",
+        "seite": "200",
+        "typ": "mantram",
+        "titel": "Das Weltenwort – «O Mensch, erkenne dich selbst!»",
+        "text": "O Mensch, erkenne dich selbst!\nSo tönt das Weltenwort.\nDu hörst es seelenkräftig,\nDu fühlst es geistgewaltig.\n\nWer spricht so weltenmächtig?\nWer spricht so herzinniglich?\n\nWirkt es durch des Raumes Weitenstrahlung\nIn deines Sinnes Seinserleben?\nTönt es durch der Zeiten Wellenweben\nIn deines Lebens Werdestrom?\n\nBist du es selbst, der sich\nIm Raumesfühlen, im Zeiterleben\nDas Wort erschafft, dich fremd\nErfühlend in Raumes Seelenleere,\nWeil du des Denkens Kraft\nVerlierst im Zeitvernichtungsstrom."
+      },
+      {
+        "anker": "weltenwort-deutung",
+        "seite": "201",
+        "typ": "deutung",
+        "titel": "Kein Erkennen ohne die geistige Welt",
+        "text": "Es gibt kein Erkennen, das nicht an die geistige Welt herandringt. Der Mensch, wenn er in der Welt herumschaut – Farb' an Farbe, Glanz an Glanz, die strahlenden Sterne, die wärmende Sonne, das aus der Erde Sprossende –, findet darin Erhabenes, Großes, Schönes, Weisheitsvolles, und er täte unrecht, daran vorbeizugehen. Aber gerade dann, wenn er einen rechten Sinn für dieses Erhabene hat, wird er aufmerksam: in diesem hellen Reich der Erde ist der innerste Urquell des eigenen Seins nicht vorhanden. Das volle Erfühlen davon bringt ihn an die Schwelle zur geistigen Welt, wo der Hüter steht und ihn nicht unvorbereitet herantreten lässt. Streckt der Hüter die weisende Hand aus, so liegt jenseits der Schwelle zunächst die äußerste Finsternis; das Licht muss aus ihr herausstrahlen."
+      },
+      {
+        "anker": "trennung-deutung",
+        "seite": "203",
+        "typ": "deutung",
+        "titel": "Die Scheidung der Drei – Welt wird Selbst",
+        "text": "Das Licht strahlt nur heraus, wenn wir gewahr werden, wie Denken, Fühlen und Wollen hier im Erdendasein durch den physischen Leib zusammengehalten werden. Der Mensch muss empfinden lernen, dass die Drei sich voneinander scheiden: das Denken wird frei, das Fühlen wird für sich, das Wollen wird für sich, denn der Mensch lernt wahrnehmen ohne seinen physischen Leib.\n\nDann tritt das umgekehrte Bewusstsein ein: was Welt war, wird Selbst, und was Selbst war, wird Welt. Wir sprechen zur Sonne wie hier zu unserem Herzen, zum Mond als zum Schöpfer unserer Gestalt; wir schauen auf den Menschen als auf unsere Außenwelt. Das Denken ist eins mit den Ruhesternen, das Fühlen webt im Lauf der Wandelsterne; zwischen Denken und Fühlen liegt die Sonne in uns, zwischen Fühlen und Wollen der Mond."
+      },
+      {
+        "anker": "denken-deutung",
+        "seite": "206",
+        "typ": "deutung",
+        "titel": "Das tote Denken und die Geisteszelle",
+        "text": "Dieses Denken, das der Mensch hier auf der Erde übt, ist ein Leichnam – es lebt nicht. Gelebt haben diese Gedanken im vorirdischen Dasein, als wir als geistig-seelische Wesen oben lebten; unser physischer Leib ist das Grab, in dem die sterbende Gedankenwelt begraben wird. Schaut man hin auf den Menschen, schaut man zunächst auf sein totes Denken; aber hinter diesem, in der Geisteszelle des Hauptes, ist das lebendige Denken, das die Kraft mitgebracht hat, das Gehirn erst zu bilden. Das Gehirn ist nicht der Erzeuger des Denkens, sondern das Produkt des vorgeburtlichen lebendigen Denkens. Dieses lebendige Denken ist wie ein Wollen – und als solches schöpferisch für unser Denkorgan: Weltendenken. Verfließt das sinnliche Denken ins Weltennichts, ersteht wie ein Wollen das ewige Denken."
+      },
+      {
+        "anker": "m-denken",
+        "seite": "208",
+        "typ": "mantram",
+        "titel": "Erstes Mantram (Denken) – «Sieh hinter des Denkens Sinneslicht»",
+        "text": "Sieh hinter des Denkens Sinneslicht,\nWie in der finstren Geisteszelle\nWollen sich hebt aus Leibestiefen;\nLasse fließen durch deiner Seele Stärke\nTotes Denken in das Weltennichts;\nUnd das Wollen, es erstehet\nAls Weltgedankenschaffen."
+      },
+      {
+        "anker": "fuehlen-deutung",
+        "seite": "209",
+        "typ": "deutung",
+        "titel": "Das Fühlen als wachendes Träumen",
+        "text": "Wie wir hinter das Denken auf das Weltgedankenschaffen blicken, so nehmen wir in dem Fühlen – dessen Repräsentant das Herz ist – etwas wahr, das vom ganzen Kosmos im Menschen ein- und ausgeht: Weltenleben, das im Menschen Menschenseelenleben wird. Das Fühlen ist nur ein wachendes Träumen; die Gefühle werden so bewusst wie die Bilder des Träumens. Verweht das Träumen des Fühlens ganz in Schlaf durch die Herzensruhe, dann webt Weltenleben in den Menschen herein als Menschenwesensmacht."
+      },
+      {
+        "anker": "m-fuehlen",
+        "seite": "210",
+        "typ": "mantram",
+        "titel": "Zweites Mantram (Fühlen) – «Sieh in des Fühlens Seelenwehen»",
+        "text": "Sieh in des Fühlens Seelenwehen,\nWie in dem Träumedämmern\nLeben aus Weltenfernen strömt;\nLaß in Schlaf durch die Herzensruhe\nMenschenfühlen still verwehen;\nUnd das Weltenleben geistert\nAls Menschenwesensmacht."
+      },
+      {
+        "anker": "wollen-deutung",
+        "seite": "212",
+        "typ": "deutung",
+        "titel": "Das Willenszauberwesen – wahre Magie",
+        "text": "Auf die Glieder, in denen sich das Wollen äußert, müssen wir nicht «Sieh hinter» oder «Sieh in», sondern «Sieh über» sagen: vom Haupte strömt das Denken herunter in das Wollen. Sehen wir in jeder Arm- und Beinbewegung den Strom des Wollens, so werden wir gewahr, wie in diesem Wollen ein geheimes Denken lebt – unser Wesen aus früheren Erdenleben, das durch die Glieder das irdische Dasein ergreift. Dieses Denken strömt als Licht durch Arme und Hände, durch Beine und Zehen; das Wollen verwandelt sich, und das Denken erscheint als Willenszauberwesen. Es wirkt magisch das unsichtbare Denken im Willen der Glieder – das ist wahre Magie."
+      },
+      {
+        "anker": "m-wollen",
+        "seite": "213",
+        "typ": "mantram",
+        "titel": "Drittes Mantram (Wollen) – «Sieh über des Wollens Leibeswirken»",
+        "text": "Sieh über des Wollens Leibeswirken,\nWie in schlafende Wirkensfelder\nDenken sich senkt aus Haupteskräften;\nLaß durch die Seelenschau zu Licht\nMenschenwollen sich verwandlen;\nUnd das Denken, es erscheinet\nAls Willenszauberwesen."
+      },
+      {
+        "anker": "schluss-wiederholung",
+        "seite": "214",
+        "typ": "wiederholung",
+        "titel": "Schlusswiederholung – die drei Mantren",
+        "text": "Sieh hinter des Denkens Sinneslicht,\nWie in der finstren Geisteszelle\nWollen sich hebt aus Leibestiefen;\nLasse fließen durch deiner Seele Stärke\nTotes Denken in das Weltennichts;\nUnd das Wollen, es erstehet\nAls Weltgedankenschaffen.\n\n* * *\n\nSieh in des Fühlens Seelenwehen,\nWie in dem Träumedämmern\nLeben aus Weltenfernen strömt;\nLaß in Schlaf durch die Herzensruhe\nMenschenfühlen still verwehen;\nUnd das Weltenleben geistert\nAls Menschenwesensmacht.\n\n* * *\n\nSieh über des Wollens Leibeswirken,\nWie in schlafende Wirkensfelder\nDenken sich senkt aus Haupteskräften;\nLaß durch die Seelenschau zu Licht\nMenschenwollen sich verwandlen;\nUnd das Denken, es erscheinet\nAls Willenszauberwesen."
+      },
+      {
+        "anker": "tafel",
+        "seite": "215",
+        "typ": "tafelzeichnung",
+        "titel": "Wandtafelzeichnung zur Achten Stunde",
+        "bild": "assets/tafeln/stunde-8.jpg",
+        "alt": "Wandtafel Rudolf Steiners vom 18. April 1924 (oberer Teil der Tafelseite): links eine helle, strahlende Figur mit einem Menschenprofil und nach unten ausstrahlenden Linien; in der Mitte ein gelb-grün-rot gefülltes Oval; rechts mehrere farbige Streifenfelder mit einem roten Ring. Darstellung von Denken, Fühlen und Wollen und ihrer Scheidung.",
+        "quelle": "GA 270i, Wandtafelzeichnungen, Tafel zur Achten Stunde (18.4.1924), oberer Teil der Seite",
+        "text": "Die bildliche Darstellung der Scheidung von Denken (strahlendes Haupt), Fühlen (Oval) und Wollen, wie sie ohne den physischen Leib auseinandertreten. Unmittelbare Lese- und Meditationshilfe zu den drei Mantren dieser Stunde."
+      }
+    ],
+    "tafelzeichnungen": [
+      {
+        "anker": "tafel",
+        "bild": "assets/tafeln/stunde-8.jpg",
+        "quelle": "GA 270i (18.4.1924), oberer Teil"
+      }
+    ]
+  },
+  "stunde-9": {
+    "titel": "Neunte Stunde",
+    "ort": "Dornach",
+    "datum": "1924-04-22",
+    "ga": "270a",
+    "seiten": "217–233",
+    "gruppe": "Geschichte der Verwandlung",
+    "abschnitte": [
+      {
+        "anker": "einleitung",
+        "seite": "217",
+        "typ": "text",
+        "titel": "Einleitung",
+        "text": "Meine lieben Freunde! Wir lassen zunächst – ohne dabei etwas zu notieren – diejenige Mahnung an die Menschenseele an unserem Gemüte vorüberziehen, welche den Menschen auf das uralt heilige Wort des Erkennens hinweist:"
+      },
+      {
+        "anker": "m-weltenwort",
+        "seite": "217",
+        "typ": "mantram",
+        "titel": "Das Weltenwort (Wiederholung)",
+        "text": "O Mensch, erkenne dich selbst!\nSo tönt das Weltenwort.\nDu hörst es seelenkräftig,\nDu fühlst es geistgewaltig.\n\nWer spricht so weltenmächtig?\nWer spricht so herzinniglich?\n\nWirkt es durch des Raumes Weitenstrahlung\nIn deines Sinnes Seinserleben?\nTönt es durch der Zeiten Wellenweben\nIn deines Lebens Werdestrom?\n\nBist du es selbst, der sich\nIm Raumesfühlen, im Zeiterleben\nDas Wort erschafft, dich fremd\nErfühlend in Raumes Seelenleere,\nWeil du des Denkens Kraft\nVerlierst im Zeitvernichtungsstrom."
+      },
+      {
+        "anker": "nach-weltenwort",
+        "seite": "218",
+        "typ": "deutung",
+        "titel": "Drei innere Erlebnisse – Ruhesterne, Wandelsterne, Erdenschwere",
+        "text": "Wir können hinaufschauen in die Weiten der Sterne und unseren Blick auf den Ruhesternen ruhen lassen, die uns bestimmte Formen ihrer Gruppierung entgegenbringen; wenn dieses Bild aus unserem eigenen Inneren auftaucht, erkraftet sich die Seele, ihr Seelisches freizubekommen vom Körperlichen. Wir können ferner hinschauen auf alles, was uns von den Wandelsternen durchströmt, und uns ein Bild davon machen – das Hineinverwobensein in die Bewegung des Umkreises als ein zweites Erleben. Und wir können gewahr werden, was uns an die Erde fesselt, was uns zum schweren Körper macht – das ist ein drittes.\n\nAus diesen drei inneren Erlebnissen kommen wir dazu, den Anfang zu machen, in die geistige Welt einzutreten – und diesen Anfang kann heute jeder Mensch machen. Dass ihn so wenige machen, liegt daran, dass die meisten nicht so intim erleben wollen; sie möchten tumultuarischer erleben, so dass ihnen die geistige Welt mit allen Eigenschaften der sinnlichen entgegenträte. Aber Tische gibt es nicht in der geistigen Welt, nur geistige Wesenheiten – wahrzunehmen mit demjenigen im Menschen, was selber geistig ist."
+      },
+      {
+        "anker": "uebung-hinfuehrung",
+        "seite": "221",
+        "typ": "deutung",
+        "titel": "Der ganze Leib als Sinnesorgan",
+        "text": "Zunächst handelt es sich darum, dass wir uns im späteren Leben wirklich zu dem machen, was wir als Kind in hohem Grade sind: fast ganz Sinnesorgan, Auge, Ohr. Das Kind nimmt alles wahr, wie wenn sein ganzer Körper Sinnesorgan wäre. In dem Augenblick, wo es sich auf die Füße stellt und seine Bewegungen in die Kräfte der Erde hineinfallen, hört das intime Sinne-Sein auf. Wir müssen uns wieder als ein einziges großes Tastorgan erleben, das unser ganzer Leib ist: indem wir uns durch unseren ganzen Körper auf die Erde stellen und die Erde mit den Fußsohlen betasten, fühlen wir uns erst in den Erdenkräften drinnenstehend. Daher die vierstufige Mahnung an der Schwelle zur geistigen Welt:"
+      },
+      {
+        "anker": "m-uebung",
+        "seite": "222",
+        "typ": "mantram",
+        "titel": "Die intime Übung – «O Mensch, ertaste / erlebe / erfühle / erdenke»",
+        "text": "O Mensch, ertaste in deines Leibes ganzem Sein,\nWie Erdenkräfte dir im Dasein Stütze sind.\n\nO Mensch, erlebe in deines Tastens ganzem Kreis,\nWie Wasserwesen dir im Dasein Bildner sind.\n\nO Mensch, erfühle in deines Lebens ganzem Weben,\nWie Luftgewalten dir im Dasein Pfleger sind.\n\nO Mensch, erdenke in deines Fühlens ganzem Strömen,\nWie Feuermächte dir im Dasein Helfer sind.\n\nO Mensch, erschaue dich in der Elemente Reich.\n(Erde – Wasser – Luft – Feuer)\n\nO Mensch, so lasse walten in deiner Seele Tiefen\nDer Wandelsterne weltenweisende Mächte.\nO Mensch, erwese dich durch den Weltenkreis.\n\nO Mensch, erhalte dir in deines Geistes Schaffen\nDer Ruhesterne himmelkündende Worte.\nO Mensch, erschaffe dich durch die Himmelsweisheit."
+      },
+      {
+        "anker": "uebung-deutung",
+        "seite": "224",
+        "typ": "deutung",
+        "titel": "Vom physischen Fühlen ins Moralische – Stütze, Bildner, Pfleger, Helfer",
+        "text": "Wären nur die ertastbaren Erdenkräfte in uns, wir würden nach unten immerdar zerfallen; die Wasserkräfte bilden uns aus dem Weltenäther zum gestalteten Leib. Auf das Feste hat nur die Erde Einfluss, auf das Flüssige die ganze weite Welt des Äthers. Den Atem, die Luftgewalten, die uns aus hilflosen Kindern zu Menschen machen, können wir nicht mit dem Gedanken erreichen, nur lieben und ihnen dankbar sein.\n\nAber die Wärme in uns können wir mit dem Gedanken erreichen – hier ist ein bedeutsames Geheimnis: senkt man den Gedanken hinunter in den eigenen Wärme-Organismus (die Wärme von Lunge, Leber, Herz), so macht der Gedanke die bloße Wärme zur Flamme; er zieht leuchtend, strahlend in die Organe ein. Man durchleuchtet sich durch den Gedanken nach den Unterschiedenheiten der Wärme. So geht das Durchkraften vom physischen Fühlen ins Moralische über: Stütze (physisch), Bildner (physisch, ätherisch durchzogen), Pfleger (schon moralisch), Helfer/Kameraden (Wesen, die uns gleichgeartet sind)."
+      },
+      {
+        "anker": "seele-geist",
+        "seite": "226",
+        "typ": "deutung",
+        "titel": "Seele durch den Weltenkreis, Geist durch die Himmelsweisheit – Leben, Liebe, Frommsein",
+        "text": "Ebenso wie man den Leib durchfühlt, kann man die Seele durchfühlen – dann konzentriert man sich nicht auf die Elemente, sondern auf das, was in den Wandelsternen um die Erde zieht: «O Mensch, so lasse walten in deiner Seele Tiefen / Der Wandelsterne weltenweisende Mächte.» Und das Geistige in uns erfassen wir, wenn wir den Geist zu den Ruhesternen erheben, deren Gruppenformungen zur Himmelsschrift werden: «O Mensch, erhalte dir in deines Geistes Schaffen / Der Ruhesterne himmelkündende Worte.»\n\nIndem wir den ersten Teil absolvieren, fühlen wir das Leben; den zweiten Teil – die Liebe zu aller Welt; den dritten Teil – das Frommsein. Es ist ein Hinaufheben vom Leben durch die Liebe zum Frommsein, zum religiösen Welterleben. Dann hört die Welt auf, physisch für uns zu sein: das Physische ist nur Schein, Maja; die Welt ist durch und durch Geist – und wir sind jenseits der Schwelle."
+      },
+      {
+        "anker": "dreiheit",
+        "seite": "228",
+        "typ": "deutung",
+        "titel": "Denken, Fühlen, Wollen im Weltenall aufgeteilt",
+        "text": "Jenseits der Schwelle empfinden wir, wie der Leib hier Denken, Fühlen, Wollen durch seine Leibeskraft zusammenhält; leibfrei aber sind sie eine Dreiheit. Mit dem Wollen werden wir eins mit der Erde; im Fühlen erleben wir die kreisenden Gewalten der Wandelsterne; das Denken fliegt hinaus zu den Ruhesternen und ruht in ihnen. Mein Denken ruht in den Ruhesternen, mein Fühlen bewegt sich in den Wandelsternen, mein Wollen gliedert sich den Kräften der Erde ein – Denken, Fühlen, Wollen sind im Weltenall aufgeteilt.\n\nSie müssen mit festem inneren Erkraften wieder zu einer Einheit zusammengefügt werden: dem Denken bei den Ruhesternen teilt man Fühlen und Wollen mit (man bewegt im Geiste den Sternenhimmel); dem Fühlen bei den Wandelsternen teilt man Denken und Wollen mit (man hält den Augenblick fest wie sonst nur die Fixsterne); dem an die Erde gebundenen Wollen teilt man Fühlen und Denken mit (man bewegt im Gedanken die Erde, macht sie wieder zum Ruhestern). Dazu lasse man eine besonders kräftig wirkende mantrische Formel walten:"
+      },
+      {
+        "anker": "m-trag",
+        "seite": "230",
+        "typ": "mantram",
+        "titel": "Mantram – «Trag' in Denk-Erleben» (Geist – Seele – Leib)",
+        "text": "Trag' in Denk-Erleben\nDas als reines Sinnen\nIn der Seele lichtvoll glänzt\nFühlen und Wollen\nUnd du bist Geist\nUnter reinen Geistern.\n\nTrag' in Fühlenskräfte\nDie als edle Liebe\nDurch die Seele wärmend weben\nDenken und Wollen\nUnd du bist Seele\nIm Reich der Geister.\n\nTrag' in Willensmächte\nDie als Geistestriebe\nUm die Seele wirkend leben\nDenken und Fühlen\nUnd du schaust dich selbst\nAls Leib aus Geisteshöhen."
+      },
+      {
+        "anker": "schluss",
+        "seite": "232",
+        "typ": "text",
+        "text": "Was so erkundet wird aus der geistigen Welt, was der Eingeweihte erlebt – in Worte gefasst sind es mantrische Worte, und wer es nacherlebt, wird in die geistige Welt hineingeführt. Es ist eine wirkliche Führerschaft in die geistige Welt. Dann, wenn solches euch immer klarer wird, werdet ihr mit immer größerem Welterleben die Worte hören:"
+      },
+      {
+        "anker": "m-weltenwort-schluss",
+        "seite": "232",
+        "typ": "wiederholung",
+        "titel": "Schlusswiederholung – Das Weltenwort",
+        "text": "O Mensch, erkenne dich selbst!\nSo tönt das Weltenwort.\nDu hörst es seelenkräftig,\nDu fühlst es geistgewaltig.\n\nWer spricht so weltenmächtig?\nWer spricht so herzinniglich?\n\nWirkt es durch des Raumes Weitenstrahlung\nIn deines Sinnes Seinserleben?\nTönt es durch der Zeiten Wellenweben\nIn deines Lebens Werdestrom?\n\nBist du es selbst, der sich\nIm Raumesfühlen, im Zeiterleben\nDas Wort erschafft, dich fremd\nErfühlend in Raumes Seelenleere,\nWeil du des Denkens Kraft\nVerlierst im Zeitvernichtungsstrom."
+      }
+    ],
+    "tafelzeichnungen": []
   }
 }
+
