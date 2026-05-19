@@ -1,5 +1,6 @@
 ---
 import type { Vortrag } from '../lib/vortraege';
+import { tx } from '../lib/typografie';
 
 interface Props {
   vortrag: Vortrag;
@@ -15,9 +16,9 @@ function assetUrl(path: string): string {
 ---
 <article class="vortrag">
   <header class="vortrag-head">
-    <h1 class="vortrag-titel">{vortrag.titel}</h1>
+    <h1 class="vortrag-titel">{tx(vortrag.titel)}</h1>
     <p class="vortrag-meta">
-      <span>{vortrag.ort}</span>
+      <span>{tx(vortrag.ort)}</span>
       <span class="vortrag-meta-sep">·</span>
       <time datetime={vortrag.datum}>{vortrag.datum}</time>
       <span class="vortrag-meta-sep">·</span>
@@ -33,19 +34,19 @@ function assetUrl(path: string): string {
       return (
         <section id={a.anker} class={`abschnitt abschnitt-${a.typ}`}>
           {a.seite && <span class="abschnitt-seite" aria-label={`Druckseite ${a.seite}`}>{a.seite}</span>}
-          {a.titel && <h2 class="abschnitt-titel">{a.titel}</h2>}
+          {a.titel && <h2 class="abschnitt-titel">{tx(a.titel)}</h2>}
           {isVerse && verseLines.length > 0 && (
             <div class="vortrag-lines">
               {verseLines.map((line) => (
-                line === '' ? <div class="line-break" aria-hidden="true"></div> : <span class="line">{line}</span>
+                line === '' ? <div class="line-break" aria-hidden="true"></div> : <span class="line">{tx(line)}</span>
               ))}
             </div>
           )}
-          {!isVerse && paragraphs.map((p) => <p class="abschnitt-text">{p}</p>)}
+          {!isVerse && paragraphs.map((p) => <p class="abschnitt-text">{tx(p)}</p>)}
           {a.bild && (
             <figure class="abschnitt-bild">
-              <img src={assetUrl(a.bild)} alt={a.alt || ''} loading="lazy" />
-              {a.quelle && <figcaption>{a.quelle}</figcaption>}
+              <img src={assetUrl(a.bild)} alt={tx(a.alt || '')} loading="lazy" />
+              {a.quelle && <figcaption>{tx(a.quelle)}</figcaption>}
             </figure>
           )}
         </section>

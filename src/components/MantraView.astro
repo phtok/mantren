@@ -2,6 +2,7 @@
 import type { Mantra } from '../lib/mantren';
 import type { KommentarEntry } from '../lib/kommentar';
 import KommentarKlappe from './KommentarKlappe.astro';
+import { tx } from '../lib/typografie';
 
 interface Props {
   mantra: Mantra;
@@ -11,10 +12,8 @@ interface Props {
 const { mantra, kommentare } = Astro.props;
 
 function renderLine(line: string) {
-  if (line.startsWith('/')) {
-    return { text: line.slice(1), cont: true };
-  }
-  return { text: line, cont: false };
+  const raw = line.startsWith('/') ? line.slice(1) : line;
+  return { text: tx(raw), cont: line.startsWith('/') };
 }
 
 // Je Strophe (Part mit lines) den nächsten Kommentar zuordnen.
@@ -33,8 +32,8 @@ const kommentarForPart = (part: { lines?: string[] }) => {
       const entry = kommentarForPart(part);
       return (
         <section class="part">
-          {part.regie && <p class="regie">{part.regie}</p>}
-          {part.section && <h2 class="section-head">{part.section}</h2>}
+          {part.regie && <p class="regie">{tx(part.regie)}</p>}
+          {part.section && <h2 class="section-head">{tx(part.section)}</h2>}
           {part.lines && part.lines.length > 0 && (
             <p class="lines">
               {part.lines.map((raw) => {

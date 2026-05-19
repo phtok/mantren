@@ -6,6 +6,7 @@ import LectureView from '../components/LectureView.astro';
 import { mantren, neighbours, chapters, rollingTitle, type Mantra } from '../lib/mantren';
 import { vortraege, vortragNeighbours, type Vortrag } from '../lib/vortraege';
 import { kommentareForMantra, firstTafelbild } from '../lib/kommentar';
+import { tx } from '../lib/typografie';
 
 type Props =
   | { kind: 'mantra'; mantra: Mantra }
@@ -72,7 +73,7 @@ const tafel = kommentare ? firstTafelbild(kommentare.entries) : undefined;
 const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${base}${tafel.bild}`) : null;
 const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vortrag}#${tafel.anker}` : null;
 ---
-<Base title={pageTitle} chapter={chapter} number={number} section={section}>
+<Base title={tx(pageTitle)} chapter={tx(chapter)} number={number} section={tx(section)}>
   {props.kind === 'mantra' && (
     <div class={`mantra-shell${tafel ? ' mantra-shell--with-tafel' : ''}`}>
       <div class="mantra-col">
@@ -86,12 +87,12 @@ const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vo
           <figure class="tafel-figure">
             {tafelDeeplink ? (
               <a href={tafelDeeplink} class="tafel-link">
-                <img src={tafelImgSrc} alt={tafel.beschreibung} loading="lazy" decoding="async" />
+                <img src={tafelImgSrc} alt={tx(tafel.beschreibung)} loading="lazy" decoding="async" />
               </a>
             ) : (
-              <img src={tafelImgSrc} alt={tafel.beschreibung} loading="lazy" decoding="async" />
+              <img src={tafelImgSrc} alt={tx(tafel.beschreibung)} loading="lazy" decoding="async" />
             )}
-            <figcaption class="tafel-caption">{tafel.quelle}</figcaption>
+            <figcaption class="tafel-caption">{tx(tafel.quelle)}</figcaption>
           </figure>
         </aside>
       )}
