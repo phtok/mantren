@@ -12,7 +12,7 @@
       "270b": "10.–19. Stunde; Tafeltexte der 17. Stunde",
       "270c": "Wiederholungsstunden; Prager u. Berner Einzelstunden; Notizen"
     },
-    "stand": "GA 270a + 270b + 270c vollstaendig (30 Vortragsseiten, 45 Strophen-Kommentare, 13 Tafelbilder). Apparat eingearbeitet: Schluss der 19. Stunde (GA 270b, S. 207) als Abschnitt stunde-19#schluss-ausschluss; editorische_hinweise (Wort-/Tafelvarianten, Stenogramm-Notizen) zu 1.1, 1.3, 1.4, 3.1, 7.1, 8.1, 8.3, 9.1. Editorischer Rahmen separat in quellen.json / impressum.md. Anfuehrungskonvention ‹…›."
+    "stand": "GA 270a + 270b + 270c vollständig; Breslau (Perseus 2016) als eigene Vortragsseiten breslau-1, breslau-2 ergänzt (32 Seiten gesamt). Breslau systematisch geprüft – kein neues Mantram: breslau-1 = App 1.1–1.4 (Erdengründe/Geistesbote/Daseinswort/Drei Tiere), breslau-2 = Weltenwort + App 3.1–3.3 (Untertauch). Kommentare 1.1–1.4, 3.1–3.3 + Erste Tafel um Breslau-varianten/Parallelstellen erweitert. Quelle eigenständig (Stenogramm Lilly Kolisko, Übertragung Elena Gradenwitz, hrsg. Thomas Meyer). Zusätzlich Volltext-Index breslau-volltext (Steiner-Sprechwortlaut gemeinfrei, eigene Nacherzählung der Vortragsführung; Perseus-Editionsapparat nur bibliografisch, Status: geschützt-nicht-freigegeben). Rechtsstand recherchiert (LG München I: Steiner gemeinfrei seit 1975; Perseus-Edition 2016 geschützt). Anführungskonvention ‹…›."
   },
   "tafeln": {
     "erste-tafel": {
@@ -54,6 +54,12 @@
           "art": "Dritte Tafel",
           "vortrag": "stunde-18",
           "anker": "m-goetter"
+        },
+        {
+          "ref": "Breslau, Zweite Stunde (13.6.1924) – ‹So tönt es von überall her: O Mensch, erkenne dich selbst!›",
+          "art": "Parallelstelle (Breslau)",
+          "vortrag": "breslau-2",
+          "anker": "m-weltenwort"
         }
       ],
       "kerngedanken": {
@@ -245,6 +251,12 @@
           "art": "Variante (GA 270c)",
           "vortrag": "prag-1",
           "anker": "m-erdengruende"
+        },
+        {
+          "ref": "Breslau, Erste Stunde (12.6.1924) – frühe Fassung (Stenogramm Lilly Kolisko)",
+          "art": "Variante (Breslau)",
+          "vortrag": "breslau-1",
+          "anker": "m-erdengruende"
         }
       ],
       "kerngedanken": {
@@ -278,7 +290,7 @@
         }
       ],
       "varianten": {
-        "prosa": "In der Ersten Wiederholungsstunde (GA 270c, 6.9.1924) spricht der Hüter dieses Mantram in einer erweiterten Fassung: ‹Wo auf Erdengründen …› wird unmittelbar fortgesetzt durch die Strophen ‹Und aus Finsternissen hellet sich … Sieh, ich bin der Erkenntnis einzig Tor›, die in der App-Stunde 1 als eigenes Mantram (1.2) geführt sind. In GA 270c bilden beide eine zusammenhängende Rede des Hüters. Dieses Mantram wurde auch in der Ersten Prager Stunde (GA 270c, 3.4.1924) gegeben – einer der frühen, ausserhalb Dornachs gehaltenen Einzelvorträge, mit ausführlicher Einleitung über Konstitution und Sektionen der Freien Hochschule für Geisteswissenschaft.",
+        "prosa": "In der Ersten Wiederholungsstunde (GA 270c, 6.9.1924) spricht der Hüter dieses Mantram in einer erweiterten Fassung: ‹Wo auf Erdengründen …› wird unmittelbar fortgesetzt durch die Strophen ‹Und aus Finsternissen hellet sich … Sieh, ich bin der Erkenntnis einzig Tor›, die in der App-Stunde 1 als eigenes Mantram (1.2) geführt sind. In GA 270c bilden beide eine zusammenhängende Rede des Hüters. Dieses Mantram wurde auch in der Ersten Prager Stunde (GA 270c, 3.4.1924) gegeben – einer der frühen, ausserhalb Dornachs gehaltenen Einzelvorträge, mit ausführlicher Einleitung über Konstitution und Sektionen der Freien Hochschule für Geisteswissenschaft. Dieses Mantram wurde auch in der Ersten Breslauer Stunde (12. Juni 1924) gegeben – mit der besonders betonten Prüfung der Einsamkeit auf dem Meditationsweg und der Forderung radikaler Selbsterkenntnis (Stenogramm Lilly Kolisko, Perseus 2016).",
         "fassungen": [
           {
             "fassung": "GA 270a, Erste Stunde (15.2.1924) – App-Fassung 1.1",
@@ -297,6 +309,12 @@
             "text": "‹Wo auf Erdengründen, Farb' an Farbe …›",
             "quelle": "GA 270c, S. 179–185",
             "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen."
+          },
+          {
+            "fassung": "Breslau, Erste Stunde (12.6.1924)",
+            "text": "‹Wo auf Erdengründen, Farb' an Farbe …›",
+            "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest."
           }
         ]
       },
@@ -350,6 +368,12 @@
           "art": "Variante (GA 270c)",
           "vortrag": "prag-1",
           "anker": "m-geistesbote"
+        },
+        {
+          "ref": "Breslau, Erste Stunde (12.6.1924) – frühe Fassung (Stenogramm Lilly Kolisko)",
+          "art": "Variante (Breslau)",
+          "vortrag": "breslau-1",
+          "anker": "m-geistesbote"
         }
       ],
       "kerngedanken": {
@@ -379,7 +403,7 @@
         }
       ],
       "varianten": {
-        "prosa": "In der Ersten Wiederholungsstunde (GA 270c) ist dieses Mantram nicht eigenständig, sondern unmittelbare Fortsetzung des Hüter-Mantrams 1.1 (‹Wo auf Erdengründen …›) und mündet in den Schlussvers ‹Sieh, ich bin der Erkenntnis einzig Tor›. Dieses Mantram wurde auch in der Ersten Prager Stunde (GA 270c, 3.4.1924) gegeben – einer der frühen, ausserhalb Dornachs gehaltenen Einzelvorträge, mit ausführlicher Einleitung über Konstitution und Sektionen der Freien Hochschule für Geisteswissenschaft.",
+        "prosa": "In der Ersten Wiederholungsstunde (GA 270c) ist dieses Mantram nicht eigenständig, sondern unmittelbare Fortsetzung des Hüter-Mantrams 1.1 (‹Wo auf Erdengründen …›) und mündet in den Schlussvers ‹Sieh, ich bin der Erkenntnis einzig Tor›. Dieses Mantram wurde auch in der Ersten Prager Stunde (GA 270c, 3.4.1924) gegeben – einer der frühen, ausserhalb Dornachs gehaltenen Einzelvorträge, mit ausführlicher Einleitung über Konstitution und Sektionen der Freien Hochschule für Geisteswissenschaft. Dieses Mantram wurde auch in der Ersten Breslauer Stunde (12. Juni 1924) gegeben – mit der besonders betonten Prüfung der Einsamkeit auf dem Meditationsweg und der Forderung radikaler Selbsterkenntnis (Stenogramm Lilly Kolisko, Perseus 2016).",
         "fassungen": [
           {
             "fassung": "GA 270a, Erste Stunde – App-Fassung 1.2",
@@ -398,6 +422,12 @@
             "text": "‹Und aus Finsternissen hellet sich …› (der Geistesbote)",
             "quelle": "GA 270c, S. 179–185",
             "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen."
+          },
+          {
+            "fassung": "Breslau, Erste Stunde (12.6.1924)",
+            "text": "‹Und aus Finsternissen hellet sich …›",
+            "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest."
           }
         ]
       }
@@ -447,6 +477,12 @@
           "art": "Variante (GA 270c)",
           "vortrag": "prag-1",
           "anker": "m-daseinswort"
+        },
+        {
+          "ref": "Breslau, Erste Stunde (12.6.1924) – frühe Fassung (Stenogramm Lilly Kolisko)",
+          "art": "Variante (Breslau)",
+          "vortrag": "breslau-1",
+          "anker": "m-daseinswort"
         }
       ],
       "kerngedanken": {
@@ -476,7 +512,7 @@
         }
       ],
       "varianten": {
-        "prosa": "In der Ersten Wiederholungsstunde (GA 270c) spricht ‹der Hüter am Abgrund› dieses Mantram. Die Vortragsfassung lautet ‹Wollend wirkende Daseinswort›, der zugehörige Tafeltext jedoch ‹Wellend wirkende Daseinswort› – eine überlieferte Wort-Variante. Dieses Mantram wurde auch in der Ersten Prager Stunde (GA 270c, 3.4.1924) gegeben – einer der frühen, ausserhalb Dornachs gehaltenen Einzelvorträge, mit ausführlicher Einleitung über Konstitution und Sektionen der Freien Hochschule für Geisteswissenschaft.",
+        "prosa": "In der Ersten Wiederholungsstunde (GA 270c) spricht ‹der Hüter am Abgrund› dieses Mantram. Die Vortragsfassung lautet ‹Wollend wirkende Daseinswort›, der zugehörige Tafeltext jedoch ‹Wellend wirkende Daseinswort› – eine überlieferte Wort-Variante. Dieses Mantram wurde auch in der Ersten Prager Stunde (GA 270c, 3.4.1924) gegeben – einer der frühen, ausserhalb Dornachs gehaltenen Einzelvorträge, mit ausführlicher Einleitung über Konstitution und Sektionen der Freien Hochschule für Geisteswissenschaft. Dieses Mantram wurde auch in der Ersten Breslauer Stunde (12. Juni 1924) gegeben – mit der besonders betonten Prüfung der Einsamkeit auf dem Meditationsweg und der Forderung radikaler Selbsterkenntnis (Stenogramm Lilly Kolisko, Perseus 2016).",
         "fassungen": [
           {
             "fassung": "GA 270c, Erste Wiederholungsstunde – Vortragsfassung",
@@ -495,6 +531,12 @@
             "text": "‹Aus den Weiten der Raumeswesen …› (das Daseinswort)",
             "quelle": "GA 270c, S. 179–185",
             "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen."
+          },
+          {
+            "fassung": "Breslau, Erste Stunde (12.6.1924)",
+            "text": "‹Aus den Weiten der Raumeswesen …›",
+            "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest."
           }
         ]
       },
@@ -568,6 +610,12 @@
           "art": "Variante (GA 270c)",
           "vortrag": "prag-1",
           "anker": "m-dreitiere"
+        },
+        {
+          "ref": "Breslau, Erste Stunde (12.6.1924) – frühe Fassung (Stenogramm Lilly Kolisko)",
+          "art": "Variante (Breslau)",
+          "vortrag": "breslau-1",
+          "anker": "m-dreitiere"
         }
       ],
       "kerngedanken": {
@@ -601,7 +649,7 @@
         }
       ],
       "varianten": {
-        "prosa": "In der Ersten Wiederholungsstunde (GA 270c, 6.9.1924) spricht der Hüter das Drei-Tiere-Mantram wortgleich zur App-Fassung; es schliesst dort mit der Strophe ‹Erst wenn die drei von dir besiegt, / Werden Flügel deiner Seele wachsen …›. Die deutende Erklärung der drei Tiere ist ein eigener Spruch (App-Mantram 2, Kommentar 2.1). Dieses Mantram wurde auch in der Ersten Prager Stunde (GA 270c, 3.4.1924) gegeben – einer der frühen, ausserhalb Dornachs gehaltenen Einzelvorträge, mit ausführlicher Einleitung über Konstitution und Sektionen der Freien Hochschule für Geisteswissenschaft.",
+        "prosa": "In der Ersten Wiederholungsstunde (GA 270c, 6.9.1924) spricht der Hüter das Drei-Tiere-Mantram wortgleich zur App-Fassung; es schliesst dort mit der Strophe ‹Erst wenn die drei von dir besiegt, / Werden Flügel deiner Seele wachsen …›. Die deutende Erklärung der drei Tiere ist ein eigener Spruch (App-Mantram 2, Kommentar 2.1). Dieses Mantram wurde auch in der Ersten Prager Stunde (GA 270c, 3.4.1924) gegeben – einer der frühen, ausserhalb Dornachs gehaltenen Einzelvorträge, mit ausführlicher Einleitung über Konstitution und Sektionen der Freien Hochschule für Geisteswissenschaft. Dieses Mantram wurde auch in der Ersten Breslauer Stunde (12. Juni 1924) gegeben – mit der besonders betonten Prüfung der Einsamkeit auf dem Meditationsweg und der Forderung radikaler Selbsterkenntnis (Stenogramm Lilly Kolisko, Perseus 2016).",
         "fassungen": [
           {
             "fassung": "GA 270a, Erste Stunde – App-Fassung 1.4",
@@ -620,6 +668,12 @@
             "text": "‹Doch du mußt den Abgrund achten …› (die drei Tiere)",
             "quelle": "GA 270c, S. 179–185",
             "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen."
+          },
+          {
+            "fassung": "Breslau, Erste Stunde (12.6.1924)",
+            "text": "‹Doch du mußt den Abgrund achten …›",
+            "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest."
           }
         ]
       },
@@ -685,6 +739,12 @@
           "art": "Variante (GA 270c)",
           "vortrag": "london-2",
           "anker": "m-untertauch"
+        },
+        {
+          "ref": "Breslau, Zweite Stunde (13.6.1924) – frühe Fassung mit Rhythmus-Deutung",
+          "art": "Variante (Breslau)",
+          "vortrag": "breslau-2",
+          "anker": "m-untertauch"
         }
       ],
       "kerngedanken": {
@@ -703,7 +763,7 @@
         }
       ],
       "varianten": {
-        "prosa": "Dieses Mantram erscheint auch in der Zweiten Wiederholungsstunde (GA 270c, 9.9.1924) als Teil der dreistrophigen Untertauch-Meditation ‹Sieh in dir Gedankenweben / Vernimm in dir Gefühle-Strömen / Laß walten in dir den Willens-Stoß›. Die 270c-Fassung ist wortgleich mit der App-Fassung aus der Dritten Stunde (GA 270a); Steiner kündigt dort an, den Spruch in der nächsten Stunde an die Tafel zu schreiben und mit allen Eigenheiten zu erklären. In der Dritten Wiederholungsstunde (GA 270c, 11.9.1924) wird der dreistrophige Spruch wortgleich wiederholt und um die Rhythmus-Lehre (trochäisch / jambisch / spondäisch) sowie die Wortsteigerung verehren–bedenken–ergreifen erweitert. Dieses Mantram wurde auch in der Zweiten Prager Stunde (GA 270c, 5.4.1924) gegeben – mit der Lehre vom Gift als Abbaukraft und der Rhythmus-Deutung (trochäisch / jambisch / spondäisch; verehren–bedenken–ergreifen). Auch in den Notizen der Zweiten Londoner Stunde (GA 270c, 27.8.1924) erscheint dieses Mantram mit der Rhythmus-Deutung; die Notizen belegen, dass Michael-Zeichen und Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden.",
+        "prosa": "Dieses Mantram erscheint auch in der Zweiten Wiederholungsstunde (GA 270c, 9.9.1924) als Teil der dreistrophigen Untertauch-Meditation ‹Sieh in dir Gedankenweben / Vernimm in dir Gefühle-Strömen / Laß walten in dir den Willens-Stoß›. Die 270c-Fassung ist wortgleich mit der App-Fassung aus der Dritten Stunde (GA 270a); Steiner kündigt dort an, den Spruch in der nächsten Stunde an die Tafel zu schreiben und mit allen Eigenheiten zu erklären. In der Dritten Wiederholungsstunde (GA 270c, 11.9.1924) wird der dreistrophige Spruch wortgleich wiederholt und um die Rhythmus-Lehre (trochäisch / jambisch / spondäisch) sowie die Wortsteigerung verehren–bedenken–ergreifen erweitert. Dieses Mantram wurde auch in der Zweiten Prager Stunde (GA 270c, 5.4.1924) gegeben – mit der Lehre vom Gift als Abbaukraft und der Rhythmus-Deutung (trochäisch / jambisch / spondäisch; verehren–bedenken–ergreifen). Auch in den Notizen der Zweiten Londoner Stunde (GA 270c, 27.8.1924) erscheint dieses Mantram mit der Rhythmus-Deutung; die Notizen belegen, dass Michael-Zeichen und Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden. Auch in der Zweiten Breslauer Stunde (13. Juni 1924) erscheint dieses Mantram, eingebettet in die Deutung des Denkens als Leichnam des vorirdischen Geistig-Seelischen und die Steigerung verehren–bedenken–ergreifen.",
         "fassungen": [
           {
             "fassung": "GA 270a, Dritte Stunde – App-Fassung 3.1",
@@ -734,6 +794,12 @@
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 238–240",
             "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden."
+          },
+          {
+            "fassung": "Breslau, Zweite Stunde (13.6.1924)",
+            "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
+            "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
+            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild)."
           }
         ]
       },
@@ -789,6 +855,12 @@
           "art": "Variante (GA 270c)",
           "vortrag": "london-2",
           "anker": "m-untertauch"
+        },
+        {
+          "ref": "Breslau, Zweite Stunde (13.6.1924) – frühe Fassung mit Rhythmus-Deutung",
+          "art": "Variante (Breslau)",
+          "vortrag": "breslau-2",
+          "anker": "m-untertauch"
         }
       ],
       "kerngedanken": {
@@ -807,7 +879,7 @@
         }
       ],
       "varianten": {
-        "prosa": "Dieses Mantram erscheint auch in der Zweiten Wiederholungsstunde (GA 270c, 9.9.1924) als Teil der dreistrophigen Untertauch-Meditation ‹Sieh in dir Gedankenweben / Vernimm in dir Gefühle-Strömen / Laß walten in dir den Willens-Stoß›. Die 270c-Fassung ist wortgleich mit der App-Fassung aus der Dritten Stunde (GA 270a); Steiner kündigt dort an, den Spruch in der nächsten Stunde an die Tafel zu schreiben und mit allen Eigenheiten zu erklären. In der Dritten Wiederholungsstunde (GA 270c, 11.9.1924) wird der dreistrophige Spruch wortgleich wiederholt und um die Rhythmus-Lehre (trochäisch / jambisch / spondäisch) sowie die Wortsteigerung verehren–bedenken–ergreifen erweitert. Dieses Mantram wurde auch in der Zweiten Prager Stunde (GA 270c, 5.4.1924) gegeben – mit der Lehre vom Gift als Abbaukraft und der Rhythmus-Deutung (trochäisch / jambisch / spondäisch; verehren–bedenken–ergreifen). Auch in den Notizen der Zweiten Londoner Stunde (GA 270c, 27.8.1924) erscheint dieses Mantram mit der Rhythmus-Deutung; die Notizen belegen, dass Michael-Zeichen und Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden.",
+        "prosa": "Dieses Mantram erscheint auch in der Zweiten Wiederholungsstunde (GA 270c, 9.9.1924) als Teil der dreistrophigen Untertauch-Meditation ‹Sieh in dir Gedankenweben / Vernimm in dir Gefühle-Strömen / Laß walten in dir den Willens-Stoß›. Die 270c-Fassung ist wortgleich mit der App-Fassung aus der Dritten Stunde (GA 270a); Steiner kündigt dort an, den Spruch in der nächsten Stunde an die Tafel zu schreiben und mit allen Eigenheiten zu erklären. In der Dritten Wiederholungsstunde (GA 270c, 11.9.1924) wird der dreistrophige Spruch wortgleich wiederholt und um die Rhythmus-Lehre (trochäisch / jambisch / spondäisch) sowie die Wortsteigerung verehren–bedenken–ergreifen erweitert. Dieses Mantram wurde auch in der Zweiten Prager Stunde (GA 270c, 5.4.1924) gegeben – mit der Lehre vom Gift als Abbaukraft und der Rhythmus-Deutung (trochäisch / jambisch / spondäisch; verehren–bedenken–ergreifen). Auch in den Notizen der Zweiten Londoner Stunde (GA 270c, 27.8.1924) erscheint dieses Mantram mit der Rhythmus-Deutung; die Notizen belegen, dass Michael-Zeichen und Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden. Auch in der Zweiten Breslauer Stunde (13. Juni 1924) erscheint dieses Mantram, eingebettet in die Deutung des Denkens als Leichnam des vorirdischen Geistig-Seelischen und die Steigerung verehren–bedenken–ergreifen.",
         "fassungen": [
           {
             "fassung": "GA 270a, Dritte Stunde – App-Fassung 3.2",
@@ -838,6 +910,12 @@
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 238–240",
             "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden."
+          },
+          {
+            "fassung": "Breslau, Zweite Stunde (13.6.1924)",
+            "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
+            "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
+            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild)."
           }
         ]
       }
@@ -887,6 +965,12 @@
           "art": "Variante (GA 270c)",
           "vortrag": "london-2",
           "anker": "m-untertauch"
+        },
+        {
+          "ref": "Breslau, Zweite Stunde (13.6.1924) – frühe Fassung mit Rhythmus-Deutung",
+          "art": "Variante (Breslau)",
+          "vortrag": "breslau-2",
+          "anker": "m-untertauch"
         }
       ],
       "kerngedanken": {
@@ -905,7 +989,7 @@
         }
       ],
       "varianten": {
-        "prosa": "Dieses Mantram erscheint auch in der Zweiten Wiederholungsstunde (GA 270c, 9.9.1924) als Teil der dreistrophigen Untertauch-Meditation ‹Sieh in dir Gedankenweben / Vernimm in dir Gefühle-Strömen / Laß walten in dir den Willens-Stoß›. Die 270c-Fassung ist wortgleich mit der App-Fassung aus der Dritten Stunde (GA 270a); Steiner kündigt dort an, den Spruch in der nächsten Stunde an die Tafel zu schreiben und mit allen Eigenheiten zu erklären. In der Dritten Wiederholungsstunde (GA 270c, 11.9.1924) wird der dreistrophige Spruch wortgleich wiederholt und um die Rhythmus-Lehre (trochäisch / jambisch / spondäisch) sowie die Wortsteigerung verehren–bedenken–ergreifen erweitert. Dieses Mantram wurde auch in der Zweiten Prager Stunde (GA 270c, 5.4.1924) gegeben – mit der Lehre vom Gift als Abbaukraft und der Rhythmus-Deutung (trochäisch / jambisch / spondäisch; verehren–bedenken–ergreifen). Auch in den Notizen der Zweiten Londoner Stunde (GA 270c, 27.8.1924) erscheint dieses Mantram mit der Rhythmus-Deutung; die Notizen belegen, dass Michael-Zeichen und Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden.",
+        "prosa": "Dieses Mantram erscheint auch in der Zweiten Wiederholungsstunde (GA 270c, 9.9.1924) als Teil der dreistrophigen Untertauch-Meditation ‹Sieh in dir Gedankenweben / Vernimm in dir Gefühle-Strömen / Laß walten in dir den Willens-Stoß›. Die 270c-Fassung ist wortgleich mit der App-Fassung aus der Dritten Stunde (GA 270a); Steiner kündigt dort an, den Spruch in der nächsten Stunde an die Tafel zu schreiben und mit allen Eigenheiten zu erklären. In der Dritten Wiederholungsstunde (GA 270c, 11.9.1924) wird der dreistrophige Spruch wortgleich wiederholt und um die Rhythmus-Lehre (trochäisch / jambisch / spondäisch) sowie die Wortsteigerung verehren–bedenken–ergreifen erweitert. Dieses Mantram wurde auch in der Zweiten Prager Stunde (GA 270c, 5.4.1924) gegeben – mit der Lehre vom Gift als Abbaukraft und der Rhythmus-Deutung (trochäisch / jambisch / spondäisch; verehren–bedenken–ergreifen). Auch in den Notizen der Zweiten Londoner Stunde (GA 270c, 27.8.1924) erscheint dieses Mantram mit der Rhythmus-Deutung; die Notizen belegen, dass Michael-Zeichen und Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden. Auch in der Zweiten Breslauer Stunde (13. Juni 1924) erscheint dieses Mantram, eingebettet in die Deutung des Denkens als Leichnam des vorirdischen Geistig-Seelischen und die Steigerung verehren–bedenken–ergreifen.",
         "fassungen": [
           {
             "fassung": "GA 270a, Dritte Stunde – App-Fassung 3.3",
@@ -936,6 +1020,12 @@
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 238–240",
             "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden."
+          },
+          {
+            "fassung": "Breslau, Zweite Stunde (13.6.1924)",
+            "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
+            "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
+            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild)."
           }
         ]
       }
