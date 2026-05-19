@@ -1,0 +1,125 @@
+{
+  "_schema": {
+    "beschreibung": "Quellennachweis und editorische Notiz fuer die Mantren-Web-App. Globaler Apparat (Impressum); die werkgenauen Einzelnachweise stehen pro Abschnitt/Strophe in den quelle-Feldern von vortraege.json und mantren-kommentar.json.",
+    "erweiterung": "Neue Quellen als weiteres Objekt in 'quellen' anhaengen (gleiche Felder). 'weiterfuehrende_literatur' und 'klassenstunden_uebersicht' bei Bedarf ergaenzen.",
+    "anfuehrungskonvention": "Sichtbarer Text durchgaengig ‹…› (U+2039/U+203A)."
+  },
+  "werk": {
+    "titel": "Esoterische Unterweisungen fuer die erste Klasse der Freien Hochschule fuer Geisteswissenschaft am Goetheanum 1924",
+    "autor": "Rudolf Steiner (1861–1925)",
+    "ga": "270",
+    "gattung": "Klassenstunden der Ersten Klasse; mantrische Sprueche mit Vortragstext und Wandtafelzeichnungen",
+    "umfang_gesamt": "38 Klassenstunden vom 15. Februar bis Herbst 1924; von 30 Stunden sind Nachschriften vorhanden. Die Freie Hochschule wurde zur Weihnachtstagung 1923/24 neu konstituiert; durch Steiners Erkrankung im Herbst 1924 und seinen Tod am 30. Maerz 1925 kam nur die Erste Klasse zustande."
+  },
+  "quellen": [
+    {
+      "id": "ga-270a",
+      "kurztitel": "GA 270a",
+      "titel": "Esoterische Unterweisungen fuer die erste Klasse … 1924, Erster Band",
+      "inhalt": "Erste bis Neunte Stunde (Dornach, 15.2.–22.4.1924); Vorbemerkungen; ‹Zu den Mantramtexten der Ersten Stunde›; Hinweise",
+      "art": "Textband",
+      "verlag": "Rudolf Steiner Verlag / Rudolf Steiner-Nachlassverwaltung",
+      "ort": "Dornach",
+      "ausgabe": "Manuskriptdruck 1977",
+      "verwendet_fuer": "stunde-1 … stunde-9; Kommentare 1.x–9.x"
+    },
+    {
+      "id": "ga-270b",
+      "kurztitel": "GA 270b",
+      "titel": "Esoterische Unterweisungen fuer die erste Klasse … 1924, Zweiter Band",
+      "inhalt": "Zehnte bis Neunzehnte Stunde (Dornach, 25.4.–2.8.1924); Tafeltexte der 17. Stunde; Klassenstunde vom 2.8.1924, Schluss; Hinweise",
+      "art": "Textband",
+      "verlag": "Rudolf Steiner Verlag / Rudolf Steiner-Nachlassverwaltung",
+      "ort": "Dornach",
+      "ausgabe": "Manuskriptdruck 1977",
+      "verwendet_fuer": "stunde-10 … stunde-19; Kommentare 10.x–19.x"
+    },
+    {
+      "id": "ga-270c",
+      "kurztitel": "GA 270c",
+      "titel": "Esoterische Unterweisungen fuer die erste Klasse … 1924, Dritter Band",
+      "inhalt": "Sieben Wiederholungsstunden (Dornach, 6.–20.9.1924); vier Einzelstunden in Prag (3./5.4.), Bern (17.4.) und Notizen der Zweiten Londoner Stunde (27.8.1924); Hinweise",
+      "art": "Textband",
+      "verlag": "Rudolf Steiner Verlag / Rudolf Steiner-Nachlassverwaltung",
+      "ort": "Dornach",
+      "ausgabe": "Manuskriptdruck 1977",
+      "verwendet_fuer": "wh-1 … wh-7, prag-1, prag-2, bern, london-2; varianten/Parallelstellen der bestehenden Kommentare"
+    },
+    {
+      "id": "ga-270i",
+      "kurztitel": "GA 270i / Tafelband",
+      "titel": "Esoterische Unterweisungen fuer die erste Klasse … 1924 – Wandtafelzeichnungen und Handschriften",
+      "inhalt": "Originalwiedergabe der Wandtafeln und der handschriftlichen Blaetter Rudolf Steiners zu den Klassenstunden",
+      "art": "Tafelband",
+      "verlag": "Rudolf Steiner Verlag / Rudolf Steiner-Nachlassverwaltung",
+      "ort": "Dornach",
+      "ausgabe": "Tafelband (11 Tafelseiten in der vorliegenden Auswahl)",
+      "verwendet_fuer": "Tafelbilder der Stunden 5/6/7/8/10/11/12/13/14/17 sowie der Wiederholungsstunden wh-1, wh-6, wh-7"
+    }
+  ],
+  "textgrundlage": {
+    "dornach": "Originalstenogramme von Helene Finckh, der damaligen offiziellen Stenographin der Vortraege Rudolf Steiners; vom Manuskriptdruck mehrfach neu mit dem Stenogramm verglichen.",
+    "bern": "Originalstenogramm von Rudolf Hahn; mehrere mit ‹[Luecke im Stenogramm]› bezeichnete, vom Stenographen meist ergaenzte Stellen.",
+    "prag": "Nachschriften; die originalen Tafelanschriften sind nicht erhalten.",
+    "london_2": "Bruchstueckhafte Notizen von George Adams, der Steiners Worte an Ort und Stelle ins Englische uebersetzte; die Punktreihen in den Notizen gehen auf George Adams zurueck. Von der Ersten Londoner Stunde gibt es keine Notizen.",
+    "mantren": "Massgeblich ist im Allgemeinen der an die Tafel geschriebene Wortlaut (Tafelband); wenige Abweichungen sind durch Handschriften und Stenogramm begruendet und in den Hinweisen der GA-Baende einzeln nachgewiesen.",
+    "kursiv_konvention": "In den GA-Baenden ist der an die Tafel geschriebene Text kursiv, erlaeuternde Regiebemerkungen stehen in eckigen Klammern; in dieser Web-Ausgabe wird das ueber den Abschnitts-typ (mantram | tafeltext | deutung | wiederholung) und Regiebemerkungen in eckigen Klammern abgebildet."
+  },
+  "editorische_konventionen_webausgabe": {
+    "orthografie": "Vortrags- und Begleittext in modernisierter Rechtschreibung; OCR- und Trennstrich-Fehler des Quell-EPUBs bereinigt.",
+    "anfuehrungszeichen": "Aller sichtbare Begleittext durchgaengig ‹…› (einfache spitze Anfuehrung). Steiners Mantra-Verse bleiben unveraendert.",
+    "mantra_verse": "Mantra-Verse stehen wortwoertlich nach dem Bestand; Varianten der GA-270c-Stunden sind als eigene varianten-Eintraege mit Fassung, Quelle und Abweichung dokumentiert.",
+    "kommentar": "Der Begleitkommentar ist eigenstaendige Erschliessungsarbeit (im Sinne der Anregung Marie Steiners, dass die mantrenbegleitenden Worte selbststaendig erarbeitet werden) und nicht Teil des Originalwortlauts Rudolf Steiners.",
+    "tafelbilder": "Aus dem Tafelband (GA 270i) seitenweise extrahiert, auf den reinen Tafelausschnitt beschnitten; Bildunterschriften des Tafelbandes sind nicht Teil des Bildes. Ein Editionsfehler der Tafelband-Beschriftung ist dokumentiert: die Tafel der Sechsten Wiederholungsstunde (17.9.1924) ist dort irrtuemlich als ‹Zweite Wiederholungsstunde› bezeichnet."
+  },
+  "ueberlieferung": {
+    "hinweis": "Rudolf Steiner wollte nicht, dass die mit seinem Einverstaendnis aufgenommenen und auf seine Anordnung uebertragenen Texte zur persoenlichen Lektuere gegeben werden; zu den Bedingungen der Schule gehoerte die muendliche Mitteilung der Inhalte und eine ernste, wuerdige Grundhaltung gegenueber dem Geisteswort.",
+    "veroeffentlichung": "Nach Steiners Tod konnte nicht verhindert werden, dass die Texte ueber den urspruenglichen Kreis hinausdrangen. Marie Steiner rang besonders in ihren letzten Jahren mit der sachgemaessen Loesung; Albert Steffen sprach sich fuer eine allgemeine Bekanntgabe als besten Schutz aus. Mit dem Manuskriptdruck 1977 erfolgte die erste vollstaendige, mit allen Originalunterlagen gepruefte Drucklegung."
+  },
+  "rechtestatus": {
+    "angabe_der_edition_1977": "Die Vorbemerkungen des Manuskriptdrucks 1977 (GA 270a, S. 7) halten fest, dass mit dem Jahresende 1975 der Autorenschutz fuer diese Klassentexte in zahlreichen Laendern abgelaufen sei.",
+    "neutraler_hinweis": "Dies ist eine Angabe der Quelle aus dem Jahr 1977. Schutzfristen und ihre Berechnung haben sich seither veraendert und unterscheiden sich je nach Land. Der aktuelle Rechtsstand fuer die jeweilige Nutzung und das jeweilige Land ist eigenstaendig zu pruefen; dieser Hinweis ist keine Rechtsauskunft."
+  },
+  "weiterfuehrende_literatur": [
+    {
+      "ga": "260",
+      "titel": "Die Weihnachtstagung zur Begruendung der Allgemeinen Anthroposophischen Gesellschaft 1923/24"
+    },
+    {
+      "ga": "260a",
+      "titel": "Die Konstitution der Allgemeinen Anthroposophischen Gesellschaft und der Freien Hochschule fuer Geisteswissenschaft 1924/25"
+    },
+    {
+      "ga": "245",
+      "titel": "Anweisungen fuer eine esoterische Schulung – Aus den Inhalten der Esoterischen Schule"
+    },
+    {
+      "ga": "235–240",
+      "titel": "Esoterische Betrachtungen karmischer Zusammenhaenge, 6 Baende"
+    },
+    {
+      "ga": "243",
+      "titel": "Das Initiatenbewusstsein"
+    },
+    {
+      "ga": "261",
+      "titel": "Unsere Toten"
+    },
+    {
+      "ga": "316",
+      "titel": "Meditative Betrachtungen und Anleitungen zur Vertiefung der Heilkunst"
+    }
+  ],
+  "klassenstunden_uebersicht": {
+    "dornach_19": "19 Stunden 15.2.–2.8.1924 (alle mit Nachschrift) → stunde-1 … stunde-19",
+    "wiederholungsstunden_7": "7 Stunden 6.–20.9.1924 (alle mit Nachschrift) → wh-1 … wh-7",
+    "einzelstunden_mit_nachschrift": "Prag 1 (3.4.), Prag 2 (5.4.), Bern (17.4.); Notizen 2. Londoner Stunde (27.8.) → prag-1, prag-2, bern, london-2",
+    "einzelstunden_ohne_nachschrift": "Paris (2), Breslau (2), Arnheim (2), Torquay (1), 1. Londoner Stunde (1) – von diesen 8 Stunden existiert keine Nachschrift und keine Notiz; sie sind im Werk nicht enthalten.",
+    "summe": "38 Stunden gesamt, 30 mit Nachschrift; 30 sind aufbereitet."
+  },
+  "bearbeitung": {
+    "projekt": "Mantren-Web-App https://phtok.github.io/mantren/",
+    "stand": "GA 270a + 270b + 270c vollstaendig als Vortragsseiten aufbereitet (30 Seiten); 45 Strophen-Kommentare; 13 Tafelbilder. Apparat (Vorbemerkungen/Hinweise/Tafelband) gesichtet; editorischer Rahmen in diesem Quellennachweis zusammengefasst.",
+    "offen": "Optional: substanzielle Einzel-Varianten der Hinweise in betroffene Kommentare einarbeiten; separat gedruckter Schluss der 19. Stunde (Ausschluss-Text, GA 270b) als Abschnitt ergaenzen."
+  }
+}

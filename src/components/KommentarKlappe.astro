@@ -113,6 +113,43 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
       </div>
     )}
 
+    {kommentar.varianten && (kommentar.varianten.prosa || (kommentar.varianten.fassungen && kommentar.varianten.fassungen.length > 0)) && (
+      <details class="klappe-apparat klappe-varianten">
+        <summary class="klappe-apparat-summary">Varianten und Fassungen</summary>
+        <div class="klappe-apparat-body">
+          {kommentar.varianten.prosa && (
+            <p class="klappe-apparat-prosa">{tx(kommentar.varianten.prosa)}</p>
+          )}
+          {kommentar.varianten.fassungen && kommentar.varianten.fassungen.length > 0 && (
+            <ul class="klappe-fassungen">
+              {kommentar.varianten.fassungen.map((f) => (
+                <li class="klappe-fassung">
+                  <span class="klappe-fassung-name">{tx(f.fassung)}</span>
+                  {f.abweichung && <span class="klappe-fassung-abw"> – {tx(f.abweichung)}</span>}
+                  {f.text && <p class="klappe-fassung-text">{tx(f.text)}</p>}
+                  <cite class="klappe-fassung-quelle">{tx(f.quelle)}</cite>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </details>
+    )}
+
+    {kommentar.editorische_hinweise && kommentar.editorische_hinweise.length > 0 && (
+      <details class="klappe-apparat klappe-hinweise">
+        <summary class="klappe-apparat-summary">Editorische Hinweise</summary>
+        <ul class="klappe-apparat-body klappe-hinweise-list">
+          {kommentar.editorische_hinweise.map((h) => (
+            <li>
+              <p>{tx(h.text)}</p>
+              <cite>{tx(h.quelle)}</cite>
+            </li>
+          ))}
+        </ul>
+      </details>
+    )}
+
     <div class="klappe-quelle">
       <span class="klappe-quelle-text">{quelleLine}</span>
       {q.wiederholung_in_stunde && (

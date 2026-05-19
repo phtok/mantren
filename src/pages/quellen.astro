@@ -1,0 +1,136 @@
+---
+import Base from '../layouts/Base.astro';
+import { tx } from '../lib/typografie';
+import quellenRaw from '../data/quellen.json';
+
+type Werk = {
+  titel: string;
+  autor: string;
+  ga: string;
+  gattung: string;
+  umfang_gesamt: string;
+};
+type Quelle = {
+  id: string;
+  kurztitel: string;
+  titel: string;
+  inhalt: string;
+  art: string;
+  verlag: string;
+  ort: string;
+  ausgabe: string;
+  verwendet_fuer: string;
+};
+type Lit = { ga: string; titel: string };
+type Data = {
+  werk: Werk;
+  quellen: Quelle[];
+  textgrundlage: Record<string, string>;
+  editorische_konventionen_webausgabe: Record<string, string>;
+  ueberlieferung: Record<string, string>;
+  rechtestatus: Record<string, string>;
+  weiterfuehrende_literatur: Lit[];
+  klassenstunden_uebersicht: Record<string, string>;
+  bearbeitung: Record<string, string>;
+};
+const d = quellenRaw as unknown as Data;
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<Base title="Quellen und editorische Notiz">
+  <article class="quellen">
+    <header class="quellen-head">
+      <h1 class="quellen-title">Quellen und editorische Notiz</h1>
+      <p class="quellen-subtitle">Werknachweis, Textgrundlage, editorische Konventionen, Rechtestatus</p>
+    </header>
+
+    <section class="quellen-section">
+      <h2>Werk</h2>
+      <p class="quellen-werk-titel">{tx(d.werk.titel)}</p>
+      <p class="quellen-werk-meta">{tx(d.werk.autor)} · {tx(d.werk.gattung)}</p>
+      <p>{tx(d.werk.umfang_gesamt)}</p>
+    </section>
+
+    <section class="quellen-section">
+      <h2>Verwendete Quellen</h2>
+      <ul class="quellen-list">
+        {d.quellen.map((q) => (
+          <li class="quellen-item">
+            <p class="quellen-kurztitel">{tx(q.kurztitel)}</p>
+            <p class="quellen-werk">{tx(q.titel)}</p>
+            <p class="quellen-inhalt">{tx(q.inhalt)}</p>
+            <p class="quellen-imprint">
+              {tx(q.verlag)} · {tx(q.ort)} · {tx(q.ausgabe)}
+            </p>
+            <p class="quellen-verwendung">Verwendet für: {tx(q.verwendet_fuer)}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="quellen-section">
+      <h2>Textgrundlage</h2>
+      <dl class="quellen-dl">
+        <dt>Dornach</dt><dd>{tx(d.textgrundlage.dornach)}</dd>
+        <dt>Bern</dt><dd>{tx(d.textgrundlage.bern)}</dd>
+        <dt>Prag</dt><dd>{tx(d.textgrundlage.prag)}</dd>
+        <dt>London (zweite Stunde)</dt><dd>{tx(d.textgrundlage.london_2)}</dd>
+        <dt>Mantra-Wortlaut</dt><dd>{tx(d.textgrundlage.mantren)}</dd>
+        <dt>Kursiv-Konvention der GA</dt><dd>{tx(d.textgrundlage.kursiv_konvention)}</dd>
+      </dl>
+    </section>
+
+    <section class="quellen-section">
+      <h2>Editorische Konventionen dieser Web-Ausgabe</h2>
+      <dl class="quellen-dl">
+        <dt>Orthografie</dt><dd>{tx(d.editorische_konventionen_webausgabe.orthografie)}</dd>
+        <dt>Anführungszeichen</dt><dd>{tx(d.editorische_konventionen_webausgabe.anfuehrungszeichen)}</dd>
+        <dt>Mantra-Verse</dt><dd>{tx(d.editorische_konventionen_webausgabe.mantra_verse)}</dd>
+        <dt>Kommentar</dt><dd>{tx(d.editorische_konventionen_webausgabe.kommentar)}</dd>
+        <dt>Tafelbilder</dt><dd>{tx(d.editorische_konventionen_webausgabe.tafelbilder)}</dd>
+      </dl>
+    </section>
+
+    <section class="quellen-section">
+      <h2>Klassenstunden-Übersicht</h2>
+      <dl class="quellen-dl">
+        <dt>Dornach</dt><dd>{tx(d.klassenstunden_uebersicht.dornach_19)}</dd>
+        <dt>Wiederholungsstunden</dt><dd>{tx(d.klassenstunden_uebersicht.wiederholungsstunden_7)}</dd>
+        <dt>Einzelstunden mit Nachschrift</dt><dd>{tx(d.klassenstunden_uebersicht.einzelstunden_mit_nachschrift)}</dd>
+        <dt>Einzelstunden ohne Nachschrift</dt><dd>{tx(d.klassenstunden_uebersicht.einzelstunden_ohne_nachschrift)}</dd>
+        <dt>Summe</dt><dd>{tx(d.klassenstunden_uebersicht.summe)}</dd>
+      </dl>
+    </section>
+
+    <section class="quellen-section">
+      <h2>Zur Überlieferung</h2>
+      <p>{tx(d.ueberlieferung.hinweis)}</p>
+      <p>{tx(d.ueberlieferung.veroeffentlichung)}</p>
+    </section>
+
+    <section class="quellen-section">
+      <h2>Rechtestatus</h2>
+      <p>{tx(d.rechtestatus.angabe_der_edition_1977)}</p>
+      <p class="quellen-disclaim">{tx(d.rechtestatus.neutraler_hinweis)}</p>
+    </section>
+
+    <section class="quellen-section">
+      <h2>Weiterführende Literatur</h2>
+      <ul class="quellen-lit">
+        {d.weiterfuehrende_literatur.map((l) => (
+          <li><span class="quellen-lit-ga">GA {tx(l.ga)}</span> {tx(l.titel)}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section class="quellen-section">
+      <h2>Bearbeitungsstand</h2>
+      <p>{tx(d.bearbeitung.stand)}</p>
+      <p class="quellen-disclaim">Projekt: <a href={d.bearbeitung.projekt}>{tx(d.bearbeitung.projekt)}</a></p>
+    </section>
+
+    <p class="vortrag-back">
+      <a href={base}>← Zum Mantren-Index</a>
+    </p>
+  </article>
+</Base>
