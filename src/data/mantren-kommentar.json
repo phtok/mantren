@@ -12,7 +12,7 @@
       "270b": "10.–19. Stunde; Tafeltexte der 17. Stunde",
       "270c": "Wiederholungsstunden; Prager u. Berner Einzelstunden; Notizen"
     },
-    "stand": "Stunden 1–9 (GA 270a) vollständig gefüllt; Tafelzeichnungen 5–8 eingebunden. erste-tafel -> stunde-8#m-weltenwort verknüpft. GA 270a-Block bereit zum Einpflegen. Kommentare 3.x–9.x sowie GA 270b/c folgen."
+    "stand": "GA 270a vollständig: Vortragstexte 1–9, Tafelbilder 5–8 (getrimmt, ohne weiße Ränder) eingebunden. Strophen-Kommentare 1.1–1.4, 3.1–3.3, 4.1–4.3, 5.1–5.3, 6.1–6.6, 7.1–7.3, 8.1–8.4, 9.1–9.2 mit drei Tiefenstufen, Quellen, Parallelstellen; Tafelbild-Angebot bei allen Strophen der Stunden 5–8. 8.1 = Text der ersten Tafel der App. GA 270b/c folgen."
   },
   "tafeln": {
     "erste-tafel": {
@@ -305,6 +305,1222 @@
         {
           "text": "Im esoterischen Leben wirkt nichts anderes als die Wahrheit.",
           "quelle": "GA 270a, S. 52 (Zweite Stunde)"
+        }
+      ]
+    },
+    "3.1": {
+      "titel": "Erster Spruch – Gedankenweben (Denken)",
+      "incipit": "Sieh in dir Gedankenweben …",
+      "rolle": "Erster der drei mantrischen Sprüche, die der Hüter dem nun Dreigespaltenen für das Denken gibt; trochäischer Rhythmus.",
+      "vortrag": "stunde-3",
+      "anker": "m-denken",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Dritte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-02-29",
+        "seiten": "78–82",
+        "wiederholung_in_stunde": "85, 90",
+        "anmerkung": "Von der Tafel »von rückwärts her« angeschrieben; der trochäische Gang (stark–schwach) ist Teil des Mantrams."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Vierte Stunde (7.3.1924), S. 100 – Wiederaufnahme mit Rhythmus-Deutung",
+          "art": "Wiederaufnahme",
+          "vortrag": "stunde-4",
+          "anker": "s-denken"
+        },
+        {
+          "ref": "GA 270a, Dritte Stunde – Schlusswiederholung der drei Sprüche, S. 90",
+          "art": "Wiederholung",
+          "vortrag": "stunde-3",
+          "anker": "m-denken"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Beim Eintritt in die geistige Welt löst sich das Denken aus der Einheit. Der Spruch ruft dazu auf, das eigene Gedankenweben zu sehen, in den Schein unterzutauchen und das Selbstheitsein dem geistigen Führerwesen verehrend hinzugeben.",
+        "kompakt": "Erster der drei Sprüche der Dritten Stunde. Nachdem der Mensch an der Schwelle in Denken, Fühlen, Wollen auseinandertritt, gibt der Hüter für das Denken diesen Spruch: Was wir in den Gedanken erfassen, ist nicht Weltensein, sondern »Weltenschein«; das »Selbstheitsein« verbirgt sich uns. Wir sollen in den Schein untertauchen – im Bewusstsein, dass es zunächst Schein ist – und gewahr werden, dass »Ätherwesen« in uns weht. Die innere Tat ist das Verehren: das Selbst gibt sich dem »Geistes Führerwesen« hin. Der trochäische Rhythmus (stark–schwach), das Heruntersteigen vom Gipfel ins Tal, gehört wesentlich zum Spruch.",
+        "ausfuehrlich": [
+          "Der Spruch steht am Beginn des praktischen Teils der Klassenstunden: nachdem in der Zweiten und Dritten Stunde die Begegnung mit dem Hüter und die Dreispaltung von Denken, Fühlen und Wollen geschildert wurden, gibt der Hüter drei »Richtsprüche«, die den Menschen für jede der drei Seelenkräfte in die geistige Welt hineinführen sollen.",
+          "Inhaltlich kehrt der Blick sich nach innen: »Sieh in dir Gedankenweben.« Was dort flutet, ist nicht Sein, sondern »Weltenschein«; das eigene Ich (»Selbstheitsein«) bleibt dunkel und verborgen. Die Aufforderung »Tauche unter in den Schein« ist kein Selbstbetrug, sondern ein bewusstes Eintauchen in das Scheinhafte mit dem klaren Wissen, dass es Schein ist – erst so wird man gewahr, dass »Ätherwesen« in einem weht, wie wenn man ein Wölkchen im Geisteswind wäre.",
+          "Die entscheidende innere Geste ist das Verehren: nicht ein passives Getragenwerden wie beim Atem, sondern eine aktive Hingabe des Selbst an das »Geistes Führerwesen«. Steiner betont, dass der Spruch nicht als Verstandesinhalt wirkt, sondern durch seinen trochäischen Gang: das Heruntersteigen vom Himmlischen zum Irdischen, das der Seele die richtige »Blutzirkulation« im Geistesraum gibt. Wer hier jambisch statt trochäisch empfände, hätte den Hüter missverstanden."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Sieh in dir Gedankenweben: Weltenschein erlebest du …",
+          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 82"
+        }
+      ]
+    },
+    "3.2": {
+      "titel": "Zweiter Spruch – Gefühle-Strömen (Fühlen)",
+      "incipit": "Vernimm in dir Gefühle-Strömen …",
+      "rolle": "Zweiter Spruch; für das Fühlen; jambischer Rhythmus (schwach–stark), das Aufsteigen vom Tal zum Gipfel.",
+      "vortrag": "stunde-3",
+      "anker": "m-fuehlen",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Dritte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-02-29",
+        "seiten": "82–85",
+        "wiederholung_in_stunde": "85, 90",
+        "anmerkung": "Steigerung gegenüber dem ersten Spruch: »verehren« wird zu »bedenken«."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Vierte Stunde (7.3.1924), S. 100 – Wiederaufnahme",
+          "art": "Wiederaufnahme",
+          "vortrag": "stunde-4",
+          "anker": "s-fuehlen"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Für das Fühlen: Hier mengen sich Schein und Sein. Das Selbst neigt zum Schein, soll aber in das »scheinende Sein« untertauchen und die Lebensmächte der eigenen Seele bedenken.",
+        "kompakt": "Der zweite Spruch wendet den Blick vom Denken zum Fühlen. War im Denken »alles nur Schein«, so mengen sich im Fühlen Schein und Sein. Das Ich, gewohnt an den äußeren Sinnenschein, neigt sich dem Scheine zu; doch im »scheinenden Sein« stoßen wir auf den »Fels des Seins«, auf »Welten-Seelenkräfte«. Die innere Geste steigert sich von »verehren« (1. Spruch) zu »bedenken«: der Gedanke wird ins Gefühl hinuntergetragen. Der Rhythmus ist jambisch (schwach–stark): ein Aufsteigen aus dem Tal zu den Göttern, die entgegengesetzte Wellenbewegung zum ersten Spruch.",
+        "ausfuehrlich": [
+          "Der mittlere der drei Sprüche behandelt das Fühlen, das in der Dreispaltung »hinter die Erinnerungen«, vor die Geburt zurückgeht. Während das Denken sich in die Weltenweiten zerstreut, führt das Fühlen unmittelbar in die geistige Welt zwischen Tod und neuer Geburt.",
+          "Steiner hebt die Steigerung der drei Verben hervor: »verehren« (man schaut von außen auf), »bedenken« (man nähert sich, tritt schon ein), »ergreifen« (man nimmt es an sich). Im zweiten Spruch ist man also schon näher als im ersten; das Gefühl trägt den Gedanken in sich.",
+          "Der jambische Gang ist hier nicht Stilmittel, sondern Methode: Fühlen heißt, »wie auf einer geistigen Leiter« von unten nach oben zu den Göttern aufzusteigen. Ein trochäischer Spruch für die Gefühlswelt wäre, so Steiner, ein Missverständnis des Hüters."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Es mengen Schein und Sein sich dir …",
+          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 83"
+        }
+      ]
+    },
+    "3.3": {
+      "titel": "Dritter Spruch – Willens-Stoß (Wollen)",
+      "incipit": "Laß walten in dir den Willens-Stoß …",
+      "rolle": "Dritter Spruch; für das Wollen; spondäischer Rhythmus (zwei betonte Silben), höchste Steigerung: »ergreifen«.",
+      "vortrag": "stunde-3",
+      "anker": "m-wollen",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Dritte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-02-29",
+        "seiten": "86–90",
+        "wiederholung_in_stunde": "90",
+        "anmerkung": "»Der« in Zeile 2 ist kein Artikel, sondern Relativ (»welcher«) – ausdrücklich von Steiner erläutert."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Vierte Stunde (7.3.1924), S. 101 – Wiederaufnahme",
+          "art": "Wiederaufnahme",
+          "vortrag": "stunde-4",
+          "anker": "s-wollen"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Für das Wollen: Aus allem Scheineswesen steigt erschaffend der Willens-Stoß; ihm soll alles Leben zugewandt werden, damit das Eigensein die Weltschöpfermacht im Geistes-Ich ergreift.",
+        "kompakt": "Der dritte und stärkste Spruch gilt dem Wollen, das in der Dreispaltung am tiefsten zurückführt – in die vorigen Erdenleben. Aus allem »Scheineswesen« steigt, mit Eigensein erschaffend, der Willens-Stoß auf; ihm soll man alles Leben zuwenden, denn er ist »erfüllt von Welten-Geistesmacht«. Die innere Geste erreicht ihre höchste Stufe: nicht mehr verehren oder bedenken, sondern »ergreifen« – man tritt heran und nimmt die »Weltschöpfermacht« an sich. Der spondäische Gang (zwei betonte Silben) entspricht der unmittelbaren Kraftwirkung des Willens.",
+        "ausfuehrlich": [
+          "Mit dem dritten Spruch schließt die mantrische Trias der Dritten Stunde. Das Wollen ist diejenige Seelenkraft, die in der Spaltung am weitesten zurückführt: bis in frühere Erdenleben. Hier wirkt nach Steiner am stärksten die Gefahr, Schein für Wirklichkeit zu nehmen.",
+          "Steiner hebt grammatisch hervor, dass »Der steigt aus allem Scheineswesen« kein Artikel, sondern ein Relativpronomen ist (»welcher steigt«): aus dem Willen erkraftet sich dasjenige auf, was dem Eigensein Substanz und Inhalt gibt.",
+          "Die drei Sprüche bilden eine Steigerung in den Verben (verehren – bedenken – ergreifen), in den Zielworten (Führerwesen – Lebensmächte – Weltschöpfermacht) und in den Rhythmen (Trochäus – Jambus – Spondeus). Erst die Hingabe an den Rhythmus, nicht an den Verstandessinn, ermöglicht es, die physische Welt zu verlassen."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Dein Eigensein, es soll ergreifen Weltschöpfermacht …",
+          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 90"
+        }
+      ]
+    },
+    "4.1": {
+      "titel": "Erstes Mantram – Erdentiefen (Tiefen)",
+      "incipit": "Fühle wie die Erdentiefen …",
+      "rolle": "Erstes der drei »Eins-Fühlen«-Mantren; das Tiefenbewusstsein, Gegenpol zum dritten Tier.",
+      "vortrag": "stunde-4",
+      "anker": "m-tiefen",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Vierte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-07",
+        "seiten": "103–104",
+        "wiederholung_in_stunde": "109",
+        "anmerkung": "In der Gegenüberstellung dem dritten Tier (»glasig Auge«) entgegengestellt."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Vierte Stunde – Gegenüberstellung Tiere/Sprüche, S. 108–112",
+          "art": "Gegenüberstellung",
+          "vortrag": "stunde-4",
+          "anker": "gegenueberstellung"
+        },
+        {
+          "ref": "GA 270a, Erste Stunde – Drittes Tier (Denken), S. 35–37",
+          "art": "Gegenbild",
+          "vortrag": "stunde-1",
+          "anker": "m4"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Die Erdentiefen drängen ihre Kräfte in die Leibesglieder. Vertraut man ihnen den Willen machtlos an, verfinstern sie das Ich – das Hinunterziehende ins Untermenschliche.",
+        "kompakt": "Erstes der drei Mantren, mit denen sich das Eins-Fühlen mit der Welt in die Seele prägen soll. Der Blick geht nach unten, zur Erde: ihre Kräfte drängen in die Leibesglieder. Überlässt man ihnen machtlos den Willen, »verfinstern sie das Ich« – hier liegt, was den Menschen ins Untermenschliche zieht, was Triebe und Leidenschaften nährt. Im ehrlichen Gestehen dieses Hinunterziehenden entwickelt man sich zum wahren Menschen. Das Mantram ist der Gegenpol zum dritten Tier (dem »glasig Auge« des Denkens).",
+        "ausfuehrlich": [
+          "In der Vierten Stunde stellt Steiner dem dreifachen Blick – hinunter, in die Weiten, hinauf – drei Mantren zur Seite, durch die sich das »Eins-Fühlen mit allem äußeren Dasein« tief einprägen kann. Das erste betrifft die Erdentiefen.",
+          "Die Erde wird hier nicht naturkundlich, sondern moralisch gesehen: dieselbe Schwerkraft, die den Stein zur Erde zieht, lebt in uns als das, was »uns unter den Menschen herunterziehen« und das Ich verfinstern will. Das Mantram fordert nicht Verdrängung, sondern bewusstes, ehrliches Gestehen dieser Verwandtschaft.",
+          "In der großen Gegenüberstellung der Stunde wird dieses Mantram neben das dritte Tier gestellt: beide schildern das Hinunterziehende, das eine konkret als Tier, das andere als Aufforderung, dessen gewahr zu werden. »Erblickst du des dritten Tieres glasig Auge, stehe fest und fühle, was die Erdentiefen von dir wollen.«"
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Sie verfinstern dir das Ich.",
+          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 104"
+        }
+      ]
+    },
+    "4.2": {
+      "titel": "Zweites Mantram – Weltenweiten (Weiten)",
+      "incipit": "Fühle wie aus Weltenweiten …",
+      "rolle": "Zweites Mantram; das Weitenbewusstsein, Gegenpol zum zweiten Tier; die Götter im Leuchtegewande.",
+      "vortrag": "stunde-4",
+      "anker": "m-weiten",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Vierte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-07",
+        "seiten": "105–107",
+        "wiederholung_in_stunde": "110",
+        "anmerkung": "Dem zweiten Tier (»Spottgesicht«) entgegengestellt."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Vierte Stunde – Gegenüberstellung, S. 108–112",
+          "art": "Gegenüberstellung",
+          "vortrag": "stunde-4",
+          "anker": "gegenueberstellung"
+        },
+        {
+          "ref": "GA 270a, Erste Stunde – Zweites Tier (Fühlen), S. 35–37",
+          "art": "Gegenbild",
+          "vortrag": "stunde-1",
+          "anker": "m4"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Aus den Weltenweiten lassen Göttermächte ihre Geisteshelle ins Seelenwesen leuchten. Findet man sich liebend in ihnen, schaffen sie das Selbst stark zum guten Geistesschaffen.",
+        "kompakt": "Das zweite Mantram wendet den Blick in die Weiten, in den Umkreis der Erde, den das Licht durchwellt. Lernt man das Sonnenlicht lieben »warm wie einen Freund«, so wird es zum »Göttergewande«: Götter wandeln im Leuchtegewande über die Erde und bringen ihre Weisheit in die Menschenseele. Findet man sich »in ihnen liebend«, so schaffen sie weisheitwebend das Selbst »stark zum guten Geistesschaffen«. Gegenpol ist das zweite Tier, das Spottgesicht des Fühlens, das durch den hellen Sonnenschein ausgelöscht wird.",
+        "ausfuehrlich": [
+          "Das mittlere Mantram führt vom Tiefenbewusstsein zum Weitenbewusstsein. Es ist schon eine Erhebung über die hinunterziehenden Erdenkräfte: durch Atem und Licht kann der Mensch nicht so leicht böse werden wie durch die Erdentiefen-Kräfte.",
+          "Steiner schildert die Verwandlung des bloßen Sonnenlichts in ein Göttergewand: erst wenn man liebend wird, hört das Licht auf, nur physisch zu scheinen, und wird zum Träger der Götterweisheit. Die Götter wollen den Menschen nicht auf der Erde allein lassen, sondern in ihre Kreise ziehen, schon während des Erdenwandelns.",
+          "In der Gegenüberstellung ist die Stimmung gegenüber dem zweiten Tier völlig verschieden: »Schaust du des zweiten Tieres Spottgesicht, empfange liebend Sonnenlicht.« Der helle Sonnenschein, geistig ergriffen, löscht das Spottgesicht aus."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Finde dich in ihnen liebend …",
+          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 105"
+        }
+      ]
+    },
+    "4.3": {
+      "titel": "Drittes Mantram – Himmelshöhen (Höhen)",
+      "incipit": "Fühle wie in Himmelshöhen …",
+      "rolle": "Drittes Mantram; das Höhenbewusstsein, Gegenpol zum ersten Tier; das selbstlos werdende Selbstsein.",
+      "vortrag": "stunde-4",
+      "anker": "m-hoehen",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Vierte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-07",
+        "seiten": "107–108",
+        "wiederholung_in_stunde": "111",
+        "anmerkung": "Dem ersten Tier (»Knochengeist«) entgegengestellt."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Vierte Stunde – Gegenüberstellung, S. 108–112",
+          "art": "Gegenüberstellung",
+          "vortrag": "stunde-4",
+          "anker": "gegenueberstellung"
+        },
+        {
+          "ref": "GA 270a, Erste Stunde – Erstes Tier (Wollen), S. 35–37",
+          "art": "Gegenbild",
+          "vortrag": "stunde-1",
+          "anker": "m4"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "In den Himmelshöhen kann Selbstsein selbstlos leben, wenn es geisterfüllt den Gedankenmächten folgt und in Tapferkeit das von oben gnadevoll ertönende Wort vernimmt.",
+        "kompakt": "Das dritte Mantram richtet den Blick nach oben. Steht man nachts unter dem Sternenhimmel, so zerfließt der eine Punkt, an dem man steht und den man für das eigene Selbst hält; das enge »Selbstsein« wird selbstlos, unendlich verbreitet in den Höhen. Wer den Gedanken folgen kann und »in Tapferkeit das Wort vernimmt, das von oben gnadevoll ertönet«, wächst mit dem aus den Höhen tönenden Wort zusammen. Gegenpol ist das erste Tier, der Knochengeist des Wollens, dessen Erstarrung nur durch das warme Erheben des Herzens zu den Himmelshöhen überwunden wird.",
+        "ausfuehrlich": [
+          "Das letzte der drei Mantren vollendet das dreifache Bewusstsein. Steiner empfiehlt ausdrücklich das Bild des sternbedeckten Nachthimmels: das Aufschauen, bei dem der Standpunkt des engen Ich sich zur Halbkugel ausbreitet und selbstlos wird.",
+          "Wer zuvor gefühlt hat, wie mit dem Sonnenlicht Götter ein- und ausziehen, kann nun auch das »von oben gnadevoll ertönende Wort« vernehmen – nicht passiv, sondern »in Tapferkeit«, mit dem Mut, den Steiner als notwendige Seeleneigenschaft betont.",
+          "In der Gegenüberstellung steht dieses Mantram dem ersten Tier gegenüber, dessen »Knochengeist« uns erstarren lässt: »Erstarrst du durch des ersten Tieres Knochengeist, erwarme menschlich als Mensch, indem du zu den Himmelshöhen das Herz warm erhebest.« Wie wenn man im Feuer aufsteigen wollte, so steht der tröstende Spruch dem erstarrenden Bild gegenüber."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Fühle wie in Himmelshöhen Selbstsein selbstlos leben kann …",
+          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 108"
+        }
+      ]
+    },
+    "5.1": {
+      "titel": "Erstes Mantram – Licht und finstre Mächte (Denken)",
+      "incipit": "Es kämpft das Licht mit finstren Mächten …",
+      "rolle": "Erstes der drei Kampf-Mantren; das Denken zwischen Lichtverlockung und Stoff-Finsternis.",
+      "vortrag": "stunde-5",
+      "anker": "m-denken",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Fünfte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-14",
+        "seiten": "129–130",
+        "wiederholung_in_stunde": "138",
+        "anmerkung": "An den drei Stationen nach dem Tode wird dieses Wort im freien Geisterlande zugerufen."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Fünfte Stunde – die drei Stationen nach dem Tode, S. 136–138",
+          "art": "Weiterführung",
+          "vortrag": "stunde-5",
+          "anker": "nach-tod"
+        },
+        {
+          "ref": "GA 270a, Fünfte Stunde – Wandtafelzeichnung »Licht/Wärme/Luft«",
+          "art": "Tafelbild",
+          "vortrag": "stunde-5",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Im Reiche des Denkens kämpft Licht mit finstren Mächten. Lichtwärts strebend findet man das Selbst vom Geiste genommen; lockt Finsteres, verliert man es im Stoff.",
+        "kompakt": "Erstes der drei Mantren der Fünften Stunde. Das Denken ist die Kraft, die den Menschen nach oben verweist; in ihm wird Licht und Finsternis real und moralisch. Lichtwesen wollen den Menschen von der Erde losreißen und mit dem Sonnenlicht verweben (»Du findest, lichtwärts strebend, dein Selbst vom Geiste dir genommen«); die Finsternis dagegen droht, das Selbst im Stoff einsam zu machen (»Im Stoff das Selbst verlieren«). Der Mensch kann nur in der Gleichgewichtslage zwischen beiden leben. Beruhigung bringt erst das zur Farbe abgedämpfte Licht (Gelb, Rot) und die aufgehellte Finsternis (Violett, Blau).",
+        "ausfuehrlich": [
+          "Die Fünfte Stunde zeigt, wie die Kluft zwischen Mensch und Natur die eigentliche Schwelle ist und wie sich der Mensch in die Weltelemente zerteilt erlebt: das Denken ins Licht, das Fühlen in die Wärme, das Wollen in die Luft. Dieses erste Mantram betrifft das Denken im Licht.",
+          "Steiner schildert die Sonne für das entwickelte Bewusstsein als »den großen Verlocker«, der den Menschen losreißen will. Wer der Verlockung erliegt, verliert das Selbst an das Licht; wer ins Gegenextrem flieht, verliert es in der Finsternis des Stoffes. Erst die »mittleren, die guten Götter« dämpfen das Licht zur erträglichen Farbe ab.",
+          "Das Mantram gehört zugleich zu den drei Worten, die dem Menschen nach dem Tode zugerufen werden – dieses im freien Geisterlande, wo das rückwärtsgewandte Erleben in die Vorbereitung des nächsten Erdenlebens übergeht. Die Wandtafelzeichnung der Stunde (»Licht/Wärme/Luft« mit der farbigen Darstellung des im Lichtumkreis stehenden Selbst) ist die unmittelbare Meditationshilfe dazu."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Du findest, lichtwärts strebend, dein Selbst vom Geiste dir genommen …",
+          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 130"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-5.jpg",
+        "vortrag": "stunde-5",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 14.3.1924: »Licht / Wärme / Luft« mit der farbigen Darstellung des im Lichtumkreis stehenden Selbst.",
+        "quelle": "GA 270i, Tafel zur Fünften Stunde (14.3.1924)"
+      }
+    },
+    "5.2": {
+      "titel": "Zweites Mantram – Warmes und Kaltes (Fühlen)",
+      "incipit": "Es kämpft das Warme mit dem Kalten …",
+      "rolle": "Zweites Kampf-Mantram; das Fühlen zwischen Wärmelust und Kälte-Verhärtung.",
+      "vortrag": "stunde-5",
+      "anker": "m-fuehlen",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Fünfte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-14",
+        "seiten": "133",
+        "wiederholung_in_stunde": "136–137",
+        "anmerkung": "Wird im rückwärtsgewandten Erleben nach dem Tode zugerufen; vgl. den Rat an Hinterbliebene."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Fünfte Stunde – Stationen nach dem Tode, S. 136–137",
+          "art": "Weiterführung",
+          "vortrag": "stunde-5",
+          "anker": "nach-tod"
+        },
+        {
+          "ref": "GA 270a, Fünfte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-5",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Im Reiche des Fühlens kämpft Warmes mit Kaltem. Wärme liebend verweht das Selbst in Geisteslust; verhärtet Kälte, verstäubt es im Leid.",
+        "kompakt": "Das zweite Mantram betrifft das Fühlen, das mit den Kräften des Erdumkreises (der Wärme) verwandt ist. Die luziferischen Wärmewesen wollen das Fühlen in der allgemeinen Weltenwärme aufsaugen – eine »Riesenlust«, in der das Selbst »in Geisteslust verwehend« sich verliert. Die ahrimanischen Kältewesen ziehen den an, der sich davor flüchtet; doch die Kälte verhärtet und schafft unendlichen Schmerz, in dem das Selbst »im Leid verstäuben« kann. Daher der Rat Steiners, an Verstorbene den Gedanken zu richten, die Liebe möge »wärmen deine Kälte, lindre deine Wärme«.",
+        "ausfuehrlich": [
+          "So wie das Licht zum Denken, verhält sich die Wärme zum Fühlen. Das Fühlen erweist sich verwandt mit den Kräften, die den Menschen im Umkreis der Erde halten.",
+          "Die Verlockung ist die der Wärmelust: warm, warm, warm zu werden, ganz selber Wärme zu sein, überzufließen – Steiner nennt es ausdrücklich eine Riesenlust. Das Gegenextrem, die verhärtende Kälte, lässt physischen und seelischen Schmerz eins werden.",
+          "Das Mantram ist zugleich das Wort, das im rückwärtsgewandten Erleben nach dem Tode an »Meilensteinen« zugerufen wird. Der Rat an Hinterbliebene – die Liebe möge die Kälte wärmen, die Wärme lindern – wurzelt unmittelbar in diesem Mantram. Die Wandtafelzeichnung der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Du findest, Wärme liebend, dein Selbst in Geisteslust verwehend …",
+          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 133"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-5.jpg",
+        "vortrag": "stunde-5",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 14.3.1924: »Licht / Wärme / Luft«.",
+        "quelle": "GA 270i, Tafel zur Fünften Stunde (14.3.1924)"
+      }
+    },
+    "5.3": {
+      "titel": "Drittes Mantram – Leben und Tod (Wollen)",
+      "incipit": "Es kämpft das Leben mit dem Tode …",
+      "rolle": "Drittes Kampf-Mantram; das Wollen zwischen Lebens-Geistesmacht und Todes-Nichts (Sauerstoff/Stickstoff, Luzifer/Ahriman).",
+      "vortrag": "stunde-5",
+      "anker": "m-wollen",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Fünfte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-14",
+        "seiten": "135",
+        "wiederholung_in_stunde": "136",
+        "anmerkung": "Wird beim ersten Rückblick unmittelbar nach dem Tode in den Rückblick »hineingeraunt«."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Fünfte Stunde – Leben/Tod in der Luft, S. 133–135",
+          "art": "Hinführung",
+          "vortrag": "stunde-5",
+          "anker": "leben-tod"
+        },
+        {
+          "ref": "GA 270a, Fünfte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-5",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Im Reiche des Wollens kämpft Leben mit Tod. Leben fassend verschwindet das Selbst in Geistesmacht; bändigt Todesmacht, verkrampft es im Nichts.",
+        "kompakt": "Das dritte Mantram betrifft das Wollen, das mit der Luft, dem Atmungsprozess verwandt ist. In der Luft liegt Leben (Sauerstoff) und Tod (Stickstoff); an der Schwelle wird der Sauerstoff zur »Maske für Luzifer«, der Stickstoff zur »Maske für Ahriman«. Verbindet man das Wollen mit Geistesschaffen, droht, dass das Selbst »in Geistesmacht verschwindet«; wendet man sich zum Tode, »verkrampft« es »im Nichts«. Dieses Wort wird unmittelbar nach dem Tode in den ersten Rückblick hineingeraunt.",
+        "ausfuehrlich": [
+          "Das letzte der drei Kampf-Mantren betrifft das Wollen. Steiner wendet sich gegen die »schreckliche, unwahre Abstraktion« des Chemikers (Luft = Sauerstoff + Stickstoff): an der Schwelle besteht die Luft aus Ahriman und Luzifer.",
+          "Die luziferischen Sauerstoffgeister wollen das Schaffen des Menschen ganz an sich nehmen, so dass er aufhört, Mensch zu sein; die ahrimanischen Stickstoffgeister werfen ihn ins »Nichts des Lebens«, wo er statt zu handeln im Selbst verkrampft.",
+          "Dieses Mantram ist das erste der drei Todes-Worte: beim Rückblick unmittelbar nach dem Tode, während der Ätherleib sich auflöst, raunen es geistige Wesenheiten in den Rückblick hinein. Wer es im Erdenleben nicht verstehen lernt, muss »alle Qualen des Nichtverstehens« durchleben. Die Wandtafelzeichnung dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Du findest, Leben fassend, dein Selbst in Geistesmacht verschwinden …",
+          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 135"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-5.jpg",
+        "vortrag": "stunde-5",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 14.3.1924: »Licht / Wärme / Luft«.",
+        "quelle": "GA 270i, Tafel zur Fünften Stunde (14.3.1924)"
+      }
+    },
+    "6.1": {
+      "titel": "Unterwelt-Mantram – Erde (Wollen / Tierheit)",
+      "incipit": "Du steigst ins Erden-Wesenhafte …",
+      "rolle": "Erstes der drei Unterwelt-Mantren; Verwandtschaft des Willens mit der Erde, Furcht vor der eigenen Tierheit.",
+      "vortrag": "stunde-6",
+      "anker": "m-u-erde",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Sechste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-21",
+        "seiten": "152–153",
+        "wiederholung_in_stunde": "158",
+        "anmerkung": "Furcht muss sich in Seelen-Mut wandeln."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Sechste Stunde – Elemente-Schema, S. 143–147",
+          "art": "Hinführung",
+          "vortrag": "stunde-6",
+          "anker": "schema"
+        },
+        {
+          "ref": "GA 270a, Sechste Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-6",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Mit der Kraft des Willens steigt man ins Erden-Wesenhafte; als Denker betreten, zeigt es die eigene Tierheit. Die Furcht vor dem Selbst muss sich in Seelen-Mut wandeln.",
+        "kompakt": "Erstes der drei Unterwelt-Mantren. In der Welt der Elemente steht der Mensch der Erde am fernsten – im Unterbewussten. Steigt man mit dem Willen ins Erden-Wesenhafte und betritt es bewusst »als Denker«, so zeigt sich die eigene Tierheit: »von Erden wegen sind wir Tier«. Daraus entsteht Furcht vor dem Selbst – die sich aber metamorphosieren muss in »Seelen-Mut«. Hier wirkt am stärksten die ahrimanische Verführung.",
+        "ausfuehrlich": [
+          "Die Sechste Stunde entwickelt das große Elemente-Schema: Erde, Wasser, Luft, Wärme, Licht, Weltgestaltung, Weltenleben. Voll verwandt lebt der Mensch nur in der Wärme; der Erde steht er am fernsten, im Unbewussten – dort lauert Ahrimans Verführung.",
+          "Wird man im imaginativen Fühlen der Verwandtschaft mit der Erde gewahr, fühlt man sich nicht mehr in der Menschheit, sondern in der Tierheit; der eigene Wille zeigt sich stierhaft, elefantenhaft, adlerhaft. Die unvermeidliche Folge ist Furcht vor sich selbst.",
+          "Steiner betont: diese negativen Empfindungen (Furcht, später Lahmheit, Kältetod) sind nicht das Ziel, sondern müssen sich verwandeln – die Furcht in Seelenmut. Gerade das, was herunterbringt, wird, bezwungen, zum Antrieb hoher Eigenschaften. Die Wandtafel der Stunde zeigt das Schema unmittelbar."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Die Furcht vor deinem Selbst muß dir in Seelen-Mut sich wandeln.",
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 153"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-6.jpg",
+        "vortrag": "stunde-6",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 21.3.1924: das vollständige Elemente-Schema (Weltenleben/Weltgestaltung – Licht/Wärme/Luft – Wasser/Erde) mit farbigen Kreuzen, Luzifer oben, Ahriman unten, darunter die Flammenfigur.",
+        "quelle": "GA 270i, Tafel zur Sechsten Stunde (21.3.1924)"
+      }
+    },
+    "6.2": {
+      "titel": "Unterwelt-Mantram – Wasser (Fühlen / Pflanzenheit)",
+      "incipit": "Du lebest mit dem Wasserwesen …",
+      "rolle": "Zweites Unterwelt-Mantram; Verwandtschaft des Fühlens mit dem Wasser, Lahmheit des Pflanzenseins.",
+      "vortrag": "stunde-6",
+      "anker": "m-u-wasser",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Sechste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-21",
+        "seiten": "154–155",
+        "wiederholung_in_stunde": "158",
+        "anmerkung": "Lahmheit muss zum Wachen führen."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Sechste Stunde – imaginatives Fühlen, S. 148–151",
+          "art": "Hinführung",
+          "vortrag": "stunde-6",
+          "anker": "verwandtschaft"
+        },
+        {
+          "ref": "GA 270a, Sechste Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-6",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Mit dem Wasserwesen lebt man nur durch des Fühlens Traumesweben; erwachend durchdrungen, gibt sich die Seele als dumpfes Pflanzendasein. Die Lahmheit muss zum Wachen führen.",
+        "kompakt": "Das zweite Unterwelt-Mantram betrifft das Fühlen, verwandt mit dem Wasser. »Von Wasser wegen wären wir Pflanze«: das Gefühl hat ein träumendes, pflanzenhaftes Wesen. Steigt man bewusst erwachend hinein, gibt sich die Seele »als dumpfes Pflanzendasein«. Das Gefühl der Lahmheit – die Gefahr, mit gelähmtem Bewusstsein dahinzuleben – muss sich umwandeln zum inneren Weckruf, zum Wachen.",
+        "ausfuehrlich": [
+          "Das mittlere der Unterwelt-Mantren. Der Mensch steht dem Wasser ferner als der Wärme, aber näher als der Erde; das Wässerige zeigt sich etwa im Angsttraum, in der Transpiration des Schlafes.",
+          "Wird man der Verwandtschaft mit dem Wassersein gewahr, entdeckt man das Pflanzenhafte des eigenen Gefühlslebens – ein träumendes Wesen, das die Tendenz hat, dumpf und schlafend zu bleiben.",
+          "Wie die Furcht (Erde) in Seelenmut, so muss die Lahmheit (Wasser) in Weckekraft umschlagen: »Und Lahmheit deines Selbst muß dich zum Wachen führen.« Die Verwandlung ins Gegenteil des schlafenden Fühlens-Traumeswesens wird zum Wecker. Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Und Lahmheit deines Selbst muß dich zum Wachen führen.",
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 155"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-6.jpg",
+        "vortrag": "stunde-6",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 21.3.1924: das vollständige Elemente-Schema (Weltenleben/Weltgestaltung – Licht/Wärme/Luft – Wasser/Erde) mit farbigen Kreuzen, Luzifer oben, Ahriman unten, darunter die Flammenfigur.",
+        "quelle": "GA 270i, Tafel zur Sechsten Stunde (21.3.1924)"
+      }
+    },
+    "6.3": {
+      "titel": "Unterwelt-Mantram – Luft (Denken / Mineralwesen)",
+      "incipit": "Du sinnest in dem Lüftewehen …",
+      "rolle": "Drittes Unterwelt-Mantram; Verwandtschaft des Denkens (Gedächtnis) mit der Luft, Kältetod des Steinwerdens.",
+      "vortrag": "stunde-6",
+      "anker": "m-u-luft",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Sechste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-21",
+        "seiten": "156–157",
+        "wiederholung_in_stunde": "158",
+        "anmerkung": "Kälte-Tod muss dem Geistesfeuer weichen."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Sechste Stunde – Denken als verfeinertes Atmen, S. 150–152",
+          "art": "Hinführung",
+          "vortrag": "stunde-6",
+          "anker": "verwandtschaft"
+        },
+        {
+          "ref": "GA 270a, Sechste Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-6",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Im Lüftewehen sinnt man nur in Gedächtnis-Bildern; wollend ergriffen, droht die Seele als kalterstarrter Stein. Der Kälte-Tod muss dem Geistesfeuer weichen.",
+        "kompakt": "Das dritte Unterwelt-Mantram betrifft das Denken, verwandt mit der Luft – »Denken ist verfeinertes Atmen«. Solange man die Atmung zum Denken der Umgebung verfeinert, ist kaum Gefahr; steigen aber Erinnerungen auf (»Gedächtnis-Bilder«), droht das Mineralisch-Werden: die Seele als »kalterstarrter Stein«. Das gewöhnliche abstrakte Denken ist steinhart, es »tut weh«. Dieser innere Kältetod muss zur Gegenkraft anfeuern – das Geistig-Lebendige aus innerer Kraft hervorzurufen: »Er muß dem Geistesfeuer weichen.«",
+        "ausfuehrlich": [
+          "Das letzte der drei Unterwelt-Mantren. Der Mensch steht der Luft schon näher; aber im Reich der Erinnerungen, wo der Atem von innen wirkt, bleibt eine Spur ahrimanischer Verführung.",
+          "Steiner schildert eindringlich die Härte des abstrakten Denkens: Wer in die spirituelle Welt eintritt, fühlt das gewöhnliche Denken »mit Ecken und Kanten«; die abstrakten Gedanken der heutigen Zivilisation verwunden ihn wie durch Kanten. Das ist der Kohlenstoff-, der Mineralisierungsprozess (»der Stein der Weisen« innerlich im Menschen).",
+          "Die Trias der negativen Eigenschaften – Furcht, Lahmheit, Kältetod – wird hier vollendet und muss sich, wie die anderen, metamorphosieren: in belebendes Geistesfeuer. Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Doch deiner Selbstheit Kälte-Tod, er muß dem Geistesfeuer weichen.",
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 157"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-6.jpg",
+        "vortrag": "stunde-6",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 21.3.1924: das vollständige Elemente-Schema (Weltenleben/Weltgestaltung – Licht/Wärme/Luft – Wasser/Erde) mit farbigen Kreuzen, Luzifer oben, Ahriman unten, darunter die Flammenfigur.",
+        "quelle": "GA 270i, Tafel zur Sechsten Stunde (21.3.1924)"
+      }
+    },
+    "6.4": {
+      "titel": "Oberwelt-Mantram – Licht (Denken / Selbstheitwahn)",
+      "incipit": "Du hältst von Lichtes-Scheines-Macht …",
+      "rolle": "Erstes der drei Oberwelt-Mantren; luziferische Verlockung im Licht, Schutz durch Besinnung auf die Erdennöte.",
+      "vortrag": "stunde-6",
+      "anker": "m-o-licht",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Sechste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-21",
+        "seiten": "160–161",
+        "wiederholung_in_stunde": "158",
+        "anmerkung": "Gegen die luziferische Verlockung des Lichts."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Sechste Stunde – luziferische Verlockung, S. 159–160",
+          "art": "Hinführung",
+          "vortrag": "stunde-6",
+          "anker": "oberwelt-hinfuehrung"
+        },
+        {
+          "ref": "GA 270a, Sechste Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-6",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Hält man Gedanken von der Lichtes-Scheines-Macht im Innern fest und denkt das Licht in sich selber, droht Selbstheitwahn; Besinnung auf die Erdennöte erhält im Menschensein.",
+        "kompakt": "Erstes Oberwelt-Mantram. Während man nach unten (Erde, Wasser, Luft) Ahriman begegnet, dringt man nach oben in Licht, Weltgestaltung, Weltenleben – dort lockt Luzifer. Das Denken ist als feiner, lichtdurchglänzter Atem mit dem Licht verwandt; das ist »ungeheuer schön«, eine innere Wollust. Wenn »Lichtesschein in dir sich selber denkt«, droht »unwahres Geisteswesen« als »Selbstheitwahn«. Der Schutz: »Besinnung auf die Erdennöte« hält im Menschensein.",
+        "ausfuehrlich": [
+          "Mit den drei Oberwelt-Mantren wendet sich die Sechste Stunde der luziferischen Seite zu. Wir leben im Lichte, indem wir Gedanken bilden; für den, der zur Imagination aufsteigt, ist Denken ein vom Licht durchglänztes Atemverhauchen.",
+          "Die luziferische Verlockung will den Menschen den irdischen Elementen entreißen und ihn ins Geisterreich hinaufheben, so dass er nach dem Schlafe nicht mehr in den Leib zurück will. Hier entsteht der »Selbstheitwahn«.",
+          "Der Gegenhalt ist nicht Askese, sondern Bindung: »Besinnung auf die Erdennöte wird dich im Menschensein erhalten.« Der feste Entschluss, die Erdennöte nicht zu vergessen, gestaltet das Band mit dem Erdensein, das durchwandert werden muss. Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Besinnung auf die Erdennöte wird dich im Menschensein erhalten.",
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 161"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-6.jpg",
+        "vortrag": "stunde-6",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 21.3.1924: das vollständige Elemente-Schema (Weltenleben/Weltgestaltung – Licht/Wärme/Luft – Wasser/Erde) mit farbigen Kreuzen, Luzifer oben, Ahriman unten, darunter die Flammenfigur.",
+        "quelle": "GA 270i, Tafel zur Sechsten Stunde (21.3.1924)"
+      }
+    },
+    "6.5": {
+      "titel": "Oberwelt-Mantram – Weltgestaltung (Fühlen)",
+      "incipit": "Du hältst vom Weltgestalten …",
+      "rolle": "Zweites Oberwelt-Mantram; ohnmächtiges Geist-Erleben, Schutz durch Liebe zu den Erdenwerten.",
+      "vortrag": "stunde-6",
+      "anker": "m-o-gestalt",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Sechste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-21",
+        "seiten": "162",
+        "wiederholung_in_stunde": "158",
+        "anmerkung": "Liebe zu den Erdenwerten rettet die Menschenseele."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Sechste Stunde – Engel zur Unzeit, S. 162–164",
+          "art": "Deutung",
+          "vortrag": "stunde-6",
+          "anker": "oberwelt-deutung"
+        },
+        {
+          "ref": "GA 270a, Sechste Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-6",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Hält man Gefühle vom Weltgestalten im Innern fest und die Weltenform fühlt sich in einem selbst, erstickt ohnmächtig das Selbstheitsein; Liebe zu den Erdenwerten rettet die Menschenseele.",
+        "kompakt": "Das zweite Oberwelt-Mantram betrifft das Fühlen im chemischen Äther (»Weltgestaltung«). Steigt man imaginativ hinein, wird man selbst zum kosmischen Chemiker, mit den Stoffen verwebt. Die luziferische Versuchung erscheint hier als Ohnmächtigwerden: erst Wollust, Geist sein zu können, dann Erstickung des Selbstheitseins. Der Schutz: »Liebe zu den Erdenwerten«, erworben, bevor man herantritt.",
+        "ausfuehrlich": [
+          "Steigt man vom Licht weiter ins ätherische Element, wird die luziferische Verlockung intensiver; nicht mehr nur die Gedanken, sondern das dumpfere Fühlen kommt in Betracht.",
+          "Im Verwebtsein mit der Weltengestaltung droht eine Seelenohnmacht: der Mensch ist seines Menschenwesens nicht mehr mächtig. Davor bewahrt nur, wer zuvor die Liebe zu allem Wertvollen auf Erden erworben hat.",
+          "Steiner verbindet dies mit dem Bild des »Engels zur Unzeit«: Luzifer will den Menschen schon während des Erdendaseins zum unreifen, verkümmerten Engel machen; dann wäre die Menschenseele verloren. »Doch Liebe zu den Erdenwerten wird dir die Menschenseele retten.« Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Doch Liebe zu den Erdenwerten wird dir die Menschenseele retten.",
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 162"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-6.jpg",
+        "vortrag": "stunde-6",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 21.3.1924: das vollständige Elemente-Schema (Weltenleben/Weltgestaltung – Licht/Wärme/Luft – Wasser/Erde) mit farbigen Kreuzen, Luzifer oben, Ahriman unten, darunter die Flammenfigur.",
+        "quelle": "GA 270i, Tafel zur Sechsten Stunde (21.3.1924)"
+      }
+    },
+    "6.6": {
+      "titel": "Oberwelt-Mantram – Weltenleben (Wollen)",
+      "incipit": "Du hältst vom Weltenleben …",
+      "rolle": "Drittes Oberwelt-Mantram; höchste Verlockung; Schutz durch geist-ergebenes Erdenwollen.",
+      "vortrag": "stunde-6",
+      "anker": "m-o-leben",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Sechste Stunde",
+        "ort": "Dornach",
+        "datum": "1924-03-21",
+        "seiten": "163–164",
+        "wiederholung_in_stunde": "158",
+        "anmerkung": "Erdenwollen geist-ergeben lässt den Gott im Menschen walten."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Sechste Stunde – das Insekt in der Flamme, S. 163",
+          "art": "Bild",
+          "vortrag": "stunde-6",
+          "anker": "oberwelt-deutung"
+        },
+        {
+          "ref": "GA 270a, Sechste Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-6",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Hält man das Wollen vom Weltenleben im Innern fest und erfasst es einen voll, tötet vernichtende Geistes-Lust das Selbst-Erleben; geist-ergebenes Erdenwollen lässt den Gott im Menschen walten.",
+        "kompakt": "Das dritte und stärkste Oberwelt-Mantram. Am intensivsten ist die Verlockung im allgemeinen Weltenleben: bewusst darin leben heißt, »den Tod als einzelne Wesen erfahren« – wie das Insekt, das aus Gier nach dem Licht in die Flamme fliegt und erstirbt. »Vernichtend Geistes-Lust« würde das Selbst-Erleben töten. Nur ein gottergebenes, geistergebenes Erdenwollen, durchdrungen von »hingebender Glut-Liebe«, bewahrt davor: »Es läßt den Gott im Menschen walten.«",
+        "ausfuehrlich": [
+          "Das letzte Mantram der Sechsten Stunde führt an die äußerste Grenze: das Eintreten in das universelle Weltenleben mit dem eigenen Geiste bedeutet den Tod des einzelnen Wesens.",
+          "Das Bild des Insekts, das in einer ungeheuren Lust in die Flamme flattert und im Moment des Hineinfliegens erstirbt, fasst die Gefahr zusammen: ein Aufflackern in einem Augenblick.",
+          "Der Schutz ist hier am stärksten gefordert: ein bis zur Glut-Liebe durchdrungenes, gottergebenes Erdenwollen – das Bewusstsein, auf Erden die Absichten der Geister auszuführen. Erst dann lässt sich das Weltenleben betreten, ohne ein degenerierter Engel zu werden. Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Doch Erdenwollen geist-ergeben, es läßt den Gott im Menschen walten.",
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 164"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-6.jpg",
+        "vortrag": "stunde-6",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 21.3.1924: das vollständige Elemente-Schema (Weltenleben/Weltgestaltung – Licht/Wärme/Luft – Wasser/Erde) mit farbigen Kreuzen, Luzifer oben, Ahriman unten, darunter die Flammenfigur.",
+        "quelle": "GA 270i, Tafel zur Sechsten Stunde (21.3.1924)"
+      }
+    },
+    "7.1": {
+      "titel": "Mantram – O schau die Drei",
+      "incipit": "O schau die Drei / Sie sind die Eins …",
+      "rolle": "Erstes große Mantram der Siebenten Stunde; Kopf/Herz/Glieder als Weltgestalt/Weltenschlag/Weltenkraft, mit drei Zeichen.",
+      "vortrag": "stunde-7",
+      "anker": "m-drei",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Siebente Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-11",
+        "seiten": "177–181",
+        "wiederholung_in_stunde": "188",
+        "anmerkung": "Mit drei Zeichen: nach oben (Kopf), oben+unten (Herz), nach unten (Glieder)."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Siebente Stunde – die drei Zeichen, S. 178–180",
+          "art": "Ausführung",
+          "vortrag": "stunde-7",
+          "anker": "drei-deutung"
+        },
+        {
+          "ref": "GA 270a, Siebente Stunde – Schlusswiederholung, S. 188",
+          "art": "Wiederholung",
+          "vortrag": "stunde-7",
+          "anker": "m-drei-wiederholung"
+        },
+        {
+          "ref": "GA 270a, Siebente Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-7",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Der Mensch schaut sich jenseits der Schwelle als Dreiheit. Kopf = Weltgestalt, Herz = Weltenschlag, Glieder = Weltenkraft; die Drei sind die Eins, solange er die Menschenprägung im Erdendasein trägt.",
+        "kompakt": "Erstes der beiden großen Mantren der Siebenten Stunde. Hat der Hüter die wahre Wesenheit über den Abgrund gehoben, schaut der Mensch sich als Dreiheit, die nur der physische Leib zur Eins zusammenzieht. Das Mantram lenkt den Blick auf den Leib: das Haupt als Abbild des himmlischen Weltenalls (»Erlebe des Kopfes Weltgestalt«), das Herz als Widerschlag des Weltenrhythmus (»Empfinde des Herzens Weltenschlag«), die Glieder als konzentrierte irdische Weltenkraft (»Erdenke der Glieder Weltenkraft«). Zu jeder Zeile gehört ein Zeichen (nach oben / oben und unten / nach unten).",
+        "ausfuehrlich": [
+          "Die Siebente Stunde führt erstmals das bewusste Sein außerhalb des physischen Leibes ein: erst dann kann von einer wirksamen Begegnung mit dem Hüter gesprochen werden. Der Hüter zeigt: »da drüben bist du, wie du äußerlich erscheinst; bei mir, wie du deinem inneren Wesen nach bist.«",
+          "Das Mantram benennt die drei Glieder im Verhältnis zum physischen Leib. Steiner gibt drei Zeichen, bei deren Sprechen man die Richtung vergegenwärtigt: nach oben (Kopf, Weltenweiten), nach oben und unten (Herz, Weltenrhythmus), nach unten (Glieder, Schwerkraft).",
+          "Nach dem Sprechen soll man die Sinne stumpf machen, die Augen schließen, dunkel um sich haben, ganz in der Atmosphäre der Worte leben – so versetzt man sich in jene Sphäre, die bei der Einweihung real erlebt werden kann. Die Wandtafel der Stunde (Schwellen-Schwingung) dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "O schau die Drei / Sie sind die Eins …",
+          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 177"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-7.jpg",
+        "vortrag": "stunde-7",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 11.4.1924: die rote Schwellen-Schwingung zwischen »Sinne« und »Geist« mit der Figur an der Schwelle; darunter das Tor-Wort.",
+        "quelle": "GA 270i, Tafel zur Siebenten Stunde (11.4.1924)"
+      }
+    },
+    "7.2": {
+      "titel": "Mantram – Des Kopfes Geist, du kannst ihn wollen",
+      "incipit": "Des Kopfes Geist, du kannst ihn wollen …",
+      "rolle": "Das große Umkehrungs-Mantram; jenseits der Schwelle: Wollen oben, Fühlen Mitte, Denken unten – Weisheit/Schein/Tugend.",
+      "vortrag": "stunde-7",
+      "anker": "m-umkehr",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Siebente Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-11",
+        "seiten": "182–186",
+        "wiederholung_in_stunde": "186",
+        "anmerkung": "Dreistrophig; Schlüsselworte Himmelsweben / Weltenleben / Menschenstreben."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Siebente Stunde – die Umkehrung, S. 185–186",
+          "art": "Deutung",
+          "vortrag": "stunde-7",
+          "anker": "umkehr-deutung"
+        },
+        {
+          "ref": "GA 270a, Achte Stunde – Sieh hinter/in/über (Vertiefung)",
+          "art": "Vertiefung",
+          "vortrag": "stunde-8",
+          "anker": "m-denken"
+        },
+        {
+          "ref": "GA 270a, Siebente Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-7",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Jenseits der Schwelle kehrt sich alles um: des Kopfes Geist kann man wollen, des Herzens Seele fühlen, der Glieder Kraft denken – man webt in der Weisheit, lebt im Scheine, strebt in der Tugend.",
+        "kompakt": "Das zweite große Mantram zeigt die völlige Umkehrung jenseits der Schwelle. In der Sinneswelt sitzt das Denken im Haupt; jenseits ist wenig Denken ans Haupt gebunden und viel ausgebreitetes Wollen. Alles, was die Sinne als Farben, Töne, Wärme vermitteln, ist dort ein Wollen. So gilt: Wollen oben im Haupte (»Du webest in der Weisheit«), Fühlen in der Mitte (»Du lebest in dem Scheine« – worin die Geistwesen erstrahlen), Denken unten an den Gliedern (»Du strebest in der Tugend«). Die drei Schlüsselworte: Himmelsweben – Weltenleben – Menschenstreben.",
+        "ausfuehrlich": [
+          "Das Mantram ist dreistrophig gebaut und beschreibt die vollständige Umkehrung der Seelenkräfte jenseits der Schwelle. Was in der Sinneswelt selbstverständlich scheint (Denken im Kopf), wird ins Gegenteil verkehrt.",
+          "In jeder Strophe wird ein Glied einer Tätigkeit zugeordnet, die ihm in der Sinneswelt fremd ist: des Kopfes Geist – wollen; des Herzens Seele – fühlen (das Denken wird hier zum Fühlen gegenüber dem Weltendasein); der Glieder Kraft – denken (das Wollen wird zum Denken).",
+          "Die abschließenden Zeilen verdichten das Ergebnis: »Du webest in der Weisheit / Du lebest in dem Scheine / Du strebest in der Tugend«, zusammengefasst in Himmelsweben – Weltenleben – Menschenstreben. Die Achte Stunde vertieft dies mit den »Sieh hinter / in / über«-Mantren. Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Des Kopfes Geist, du kannst ihn wollen …",
+          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 186"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-7.jpg",
+        "vortrag": "stunde-7",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 11.4.1924: die rote Schwellen-Schwingung zwischen »Sinne« und »Geist« mit der Figur an der Schwelle; darunter das Tor-Wort.",
+        "quelle": "GA 270i, Tafel zur Siebenten Stunde (11.4.1924)"
+      }
+    },
+    "7.3": {
+      "titel": "Das Tor-Wort – Tritt ein",
+      "incipit": "Tritt ein / Das Tor ist geöffnet …",
+      "rolle": "Das an allen Pforten der geistigen Welt erklingende Wort; der dreifach dreifache Ernst.",
+      "vortrag": "stunde-7",
+      "anker": "m-tor",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Siebente Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-11",
+        "seiten": "187",
+        "wiederholung_in_stunde": "187",
+        "anmerkung": "Dreimal zu sprechen, mit wachsendem Ernst (»dreifach dreifacher Ernst«)."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Siebente Stunde – der dreifach dreifache Ernst, S. 187–188",
+          "art": "Deutung",
+          "vortrag": "stunde-7",
+          "anker": "tor-deutung"
+        },
+        {
+          "ref": "GA 270a, Siebente Stunde – Wandtafelzeichnung (Tor-Wort)",
+          "art": "Tafelbild",
+          "vortrag": "stunde-7",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Das Tor-Wort, das seit ungezählten Jahrtausenden an allen Pforten der geistigen Welt erklingt: »Tritt ein, das Tor ist geöffnet, du wirst ein wahrer Mensch werden.«",
+        "kompakt": "Das kurze, gewichtige Schlusswort der Siebenten Stunde. Es erklingt, indem der Hüter zugleich die Mahnungen ertönen lässt. Es ist das Wort, das seit ungezählten Jahrtausenden an allen Pforten in die geistige Welt mahnend und aufmunternd erklang. Steiner verlangt, es dreimal zu sprechen mit wachsendem Ernst: das erste Mal das Bekenntnis, noch nicht Mensch gewesen zu sein; das zweite ernster; das dritte »des Ernstes höchste Prägung«. Dieser »dreifach dreifache Ernst« gibt eine Ahnung, was es heißt, durch Erkenntnis ein Mensch zu werden.",
+        "ausfuehrlich": [
+          "Das Tor-Wort ist das knappste der Mantren und zugleich eines der gewichtigsten. Es steht am Übergang: nachdem die Umkehrung gezeigt wurde, öffnet sich das Tor.",
+          "Steiner schildert eine dreistufige Selbstanrede: Ich will bekennen, dass ich noch nicht ein Mensch war / dass ich zwei Stufen brauche / dass ich drei Stufen brauche. Ernst, ernster, höchste Prägung des Ernstes.",
+          "Es folgt der Hinweis auf die »Pause« im Ringen nach Erkenntnis seit dem Heraufkommen der fünften nachatlantischen Kulturepoche, die nun nach dem Willen der leitenden geistigen Wesenheiten zu Ende ist. Die Wandtafel der Stunde zeigt das Tor-Wort selbst und dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Tritt ein / Das Tor ist geöffnet …",
+          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 187"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-7.jpg",
+        "vortrag": "stunde-7",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 11.4.1924: die rote Schwellen-Schwingung zwischen »Sinne« und »Geist« mit der Figur an der Schwelle; darunter das Tor-Wort.",
+        "quelle": "GA 270i, Tafel zur Siebenten Stunde (11.4.1924)"
+      }
+    },
+    "8.1": {
+      "titel": "Das Weltenwort – O Mensch, erkenne dich selbst!",
+      "incipit": "O Mensch, erkenne dich selbst! / So tönt das Weltenwort.",
+      "rolle": "Das große Weltenwort-Mantram; zugleich der Text der ersten Tafel der App.",
+      "vortrag": "stunde-8",
+      "anker": "m-weltenwort",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Achte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-18",
+        "seiten": "200–201",
+        "wiederholung_in_stunde": "Neunte Stunde (Anfang u. Schluss)",
+        "anmerkung": "Identisch mit dem Text der ersten Tafel der App; in der Neunten Stunde gerahmt wiederholt."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Neunte Stunde – Weltenwort am Anfang u. Schluss",
+          "art": "Rahmung/Wiederholung",
+          "vortrag": "stunde-9",
+          "anker": "m-weltenwort"
+        },
+        {
+          "ref": "GA 270a, Achte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-8",
+          "anker": "tafel"
+        },
+        {
+          "ref": "App – erste Tafel (Tafel-Text)",
+          "art": "App-Tafel",
+          "vortrag": "stunde-8",
+          "anker": "m-weltenwort"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Aus dem ganzen Kosmos ertönt die Aufforderung »O Mensch, erkenne dich selbst!« – aus den Ruhesternen der Gehalt, aus den Wandelsternen der Herzensgehalt, aus den Elementen der Willensimpuls.",
+        "kompakt": "Das große Weltenwort-Mantram, zugleich der Text der ersten Tafel der App. Es weist auf die durch alle Zeiten in das Menschenherz hereintönende Aufforderung nach Selbsterkenntnis. Aus den Ruhesternen des Tierkreises tönt der Gehalt des Wortes, aus den Bewegungen der Wandelsterne der Weltenherzensgehalt, durch die Elemente (Erde, Wasser, Feuer, Luft) wird der Willensimpuls eingegossen. Der Schluss stellt die ernste Frage, ob man es selbst ist, der sich in Raumesfühlen und Zeiterleben das Wort erschafft, »fremd erfühlend in Raumes Seelenleere«.",
+        "ausfuehrlich": [
+          "Das Weltenwort steht im Zentrum der Achten Stunde und wird in der Neunten als Rahmung (Anfang und Schluss) wiederholt. In der App ist es der Text der ersten Tafel; dieser Kommentar-Eintrag ist daher zugleich der Quellnachweis dazu.",
+          "Steiner führt es ohne Mitschreiben ein – »dass Sie zunächst nur anhören«. Die kosmische Dreigliederung: Ruhesterne (Gedankengehalt), Wandelsterne (Herzens-/Gemütsgehalt), Elemente (Willensimpuls) – entspricht der Dreiheit Denken, Fühlen, Wollen.",
+          "Die Schlussstrophe ist keine Antwort, sondern eine offene, ernste Frage: ob der Mensch selbst sich das Wort erschafft, weil er »des Denkens Kraft verliert im Zeitvernichtungsstrom«. Die Wandtafel der Achten Stunde (Scheidung von Denken/Fühlen/Wollen) dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "O Mensch, erkenne dich selbst! So tönt das Weltenwort.",
+          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 200"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-8.jpg",
+        "vortrag": "stunde-8",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 18.4.1924 (oberer Teil): die strahlende Kopf-Figur, das gelb-grün-rote Oval und die Farbfelder – die Scheidung von Denken, Fühlen, Wollen.",
+        "quelle": "GA 270i, Tafel zur Achten Stunde (18.4.1924), oberer Teil"
+      }
+    },
+    "8.2": {
+      "titel": "Erstes Mantram – Sieh hinter des Denkens Sinneslicht",
+      "incipit": "Sieh hinter des Denkens Sinneslicht …",
+      "rolle": "Vertiefung des Denkens: das tote Denken und die finstre Geisteszelle, aus der Wollen sich hebt.",
+      "vortrag": "stunde-8",
+      "anker": "m-denken",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Achte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-18",
+        "seiten": "208",
+        "wiederholung_in_stunde": "214",
+        "anmerkung": "Schlüsselworte harmonisch gebaut: Denken – Wollen – Weltennichts – Wollen – Weltgedankenschaffen."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Achte Stunde – das tote Denken, S. 206–207",
+          "art": "Hinführung",
+          "vortrag": "stunde-8",
+          "anker": "denken-deutung"
+        },
+        {
+          "ref": "GA 270a, Siebente Stunde – die Umkehrung (Grundlage)",
+          "art": "Grundlage",
+          "vortrag": "stunde-7",
+          "anker": "m-umkehr"
+        },
+        {
+          "ref": "GA 270a, Achte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-8",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Hinter dem toten Sinnesdenken, in der finstren Geisteszelle, hebt sich Wollen aus Leibestiefen; lässt man totes Denken ins Weltennichts fließen, ersteht das Wollen als Weltgedankenschaffen.",
+        "kompakt": "Erstes der drei vertiefenden Mantren der Achten Stunde. Das Denken hier auf Erden ist ein »Leichnam«; gelebt hat es im vorirdischen Dasein, der Leib ist sein Grab. Schaut man hinter das auf die Sinne gerichtete tote Denken, so ist in der »Geisteszelle« des Hauptes das lebendige Denken, das das Gehirn erst gebildet hat – es ist wie ein Wollen. Lässt man »durch deiner Seele Stärke« das tote Denken ins Weltennichts verfließen, ersteht das Wollen »als Weltgedankenschaffen«. In sieben Zeilen liegt das Geheimnis des menschlichen Denkens.",
+        "ausfuehrlich": [
+          "Die Achte Stunde vertieft die Umkehrung der Siebenten. Das Gehirn ist nicht der Erzeuger des Denkens, sondern das Produkt des vorgeburtlichen lebendigen Denkens.",
+          "Die Imagination, die vor der Seele stehen soll: vom Kopf strahlt das gedankentote, auf die Sinne gerichtete Denken aus; dahinter, zunächst als Finsternis, das wahre Denken, das wie ein Wollen heraufsteigt und sich im Haupte zum Weltendenken ausbreitet.",
+          "Steiner betont, man dürfe diese Dinge nicht mit dem Intellekt auffassen, sondern müsse sie im Gemüte als Meditation leben lassen; die Worte sind harmonisch gebaut, damit sie auf das imaginative Bewusstsein wirken. Die Wandtafel der Achten Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Und das Wollen, es erstehet als Weltgedankenschaffen.",
+          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 208"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-8.jpg",
+        "vortrag": "stunde-8",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 18.4.1924 (oberer Teil): die strahlende Kopf-Figur, das gelb-grün-rote Oval und die Farbfelder – die Scheidung von Denken, Fühlen, Wollen.",
+        "quelle": "GA 270i, Tafel zur Achten Stunde (18.4.1924), oberer Teil"
+      }
+    },
+    "8.3": {
+      "titel": "Zweites Mantram – Sieh in des Fühlens Seelenwehen",
+      "incipit": "Sieh in des Fühlens Seelenwehen …",
+      "rolle": "Vertiefung des Fühlens: das wachende Träumen, in das Weltenleben hereinströmt.",
+      "vortrag": "stunde-8",
+      "anker": "m-fuehlen",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Achte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-18",
+        "seiten": "210",
+        "wiederholung_in_stunde": "214",
+        "anmerkung": "Hier heißt es »in«, nicht »hinter« (wie beim Denken): das Fühlen wird durchschaut."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Achte Stunde – Fühlen als wachendes Träumen, S. 209–210",
+          "art": "Hinführung",
+          "vortrag": "stunde-8",
+          "anker": "fuehlen-deutung"
+        },
+        {
+          "ref": "GA 270a, Achte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-8",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Im Seelenwehen des Fühlens, wie im Träumedämmern, strömt Leben aus Weltenfernen; verweht das Menschenfühlen still in Herzensruhe, geistert das Weltenleben als Menschenwesensmacht.",
+        "kompakt": "Das zweite vertiefende Mantram betrifft das Fühlen, dessen physischer Repräsentant das Herz ist. Anders als beim Denken (»hinter«) schaut man hier »in« das Fühlen: das Fühlen ist nur ein wachendes Träumen, die Gefühle werden so bewusst wie Traumbilder. Verweht das einzelne Menschenfühlen ganz in Schlaf durch die »Herzensruhe«, dann strömt »Leben aus Weltenfernen« herein und »das Weltenleben geistert als Menschenwesensmacht«. Während das Denken Seelenstärke braucht, braucht das Fühlen innere vollständige Beruhigung.",
+        "ausfuehrlich": [
+          "Wie beim Denken liegt auch im Fühlen ein »ganzes Geheimnis« in den sieben Zeilen: wie sich das Fühlen aus der Einheit in die Dreiheit verselbständigen kann.",
+          "Der Gegensatz zum ersten Mantram ist methodisch wichtig: dort hebt sich Wollen aus Leibestiefen herauf; hier strömt Leben aus Weltenfernen herein. Dort Seelenstärke, hier Herzensruhe.",
+          "Das Bild: verweht das Träumen des Fühlens ganz in Schlaf, so webt göttliches Weltenleben in das menschliche Seelische herein. Die Wandtafel der Achten Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Und das Weltenleben geistert als Menschenwesensmacht.",
+          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 210"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-8.jpg",
+        "vortrag": "stunde-8",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 18.4.1924 (oberer Teil): die strahlende Kopf-Figur, das gelb-grün-rote Oval und die Farbfelder – die Scheidung von Denken, Fühlen, Wollen.",
+        "quelle": "GA 270i, Tafel zur Achten Stunde (18.4.1924), oberer Teil"
+      }
+    },
+    "8.4": {
+      "titel": "Drittes Mantram – Sieh über des Wollens Leibeswirken",
+      "incipit": "Sieh über des Wollens Leibeswirken …",
+      "rolle": "Vertiefung des Wollens: das Willenszauberwesen, die wahre Magie des Denkens in den Gliedern.",
+      "vortrag": "stunde-8",
+      "anker": "m-wollen",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Achte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-18",
+        "seiten": "213",
+        "wiederholung_in_stunde": "214",
+        "anmerkung": "Hier heißt es »über« – vom Haupte senkt sich Denken in die Glieder herab."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Achte Stunde – das Willenszauberwesen, S. 212–213",
+          "art": "Hinführung",
+          "vortrag": "stunde-8",
+          "anker": "wollen-deutung"
+        },
+        {
+          "ref": "GA 270a, Achte Stunde – Schlusswiederholung der drei, S. 214",
+          "art": "Wiederholung",
+          "vortrag": "stunde-8",
+          "anker": "schluss-wiederholung"
+        },
+        {
+          "ref": "GA 270a, Achte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-8",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Über dem Leibeswirken des Wollens senkt sich Denken aus Haupteskräften in die schlafenden Wirkensfelder; verwandelt sich Menschenwollen zu Licht, erscheint das Denken als Willenszauberwesen.",
+        "kompakt": "Das dritte vertiefende Mantram betrifft das Wollen. Hier heißt es nicht »hinter« oder »in«, sondern »über«: vom Haupte senkt sich – im gewöhnlichen Bewusstsein unsichtbar – das Denken in die Glieder, damit dort das Wollen wirken kann. Sieht man in jeder Arm- und Beinbewegung den Strom des Wollens, so lebt darin ein geheimes Denken: unser Wesen aus früheren Erdenleben, das durch die Glieder das irdische Dasein ergreift. Dieses Denken strömt als Licht durch Arme und Zehen; es »zaubert«, wirkt magisch – das ist wahre Magie.",
+        "ausfuehrlich": [
+          "Das letzte der drei Mantren der Achten Stunde vollendet die Reihe hinter (Denken) – in (Fühlen) – über (Wollen). Im Wollen der Glieder lebt ein verborgenes Denken.",
+          "Steiner deutet dies karmisch: es ist im Grunde unser Wesen aus früheren Erdenleben, das durch die Glieder das gegenwärtige Dasein ergreift. Denken senkt sich herunter in die Glieder; sieht man es dort, erblickt man im Wollen das Denken.",
+          "Der Begriff des »Willenszauberwesens«: das unsichtbare Denken wirkt magisch im Willen der Glieder. Wer das erschaut, versteht erst wahre Magie. Mit der Schlusswiederholung der drei Mantren endet die Stunde. Die Wandtafel der Achten Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Und das Denken, es erscheinet als Willenszauberwesen.",
+          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 213"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-8.jpg",
+        "vortrag": "stunde-8",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 18.4.1924 (oberer Teil): die strahlende Kopf-Figur, das gelb-grün-rote Oval und die Farbfelder – die Scheidung von Denken, Fühlen, Wollen.",
+        "quelle": "GA 270i, Tafel zur Achten Stunde (18.4.1924), oberer Teil"
+      }
+    },
+    "9.1": {
+      "titel": "Die intime Übung – O Mensch, ertaste / erlebe / erfühle / erdenke",
+      "incipit": "O Mensch, ertaste in deines Leibes ganzem Sein …",
+      "rolle": "Vierstufige intime Übung (Erde–Wasser–Luft–Feuer), erweitert um Wandelsterne (Seele) und Ruhesterne (Geist).",
+      "vortrag": "stunde-9",
+      "anker": "m-uebung",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Neunte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-22",
+        "seiten": "222–227",
+        "wiederholung_in_stunde": "—",
+        "anmerkung": "Drei Teile entsprechen Leben – Liebe – Frommsein; Elemente hinter die Mantramsätze geschrieben (Erde/Wasser/Luft/Feuer)."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Neunte Stunde – vom physischen Fühlen ins Moralische, S. 224–225",
+          "art": "Deutung",
+          "vortrag": "stunde-9",
+          "anker": "uebung-deutung"
+        },
+        {
+          "ref": "GA 270a, Neunte Stunde – Seele/Geist, Leben/Liebe/Frommsein, S. 226–227",
+          "art": "Weiterführung",
+          "vortrag": "stunde-9",
+          "anker": "seele-geist"
+        },
+        {
+          "ref": "GA 270a, Sechste Stunde – Verwandtschaft mit den Elementen",
+          "art": "Grundlage",
+          "vortrag": "stunde-6",
+          "anker": "verwandtschaft"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "In vier Stufen ertastet, erlebt, erfühlt und erdenkt der Mensch, wie Erde, Wasser, Luft und Feuer ihm Stütze, Bildner, Pfleger und Helfer sind; erweitert zu Seele (Wandelsterne) und Geist (Ruhesterne).",
+        "kompakt": "Die große intime Übung der Neunten Stunde. Der ganze Leib wird wieder zum Sinnesorgan, zum Tastorgan. In vier Stufen: ertaste (Erde – »Stütze«), erlebe (Wasser – »Bildner«), erfühle (Luft – »Pfleger«), erdenke (Feuer – »Helfer«). Das Durchkraften geht vom Physischen ins Moralische über (Stütze → Bildner → Pfleger → Helfer/Kameraden). Erweitert wird die Übung auf die Seele (»der Wandelsterne weltenweisende Mächte«) und den Geist (»der Ruhesterne himmelkündende Worte«). Die drei Teile entsprechen Leben – Liebe – Frommsein.",
+        "ausfuehrlich": [
+          "Steiner knüpft an das Kind an, das fast ganz Sinnesorgan ist. Erst wenn das Kind sich auf die Füße stellt und in die Erdenkräfte hineinfällt, hört dieses intime Sinne-Sein auf. Die Übung führt es bewusst zurück.",
+          "Ein besonderes Geheimnis: Erde, Wasser, Luft lassen sich nur ertasten, erleben, erfühlen – die Wärme aber kann mit dem Gedanken erreicht werden. Senkt man den Gedanken in den eigenen Wärme-Organismus (Lunge, Leber, Herz), macht er die bloße Wärme zur Flamme; man »durchleuchtet« sich.",
+          "Die Übung steigert sich vom Leben (erster Teil) durch die Liebe (Seele/Wandelsterne) zum Frommsein (Geist/Ruhesterne) – einem wirklich religiösen Welterleben. Dann hört die Welt auf, physisch zu sein: »das Physische ist nur Schein, Maja«, und der Mensch ist jenseits der Schwelle. Die Neunte Stunde hat keine eigene Wandtafelzeichnung im Tafelband."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "O Mensch, erschaue dich in der Elemente Reich.",
+          "quelle": "GA 270a, Neunte Stunde (22.4.1924), S. 225"
+        }
+      ]
+    },
+    "9.2": {
+      "titel": "Mantram – Trag' in Denk-Erleben (Geist – Seele – Leib)",
+      "incipit": "Trag' in Denk-Erleben / Das als reines Sinnen …",
+      "rolle": "Dreistrophiges Mantram zur Wiedervereinigung der im Weltenall aufgeteilten Drei – Geist, Seele, Leib.",
+      "vortrag": "stunde-9",
+      "anker": "m-trag",
+      "quelle": {
+        "ga": "270a",
+        "stunde": "Neunte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-22",
+        "seiten": "230–231",
+        "wiederholung_in_stunde": "231",
+        "anmerkung": "Drei Strophen: »du bist Geist« / »du bist Seele« / »du schaust dich als Leib aus Geisteshöhen«."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270a, Neunte Stunde – Denken/Fühlen/Wollen im Weltenall aufgeteilt, S. 228–230",
+          "art": "Hinführung",
+          "vortrag": "stunde-9",
+          "anker": "dreiheit"
+        },
+        {
+          "ref": "GA 270a, Neunte Stunde – Weltenwort als Rahmung",
+          "art": "Rahmung",
+          "vortrag": "stunde-9",
+          "anker": "m-weltenwort-schluss"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Trägt man in Denk-Erleben Fühlen und Wollen, ist man Geist unter Geistern; in die Fühlenskräfte Denken und Wollen, ist man Seele im Reich der Geister; in die Willensmächte Denken und Fühlen, schaut man sich als Leib aus Geisteshöhen.",
+        "kompakt": "Das abschließende dreistrophige Mantram der Neunten Stunde. Jenseits der Schwelle sind Denken, Fühlen, Wollen im Weltenall aufgeteilt: das Denken ruht in den Ruhesternen, das Fühlen kreist in den Wandelsternen, das Wollen gliedert sich den Erdenkräften ein. Sie müssen mit festem inneren Erkraften wieder zur Einheit zusammengefügt werden. Das Mantram leistet dies in drei Strophen: ins Denk-Erleben Fühlen und Wollen tragen (»du bist Geist unter reinen Geistern«), in die Fühlenskräfte Denken und Wollen (»du bist Seele im Reich der Geister«), in die Willensmächte Denken und Fühlen (»du schaust dich selbst als Leib aus Geisteshöhen«). Erst so erscheint der Leib in seiner wahren Gestalt.",
+        "ausfuehrlich": [
+          "Die Neunte Stunde führt zur Wiedervereinigung dessen, was die intime Übung zuvor in die Weltglieder verteilt hat. Auf Erden hält der physische Leib Denken, Fühlen, Wollen zusammen; jenseits der Schwelle fallen sie auseinander und müssen durch eigene Kraft zusammengefügt werden.",
+          "Die drei Strophen entsprechen Geist, Seele und Leib: dem Denken bei den Ruhesternen werden Fühlen und Wollen beigemischt; dem Fühlen bei den Wandelsternen Denken und Wollen; dem an die Erde gebundenen Wollen Denken und Fühlen.",
+          "Was so in Worte gefasst ist, sind nach Steiner mantrische Worte, und wer sie nacherlebt, wird in die geistige Welt hineingeführt – eine »wirkliche Führerschaft«. Die Stunde und damit GA 270a schließt mit der erneuten Rahmung durch das Weltenwort."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Und du schaust dich selbst als Leib aus Geisteshöhen.",
+          "quelle": "GA 270a, Neunte Stunde (22.4.1924), S. 231"
         }
       ]
     }
