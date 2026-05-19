@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { vortraege } from '../lib/vortraege';
+import { vortraege, type Vortrag } from '../lib/vortraege';
 import { tx } from '../lib/typografie';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
@@ -15,6 +15,15 @@ const searchIndex = vortraege.map((v) => ({
     text: tx(a.text || ''),
   })),
 }));
+
+// Gruppen in der Reihenfolge, in der ihre erste Vortragsseite auftaucht.
+const gruppen: { name: string; items: Vortrag[] }[] = [];
+for (const v of vortraege) {
+  const g = v.gruppe || 'Ohne Gruppe';
+  let bucket = gruppen.find((x) => x.name === g);
+  if (!bucket) { bucket = { name: g, items: [] }; gruppen.push(bucket); }
+  bucket.items.push(v);
+}
 ---
 <Base title="Vorträge">
   <div class="index-intro">
@@ -40,16 +49,23 @@ const searchIndex = vortraege.map((v) => ({
 
       <div id="vortrag-search-results" class="search-results" hidden></div>
 
-      <ul class="vortrag-list" id="vortrag-list">
-        {vortraege.map((v) => (
-          <li>
-            <a class="vortrag-link" href={`${base}${v.id}`}>
-              <span class="vortrag-link-titel">{tx(v.titel)}</span>
-              <span class="vortrag-link-meta">{tx(v.ort)} · {v.datum} · GA {v.ga}, S. {v.seiten}</span>
-            </a>
-          </li>
+      <div id="vortrag-list" class="vortrag-groups">
+        {gruppen.map((g) => (
+          <section class="vortrag-group">
+            <h2 class="vortrag-group-head">{tx(g.name)}</h2>
+            <ul class="vortrag-list">
+              {g.items.map((v) => (
+                <li>
+                  <a class="vortrag-link" href={`${base}${v.id}`}>
+                    <span class="vortrag-link-titel">{tx(v.titel)}</span>
+                    <span class="vortrag-link-meta">{tx(v.ort)} · {v.datum} · GA {v.ga}, S. {v.seiten}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
         ))}
-      </ul>
+      </div>
 
       <script type="application/json" id="vortrag-search-data" set:html={JSON.stringify(searchIndex)} />
 

@@ -37,6 +37,23 @@ export type Tafelbild = {
   quelle: string;
 };
 
+export type VarianteFassung = {
+  fassung: string;
+  text: string;
+  quelle: string;
+  abweichung?: string;
+};
+
+export type Varianten = {
+  prosa?: string;
+  fassungen?: VarianteFassung[];
+};
+
+export type EditorischerHinweis = {
+  text: string;
+  quelle: string;
+};
+
 export type Kommentar = {
   titel?: string;
   incipit?: string;
@@ -48,6 +65,8 @@ export type Kommentar = {
   kerngedanken: Kerngedanken;
   zitate?: Zitat[];
   tafelbild?: Tafelbild;
+  varianten?: Varianten;
+  editorische_hinweise?: EditorischerHinweis[];
 };
 
 type KommentarLike = Kommentar | { status?: string };
@@ -78,6 +97,7 @@ const MANTRA_TO_KEYS: Record<string, string[]> = {
   '1.2': ['1.2'],
   '1.3': ['1.3'],
   '1.4': ['1.4'],
+  '2': ['2.1'],
   '3': ['3.1', '3.2', '3.3'],
   '4': ['4.1', '4.2', '4.3'],
   '5': ['5.1', '5.2', '5.3'],

@@ -29,6 +29,7 @@ const offlineUrls = [
   ...mantren.map((m) => `${base}${m.id}`),
   `${base}vortraege`,
   ...vortraege.map((v) => `${base}${v.id}`),
+  `${base}quellen`,
   `${base}fonts/inclusive-sans.woff2`,
   `${base}favicon.svg`,
 ];
@@ -85,11 +86,12 @@ const offlineUrls = [
     })}
   </div>
 
-  {vortraege.length > 0 && (
-    <footer class="index-footer">
+  <footer class="index-footer">
+    {vortraege.length > 0 && (
       <a class="index-footer-link" href={`${base}vortraege`}>Vorträge der Klassenstunden</a>
-    </footer>
-  )}
+    )}
+    <a class="index-footer-link" href={`${base}quellen`}>Quellen und editorische Notiz</a>
+  </footer>
 
   <script type="application/json" id="search-data" set:html={JSON.stringify(searchIndex)} />
   <script type="application/json" id="offline-urls" set:html={JSON.stringify(offlineUrls)} />

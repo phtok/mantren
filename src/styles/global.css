@@ -691,6 +691,9 @@ mark {
   border-top: 1px solid var(--line);
   font-size: 0.78rem;
   text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem 1.4rem;
 }
 
 .index-footer-link {
@@ -1252,6 +1255,282 @@ mark {
 }
 
 .klappe-zur-stelle:hover { text-decoration-color: var(--muted); }
+
+/* ─────────────── Apparat in der Kommentar-Klappe (Varianten / Hinweise) ─────────────── */
+
+.klappe-apparat {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.klappe-apparat-summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  display: inline-block;
+  padding: 0.15rem 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px dotted var(--line);
+}
+.klappe-apparat-summary::-webkit-details-marker { display: none; }
+.klappe-apparat-summary::marker { content: ''; }
+.klappe-apparat-summary::before {
+  content: "+ ";
+  color: var(--muted-soft);
+}
+.klappe-apparat[open] .klappe-apparat-summary::before {
+  content: "− ";
+}
+
+.klappe-apparat-body {
+  margin: 0.7rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.klappe-apparat-prosa {
+  margin: 0;
+  color: var(--text);
+}
+
+.klappe-fassungen {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.klappe-fassung {
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--line);
+}
+
+.klappe-fassung-name {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.klappe-fassung-abw {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.klappe-fassung-text {
+  margin: 0.25rem 0;
+  color: var(--text);
+}
+
+.klappe-fassung-quelle {
+  font-style: normal;
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted-soft);
+}
+
+.klappe-hinweises-list,
+.klappe-hinweise-list {
+  list-style: none;
+  padding: 0;
+}
+
+.klappe-hinweise-list li {
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--line);
+}
+
+.klappe-hinweise-list p {
+  margin: 0 0 0.2rem;
+  color: var(--text);
+}
+
+.klappe-hinweise-list cite {
+  font-style: normal;
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted-soft);
+}
+
+/* ─────────────── Vortrags-Index Gruppen ─────────────── */
+
+.vortrag-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.vortrag-group {
+  margin: 0;
+}
+
+.vortrag-group-head {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  margin: 0 0 0.6rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.vortrag-group .vortrag-list {
+  margin: 0;
+}
+
+/* ─────────────── Quellen-Seite ─────────────── */
+
+.quellen {
+  max-width: 40rem;
+  margin: 0;
+  padding: 0 0 3rem;
+}
+
+.quellen-head {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.quellen-title {
+  font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+  font-weight: 500;
+  margin: 0 0 0.3rem;
+  line-height: 1.2;
+}
+
+.quellen-subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.quellen-section {
+  margin: 0 0 2.4rem;
+}
+
+.quellen-section h2 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+}
+
+.quellen-section p {
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.quellen-werk-titel {
+  font-weight: 500;
+}
+
+.quellen-werk-meta {
+  color: var(--muted);
+  font-size: 0.85rem !important;
+}
+
+.quellen-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.quellen-item {
+  padding-left: 1rem;
+  border-left: 2px solid var(--line);
+}
+
+.quellen-item p {
+  margin: 0 0 0.25rem;
+}
+
+.quellen-kurztitel {
+  font-weight: 500;
+  color: var(--text);
+}
+
+.quellen-werk {
+  color: var(--text);
+  font-size: 0.9rem !important;
+}
+
+.quellen-inhalt {
+  color: var(--muted);
+  font-size: 0.88rem !important;
+}
+
+.quellen-imprint,
+.quellen-verwendung {
+  color: var(--muted-soft);
+  font-size: 0.8rem !important;
+}
+
+.quellen-dl {
+  margin: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.4rem 1rem;
+}
+@media (min-width: 700px) {
+  .quellen-dl {
+    grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr);
+  }
+}
+
+.quellen-dl dt {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+
+.quellen-dl dd {
+  margin: 0;
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.quellen-dl dt + dt { margin-top: 0.6rem; }
+.quellen-dl dd + dd { margin-top: 0.6rem; }
+
+.quellen-disclaim {
+  font-size: 0.82rem !important;
+  color: var(--muted) !important;
+}
+
+.quellen-lit {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.quellen-lit li {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.quellen-lit-ga {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.4rem;
+}
 
 /* ─────────────── Tafelbild-Fullscreen ─────────────── */
 
