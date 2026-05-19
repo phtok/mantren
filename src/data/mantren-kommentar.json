@@ -12,7 +12,7 @@
       "270b": "10.–19. Stunde; Tafeltexte der 17. Stunde",
       "270c": "Wiederholungsstunden; Prager u. Berner Einzelstunden; Notizen"
     },
-    "stand": "Stunden 1–3 gefüllt und verknüpft. 1.1–1.4 mit Deeplinks in stunde-2 und stunde-3. Strophen 3.1–3.3 (neue Sprüche der 3. Stunde) noch ohne eigenen Kommentar – folgen."
+    "stand": "Stunden 1–5 gefüllt; erste Wandtafelzeichnung (Fünfte Stunde) eingebunden. Kommentare 3.x–5.x folgen."
   },
   "tafeln": {
     "erste-tafel": {
@@ -269,6 +269,12 @@
           "art": "Weiterführung",
           "vortrag": "stunde-3",
           "anker": "meditation"
+        },
+        {
+          "ref": "GA 270a, Vierte Stunde (7.3.1924), S. 108–112 – Gegenüberstellung drei Tiere / drei neue Sprüche",
+          "art": "Weiterführung",
+          "vortrag": "stunde-4",
+          "anker": "gegenueberstellung"
         }
       ],
       "kerngedanken": {
