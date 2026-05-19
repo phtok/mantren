@@ -128,7 +128,6 @@ const ttsEnabled = vortrag.id === 'stunde-1';
     }
     function populateVoiceSelect() {
       if (!voiceSelect) return;
-      var de = germanVoices().slice();
       var score = function (v) {
         var n = (v.name || '').toLowerCase();
         var s = 0;
@@ -136,25 +135,36 @@ const ttsEnabled = vortrag.id === 'stunde-1';
         if (v.localService) s += 10;
         return s;
       };
-      de.sort(function (a, b) { return score(b) - score(a); });
+      var de = germanVoices().slice().sort(function (a, b) { return score(b) - score(a); });
+      var others = voices.filter(function (v) { return v.lang && v.lang.toLowerCase().indexOf('de') !== 0; }).sort(function (a, b) { return score(b) - score(a); });
       var def = currentVoice();
       voiceSelect.innerHTML = '';
-      if (de.length === 0) {
-        var opt = document.createElement('option');
-        opt.value = '';
-        opt.textContent = 'keine deutsche Stimme';
-        voiceSelect.appendChild(opt);
+      if (voices.length === 0) {
+        var opt0 = document.createElement('option');
+        opt0.value = '';
+        opt0.textContent = 'keine Stimme verfügbar';
+        voiceSelect.appendChild(opt0);
         voiceSelect.disabled = true;
         return;
       }
       voiceSelect.disabled = false;
-      de.forEach(function (v) {
-        var opt = document.createElement('option');
-        opt.value = v.voiceURI;
-        opt.textContent = voiceLabel(v);
-        if (def && v.voiceURI === def.voiceURI) opt.selected = true;
-        voiceSelect.appendChild(opt);
-      });
+      function appendGroup(label, list) {
+        if (list.length === 0) return;
+        var grp = document.createElement('optgroup');
+        grp.label = label;
+        list.forEach(function (v) {
+          var opt = document.createElement('option');
+          opt.value = v.voiceURI;
+          opt.textContent = voiceLabel(v);
+          if (def && v.voiceURI === def.voiceURI) opt.selected = true;
+          grp.appendChild(opt);
+        });
+        voiceSelect.appendChild(grp);
+      }
+      appendGroup('Deutsch (' + de.length + ')', de);
+      appendGroup('andere Sprachen (' + others.length + ')', others);
+      // Diagnostik-Hinweis auf der Konsole für Power-User
+      try { console.info('[tts] verfügbare Stimmen', voices.length, '— deutsch:', de.length); } catch (e) {}
     }
     function refreshVoices() {
       voices = synth.getVoices();
