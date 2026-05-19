@@ -216,10 +216,15 @@ const ttsEnabled = vortrag.id === 'stunde-1';
     function highlight(el) {
       if (current && current !== el) current.classList.remove('tts-current');
       current = el;
-      if (current) {
-        current.classList.add('tts-current');
-        try { current.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
-      }
+      if (!current) return;
+      current.classList.add('tts-current');
+      // Nur scrollen, wenn der Abschnitt nicht ohnehin im Sichtfeld liegt.
+      try {
+        var rect = current.getBoundingClientRect();
+        var vh = window.innerHeight || document.documentElement.clientHeight;
+        var inView = rect.top >= 64 && rect.bottom <= vh - 32;
+        if (!inView) current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } catch (e) {}
     }
 
     function speakAt(i) {
