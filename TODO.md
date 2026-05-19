@@ -51,6 +51,9 @@ Missbrauchskonten gezielt sperrbar.
 - Volltext aller Klassenstunden (GA 270a–d, soweit verfügbar)
 - Strophen-Kommentare in drei Tiefenstufen
 - Tafelbilder (Standardauflösung)
+- **Verschlüsselte Lesezeichen und eigene Notizen** – pflichtmäßig,
+  nicht optional. Ende-zu-ende-verschlüsselt; Schlüssel beim Nutzer,
+  Sync nur über zero-knowledge. Bindung an die Lizenz-Mailadresse.
 - Lebenslange Updates der Basis-Daten
 
 **Zusatzmodule (separat zukaufbar):**
@@ -67,6 +70,11 @@ Missbrauchskonten gezielt sperrbar.
   Christus-Sonne, Michael-Imagination) über alle Stunden.
 - **Esoterische Geographie** – Karten der Vortragsorte, biographische
   Einordnung Steiners im April 1924.
+- **Meditationspraxis** – Tipps und Hinweise zur Technik, Erfahrungen
+  und Anleitungen erfahrener Meditierender; Haltung, Atem, Zeit-/
+  Ortswahl, Umgang mit Hindernissen, Umgang mit Bildern. Sensibel
+  kuratiert, ohne Guru-Ton; verschiedene Schulrichtungen sichtbar
+  nebeneinander.
 
 **Werkzeug-Features (Teil der Basis oder separates Werkzeug-Modul):**
 
@@ -76,15 +84,17 @@ Missbrauchskonten gezielt sperrbar.
   (Saturn/Sonne/Mond-Zuordnung der Wiederholungsstunden).
 - **Memorier-Trainer** (Spaced Repetition, gegen Sichtprüfung).
 - **Druckansicht / EPUB-Export** der eigenen Auswahl.
-- **Privates Notizbuch** pro Strophe, verschlüsselt, nur lokal; Sync
-  optional ende-zu-ende-verschlüsselt.
 
 **Gemeinschaft (vorsichtig dosieren):**
 
 - **Lese-Kreis-Funktion** – kleine Gruppen, gemeinsamer Wochenrhythmus,
   asynchron; kein „Social", sondern Verabredung.
-- **Familien-/Gruppenlizenz** (3–5 Plätze, Rabatt) – entspricht der
-  Schul-Praxis gemeinsamer Stunden.
+- **Gruppenlizenz mit Verwaltungsfunktion** – Inhaber kauft N Plätze
+  und trägt die E-Mail-Adressen ein, die Magiclinks erhalten. Plätze
+  sind später umsetzbar (z. B. wenn ein Teilnehmer ausscheidet),
+  Verwaltungsoberfläche zeigt Stand der eingelösten / offenen Plätze.
+  Sinnvoll für Familien (3–5 Plätze) und für Klassenträger / Lese-
+  kreise (10–25 Plätze, mit gestaffeltem Preis pro Platz).
 
 **Offene technische Punkte:**
 
