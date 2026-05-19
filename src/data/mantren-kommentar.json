@@ -12,37 +12,191 @@
       "270b": "10.–19. Stunde; Tafeltexte der 17. Stunde",
       "270c": "Wiederholungsstunden; Prager u. Berner Einzelstunden; Notizen"
     },
-    "stand": "GA 270a vollständig: Vortragstexte 1–9, Tafelbilder 5–8 (getrimmt, ohne weiße Ränder) eingebunden. Strophen-Kommentare 1.1–1.4, 3.1–3.3, 4.1–4.3, 5.1–5.3, 6.1–6.6, 7.1–7.3, 8.1–8.4, 9.1–9.2 mit drei Tiefenstufen, Quellen, Parallelstellen; Tafelbild-Angebot bei allen Strophen der Stunden 5–8. 8.1 = Text der ersten Tafel der App. GA 270b/c folgen."
+    "stand": "GA 270a vollständig. GA 270b VOLLSTÄNDIG: Stunden 10–19, Kommentare 10.1–19.1. Drei-Tafeln-Sektion (erste/zweite/dritte-tafel) vollständig befüllt aus der Achtzehnten Stunde (Zusammenschau): erste = Weltenwort, zweite = Hüter-Wort, dritte = Göttergespräch + Christus-Gegenwort. Anführungskonvention ‹…› ab GA 270b. Nächster Block: GA 270c (Wiederholungs- und Einzelstunden) + restliche Tafeln (GA_270i.pdf S.10–11)."
   },
   "tafeln": {
     "erste-tafel": {
       "titel": "Erste Tafel – Das Weltenwort",
       "incipit": "O Mensch, erkenne dich selbst! / So tönt das Weltenwort …",
-      "rolle": "Wandtafeltext / Weltenwort; eröffnet die mantrische Reihe in den Wiederholungsstunden.",
+      "rolle": "Die erste der drei Tafeln, die Steiner in der Achtzehnten Stunde als Stationen des Weges zusammenfasst: lange vor dem Abgrund tönt das Weltenwort.",
       "vortrag": "stunde-8",
       "anker": "m-weltenwort",
       "quelle": {
-        "ga": "270c",
-        "stunde": "Erste Wiederholungsstunde",
+        "ga": "270b",
+        "stunde": "Achtzehnte Stunde (Zusammenschau)",
         "ort": "Dornach",
-        "datum": "1924-09-06",
-        "seiten": "14–15",
-        "wiederholung_in_stunde": null,
-        "anmerkung": "Das Weltenwort wird ausführlich in der Achten Stunde (18.4.1924, GA 270a, S. 200) gegeben; dort ist es als Mantram ausgesprochen. Wird mit dem Tafel-Block weiter ausgearbeitet."
+        "datum": "1924-07-12",
+        "seiten": "188",
+        "wiederholung_in_stunde": "In jeder Klassenstunde 8–19 als Rahmung wiederholt",
+        "anmerkung": "Ausführlich als Mantram gegeben in der Achten Stunde (18.4.1924, GA 270a). Als ‹erste Tafel› ausdrücklich bezeichnet in der Achtzehnten Stunde (GA 270b, S. 188)."
       },
-      "parallelstellen": [],
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – die drei Tafeln, die innere Dramatik der Selbsterkenntnis",
+          "art": "Zusammenschau",
+          "vortrag": "stunde-18",
+          "anker": "drei-tafeln"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – erste Tafel (Wiederholung des Weltenworts)",
+          "art": "Erste Tafel",
+          "vortrag": "stunde-18",
+          "anker": "m-weltenwort-schluss"
+        },
+        {
+          "ref": "GA 270b, Zweite Tafel – das Hüter-Wort",
+          "art": "Zweite Tafel",
+          "vortrag": "stunde-13",
+          "anker": "m-hueter"
+        },
+        {
+          "ref": "GA 270b, Dritte Tafel – Göttergespräch und Christus-Gegenwort",
+          "art": "Dritte Tafel",
+          "vortrag": "stunde-18",
+          "anker": "m-goetter"
+        }
+      ],
       "kerngedanken": {
-        "kurz": "",
-        "kompakt": "",
-        "ausfuehrlich": []
+        "kurz": "‹O Mensch, erkenne dich selbst!› – der Ruf, der dem Menschen aus allem Seienden und Werdenden entgegentönt und die Grundlage aller Welterkenntnis bildet. Die erste der drei Tafeln des Weges.",
+        "kompakt": "Das Weltenwort ist die erste der drei Tafeln, die Steiner in der Achtzehnten Stunde als die innere Dramatik der Selbsterkenntnis zusammenfasst. Lange bevor der Mensch zum Abgrund des Seins gekommen ist, tönt es ihm aus allem entgegen: ‹O Mensch, erkenne dich selbst! / So tönt das Weltenwort.› Es fragt, wer so weltenmächtig und herzinniglich spricht, ob es durch Raumesweiten und Zeitenweben wirkt – und ob der Mensch es nicht selbst erschafft, sich fremd erfühlend in der Raumes-Seelenleere, weil er des Denkens Kraft im Zeitvernichtungsstrom verliert. Dieses Wort rahmt jede Klassenstunde und eröffnet die mantrische Reihe.",
+        "ausfuehrlich": [
+          "Das Weltenwort steht am Anfang des ganzen Weges. Es ist kein Spruch über etwas, sondern die Aufforderung selbst, die der Mensch vernehmen kann, wenn er unbefangen auf alle Wesen und Ereignisse in Natur- und Geistesleben hinlauscht. Selbsterkenntnis ist hier ausdrücklich die Grundlage der Welterkenntnis, nicht ihr Gegenteil.",
+          "Der Bau des Wortes ist eine Fragebewegung: Wer spricht so weltenmächtig, wer so herzinniglich? Wirkt es durch des Raumes Weitenstrahlung, tönt es durch der Zeiten Wellenweben? Die letzte Wendung ist die schärfste: ob der Mensch das Wort nicht selbst erschafft, sich fremd erfühlend, weil er die Denkkraft im Zeitvernichtungsstrom verliert. Damit ist die ganze Aufgabe der Klasse vorgezeichnet.",
+          "In der Achtzehnten Stunde bezeichnet Steiner dieses Wort als die ‹erste Tafel›, die schon dastand, lange bevor man zum Abgrund kam. Die zweite Tafel ist das Hüter-Wort am Abgrund, die dritte das Göttergespräch jenseits (samt dem Christus-Gegenwort beim Rückblick in die Sinneswelt). Das Weltenwort rahmt jede einzelne Klassenstunde von der Achten bis zur Neunzehnten und bildet so die durchgehende Grundmelodie der ganzen Reihe."
+        ]
       },
-      "zitate": []
+      "zitate": [
+        {
+          "text": "O Mensch, erkenne dich selbst! So tönt das Weltenwort.",
+          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 188"
+        }
+      ]
     },
     "zweite-tafel": {
-      "status": "todo"
+      "titel": "Zweite Tafel – Das Hüter-Wort",
+      "incipit": "Erkenne erst den ernsten Hüter, / Der vor des Geisterlandes Pforten steht …",
+      "rolle": "Die zweite der drei Tafeln: am Abgrund, beim Hüter, der Sinnenkraft und Verstandesmacht den Einlass verwehrt.",
+      "vortrag": "stunde-13",
+      "anker": "m-hueter",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Achtzehnte Stunde (Zusammenschau)",
+        "ort": "Dornach",
+        "datum": "1924-07-12",
+        "seiten": "189",
+        "wiederholung_in_stunde": "Erstmals gegeben in der Dreizehnten Stunde (17.5.1924); als zweite Tafel wiederholt in der Achtzehnten Stunde",
+        "anmerkung": "Identisch mit dem Hüter-Wort der Dreizehnten Stunde (Strophe 13.2). Als ‹zweite Tafel› bezeichnet in der Achtzehnten Stunde (GA 270b, S. 189)."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – das Hüter-Wort (Erstgabe)",
+          "art": "Erstgabe",
+          "vortrag": "stunde-13",
+          "anker": "m-hueter"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – der ernste Hüter und das Christus-Gegenwort",
+          "art": "Deutung",
+          "vortrag": "stunde-13",
+          "anker": "hueter-deutung"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – die drei Tafeln",
+          "art": "Zusammenschau",
+          "vortrag": "stunde-18",
+          "anker": "drei-tafeln"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – zweite Tafel (Wiederholung)",
+          "art": "Zweite Tafel",
+          "vortrag": "stunde-18",
+          "anker": "m-hueter-wiederholung"
+        },
+        {
+          "ref": "GA 270b, Erste Tafel – das Weltenwort",
+          "art": "Erste Tafel",
+          "vortrag": "stunde-8",
+          "anker": "m-weltenwort"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "‹Erkenne erst den ernsten Hüter …› – die Mahnung am Abgrund: der Hüter verwehrt der Sinnenkraft und der Verstandesmacht den Einlass, bis die Wahrheit des eigenen Wesens kraftvoll erobert ist.",
+        "kompakt": "Die zweite der drei Tafeln. Nachdem der Mensch sich dem Abgrund genähert hat, steht da die zweite Tafel: ‹Erkenne erst den ernsten Hüter, / Der vor des Geisterlandes Pforten steht, / Den Einlaß deiner Sinnenkraft / Und deines Verstandes Macht verwehrend.› Begründung: weil der Mensch im Sinnesweben und im Gedankenbilden aus Raumeswesenlosigkeit und Zeiten-Truggewalten die Wahrheit des eigenen Wesens erst kraftvoll erobern muss. Das Wort wurde erstmals in der Dreizehnten Stunde gegeben (Strophe 13.2); in der Achtzehnten Stunde stellt Steiner es ausdrücklich als zweite Tafel zwischen Weltenwort und Göttergespräch.",
+        "ausfuehrlich": [
+          "Die zweite Tafel markiert die Schwelle. Während das Weltenwort den Menschen noch mitten in der Sinneswelt anspricht, steht das Hüter-Wort am Abgrund des Seins: hier endet die Tragfähigkeit von Sinnenkraft und Verstand.",
+          "Der Hüter verwehrt den Einlass nicht aus Strenge, sondern weil das gewöhnliche Bewusstsein an dieser Stelle nichts ausrichtet; die Truggestalten der gewöhnlichen Wirklichkeit verschwinden erst dort. Die Wahrheit des eigenen Wesens muss ‹kraftvoll erst erobert› werden – das ist die Bedingung des Eintritts.",
+          "Steiner ordnet diese Tafel in der Achtzehnten Stunde ausdrücklich als zweite zwischen die erste (Weltenwort) und das Dritte (Göttergespräch jenseits des Abgrundes, mit dem Christus-Gegenwort beim Rückblick). So bilden die drei Tafeln eine durchgehende Bewegung: Ruf in der Sinneswelt – Mahnung an der Schwelle – Bezeugung der Götterwelt jenseits."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Erkenne erst den ernsten Hüter, der vor des Geisterlandes Pforten steht …",
+          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 189"
+        }
+      ]
     },
     "dritte-tafel": {
-      "status": "todo"
+      "titel": "Dritte Tafel – Göttergespräch und Christus-Gegenwort",
+      "incipit": "Es denken die Menschenwesen! / Empfanget das Licht der Höhen …",
+      "rolle": "Die dritte der drei Tafeln: jenseits des Abgrundes das belauschte Göttergespräch; beim Rückblick in die Sinneswelt erklingt das Christus-Gegenwort.",
+      "vortrag": "stunde-18",
+      "anker": "m-goetter",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Achtzehnte Stunde (Zusammenschau)",
+        "ort": "Dornach",
+        "datum": "1924-07-12",
+        "seiten": "189–190",
+        "wiederholung_in_stunde": "Göttergespräch erstmals in der Achtzehnten Stunde; Christus-Gegenwort erstmals in der Dreizehnten Stunde",
+        "anmerkung": "Zusammengefasst: das Göttergespräch ‹Es denken die Menschenwesen› (Strophe 18.1) jenseits des Abgrundes und – beim Zurückblicken in die Sinneswelt – das Christus-Gegenwort ‹Ich trat in diese Sinnes-Welt› (Strophe 13.3). So in der Achtzehnten Stunde, S. 189–190."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – das Göttergespräch (Erstgabe)",
+          "art": "Erstgabe",
+          "vortrag": "stunde-18",
+          "anker": "m-goetter"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – das Christus-Gegenwort (Erstgabe)",
+          "art": "Christus-Gegenwort",
+          "vortrag": "stunde-13",
+          "anker": "m-gegenwort"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – Christus-Gegenwort beim Rückblick in die Sinneswelt",
+          "art": "Christus-Gegenwort",
+          "vortrag": "stunde-18",
+          "anker": "m-gegenwort-wiederholung"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – die drei Tafeln",
+          "art": "Zusammenschau",
+          "vortrag": "stunde-18",
+          "anker": "drei-tafeln"
+        },
+        {
+          "ref": "GA 270b, Erste/Zweite Tafel – Weltenwort, Hüter-Wort",
+          "art": "Erste/Zweite Tafel",
+          "vortrag": "stunde-13",
+          "anker": "m-hueter"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Jenseits des Abgrundes belauscht der Mensch das Göttergespräch (‹Es denken / fühlen / wollen die Menschenwesen … Empfanget das Licht der Höhen / die Seelenwärme / die Tiefenkraft›); beim Rückblick in die Sinneswelt erklingt das Christus-Gegenwort ‹Ich trat in diese Sinnes-Welt›.",
+        "kompakt": "Die dritte der drei Tafeln fasst zusammen, was sich jenseits des Abgrundes ereignet. Vorbei am ernsten Hüter, steht der Mensch drüben und wird Zeuge des Göttergesprächs: die dritte Hierarchie bekennt ihre Sorge (‹Es denken / fühlen / wollen die Menschenwesen!›), die zweite Hierarchie antwortet gewährend (‹Empfanget das Licht der Höhen / die Seelenwärme / die Tiefenkraft›). Dann blickt der Mensch herüber in die Sinneswelt, und ihr gegenüber erklingt das Christus-Gegenwort: ‹Ich trat in diese Sinnes-Welt … Ich will des Christus Wesen fühlen. Es weckt in Stoffes-Sterben Geist-Geburt … Im Geiste find' ich so die Welt / Und erkenne mich im Weltenwerden.› So in der Achtzehnten Stunde, S. 189–190.",
+        "ausfuehrlich": [
+          "Die dritte Tafel ist nicht ein einzelnes Wort, sondern das vollständige ‹Drüben›: zuerst das Göttergespräch, das man nicht selbst spricht, sondern als Zeuge belauscht. Die Wesen der dritten Hierarchie bekennen ihre Sorge um Denken, Fühlen und Wollen der Menschenwesen; die zweite Hierarchie gewährt Licht der Höhen, Seelenwärme, Tiefenkraft – ungewusst wirksam im Menschen.",
+          "Daran schließt sich, als zweiter Teil derselben Tafel, das Christus-Gegenwort: nicht jenseits gesprochen, sondern beim Zurückblicken aus der geistigen Welt in die Sinneswelt. Es bekennt den Weg der Seele – von eines Gottes Kraft hereingeführt, den Tod am Wegesende, die Wende im Christus-Wesen, das in Stoffes-Sterben Geist-Geburt weckt.",
+          "Steiner stellt diese Dreiheit in der Achtzehnten Stunde als die innere Dramatik der Selbsterkenntnis dar: erste Tafel (Weltenwort) noch in der Sinneswelt, zweite Tafel (Hüter-Wort) an der Schwelle, dritte Tafel jenseits – das Göttergespräch –, und der Schlussakkord des Christus-Gegenworts beim Rückblick. Der Bogen schließt sich: ‹Und erkenne mich im Weltenwerden› beantwortet die Frage des Weltenworts ‹O Mensch, erkenne dich selbst!›"
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Im Geiste find' ich so die Welt und erkenne mich im Weltenwerden.",
+          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 190"
+        }
+      ]
     }
   },
   "strophen": {
@@ -1521,6 +1675,948 @@
         {
           "text": "Und du schaust dich selbst als Leib aus Geisteshöhen.",
           "quelle": "GA 270a, Neunte Stunde (22.4.1924), S. 231"
+        }
+      ]
+    },
+    "10.1": {
+      "titel": "Mantram – Ich lebe in dem finstren Erdbereich",
+      "incipit": "Ich lebe in dem finstren Erdbereich …",
+      "rolle": "Dreischichtiges Mantram der Zehnten Stunde: Lesen – Empfinden – Wille; der Gang zurück ins vorige Erdenleben.",
+      "vortrag": "stunde-10",
+      "anker": "m-haupt",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Zehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-04-25",
+        "seiten": "15–21",
+        "wiederholung_in_stunde": "20",
+        "anmerkung": "Zwölf Zeilen in drei Vierergruppen; die Zeilen 1–5, 2–6, 3–7, 4–8 werden paarweise durch Bögen verbunden, Zeile 9–12 an diese Bögen geschrieben."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Zehnte Stunde – das Zwiegespräch (Anhören und Empfindung), S. 17–18",
+          "art": "Ausführung",
+          "vortrag": "stunde-10",
+          "anker": "empfinden"
+        },
+        {
+          "ref": "GA 270b, Zehnte Stunde – der Gang ins vorige Erdenleben, S. 22–25",
+          "art": "Deutung",
+          "vortrag": "stunde-10",
+          "anker": "deutung"
+        },
+        {
+          "ref": "GA 270b, Zehnte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-10",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Aus Geistestiefen tönt es, das Herz antwortet, der Wille bekräftigt: Ich lebe im finstren Erdbereich, webe im Schein der Sterne, lese in der Geister Taten, höre in der Götter Sprache – und werde zurückgeführt ins vorige Erdenleben.",
+        "kompakt": "Einziges, aber dreischichtig gebautes Mantram der Zehnten Stunde. Es führt vom blinden Leben in der Erdenfinsternis über das Weben im Sternenschein zum Lesen der Geistestaten und Hören der Göttersprache. Der erste Teil (Zeilen 1–4) wird wie aus Geistestiefen gehört; der zweite (5–8) ist die Antwort des Herzens (sehnend, tröstend, lehrend, schaffend); der dritte (9–12) der bekräftigende Wille: ‹Der Erde Finsternis verlöschet mich – Der Götter Sprache zeuget mich.› Im Unterbewussten macht die Seele dabei einen Gang zurück bis ins vorige Erdenleben; das durchsetzt die Meditation mit einem inneren ‹Zaubergefühl›, das ganz unabhängig von der Körperlichkeit erlebt wird.",
+        "ausfuehrlich": [
+          "Die Zehnte Stunde eröffnet GA 270b und damit die Gruppe ‹Leib in neuer Umgebung›. Steiner gibt nur ein Mantram, entwickelt es aber in drei Schichten, die nacheinander meditiert werden: zuerst das innere Schauen der vier Zeilen, dann das Zwiegespräch, schliesslich der bekräftigende Wille.",
+          "Der Weg führt von der robusten sinnlichen Wirklichkeit, in der man ‹blind, wie im Finstern tappend› lebt, hinaus in den Schein des Kosmos. Aus innerer Verehrung des Sternenhimmels verschwinden die äusseren Sternbilder und der Himmel wird zur Imagination; man liest ihn ‹von der anderen Seite›, wie Moses Gott nur von hinten ansehen durfte. Aus dem Lesen wird ein Hören – dann sprechen die Götter.",
+          "Die Deutung enthüllt das eigentliche Geheimnis: Während man glaubt, nur in der physischen Welt zu sein, wird die Seele bis ins vorige Erdenleben zurückgeführt. ‹Der Erde Finsternis verlöschet mich› löscht das gegenwärtige Bewusstsein aus, weil man durch den Bereich zwischen Tod und neuer Geburt geht; ‹Der Götter Sprache zeuget mich› heisst: was aus dem vorigen Erdendasein hereinwebt, macht mich zum seienden Menschenwesen. Die Wandtafel der Stunde (Hinausweben in den Sternenschein) dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Der Götter Sprache zeuget mich – bringt mich hervor, zeuget mich.",
+          "quelle": "GA 270b, Zehnte Stunde (25.4.1924), S. 20"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-10.jpg",
+        "vortrag": "stunde-10",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 25.4.1924 (unterer Teil): die rot gesäumte, goldgelb strahlende Fächerform mit einweisenden Pfeilen und die umringte Kreisform – das Hinausweben in den Schein des Kosmos.",
+        "quelle": "GA 270i, Tafel zur Zehnten Stunde (25.4.1924)"
+      }
+    },
+    "11.1": {
+      "titel": "Erste Strophe – Welten-Sternen-Stätten (Haupt)",
+      "incipit": "Welten-Sternen-Stätten, Götter-Heimat-Orte! …",
+      "rolle": "Zwiegespräch mit dem Kosmos und der dritten Hierarchie über das Haupt; der ins Haupt zusammengerollte Sternenhimmel.",
+      "vortrag": "stunde-11",
+      "anker": "m1",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Elfte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-02",
+        "seiten": "36–37",
+        "wiederholung_in_stunde": "45",
+        "anmerkung": "Dreigliedrig: objektives Erklingen – eigene intime Aussage – Sprache des Engels (Angelos)."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Elfte Stunde – der dreigliedrige Mensch, das Haupt als Götterwohnung, S. 33–36",
+          "art": "Hinführung",
+          "vortrag": "stunde-11",
+          "anker": "dreigliedrig"
+        },
+        {
+          "ref": "GA 270b, Elfte Stunde – der mantrische Charakter, der Weg zum Tempel, S. 43–46",
+          "art": "Deutung",
+          "vortrag": "stunde-11",
+          "anker": "tempel"
+        },
+        {
+          "ref": "GA 270b, Elfte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-11",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Aus den Weltenweiten tönt es wie ein Posaunenklang: Welten-Sternen-Stätten, Götter-Heimat-Orte. Spricht das Haupt das ‹Ich bin›, antwortet der Engel: So lebet Ihr – die Götter – im Erdenleibe als Menschen-Wesenheit.",
+        "kompakt": "Erste der drei Strophen des Tempelbau-Mantrams, dem Haupt zugeordnet. Das Haupt ist eine Nachbildung des Kosmos; die Glanzesstrahlen der Sterne werden in ihm wie der ganze Sternenhimmel zusammengerollt aufbewahrt, und die Sterne sind die Wohnung der Götter. Man hört von allen Seiten den majestätischen Posaunenklang ‹Welten-Sternen-Stätten, Götter-Heimat-Orte!›, antwortet still aus dem Intimsten ‹Spricht in Haupteshöhe … das Ich bin›, und der Engel (Angelos) lehrt: ‹So lebet Ihr im Erdenleibe als Menschen-Wesenheit.› Dreigliedrig: objektives Erklingen – eigenes Echo – Sprache des Engels.",
+        "ausfuehrlich": [
+          "Die Elfte Stunde eröffnet die Gruppe ‹Zusammenleben mit Hierarchien›. Das dreistrophige Mantram ordnet die dreigliedrige Menschennatur den drei Weltenregionen zu; die erste Strophe gilt dem Nerven-Sinnes-Menschen, dem Haupt.",
+          "Steiner schildert das Haupt als zusammengerollten Weltenraum: was draussen als Sternenglanz strahlt, wirkt im Haupte als dasselbe in anderer Gestalt. Da die Sterne Götterwohnungen sind, sprechen die Götter selbst, wenn der Mensch sein ‹Ich› durch die Kraft des Hauptes hineinspricht – eine Lehre, die nicht von Menschen, sondern von den Angeloi (dritte Hierarchie) gegeben wird.",
+          "Der mantrische Charakter ist entscheidend: nicht der theoretische Inhalt wirkt, sondern das Geschehen – das Tönen des Kosmos, das eigene intime Antworten, die lehrende Interpretation des Engels. Nach dieser ersten Strophe spürt man ein webendes Tempelgewölbe; sie ist der erste Schritt auf dem Weg zum Tempel. Die Wandtafel der Stunde (Sternenbogen über der Haupt-Ich-Figur) dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "So lebet Ihr im Erdenleibe als Menschen-Wesenheit.",
+          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 37"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-11.jpg",
+        "vortrag": "stunde-11",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 2.5.1924: der blaue Sternenbogen mit gelben Strahlen über der zentralen gelb-roten Haupt-Ich-Figur – der ins Haupt zusammengerollte Sternenhimmel.",
+        "quelle": "GA 270i, Tafel zur Elften Stunde (2.5.1924)"
+      }
+    },
+    "11.2": {
+      "titel": "Zweite Strophe – Welten-Sonnen-Kreise (Brust)",
+      "incipit": "Welten-Sonnen-Kreise, Geister-Wirkens-Wege! …",
+      "rolle": "Zwiegespräch über die rhythmische Organisation; die Bewegung der Wandelsterne, repräsentiert durch die Sonne.",
+      "vortrag": "stunde-11",
+      "anker": "m2",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Elfte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-02",
+        "seiten": "38–40",
+        "wiederholung_in_stunde": "45",
+        "anmerkung": "Dreigliedrig: objektives Erklingen – eigene intime Aussage – Sprache des Engels (Angelos)."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Elfte Stunde – zweites Zwiegespräch, Brust / Wandelsterne, S. 38–39",
+          "art": "Hinführung",
+          "vortrag": "stunde-11",
+          "anker": "zweite-hinfuehrung"
+        },
+        {
+          "ref": "GA 270b, Elfte Stunde – der Weg zum Tempel, S. 43–46",
+          "art": "Deutung",
+          "vortrag": "stunde-11",
+          "anker": "tempel"
+        },
+        {
+          "ref": "GA 270b, Elfte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-11",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Beglückend das Innere durchziehend tönt es: Welten-Sonnen-Kreise, Geister-Wirkens-Wege. Tönt das Herz das ‹Ich lebe›, antwortet der Engel: So schreitet Ihr im Erdenwandel als Menschen-Schöpferkraft.",
+        "kompakt": "Zweite Strophe, der rhythmischen Organisation zugeordnet – Lunge und Herz, dem Pulsieren und Atmen als Abbild der Bewegung der Wandelsterne, repräsentiert durch die Sonne. Nicht der majestätische Posaunenklang von aussen, sondern ein beglückend das Innere durchziehendes melodisches Erklingen: ‹Welten-Sonnen-Kreise, Geister-Wirkens-Wege!› Man antwortet intim ‹Tönt in Herzensmitte … das Ich lebe›; der Engel: ‹So schreitet Ihr im Erdenwandel als Menschen-Schöpferkraft.› Die Steigerung gegenüber der ersten Strophe ist genau gebaut: ‹spricht›→‹tönt›, ‹Haupteshöhe›→‹Herzensmitte›, ‹Ich bin›→‹Ich lebe›.",
+        "ausfuehrlich": [
+          "Die mittlere Strophe wendet sich vom ruhenden Haupt zur bewegten Brust. Versenkt man sich meditativ ins Haupt, verspürt man Ruhe; in die Brust, verspürt man Bewegung – ein Abbild des Ganges der Wandelsterne.",
+          "Die Sonne steht als Repräsentant der Planetenbewegung; wie die Götterwohnungen im Haupt, so rollen sich die Bewegungen des Planetensystems in Atmung und Blutzirkulation zusammen. Statt eines Klangs von aussen ein melodisches Erklingen, das beglückend das Innere durchzieht.",
+          "In der Tempel-Schilderung ist dies der zweite Schritt: das nach der ersten Strophe nur gespürte Tempelgewölbe wird jetzt für den Seelensinn wirklich sichtbar, die gewöhnliche Welt wird unsichtbar. Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "So schreitet Ihr im Erdenwandel als Menschen-Schöpferkraft.",
+          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 39"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-11.jpg",
+        "vortrag": "stunde-11",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 2.5.1924: der blaue Sternenbogen mit gelben Strahlen über der zentralen gelb-roten Haupt-Ich-Figur – der ins Haupt zusammengerollte Sternenhimmel.",
+        "quelle": "GA 270i, Tafel zur Elften Stunde (2.5.1924)"
+      }
+    },
+    "11.3": {
+      "titel": "Dritte Strophe – Welten-Grundes-Mächte (Glieder)",
+      "incipit": "Welten-Grundes-Mächte, Schöpfer-Liebes-Glänzen! …",
+      "rolle": "Zwiegespräch über die Gliedmaßen-Stoffwechsel-Organisation; das dumpfe Rollen des Weltengrundes, Glänzen aus Liebe.",
+      "vortrag": "stunde-11",
+      "anker": "m3",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Elfte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-02",
+        "seiten": "41–43",
+        "wiederholung_in_stunde": "45",
+        "anmerkung": "Dreigliedrig: objektives Erklingen – eigene intime Aussage – Sprache des Engels (Angelos)."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Elfte Stunde – drittes Zwiegespräch, Glieder / Weltengrund, S. 41–42",
+          "art": "Hinführung",
+          "vortrag": "stunde-11",
+          "anker": "dritte-hinfuehrung"
+        },
+        {
+          "ref": "GA 270b, Elfte Stunde – der Weg zum Tempel, S. 43–46",
+          "art": "Vollendung",
+          "vortrag": "stunde-11",
+          "anker": "tempel"
+        },
+        {
+          "ref": "GA 270b, Elfte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-11",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Aus den Erdentiefen grollt es: Welten-Grundes-Mächte, Schöpfer-Liebes-Glänzen. Schafft das Glied das ‹Ich will›, antwortet der Engel: So strebet Ihr im Erdenwerke als Menschen-Sinnes-Taten.",
+        "kompakt": "Dritte Strophe, der Gliedmaßen-Stoffwechsel-Organisation zugeordnet. Beim dritten Gliede hört man nicht den Posaunenklang und nicht das Melos der Wandelsterne, sondern das dumpfe Rollen des Weltengrundes aus den Erdentiefen: ‹Welten-Grundes-Mächte, Schöpfer-Liebes-Glänzen!› – ein Glänzen nicht von Licht, sondern von Liebe, denn wo sich das Umfängliche im Mittelpunkt sammelt, liegen die Ursprünge der Liebesmächte. Daher antwortet man nicht mit ‹spricht› oder ‹tönt›, sondern mit der Tat aus dem Willen: ‹Schafft in Leibesgliedern … das Ich will›; der Engel: ‹So strebet Ihr im Erdenwerke als Menschen-Sinnes-Taten.› Mit dieser Strophe gewinnt der Tempel seinen Boden.",
+        "ausfuehrlich": [
+          "Die dritte Strophe vollendet die Trias. Die Glieder sind unbeteiligt am Geistesmenschen, ganz nach den Erdenkräften gestaltet; durch sie strömen die Kräfte aus dem Weltengrund von unten herauf.",
+          "Das ‹Glänzen von Liebe› ist ein zentrales Motiv: an den Orten, wo sich das sonst Umfängliche im Mittelpunkt sammelt, liegen die Ursprünge der Liebesmächte. Deshalb kann hier nicht ‹gesprochen› oder ‹getönt›, sondern nur ‹geschaffen› werden – die Antwort fliesst aus dem Willen.",
+          "In der Tempel-Schilderung ist dies der abschliessende Schritt: der Tempel hat seinen Boden gewonnen, und in ihm sind die Wesen, mit denen der Mensch als Götter-Lehrer in Verbindung treten soll. Es ist keine Vision, sondern ein wirklicher Geistesweg. Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "So strebet Ihr im Erdenwerke als Menschen-Sinnes-Taten.",
+          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 42"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-11.jpg",
+        "vortrag": "stunde-11",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 2.5.1924: der blaue Sternenbogen mit gelben Strahlen über der zentralen gelb-roten Haupt-Ich-Figur – der ins Haupt zusammengerollte Sternenhimmel.",
+        "quelle": "GA 270i, Tafel zur Elften Stunde (2.5.1924)"
+      }
+    },
+    "12.1": {
+      "titel": "Erstes Mantram – Vernimm des Denkens Feld (niedere Hierarchien)",
+      "incipit": "Vernimm des Denkens Feld …",
+      "rolle": "Dreigliedriges Zwiegespräch durch die drei niederen Hierarchien: Angeloi, Archangeloi, Archai.",
+      "vortrag": "stunde-12",
+      "anker": "m-denken",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Zwölfte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-11",
+        "seiten": "54–59",
+        "wiederholung_in_stunde": "57",
+        "anmerkung": "Kosmos-Ruf, dreizeilige Hüter-Einweisung, dann die paradigmatische Zeile des Hierarchie-Wesens; Konzentrationsbild: das nach oben blickende Auge."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Zwölfte Stunde – die drei niederen Hierarchien, das Bild des Auges, S. 55–59",
+          "art": "Deutung",
+          "vortrag": "stunde-12",
+          "anker": "denken-deutung"
+        },
+        {
+          "ref": "GA 270b, Zwölfte Stunde – drei Töne jenseits der Schwelle, S. 53–54",
+          "art": "Hinführung",
+          "vortrag": "stunde-12",
+          "anker": "hinfuehrung"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – Willens-Feld, erste Hierarchie (Fortsetzung der Hierarchien-Reihe)",
+          "art": "Fortsetzung",
+          "vortrag": "stunde-13",
+          "anker": "m-willen"
+        },
+        {
+          "ref": "GA 270b, Zwölfte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-12",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Aus dem Kosmos tönt ‹Vernimm des Denkens Feld›. Der Hüter weist ein, dann sprechen Angeloi, Archangeloi, Archai: Blick' auf deiner Sinne Leuchtewesen – auf deines Denkens Kräftewirken – auf der Erinnerung Bildgestalten.",
+        "kompakt": "Erstes der beiden grossen Mantren der Zwölften Stunde, gerahmt vom Weltenwort. Die Seele schweigt und steht jenseits der Schwelle vor dem Hüter; sie vernimmt dreierlei: den Ruf aus dem Weltenall (‹Vernimm des Denkens Feld›), die dreizeilige Einweisung des Hüters und die paradigmatische Zeile des zu uns gehörigen Hierarchie-Wesens. So führt das Mantram durch die drei niederen Hierarchien: Angeloi (‹Blick' auf deiner Sinne Leuchtewesen› – auch unsere Sinne leuchten, nur bemerken wir es nicht), Archangeloi (‹Blick' auf deines Denkens Kräftewirken›), Archai (‹Blick' auf der Erinnerung Bildgestalten›, das tief unter der Sprache Liegende). Vor der Übung stellt man das Bild des nach oben blickenden Auges vor die Seele.",
+        "ausfuehrlich": [
+          "Die Zwölfte Stunde gehört zur Gruppe ‹Zusammenleben mit Hierarchien› und ist vorne und hinten vom Weltenwort gerahmt. Selbsterkenntnis führt zur Welterkenntnis – aber nur, wenn man das Selbst mit der geistigen Welt verbindet, in der die Hierarchien stehen.",
+          "Neu ist die Drei-Stimmen-Situation: der Mensch schweigt ganz und hört. Der erste Ton kommt aus dem weiten Weltenall, der zweite vom Hüter, der dritte vom Hierarchie-Wesen, das zu uns gehört. Steiner betont den mantrischen Charakter: nicht der theoretische Inhalt wirkt, sondern das Sich-Hineinversetzen in die Situation, in der anderes Wesen zu uns spricht.",
+          "Die drei paradigmatischen Zeilen richten den Blick stufenweise nach innen: auf das (unbemerkte) Leuchten der Sinne, auf das (ungespürte) Kräftewirken des Denkens, auf die unter der Sprache liegenden Erinnerungsbilder. Das Konzentrationsbild – ein hinaufblickendes Auge, das die Kräfte der höheren Hierarchien empfängt, welche die unteren zum Menschen weiterschicken – bleibt während der ganzen Übung vor der Seele. Die Wandtafel der Stunde zeigt genau dieses Bild."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Blick' auf deiner Sinne Leuchtewesen.",
+          "quelle": "GA 270b, Zwölfte Stunde (11.5.1924), S. 55"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-12.jpg",
+        "vortrag": "stunde-12",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 11.5.1924: das hinaufblickende Auge, das ‹Ich› im gelben Kreis, das Menschenprofil und die Strahlen – das Konzentrationsbild der Stunde.",
+        "quelle": "GA 270i, Tafel zur Zwölften Stunde (11.5.1924)"
+      }
+    },
+    "12.2": {
+      "titel": "Zweites Mantram – Vernimm des Fühlens Feld (zweite Hierarchie)",
+      "incipit": "Vernimm des Fühlens Feld …",
+      "rolle": "Dreigliedriges Zwiegespräch durch die zweite Hierarchie: Exusiai, Dynamis, Kyriotetes.",
+      "vortrag": "stunde-12",
+      "anker": "m-fuehlen",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Zwölfte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-11",
+        "seiten": "59–64",
+        "wiederholung_in_stunde": "63",
+        "anmerkung": "Höhere Sprache als beim ersten Mantram: nicht nur Aufmerksammachen, sondern Hineingerufenwerden ins Weltendasein."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Zwölfte Stunde – die zweite Hierarchie, das Ich als Gottesgedanke, S. 62–64",
+          "art": "Deutung",
+          "vortrag": "stunde-12",
+          "anker": "fuehlen-deutung"
+        },
+        {
+          "ref": "GA 270b, Zwölfte Stunde – erstes Mantram (Denken) als Grundlage",
+          "art": "Grundlage",
+          "vortrag": "stunde-12",
+          "anker": "m-denken"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – Willens-Feld, erste Hierarchie (Fortsetzung der Hierarchien-Reihe)",
+          "art": "Fortsetzung",
+          "vortrag": "stunde-13",
+          "anker": "m-willen"
+        },
+        {
+          "ref": "GA 270b, Zwölfte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-12",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "‹Vernimm des Fühlens Feld›. Es sprechen Exusiai, Dynamis, Kyriotetes: Fühl' in deines Atems Lebensregung – in deines Blutes Wellenweben – der Erde mächtig Widerstreben.",
+        "kompakt": "Zweites Mantram der Zwölften Stunde, das in die zweite Hierarchie hinaufsteigt. Die Sprache ist höher: wir werden nicht nur auf Vorhandenes aufmerksam gemacht, sondern vernehmen, wie wir ins Weltendasein selbst hineingerufen werden. Exusiai: ‹Fühl' in deines Atems Lebensregung› – wenn ein Wesen der Exusiai denkt, denkt es uns; unser Ich ist sein realer Gedanke, und unser höheres Sein besteht darin, von Götterwesen gedacht zu werden. Dynamis: ‹Fühl' in deines Blutes Wellenweben› – Geistesdasein aus den Lebenskräften der Sterne geschenkt. Kyriotetes: ‹Fühl' der Erde mächtig Widerstreben› – Erdenwollen ist nur umgewandeltes Himmelswollen; im Widerstand der Erde empfindet man die gnadevolle Erteilung der Kräfte aus den Himmelshöhen.",
+        "ausfuehrlich": [
+          "Während das erste Mantram durch die drei niederen Hierarchien führt, steigt das zweite in die zweite Hierarchie. Der Hüter weist je dreizeilig ein, dann spricht das Wesen der Hierarchie die paradigmatische Zeile.",
+          "Der zentrale Gedanke der Exusiai-Strophe: unsere irdischen Gedanken sind fast Nichtigkeiten; wenn aber ein Wesen der Exusiai denkt, so denkt es uns. Sagen wir auf Erden ‹Ich›, so konstatieren wir eigentlich, dass wir von Götterwesen gedacht werden – darin besteht unser höheres Sein.",
+          "Die Kyriotetes-Strophe enthält das Geheimnis des Erdenwollens: es wird stetig hinunter- und hinaufgetragen; oben ist es Himmelswollen, unten Erdenwollen. Nur wer den Widerstand der Erde empfindet, kann richtig in die reine geistige Welt eindringen und empfindet die Wohltat der aus Himmelshöhen erteilten Kräfte. Das Hinaufsteigen in Seraphine, Cherubine und Throne folgt in der Dreizehnten Stunde. Die Wandtafel der Stunde dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Fühl' der Erde mächtig Widerstreben.",
+          "quelle": "GA 270b, Zwölfte Stunde (11.5.1924), S. 61"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-12.jpg",
+        "vortrag": "stunde-12",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 11.5.1924: das hinaufblickende Auge, das ‹Ich› im gelben Kreis, das Menschenprofil und die Strahlen – das Konzentrationsbild der Stunde.",
+        "quelle": "GA 270i, Tafel zur Zwölften Stunde (11.5.1924)"
+      }
+    },
+    "13.1": {
+      "titel": "Drittes Mantram – Vernimm des Willens Feld (erste Hierarchie)",
+      "incipit": "Vernimm des Willens Feld …",
+      "rolle": "Abschluss der Hierarchien-Trias: das Willens-Feld durch die erste Hierarchie – Throne, Cherubine, Seraphine.",
+      "vortrag": "stunde-13",
+      "anker": "m-willen",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Dreizehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-17",
+        "seiten": "79–86",
+        "wiederholung_in_stunde": "83, 86",
+        "anmerkung": "Vorbereitungswort ‹Sitze, Blitze, Hitze›; Symbolum Wolken–Throne–Wesen / Blitze–Cherubine–Werkzeuge / Weltenhitze–Seraphine–Schein."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – die erste Hierarchie, Sitze/Blitze/Hitze, S. 79–86",
+          "art": "Deutung",
+          "vortrag": "stunde-13",
+          "anker": "willen-deutung"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – Gehen als übersinnlicher Vorgang, S. 75–78",
+          "art": "Hinführung",
+          "vortrag": "stunde-13",
+          "anker": "willen-hinfuehrung"
+        },
+        {
+          "ref": "GA 270b, Zwölfte Stunde – erstes und zweites Mantram (Denken/Fühlen)",
+          "art": "Vorstufe",
+          "vortrag": "stunde-12",
+          "anker": "m-denken"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-13",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "‹Vernimm des Willens Feld›. Es sprechen Throne, Cherubine, Seraphine: Blick' auf deiner Triebe Feuer-Wesen – auf des Gewissens Seelen-Führung – auf deines Schicksales Geistes-Prüfung.",
+        "kompakt": "Das dritte und gewichtigste der drei Hierarchien-Mantren, das die Trias der Zwölften und Dreizehnten Stunde abschliesst. Es führt durch die erste Hierarchie: Throne (‹Blick' auf deiner Triebe Feuer-Wesen› – die dumpfen Weltenkräfte aus den Erden-Untergründen, die die Glieder regsam machen), Cherubine (‹Blick' auf des Gewissens Seelen-Führung› – die Stimme des Gewissens ist von hohem Ursprung, sie lebt in der Welt der Cherubine und kreist mit den hellen Geistesstrahlen im Blute), Seraphine (‹Blick' auf deines Schicksales Geistes-Prüfung› – das Schicksal, das von Erdenleben zu Erdenleben hereinwirkt, im Atem). Zur Vorbereitung das Wort-Aufsteigen ‹Sitze, Blitze, Hitze› und das Symbolum Wolken–Throne / Blitze–Cherubine / Weltenhitze–Seraphine.",
+        "ausfuehrlich": [
+          "Das Feld des Wollens beherrscht den Menschen am kräftigsten und wird doch am wenigsten bewusst durchlebt. Steiner zeigt am Gehen, dass es ein ganz übersinnlicher Vorgang ist: wir gehen mit den Kräften der Ich-Organisation in den unsichtbaren Schwerkräften der Erde, die physischen Beine geben nur das Bewusstsein davon. Im Schlaf treten dafür die Throne ein.",
+          "Die Cherubine-Strophe enthält eine zentrale Entdeckung: die Stimme des Gewissens ist nicht trivial, sie ist von hohem Ursprung, lebt in der Welt der Cherubine und webt sich ins Menschenwesen herein; die Blitze sind die feurigen Schwerter, die Werkzeuge der Cherubine. Die Begegnung mit der Welt, in der das Gewissen west, ist die grösste persönliche Entdeckung, die der Mensch machen kann.",
+          "Steiner gibt ein dreistufiges Symbolum, das die Offenbarungsweise der ersten Hierarchie ausdrückt: die Throne offenbaren sich durch ihr Wesen (sie weben in den Wolken selbst), die Cherubine nur durch ihre Werkzeuge (die Blitze), die Seraphine nur durch den ausstrahlenden Schein (die Weltenhitze). Das Vorbereitungswort ‹Sitze, Blitze, Hitze› lässt im dreifachen ‹i› das Aufsteigen fühlen. Die Wandtafel der Stunde zeigt genau dieses Symbolum."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Blick' auf des Gewissens Seelen-Führung.",
+          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 80"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-13.jpg",
+        "vortrag": "stunde-13",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 17.5.1924: gelbe Weltenhitze, blaue Wolken, rote Blitze, das Symbolum Wolken–Throne / Blitze–Cherubine / Weltenhitze–Seraphine und der Schwerkraftbogen.",
+        "quelle": "GA 270i, Tafel zur Dreizehnten Stunde (17.5.1924)"
+      }
+    },
+    "13.2": {
+      "titel": "Das Hüter-Wort – Erkenne erst den ernsten Hüter",
+      "incipit": "Erkenne erst den ernsten Hüter …",
+      "rolle": "Mahnung aus den Weltentiefen: der Hüter verwehrt der Sinnenkraft und der Verstandesmacht den Einlass.",
+      "vortrag": "stunde-13",
+      "anker": "m-hueter",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Dreizehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-17",
+        "seiten": "89",
+        "wiederholung_in_stunde": "—",
+        "anmerkung": "Klingt aus denselben Weltentiefen wie das Weltenwort; ihm antwortet das Christus-Gegenwort."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – der ernste Hüter und das Christus-Gegenwort, S. 89–90",
+          "art": "Deutung",
+          "vortrag": "stunde-13",
+          "anker": "hueter-deutung"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – das Christus-Gegenwort (Antwort)",
+          "art": "Gegenwort",
+          "vortrag": "stunde-13",
+          "anker": "m-gegenwort"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – Weltenwort als Rahmung",
+          "art": "Rahmung",
+          "vortrag": "stunde-13",
+          "anker": "m-weltenwort"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Aus denselben Weltentiefen wie das Weltenwort klingt die Mahnung: Erkenne erst den ernsten Hüter, der vor des Geisterlandes Pforten steht und Sinnenkraft und Verstandesmacht den Einlass verwehrt.",
+        "kompakt": "Nach der Hierarchien-Trias und der Schilderung des Meditanten-Ernstes klingt aus denselben Weltentiefen, aus denen das Weltenwort kam, das Hüter-Wort. Erkennen ist eine ernste Sache; die Welt der Maja liefert es nicht. Der Hüter steht vor des Geisterlandes Pforten und verwehrt der Sinnenkraft und der Verstandesmacht den Einlass, weil der Mensch im Sinnesweben und Gedankenbilden aus Raumeswesenlosigkeit und Zeiten-Truggewalten die Wahrheit des eigenen Wesens erst kraftvoll erobern muss. Dem antwortet andächtig das Christus-Gegenwort.",
+        "ausfuehrlich": [
+          "Das Hüter-Wort steht am Übergang der Dreizehnten Stunde vom mantrischen Hauptteil zum Schluss. Es ist eng mit dem Weltenwort verbunden: beide klingen aus denselben Weltentiefen, das Weltenwort als Frage, das Hüter-Wort als ernste Mahnung.",
+          "Inhaltlich verwehrt der Hüter bewusst den Einlass – nicht aus Strenge, sondern weil Sinnenkraft und Verstand allein an der Schwelle nichts ausrichten. Die Truggestalten der gewöhnlichen Sinneswirklichkeit verschwinden erst dort.",
+          "Die Wahrheit des eigenen Wesens muss ‹kraftvoll erst erobert› werden – das ist die Bedingung für den Eintritt. Erst auf diese Mahnung kann das Christus-Gegenwort aus den Tiefen der Seele antworten."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Der vor des Geisterlandes Pforten steht …",
+          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89"
+        }
+      ]
+    },
+    "13.3": {
+      "titel": "Das Christus-Gegenwort – Ich trat in diese Sinnes-Welt",
+      "incipit": "Ich trat in diese Sinnes-Welt …",
+      "rolle": "Andächtige Antwort der Seele auf das Hüter-Wort; das Christus-Wesen weckt in Stoffes-Sterben Geist-Geburt.",
+      "vortrag": "stunde-13",
+      "anker": "m-gegenwort",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Dreizehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-17",
+        "seiten": "90",
+        "wiederholung_in_stunde": "—",
+        "anmerkung": "Antwort auf das Hüter-Wort; eines der wenigen Mantren, die das Christus-Wesen ausdrücklich nennen."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – der ernste Hüter (vorangehend)",
+          "art": "Hüter-Wort",
+          "vortrag": "stunde-13",
+          "anker": "m-hueter"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde – der ernste Hüter und das Christus-Gegenwort, S. 89–90",
+          "art": "Deutung",
+          "vortrag": "stunde-13",
+          "anker": "hueter-deutung"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Ich trat in diese Sinnes-Welt, des Denkens Erbe mit mir führend; ich will des Christus Wesen fühlen – es weckt in Stoffes-Sterben Geist-Geburt; im Geiste finde ich so die Welt.",
+        "kompakt": "Die andächtige Antwort der Seele auf das Hüter-Wort und zugleich der gedankliche Höhepunkt der Dreizehnten Stunde. Die Seele bekennt: Sie trat in die Sinnes-Welt, das Erbe des Denkens mit sich führend, von eines Gottes Kraft hereingeführt; der Tod steht am Ende des Weges. Die Wende: ‹Ich will des Christus Wesen fühlen. Es weckt in Stoffes-Sterben Geist-Geburt.› So findet die Seele im Geiste die Welt und erkennt sich im Weltenwerden. Eines der wenigen Klassen-Mantren, die das Christus-Wesen ausdrücklich nennen.",
+        "ausfuehrlich": [
+          "Das Gegenwort schliesst die innere Bewegung der Dreizehnten Stunde: auf die ernste Mahnung des Hüters antwortet die Seele nicht mit Furcht, sondern mit einem Bekenntnis ihres Weges.",
+          "Der Bogen reicht von der Herkunft (‹Eines Gottes Kraft hat mich hereingeführt›) über den Tod am Wegesende zur entscheidenden Wende im Christus-Wesen, das im Sterben des Stofflichen die Geist-Geburt weckt.",
+          "Der Schluss – ‹Im Geiste find' ich so die Welt / Und erkenne mich im Weltenwerden› – beantwortet die Frage des Weltenworts (‹O Mensch, erkenne dich selbst!›) positiv: Selbsterkenntnis vollendet sich als Erkennen im Weltenwerden."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Es weckt in Stoffes-Sterben Geist-Geburt.",
+          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 90"
+        }
+      ]
+    },
+    "14.1": {
+      "titel": "Das Schwellengespräch – Erde, Wasser, Luft, Feuer",
+      "incipit": "Wo ist der Erde Festigkeit, die dich stützte? …",
+      "rolle": "Vierfaches Zwiegespräch mit dem Hüter der Schwelle über die vier Elemente; je drei Antworten – Christus, Luzifer, Ahriman.",
+      "vortrag": "stunde-14",
+      "anker": "m-schwellengespraech",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Vierzehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-05-31",
+        "seiten": "100–111",
+        "wiederholung_in_stunde": "111",
+        "anmerkung": "Aufstieg der Selbstbezeichnung: Ich – Mein Leben – Meine Seele – Mein Ich. Die Christus-Antwort enthält stets das bescheidene ‹so lang›."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Vierzehnte Stunde – die luziferische und die ahrimanische Gefahr, S. 97–100",
+          "art": "Deutung",
+          "vortrag": "stunde-14",
+          "anker": "gefahren"
+        },
+        {
+          "ref": "GA 270b, Vierzehnte Stunde – Ich / Mein Leben / Meine Seele / Mein Ich, S. 104–110",
+          "art": "Deutung",
+          "vortrag": "stunde-14",
+          "anker": "dialog-deutung"
+        },
+        {
+          "ref": "GA 270b, Vierzehnte Stunde – das Aufhören der Element-Trennung, S. 96–97",
+          "art": "Hinführung",
+          "vortrag": "stunde-14",
+          "anker": "elemente"
+        },
+        {
+          "ref": "GA 270b, Vierzehnte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-14",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Der Hüter fragt viermal – Erde, Wasser, Luft, Feuer –, wo deren Kraft geblieben ist. Das Herz antwortet dreifach: von Christus angeregt mit dem bescheidenen ‹so lang der Geist mich trägt›, von Luzifer in wonnigem Hochmut, von Ahriman im Verfestigen-Wollen.",
+        "kompakt": "Das grosse Vierfach-Mantram der Vierzehnten Stunde. Jenseits der Schwelle hört die Trennung der Elemente auf; der Hüter fragt für jedes Element, wo seine Kraft geblieben ist: ‹Wo ist der Erde Festigkeit … des Wassers Bildekraft … der Lüfte Reizgewalt … des Feuers Reinigung?› Auf jede Frage kann das Herz dreifach antworten – angeregt von Christus (mit dem bescheidenen ‹so lang der Geist mich trägt/formt/um mich besteht/mich zündet›), von Luzifer (in wonnigem, ewigkeit-setzendem Hochmut) oder von Ahriman (das Element verfestigend, um es ins Geistgebiet hinüberzutragen). Die Selbstbezeichnung steigt auf: Ich – Mein Leben – Meine Seele – Mein Ich; das gereinigte ‹Mein Ich› ist die Sprache der länger Verstorbenen.",
+        "ausfuehrlich": [
+          "Die Vierzehnte Stunde stellt die Situation vor dem Hüter ganz lebendig vor die Seele. Vor dem Reich der Erkenntnis liegt ein Abgrund; nur wer sich vom Physischen befreit, kann ihn übersetzen. Jenseits hört die Trennung von Erde, Wasser, Luft, Feuer auf – ihre Eigenschaften wirken nicht mehr, und dem muss man die richtige Stimmung entgegenbringen.",
+          "Steiner schildert die zwei Gefahren: die luziferische (sich in das Losgelöstsein verlieben, als verworrener Schwärmer zurückkehren) und die ahrimanische (die verfestete, materialistische Seelenverfassung hinübertragen, dort in Ohnmacht fallen, Werkzeug ahrimanischer Mächte werden) – mit dem ernsten Hinweis auf das getrübte Bewusstsein einiger am Weltkrieg Beteiligter.",
+          "Der mantrische Aufbau ist exakt: Beim Erdenelement spricht das egozentrische ‹Ich›, beim Wasser das objektivere ‹Mein Leben›, bei der Luft ‹Meine Seele›, beim Feuer ‹Mein Ich› – wie von einem Gegenstande, die Sprache der länger Verstorbenen, die das Ich mit dem Auge der Götter ansehen. Man soll sich meditativ alle drei Antworten vorführen, um in freier Wahl die Christus-Antwort zu ergreifen; das bescheidene ‹so lang› unterscheidet sie von Luzifers Ewigkeitsanspruch. Die Wandtafel der Stunde (Kohlensäure–Kieselsäure-Strömung) gehört zur Luft-Strophe und dient als Meditationshilfe."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Ich verlasse ihren Grund, so lang der Geist mich trägt.",
+          "quelle": "GA 270b, Vierzehnte Stunde (31.5.1924), S. 100"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-14.jpg",
+        "vortrag": "stunde-14",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 31.5.1924: die Kohlensäure–Kieselsäure-Strömung (Atem nach unten ins Blut, nach oben in die Sinne) zur Luft-Strophe des Schwellengesprächs.",
+        "quelle": "GA 270i, Tafel zur Vierzehnten Stunde (31.5.1924)"
+      }
+    },
+    "15.1": {
+      "titel": "Hierarchien-Mantram – Was wird aus der Erde Festigkeit",
+      "incipit": "Was wird aus der Erde Festigkeit, die dich stützte? …",
+      "rolle": "Der Hüter fragt für Erde, Wasser, Luft; es antworten die drei Hierarchien – dritte, zweite, erste.",
+      "vortrag": "stunde-15",
+      "anker": "m-hierarchien",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Fünfzehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-06-21",
+        "seiten": "125–131",
+        "wiederholung_in_stunde": "—",
+        "anmerkung": "Gegenstück zum Schwellengespräch der 14. Stunde: dort Christus/Luzifer/Ahriman, hier die Antwort der Hierarchien. Das Feuer folgt in der 16. Stunde."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Fünfzehnte Stunde – Angeloi im Denken, Exusiai im Schaffen, Seraphine im Licht, S. 127–131",
+          "art": "Deutung",
+          "vortrag": "stunde-15",
+          "anker": "hierarchien-deutung"
+        },
+        {
+          "ref": "GA 270b, Fünfzehnte Stunde – fühlen lernen unter den Hierarchien, S. 123–125",
+          "art": "Hinführung",
+          "vortrag": "stunde-15",
+          "anker": "fuehlen-lernen"
+        },
+        {
+          "ref": "GA 270b, Vierzehnte Stunde – das Schwellengespräch (Christus/Luzifer/Ahriman) als Gegenstück",
+          "art": "Gegenstück",
+          "vortrag": "stunde-14",
+          "anker": "m-schwellengespraech"
+        },
+        {
+          "ref": "GA 270b, Sechzehnte Stunde – das Feuer-Element, Chor der Hierarchien (Fortsetzung des Hierarchien-Mantrams)",
+          "art": "Fortsetzung",
+          "vortrag": "stunde-16",
+          "anker": "m-feuer"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Der Hüter fragt: Was wird aus Erde, Wasser, Luft? Es antworten die drei Hierarchien – die dritte im Denken/Fühlen/Wollen, die zweite im Schaffen/Leben/Sein, die erste im Innen-Sein/Leben/Licht.",
+        "kompakt": "Das Hierarchien-Mantram der Fünfzehnten Stunde – das Gegenstück zum Schwellengespräch der Vierzehnten: dort antworten Christus, Luzifer, Ahriman, hier die Hierarchien. Der Hüter fragt jetzt ‹Was wird aus …?› (nicht mehr ‹Wo ist …?›). Erde – dritte Hierarchie: die Angeloi empfinden in unserem Denken, die Archangeloi erleben in unserem Fühlen, die Archai schauen in unserem Wollen (ohne sie zerstöbe der Mensch in Formlosigkeit). Wasser – zweite Hierarchie: Exusiai (Schaffen), Dynamis (Leben), Kyriotetes (Geschehen/Sein). Luft – erste Hierarchie: Throne (Innen-Sein), Cherubine (Innen-Leben), Seraphine (‹Erweck' in dir Innen-Licht in deinem Gottes-Welten-Licht›). Das Feuer folgt in der 16. Stunde.",
+        "ausfuehrlich": [
+          "Die Fünfzehnte Stunde wiederholt zunächst das Schwellengespräch der Vierzehnten (Hüter-Fragen, Christus/Luzifer/Ahriman-Antworten) und gibt dann sein Gegenstück: dieselbe Element-Reihe, aber jetzt antworten die Hierarchien. Vorbereitung ist, gegenüber den höheren Hierarchien so fühlen zu lernen wie hier gegenüber den drei Naturreichen, denen wir mit dem ätherisch-physischen Wesen angehören.",
+          "Die dritte Hierarchie ersetzt das Erden-Element: die Stützekraft der Erde ist fort, aber die Angeloi empfinden in unserem Denken, die Archangeloi erleben in unserem Fühlen, die Archai schauen in unserem Wollen. Steiner betont die exakte Wortwahl: bei der zweiten Hierarchie steht dem ‹Welt-Geschehen› ein ‹Körper-Sein› gegenüber, weil wir das Geschehen innerhalb unserer Haut als abgeschlossenes Sein fühlen.",
+          "Der Höhepunkt ist das Flammenwort der Seraphine: ‹Erweck' in dir Innen-Licht in deinem Gottes-Welten-Licht.› Erst wenn es aus den feurigen, blitzgewaltigen Seraphinen ertönt, verspürt man, wie aus der eigenen Seele die Zündekraft des Selbstes erweckt werden muss – Licht in den zunächst nachtbedeckten geistigen Landen. Der Aufstieg geht von der dritten über die zweite zur ersten Hierarchie, wo man eine Stütze des Geistes wiederfindet, die oben und nicht unten ist. Das Mantram ist vorne und hinten vom Weltenwort gerahmt."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Erweck' in dir Innen-Licht in deinem Gottes-Welten-Licht.",
+          "quelle": "GA 270b, Fünfzehnte Stunde (21.6.1924), S. 129"
+        }
+      ]
+    },
+    "16.1": {
+      "titel": "Feuer-Mantram – Was wird aus des Feuers Reinigung",
+      "incipit": "Was wird aus des Feuers Reinigung, die dir das Ich entflammte? …",
+      "rolle": "Der Feuer-Teil des Hierarchien-Mantrams; der Chor aller drei Hierarchien antwortet zugleich.",
+      "vortrag": "stunde-16",
+      "anker": "m-feuer",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Sechzehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-06-28",
+        "seiten": "144–152",
+        "wiederholung_in_stunde": "152",
+        "anmerkung": "Vollendet das Hierarchien-Mantram der 15. Stunde (Erde/Wasser/Luft) um das Feuer; statt einer einzelnen Hierarchie spricht der Chor."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Sechzehnte Stunde – das Wärmeelement, der Chor der Hierarchien, S. 144–146",
+          "art": "Deutung",
+          "vortrag": "stunde-16",
+          "anker": "feuer-deutung"
+        },
+        {
+          "ref": "GA 270b, Fünfzehnte Stunde – Hierarchien-Mantram Erde/Wasser/Luft (Grundlage)",
+          "art": "Grundlage",
+          "vortrag": "stunde-15",
+          "anker": "m-hierarchien"
+        },
+        {
+          "ref": "GA 270b, Sechzehnte Stunde – das intime Geheimgespräch (folgt)",
+          "art": "Fortsetzung",
+          "vortrag": "stunde-16",
+          "anker": "m-geheim"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Auf die Feuer-Frage des Hüters antwortet nicht eine Hierarchie, sondern der Chor aller drei: Lebensflammenschrift, Seelensühnekräfte, Geisterlösermächte.",
+        "kompakt": "Der Feuer-Teil vollendet das Hierarchien-Mantram der Fünfzehnten Stunde. Weil die Wärme alles durchdringt und das allwaltende Element ist, kann nicht eine einzelne Hierarchie antworten: der Chor spricht. Angeloi/Exusiai/Throne: ‹Erwecke dir in Weltenätherweiten die Lebensflammenschrift› – was wir an Gedanken, Gefühlen, Taten vollbracht haben, steht im Weltenäther eingeschrieben. Archangeloi/Dynamis/Cherubine: ‹Erschaffe dir in Zeitenwellenkreisen die Seelensühnekräfte› – das rückwärts erlebte Sühne-Stadium nach dem Tode. Archai/Kyriotetes/Seraphine: ‹Erbitte dir in ew'gen Wesentaten die Geisterlösermächte› – die Karma-Ausarbeitung im Zusammenwirken mit den Hierarchien.",
+        "ausfuehrlich": [
+          "Erde, Wasser und Luft wurden in der Fünfzehnten Stunde je einer Hierarchie zugeordnet. Die Wärme aber lebt im Erdigen, im Wässrigen und im Luftigen zugleich – sie ist das allwaltende Element, dem wir uns am intimsten verbunden fühlen, denn was in uns warm oder kalt ist, sind wir selber.",
+          "Darum klingen die Mahnworte im Chor zusammen: jeweils eine Wesensordnung aus allen drei Hierarchien spricht gemeinsam. Die drei Antworten bezeichnen die drei nachtodlichen Stadien – die Lebensflammenschrift im Weltenäther (Rückblick), die Seelensühnekräfte im rückwärts durchlebten Spiegelbild, die Geisterlösermächte in der Karma-Ausarbeitung.",
+          "Damit ist das grosse Hierarchien-Mantram über alle vier Elemente vollendet. Es ist im Vortrag vom Weltenwort gerahmt und führt unmittelbar in das intime Geheimgespräch mit dem Hüter über (Kommentar 16.2)."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Erwecke dir in Weltenätherweiten die Lebensflammenschrift.",
+          "quelle": "GA 270b, Sechzehnte Stunde (28.6.1924), S. 146"
+        }
+      ]
+    },
+    "16.2": {
+      "titel": "Das Geheimgespräch – Hat verstanden dein Geist?",
+      "incipit": "Hat verstanden dein Geist? – Der Weltengeist in mir …",
+      "rolle": "Intimes, geraunt-vertrauliches Zwiegespräch mit dem Hüter im webenden Licht: Geist – Seele – Leib.",
+      "vortrag": "stunde-16",
+      "anker": "m-geheim",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Sechzehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-06-28",
+        "seiten": "147–152",
+        "wiederholung_in_stunde": "152",
+        "anmerkung": "Drei vertrauliche Fragen des Hüters (Geist, Seele, Leib); die Antwort ist nicht stolz, sondern andächtig und demutvoll."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Sechzehnte Stunde – das intime Geheimgespräch im webenden Licht, S. 147–151",
+          "art": "Deutung",
+          "vortrag": "stunde-16",
+          "anker": "geheim-deutung"
+        },
+        {
+          "ref": "GA 270b, Sechzehnte Stunde – das Feuer-Mantram (vorangehend)",
+          "art": "Vorstufe",
+          "vortrag": "stunde-16",
+          "anker": "m-feuer"
+        },
+        {
+          "ref": "GA 270b, Sechzehnte Stunde – Weltenwort als Rahmung",
+          "art": "Rahmung",
+          "vortrag": "stunde-16",
+          "anker": "m-weltenwort"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Der Hüter raunt vertraulich: Hat verstanden dein Geist? – Hat begriffen deine Seele? – Hat erlebt dein Leib? Das Ich antwortet andächtig: Der Weltengeist / die Weltenseelen / die Weltenkräfte in mir.",
+        "kompakt": "Nach dem Feuer-Mantram wird der Hüter intim: was vorher posaunenartig von allen Seiten kam, setzt sich fort als vertrauliches Raunen im webenden, wirkenden Licht. Drei leise Fragen, je eine andächtige, demutvolle Antwort. ‹Hat verstanden dein Geist?› – ‹Der Weltengeist in mir / Er hielt den Atem an / Und seine Gegenwart / Mög' erleuchten mein Ich.› ‹Hat begriffen deine Seele?› – ‹Die Weltenseelen in mir / Sie lebten im Sternenrat / Und ihre Harmonien / Mögen klingend schaffen mein Ich› (die Weltenseelen ratschlagen wie kreisende Sterne eines Planetensystems). ‹Hat erlebt dein Leib?› – ‹Die Weltenkräfte in mir / Sie richten Menschentaten / Und ihre Wahrspruchworte / Mögen lenken mir das Ich› (die richtenden Kräfte der ewigen Weltengerechtigkeit, die das Karma weben).",
+        "ausfuehrlich": [
+          "Mit dem Geheimgespräch wechselt der ganze Ton der esoterischen Situation. Die Finsternis ist noch nicht hell, aber überall fühlt man glimmendes Licht; im webenden, wirkenden Licht wendet man sich hilfesuchend an den Hüter, der sich intimer zu uns neigt.",
+          "Steiner betont die Demut der Antworten: nicht ‹Ich habe verstanden›, sondern das Ich fühlt, dass göttliches Sein es durchströmt – der Weltengeist, der den Atem anhält und zum Verstehen vorbereitet. Die Seele wird sich bewusst, dass in ihr ein ganzer Sternenrat der Weltenseelen spricht; der Leib fühlt die Weltenkräfte als richtende Kräfte der Weltengerechtigkeit, die durch die Reihe der Erdenleben das Karma und damit das eigentliche Ich weben.",
+          "Der Dreischritt Geist – Seele – Leib (erleuchten – klingend schaffen – lenken des Ich) beantwortet ein weiteres Stück der grossen Frage des Weltenworts ‹O Mensch, erkenne dich selbst!›, von dem die Stunde gerahmt ist."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Der Weltengeist in mir – mög' erleuchten mein Ich.",
+          "quelle": "GA 270b, Sechzehnte Stunde (28.6.1924), S. 148"
+        }
+      ]
+    },
+    "17.1": {
+      "titel": "Das Regenbogen-Mantram – Sieh' des Äther-Farbenbogens",
+      "incipit": "Sieh' des Äther-Farbenbogens / Lichtgewalt'ges Rund …",
+      "rolle": "Vierstrophiger aufsteigender Hierarchien-Chor: der Hüter weist auf den Regenbogen als Weltenschale; dritte, zweite und erste Hierarchie tragen den Sinnenschein opfernd hinauf.",
+      "vortrag": "stunde-17",
+      "anker": "m-regenbogen",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Siebzehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-07-05",
+        "seiten": "159–168",
+        "wiederholung_in_stunde": "168; Tafeltexte S. 171–173",
+        "anmerkung": "Vier Strophen: Hüter – Angeloi/Archangeloi/Archai – Exusiai/Dynamis/Kyriotetes – Throne/Cherubine/Seraphine. Die vier Strophen sind zusätzlich als eigener Abschnitt ‹Tafeltexte der Siebzehnten Stunde› überliefert."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Siebzehnte Stunde – die Weltenschale, das Opfer der Hierarchien, S. 161–168",
+          "art": "Deutung",
+          "vortrag": "stunde-17",
+          "anker": "rb-deutung"
+        },
+        {
+          "ref": "GA 270b, Siebzehnte Stunde – der Regenbogen, durch den Bogen zur Weltenschale, S. 158–160",
+          "art": "Hinführung",
+          "vortrag": "stunde-17",
+          "anker": "rb-hinfuehrung"
+        },
+        {
+          "ref": "GA 270b, Siebzehnte Stunde – Tafeltexte (die vier Strophen pur)",
+          "art": "Tafeltext",
+          "vortrag": "stunde-17",
+          "anker": "tafeltexte"
+        },
+        {
+          "ref": "GA 270b, Fünfzehnte/Sechzehnte Stunde – das Hierarchien-Mantram (Erde/Wasser/Luft/Feuer) als Vorstufe",
+          "art": "Vorstufe",
+          "vortrag": "stunde-15",
+          "anker": "m-hierarchien"
+        },
+        {
+          "ref": "GA 270b, Siebzehnte Stunde – Wandtafelzeichnung",
+          "art": "Tafelbild",
+          "vortrag": "stunde-17",
+          "anker": "tafel"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Der Hüter weist an, mit der Kraft der Augen durch den Regenbogen zu dringen und ihn von jenseitiger Warte als farbenflutende Weltenschale zu schauen. Die drei Hierarchien atmen die Farben, tragen den Sinnenschein opfernd hinauf, bis es tönt: Welt ist Ich-wollend Geistes-Wort.",
+        "kompakt": "Das gewichtige vierstrophige Mantram der Siebzehnten Stunde, gerahmt vom Weltenwort. Erste Strophe (der Hüter): ‹Sieh' des Äther-Farbenbogens / Lichtgewalt'ges Rund … Und dann schau von jenseit'ger Warte / Farbenflutend die Weltenschale.› Man dringt mit der lichterschaffenen Kraft der Augen durch den Bogen und sieht ihn von der anderen Seite als halbhimmelgrosse Schale. Zweite Strophe (Angeloi/Archangeloi/Archai): sie atmen die Farben, tragen den Sinnenschein in die Geistes-Wesensreiche und wenden sich dienend höheren Geistern zu. Dritte Strophe (Exusiai/Dynamis/Kyriotetes): sie wecken das Empfangene im Sein und schenken es den Strahlen, die des Stoffes Nichtigkeit liebewebend in Geistes-Wesenheit offenbaren. Vierte Strophe (Throne/Cherubine/Seraphine): ‹In deinen Willenswelten / Fühl' unser Weltenwirken … Welt ist Ich-wollend Geistes-Wort.› Die vier Strophen sind zusätzlich als eigener Abschnitt ‹Tafeltexte der Siebzehnten Stunde› überliefert.",
+        "ausfuehrlich": [
+          "Die Siebzehnte Stunde eröffnet die Gruppe ‹Kosmische Wesen bezeugen›. Nach dem Rückblick auf das Feuer-Mantram und das Geheimgespräch der Sechzehnten Stunde wird aus dem nur gefühlten Licht ein vom Geistesauge geschautes Licht – aber nur, indem der Hüter ein neues Mahnwort spricht, das auf eine mächtige Weltenimagination weist: den Regenbogen. Im Sinnesleben kann man empfinden, wie durch des Regenbogens Farbenschein die Geister von jenseits des physischen Sinnenscheins hereinleuchten.",
+          "Die erste Strophe ist die Anweisung des Hüters: mit der lichterschaffenen Kraft der Augen das Ich durch den Kreis dringen zu lassen und von jenseitiger Warte zurückzuschauen. Aus dem flächigen Bogen wird so die halbhimmelgrosse Weltenschale, in der die Farben flutend ineinander weben. Die Wandtafel der Stunde zeigt genau dies: oben die kleine Skizze mit der Beschriftung ‹Warte› und dem Pfeil durch den Bogen, darunter den grossen farbenflutenden Bogen.",
+          "Die folgenden drei Strophen bilden einen aufsteigenden Opfer-Chor. Die dritte Hierarchie (Angeloi, Archangeloi, Archai) – die dienenden Geister – atmet die Farben, verwandelt die toten Erdengedanken in lebendige und trägt sie wie in einem gewaltigen Opfer vor die zweite Hierarchie. Exusiai, Dynamis, Kyriotetes wecken das Empfangene im Sein und schenken es den Strahlen, denen sie die schaffende Liebe einverleiben. Throne, Cherubine, Seraphine machen daraus die Elemente neuer Welten.",
+          "Bemerkenswert ist der Wechsel der Sprechrichtung: zuerst tönen Angeloi/Archangeloi/Archai, dann wird man Zeuge eines Himmelsgesprächs zwischen zweiter und dritter Hierarchie (das man nur mithört), dann mischt sich die erste Hierarchie ein – und der ganze Chor der Geistessphären ist zuletzt wieder an den Menschen gerichtet: ‹Welt ist Ich-wollend Geistes-Wort.› Damit wandelt sich das milde Licht in volle Geisteshelle. Anschliessend drückt der Hüter dem Menschen sinnbildlich die Geistaugen zu, und es steigt das Christus-Gegenwort auf – das Steiner hier ausdrücklich noch nicht zu den Mantren rechnet, sondern auf die nächste Stunde aufschiebt."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Welt ist Ich-wollend Geistes-Wort.",
+          "quelle": "GA 270b, Siebzehnte Stunde (5.7.1924), S. 167"
+        }
+      ],
+      "tafelbild": {
+        "bild": "assets/tafeln/stunde-17.jpg",
+        "vortrag": "stunde-17",
+        "anker": "tafel",
+        "beschreibung": "Wandtafel vom 5.7.1924: oben die Wolkengebilde-Skizze mit ‹Warte› und Pfeil (durch den Bogen, von jenseitiger Warte zurückschauen), darunter der grosse, breit gemalte Regenbogen als farbenflutende Weltenschale.",
+        "quelle": "GA 270i, Tafel zur Siebzehnten Stunde (5.7.1924)"
+      }
+    },
+    "18.1": {
+      "titel": "Das Göttergespräch – Es denken die Menschenwesen",
+      "incipit": "Es denken die Menschenwesen! / Wir brauchen das Licht der Höhen …",
+      "rolle": "Belauschtes Göttergespräch über Denken, Fühlen, Wollen der Menschen: die dritte Hierarchie bittet, die zweite antwortet.",
+      "vortrag": "stunde-18",
+      "anker": "m-goetter",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Achtzehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-07-12",
+        "seiten": "179–187",
+        "wiederholung_in_stunde": "183, 186, 190",
+        "anmerkung": "Drei Sorgenworte (Angeloi/Archangeloi/Archai) mit je einer Antwort der zweiten Hierarchie: Dynamis; Kyriotetes+Exusiai; Kyriotetes+Dynamis+Exusiai im Chor."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – Licht der Höhen, Seelenwärme, Tiefenkraft; die esoterischen Schulen, S. 184–187",
+          "art": "Deutung",
+          "vortrag": "stunde-18",
+          "anker": "goetter-deutung"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – der stumme Hüter, Zeuge des Göttergesprächs, S. 178–180",
+          "art": "Hinführung",
+          "vortrag": "stunde-18",
+          "anker": "goetter-hinfuehrung"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – ‹Geist ist›, die grosse Illusion der Naturreiche",
+          "art": "Hinführung",
+          "vortrag": "stunde-18",
+          "anker": "geist-ist"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – die drei Tafeln (Weltenwort, Hüter-Wort, Göttergespräch)",
+          "art": "Zusammenschau",
+          "vortrag": "stunde-18",
+          "anker": "drei-tafeln"
+        },
+        {
+          "ref": "GA 270b, Siebzehnte Stunde – das Regenbogen-Mantram als Vorstufe",
+          "art": "Vorstufe",
+          "vortrag": "stunde-17",
+          "anker": "m-regenbogen"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Belauschtes Göttergespräch: Angeloi, Archangeloi, Archai bekennen ihre Sorge (‹Es denken / fühlen / wollen die Menschenwesen!›); die zweite Hierarchie antwortet mit Licht der Höhen, Seelenwärme, Tiefenkraft.",
+        "kompakt": "Das grosse Mantram der Achtzehnten Stunde, das man nicht selbst spricht, sondern als Zeuge belauscht. Aus ihrer Sorge um die Führung der Menschenseelen lassen die Wesen der dritten Hierarchie je ein Sorgenwort ertönen und erbitten von der zweiten Hierarchie, was sie brauchen. Angeloi: ‹Es denken die Menschenwesen! Wir brauchen das Licht der Höhen …› – die Dynamis antworten ‹Empfanget das Licht der Höhen …›. Archangeloi: ‹Es fühlen die Menschenwesen! … Seelenwärme› – Kyriotetes und Exusiai antworten (zwei Chöre, mächtigere Stimme). Archai: ‹Es wollen die Menschenwesen! … Tiefenkraft› – Kyriotetes, Dynamis und Exusiai zugleich, drei Chöre in einem. Was die dritte Hierarchie empfängt, leuchtet, lebt und wirkt ungewusst im menschlichen Denken, Fühlen und Wollen. Das ist die Welt, bestehend in den heiligen Schöpferworten.",
+        "ausfuehrlich": [
+          "Die Achtzehnte Stunde führt zunächst die Wahrheit ‹Geist ist› ein: wo Geist ist, ist etwas; wo nicht, ist Nichts. Was wir drüben in der Sinneswelt als Mineralien, Pflanzen, Tiere benennen, sind nur Arten des Nichts – die grosse Illusion. Erst jenseits des Abgrundes, im Lichte, stehen die Wesen in ihrer Wahrheit.",
+          "Der Hüter spricht jetzt nicht mehr, er deutet stumm. Was unten Wolken, Berge, Quellen, Sterne waren, ist hier stumm; statt dessen wird man Zeuge, wie die Götter miteinander sprechen. Das Mantram ist deshalb kein Zwiegespräch mit dem Menschen, sondern ein belauschtes Göttergespräch – die dritte Hierarchie bittend, die zweite gewährend.",
+          "Der Bau ist exakt gestuft: Angeloi → Dynamis (eine Antwortstimme), Archangeloi → Kyriotetes und Exusiai (zwei Chöre, mächtigere Stimme), Archai → Kyriotetes, Dynamis und Exusiai zugleich (drei Chöre in einem). Die drei Gaben – Licht der Höhen für das Denken, Seelenwärme für das Fühlen, Tiefenkraft für das Wollen – wirken ungewusst im Menschen.",
+          "Steiner verbindet dies mit der Aufgabe der esoterischen Schulen: früher lebten die Menschen von Erinnerungen ans vorirdische Dasein, heute ist diese Erinnerung erloschen. Wer diese Worte in der Schule gehört hat, wird sie nach dem Tode wiedererkennen und verstehen; wer dumpf dagegen war, hört nur unverständliches Weltengeräusch – einen ‹Tod der Seele im Geisterland›, vor dem Evangelium und Paulus warnen. Die Stunde schliesst mit der Drei-Tafeln-Zusammenschau: Weltenwort, Hüter-Wort, Göttergespräch und Christus-Gegenwort."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "Empfanget das Licht der Höhen, daß ihr im Denken leuchten könnt …",
+          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 180"
+        }
+      ]
+    },
+    "19.1": {
+      "titel": "Das Geistes-Wort-Mantram – Wer spricht im Geistes-Wort",
+      "incipit": "Wer spricht im Geistes-Wort / Mit der Stimme …",
+      "rolle": "Krönender Abschluss: drei Fragen des fernen Hüters, Antwort der ersten Hierarchie – Seraphine/Herz, Cherubine/Haupt, Throne/Glieder; je ‹Es ist Ich›.",
+      "vortrag": "stunde-19",
+      "anker": "m-ichbin",
+      "quelle": {
+        "ga": "270b",
+        "stunde": "Neunzehnte Stunde",
+        "ort": "Dornach",
+        "datum": "1924-08-02",
+        "seiten": "196–205",
+        "wiederholung_in_stunde": "204",
+        "anmerkung": "Dreiteilig: Sprechen (Seraphine/Herz), Denken (Cherubine/Haupt), Kraften (Throne/Glieder). Das wahre ‹Ich bin› als ‹ejeh asher ejeh›; jeder Teil mündet in ‹Es ist Ich›."
+      },
+      "parallelstellen": [
+        {
+          "ref": "GA 270b, Neunzehnte Stunde – Sprechen, Denken, Kraften; Abschluss des ersten Abschnitts, S. 201–205",
+          "art": "Deutung",
+          "vortrag": "stunde-19",
+          "anker": "ichbin-deutung"
+        },
+        {
+          "ref": "GA 270b, Neunzehnte Stunde – das wahre ‹Ich bin›, ‹ejeh asher ejeh›, S. 197–198",
+          "art": "Hinführung",
+          "vortrag": "stunde-19",
+          "anker": "ichbin-hinfuehrung"
+        },
+        {
+          "ref": "GA 270b, Siebzehnte Stunde – das Regenbogen-Mantram (der Chor der Hierarchien) als Vorstufe",
+          "art": "Vorstufe",
+          "vortrag": "stunde-17",
+          "anker": "m-regenbogen"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde – das Göttergespräch (Denken/Fühlen/Wollen) als Vorstufe",
+          "art": "Vorstufe",
+          "vortrag": "stunde-18",
+          "anker": "m-goetter"
+        },
+        {
+          "ref": "GA 270b, Elfte Stunde – ‹Welten-Sternen-Stätten› (frühes Haupt/Herz/Glieder-Mantram)",
+          "art": "Bezug",
+          "vortrag": "stunde-11",
+          "anker": "m1"
+        }
+      ],
+      "kerngedanken": {
+        "kurz": "Der ferne Hüter fragt dreimal – wer spricht, was denkt, was kraftet im Geistes-Wort? Die erste Hierarchie antwortet: Seraphine im Herzen, Cherubine im Haupte, Throne in den Gliedern – je mündend in ‹Es ist Ich›.",
+        "kompakt": "Das krönende Mantram der Neunzehnten Stunde, das den ersten Abschnitt der ganzen Klasse abschliesst. Der Hüter ist nun ganz in der Ferne; nur leise stellt er drei Fragen, auf die die erste Hierarchie antwortet. Erstens das Sprechen: ‹Wer spricht im Geistes-Wort / Mit der Stimme, / Die im Weltenfeuer lodert?› – ‹Es sprechen Sternen-Flammen, / Es flammen seraph'sche Feuer-Mächte; / Sie flammen auch in meinem Herzen … Es ist Ich.› Zweitens das Denken: ‹Was denkt …?› – cherubin'sche Bilde-Kräfte, die auch im Haupte leuchten. Drittens das Kraften: ‹Was kraftet …?› – der Throne Trag-Gewalten, die auch in den Gliedern ‹leiben›. Jeder Teil mündet in ‹Es ist Ich›: das wahre ‹Ich bin›, das uralt heilige ‹ejeh asher ejeh›, das im Erdenbereich nur Abglanz ist und erst im Reiche der Seraphine, Cherubine, Throne wahr klingt.",
+        "ausfuehrlich": [
+          "Die Neunzehnte Stunde ist der Abschluss des ersten Abschnitts der Ersten Klasse. Sie wiederholt zunächst das vierstrophige Regenbogen-Mantram der Siebzehnten Stunde (der Zusammenklang der Chöre) und führt dann zum eigentlichen Ziel: dem wahren ‹Ich bin›.",
+          "Steiner stellt das uralt heilige ‹ejeh asher ejeh› in den Mittelpunkt: was wir im flüchtigen Erdengedanken als ‹Ich bin› festhalten, ist nur ein Abglanz; wahr klingt es erst im Reiche der ersten Hierarchie. Darum muss der Mensch die Frage des fernen Hüters vernehmen, wer im Weltenwort spricht – und die Antwort aus dem Herzen quellen lassen.",
+          "Der dreiteilige Bau ordnet die erste Hierarchie den drei Menschengliedern zu: Seraphine (Feuer-Mächte) dem Herzen und dem Sprechen, aus dem Urseins Liebe-Quell; Cherubine (Bilde-Kräfte) dem Haupte und dem Denken, aus dem Lichtes-Quell; Throne (Trag-Gewalten) den Gliedern und dem Kraften, aus dem Lebens-Quell. Steiner bildet eigens das ungewöhnliche Verb ‹leiben› – wie ‹leuchten› von Licht – weil Leib nichts Totes, sondern in jedem Augenblick regsam ist.",
+          "Jeder der drei Teile mündet in das dreifache ‹Es ist Ich›, das als Echo dessen aus dem Herzen quellen darf, was Seraphine, Cherubine, Throne darin erklingen lassen. Damit ist der Weg vom Reich der Illusion über den Hüter und die Selbsterkenntnis bis zur Ergreifung des wahren Menschen-Ich in der Umgebung der ersten Hierarchie absolviert. Steiner kennzeichnet diese Worte als Michael-Worte der esoterischen Michael-Schule und kündigt die weiteren Abschnitte an."
+        ]
+      },
+      "zitate": [
+        {
+          "text": "In des Urseins Liebe-Quell findet Menschen-Herz … Es ist Ich.",
+          "quelle": "GA 270b, Neunzehnte Stunde (2.8.1924), S. 196"
         }
       ]
     }
