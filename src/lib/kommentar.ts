@@ -28,6 +28,14 @@ export type Parallelstelle = {
   anker?: string | null;
 };
 
+export type Tafelbild = {
+  bild: string;
+  vortrag?: string | null;
+  anker?: string | null;
+  beschreibung: string;
+  quelle: string;
+};
+
 export type Kommentar = {
   titel?: string;
   incipit?: string;
@@ -38,6 +46,7 @@ export type Kommentar = {
   parallelstellen?: Parallelstelle[];
   kerngedanken: Kerngedanken;
   zitate?: Zitat[];
+  tafelbild?: Tafelbild;
 };
 
 type KommentarLike = Kommentar | { status?: string };

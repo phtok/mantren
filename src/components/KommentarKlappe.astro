@@ -23,6 +23,10 @@ const hasKurz = !!k.kurz;
 const hasKompakt = !!k.kompakt;
 const hasAusf = !!(k.ausfuehrlich && k.ausfuehrlich.length);
 const defaultTab = hasKompakt ? 'kompakt' : hasKurz ? 'kurz' : 'ausf';
+
+const tafel = kommentar.tafelbild;
+const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${base}${tafel.bild}`) : null;
+const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vortrag}#${tafel.anker}` : null;
 ---
 <details class="klappe">
   <summary class="klappe-summary">
@@ -74,6 +78,19 @@ const defaultTab = hasKompakt ? 'kompakt' : hasKurz ? 'kurz' : 'ausf';
           </blockquote>
         ))}
       </div>
+    )}
+
+    {tafel && tafelImgSrc && (
+      <figure class="klappe-tafelbild">
+        {tafelDeeplink ? (
+          <a href={tafelDeeplink}>
+            <img src={tafelImgSrc} alt={tafel.beschreibung} loading="lazy" decoding="async" />
+          </a>
+        ) : (
+          <img src={tafelImgSrc} alt={tafel.beschreibung} loading="lazy" decoding="async" />
+        )}
+        <figcaption>{tafel.quelle}</figcaption>
+      </figure>
     )}
 
     {kommentar.parallelstellen && kommentar.parallelstellen.length > 0 && (
