@@ -76,6 +76,11 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
   {props.kind === 'mantra' && (
     <div class={`mantra-shell${tafel ? ' mantra-shell--with-tafel' : ''}`}>
       <div class="mantra-col">
+        {tafel && (
+          <button type="button" class="tafel-vis-show js-tafel-vis-toggle" aria-label="Wandtafel wieder einblenden">
+            Tafel einblenden ›
+          </button>
+        )}
         <MantraView mantra={props.mantra} kommentare={perPartKommentare} />
         {pageKommentar && (
           <KommentarKlappe kommentar={pageKommentar.kommentar} mantraId={props.mantra.id} klappenKey={pageKommentar.key} />
@@ -83,6 +88,9 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
       </div>
       {tafel && tafelImgSrc && (
         <aside class="tafel-side" aria-label="Wandtafelzeichnung">
+          <button type="button" class="tafel-vis-btn js-tafel-vis-toggle" aria-label="Wandtafel ausblenden">
+            Tafel ausblenden ›
+          </button>
           <figure class="tafel-figure">
             <button
               type="button"
