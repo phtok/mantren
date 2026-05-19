@@ -86,13 +86,14 @@ const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vo
 
     {tafel && tafelImgSrc && (
       <figure class="klappe-tafelbild">
-        {tafelDeeplink ? (
-          <a href={tafelDeeplink}>
-            <img src={tafelImgSrc} alt={tx(tafel.beschreibung)} loading="lazy" decoding="async" />
-          </a>
-        ) : (
+        <button
+          type="button"
+          class="tafel-trigger js-tafel-trigger"
+          data-deeplink={tafelDeeplink ?? ''}
+          aria-label="Wandtafelzeichnung vergrößern"
+        >
           <img src={tafelImgSrc} alt={tx(tafel.beschreibung)} loading="lazy" decoding="async" />
-        )}
+        </button>
         <figcaption>{tx(tafel.quelle)}</figcaption>
       </figure>
     )}

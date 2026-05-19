@@ -78,6 +78,12 @@ const homeUrl = base;
       <slot />
     </main>
 
+    <dialog id="tafel-fullscreen" class="tafel-fullscreen" aria-label="Wandtafelzeichnung vergrößert">
+      <button type="button" class="tafel-fullscreen-close" aria-label="Schließen">×</button>
+      <img alt="" />
+      <a class="tafel-fullscreen-deeplink" href="#" hidden>Zur Vortragsstelle →</a>
+    </dialog>
+
     <script is:inline>
       (function () {
         var html = document.documentElement;
@@ -134,11 +140,58 @@ const homeUrl = base;
             var tag = e.target.tagName;
             if (tag === 'INPUT' || tag === 'TEXTAREA' || e.target.isContentEditable) return;
           }
+          var dlg = document.getElementById('tafel-fullscreen');
+          if (dlg && dlg.hasAttribute('open')) return;
           var prev = document.querySelector('a[data-pager="prev"]');
           var next = document.querySelector('a[data-pager="next"]');
           if (e.key === 'ArrowLeft' && prev) { e.preventDefault(); prev.click(); }
           if (e.key === 'ArrowRight' && next) { e.preventDefault(); next.click(); }
         });
+
+        // Tafelbild-Fullscreen
+        (function () {
+          var dialog = document.getElementById('tafel-fullscreen');
+          if (!dialog) return;
+          var dlgImg = dialog.querySelector('img');
+          var dlgLink = dialog.querySelector('.tafel-fullscreen-deeplink');
+          var closeBtn = dialog.querySelector('.tafel-fullscreen-close');
+
+          function openTafel(trigger) {
+            var img = trigger.querySelector('img');
+            if (!img || !dlgImg) return;
+            dlgImg.src = img.currentSrc || img.src;
+            dlgImg.alt = img.alt || '';
+            var dl = trigger.dataset.deeplink || '';
+            if (dlgLink) {
+              if (dl) { dlgLink.href = dl; dlgLink.hidden = false; }
+              else { dlgLink.removeAttribute('href'); dlgLink.hidden = true; }
+            }
+            if (typeof dialog.showModal === 'function') dialog.showModal();
+            else dialog.setAttribute('open', '');
+          }
+
+          function closeTafel() {
+            if (typeof dialog.close === 'function') dialog.close();
+            else dialog.removeAttribute('open');
+          }
+
+          document.addEventListener('click', function (e) {
+            var t = e.target;
+            if (!(t instanceof Element)) return;
+            var trigger = t.closest('.js-tafel-trigger');
+            if (!trigger) return;
+            e.preventDefault();
+            openTafel(trigger);
+          });
+
+          if (closeBtn) closeBtn.addEventListener('click', closeTafel);
+
+          // Klick auf den schwarzen Hintergrund (Dialog selbst) schließt;
+          // Klick auf img/Buttons/Link bubbelt nicht zu dieser Bedingung durch.
+          dialog.addEventListener('click', function (e) {
+            if (e.target === dialog) closeTafel();
+          });
+        })();
 
         // Wischen links/rechts blättert wie eine Buchseite
         var touchStart = null;
