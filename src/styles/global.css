@@ -248,6 +248,92 @@ main.center {
 
 /* ─────────────── Mantra-Seite ─────────────── */
 
+.mantra-shell {
+  display: block;
+}
+
+.mantra-col {
+  min-width: 0;
+}
+
+.tafel-side {
+  display: none;
+}
+
+.tafel-figure {
+  margin: 0;
+}
+
+.tafel-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tafel-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.tafel-caption {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+@media (min-width: 1024px) {
+  .mantra-shell--with-tafel {
+    display: grid;
+    grid-template-columns: minmax(0, 36rem) minmax(0, 1fr);
+    gap: 3rem;
+    align-items: start;
+  }
+  .mantra-shell--with-tafel .mantra {
+    max-width: none;
+  }
+  .mantra-shell--with-tafel .klappe {
+    max-width: none;
+  }
+  .tafel-side {
+    display: block;
+    position: sticky;
+    top: 5rem;
+    align-self: start;
+  }
+  .tafel-figure img {
+    margin: 0 auto;
+  }
+}
+
+.klappe-tafelbild {
+  margin: 0;
+}
+
+.klappe-tafelbild img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.klappe-tafelbild figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+@media (min-width: 1024px) {
+  .klappe-tafelbild {
+    display: none;
+  }
+}
+
 .mantra {
   max-width: 36rem;
   margin: 0;
@@ -1012,6 +1098,19 @@ mark {
 @media print {
   .topbar, .pager { display: none; }
   body { background: white; color: black; }
-  .mantra { page-break-after: always; }
+  .mantra { page-break-after: avoid; }
   .klappe { display: none; }
+  .mantra-shell--with-tafel {
+    display: block;
+  }
+  .tafel-side {
+    display: block;
+    position: static;
+    margin-top: 1.5rem;
+    page-break-inside: avoid;
+  }
+  .tafel-figure img {
+    max-width: 100%;
+    max-height: none;
+  }
 }
