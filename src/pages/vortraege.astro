@@ -1,10 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
-import { vortraege, type Vortrag } from '../lib/vortraege';
+import { vortraegePublic, type Vortrag } from '../lib/vortraege';
 import { tx } from '../lib/typografie';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
-const searchIndex = vortraege.map((v) => ({
+const searchIndex = vortraegePublic.map((v) => ({
   href: `${base}${v.id}`,
   titel: tx(v.titel),
   meta: tx(`${v.ort} · ${v.datum} · GA ${v.ga}, S. ${v.seiten}`),
@@ -18,7 +18,7 @@ const searchIndex = vortraege.map((v) => ({
 
 // Gruppen in der Reihenfolge, in der ihre erste Vortragsseite auftaucht.
 const gruppen: { name: string; items: Vortrag[] }[] = [];
-for (const v of vortraege) {
+for (const v of vortraegePublic) {
   const g = v.gruppe || 'Ohne Gruppe';
   let bucket = gruppen.find((x) => x.name === g);
   if (!bucket) { bucket = { name: g, items: [] }; gruppen.push(bucket); }
@@ -31,7 +31,7 @@ for (const v of vortraege) {
     <p class="index-subtitle">Klassenstunden der Freien Hochschule für Geisteswissenschaft</p>
   </div>
 
-  {vortraege.length === 0 ? (
+  {vortraegePublic.length === 0 ? (
     <p class="vortrag-empty">Noch keine Vorträge eingepflegt.</p>
   ) : (
     <>

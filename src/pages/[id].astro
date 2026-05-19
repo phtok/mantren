@@ -4,7 +4,7 @@ import MantraView from '../components/MantraView.astro';
 import KommentarKlappe from '../components/KommentarKlappe.astro';
 import LectureView from '../components/LectureView.astro';
 import { mantren, neighbours, chapters, rollingTitle, type Mantra } from '../lib/mantren';
-import { vortraege, vortragNeighbours, type Vortrag } from '../lib/vortraege';
+import { vortraege, vortragNeighbours, isProtected, type Vortrag } from '../lib/vortraege';
 import { kommentareForMantra, firstTafelbild } from '../lib/kommentar';
 import { tx } from '../lib/typografie';
 
@@ -104,6 +104,14 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
         </aside>
       )}
     </div>
+  )}
+  {props.kind === 'vortrag' && isProtected(props.vortrag) && (
+    <aside class="protected-banner" role="note" aria-label="Schutzhinweis">
+      <p class="protected-banner-title">Geschützte Quelle — nicht zur Veröffentlichung freigegeben</p>
+      {props.vortrag.status_hinweis && (
+        <p class="protected-banner-body">{tx(props.vortrag.status_hinweis)}</p>
+      )}
+    </aside>
   )}
   {props.kind === 'vortrag' && <LectureView vortrag={props.vortrag} />}
 

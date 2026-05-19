@@ -1532,6 +1532,89 @@ mark {
   margin-right: 0.4rem;
 }
 
+.quellen-status {
+  display: inline-block;
+  margin-left: 0.6rem;
+  padding: 0.05rem 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--muted);
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.quellen-item--geschuetzt {
+  border-left-color: var(--muted);
+}
+
+.quellen-detail {
+  margin: 0.5rem 0 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0.2rem 0.8rem;
+  font-size: 0.85rem;
+}
+@media (min-width: 700px) {
+  .quellen-detail {
+    grid-template-columns: minmax(7rem, 10rem) minmax(0, 1fr);
+  }
+}
+.quellen-detail dt {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.quellen-detail dd {
+  margin: 0 0 0.35rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ─────────────── Geschützte Vortrags-Seite (Banner) + Abschnitt-Hinweis ─────────────── */
+
+.protected-banner {
+  max-width: 36rem;
+  margin: 0 0 2rem;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid var(--muted);
+  background: rgba(127, 127, 127, 0.08);
+  border-radius: 0 4px 4px 0;
+}
+.protected-banner-title {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+.protected-banner-body {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.abschnitt-hinweis {
+  padding: 1rem 1.1rem !important;
+  margin-left: 0 !important;
+  border-left: 4px solid var(--muted) !important;
+  background: rgba(127, 127, 127, 0.08);
+  border-radius: 0 4px 4px 0;
+}
+.abschnitt-hinweis .abschnitt-titel {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.abschnitt-hinweis .abschnitt-text {
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 /* ─────────────── Tafelbild-Fullscreen ─────────────── */
 
 dialog.tafel-fullscreen[open] {

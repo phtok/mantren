@@ -1,6 +1,6 @@
 {
   "_schema": {
-    "beschreibung": "Quellennachweis und editorische Notiz fuer die Mantren-Web-App. Globaler Apparat (Impressum); die werkgenauen Einzelnachweise stehen pro Abschnitt/Strophe in den quelle-Feldern von vortraege.json und mantren-kommentar.json.",
+    "beschreibung": "Quellennachweis und editorische Notiz fuer die Mantren-Web-App. Globaler Apparat (Impressum); die werkgenauen Einzelnachweise stehen pro Abschnitt/Strophe in den quelle-Feldern von vortraege.json und mantren-kommentar.json. Reihenfolge: primäre Ausgangsquelle (Mantrenbüchlein Basel) zuerst, dann die GA-Quellbände.",
     "erweiterung": "Neue Quellen als weiteres Objekt in 'quellen' anhaengen (gleiche Felder). 'weiterfuehrende_literatur' und 'klassenstunden_uebersicht' bei Bedarf ergaenzen.",
     "anfuehrungskonvention": "Sichtbarer Text durchgaengig ‹…› (U+2039/U+203A)."
   },
@@ -12,6 +12,20 @@
     "umfang_gesamt": "38 Klassenstunden vom 15. Februar bis Herbst 1924; von 30 Stunden sind Nachschriften vorhanden. Die Freie Hochschule wurde zur Weihnachtstagung 1923/24 neu konstituiert; durch Steiners Erkrankung im Herbst 1924 und seinen Tod am 30. Maerz 1925 kam nur die Erste Klasse zustande."
   },
   "quellen": [
+    {
+      "id": "mantrenbuechlein-basel-2024",
+      "kurztitel": "Mantrenbüchlein (Basel 2024)",
+      "titel": "Rudolf Steiners Mantrisches Spätwerk",
+      "rolle": "Ausgangsbasis der Web-App",
+      "inhalt": "Der vollständige mantrische Zyklus mit Titeleien, Nummerierung (Erste Tafel, Zweite Tafel, 1.1 … 19+, Dritte Tafel) und je einer erläuternden Vorbemerkung (‹Stimmung›) pro Spruch; Gruppierung in vier Bögen (‹Geschichte der Verwandlung 1–7›, ‹Leib in neuer Umgebung 8–10›, ‹Zusammenleben mit Hierarchien 11–16›, ‹Kosmische Wesen bezeugen 17–19+›). Widmung ‹Für Richard Serra›.",
+      "textquelle": "Rudolf Steiner, Esoterische Unterweisungen für die erste Klasse der Freien Hochschule für Geisteswissenschaft am Goetheanum, 15. Februar–20. September 1924, GA 270, 4., durchgesehene Auflage 2020.",
+      "bearbeitung": "Basiert auf ‹Vorläufige Lesefassung, 4. Version›, bearbeitet und kommentiert von Bodo von Plato, Elke Schmitter und Anke Steinmetz (Berlin, Februar 2024). In Form gebracht für die Mantrenwerkstatt in Basel vom 9.–11. Mai 2024 von Daniel Häni und Philipp Tok (Dornach-Basel, April 2024).",
+      "art": "Mantren-Lesefassung / Werkstattheft",
+      "ort": "Basel",
+      "ausgabe": "Mantrenwerkstatt Basel, Mai 2024",
+      "verwendet_fuer": "Maßgebliche Titeleien, Nummerierung und Gruppierung der App-Mantren; Spruch-Vorbemerkungen; Erste/Zweite/Dritte Tafel; Sonderspruch Feuermächte 19+ (Textnachweis GA 268, Notizblatt B618, Archiv-Nr. 6476).",
+      "hinweis": "Dies ist die erste Quelle, aus der die App gebaut wurde (primäre Ausgangsbasis). Die GA-Bände 270a/b/c und der Tafelband GA 270i liefern den geprüften Vortragstext, die Wandtafeln und den editorischen Apparat zu diesem Korpus."
+    },
     {
       "id": "ga-270a",
       "kurztitel": "GA 270a",
@@ -55,6 +69,25 @@
       "ort": "Dornach",
       "ausgabe": "Tafelband (11 Tafelseiten in der vorliegenden Auswahl)",
       "verwendet_fuer": "Tafelbilder der Stunden 5/6/7/8/10/11/12/13/14/17 sowie der Wiederholungsstunden wh-1, wh-6, wh-7"
+    },
+    {
+      "id": "breslau-perseus-2016",
+      "kurztitel": "Breslau (Perseus 2016)",
+      "titel": "Die Wiederholungsstunden in Breslau, 12. und 13. Juni 1924",
+      "rolle": "Eigenständige Quelle (frühe Parallelfassung)",
+      "inhalt": "Zwei Breslauer Wiederholungsstunden (12./13.6.1924); Vorwort, Ausgesparte Textpassagen, Editorische Bemerkungen. Mantren wie App 1.1–1.4, Weltenwort, 3.1–3.3 – kein neues Mantram; besonders betont: Prüfung der Einsamkeit und radikale Selbsterkenntnis.",
+      "in": "Rudolf Steiner, Der Meditationsweg der Michaelschule (Ergänzungsband, Wiederholungsstunden)",
+      "herausgeber": "Thomas Meyer",
+      "verlag": "Perseus Verlag Basel",
+      "ausgabe": "1. Auflage, November 2016 (ISBN 978-3-906174-07-5)",
+      "textgrundlage": "Originalstenogramm Lilly Kolisko (Gabelsberger Kurzschrift), entziffert/übertragen 2015 von Elena Gradenwitz; editorische Bearbeitung Jutta Schwarz. Erstveröffentlichung; Stenogramm seit 2014 im Archiv des Perseus Verlags. ‹[Lücke im Stenogramm]› = unvollständig erfasste Stelle, ‹[ ]› = Ergänzung des Herausgebers, ‹(…)› = ausgesparte Textpassage.",
+      "verwendet_fuer": "Eigene Vortragsseiten breslau-1, breslau-2; Breslau-varianten/Parallelstellen in Kommentaren 1.1–1.4, 3.1–3.3 und Erste Tafel.",
+      "rechte": "© 2016 Perseus Verlag Basel; urheberrechtlich geschützt. Verarbeitung hier nur als Quellengrundlage der App; Wortlaut nicht aus dieser Ausgabe wiedergegeben, sondern aus dem GA-270-Bestand. Erstveröffentlichung mit freundlicher Erlaubnis von Andrew Clunies-Ross (Kolisko-Nachlass).",
+      "hinweis": "Eigenständige Überlieferung (Kolisko-Strang), unabhängig von Helene Finckhs Dornacher Stenogrammen.",
+      "status": "geschuetzt-nicht-freigegeben",
+      "rechtslage_recherchiert": "Steiners Werk ist seit 31.12.1975 gemeinfrei (Landgericht München I, rechtskräftig; Ursprungsland Schweiz, kürzere Schutzfrist via Art. 7 Abs. 8 RBÜ). Frei verwendbar ist Steiners Sprechwortlaut und der Wortlaut der Mantren. Geschützt bleibt allein die eigenständige Editionsleistung dieser Ausgabe: Stenogramm-Entzifferung (Elena Gradenwitz), editierte Textgestalt mit Klammer-Ergänzungen und Lückenmarkierungen, sowie Vorwort und Editorische Bemerkungen (Thomas Meyer). Wissenschaftliche Ausgabe / Leistungsschutz; erschienen 2016. Eine Volltext-Übernahme des Editionswerks ist nicht zulässig; in der App nur bibliografischer Nachweis plus Steiners gemeinfreier Sprechwortlaut in eigener Nacherzählung.",
+      "veroeffentlichung": "Aktuell nicht im Handel erhältlich, keine Neuauflage bekannt. Vor einer Veröffentlichung der App-Inhalte mit Bezug auf diese Ausgabe ist die Rechtslage neu zu prüfen und die Erlaubnis von Thomas Meyer / Perseus Verlag Basel einzuholen.",
+      "quell_scan_im_projekt": "Die_Wiederholungsstunden_in_Breslau_12__und_13__Juni_1924.pdf (Original-Scan; nur als Arbeits-/Prüfbeleg, nicht zur Veröffentlichung)."
     }
   ],
   "textgrundlage": {
@@ -121,5 +154,9 @@
     "projekt": "Mantren-Web-App https://phtok.github.io/mantren/",
     "stand": "GA 270a + 270b + 270c vollstaendig als Vortragsseiten aufbereitet (30 Seiten); 45 Strophen-Kommentare; 13 Tafelbilder. Apparat (Vorbemerkungen/Hinweise/Tafelband) gesichtet; editorischer Rahmen in diesem Quellennachweis zusammengefasst.",
     "offen": "Optional: substanzielle Einzel-Varianten der Hinweise in betroffene Kommentare einarbeiten; separat gedruckter Schluss der 19. Stunde (Ausschluss-Text, GA 270b) als Abschnitt ergaenzen."
+  },
+  "mantren_register": {
+    "datei": "mantren-register.json",
+    "zweck": "Vollständige Titelei + Nummerierung des Korpus nach dem Mantrenbüchlein (Basel 2024), gegengestellt dem App-Stand. Dokumentiert Übereinstimmungen und Abweichungen; ändert den Datenbestand nicht."
   }
 }
