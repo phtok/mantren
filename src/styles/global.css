@@ -1598,6 +1598,32 @@ mark {
   line-height: 1.55;
 }
 
+.vortrag-faksimile {
+  margin: 3rem 0 0;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.vortrag-faksimile-link {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.vortrag-faksimile-link:hover {
+  color: var(--text);
+  text-decoration-color: var(--muted);
+}
+
+.vortrag-faksimile-hinweis {
+  margin: 0.3rem 0 0;
+  font-size: 0.78rem;
+  color: var(--muted-soft);
+  line-height: 1.5;
+}
+
 .abschnitt-hinweis {
   padding: 1rem 1.1rem !important;
   margin-left: 0 !important;

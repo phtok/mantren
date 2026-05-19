@@ -70,6 +70,17 @@ const ttsEnabled = vortrag.id === 'stunde-1';
       );
     })}
   </div>
+
+  {vortrag.faksimile_url && (
+    <footer class="vortrag-faksimile">
+      <a class="vortrag-faksimile-link" href={vortrag.faksimile_url} target="_blank" rel="noopener noreferrer">
+        Faksimile der Klartextnachschrift (PDF) ↗
+      </a>
+      {vortrag.faksimile_hinweis && (
+        <p class="vortrag-faksimile-hinweis">{tx(vortrag.faksimile_hinweis)}</p>
+      )}
+    </footer>
+  )}
 </article>
 
 {ttsEnabled && (
