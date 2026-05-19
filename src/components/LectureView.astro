@@ -6,6 +6,12 @@ interface Props {
 }
 
 const { vortrag } = Astro.props;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+function assetUrl(path: string): string {
+  if (/^(https?:|\/)/.test(path)) return path;
+  return `${base}${path}`;
+}
 ---
 <article class="vortrag">
   <header class="vortrag-head">
@@ -38,7 +44,7 @@ const { vortrag } = Astro.props;
           {!isVerse && paragraphs.map((p) => <p class="abschnitt-text">{p}</p>)}
           {a.bild && (
             <figure class="abschnitt-bild">
-              <img src={a.bild} alt={a.alt || ''} />
+              <img src={assetUrl(a.bild)} alt={a.alt || ''} loading="lazy" />
               {a.quelle && <figcaption>{a.quelle}</figcaption>}
             </figure>
           )}
