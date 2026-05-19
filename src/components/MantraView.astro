@@ -1,11 +1,14 @@
 ---
 import type { Mantra } from '../lib/mantren';
+import type { KommentarEntry } from '../lib/kommentar';
+import KommentarKlappe from './KommentarKlappe.astro';
 
 interface Props {
   mantra: Mantra;
+  kommentare?: KommentarEntry[];
 }
 
-const { mantra } = Astro.props;
+const { mantra, kommentare } = Astro.props;
 
 function renderLine(line: string) {
   if (line.startsWith('/')) {
@@ -13,25 +16,40 @@ function renderLine(line: string) {
   }
   return { text: line, cont: false };
 }
+
+// Je Strophe (Part mit lines) den nächsten Kommentar zuordnen.
+// Parts ohne lines (reine regie- oder section-Blöcke) überspringen das Mapping.
+let strophenIdx = -1;
+const kommentarForPart = (part: { lines?: string[] }) => {
+  if (!kommentare || !part.lines || part.lines.length === 0) return undefined;
+  strophenIdx += 1;
+  return kommentare[strophenIdx];
+};
 ---
 <article class="mantra">
 
   <div class="mantra-body">
-    {mantra.parts.map((part) => (
-      <section class="part">
-        {part.regie && <p class="regie">{part.regie}</p>}
-        {part.section && <h2 class="section-head">{part.section}</h2>}
-        {part.lines && part.lines.length > 0 && (
-          <p class="lines">
-            {part.lines.map((raw) => {
-              const { text, cont } = renderLine(raw);
-              return (
-                <span class={`line${cont ? ' line-cont' : ''}`}>{text}</span>
-              );
-            })}
-          </p>
-        )}
-      </section>
-    ))}
+    {mantra.parts.map((part) => {
+      const entry = kommentarForPart(part);
+      return (
+        <section class="part">
+          {part.regie && <p class="regie">{part.regie}</p>}
+          {part.section && <h2 class="section-head">{part.section}</h2>}
+          {part.lines && part.lines.length > 0 && (
+            <p class="lines">
+              {part.lines.map((raw) => {
+                const { text, cont } = renderLine(raw);
+                return (
+                  <span class={`line${cont ? ' line-cont' : ''}`}>{text}</span>
+                );
+              })}
+            </p>
+          )}
+          {entry && (
+            <KommentarKlappe kommentar={entry.kommentar} mantraId={mantra.id} klappenKey={entry.key} />
+          )}
+        </section>
+      );
+    })}
   </div>
 </article>
