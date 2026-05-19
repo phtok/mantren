@@ -865,69 +865,83 @@ mark {
 /* ─────────────── Vorlesefunktion (Web Speech API) ─────────────── */
 
 .tts-player {
-  margin: 0.4rem 0 1.6rem;
-  padding: 0.5rem 0.6rem;
+  margin: 0.2rem 0 1.8rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.6rem 0.9rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  background: var(--petrol-soft);
+  gap: 0.5rem 1rem;
   font-size: 0.82rem;
   color: var(--muted);
 }
 
-.tts-btn {
+.tts-link {
+  appearance: none;
   background: transparent;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  color: var(--text);
+  border: 0;
+  padding: 0.15rem 0;
   font: inherit;
   font-size: 0.85rem;
-  padding: 0.25rem 0.55rem;
+  color: var(--muted);
   cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  transition: background 0.15s, color 0.15s;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 4px;
+  transition: color 0.15s, text-decoration-color 0.15s;
 }
-.tts-btn:hover {
-  background: var(--bg);
+.tts-link:hover {
+  color: var(--text);
+  text-decoration-color: var(--muted);
 }
-.tts-btn:disabled {
+.tts-link:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-.tts-icon { font-size: 0.8em; line-height: 1; }
-.tts-label { letter-spacing: 0.01em; }
+
+.tts-voice {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px dotted var(--line);
+  padding: 0.1rem 1rem 0.1rem 0;
+  font: inherit;
+  font-size: 0.78rem;
+  color: var(--muted);
+  cursor: pointer;
+  max-width: 14rem;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-soft) 50%),
+    linear-gradient(135deg, var(--muted-soft) 50%, transparent 50%);
+  background-position:
+    right 0.35rem center,
+    right 0.05rem center;
+  background-size: 4px 4px, 4px 4px;
+  background-repeat: no-repeat;
+}
+.tts-voice:focus { outline: none; border-bottom-color: var(--muted); }
 
 .tts-rate {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
 }
-.tts-rate-label { color: var(--muted-soft); font-size: 0.78rem; }
 .tts-rate input[type="range"] {
-  width: 6rem;
-  accent-color: var(--text);
-}
-
-.tts-note {
-  margin-left: auto;
-  color: var(--muted-soft);
-  font-size: 0.75rem;
+  width: 5rem;
+  accent-color: var(--muted);
 }
 
 .abschnitt {
   scroll-margin-top: 5rem;
-  transition: background-color 0.2s ease;
-  border-radius: 4px;
+  position: relative;
+  padding-left: 1rem;
+  margin-left: -1rem;
+  border-left: 3px solid transparent;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  border-radius: 0 4px 4px 0;
 }
 
 .abschnitt.tts-current {
   background-color: var(--petrol-soft);
-  box-shadow: -0.6rem 0 0 var(--petrol-soft), 0.6rem 0 0 var(--petrol-soft);
+  border-left-color: var(--text);
 }
 
 .abschnitt-seite {
