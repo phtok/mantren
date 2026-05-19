@@ -13,8 +13,11 @@ function assetUrl(path: string): string {
   if (/^(https?:|\/)/.test(path)) return path;
   return `${base}${path}`;
 }
+
+// Vorlesefunktion vorerst nur beim ersten Vortrag testen.
+const ttsEnabled = vortrag.id === 'stunde-1';
 ---
-<article class="vortrag">
+<article class="vortrag" data-tts={ttsEnabled ? 'ready' : undefined}>
   <header class="vortrag-head">
     <h1 class="vortrag-titel">{tx(vortrag.titel)}</h1>
     <p class="vortrag-meta">
@@ -26,13 +29,33 @@ function assetUrl(path: string): string {
     </p>
   </header>
 
+  {ttsEnabled && (
+    <div class="tts-player" role="region" aria-label="Vorlesefunktion">
+      <button type="button" class="tts-btn js-tts-play" aria-label="Vorlesen starten">
+        <span class="tts-icon" aria-hidden="true">▶</span>
+        <span class="tts-label">Vorlesen</span>
+      </button>
+      <button type="button" class="tts-btn js-tts-pause" aria-label="Pause" hidden>
+        <span class="tts-icon" aria-hidden="true">⏸</span>
+      </button>
+      <button type="button" class="tts-btn js-tts-stop" aria-label="Stoppen" hidden>
+        <span class="tts-icon" aria-hidden="true">■</span>
+      </button>
+      <label class="tts-rate" title="Tempo">
+        <span class="tts-rate-label">Tempo</span>
+        <input type="range" class="js-tts-rate" min="0.6" max="1.3" step="0.05" value="0.95" />
+      </label>
+      <span class="tts-note">Browser-Stimme · experimentell</span>
+    </div>
+  )}
+
   <div class="vortrag-body">
-    {vortrag.abschnitte.map((a) => {
+    {vortrag.abschnitte.map((a, i) => {
       const isVerse = a.typ === 'mantram' || a.typ === 'wiederholung';
       const paragraphs = !isVerse && a.text ? a.text.split('\n\n') : [];
       const verseLines = isVerse && a.text ? a.text.split('\n') : [];
       return (
-        <section id={a.anker} class={`abschnitt abschnitt-${a.typ}`}>
+        <section id={a.anker} class={`abschnitt abschnitt-${a.typ}`} data-tts-chunk={ttsEnabled ? String(i) : undefined}>
           {a.seite && <span class="abschnitt-seite" aria-label={`Druckseite ${a.seite}`}>{a.seite}</span>}
           {a.titel && <h2 class="abschnitt-titel">{tx(a.titel)}</h2>}
           {isVerse && verseLines.length > 0 && (
@@ -54,3 +77,144 @@ function assetUrl(path: string): string {
     })}
   </div>
 </article>
+
+{ttsEnabled && (
+<script is:inline>
+  (function () {
+    var root = document.querySelector('[data-tts="ready"]');
+    if (!root) return;
+    var playBtn = root.querySelector('.js-tts-play');
+    var pauseBtn = root.querySelector('.js-tts-pause');
+    var stopBtn = root.querySelector('.js-tts-stop');
+    var rateInput = root.querySelector('.js-tts-rate');
+
+    if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+      if (playBtn) { playBtn.disabled = true; playBtn.title = 'Browser unterstützt keine Sprachausgabe'; }
+      return;
+    }
+
+    var synth = window.speechSynthesis;
+    var chunks = Array.prototype.slice.call(root.querySelectorAll('[data-tts-chunk]'));
+    var idx = 0;
+    var current = null;
+    var state = 'idle'; // idle | playing | paused
+    var germanVoice = null;
+    var keepAliveTimer = null;
+
+    function pickVoice() {
+      var voices = synth.getVoices();
+      // Bevorzuge native deutsche Stimmen; bei mehreren: lokale (offline) Stimmen zuerst.
+      var de = voices.filter(function (v) { return v.lang && v.lang.toLowerCase().indexOf('de') === 0; });
+      if (de.length === 0) return null;
+      de.sort(function (a, b) { return (a.localService === b.localService) ? 0 : (a.localService ? -1 : 1); });
+      return de[0];
+    }
+    germanVoice = pickVoice();
+    if (typeof synth.addEventListener === 'function') {
+      synth.addEventListener('voiceschanged', function () { germanVoice = pickVoice(); });
+    }
+
+    function setState(s) {
+      state = s;
+      if (playBtn) playBtn.hidden = (s === 'playing');
+      if (pauseBtn) pauseBtn.hidden = (s !== 'playing');
+      if (stopBtn) stopBtn.hidden = (s === 'idle');
+    }
+
+    function collectText(el) {
+      var clone = el.cloneNode(true);
+      var drop = clone.querySelectorAll('.abschnitt-seite, figure');
+      for (var i = 0; i < drop.length; i++) drop[i].parentNode.removeChild(drop[i]);
+      return clone.textContent.replace(/\s+/g, ' ').trim();
+    }
+
+    // Chrome cancelt Sprachausgabe nach ~15s spontan; periodisches resume hält sie wach.
+    function startKeepAlive() {
+      stopKeepAlive();
+      keepAliveTimer = window.setInterval(function () {
+        if (state === 'playing' && synth.speaking && !synth.paused) {
+          synth.pause();
+          synth.resume();
+        }
+      }, 9000);
+    }
+    function stopKeepAlive() {
+      if (keepAliveTimer != null) { window.clearInterval(keepAliveTimer); keepAliveTimer = null; }
+    }
+
+    function highlight(el) {
+      if (current && current !== el) current.classList.remove('tts-current');
+      current = el;
+      if (current) {
+        current.classList.add('tts-current');
+        try { current.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
+      }
+    }
+
+    function speakAt(i) {
+      if (i >= chunks.length) { finish(); return; }
+      var el = chunks[i];
+      var text = collectText(el);
+      if (!text) { idx = i + 1; speakAt(idx); return; }
+      highlight(el);
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'de-DE';
+      u.rate = parseFloat(rateInput && rateInput.value) || 1;
+      u.pitch = 1;
+      if (germanVoice) u.voice = germanVoice;
+      u.onend = function () {
+        idx = i + 1;
+        if (state === 'playing') speakAt(idx);
+      };
+      u.onerror = function () {
+        idx = i + 1;
+        if (state === 'playing') speakAt(idx);
+      };
+      synth.speak(u);
+    }
+
+    function finish() {
+      stopKeepAlive();
+      if (current) current.classList.remove('tts-current');
+      current = null;
+      idx = 0;
+      setState('idle');
+    }
+
+    if (playBtn) playBtn.addEventListener('click', function () {
+      if (state === 'paused') {
+        synth.resume();
+        setState('playing');
+        startKeepAlive();
+        return;
+      }
+      synth.cancel();
+      idx = 0;
+      setState('playing');
+      startKeepAlive();
+      speakAt(idx);
+    });
+    if (pauseBtn) pauseBtn.addEventListener('click', function () {
+      if (state === 'playing') {
+        synth.pause();
+        setState('paused');
+      }
+    });
+    if (stopBtn) stopBtn.addEventListener('click', function () {
+      synth.cancel();
+      finish();
+    });
+    if (rateInput) rateInput.addEventListener('change', function () {
+      // Bei laufender Wiedergabe: aktuelles Chunk neu mit neuem Tempo starten
+      if (state === 'playing') {
+        synth.cancel();
+        speakAt(idx);
+      }
+    });
+
+    // Nicht weiterquatschen, wenn man die Seite verlässt.
+    window.addEventListener('pagehide', function () { synth.cancel(); stopKeepAlive(); });
+    window.addEventListener('beforeunload', function () { synth.cancel(); stopKeepAlive(); });
+  })();
+</script>
+)}
