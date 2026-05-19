@@ -24,12 +24,12 @@ html.theme-invert {
   color-scheme: dark;
   --bg: #000000;
   --text: #d8d3c8;
-  --muted: #a5b0b8;
-  --muted-soft: #616a72;
-  --line: #2c353c;
-  --input-bg: #1a2127;
-  --petrol: #e9eef2;
-  --petrol-soft: #252a2f;
+  --muted: #b4afa5;
+  --muted-soft: #6e6961;
+  --line: #37322d;
+  --input-bg: #1f1c17;
+  --petrol: #d8d3c8;
+  --petrol-soft: #2c2822;
   --on-petrol: #000000;
 }
 
@@ -1114,7 +1114,7 @@ dialog.tafel-fullscreen[open] {
   padding: 0;
   border: 0;
   background: #000;
-  color: #8a8f94;
+  color: #7e7a72;
   overflow: hidden;
 }
 
