@@ -12,15 +12,15 @@
       "270b": "10.–19. Stunde; Tafeltexte der 17. Stunde",
       "270c": "Wiederholungsstunden; Prager u. Berner Einzelstunden; Notizen"
     },
-    "stand": "Stunden 1–5 gefüllt; erste Wandtafelzeichnung (Fünfte Stunde) eingebunden. Kommentare 3.x–5.x folgen."
+    "stand": "Stunden 1–9 (GA 270a) vollständig gefüllt; Tafelzeichnungen 5–8 eingebunden. erste-tafel -> stunde-8#m-weltenwort verknüpft. GA 270a-Block bereit zum Einpflegen. Kommentare 3.x–9.x sowie GA 270b/c folgen."
   },
   "tafeln": {
     "erste-tafel": {
       "titel": "Erste Tafel – Das Weltenwort",
       "incipit": "O Mensch, erkenne dich selbst! / So tönt das Weltenwort …",
       "rolle": "Wandtafeltext / Weltenwort; eröffnet die mantrische Reihe in den Wiederholungsstunden.",
-      "vortrag": null,
-      "anker": null,
+      "vortrag": "stunde-8",
+      "anker": "m-weltenwort",
       "quelle": {
         "ga": "270c",
         "stunde": "Erste Wiederholungsstunde",
@@ -28,7 +28,7 @@
         "datum": "1924-09-06",
         "seiten": "14–15",
         "wiederholung_in_stunde": null,
-        "anmerkung": "Status: Entwurf – wird mit den Wiederholungsstunden ausgearbeitet."
+        "anmerkung": "Das Weltenwort wird ausführlich in der Achten Stunde (18.4.1924, GA 270a, S. 200) gegeben; dort ist es als Mantram ausgesprochen. Wird mit dem Tafel-Block weiter ausgearbeitet."
       },
       "parallelstellen": [],
       "kerngedanken": {
@@ -310,3 +310,4 @@
     }
   }
 }
+
