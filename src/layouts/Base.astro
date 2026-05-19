@@ -52,6 +52,12 @@ const homeUrl = base;
             document.documentElement.classList.add('theme-invert');
           }
         } catch (e) {}
+        try {
+          var tafelPref = localStorage.getItem('mantren:tafel-vis');
+          if (tafelPref === 'hidden') {
+            document.documentElement.setAttribute('data-tafel-pref', 'hidden');
+          }
+        } catch (e) {}
       })();
     </script>
   </head>
@@ -175,6 +181,18 @@ const homeUrl = base;
             if (!trigger) return;
             e.preventDefault();
             openTafel(trigger);
+          });
+
+          // Wandtafel-Seitenleiste ein-/ausblenden (Desktop)
+          document.addEventListener('click', function (e) {
+            var t = e.target;
+            if (!(t instanceof Element)) return;
+            var btn = t.closest('.js-tafel-vis-toggle');
+            if (!btn) return;
+            var hide = html.getAttribute('data-tafel-pref') !== 'hidden';
+            if (hide) html.setAttribute('data-tafel-pref', 'hidden');
+            else html.removeAttribute('data-tafel-pref');
+            try { localStorage.setItem('mantren:tafel-vis', hide ? 'hidden' : 'visible'); } catch (e2) {}
           });
 
           if (closeBtn) closeBtn.addEventListener('click', closeTafel);

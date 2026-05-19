@@ -162,6 +162,18 @@ main {
   main { padding: 2.5rem 3rem 7rem; }
 }
 
+/* Auf Mantra-Seiten mit Wandtafel wird der Hauptcontainer breiter,
+   damit das Tafelbild nicht in einer schmalen rechten Spalte erstickt. */
+@media (min-width: 1200px) {
+  main:has(.mantra-shell--with-tafel) { max-width: 1320px; }
+}
+@media (min-width: 1500px) {
+  main:has(.mantra-shell--with-tafel) { max-width: 1480px; }
+}
+html[data-tafel-pref="hidden"] main:has(.mantra-shell--with-tafel) {
+  max-width: 980px;
+}
+
 main.center {
   display: grid;
   place-items: center;
@@ -295,8 +307,8 @@ main.center {
 @media (min-width: 1024px) {
   .mantra-shell--with-tafel {
     display: grid;
-    grid-template-columns: minmax(0, 36rem) minmax(0, 1fr);
-    gap: 3rem;
+    grid-template-columns: minmax(0, 34rem) minmax(0, 1fr);
+    gap: 3.5rem;
     align-items: start;
   }
   .mantra-shell--with-tafel .mantra {
@@ -313,7 +325,55 @@ main.center {
   }
   .tafel-figure img {
     margin: 0 auto;
+    max-height: 86vh;
   }
+}
+
+/* Tafel-Wegklapper: Sichtbarkeit per html[data-tafel-pref="hidden"] gesteuert,
+   damit der Zustand bereits beim ersten Paint stimmt (kein Flicker). */
+.tafel-vis-btn,
+.tafel-vis-show {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .tafel-vis-btn {
+    display: inline-block;
+    margin: 0 0 0.6rem;
+    padding: 0.25rem 0;
+    background: transparent;
+    border: 0;
+    font: inherit;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--muted-soft);
+    cursor: pointer;
+  }
+  .tafel-vis-show {
+    align-self: flex-start;
+    margin: 0 0 1.4rem;
+    padding: 0.25rem 0;
+    background: transparent;
+    border: 0;
+    font: inherit;
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--muted-soft);
+    cursor: pointer;
+  }
+  .tafel-vis-btn:hover,
+  .tafel-vis-show:hover { color: var(--muted); }
+
+  html[data-tafel-pref="hidden"] .mantra-shell--with-tafel {
+    display: block;
+  }
+  html[data-tafel-pref="hidden"] .mantra-shell--with-tafel .mantra,
+  html[data-tafel-pref="hidden"] .mantra-shell--with-tafel .klappe {
+    max-width: 36rem;
+  }
+  html[data-tafel-pref="hidden"] .tafel-side { display: none; }
+  html[data-tafel-pref="hidden"] .tafel-vis-show { display: inline-block; }
+  /* Bei eingeklappter Seitentafel: Tafelbild bleibt in der Klappe erreichbar */
+  html[data-tafel-pref="hidden"] .klappe-tafelbild { display: block; }
 }
 
 .klappe-tafelbild {
@@ -870,9 +930,9 @@ mark {
 
 .klappe {
   max-width: 36rem;
-  margin: 2.5rem 0 0;
+  margin: 5rem 0 0;
   border-top: 1px solid var(--line);
-  padding-top: 1.5rem;
+  padding-top: 2rem;
 }
 
 .klappe-summary {
@@ -908,7 +968,7 @@ mark {
 
 .klappe-label {
   letter-spacing: 0.02em;
-  color: var(--text);
+  color: var(--muted);
 }
 
 .klappe-rolle {
