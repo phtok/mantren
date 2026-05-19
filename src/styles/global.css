@@ -23,7 +23,7 @@
 html.theme-invert {
   color-scheme: dark;
   --bg: #000000;
-  --text: #e9eef2;
+  --text: #d8d3c8;
   --muted: #a5b0b8;
   --muted-soft: #616a72;
   --line: #2c353c;
@@ -1137,7 +1137,7 @@ dialog.tafel-fullscreen img {
   right: max(env(safe-area-inset-right, 0px), 0.5rem);
   background: transparent;
   border: 0;
-  color: #8a8f94;
+  color: #4a4a4a;
   font-size: 1.8rem;
   line-height: 1;
   padding: 0.5rem 0.75rem;
@@ -1147,7 +1147,7 @@ dialog.tafel-fullscreen img {
 
 .tafel-fullscreen-close:hover,
 .tafel-fullscreen-close:focus-visible {
-  color: #cfd3d6;
+  color: #888888;
   outline: none;
 }
 
