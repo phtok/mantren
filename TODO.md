@@ -37,3 +37,63 @@ erreichbar, obwohl der „offline bereit"-Button grün gezeigt hatte.
 4. Bereit-Indikator erst grün setzen, nachdem stichprobenartig geprüft
    wurde, dass die URLs auch wirklich im Cache liegen
    (`caches.match(url)`).
+
+## Monetarisierung
+
+**Modell:** Verkauf von Magiclinks, gebunden an echte E-Mail-Adresse.
+Einmalige Basis-Lizenz (~30 €), keine Abos. Updates der Basis-Daten
+inklusive (Vertrauen). Zusatzmodule als Einzelkäufe. Vorteile: DSGVO-
+konform, keine App-Store-Gebühr, klare Eigentumsverhältnisse,
+Missbrauchskonten gezielt sperrbar.
+
+**Basis-Lizenz (einmalig):**
+
+- Volltext aller Klassenstunden (GA 270a–d, soweit verfügbar)
+- Strophen-Kommentare in drei Tiefenstufen
+- Tafelbilder (Standardauflösung)
+- Lebenslange Updates der Basis-Daten
+
+**Zusatzmodule (separat zukaufbar):**
+
+- **Audio-Rezitationen** – Mantren von Kennern eingesprochen, mehrere
+  Stimmen (m/w), Originaltempo + langsam-meditativ. Vermutlich stärkster
+  Treiber der Zahlungsbereitschaft.
+- **Kennerkommentare** als „Stimmen" – Witzenmann, Prokofieff, lokale
+  Schulträger; je Stimme ein Add-on.
+- **Faksimile-Tafelbilder** in hoher Auflösung mit Zoom, Originalfarben
+  rekonstruiert.
+- **Originalseiten als PDF** (GA-Faksimile), wo rechtlich möglich.
+- **Querschnitte** – thematische Zusammenstellungen (Hüter, Drei-Tiere,
+  Christus-Sonne, Michael-Imagination) über alle Stunden.
+- **Esoterische Geographie** – Karten der Vortragsorte, biographische
+  Einordnung Steiners im April 1924.
+
+**Werkzeug-Features (Teil der Basis oder separates Werkzeug-Modul):**
+
+- **Rezitations-Modus** – Mantram groß, Zeile-für-Zeile-Aufdeckung,
+  Pausensteuerung, Schweigetimer nach jedem Vers.
+- **Tagesrhythmus / Wochenrhythmus** – passende Strophe pro Wochentag
+  (Saturn/Sonne/Mond-Zuordnung der Wiederholungsstunden).
+- **Memorier-Trainer** (Spaced Repetition, gegen Sichtprüfung).
+- **Druckansicht / EPUB-Export** der eigenen Auswahl.
+- **Privates Notizbuch** pro Strophe, verschlüsselt, nur lokal; Sync
+  optional ende-zu-ende-verschlüsselt.
+
+**Gemeinschaft (vorsichtig dosieren):**
+
+- **Lese-Kreis-Funktion** – kleine Gruppen, gemeinsamer Wochenrhythmus,
+  asynchron; kein „Social", sondern Verabredung.
+- **Familien-/Gruppenlizenz** (3–5 Plätze, Rabatt) – entspricht der
+  Schul-Praxis gemeinsamer Stunden.
+
+**Offene technische Punkte:**
+
+- Magiclink-Backend (E-Mail-Versand, Token-Erzeugung, Konto-Sperre).
+- Lizenzprüfung im PWA-Kontext (offline-tolerant, mit periodischer
+  Re-Validierung).
+- Modul-Freischaltung (welche Daten/Assets sind Teil welcher Lizenz;
+  Auslieferung erst nach Prüfung).
+- Zahlungsabwicklung (Stripe? SEPA? Rechnung?) – DSGVO und keine
+  App-Store-Bindung sind die Leitplanken.
+- Priorisierung erstes Zusatzmodul nach der Basis: Audio-Rezitation,
+  erster Kennerkommentar oder Faksimile-Hochauflösung – offen.
