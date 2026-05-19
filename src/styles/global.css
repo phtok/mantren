@@ -1151,23 +1151,6 @@ dialog.tafel-fullscreen img {
   outline: none;
 }
 
-.tafel-fullscreen-deeplink {
-  position: fixed;
-  bottom: max(env(safe-area-inset-bottom, 0px), 0.75rem);
-  right: max(env(safe-area-inset-right, 0px), 0.75rem);
-  color: #8a8f94;
-  font-size: 0.9rem;
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  z-index: 2;
-}
-
-.tafel-fullscreen-deeplink:hover,
-.tafel-fullscreen-deeplink:focus-visible {
-  color: #cfd3d6;
-  outline: none;
-}
-
 /* ─────────────── Druckansicht ─────────────── */
 
 @media print {
