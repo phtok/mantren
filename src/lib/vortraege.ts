@@ -27,6 +27,8 @@ export type Vortrag = {
   gruppe?: string;
   status?: string;
   status_hinweis?: string;
+  faksimile_url?: string;
+  faksimile_hinweis?: string;
   abschnitte: Abschnitt[];
   tafelzeichnungen?: Tafelzeichnung[];
 };

@@ -88,6 +88,36 @@
       "rechtslage_recherchiert": "Steiners Werk ist seit 31.12.1975 gemeinfrei (Landgericht München I, rechtskräftig; Ursprungsland Schweiz, kürzere Schutzfrist via Art. 7 Abs. 8 RBÜ). Frei verwendbar ist Steiners Sprechwortlaut und der Wortlaut der Mantren. Geschützt bleibt allein die eigenständige Editionsleistung dieser Ausgabe: Stenogramm-Entzifferung (Elena Gradenwitz), editierte Textgestalt mit Klammer-Ergänzungen und Lückenmarkierungen, sowie Vorwort und Editorische Bemerkungen (Thomas Meyer). Wissenschaftliche Ausgabe / Leistungsschutz; erschienen 2016. Eine Volltext-Übernahme des Editionswerks ist nicht zulässig; in der App nur bibliografischer Nachweis plus Steiners gemeinfreier Sprechwortlaut in eigener Nacherzählung.",
       "veroeffentlichung": "Aktuell nicht im Handel erhältlich, keine Neuauflage bekannt. Vor einer Veröffentlichung der App-Inhalte mit Bezug auf diese Ausgabe ist die Rechtslage neu zu prüfen und die Erlaubnis von Thomas Meyer / Perseus Verlag Basel einzuholen.",
       "quell_scan_im_projekt": "Die_Wiederholungsstunden_in_Breslau_12__und_13__Juni_1924.pdf (Original-Scan; nur als Arbeits-/Prüfbeleg, nicht zur Veröffentlichung)."
+    },
+    {
+      "id": "finckh-faksimiles-rsa",
+      "kurztitel": "Finckh-Klartextnachschriften (Faksimile, frei zugänglich)",
+      "titel": "Faksimiles der Klartextnachschriften von Helene Finckh zu den 19 Hauptstunden (1.–19. Klassenstunde)",
+      "rolle": "Primäre Verifikationsquelle",
+      "inhalt": "Bild-PDFs der maschinenschriftlichen Klartextnachschriften, die Helene Finckh nach ihren eigenen Stenogrammen anfertigte. Grundlage aller GA-Textfassungen.",
+      "bereitgestellt_von": "Verlag Rudolf Steiner Ausgaben (Bad Liebenzell), frei abrufbar unter rudolfsteinerausgaben.com",
+      "url": "https://www.rudolfsteinerausgaben.com/O-Mensch-erkenne-dich-selbst.html",
+      "verwendet_fuer": "Faksimile-Deeplinks pro Hauptstunde in vortraege.json (Feld faksimile_url); Verifikation der Mantra-Verse gegen die Originalnachschrift.",
+      "rechtsstatus": "Steiners Wortlaut gemeinfrei; die Digitalisierung wird vom Verlag Rudolf Steiner Ausgaben frei zugänglich bereitgestellt. Kein Hosting in der App — nur Verlinkung."
+    },
+    {
+      "id": "ga-270-5aufl-2022",
+      "kurztitel": "GA 270, 5. Auflage 2022",
+      "titel": "Esoterische Unterweisungen für die erste Klasse …, 5. Auflage, neu durchgesehen und in den Hinweisen von Grund auf überarbeitet",
+      "rolle": "Maßgebliche Referenzausgabe",
+      "inhalt": "857 Seiten; 145 farbige Wandtafelzeichnungen und Handschriftenfaksimiles im Anhang; von Grund auf überarbeitete Hinweise (hrsg. Frenz Günther / Rudolf Steiner Nachlassverwaltung).",
+      "verlag": "Rudolf Steiner Verlag, Dornach",
+      "isbn": "978-3-7274-2702-2",
+      "verwendet_fuer": "Referenz für künftige Hinweis-/Varianten-Ergänzungen; die 145 Tafeln übersteigen unseren bisherigen Bestand (11 Tafeln aus GA 270i) erheblich.",
+      "hinweis": "Diese Auflage wurde für die vorliegende App-Aufbereitung noch nicht systematisch herangezogen; sie ist als maßgebliche Referenz eingetragen für spätere Vertiefungen."
+    },
+    {
+      "id": "rsarchive-org",
+      "kurztitel": "Rudolf Steiner Archive (rsarchive.org)",
+      "titel": "GA 270 im Rudolf Steiner Archive",
+      "rolle": "Freie Online-Referenz (überwiegend englisch)",
+      "url": "https://rsarchive.org/Lectures/GA270/",
+      "verwendet_fuer": "Querverweis; englische Übersetzungen des gemeinfreien Steiner-Textes."
     }
   ],
   "textgrundlage": {

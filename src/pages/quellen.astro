@@ -25,6 +25,10 @@ type QuelleEintrag = {
   rechtslage_recherchiert?: string;
   veroeffentlichung?: string;
   quell_scan_im_projekt?: string;
+  bereitgestellt_von?: string;
+  url?: string;
+  rechtsstatus?: string;
+  isbn?: string;
 };
 type Werk = {
   titel: string;
@@ -61,10 +65,13 @@ const quelleFields: Field[] = [
   { label: 'Verlag', key: 'verlag' },
   { label: 'Ort', key: 'ort' },
   { label: 'Ausgabe', key: 'ausgabe' },
+  { label: 'ISBN', key: 'isbn' },
   { label: 'Textgrundlage', key: 'textgrundlage' },
+  { label: 'Bereitgestellt von', key: 'bereitgestellt_von' },
   { label: 'Verwendet für', key: 'verwendet_fuer' },
   { label: 'Hinweis', key: 'hinweis' },
   { label: 'Rechte', key: 'rechte' },
+  { label: 'Rechtsstatus', key: 'rechtsstatus' },
   { label: 'Veröffentlichung', key: 'veroeffentlichung' },
 ];
 ---
@@ -104,6 +111,12 @@ const quelleFields: Field[] = [
                   </Fragment>
                 ) : null;
               })}
+              {q.url && (
+                <Fragment>
+                  <dt>URL</dt>
+                  <dd><a href={q.url} target="_blank" rel="noopener noreferrer">{q.url}</a></dd>
+                </Fragment>
+              )}
               {q.rechtslage_recherchiert && (
                 <Fragment>
                   <dt>Rechtsstand</dt>
