@@ -4,9 +4,10 @@ import type { Kommentar } from '../lib/kommentar';
 interface Props {
   kommentar: Kommentar;
   mantraId: string;
+  klappenKey?: string;
 }
 
-const { kommentar, mantraId } = Astro.props;
+const { kommentar, mantraId, klappenKey } = Astro.props;
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const vortragLink = kommentar.vortrag && kommentar.anker
@@ -16,7 +17,9 @@ const vortragLink = kommentar.vortrag && kommentar.anker
 const q = kommentar.quelle;
 const quelleParts = [q.stunde, q.ort, q.datum, `GA ${q.ga}, S. ${q.seiten}`].filter(Boolean);
 const quelleLine = quelleParts.join(' · ');
-const tabName = `klappe-${mantraId.replace(/\./g, '-')}`;
+const tabKey = (klappenKey ?? mantraId).replace(/\./g, '-');
+const tabName = `klappe-${tabKey}`;
+const summaryTitle = kommentar.titel || 'Kommentar';
 
 const k = kommentar.kerngedanken;
 const hasKurz = !!k.kurz;
@@ -31,7 +34,7 @@ const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vo
 <details class="klappe">
   <summary class="klappe-summary">
     <span class="klappe-marker" aria-hidden="true"></span>
-    <span class="klappe-label">Kommentar</span>
+    <span class="klappe-label">{summaryTitle}</span>
     {kommentar.rolle && <span class="klappe-rolle">{kommentar.rolle}</span>}
   </summary>
 

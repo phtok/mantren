@@ -5,7 +5,7 @@ import KommentarKlappe from '../components/KommentarKlappe.astro';
 import LectureView from '../components/LectureView.astro';
 import { mantren, neighbours, chapters, rollingTitle, type Mantra } from '../lib/mantren';
 import { vortraege, vortragNeighbours, type Vortrag } from '../lib/vortraege';
-import { kommentarFor } from '../lib/kommentar';
+import { kommentareForMantra, firstTafelbild } from '../lib/kommentar';
 
 type Props =
   | { kind: 'mantra'; mantra: Mantra }
@@ -65,8 +65,10 @@ if (props.kind === 'mantra') {
   homeHref = `${base}vortraege`;
 }
 
-const kommentar = props.kind === 'mantra' ? kommentarFor(props.mantra.id) : undefined;
-const tafel = kommentar?.tafelbild;
+const kommentare = props.kind === 'mantra' ? kommentareForMantra(props.mantra) : undefined;
+const pageKommentar = kommentare && kommentare.mode === 'page' ? kommentare.entries[0] : undefined;
+const perPartKommentare = kommentare && kommentare.mode === 'per-part' ? kommentare.entries : undefined;
+const tafel = kommentare ? firstTafelbild(kommentare.entries) : undefined;
 const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${base}${tafel.bild}`) : null;
 const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vortrag}#${tafel.anker}` : null;
 ---
@@ -74,8 +76,10 @@ const tafelDeeplink = tafel && tafel.vortrag && tafel.anker ? `${base}${tafel.vo
   {props.kind === 'mantra' && (
     <div class={`mantra-shell${tafel ? ' mantra-shell--with-tafel' : ''}`}>
       <div class="mantra-col">
-        <MantraView mantra={props.mantra} />
-        {kommentar && <KommentarKlappe kommentar={kommentar} mantraId={props.mantra.id} />}
+        <MantraView mantra={props.mantra} kommentare={perPartKommentare} />
+        {pageKommentar && (
+          <KommentarKlappe kommentar={pageKommentar.kommentar} mantraId={props.mantra.id} klappenKey={pageKommentar.key} />
+        )}
       </div>
       {tafel && tafelImgSrc && (
         <aside class="tafel-side" aria-label="Wandtafelzeichnung">
