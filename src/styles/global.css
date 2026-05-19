@@ -22,7 +22,7 @@
 
 html.theme-invert {
   color-scheme: dark;
-  --bg: #101418;
+  --bg: #000000;
   --text: #e9eef2;
   --muted: #a5b0b8;
   --muted-soft: #616a72;
@@ -30,7 +30,7 @@ html.theme-invert {
   --input-bg: #1a2127;
   --petrol: #e9eef2;
   --petrol-soft: #252a2f;
-  --on-petrol: #101418;
+  --on-petrol: #000000;
 }
 
 * { box-sizing: border-box; }
