@@ -133,7 +133,18 @@ export type KommentareForMantra = {
   entries: KommentarEntry[];
 };
 
+// Tafel-Seiten, deren Kommentar aus source.tafeln statt aus source.strophen
+// stammt. /erste-tafel bleibt bewusst über MANTRA_TO_KEYS → strophen['8.1'].
+const TAFEL_IDS_FROM_TAFELN = new Set(['zweite-tafel', 'dritte-tafel']);
+
 export function kommentareForMantra(mantra: Mantra): KommentareForMantra | undefined {
+  if (TAFEL_IDS_FROM_TAFELN.has(mantra.id)) {
+    const k = source.tafeln?.[mantra.id];
+    if (isComplete(k)) {
+      return { mode: 'page', entries: [{ key: mantra.id, kommentar: k }] };
+    }
+    return undefined;
+  }
   const keys = MANTRA_TO_KEYS[mantra.id];
   if (!keys || keys.length === 0) return undefined;
   const entries: KommentarEntry[] = [];
