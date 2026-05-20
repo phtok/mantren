@@ -1809,3 +1809,101 @@ dialog.tafel-fullscreen img {
   color: var(--text);
   border-bottom-color: var(--text);
 }
+
+/* ─────────────── Wandtafelgalerie ─────────────── */
+
+.galerie {
+  max-width: 64rem;
+  margin: 0;
+  padding: 0 0 3rem;
+}
+
+.galerie-head {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.galerie-title {
+  font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+  font-weight: 500;
+  margin: 0 0 0.3rem;
+  line-height: 1.2;
+}
+
+.galerie-subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 0 0 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.galerie-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.galerie-figure {
+  margin: 0;
+}
+
+.galerie-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  cursor: zoom-in;
+  border-radius: 2px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}
+
+.galerie-trigger:hover {
+  border-color: var(--muted);
+}
+
+.galerie-trigger img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.galerie-caption {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin: 0.6rem 0 0.15rem;
+  line-height: 1.35;
+}
+
+.galerie-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin: 0 0 0.45rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.galerie-lesen {
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--muted);
+  align-self: flex-start;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.galerie-lesen:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}

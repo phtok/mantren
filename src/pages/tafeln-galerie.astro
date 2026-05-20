@@ -1,0 +1,92 @@
+---
+import Base from '../layouts/Base.astro';
+import { vortraege } from '../lib/vortraege';
+import { tx } from '../lib/typografie';
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+function assetUrl(path: string): string {
+  if (/^(https?:|\/)/.test(path)) return path;
+  return `${base}${path}`;
+}
+
+type Item = {
+  bild: string;
+  alt: string;
+  quelle: string;
+  vortragId: string;
+  vortragTitel: string;
+  datum: string;
+  ga: string;
+  anker: string;
+};
+
+const items: Item[] = [];
+for (const v of vortraege) {
+  for (const a of v.abschnitte) {
+    if (a.typ === 'tafelzeichnung' || a.bild) {
+      items.push({
+        bild: assetUrl(a.bild || ''),
+        alt: a.alt || '',
+        quelle: a.quelle || '',
+        vortragId: v.id,
+        vortragTitel: v.titel,
+        datum: v.datum,
+        ga: `GA ${v.ga}`,
+        anker: a.anker,
+      });
+    }
+  }
+}
+items.sort((a, b) => a.datum.localeCompare(b.datum));
+---
+<Base title="Wandtafelgalerie">
+  <article class="galerie">
+    <header class="galerie-head">
+      <h1 class="galerie-title">Wandtafelgalerie</h1>
+      <p class="galerie-subtitle">
+        {tx(`${items.length} Tafelbilder Rudolf Steiners zu den Klassenstunden 1924, chronologisch — Auswahl aus dem Tafelband GA 270i.`)}
+      </p>
+    </header>
+
+    <ul class="galerie-grid">
+      {items.map((it) => (
+        <li class="galerie-item">
+          <figure class="galerie-figure">
+            <button
+              type="button"
+              class="galerie-trigger tafel-trigger js-tafel-trigger"
+              aria-label={tx(`${it.vortragTitel} (${it.datum}) — vergrössern`)}
+            >
+              <img
+                src={it.bild}
+                alt={tx(it.alt)}
+                loading="lazy"
+                decoding="async"
+              />
+            </button>
+          </figure>
+          <p class="galerie-caption">{tx(it.vortragTitel)}</p>
+          <p class="galerie-meta">
+            <time datetime={it.datum}>{it.datum}</time>
+            <span aria-hidden="true"> · </span>
+            <span>{tx(it.ga)}</span>
+          </p>
+          <a class="galerie-lesen" href={`${base}${it.vortragId}#${it.anker}`}>
+            Im Vortrag lesen →
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="vortrag-back">
+      <a href={base}>← Zum Mantren-Index</a>
+      <span aria-hidden="true"> · </span>
+      <a href={`${base}vortraege`}>Vorträge</a>
+      <span aria-hidden="true"> · </span>
+      <a href={`${base}glossar`}>Glossar</a>
+      <span aria-hidden="true"> · </span>
+      <a href={`${base}quellen`}>Quellen</a>
+    </p>
+  </article>
+</Base>
