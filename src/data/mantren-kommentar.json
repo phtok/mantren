@@ -79,129 +79,79 @@
       ]
     },
     "zweite-tafel": {
-      "titel": "Zweite Tafel – Das Hüter-Wort",
+      "titel": "Zweite Tafel – Aus den Weltentiefen",
       "incipit": "Erkenne erst den ernsten Hüter, / Der vor des Geisterlandes Pforten steht …",
-      "rolle": "Die zweite der drei Tafeln: am Abgrund, beim Hüter, der Sinnenkraft und Verstandesmacht den Einlass verwehrt.",
+      "rolle": "Zweite Rahmen-Tafel des Klassen-Zyklus. Aus denselben Weltentiefen, aus denen die Erste Tafel das Weltenwort sprach, klingt nun die Hüter-Mahnung an der Schwelle der geistigen Welt.",
       "vortrag": "stunde-13",
       "anker": "m-hueter",
       "quelle": {
         "ga": "270b",
-        "stunde": "Achtzehnte Stunde (Zusammenschau)",
+        "stunde": "Dreizehnte Stunde",
         "ort": "Dornach",
-        "datum": "1924-07-12",
-        "seiten": "189",
-        "wiederholung_in_stunde": "Erstmals gegeben in der Dreizehnten Stunde (17.5.1924); als zweite Tafel wiederholt in der Achtzehnten Stunde",
-        "anmerkung": "Identisch mit dem Hüter-Wort der Dreizehnten Stunde (Strophe 13.2). Als ‹zweite Tafel› bezeichnet in der Achtzehnten Stunde (GA 270b, S. 189)."
+        "datum": "1924-05-17",
+        "seiten": "89–90",
+        "wiederholung_in_stunde": "18",
+        "anmerkung": "In der Dreizehnten Stunde erstmals an die Tafel geschrieben und gesprochen, unmittelbar nach dem Weltenwort. In der Achtzehnten Stunde (12.7.1924) bezeichnet Steiner es ausdrücklich als ‹die zweite Tafel›. In der Fünften und Sechsten Wiederholungsstunde (15./17.9.1924) wird das Mantram meditativ entfaltet: der Hüter weist auf das Licht jenseits der Finsternis, auf die drei Tiere und auf die Dreiheit von Denken, Fühlen und Wollen."
       },
       "parallelstellen": [
-        {
-          "ref": "GA 270b, Dreizehnte Stunde – das Hüter-Wort (Erstgabe)",
-          "art": "Erstgabe",
-          "vortrag": "stunde-13",
-          "anker": "m-hueter"
-        },
-        {
-          "ref": "GA 270b, Dreizehnte Stunde – der ernste Hüter und das Christus-Gegenwort",
-          "art": "Deutung",
-          "vortrag": "stunde-13",
-          "anker": "hueter-deutung"
-        },
-        {
-          "ref": "GA 270b, Achtzehnte Stunde – die drei Tafeln",
-          "art": "Zusammenschau",
-          "vortrag": "stunde-18",
-          "anker": "drei-tafeln"
-        },
-        {
-          "ref": "GA 270b, Achtzehnte Stunde – zweite Tafel (Wiederholung)",
-          "art": "Zweite Tafel",
-          "vortrag": "stunde-18",
-          "anker": "m-hueter-wiederholung"
-        },
-        {
-          "ref": "GA 270b, Erste Tafel – das Weltenwort",
-          "art": "Erste Tafel",
-          "vortrag": "stunde-8",
-          "anker": "m-weltenwort"
-        }
+        { "ref": "GA 270a, Erste Stunde (15.2.1924), S. 22", "art": "Vorklang – ‹erste eherne Tafel›", "vortrag": "stunde-1", "anker": null },
+        { "ref": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89", "art": "Erstdeklamation", "vortrag": "stunde-13", "anker": "m-hueter" },
+        { "ref": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 189", "art": "Explizite Benennung ‹die zweite Tafel›", "vortrag": "stunde-18", "anker": null },
+        { "ref": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924), S. 215–218", "art": "Meditative Entfaltung – Hüter, drei Tiere, Dreiheit", "vortrag": "wh-5", "anker": null },
+        { "ref": "GA 270c, Sechste Wiederholungsstunde (17.9.1924), S. 119–127", "art": "Tafel-Trias, ‹Schau die Drei›", "vortrag": "wh-6", "anker": null },
+        { "ref": "App-Kommentar 13.2", "art": "Strophen-Kommentar zum selben Mantram", "vortrag": "stunde-13", "anker": "m-hueter" }
       ],
       "kerngedanken": {
-        "kurz": "‹Erkenne erst den ernsten Hüter …› – die Mahnung am Abgrund: der Hüter verwehrt der Sinnenkraft und der Verstandesmacht den Einlass, bis die Wahrheit des eigenen Wesens kraftvoll erobert ist.",
-        "kompakt": "Die zweite der drei Tafeln. Nachdem der Mensch sich dem Abgrund genähert hat, steht da die zweite Tafel: ‹Erkenne erst den ernsten Hüter, / Der vor des Geisterlandes Pforten steht, / Den Einlaß deiner Sinnenkraft / Und deines Verstandes Macht verwehrend.› Begründung: weil der Mensch im Sinnesweben und im Gedankenbilden aus Raumeswesenlosigkeit und Zeiten-Truggewalten die Wahrheit des eigenen Wesens erst kraftvoll erobern muss. Das Wort wurde erstmals in der Dreizehnten Stunde gegeben (Strophe 13.2); in der Achtzehnten Stunde stellt Steiner es ausdrücklich als zweite Tafel zwischen Weltenwort und Göttergespräch.",
+        "kurz": "Aus denselben Weltentiefen, aus denen das Weltenwort tönt, kommt eine zweite Stimme: der Hüter steht vor den Pforten des Geisterlandes und verwehrt dem Menschen mit bloßer Sinnenkraft und Verstandes-Macht den Einlass. Die Wahrheit über das eigene Wesen muss erst kraftvoll erobert werden – jenseits von Raumeswesenlosigkeit und Truggewalten der Zeit.",
+        "kompakt": "Das zehnzeilige Mantram bezeichnet die Schwelle der geistigen Welt und bildet die zweite der drei Rahmen-Tafeln. Dem Weltenwort (Erste Tafel) folgt aus denselben Weltentiefen die Hüter-Stimme. Der Hüter weist auf den Ernst des Erkennens: alle Erkenntnis ohne die Empfindung dieser Schwellengestalt ist keine wirkliche Erkenntnis. Im Sinnesweben und Gedankenbilden hat der Mensch nur Bilder, Schein, Truggewalten – jenseits warten lebendiges Denken und das eigene wahre Wesen. Erstmals in der Dreizehnten Stunde gesprochen, in der Achtzehnten als ‹zweite Tafel› ausdrücklich benannt; in der Fünften und Sechsten Wiederholungsstunde meditativ ausgelegt – dort öffnen sich das Bild der drei Tiere und die Dreiheit von Denken, Fühlen, Wollen.",
         "ausfuehrlich": [
-          "Die zweite Tafel markiert die Schwelle. Während das Weltenwort den Menschen noch mitten in der Sinneswelt anspricht, steht das Hüter-Wort am Abgrund des Seins: hier endet die Tragfähigkeit von Sinnenkraft und Verstand.",
-          "Der Hüter verwehrt den Einlass nicht aus Strenge, sondern weil das gewöhnliche Bewusstsein an dieser Stelle nichts ausrichtet; die Truggestalten der gewöhnlichen Wirklichkeit verschwinden erst dort. Die Wahrheit des eigenen Wesens muss ‹kraftvoll erst erobert› werden – das ist die Bedingung des Eintritts.",
-          "Steiner ordnet diese Tafel in der Achtzehnten Stunde ausdrücklich als zweite zwischen die erste (Weltenwort) und das Dritte (Göttergespräch jenseits des Abgrundes, mit dem Christus-Gegenwort beim Rückblick). So bilden die drei Tafeln eine durchgehende Bewegung: Ruf in der Sinneswelt – Mahnung an der Schwelle – Bezeugung der Götterwelt jenseits."
+          "Das Mantram setzt unmittelbar dort an, wo das Weltenwort endet: Hat der Mensch gehört, wie aus den Tiefen der Welt die Frage ‹O Mensch, erkenne dich selbst!› an ihn ergeht, so erfährt er sogleich, dass diese Selbsterkenntnis nicht im gewohnten Bewusstsein zu haben ist. ‹Aus denselben Weltentiefen› klingt es weiter, sagt Steiner in der Dreizehnten Stunde – und stellt damit die Zweite Tafel als Antwort und Verschärfung der Ersten neben sie.",
+          "Der Hüter der Schwelle hindert nicht aus Strenge, sondern aus Wahrheit. Sinneskraft und Verstandes-Macht verfehlen, was jenseits liegt: sie weben in einem Raum, der – am Wesen der geistigen Welt gemessen – wesenlos ist, und sie bilden Gedanken in einer Zeit, die als Truggewalt erscheint. Erst wer dies durchschaut, kann am Hüter vorüber. Erkennen ist also nicht ein müheloses Hinüberblicken, sondern ein eroberndes Sich-Verwandeln.",
+          "In der Achtzehnten Stunde stellt Steiner die drei Tafeln zum ersten Mal ausdrücklich zusammen: nach dem Weltenwort heißt es ‹Nun näherten wir uns dem Hüter. Die zweite Tafel ist da›, und anschließend folgt das Gegenwort als dritte. Damit ist die Trias gesetzt, die das Klassen-Werk gliedert: Weltenwort – Hüter-Wort – Christus-Gegenwort.",
+          "In der Fünften Wiederholungsstunde wird das Hüter-Mantram zum Ausgangspunkt einer ausführlichen Meditation: der Hüter zeigt die drei Tiere als elementarische Verkörperungen des toten Denkens (Knochengespenst), des vererbten Fühlens (Spottlust) und des verzehrenden Wollens; und er zeigt zugleich, dass an der Schwelle Denken, Fühlen und Wollen, die im Leibe ineinanderverwoben sind, sich trennen – der Mensch wird im Hinüberschreiten zur Dreiheit. In der Sechsten Wiederholungsstunde fügt sich dieser Befund in das ‹Schau die Drei›-Mantram und in die drei Siegelgesten des Hüters.",
+          "Das Mantram steht im App-Kommentar 13.2 als eigenständige Strophe der Dreizehnten Stunde und ist über die Zweite Tafel als Rahmen-Tafel mit dem Weltenwort (Erste Tafel) und dem Christus-Gegenwort (Dritte Tafel) verknüpft."
         ]
       },
       "zitate": [
-        {
-          "text": "Erkenne erst den ernsten Hüter, der vor des Geisterlandes Pforten steht …",
-          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 189"
-        }
+        { "text": "Nun näherten wir uns dem Hüter. Die zweite Tafel ist da.", "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 189" },
+        { "text": "Daher nehmet auf, meine lieben Schwestern und Brüder, in Eure Herzen dasjenige, was Euch geben kann eine Vorempfindung dieser ernsten Gestalt, die da steht zwischen dem Nichterkennen und dem Erkennen.", "quelle": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924), S. 215" }
       ]
     },
     "dritte-tafel": {
-      "titel": "Dritte Tafel – Göttergespräch und Christus-Gegenwort",
-      "incipit": "Es denken die Menschenwesen! / Empfanget das Licht der Höhen …",
-      "rolle": "Die dritte der drei Tafeln: jenseits des Abgrundes das belauschte Göttergespräch; beim Rückblick in die Sinneswelt erklingt das Christus-Gegenwort.",
-      "vortrag": "stunde-18",
-      "anker": "m-goetter",
+      "titel": "Dritte Tafel – Aus den Seelentiefen",
+      "incipit": "Ich trat in diese Sinnes-Welt, / Des Denkens Erbe mit mir führend …",
+      "rolle": "Dritte und letzte Rahmen-Tafel. Während die Erste und die Zweite Tafel aus den Weltentiefen tönen, spricht die Dritte andächtig aus den Tiefen der eigenen Seele – als Christus-Gegenwort des Menschen auf Weltenwort und Hüter-Mahnung.",
+      "vortrag": "stunde-13",
+      "anker": "m-gegenwort",
       "quelle": {
         "ga": "270b",
-        "stunde": "Achtzehnte Stunde (Zusammenschau)",
+        "stunde": "Dreizehnte Stunde",
         "ort": "Dornach",
-        "datum": "1924-07-12",
-        "seiten": "189–190",
-        "wiederholung_in_stunde": "Göttergespräch erstmals in der Achtzehnten Stunde; Christus-Gegenwort erstmals in der Dreizehnten Stunde",
-        "anmerkung": "Zusammengefasst: das Göttergespräch ‹Es denken die Menschenwesen› (Strophe 18.1) jenseits des Abgrundes und – beim Zurückblicken in die Sinneswelt – das Christus-Gegenwort ‹Ich trat in diese Sinnes-Welt› (Strophe 13.3). So in der Achtzehnten Stunde, S. 189–190."
+        "datum": "1924-05-17",
+        "seiten": "90",
+        "wiederholung_in_stunde": "18",
+        "anmerkung": "In der Dreizehnten Stunde unmittelbar nach dem Hüter-Wort gesprochen: ‹Wenn wir solches gehört haben, kann in uns andächtig das Gegenwort aus den Tiefen unserer Seele heraus sprechen›. In der Achtzehnten Stunde steht es im Anschluss an die als ‹zweite Tafel› benannte Hüter-Strophe und schließt die Tafel-Trias ab. In den Wiederholungsstunden kehrt es als rahmender Schlusston wieder."
       },
       "parallelstellen": [
-        {
-          "ref": "GA 270b, Achtzehnte Stunde – das Göttergespräch (Erstgabe)",
-          "art": "Erstgabe",
-          "vortrag": "stunde-18",
-          "anker": "m-goetter"
-        },
-        {
-          "ref": "GA 270b, Dreizehnte Stunde – das Christus-Gegenwort (Erstgabe)",
-          "art": "Christus-Gegenwort",
-          "vortrag": "stunde-13",
-          "anker": "m-gegenwort"
-        },
-        {
-          "ref": "GA 270b, Achtzehnte Stunde – Christus-Gegenwort beim Rückblick in die Sinneswelt",
-          "art": "Christus-Gegenwort",
-          "vortrag": "stunde-18",
-          "anker": "m-gegenwort-wiederholung"
-        },
-        {
-          "ref": "GA 270b, Achtzehnte Stunde – die drei Tafeln",
-          "art": "Zusammenschau",
-          "vortrag": "stunde-18",
-          "anker": "drei-tafeln"
-        },
-        {
-          "ref": "GA 270b, Erste/Zweite Tafel – Weltenwort, Hüter-Wort",
-          "art": "Erste/Zweite Tafel",
-          "vortrag": "stunde-13",
-          "anker": "m-hueter"
-        }
+        { "ref": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 90", "art": "Erstdeklamation", "vortrag": "stunde-13", "anker": "m-gegenwort" },
+        { "ref": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 190", "art": "Tafel-Trias mit Hüter-Wort", "vortrag": "stunde-18", "anker": null },
+        { "ref": "GA 270c, Fünfte–Siebente Wiederholungsstunde (15.–20.9.1924)", "art": "Wiederkehr im Klassen-Gefüge", "vortrag": "wh-5", "anker": null },
+        { "ref": "App-Kommentar 13.3", "art": "Strophen-Kommentar zum selben Mantram", "vortrag": "stunde-13", "anker": "m-gegenwort" }
       ],
       "kerngedanken": {
-        "kurz": "Jenseits des Abgrundes belauscht der Mensch das Göttergespräch (‹Es denken / fühlen / wollen die Menschenwesen … Empfanget das Licht der Höhen / die Seelenwärme / die Tiefenkraft›); beim Rückblick in die Sinneswelt erklingt das Christus-Gegenwort ‹Ich trat in diese Sinnes-Welt›.",
-        "kompakt": "Die dritte der drei Tafeln fasst zusammen, was sich jenseits des Abgrundes ereignet. Vorbei am ernsten Hüter, steht der Mensch drüben und wird Zeuge des Göttergesprächs: die dritte Hierarchie bekennt ihre Sorge (‹Es denken / fühlen / wollen die Menschenwesen!›), die zweite Hierarchie antwortet gewährend (‹Empfanget das Licht der Höhen / die Seelenwärme / die Tiefenkraft›). Dann blickt der Mensch herüber in die Sinneswelt, und ihr gegenüber erklingt das Christus-Gegenwort: ‹Ich trat in diese Sinnes-Welt … Ich will des Christus Wesen fühlen. Es weckt in Stoffes-Sterben Geist-Geburt … Im Geiste find' ich so die Welt / Und erkenne mich im Weltenwerden.› So in der Achtzehnten Stunde, S. 189–190.",
+        "kurz": "Nach Hüter-Wort und Schwellengang spricht aus den Tiefen der eigenen Seele andächtig das Gegenwort: das Ich tritt in die Sinneswelt, vom Erbe des vorirdischen Denkens und einer Gotteskraft hereingeführt, mit dem Tod am Wegesende. Wer das Christus-Wesen fühlt, weckt im Sterben des Stoffes die Geist-Geburt – und erkennt sich im Weltenwerden.",
+        "kompakt": "Das achtzeilige Mantram ist die dritte und letzte Rahmen-Tafel des Klassen-Zyklus. Aus den Weltentiefen tönte das Weltenwort (Erste Tafel), aus den Weltentiefen mahnte der Hüter (Zweite Tafel) – die Dritte Tafel kommt nicht von außen, sondern andächtig aus den Tiefen der Seele heraus. Sie ist die menschliche Antwort: das Bekenntnis zum Erdengang, das Mitführen des Denkens-Erbes aus dem Vorirdischen, die Christus-Wendung im Tod und das Wiederfinden seiner selbst im Weltenwerden. Vier Zeilen führen herab in die Inkarnation, vier Zeilen steigen durch den Christus zur kosmischen Selbsterkenntnis auf. Erstmals in der Dreizehnten Stunde gesprochen, in der Achtzehnten Stunde im Anschluss an die zweite Tafel als dritter Tafelspruch gestellt.",
         "ausfuehrlich": [
-          "Die dritte Tafel ist nicht ein einzelnes Wort, sondern das vollständige ‹Drüben›: zuerst das Göttergespräch, das man nicht selbst spricht, sondern als Zeuge belauscht. Die Wesen der dritten Hierarchie bekennen ihre Sorge um Denken, Fühlen und Wollen der Menschenwesen; die zweite Hierarchie gewährt Licht der Höhen, Seelenwärme, Tiefenkraft – ungewusst wirksam im Menschen.",
-          "Daran schließt sich, als zweiter Teil derselben Tafel, das Christus-Gegenwort: nicht jenseits gesprochen, sondern beim Zurückblicken aus der geistigen Welt in die Sinneswelt. Es bekennt den Weg der Seele – von eines Gottes Kraft hereingeführt, den Tod am Wegesende, die Wende im Christus-Wesen, das in Stoffes-Sterben Geist-Geburt weckt.",
-          "Steiner stellt diese Dreiheit in der Achtzehnten Stunde als die innere Dramatik der Selbsterkenntnis dar: erste Tafel (Weltenwort) noch in der Sinneswelt, zweite Tafel (Hüter-Wort) an der Schwelle, dritte Tafel jenseits – das Göttergespräch –, und der Schlussakkord des Christus-Gegenworts beim Rückblick. Der Bogen schließt sich: ‹Und erkenne mich im Weltenwerden› beantwortet die Frage des Weltenworts ‹O Mensch, erkenne dich selbst!›"
+          "Anders als Weltenwort und Hüter-Mahnung kommt die Dritte Tafel nicht aus den Weltentiefen, sondern aus den Tiefen der eigenen Seele. Steiner sagt es ausdrücklich in der Dreizehnten Stunde: ‹Wenn wir solches gehört haben, kann in uns andächtig das Gegenwort aus den Tiefen unserer Seele heraus sprechen›. Es ist das Wort, mit dem der Mensch dem Welten- und Hüter-Wort antwortet.",
+          "Das Mantram hat eine klare zweigliedrige Bewegung. Die ersten vier Zeilen tragen die Inkarnation: das Ich tritt in die Sinneswelt, führt das Denkens-Erbe aus dem vorirdischen Dasein mit sich, wird von einer Gotteskraft hereingeführt, weiß den Tod am Ende des Weges stehen. Die letzten vier Zeilen tragen die Wendung: ‹Ich will des Christus Wesen fühlen› – im Sterben des Stoffes erwacht die Geist-Geburt; im Geiste findet der Mensch die Welt und erkennt sich im Weltenwerden.",
+          "Die Christus-Wendung ist tragend. Erst durch den Christus-Bezug verwandelt sich das Sterben des Stoffes zur Geist-Geburt – nicht durch eine Verneinung des Erdenganges, sondern durch dessen Annahme und Durchdringung. Die Dritte Tafel ist darum kein Rückzug aus der Sinneswelt, sondern ihre Christianisierung von innen her.",
+          "In der Achtzehnten Stunde stellt Steiner Weltenwort, Hüter-Wort und Christus-Gegenwort zum ersten Mal als geschlossene Trias zusammen: nach dem Weltenwort heißt es ‹die zweite Tafel ist da›, dann folgt das Schwellen-Gespräch, und schließlich – ‹da schauen wir herüber, hinüber in die Sinneswelt, da fühlen wir gegenüber dieser Sinneswelt die Worte› – die Dritte Tafel. Damit ist der Rahmen vollständig.",
+          "Das Mantram steht im App-Kommentar 13.3 als eigenständige Strophe der Dreizehnten Stunde und ist über die Dritte Tafel mit dem Weltenwort (Erste Tafel) und dem Hüter-Wort (Zweite Tafel) zur Trias verknüpft."
         ]
       },
       "zitate": [
-        {
-          "text": "Im Geiste find' ich so die Welt und erkenne mich im Weltenwerden.",
-          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 190"
-        }
+        { "text": "Wenn wir solches gehört haben, kann in uns andächtig das Gegenwort aus den Tiefen unserer Seele heraus sprechen.", "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89" },
+        { "text": "Da schauen wir herüber, hinüber in die Sinneswelt, da fühlen wir gegenüber dieser Sinneswelt die Worte.", "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 190" }
       ]
     }
   },
