@@ -1726,3 +1726,86 @@ dialog.tafel-fullscreen img {
   line-height: 1.65;
   color: var(--text);
 }
+
+/* ─────────────── Glossar ─────────────── */
+
+.glossar {
+  max-width: 40rem;
+  margin: 0;
+  padding: 0 0 3rem;
+}
+
+.glossar-head {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.glossar-title {
+  font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+  font-weight: 500;
+  margin: 0 0 0.3rem;
+  line-height: 1.2;
+}
+
+.glossar-subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.glossar-section {
+  margin: 0 0 2.4rem;
+}
+
+.glossar-section h2 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.9rem;
+}
+
+.glossar-list {
+  margin: 0;
+  padding: 0;
+}
+
+.glossar-list dt {
+  font-weight: 500;
+  color: var(--text);
+  margin: 1rem 0 0.25rem;
+  font-size: 0.95rem;
+}
+
+.glossar-list dt:first-of-type {
+  margin-top: 0;
+}
+
+.glossar-list dd {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.glossar-alt {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+.glossar-verweis {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--muted);
+}
+
+.glossar-verweis:hover {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}

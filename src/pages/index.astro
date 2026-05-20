@@ -30,6 +30,7 @@ const offlineUrls = [
   `${base}vortraege`,
   ...vortraegePublic.map((v) => `${base}${v.id}`),
   `${base}quellen`,
+  `${base}glossar`,
   `${base}fonts/inclusive-sans.woff2`,
   `${base}favicon.svg`,
 ];
@@ -98,6 +99,7 @@ const offlineUrls = [
     {vortraegePublic.length > 0 && (
       <a class="index-footer-link" href={`${base}vortraege`}>Vorträge der Klassenstunden</a>
     )}
+    <a class="index-footer-link" href={`${base}glossar`}>Glossar</a>
     <a class="index-footer-link" href={`${base}quellen`}>Quellen und editorische Notiz</a>
   </footer>
 
