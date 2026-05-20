@@ -47,6 +47,7 @@ type Data = {
   rechtestatus: Record<string, string>;
   weiterfuehrende_literatur: Lit[];
   klassenstunden_uebersicht: Record<string, string>;
+  editorische_beitraege?: Record<string, string>;
   bearbeitung: Record<string, string>;
 };
 const d = quellenRaw as unknown as Data;
@@ -88,6 +89,18 @@ const quelleFields: Field[] = [
       <p class="quellen-werk-meta">{tx(d.werk.autor)} · {tx(d.werk.gattung)}</p>
       <p>{tx(d.werk.umfang_gesamt)}</p>
     </section>
+
+    {d.editorische_beitraege && (
+      <section class="quellen-section">
+        <h2>Editorische Beiträge zur Web-Ausgabe</h2>
+        {d.editorische_beitraege.titel_der_abschnitte && (
+          <p>{tx(d.editorische_beitraege.titel_der_abschnitte)}</p>
+        )}
+        {d.editorische_beitraege.viergliederung && (
+          <p>{tx(d.editorische_beitraege.viergliederung)}</p>
+        )}
+      </section>
+    )}
 
     <section class="quellen-section">
       <h2>Verwendete Quellen</h2>

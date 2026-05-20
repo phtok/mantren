@@ -180,6 +180,10 @@
     "einzelstunden_ohne_nachschrift": "Paris (2), Breslau (2), Arnheim (2), Torquay (1), 1. Londoner Stunde (1) – von diesen 8 Stunden existiert keine Nachschrift und keine Notiz; sie sind im Werk nicht enthalten.",
     "summe": "38 Stunden gesamt, 30 mit Nachschrift; 30 sind aufbereitet."
   },
+  "editorische_beitraege": {
+    "titel_der_abschnitte": "Die Titel der einzelnen Mantren-Abschnitte (‹Erdengründe›, ‹Daseinswort›, ‹Willens-Stoß›, ‹Willenszauberwesen› und so fort) sind aus dem Mantrenbüchlein Basel 2024 übernommen und stammen dort von Philipp Tok. Sie sollen der warmen Überschau und Auffindbarkeit jenseits der nichtssagenden Nummerierung dienen.",
+    "viergliederung": "Die Gliederung des Mantren-Gesamtzyklus in vier Bögen — ‹Geschichte der Verwandlung 1–7›, ‹Leib in neuer Umgebung 8–10›, ‹Zusammenleben mit Hierarchien 11–16›, ‹Kosmische Wesen bezeugen 17–19+› — stammt von Bodo von Plato."
+  },
   "bearbeitung": {
     "projekt": "Mantren-Web-App https://phtok.github.io/mantren/",
     "stand": "GA 270a + 270b + 270c vollstaendig als Vortragsseiten aufbereitet (30 Seiten); 45 Strophen-Kommentare; 13 Tafelbilder. Apparat (Vorbemerkungen/Hinweise/Tafelband) gesichtet; editorischer Rahmen in diesem Quellennachweis zusammengefasst.",
