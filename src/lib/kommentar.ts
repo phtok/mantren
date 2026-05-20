@@ -92,6 +92,8 @@ function isComplete(c: KommentarLike | undefined): c is Kommentar {
 // /mantren/erste-tafel rendert den Weltenwort-Kommentar 8.1.
 // /mantren/8 hat in der App 3 Strophen (Sieh hinter/in/über) → 8.2/8.3/8.4;
 //   8.1 (Weltenwort) gehört zur App-Seite erste-tafel.
+// zweite-tafel und dritte-tafel laufen NICHT über dieses Mapping, sondern
+// über TAFEL_IDS_FROM_TAFELN (Lookup direkt im tafeln-Bucket).
 const MANTRA_TO_KEYS: Record<string, string[]> = {
   '1.1': ['1.1'],
   '1.2': ['1.2'],
