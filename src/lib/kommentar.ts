@@ -92,6 +92,8 @@ function isComplete(c: KommentarLike | undefined): c is Kommentar {
 // /mantren/erste-tafel rendert den Weltenwort-Kommentar 8.1.
 // /mantren/8 hat in der App 3 Strophen (Sieh hinter/in/über) → 8.2/8.3/8.4;
 //   8.1 (Weltenwort) gehört zur App-Seite erste-tafel.
+// zweite-tafel und dritte-tafel beziehen ihre Kommentare aus source.tafeln
+// (eigener Bucket im JSON), nicht aus source.strophen.
 const MANTRA_TO_KEYS: Record<string, string[]> = {
   '1.1': ['1.1'],
   '1.2': ['1.2'],
@@ -109,6 +111,8 @@ const MANTRA_TO_KEYS: Record<string, string[]> = {
   '9.1': ['9.1'],
   '9.2': ['9.2'],
   'erste-tafel': ['8.1'],
+  'zweite-tafel': ['zweite-tafel'],
+  'dritte-tafel': ['dritte-tafel'],
   // GA 270b
   '10': ['10.1'],
   '11.1': ['11.1'],
@@ -138,7 +142,7 @@ export function kommentareForMantra(mantra: Mantra): KommentareForMantra | undef
   if (!keys || keys.length === 0) return undefined;
   const entries: KommentarEntry[] = [];
   for (const key of keys) {
-    const k = source.strophen?.[key];
+    const k = source.strophen?.[key] ?? source.tafeln?.[key];
     if (isComplete(k)) entries.push({ key, kommentar: k });
   }
   if (entries.length === 0) return undefined;
