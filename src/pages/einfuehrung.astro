@@ -1,0 +1,97 @@
+---
+import Base from '../layouts/Base.astro';
+import { tx } from '../lib/typografie';
+import onboardingRaw from '../data/onboarding.json';
+
+type Bildschirm = {
+  nr: number;
+  titel: string;
+  lead: string;
+  text: string;
+  weiter: string;
+  bild_alt: string;
+  bild: string;
+};
+type Onboarding = {
+  version: string;
+  stand: string;
+  hinweis: string;
+  bildschirme: Bildschirm[];
+};
+
+const data = onboardingRaw as Onboarding;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+
+// onboarding.json verweist auf Kurz-Dateinamen; im Repo liegen die
+// Tafelbilder unter den konventionellen Stunden-Namen.
+const BILD_MAP: Record<string, string> = {
+  '13.jpg': 'stunde-13.jpg',
+  '01w.jpg': 'wh-1.jpg',
+  '14.jpg': 'stunde-14.jpg',
+};
+function bildSrc(p: string): string {
+  const m = p.match(/([^/]+)$/);
+  const file = m ? m[1] : p;
+  const mapped = BILD_MAP[file] || file;
+  return `${base}assets/tafeln/${mapped}`;
+}
+
+// Datenseitiger **fett**-Marker → <strong>. Andere Markdown-Marker werden nicht erkannt.
+type RenderPart = { type: 'text' | 'bold'; value: string };
+function renderParagraph(p: string): RenderPart[] {
+  const parts: RenderPart[] = [];
+  const re = /\*\*([^*]+)\*\*/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(p)) !== null) {
+    if (m.index > last) parts.push({ type: 'text', value: p.slice(last, m.index) });
+    parts.push({ type: 'bold', value: m[1] });
+    last = re.lastIndex;
+  }
+  if (last < p.length) parts.push({ type: 'text', value: p.slice(last) });
+  if (parts.length === 0) parts.push({ type: 'text', value: p });
+  return parts;
+}
+---
+<Base title="Einführung">
+  <article class="einfuehrung">
+    <header class="einfuehrung-head">
+      <h1 class="einfuehrung-title">Einführung</h1>
+      <p class="einfuehrung-subtitle">{tx(data.hinweis)}</p>
+    </header>
+
+    {data.bildschirme.map((b, i) => {
+      const isLast = i === data.bildschirme.length - 1;
+      const nextHref = isLast ? base : `#schritt-${b.nr + 1}`;
+      const paragraphs = b.text.split('\n\n');
+      return (
+        <section id={`schritt-${b.nr}`} class="einfuehrung-screen">
+          <div class="einfuehrung-screen-head">
+            <span class="einfuehrung-nr">Schritt {b.nr}</span>
+            <h2 class="einfuehrung-screen-title">{tx(b.titel)}</h2>
+            <p class="einfuehrung-lead">{tx(b.lead)}</p>
+          </div>
+          {b.bild && (
+            <figure class="einfuehrung-figure">
+              <img src={bildSrc(b.bild)} alt={tx(b.bild_alt)} loading="lazy" />
+            </figure>
+          )}
+          <div class="einfuehrung-text">
+            {paragraphs.map((p) => (
+              <p>
+                {renderParagraph(p).map((part) => (
+                  part.type === 'bold'
+                    ? <strong>{tx(part.value)}</strong>
+                    : tx(part.value)
+                ))}
+              </p>
+            ))}
+          </div>
+          <a class="einfuehrung-weiter" href={nextHref}>
+            {tx(b.weiter)} {isLast ? '→' : '↓'}
+          </a>
+        </section>
+      );
+    })}
+  </article>
+</Base>

@@ -1,0 +1,255 @@
+{
+  "version": "1.0",
+  "stand": "2026-05-21",
+  "hinweis": "Begriffe sind aus GA 270a/b/c und den Breslauer Wiederholungsstunden destilliert. Jede Erklärung soll in 1–3 Sätzen lesbar sein. Lange Belege gehören in 'beleg', nicht in 'kurz'. Verlinkung im Mantren-Text über data-glossar=\"id\".",
+
+  "eintraege": [
+    {
+      "id": "huter-der-schwelle",
+      "begriff": "Hüter der Schwelle",
+      "auch": ["Hüter", "der Hüter"],
+      "kurz": "Geistige Wesenheit, die am Übergang von der Sinneswelt in die geistige Welt steht. Sie stellt prüfende Fragen — die Mantren der Klasse sind oft Frage des Hüters und Antwort der Hierarchien.",
+      "lang": "Der Hüter ist nicht Hindernis, sondern Mahnender. Er macht den Menschen darauf aufmerksam, daß er, will er die Schwelle übertreten, sein Denken, Fühlen und Wollen verwandeln muß. In den Mantren tritt er sprechend auf: »Der Hüter spricht …« — und es antworten Angeloi, Exusiai, Throne und so weiter. In späteren Stunden »spricht der Hüter aus der Ferne«, weil der Schüler an ihm vorbeigeschritten ist.",
+      "beleg": "GA 270b, Dreizehnte Stunde: »Der Hüter der Schwelle stellt die prüfend-mahnende Frage an uns. Die Hierarchien antworten.«"
+    },
+    {
+      "id": "schwelle",
+      "begriff": "Schwelle",
+      "kurz": "Der Übergang zwischen Sinneswelt und geistiger Welt. Vor ihr liegt der »Abgrund« — die Stütze des physischen Bewußtseins hört auf.",
+      "lang": "Bevor der Mensch in das Reich der Erkenntnis eintritt, kommt er an einen Abgrund, der sich zunächst als Bodenloses darstellt. Man kann ihn nur übersetzen, wenn einem »symbolisch gesprochen Flügel wachsen« — wenn man sich vom Physischen befreit.",
+      "beleg": "GA 270b: »Dabei bemerkt der Mensch, daß er, bevor er in das Reich der Erkenntnis eintritt, an einen Abgrund kommt …«"
+    },
+    {
+      "id": "abgrund",
+      "begriff": "Abgrund",
+      "kurz": "Der Spalt zwischen Sinneswelt und Geisteswelt, an dem der Hüter steht. Über ihn kann nur das geistig-seelische Wesen schreiten.",
+      "beleg": "Mantram »Wo auf Erdengründen …«: »Vor ihm breiten sich die Sinnesfelder, / Hinter ihm, da gähnen Abgrundtiefen.«"
+    },
+    {
+      "id": "erste-klasse",
+      "begriff": "Erste Klasse",
+      "auch": ["Freie Hochschule für Geisteswissenschaft", "Michael-Schule"],
+      "kurz": "Die esoterische Schule, die Rudolf Steiner ab Februar 1924 am Goetheanum eröffnete — als erste von drei geplanten Klassen, von denen nur diese zustande kam.",
+      "lang": "Die Stunden bestanden aus gesprochenem Vortrag mit eingebetteten Mantren. Was Steiner an die Tafel schrieb, war für die Schüler verbindlich; das Gesprochene war Erläuterung. Steiner nennt die Schule »die wirkliche Michael-Schule«.",
+      "beleg": "GA 270b: »diese esoterische Schule ist die wirkliche Michael-Schule, ist die Institution derjenigen geistigen Wesenheiten, die unmittelbar die Inspiration des kosmischen Willens Michaels haben.«"
+    },
+    {
+      "id": "mantren",
+      "begriff": "Mantren",
+      "auch": ["Mantram", "mantrische Sprüche"],
+      "kurz": "Verdichtete Sprüche, die in den Klassenstunden gesprochen und an die Tafel geschrieben wurden. Sie sind keine Lehrsätze, sondern Meditationssubstanz.",
+      "lang": "Steiner war es ausdrücklich nicht um das Gedächtnis zu tun: »Ich bin es zufrieden, wenn du gar nicht in dein Gedächtnis aufnimmst dasjenige, was ich zu dir spreche.« Die Mantren wirken durch wiederholtes inneres Erleben, nicht durch Lernen. Daher die Bedeutung der Stimmung — »Ernstes, Feierliches, Weihevolles«.",
+      "beleg": "GA 270a, Vierte Stunde."
+    },
+    {
+      "id": "tafeln",
+      "begriff": "Tafeln",
+      "kurz": "Die schwarzen Wandtafeln, an die Steiner die Mantren schrieb und Zeichnungen entwarf. Was an der Tafel stand, gilt als verbindlicher Wortlaut.",
+      "lang": "Seit 1919 wurde schwarzes Papier über die Wandtafel gespannt, damit die Zeichnungen aufbewahrt werden konnten. Für die Dornacher Klassenstunden gibt es ab der zweiten Stunde jeweils zwei Tafeln; in der ersten Stunde wurde noch nicht angeschrieben. Die Originale befinden sich im Goetheanum.",
+      "beleg": "GA 270a, Hinweise: »Für den Wortlaut der Mantren standen folgende Unterlagen zur Verfügung. Erstens: die Tafeln mit den Texten und Zeichnungen, wie sie während der Stunden entstanden sind.«"
+    },
+    {
+      "id": "bogen",
+      "begriff": "Bogen",
+      "kurz": "Schwingende Verbindungslinien, die Steiner zwischen Mantren-Zeilen an die Tafel zeichnete. Sie machen sichtbar, welche Zeilen aufeinander antworten.",
+      "lang": "Beispiel: An den Bogen, der die Zeilen 1 und 5 verbindet, wird »Der Erde Finsternis verlöschet mich« als dritte Stimme dazugeschrieben. Die Bögen sind also nicht Ornament, sondern Strukturanweisung — sie zeigen, daß ein Mantram dreischichtig zu lesen ist, nicht linear von oben nach unten.",
+      "beleg": "GA 270b, Zwölfte Stunde."
+    },
+    {
+      "id": "lesetiefen",
+      "begriff": "Drei Lesetiefen",
+      "kurz": "Drei Stufen, auf denen ein Mantram gelesen werden kann: nur die Tafel-Worte; die Tafel mit Steiners gesprochenem Kommentar; das Mantram im vollen Vortragszusammenhang.",
+      "lang": "Die Tafel-Ebene ist das Verbindliche, der knappste Text. Der Vortragstext ist die Erläuterung, die Steiner mündlich gab. Die dritte Ebene ist das, was Helene Finckh als Stenographin nur in Anfangs- und Schlußworten andeutete — der weitere Zusammenhang der Stunde. Die Webseite macht diese drei Tiefen umschaltbar, damit der Leser nicht gleich in der Vollversion ertrinkt.",
+      "beleg": "Editorisches Prinzip aus GA 270a, Hinweise."
+    },
+    {
+      "id": "hierarchien",
+      "begriff": "Hierarchien",
+      "auch": ["höhere Hierarchien", "neun Hierarchien"],
+      "kurz": "Neun geistige Wesensordnungen, in drei Gruppen zu je drei. In den Mantren antworten sie auf die Fragen des Hüters.",
+      "lang": "Erste Hierarchie (höchste, der Erde am fernsten): Throne, Cherubine, Seraphine. Zweite: Kyriotetes, Dynamis, Exusiai. Dritte (dem Menschen nächste): Archai, Archangeloi, Angeloi. Im Mantram zum Wärmeelement antworten sie chormäßig in Quer-Verbindungen — Angeloi-Exusiai-Throne als ein Chor.",
+      "beleg": "GA 270b, Dreizehnte Stunde."
+    },
+    {
+      "id": "dritte-hierarchie",
+      "begriff": "Dritte Hierarchie",
+      "auch": ["Angeloi, Archangeloi, Archai"],
+      "kurz": "Die dem Menschen nächsten Geister: Angeloi, Archangeloi, Archai. Sie antworten auf die Frage nach der »Erde Festigkeit«.",
+      "lang": "Sie führen vom bloßen Empfinden zum Bewußtwerden. »Angeloi: Empfinde, wie wir in deinem Denken empfinden. Archangeloi: Erlebe, wie wir in deinem Fühlen erleben. Archai: Schaue, wie wir in deinem Wollen schauen.«",
+      "verweis_auf": ["angeloi", "archangeloi", "archai"]
+    },
+    {
+      "id": "angeloi",
+      "begriff": "Angeloi",
+      "kurz": "»Engel« — die unterste, dem einzelnen Menschen verbundene Wesensordnung der dritten Hierarchie.",
+      "lang": "Im Mantram zum Element Erde: »Angeloi: Empfinde, wie wir in deinem Denken empfinden.« Der Mensch spricht sein Ich durch das Haupt aus; durch dieses Glied wirken die Angeloi, im Hintergrund die dirigierenden Archangeloi.",
+      "beleg": "GA 270b, Zehnte Stunde."
+    },
+    {
+      "id": "archangeloi",
+      "begriff": "Archangeloi",
+      "kurz": "»Erzengel« — leiten Völker und Zeitalter. Sie sprechen im Mantram zum Element Erde an das Fühlen.",
+      "lang": "»Archangeloi: Erlebe, wie wir in deinem Fühlen erleben.«"
+    },
+    {
+      "id": "archai",
+      "begriff": "Archai",
+      "auch": ["Urkräfte", "Geister der Persönlichkeit"],
+      "kurz": "»Urkräfte« — höchste Stufe der dritten Hierarchie. Im Mantram an das Wollen gerichtet.",
+      "lang": "»Archai: Schaue, wie wir in deinem Wollen schauen.« Im dritten Stadium nach dem Tode arbeiten Archai, Kyriotetes und Seraphine an der Ausarbeitung des Karma: »Erbitte dir in ew'gen Wesentaten die Geisterlösermächte.«",
+      "beleg": "GA 270b, Vierzehnte Stunde."
+    },
+    {
+      "id": "zweite-hierarchie",
+      "begriff": "Zweite Hierarchie",
+      "auch": ["Exusiai, Dynamis, Kyriotetes"],
+      "kurz": "Exusiai, Dynamis, Kyriotetes. Sie antworten auf die Frage nach des »Wassers Bildekraft«.",
+      "lang": "Sie sind tätig in dem, »was uns eigentlich unsere innere Gestaltung gibt«. — »Exusiai: Erkenne Geistes-Welten-Schaffen im Menschen-Körper-Schaffen. Dynamis: Erfühle Geistes-Welten-Leben im Menschen-Körper-Leben. Kyriotetes: Wolle Geistes-Welt-Geschehen im Menschen-Körper-Sein.«",
+      "verweis_auf": ["exusiai", "dynamis", "kyriotetes"]
+    },
+    {
+      "id": "exusiai",
+      "begriff": "Exusiai",
+      "auch": ["Gewalten", "Elohim"],
+      "kurz": "»Gewalten« — unterste Stufe der zweiten Hierarchie. Sprechen an das Erkennen.",
+      "lang": "»Erkenne Geistes-Welten-Schaffen im Menschen-Körper-Schaffen.«"
+    },
+    {
+      "id": "dynamis",
+      "begriff": "Dynamis",
+      "auch": ["Mächte"],
+      "kurz": "»Mächte« — mittlere Stufe der zweiten Hierarchie. Sprechen an das Fühlen.",
+      "lang": "»Erfühle Geistes-Welten-Leben im Menschen-Körper-Leben.«"
+    },
+    {
+      "id": "kyriotetes",
+      "begriff": "Kyriotetes",
+      "auch": ["Herrschaften"],
+      "kurz": "»Herrschaften« — höchste Stufe der zweiten Hierarchie. Sprechen an das Wollen.",
+      "lang": "»Wolle Geistes-Welt-Geschehen im Menschen-Körper-Sein.«"
+    },
+    {
+      "id": "erste-hierarchie",
+      "begriff": "Erste Hierarchie",
+      "auch": ["Throne, Cherubine, Seraphine"],
+      "kurz": "Die höchste Hierarchie, der Erde am fernsten: Throne, Cherubine, Seraphine. Sie antworten auf die Frage nach der »Lüfte Reizgewalt«.",
+      "lang": "Sie führen »vom bloßen Bewußtwerden zum Selbstbewußtwerden«. In ihrem Bereich erlebt der Mensch das wahre »Ich bin«: »Wir müssen erst hineinkommen in das Reich der Seraphine, Cherubine und Throne. Dort erst klingt das ›Ich bin‹ wahr.«",
+      "verweis_auf": ["throne", "cherubine", "seraphine"]
+    },
+    {
+      "id": "throne",
+      "begriff": "Throne",
+      "kurz": "Unterste Stufe der ersten Hierarchie. In den Wolken offenbaren sie ihr »Wesen«.",
+      "lang": "Tafel-Notiz der Dreizehnten Stunde: »Wolken — Throne — Wesen«. Sie tragen den »Welten-Leib«, in dem das gedankendurchleuchtete Welten-Geisteswort ruht. Im Mantram: »Ergreife wissend Innen-Sein in deinem Gottes-Welten-Sein.«",
+      "beleg": "GA 270b, Dreizehnte Stunde."
+    },
+    {
+      "id": "cherubine",
+      "begriff": "Cherubine",
+      "kurz": "Mittlere Stufe der ersten Hierarchie. In den Blitzen zeigen sie nicht sich selbst, sondern ihre »Werkzeuge«.",
+      "lang": "Tafel-Notiz: »Blitze — Cherubine — Werkzeuge«. — »Erwarme am Innen-Leben in deinem Gottes-Welten-Leben.«"
+    },
+    {
+      "id": "seraphine",
+      "begriff": "Seraphine",
+      "kurz": "Höchste Stufe der ersten Hierarchie. Sie verbergen sich tief in der Weltenhitze und offenbaren sich nur als »Schein«.",
+      "lang": "Tafel-Notiz: »Weltenhitze — Seraphine — Schein«. — »Erweck' in dir Innen-Licht in deinem Gottes-Welten-Licht.« Die Seraphine sprechen die Feuersprache des Weltenwortes — »flammende Stimme«.",
+      "beleg": "GA 270b, Sechzehnte Stunde."
+    },
+    {
+      "id": "imagination",
+      "begriff": "Imagination",
+      "kurz": "Die erste der drei höheren Erkenntnisstufen — Schauen in Bildern, nicht mehr in abstrakten Begriffen.",
+      "lang": "Beispiel: Der Sternenhimmel wird nicht mehr als Lichtpunkte gesehen, sondern als Bild — die Sterne werden zu »Götterwohnungen«. Der Regenbogen wird nicht mehr nur Bogen, sondern »mächtige Schale, wie zur Weltenschale«, wenn man ihn von »jenseit'ger Warte« schaut. Die Imagination steht vor Inspiration (Hören) und Intuition (Sein im anderen Wesen).",
+      "beleg": "GA 270b, Sechzehnte Stunde."
+    },
+    {
+      "id": "ejeh-asher-ejeh",
+      "begriff": "ejeh asher ejeh",
+      "auch": ["Ich bin Ich", "Ich bin", "Es ist Ich"],
+      "kurz": "»Ich bin, der ich bin« — der Gottesname aus 2. Mose 3,14, den Steiner als »uralt heiliges Wort« nimmt.",
+      "lang": "Im Erdenbereich, sagt Steiner, ist das »Ich bin« nur Illusion, ein Abglanz. Wahr klingt es erst im Reich der Seraphine, Cherubine, Throne. Das dreifache »Es ist Ich« am Schluß des Mantrams der Sechzehnten Stunde ist das Echo dieses Wortes im Menschenherzen.",
+      "beleg": "GA 270b, Sechzehnte Stunde: »das uralt heilige ›ejeh asher ejeh‹ – ›Ich bin Ich‹, ›Ich bin‹ – ein heiliges Wort, das aus jener jenseitigen Wirklichkeit herübertönt.«"
+    },
+    {
+      "id": "weltenwort",
+      "begriff": "Weltenwort",
+      "kurz": "Das schöpferische Wort, das aus dem Weltenall an den Menschen herantönt. Eröffnet jede Klassenstunde mit »O Mensch, erkenne dich selbst!«",
+      "lang": "Anders als das Menschenwort, in dem Menschendenken spricht, spricht im Geistes-Weltenwort das Weltendenken. Die Seraphine sprechen es als Feuersprache, »flammende Stimme«.",
+      "beleg": "GA 270b, Sechzehnte Stunde."
+    },
+    {
+      "id": "michael-schule",
+      "begriff": "Michael-Schule",
+      "kurz": "Steiners Name für die Erste Klasse: »die wirkliche Michael-Schule«, geleitet von den Wesenheiten, die »unmittelbar die Inspiration des kosmischen Willens Michaels haben«.",
+      "verweis_auf": ["erste-klasse"]
+    },
+    {
+      "id": "michael",
+      "begriff": "Michael",
+      "kurz": "Der Erzengel, dessen »Zeitalter« nach Steiner 1879 begann. Die Erste Klasse versteht sich als seine Schule.",
+      "lang": "Im Mantram der Ersten Wiederholungsstunde steht das Michael-Zeichen mit den drei Siegelgesten: »Ich verbinde mich dem Geiste — Ich liebe den Sohn — Ich bewundere den Vater.«",
+      "beleg": "GA 270c, Tafeltexte der Ersten Wiederholungsstunde."
+    },
+    {
+      "id": "siegelgesten",
+      "begriff": "Siegelgesten",
+      "kurz": "Drei Gebärden, die zum Michael-Zeichen gehören: »Ich verbinde mich dem Geiste / Ich liebe den Sohn / Ich bewundere den Vater«.",
+      "beleg": "GA 270c, Erste Wiederholungsstunde."
+    },
+    {
+      "id": "erkenntnisfeinde",
+      "begriff": "Erkenntnisfeinde",
+      "kurz": "Die drei inneren Hindernisse, die der Hüter im Mantram »Doch du mußt den Abgrund achten …« benennt: Furcht, Haß, Zweifel.",
+      "beleg": "GA 270a, Erste Stunde."
+    },
+    {
+      "id": "drei-tiere",
+      "begriff": "Die drei Tiere",
+      "kurz": "Bilder, in denen ungeläutertes Wollen, Fühlen und Denken am Abgrund erscheinen — als »eigne Tierheit«, die der Mensch erst überwinden muß.",
+      "lang": "Erstes Tier: »Knochengeist« — die böse Schöpfermacht des Wollens. Zweites Tier: »Spottgesicht« — die böse Gegenkraft des Fühlens. Drittes Tier — die böse Gestalt des Denkens. Die Furcht vor ihnen muß in Seelen-Mut, die Lahmheit ins Erwachen verwandelt werden.",
+      "beleg": "GA 270a, Zweite und Dritte Stunde."
+    },
+    {
+      "id": "atherleib",
+      "begriff": "Ätherleib",
+      "auch": ["ätherisches Wesen", "Lebensleib"],
+      "kurz": "Der Lebensleib des Menschen, der über den physischen Leib hinausreicht. In ihm lebt das wirkliche Denken, dessen physischer Abdruck der »Schein« unseres gewöhnlichen Denkens ist.",
+      "beleg": "GA 270c, Sechste Wiederholungsstunde."
+    },
+    {
+      "id": "karma",
+      "begriff": "Karma",
+      "kurz": "Schicksalszusammenhang zwischen den Inkarnationen. Steiner sprach es nach der Stenogramm-Notiz stets als »Kärma«.",
+      "lang": "Im zweiten Stadium nach dem Tod (Mantram »Was wird aus des Feuers Reinigung …«) erlebt der Mensch rückwärts, was andere durch ihn erlitten haben — »in seiner gerechten Sühne«. Im dritten Stadium arbeiten Archai, Kyriotetes und Seraphine an der Karma-Ausarbeitung.",
+      "beleg": "GA 270b, Vierzehnte Stunde."
+    },
+    {
+      "id": "selbsterkenntnis",
+      "begriff": "Selbsterkenntnis",
+      "kurz": "Der Ausgangspunkt der Klasse, gefaßt im Wort »O Mensch, erkenne dich selbst!« — kein Brüten ins Innere, sondern »ausführliches Gespräch mit Welt, Hüter und Hierarchien«.",
+      "beleg": "GA 270b, Zwölfte Stunde."
+    },
+    {
+      "id": "maja",
+      "begriff": "Maja",
+      "auch": ["Schein", "Sinneswelt"],
+      "kurz": "Die Welt der Sinne, sofern sie als das Eigentliche genommen wird. Der Weg der Klasse geht aus dem »Reich der Illusion, im Reiche der Maja« hinüber.",
+      "beleg": "GA 270b, Sechzehnte Stunde."
+    },
+    {
+      "id": "wiederholungsstunden",
+      "begriff": "Wiederholungsstunden",
+      "kurz": "Stunden, in denen Steiner die Mantren früherer Stunden wieder aufnahm — entweder neben den Hauptstunden in Dornach oder an anderen Orten (Breslau, Prag, Bern, London).",
+      "lang": "Die Breslauer Wiederholungsstunden vom 12. und 13. Juni 1924 — auf den Stenogrammen von Lilly Kolisko — sind editionsgeschichtlich besonders, weil sie 2014 erstmals entziffert und 2016 veröffentlicht wurden.",
+      "beleg": "Vorwort der Perseus-Ausgabe, Basel 2016."
+    },
+    {
+      "id": "stenogramm",
+      "begriff": "Stenogramm",
+      "kurz": "Mitschrift der Stunden in Kurzschrift. Maßgeblich für die Dornacher Stunden ist Helene Finckh, für die Breslauer Stunden Lilly Kolisko.",
+      "lang": "Frau Finckh schrieb die an die Tafel geschriebenen Texte in voller Langschrift mit, das Gesprochene stenographisch — daraus ergibt sich die Unterscheidung zwischen Tafeltext und Vortragstext, die das ganze editorische Bild prägt.",
+      "beleg": "GA 270a, Hinweise."
+    }
+  ]
+}
