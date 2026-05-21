@@ -28,3 +28,7 @@ dev-dist/
 public/sw.js
 public/workbox-*.js
 public/registerSW.js
+
+# private notes — bewusst lokal halten, nicht ins public repo
+TODO.md
+HANDOVER.md
