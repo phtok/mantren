@@ -3492,6 +3492,11 @@
           "quelle": "Spätere Arbeitsfassung des Mantrenbüchleins (Berlin/Basel 2024)."
         }
       ],
+      "tafelbild": {
+        "bild": "assets/tafeln/19-plus.webp",
+        "beschreibung": "Faksimile des Notizblatts mit Eurythmieform: ‹Seraphisch Feuermächte / Aus meinem Herzen strahlet ihr / Cherubinisch Bildekräfte / In meinem Haupte scheinet / Der Throne Traggewalten / In meinen Gliedern kraftet / Mein Ich ist IHR›, mit Streichungen und Eurythmieform-Skizze unten.",
+        "quelle": "GA 268, S. 116 (Notizblatt mit Eurythmieform, Archiv-Nr. 6476, B 618; © Rudolf Steiner Nachlass-Verwaltung). Vorläufiger Bildstand — soll später durch sauberen Scan ersetzt werden."
+      },
       "varianten": {
         "prosa": "Der Sonderspruch ist in zwei Stufen überliefert: ein knapper Entwurf im Notizbuch 618 (blosse Reihung der ersten Hierarchie ohne Verben, mit zwei zusätzlichen, unvollendeten Zeilen zu ‹Sonnen in Weltenweiten / Geister in›) und die ausgearbeitete Fassung auf einem Notizblatt mit Eurythmieform (sieben Zeilen mit Verben strahlen / scheinen / kraften, Aufgliederung auf Herz / Haupt / Glieder und Schlussvers ‹Mein Ich ist IHR›). Der Wortlaut dieser Web-Ausgabe folgt dem Notizblatt.",
         "fassungen": [
