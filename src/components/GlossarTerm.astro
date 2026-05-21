@@ -1,0 +1,27 @@
+---
+import type { GlossarEintrag } from '../lib/glossar';
+import { tx } from '../lib/typografie';
+
+interface Props {
+  eintrag: GlossarEintrag;
+  phrase: string;
+}
+
+const { eintrag, phrase } = Astro.props;
+const hasMehr = !!(eintrag.lang || eintrag.beleg);
+---
+<details class="glossar-inline" data-glossar={eintrag.id}>
+  <summary class="glossar-term">{phrase}</summary>
+  <span class="glossar-card">
+    <span class="glossar-card-kurz">{tx(eintrag.kurz)}</span>
+    {hasMehr && (
+      <details class="glossar-deep">
+        <summary class="glossar-deep-toggle">mehr</summary>
+        <span class="glossar-deep-body">
+          {eintrag.lang && <span class="glossar-lang">{tx(eintrag.lang)}</span>}
+          {eintrag.beleg && <span class="glossar-beleg">{tx(eintrag.beleg)}</span>}
+        </span>
+      </details>
+    )}
+  </span>
+</details>

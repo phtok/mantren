@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "stand": "2026-05-21",
+  "hinweis": "Drei Bildschirme, nicht mehr. Jeder Bildschirm beantwortet eine Frage. Keine Theorie, keine Werbung — nur das, was man wissen muß, um die Seite zu bedienen.",
+
+  "bildschirme": [
+    {
+      "nr": 1,
+      "titel": "Was ist die Erste Klasse?",
+      "lead": "Eine esoterische Schule, gegründet 1924 am Goetheanum.",
+      "text": "Rudolf Steiner eröffnete im Februar 1924 die »Erste Klasse« der Freien Hochschule für Geisteswissenschaft. Geplant waren drei Klassen; nur die erste kam zustande. Die neunzehn Dornacher Stunden und einige Wiederholungsstunden in Breslau, Prag, Bern und London sind das, was Steiner bis zu seiner Erkrankung im September 1924 selbst halten konnte.\n\nIn jeder Stunde stehen zwei Dinge nebeneinander: ein gesprochener Vortrag und das, was Steiner an die Tafel schrieb. Was an der Tafel stand, ist der verbindliche Wortlaut. Das Gesprochene erläutert.",
+      "weiter": "Weiter",
+      "bild_alt": "Tafelbild der Dreizehnten Stunde — Wolken, Blitze, Weltenhitze",
+      "bild": "assets/tafeln/13.jpg"
+    },
+    {
+      "nr": 2,
+      "titel": "Was sind diese Mantren?",
+      "lead": "Verdichtete Sprüche zum Meditieren, nicht zum Lernen.",
+      "text": "Die Mantren sind das Kernstück. Steiner wollte ausdrücklich nicht, daß man sie auswendig kann — er wollte, daß sie immer wieder neu in der Seele aufleben. »Ich bin es zufrieden, wenn du morgen schon wieder vergessen hast dasjenige, was ich zu dir spreche.«\n\nDie Form ist oft Dialog: der Hüter der Schwelle stellt eine Frage, die Hierarchien antworten. Wer der Hüter ist, was die Hierarchien sind — das ist im Glossar in einem Klick erreichbar. Jedes besondere Wort im Mantren-Text ist unterstrichen; ein Tippen öffnet die kurze Erklärung, ein zweites schließt sie.",
+      "weiter": "Weiter",
+      "bild_alt": "Zeichnung der Ersten Wiederholungsstunde — Michael-Zeichen und Siegelgesten",
+      "bild": "assets/tafeln/01w.jpg"
+    },
+    {
+      "nr": 3,
+      "titel": "Bogen, Tafeln, drei Lesetiefen",
+      "lead": "Drei Anzeigen für jeden Spruch — wählen Sie, wie tief Sie lesen wollen.",
+      "text": "**Tafel.** Nur die Worte, wie Steiner sie anschrieb. Die kürzeste, verbindlichste Form.\n\n**Tafel + Kommentar.** Die Tafel mit dem, was Steiner mündlich dazu sagte, in derselben Stunde. Hier wird klar, warum eine Zeile so und nicht anders steht.\n\n**Voller Vortrag.** Die ganze Stunde im Zusammenhang. Lang. Für wer schon kennt und vertiefen will.\n\n**Bögen.** Auf manchen Tafeln verbinden geschwungene Linien einzelne Verszeilen. Sie sind nicht Schmuck — sie sagen, daß ein Spruch mehrstimmig zu lesen ist. Die Webseite zeigt sie über den Versen; ein Tippen auf einen Bogen hebt die verbundenen Zeilen hervor.",
+      "weiter": "Beginnen",
+      "bild_alt": "Vierzehnte Stunde — Kopfseite, Wurzeln und Bogen",
+      "bild": "assets/tafeln/14.jpg"
+    }
+  ]
+}

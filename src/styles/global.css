@@ -1907,3 +1907,186 @@ dialog.tafel-fullscreen img {
   color: var(--text);
   border-bottom-color: var(--text);
 }
+
+/* ─────────────── Einführung ─────────────── */
+
+.einfuehrung {
+  max-width: 38rem;
+  margin: 0;
+  padding: 0 0 4rem;
+}
+
+.einfuehrung-head {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.einfuehrung-title {
+  font-size: clamp(1.4rem, 3.5vw, 1.9rem);
+  font-weight: 500;
+  margin: 0 0 0.3rem;
+  line-height: 1.2;
+}
+
+.einfuehrung-subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.einfuehrung-screen {
+  margin: 0 0 3.5rem;
+  scroll-margin-top: 4rem;
+}
+
+.einfuehrung-screen:last-child {
+  margin-bottom: 0;
+}
+
+.einfuehrung-screen-head {
+  margin-bottom: 1.3rem;
+}
+
+.einfuehrung-nr {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.einfuehrung-screen-title {
+  font-size: clamp(1.2rem, 2.6vw, 1.5rem);
+  font-weight: 500;
+  margin: 0.2rem 0 0.4rem;
+  line-height: 1.25;
+}
+
+.einfuehrung-lead {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.einfuehrung-figure {
+  margin: 0 0 1.5rem;
+}
+
+.einfuehrung-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.einfuehrung-text {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.einfuehrung-text p {
+  margin: 0 0 1rem;
+}
+
+.einfuehrung-text p:last-child {
+  margin-bottom: 0;
+}
+
+.einfuehrung-weiter {
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.15s;
+}
+
+.einfuehrung-weiter:hover {
+  text-decoration-color: var(--muted);
+}
+
+/* ─────────────── Glossar — Inline-Ausklapp ─────────────── */
+
+.glossar-inline {
+  display: inline;
+}
+
+.glossar-inline > summary.glossar-term {
+  display: inline;
+  cursor: pointer;
+  color: var(--text);
+  border-bottom: 1px dotted var(--muted);
+  list-style: none;
+}
+
+.glossar-inline > summary.glossar-term::-webkit-details-marker { display: none; }
+.glossar-inline > summary.glossar-term::marker { content: ""; }
+
+.glossar-inline > summary.glossar-term:hover {
+  border-bottom-color: var(--text);
+}
+
+.glossar-inline > summary.glossar-term:focus-visible {
+  outline: 1px dotted var(--muted);
+  outline-offset: 3px;
+}
+
+.glossar-card {
+  display: none;
+}
+
+.glossar-inline[open] > .glossar-card {
+  display: block;
+  margin: 0.6rem 0;
+  padding: 0.7rem 0 0.7rem 1rem;
+  border-left: 2px solid var(--line);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  color: var(--text);
+}
+
+.glossar-card-kurz {
+  display: block;
+}
+
+.glossar-deep {
+  margin-top: 0.6rem;
+}
+
+.glossar-deep > summary.glossar-deep-toggle {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  list-style: none;
+}
+
+.glossar-deep > summary.glossar-deep-toggle::-webkit-details-marker { display: none; }
+.glossar-deep > summary.glossar-deep-toggle::marker { content: ""; }
+.glossar-deep > summary.glossar-deep-toggle::before { content: "+ "; color: var(--muted-soft); }
+.glossar-deep[open] > summary.glossar-deep-toggle::before { content: "− "; }
+
+.glossar-deep-body {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.glossar-lang {
+  display: block;
+  color: var(--text);
+}
+
+.glossar-beleg {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.83rem;
+  color: var(--muted);
+}
