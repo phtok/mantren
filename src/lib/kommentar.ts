@@ -126,6 +126,7 @@ const MANTRA_TO_KEYS: Record<string, string[]> = {
   '17': ['17.1'],
   '18': ['18.1'],
   '19.1': ['19.1'],
+  '19+': ['19+'],
 };
 
 export type KommentarEntry = { key: string; kommentar: Kommentar };
