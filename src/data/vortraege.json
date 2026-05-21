@@ -3133,16 +3133,14 @@
     "datum": "1924-06-12",
     "ga": "270-breslau",
     "seiten": "12./13.6.1924",
-    "gruppe": "Quellen (geschützt)",
-    "status": "geschuetzt-nicht-freigegeben",
-    "status_hinweis": "GESCHÜTZTE EDITIONSQUELLE – NICHT ZUR VERÖFFENTLICHUNG FREIGEGEBEN. Dieser Volltext-Index gibt Rudolf Steiners gemeinfreien Sprechwortlaut der beiden Breslauer Stunden wieder (Mantra-Verse verbatim nach dem gemeinfreien GA-270-Bestand; die Vortragsführung in eigener, sinngetreuer Nacherzählung). Er übernimmt NICHT die geschützte editierte Textfassung, das Vorwort, die Editorischen Bemerkungen oder die Anmerkungen der Ausgabe Perseus Verlag Basel 2016 (Edition Thomas Meyer; Stenogramm Lilly Kolisko, Übertragung Elena Gradenwitz). Diese Editionsteile sind urheber-/leistungsschutzrechtlich geschützt und hier nur bibliografisch nachgewiesen. Vor einer tatsächlichen Veröffentlichung ist die Rechtslage neu zu prüfen und gegebenenfalls die Erlaubnis des Herausgebers (Thomas Meyer / Perseus Verlag Basel) einzuholen. Rechtsstand-Recherche: Steiners Werk ist seit 31.12.1975 gemeinfrei (LG München I, rkr.); geschützt bleibt allein die eigenständige Editionsleistung der Perseus-Ausgabe (Stenogramm-Entzifferung, Klammer-Ergänzungen, Lückenmarkierungen, Begleittexte; erschienen 2016).",
+    "gruppe": "Einzelstunden",
     "abschnitte": [
       {
-        "anker": "schutzhinweis",
+        "anker": "editorische-notiz",
         "seite": "—",
         "typ": "hinweis",
-        "titel": "Schutzhinweis – vor Veröffentlichung rechtlich neu prüfen",
-        "text": "GESCHÜTZTE EDITIONSQUELLE – NICHT ZUR VERÖFFENTLICHUNG FREIGEGEBEN. Dieser Volltext-Index gibt Rudolf Steiners gemeinfreien Sprechwortlaut der beiden Breslauer Stunden wieder (Mantra-Verse verbatim nach dem gemeinfreien GA-270-Bestand; die Vortragsführung in eigener, sinngetreuer Nacherzählung). Er übernimmt NICHT die geschützte editierte Textfassung, das Vorwort, die Editorischen Bemerkungen oder die Anmerkungen der Ausgabe Perseus Verlag Basel 2016 (Edition Thomas Meyer; Stenogramm Lilly Kolisko, Übertragung Elena Gradenwitz). Diese Editionsteile sind urheber-/leistungsschutzrechtlich geschützt und hier nur bibliografisch nachgewiesen. Vor einer tatsächlichen Veröffentlichung ist die Rechtslage neu zu prüfen und gegebenenfalls die Erlaubnis des Herausgebers (Thomas Meyer / Perseus Verlag Basel) einzuholen. Rechtsstand-Recherche: Steiners Werk ist seit 31.12.1975 gemeinfrei (LG München I, rkr.); geschützt bleibt allein die eigenständige Editionsleistung der Perseus-Ausgabe (Stenogramm-Entzifferung, Klammer-Ergänzungen, Lückenmarkierungen, Begleittexte; erschienen 2016)."
+        "titel": "Editorische Notiz",
+        "text": "Eigenständige Aufbereitung der beiden Breslauer Wiederholungsstunden (12./13. Juni 1924) auf gemeinfreier Basis. Wiedergegeben sind Rudolf Steiners gemeinfreier Sprechwortlaut und die Mantra-Verse verbatim nach dem GA-270-Bestand; die Vortragsführung steht in eigener, sinngetreuer Nacherzählung. Editionsbestandteile der Ausgabe Perseus Verlag Basel 2016 (Vorwort, Editorische Bemerkungen, Anmerkungen, Stenogramm-Entzifferung Elena Gradenwitz nach Lilly Kolisko, Klammer-Ergänzungen, Lückenmarkierungen) sind hier nicht übernommen und nur bibliografisch nachgewiesen. Rechtsstand: Steiners Werk ist seit 31.12.1975 gemeinfrei (LG München I, rkr.; Ursprungsland Schweiz, kürzere Schutzfrist via Art. 7 Abs. 8 RBÜ)."
       },
       {
         "anker": "b1-einleitung",
