@@ -198,3 +198,52 @@ Sprechenden / Pflegenden.›
 vorgeschlagenen Form. Wer ‹alle Anmerkungen› und ‹alle Vorträge›
 hinter Stufen setzt, gibt die Drehung wieder her. Die Stufen-Logik
 funktioniert nur, wenn das Bezahlte eindeutig App-Dienstleistung ist.
+
+### Marktschätzung (21.5.2026)
+
+**Adressierbare Gruppen weltweit:**
+
+| Gruppe                                              | Grösse        | Affinität  |
+|-----------------------------------------------------|---------------|------------|
+| Mitglieder der Allgemeinen Anthroposophischen Ges.  | ~40–50 Tsd.   | grund­sätzlich |
+| davon Mitglieder der Ersten Klasse                  | ~10–15 Tsd.   | hoch       |
+| davon **aktive** Klassenstunden-Teilnehmende        | ~5–8 Tsd.     | sehr hoch  |
+| Forschende, Waldorflehrer:innen, Therapeut:innen mit Interesse am Spätwerk, ohne Klassen-Mitgliedschaft | ~3–8 Tsd. | mittel     |
+
+Der adressierbare Kern sind die **~5'000–8'000 aktiven Klassenmitglieder**, plus ein weicher Rand bis ~15'000 Menschen weltweit.
+
+**Konversionsannahmen:**
+
+- Free-Nutzung: 10–20 % der adressierbaren Gruppe finden die Seite im 1. Jahr; mit Multiplikatoren (Dornach, Sektionsrundbriefe, Vortragsreisen) eher 25 %.
+- Zahlende Konversion über freiwillige Module: 5–15 % der aktiven Nutzer:innen pro Jahr.
+- Lebenslange Einmal-Lizenzen → Käufer-Stock baut sich kumulativ auf; Spitze typischerweise in Jahr 2, Plateau ab Jahr 3.
+
+**Drei Szenarien Käufer/Jahr (realistisch revidiert):**
+
+| Szenario     | Jahr 1 | Jahr 2 | Jahr 3 | Total 3 J |
+|--------------|-------:|-------:|-------:|----------:|
+| Konservativ  |     80 |    130 |    150 |       360 |
+| Realistisch  |    200 |    400 |    450 |     1'050 |
+| Optimistisch |    400 |    700 |    800 |     1'900 |
+
+Das ‹optimistische› Szenario entspricht etwa 20 % Marktdurchdringung der aktiven Klassenmitglieder in drei Jahren, bei einer zahlenden Konversion von 1:3. Sportlich; braucht Empfehlungen aus Dornach / Sektion oder gut sichtbare Promo.
+
+**Cashflow im neuen optimistischen Szenario (AOV 60 CHF, BS, Einzelfirma):**
+
+| Posten                          |  Jahr 1 |  Jahr 2 |  Jahr 3 |
+|---------------------------------|--------:|--------:|--------:|
+| Brutto-Umsatz                   | 24'000  | 42'000  | 48'000  |
+| Reingewinn nach Auslagen+Audio  | ~17'000 | ~38'000 | ~44'000 |
+| **Netto-Cash nach AHV + ESt**   | **~13'000** | **~28'000** | **~32'000** |
+
+Auch im günstigen Fall **kein Vollerwerb in den ersten drei Jahren** — solides Nebeneinkommen, das die Pflegezeit langsam abdeckt.
+
+**Hebel, die die Zahlen realistisch heben:**
+
+1. Empfehlung von Dornach oder einer Sektion — einmaliger Schub.
+2. Druckausgabe-Bundle: Mantrenbüchlein kaufen → Notiz-Sync gratis dabei.
+3. Mantrenwerkstätten als Vertriebskanal (Basel + Folgewerkstätten); pro Veranstaltung 30–80 Teilnehmende, davon 30–50 % Käufer.
+4. Englische Übersetzung der App-Oberfläche → adressierbarer Markt verdoppelt sich.
+5. Audio bei Tagungen einmal vorgespielt → starke Mund-zu-Mund-Wirkung.
+
+**Ohne diese Hebel:** ehrliche Obergrenze ~300–500 Käufer/Jahr. Das ‹realistische› Szenario ist dann die Erwartung, nicht das ‹konservative›.
