@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+import { tx } from '../lib/typografie';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<Base title="Impressum">
+  <article class="impressum">
+    <header class="impressum-head">
+      <h1 class="impressum-title">Impressum</h1>
+    </header>
+
+    <section class="impressum-section">
+      <h2>Projekt</h2>
+      <p>{tx('Mantren — Rudolf Steiners mantrisches Spätwerk. Eine nichtkommerzielle Web-Ausgabe der Klassenmantren der Freien Hochschule für Geisteswissenschaft am Goetheanum.')}</p>
+    </section>
+
+    <section class="impressum-section">
+      <h2>Herausgabe</h2>
+      <p>Philipp Tok, Dornach / Basel.</p>
+      <p>Kontakt: <a href="mailto:philipp@saetzerei.com">philipp@saetzerei.com</a></p>
+    </section>
+
+    <section class="impressum-section">
+      <h2>Inhalte und Rechte</h2>
+      <p>{tx('Werknachweis, Textgrundlage und Rechtestatus sind auf der Quellenseite ausgewiesen.')}</p>
+      <p><a href={`${base}quellen`}>Quellen und editorische Notiz →</a></p>
+    </section>
+
+    <section class="impressum-section">
+      <h2>Haftung</h2>
+      <p>{tx('Die Inhalte werden mit Sorgfalt erstellt, jedoch ohne Gewähr für Vollständigkeit und Richtigkeit. Für Inhalte verlinkter externer Seiten sind deren Betreiber verantwortlich.')}</p>
+    </section>
+
+    <p class="vortrag-back">
+      <a href={base}>← Zum Mantren-Index</a>
+    </p>
+  </article>
+</Base>
