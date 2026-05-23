@@ -41,8 +41,18 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // Beim Service-Worker-Install werden ALLE Build-Artefakte ins
+        // Precache geladen (Astro baut alle Routen als statisches HTML).
+        // Damit ist die ganze App offline verfügbar, sobald der SW einmal
+        // installiert war — auch ohne dass ‹offline laden› geklickt wurde.
         navigateFallback: `${base}/`,
-        globPatterns: ['**/*.{js,css,html,woff2,svg,png,jpg,ico,webmanifest}'],
+        globPatterns: ['**/*.{js,css,html,woff2,svg,png,jpg,jpeg,webp,avif,ico,webmanifest}'],
+        // 4 MB pro Datei (Default 2 MB); /universalsuche/ und /vortraege/
+        // bringen den JSON-Datenstamm inline und sind die größten HTMLs.
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
+        // Neuen SW sofort übernehmen, statt erst beim nächsten Tab-Load.
+        clientsClaim: true,
+        skipWaiting: true,
       },
     }),
   ],
