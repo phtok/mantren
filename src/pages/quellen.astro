@@ -83,7 +83,7 @@ const quelleFields: Field[] = [
       <p class="quellen-subtitle">Werknachweis, Textgrundlage, editorische Konventionen, Rechtestatus</p>
     </header>
 
-    <section class="quellen-section">
+    <section class="quellen-section" id="werk">
       <h2>Werk</h2>
       <p class="quellen-werk-titel">{tx(d.werk.titel)}</p>
       <p class="quellen-werk-meta">{tx(d.werk.autor)} · {tx(d.werk.gattung)}</p>
@@ -91,7 +91,7 @@ const quelleFields: Field[] = [
     </section>
 
     {d.editorische_beitraege && (
-      <section class="quellen-section">
+      <section class="quellen-section" id="editorische-beitraege">
         <h2>Editorische Beiträge zur Web-Ausgabe</h2>
         {d.editorische_beitraege.titel_der_abschnitte && (
           <p>{tx(d.editorische_beitraege.titel_der_abschnitte)}</p>
@@ -102,11 +102,11 @@ const quelleFields: Field[] = [
       </section>
     )}
 
-    <section class="quellen-section">
+    <section class="quellen-section" id="verwendete-quellen">
       <h2>Verwendete Quellen</h2>
       <ul class="quellen-list">
         {d.quellen.map((q) => (
-          <li class={`quellen-item${q.status === 'geschuetzt-nicht-freigegeben' ? ' quellen-item--geschuetzt' : ''}`}>
+          <li id={`q-${q.id}`} class={`quellen-item${q.status === 'geschuetzt-nicht-freigegeben' ? ' quellen-item--geschuetzt' : ''}`}>
             <p class="quellen-kurztitel">
               {tx(q.kurztitel || q.id)}
               {q.status === 'geschuetzt-nicht-freigegeben' && (
@@ -142,7 +142,7 @@ const quelleFields: Field[] = [
       </ul>
     </section>
 
-    <section class="quellen-section">
+    <section class="quellen-section" id="textgrundlage">
       <h2>Textgrundlage</h2>
       <dl class="quellen-dl">
         {d.textgrundlage.dornach && <Fragment><dt>Dornach</dt><dd>{tx(d.textgrundlage.dornach)}</dd></Fragment>}
@@ -155,7 +155,7 @@ const quelleFields: Field[] = [
       </dl>
     </section>
 
-    <section class="quellen-section">
+    <section class="quellen-section" id="editorische-konventionen">
       <h2>Editorische Konventionen dieser Web-Ausgabe</h2>
       <dl class="quellen-dl">
         {Object.entries(d.editorische_konventionen_webausgabe).map(([k, v]) => (
@@ -167,7 +167,7 @@ const quelleFields: Field[] = [
       </dl>
     </section>
 
-    <section class="quellen-section">
+    <section class="quellen-section" id="klassenstunden-uebersicht">
       <h2>Klassenstunden-Übersicht</h2>
       <dl class="quellen-dl">
         {Object.entries(d.klassenstunden_uebersicht).map(([k, v]) => (
@@ -179,19 +179,19 @@ const quelleFields: Field[] = [
       </dl>
     </section>
 
-    <section class="quellen-section">
+    <section class="quellen-section" id="ueberlieferung">
       <h2>Zur Überlieferung</h2>
       {Object.values(d.ueberlieferung).map((v) => <p>{tx(v)}</p>)}
     </section>
 
-    <section class="quellen-section">
+    <section class="quellen-section" id="rechtestatus">
       <h2>Rechtestatus</h2>
       {Object.values(d.rechtestatus).map((v, i) => (
         <p class={i === 0 ? '' : 'quellen-disclaim'}>{tx(v)}</p>
       ))}
     </section>
 
-    <section class="quellen-section">
+    <section class="quellen-section" id="weiterfuehrende-literatur">
       <h2>Weiterführende Literatur</h2>
       <ul class="quellen-lit">
         {d.weiterfuehrende_literatur.map((l) => (
@@ -201,7 +201,7 @@ const quelleFields: Field[] = [
     </section>
 
     {d.bearbeitung && (
-      <section class="quellen-section">
+      <section class="quellen-section" id="bearbeitungsstand">
         <h2>Bearbeitungsstand</h2>
         {d.bearbeitung.stand && <p>{tx(d.bearbeitung.stand)}</p>}
         {d.bearbeitung.projekt && (
