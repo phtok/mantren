@@ -93,6 +93,9 @@ const quelleFields: Field[] = [
     {d.editorische_beitraege && (
       <section class="quellen-section" id="editorische-beitraege">
         <h2>Editorische Beiträge zur Web-Ausgabe</h2>
+        {d.editorische_beitraege.titel_der_app && (
+          <p>{tx(d.editorische_beitraege.titel_der_app)}</p>
+        )}
         {d.editorische_beitraege.titel_der_abschnitte && (
           <p>{tx(d.editorische_beitraege.titel_der_abschnitte)}</p>
         )}
