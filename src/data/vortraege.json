@@ -3014,6 +3014,7 @@
     "ga": "270-breslau",
     "seiten": "Perseus 2016",
     "gruppe": "Einzelstunden",
+    "status": "geschuetzt-nicht-freigegeben",
     "abschnitte": [
       {
         "anker": "einleitung",
@@ -3081,6 +3082,7 @@
     "ga": "270-breslau",
     "seiten": "Perseus 2016",
     "gruppe": "Einzelstunden",
+    "status": "geschuetzt-nicht-freigegeben",
     "abschnitte": [
       {
         "anker": "einleitung",
@@ -3134,7 +3136,6 @@
     "ga": "270-breslau",
     "seiten": "12./13.6.1924",
     "gruppe": "Einzelstunden",
-    "status": "geschuetzt-nicht-freigegeben",
     "abschnitte": [
       {
         "anker": "editorische-notiz",
