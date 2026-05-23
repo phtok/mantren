@@ -718,6 +718,38 @@ mark {
   margin-top: 0.4rem;
 }
 
+/* ─────────────── Universalsuche ─────────────── */
+
+.universalsuche {
+  max-width: 40rem;
+  margin: 0;
+  padding: 0 0 3rem;
+}
+
+.universalsuche-head {
+  margin-bottom: 1.6rem;
+}
+
+.universalsuche-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+  line-height: 1.2;
+}
+
+.universalsuche-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.universalsuche-hint {
+  margin: 1rem 0 2rem;
+  font-size: 0.85rem;
+  color: var(--muted-soft);
+}
+
 /* ─────────────── Vorträge — Index ─────────────── */
 
 .vortrag-list {

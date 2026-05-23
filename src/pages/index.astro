@@ -1,39 +1,12 @@
 ---
 import Base from '../layouts/Base.astro';
-import { chapters, mantren, mantrenByChapter, type Mantra } from '../lib/mantren';
+import { chapters, mantren, mantrenByChapter } from '../lib/mantren';
 import { vortraegePublic } from '../lib/vortraege';
-import { kommentareForMantra } from '../lib/kommentar';
 import { tx } from '../lib/typografie';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
-type SearchEntry =
-  | {
-      type: 'mantra';
-      href: string;
-      number: string;
-      title: string;
-      chapter: string;
-      lines: string[];
-    }
-  | {
-      type: 'vortrag';
-      href: string;
-      titel: string;
-      meta: string;
-      abschnitte: { anker: string; titel: string; seite: string; text: string }[];
-    }
-  | {
-      type: 'kommentar';
-      href: string;
-      mantraNumber: string;
-      mantraTitle: string;
-      chapter: string;
-      key: string;
-      kommentarTitel: string;
-      lines: string[];
-    };
-
-function mantraLines(m: Mantra): string[] {
+const searchIndex = mantren.map((m) => {
+  const chapter = chapters.find((c) => c.id === m.chapter);
   const lines: string[] = [];
   for (const part of m.parts) {
     if (part.regie) lines.push(tx(part.regie));
@@ -42,67 +15,14 @@ function mantraLines(m: Mantra): string[] {
       lines.push(tx(ln.startsWith('/') ? ln.slice(1) : ln));
     }
   }
-  return lines;
-}
-
-const searchIndex: SearchEntry[] = [];
-
-for (const m of mantren) {
-  const chapter = chapters.find((c) => c.id === m.chapter);
-  searchIndex.push({
-    type: 'mantra',
+  return {
     href: `${base}${m.id}`,
     number: m.number ?? '',
     title: tx(m.title ?? ''),
     chapter: tx(chapter?.title ?? ''),
-    lines: mantraLines(m),
-  });
-
-  const ks = kommentareForMantra(m);
-  if (!ks) continue;
-  for (const entry of ks.entries) {
-    const k = entry.kommentar;
-    const lines: string[] = [];
-    if (k.kerngedanken?.kurz) lines.push(tx(k.kerngedanken.kurz));
-    if (k.kerngedanken?.kompakt) lines.push(tx(k.kerngedanken.kompakt));
-    if (k.kerngedanken?.ausfuehrlich) for (const l of k.kerngedanken.ausfuehrlich) lines.push(tx(l));
-    if (k.zitate) for (const z of k.zitate) lines.push(tx(z.text));
-    if (k.varianten?.prosa) lines.push(tx(k.varianten.prosa));
-    if (k.varianten?.fassungen) for (const f of k.varianten.fassungen) {
-      if (f.text) lines.push(tx(f.text));
-      if (f.abweichung) lines.push(tx(f.abweichung));
-    }
-    if (k.editorische_hinweise) for (const h of k.editorische_hinweise) lines.push(tx(h.text));
-    if (k.tafelbild?.beschreibung) lines.push(tx(k.tafelbild.beschreibung));
-    if (k.parallelstellen) for (const p of k.parallelstellen) lines.push(tx(p.ref));
-
-    searchIndex.push({
-      type: 'kommentar',
-      href: `${base}${m.id}`,
-      mantraNumber: m.number ?? '',
-      mantraTitle: tx(m.title ?? ''),
-      chapter: tx(chapter?.title ?? ''),
-      key: entry.key,
-      kommentarTitel: tx(k.titel ?? ''),
-      lines,
-    });
-  }
-}
-
-for (const v of vortraegePublic) {
-  searchIndex.push({
-    type: 'vortrag',
-    href: `${base}${v.id}`,
-    titel: tx(v.titel),
-    meta: tx(`${v.ort} · ${v.datum} · GA ${v.ga}, S. ${v.seiten}`),
-    abschnitte: v.abschnitte.map((a) => ({
-      anker: a.anker,
-      titel: tx(a.titel || ''),
-      seite: a.seite || '',
-      text: tx(a.text || ''),
-    })),
-  });
-}
+    lines,
+  };
+});
 
 const offlineUrls = [
   base,
@@ -112,6 +32,7 @@ const offlineUrls = [
   `${base}quellen`,
   `${base}einfuehrung`,
   `${base}tafeln-galerie`,
+  `${base}universalsuche`,
   `${base}impressum`,
   `${base}fonts/inclusive-sans.woff2`,
   `${base}favicon.svg`,
@@ -122,7 +43,7 @@ const navLinks = [
   { href: `${base}vortraege`, label: 'Klassenstunden' },
   { href: `${base}tafeln-galerie`, label: 'Wandtafelgalerie' },
   { href: `${base}quellen`, label: 'Quellen' },
-  { href: '#suche', label: 'Universalsuche' },
+  { href: `${base}universalsuche`, label: 'Universalsuche' },
   { href: `${base}impressum`, label: 'Impressum' },
 ];
 ---
@@ -132,12 +53,12 @@ const navLinks = [
     <p class="index-subtitle">{tx('Das Mantra der Ersten Klasse der Freien Hochschule für Geisteswissenschaft, Goetheanum.')}</p>
   </div>
 
-  <label class="search-box" for="suche">
+  <label class="search-box" for="toc-search">
     <input
       class="search-input"
       type="search"
-      id="suche"
-      placeholder="Suchen — Mantren, Klassenstunden, Kommentare"
+      id="toc-search"
+      placeholder="Mantren durchsuchen — Nummer, Titel, Wort"
       autocomplete="off"
       autocorrect="off"
       spellcheck="false"
@@ -262,7 +183,7 @@ const navLinks = [
 
   <script is:inline>
     (function () {
-      var input = document.getElementById('suche');
+      var input = document.getElementById('toc-search');
       var resultsEl = document.getElementById('search-results');
       var tocEl = document.getElementById('toc');
       var dataEl = document.getElementById('search-data');
@@ -276,136 +197,18 @@ const navLinks = [
         });
       }
 
-      function highlight(text, ql) {
-        var lower = text.toLowerCase();
+      function highlight(line, ql) {
+        var lower = line.toLowerCase();
         var out = '';
         var i = 0;
-        while (i <= text.length) {
+        while (i <= line.length) {
           var idx = lower.indexOf(ql, i);
-          if (idx < 0) { out += escapeHtml(text.slice(i)); break; }
-          out += escapeHtml(text.slice(i, idx));
-          out += '<mark>' + escapeHtml(text.slice(idx, idx + ql.length)) + '</mark>';
+          if (idx < 0) { out += escapeHtml(line.slice(i)); break; }
+          out += escapeHtml(line.slice(i, idx));
+          out += '<mark>' + escapeHtml(line.slice(idx, idx + ql.length)) + '</mark>';
           i = idx + ql.length;
         }
         return out;
-      }
-
-      function snippet(text, ql, context) {
-        var lower = text.toLowerCase();
-        var idx = lower.indexOf(ql);
-        if (idx < 0) return null;
-        var start = Math.max(0, idx - context);
-        var end = Math.min(text.length, idx + ql.length + context);
-        while (start > 0 && /\S/.test(text.charAt(start - 1)) && idx - start < context + 20) start--;
-        while (end < text.length && /\S/.test(text.charAt(end)) && end - (idx + ql.length) < context + 20) end++;
-        var prefix = start > 0 ? '… ' : '';
-        var suffix = end < text.length ? ' …' : '';
-        return prefix + text.slice(start, end).replace(/\n+/g, ' ') + suffix;
-      }
-
-      function renderMantra(m, ql) {
-        var titleMatch = m.title && m.title.toLowerCase().indexOf(ql) >= 0;
-        var numberMatch = m.number && m.number.toLowerCase().indexOf(ql) >= 0;
-        var matches = [];
-        for (var j = 0; j < m.lines.length; j++) {
-          if (m.lines[j].toLowerCase().indexOf(ql) >= 0) matches.push(m.lines[j]);
-        }
-        if (!matches.length && !titleMatch && !numberMatch) return null;
-        var html = '<a class="result" href="' + escapeHtml(m.href) + '">';
-        html += '<div class="result-head">';
-        html += '<span class="result-num">' + escapeHtml(m.number) + '</span>';
-        var titleHtml = m.title ? (titleMatch ? highlight(m.title, ql) : escapeHtml(m.title)) : '';
-        var chapterHtml = escapeHtml(m.chapter);
-        if (titleHtml) {
-          html += '<span class="result-title">' + titleHtml + '</span>';
-          html += '<span class="result-chapter">' + chapterHtml + '</span>';
-        } else {
-          html += '<span class="result-title result-chapter">' + chapterHtml + '</span>';
-        }
-        html += '</div>';
-        if (matches.length) {
-          html += '<div class="result-snippets">';
-          for (var k = 0; k < matches.length; k++) {
-            html += '<p class="snippet">' + highlight(matches[k], ql) + '</p>';
-          }
-          html += '</div>';
-        }
-        html += '</a>';
-        return { html: html, hits: matches.length };
-      }
-
-      function renderVortrag(v, ql) {
-        var titelMatch = v.titel.toLowerCase().indexOf(ql) >= 0;
-        var metaMatch = v.meta.toLowerCase().indexOf(ql) >= 0;
-        var hits = [];
-        for (var j = 0; j < v.abschnitte.length; j++) {
-          var a = v.abschnitte[j];
-          var inTitel = a.titel && a.titel.toLowerCase().indexOf(ql) >= 0;
-          var inText = a.text && a.text.toLowerCase().indexOf(ql) >= 0;
-          if (inTitel || inText) {
-            hits.push({
-              anker: a.anker,
-              titel: a.titel,
-              seite: a.seite,
-              snippet: inText ? snippet(a.text, ql, 60) : null,
-              titelMatch: inTitel,
-            });
-          }
-        }
-        if (!hits.length && !titelMatch && !metaMatch) return null;
-        var html = '<section class="result-vortrag">';
-        html += '<a class="result-vortrag-head" href="' + escapeHtml(v.href) + '">';
-        html += '<span class="result-vortrag-titel">' + (titelMatch ? highlight(v.titel, ql) : escapeHtml(v.titel)) + '</span>';
-        html += '<span class="result-vortrag-meta">' + (metaMatch ? highlight(v.meta, ql) : escapeHtml(v.meta)) + '</span>';
-        html += '</a>';
-        if (hits.length) {
-          html += '<ul class="result-vortrag-hits">';
-          for (var k = 0; k < hits.length; k++) {
-            var h = hits[k];
-            var url = v.href + '#' + h.anker;
-            html += '<li><a class="result-hit" href="' + escapeHtml(url) + '">';
-            if (h.titel) {
-              html += '<span class="result-hit-titel">' + (h.titelMatch ? highlight(h.titel, ql) : escapeHtml(h.titel)) + '</span>';
-            }
-            if (h.seite) {
-              html += '<span class="result-hit-seite">S. ' + escapeHtml(h.seite) + '</span>';
-            }
-            if (h.snippet) {
-              html += '<p class="result-hit-snippet">' + highlight(h.snippet, ql) + '</p>';
-            }
-            html += '</a></li>';
-          }
-          html += '</ul>';
-        }
-        html += '</section>';
-        return { html: html, hits: hits.length };
-      }
-
-      function renderKommentar(k, ql) {
-        var inTitel = k.kommentarTitel && k.kommentarTitel.toLowerCase().indexOf(ql) >= 0;
-        var matches = [];
-        for (var j = 0; j < k.lines.length; j++) {
-          var line = k.lines[j];
-          var idx = line.toLowerCase().indexOf(ql);
-          if (idx >= 0) matches.push(snippet(line, ql, 80) || line);
-        }
-        if (!matches.length && !inTitel) return null;
-        var label = k.kommentarTitel || ('Kommentar zu ' + k.mantraNumber);
-        var html = '<a class="result result-komm" href="' + escapeHtml(k.href) + '">';
-        html += '<div class="result-head">';
-        html += '<span class="result-num">' + escapeHtml(k.mantraNumber) + '</span>';
-        html += '<span class="result-title">' + (inTitel ? highlight(label, ql) : escapeHtml(label)) + '</span>';
-        html += '<span class="result-chapter">' + escapeHtml(k.chapter) + '</span>';
-        html += '</div>';
-        if (matches.length) {
-          html += '<div class="result-snippets">';
-          for (var m = 0; m < matches.length; m++) {
-            html += '<p class="snippet">' + highlight(matches[m], ql) + '</p>';
-          }
-          html += '</div>';
-        }
-        html += '</a>';
-        return { html: html, hits: matches.length };
       }
 
       function render(q) {
@@ -418,53 +221,48 @@ const navLinks = [
         tocEl.hidden = true;
         resultsEl.hidden = false;
         var ql = q.toLowerCase();
-
-        var groups = {
-          mantra: { count: 0, hits: 0, html: '' },
-          vortrag: { count: 0, hits: 0, html: '' },
-          kommentar: { count: 0, hits: 0, html: '' },
-        };
-
-        for (var i = 0; i < data.length; i++) {
-          var e = data[i];
-          var r = null;
-          if (e.type === 'mantra') r = renderMantra(e, ql);
-          else if (e.type === 'vortrag') r = renderVortrag(e, ql);
-          else if (e.type === 'kommentar') r = renderKommentar(e, ql);
-          if (!r) continue;
-          var g = groups[e.type];
-          g.count++;
-          g.hits += r.hits;
-          g.html += r.html;
-        }
-
-        var totalCount = groups.mantra.count + groups.vortrag.count + groups.kommentar.count;
-        if (totalCount === 0) {
-          resultsEl.innerHTML = '<p class="no-results">Keine Treffer.</p>';
-          return;
-        }
-
         var html = '';
-        var summaryBits = [];
-        if (groups.mantra.count) summaryBits.push(groups.mantra.count + (groups.mantra.count === 1 ? ' Mantra' : ' Mantren'));
-        if (groups.vortrag.count) summaryBits.push(groups.vortrag.count + (groups.vortrag.count === 1 ? ' Klassenstunde' : ' Klassenstunden'));
-        if (groups.kommentar.count) summaryBits.push(groups.kommentar.count + (groups.kommentar.count === 1 ? ' Kommentar' : ' Kommentare'));
-        html += '<p class="result-count">' + summaryBits.join(' · ') + '</p>';
-
-        if (groups.mantra.count) {
-          html += '<h3 class="result-group-head">Mantren</h3>';
-          html += groups.mantra.html;
+        var mantraCount = 0;
+        var hitCount = 0;
+        for (var i = 0; i < data.length; i++) {
+          var m = data[i];
+          var titleMatch = m.title && m.title.toLowerCase().indexOf(ql) >= 0;
+          var numberMatch = m.number && m.number.toLowerCase().indexOf(ql) >= 0;
+          var matches = [];
+          for (var j = 0; j < m.lines.length; j++) {
+            if (m.lines[j].toLowerCase().indexOf(ql) >= 0) matches.push(m.lines[j]);
+          }
+          if (!matches.length && !titleMatch && !numberMatch) continue;
+          mantraCount++;
+          hitCount += matches.length;
+          html += '<a class="result" href="' + escapeHtml(m.href) + '">';
+          html += '<div class="result-head">';
+          html += '<span class="result-num">' + escapeHtml(m.number) + '</span>';
+          var titleHtml = m.title ? (titleMatch ? highlight(m.title, ql) : escapeHtml(m.title)) : '';
+          var chapterHtml = escapeHtml(m.chapter);
+          if (titleHtml) {
+            html += '<span class="result-title">' + titleHtml + '</span>';
+            html += '<span class="result-chapter">' + chapterHtml + '</span>';
+          } else {
+            html += '<span class="result-title result-chapter">' + chapterHtml + '</span>';
+          }
+          html += '</div>';
+          if (matches.length) {
+            html += '<div class="result-snippets">';
+            for (var k = 0; k < matches.length; k++) {
+              html += '<p class="snippet">' + highlight(matches[k], ql) + '</p>';
+            }
+            html += '</div>';
+          }
+          html += '</a>';
         }
-        if (groups.vortrag.count) {
-          html += '<h3 class="result-group-head">Klassenstunden</h3>';
-          html += groups.vortrag.html;
+        if (!html) {
+          resultsEl.innerHTML = '<p class="no-results">Keine Treffer.</p>';
+        } else {
+          var summary = mantraCount + (mantraCount === 1 ? ' Mantra' : ' Mantren');
+          if (hitCount > 0) summary += ', ' + hitCount + (hitCount === 1 ? ' Fundstelle' : ' Fundstellen');
+          resultsEl.innerHTML = '<p class="result-count">' + summary + '</p>' + html;
         }
-        if (groups.kommentar.count) {
-          html += '<h3 class="result-group-head">Kommentare</h3>';
-          html += groups.kommentar.html;
-        }
-
-        resultsEl.innerHTML = html;
       }
 
       input.addEventListener('input', function (e) {
@@ -473,7 +271,7 @@ const navLinks = [
 
       input.addEventListener('keydown', function (e) {
         if (e.key === 'Enter') {
-          var first = resultsEl.querySelector('a.result, a.result-hit, a.result-vortrag-head') || tocEl.querySelector('a.toc-link');
+          var first = resultsEl.querySelector('a.result') || tocEl.querySelector('a.toc-link');
           if (first) first.click();
         }
         if (e.key === 'Escape') {
@@ -481,17 +279,6 @@ const navLinks = [
           render('');
         }
       });
-
-      // "Universalsuche" link (#suche) fokussiert das Eingabefeld.
-      window.addEventListener('hashchange', function () {
-        if (location.hash === '#suche') {
-          input.focus();
-          input.select();
-        }
-      });
-      if (location.hash === '#suche') {
-        setTimeout(function () { input.focus(); }, 0);
-      }
     })();
   </script>
 </Base>
