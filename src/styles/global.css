@@ -2347,3 +2347,160 @@ dialog.source-fullscreen::backdrop {
   font-size: 0.83rem;
   color: var(--muted);
 }
+
+/* ─────────────── Offline-Status-Diagnose ─────────────── */
+
+.offline-diag {
+  max-width: 40rem;
+  margin: 0;
+  padding: 0 0 3rem;
+}
+
+.offline-diag-head {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.offline-diag-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+  line-height: 1.2;
+}
+
+.offline-diag-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.offline-diag-section {
+  margin: 0 0 2rem;
+}
+
+.offline-diag-section h2 {
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.7rem;
+}
+
+.offline-diag-dl {
+  display: grid;
+  grid-template-columns: minmax(8rem, 11rem) 1fr;
+  gap: 0.4rem 1rem;
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.offline-diag-dl dt {
+  color: var(--muted);
+}
+
+.offline-diag-dl dd {
+  margin: 0;
+  word-break: break-word;
+}
+
+.offline-diag-dl dd.is-ok { color: #58a576; }
+.offline-diag-dl dd.is-bad { color: #c25656; }
+
+.offline-diag-hint {
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.offline-diag-cache {
+  border-top: 1px solid var(--line);
+  padding: 0.6rem 0;
+}
+
+.offline-diag-cache summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.offline-diag-cache summary::-webkit-details-marker { display: none; }
+.offline-diag-cache summary::marker { content: ''; }
+
+.offline-diag-cache-name {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.82rem;
+  color: var(--text);
+  word-break: break-all;
+}
+
+.offline-diag-cache-count {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.offline-diag-list {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.55;
+  max-height: 22rem;
+  overflow-y: auto;
+}
+
+.offline-diag-list li {
+  padding: 0.15rem 0;
+  word-break: break-all;
+}
+
+.offline-diag-empty {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted-soft);
+  font-style: italic;
+}
+
+.offline-diag-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.offline-diag-btn {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.offline-diag-btn:hover {
+  border-color: var(--muted);
+}
+
+.offline-diag-btn--danger {
+  color: #c25656;
+  border-color: #c2565640;
+}
+
+.offline-diag-btn--danger:hover {
+  border-color: #c25656;
+}
