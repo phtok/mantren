@@ -47,9 +47,9 @@ if (props.kind === 'mantra') {
     : (m.number || chapterMeta?.title || 'Mantra');
   chapter = chapterMeta?.title;
   number = m.number;
-  prevHref = prev ? `${base}${prev.id}` : null;
+  prevHref = prev ? `${base}${prev.id}/` : null;
   prevLabel = prev ? (prev.number || prev.id) : '';
-  nextHref = next ? `${base}${next.id}` : null;
+  nextHref = next ? `${base}${next.id}/` : null;
   nextLabel = next ? (next.number || next.id) : '';
   homeHref = base;
 } else {
@@ -59,11 +59,11 @@ if (props.kind === 'mantra') {
   chapter = `${v.ort} · ${v.datum} · GA ${v.ga}, S. ${v.seiten}`;
   number = v.titel;
   section = undefined;
-  prevHref = prev ? `${base}${prev.id}` : null;
+  prevHref = prev ? `${base}${prev.id}/` : null;
   prevLabel = prev ? prev.titel : '';
-  nextHref = next ? `${base}${next.id}` : null;
+  nextHref = next ? `${base}${next.id}/` : null;
   nextLabel = next ? next.titel : '';
-  homeHref = `${base}vortraege`;
+  homeHref = `${base}vortraege/`;
 }
 
 const kommentare = props.kind === 'mantra' ? kommentareForMantra(props.mantra) : undefined;

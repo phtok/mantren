@@ -59,7 +59,7 @@ for (const m of mantren) {
   const chapter = chapters.find((c) => c.id === m.chapter);
   searchIndex.push({
     type: 'mantra',
-    href: `${base}${m.id}`,
+    href: `${base}${m.id}/`,
     number: m.number ?? '',
     title: tx(m.title ?? ''),
     chapter: tx(chapter?.title ?? ''),
@@ -86,7 +86,7 @@ for (const m of mantren) {
 
     searchIndex.push({
       type: 'kommentar',
-      href: `${base}${m.id}`,
+      href: `${base}${m.id}/`,
       mantraNumber: m.number ?? '',
       mantraTitle: tx(m.title ?? ''),
       chapter: tx(chapter?.title ?? ''),
@@ -100,7 +100,7 @@ for (const m of mantren) {
 for (const v of vortraegePublic) {
   searchIndex.push({
     type: 'vortrag',
-    href: `${base}${v.id}`,
+    href: `${base}${v.id}/`,
     titel: tx(v.titel),
     meta: tx(`${v.ort} · ${v.datum} · GA ${v.ga}, S. ${v.seiten}`),
     abschnitte: v.abschnitte.map((a) => ({
@@ -132,7 +132,7 @@ function pushQuelle(anker: string, titel: string, rubrik: string, lines: string[
   if (cleaned.length === 0) return;
   searchIndex.push({
     type: 'quelle',
-    href: `${base}quellen#${anker}`,
+    href: `${base}quellen/#${anker}`,
     titel: tx(titel),
     rubrik,
     lines: cleaned,
