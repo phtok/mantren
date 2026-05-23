@@ -76,7 +76,27 @@ const homeUrl = base;
         <a class="topbar-title" href={homeUrl}>Mantren</a>
       )}
       <div class="topbar-actions">
-        <button class="icon-btn" id="theme-toggle" type="button" title="Hell / Dunkel">◐</button>
+        <details class="topbar-menu" id="topbar-menu">
+          <summary class="icon-btn topbar-menu-summary" title="Einstellungen" aria-label="Einstellungen">⋯</summary>
+          <div class="topbar-menu-panel" role="menu">
+            <button
+              class="topbar-menu-item"
+              id="theme-toggle"
+              type="button"
+              role="menuitemcheckbox"
+              aria-checked="false"
+            >
+              <span class="topbar-menu-icon" aria-hidden="true">◐</span>
+              <span class="topbar-menu-label" data-theme-label>Dunkler Modus</span>
+            </button>
+            <div class="topbar-menu-offline" id="offline-pane" aria-live="polite">
+              <button class="topbar-menu-item offline-btn" id="offline-btn" type="button" role="menuitem">
+                <span class="topbar-menu-icon offline-dot" aria-hidden="true"></span>
+                <span class="topbar-menu-label offline-text">offline laden</span>
+              </button>
+            </div>
+          </div>
+        </details>
       </div>
     </header>
 
@@ -112,12 +132,97 @@ const homeUrl = base;
         var body = document.body;
 
         var themeBtn = document.getElementById('theme-toggle');
+        var themeLabel = themeBtn && themeBtn.querySelector('[data-theme-label]');
+        function refreshThemeLabel() {
+          if (!themeBtn) return;
+          var isDark = html.classList.contains('theme-invert');
+          themeBtn.setAttribute('aria-checked', isDark ? 'true' : 'false');
+          if (themeLabel) themeLabel.textContent = isDark ? 'Heller Modus' : 'Dunkler Modus';
+        }
         if (themeBtn) {
+          refreshThemeLabel();
           themeBtn.addEventListener('click', function () {
-            var isDark = html.classList.toggle('theme-invert');
-            try { localStorage.setItem('theme', isDark ? 'dark' : 'light'); } catch (e) {}
+            html.classList.toggle('theme-invert');
+            try { localStorage.setItem('theme', html.classList.contains('theme-invert') ? 'dark' : 'light'); } catch (e) {}
+            refreshThemeLabel();
           });
         }
+
+        // Topbar-Menü: Klick außerhalb schließt die details-Klappe
+        var menu = document.getElementById('topbar-menu');
+        if (menu) {
+          document.addEventListener('click', function (e) {
+            if (!menu.open) return;
+            var t = e.target;
+            if (t instanceof Node && menu.contains(t)) return;
+            menu.open = false;
+          });
+        }
+
+        // Offline-Vorladen — Pane sitzt in der Topbar-Klappe.
+        // Daten kommen pro Seite via <script id="offline-urls"> (nur Startseite).
+        (function () {
+          var pane = document.getElementById('offline-pane');
+          var btn = document.getElementById('offline-btn');
+          var btnText = btn && btn.querySelector('.offline-text');
+          var urlsEl = document.getElementById('offline-urls');
+          if (!pane || !btn || !urlsEl) {
+            if (pane) pane.hidden = true;
+            return;
+          }
+          if (!('serviceWorker' in navigator)) { pane.hidden = true; return; }
+
+          var urls = JSON.parse(urlsEl.textContent || '[]');
+          var STORAGE_KEY = 'offline-ready-v1';
+
+          function showReady() {
+            pane.classList.add('is-ready');
+            pane.classList.remove('is-loading');
+            btn.disabled = true;
+            if (btnText) btnText.textContent = 'offline bereit';
+          }
+          function showProgress(done, total) {
+            pane.classList.add('is-loading');
+            pane.classList.remove('is-ready');
+            btn.disabled = true;
+            if (btnText) btnText.textContent = 'lädt … ' + done + ' / ' + total;
+          }
+          function showIdle() {
+            pane.classList.remove('is-ready', 'is-loading');
+            btn.disabled = false;
+            if (btnText) btnText.textContent = 'offline laden';
+          }
+
+          navigator.serviceWorker.getRegistration().then(function (reg) {
+            var flag = false;
+            try { flag = localStorage.getItem(STORAGE_KEY) === '1'; } catch (e) {}
+            if (reg && reg.active && flag) showReady(); else showIdle();
+          });
+
+          btn.addEventListener('click', function () {
+            var total = urls.length;
+            showProgress(0, total);
+            var batchSize = 6;
+            var idx = 0;
+            function runBatch() {
+              if (idx >= total) {
+                try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+                showReady();
+                return;
+              }
+              var batch = urls.slice(idx, idx + batchSize);
+              idx += batch.length;
+              Promise.all(batch.map(function (u) {
+                return fetch(u, { credentials: 'same-origin' }).catch(function () {});
+              })).then(function () {
+                var done = idx > total ? total : idx;
+                showProgress(done, total);
+                runBatch();
+              });
+            }
+            runBatch();
+          });
+        })();
 
         // Topbar bei Runterscrollen ausblenden, bei Hochscrollen wieder zeigen
         var topbar = document.getElementById('topbar');
