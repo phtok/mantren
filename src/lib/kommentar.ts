@@ -20,6 +20,8 @@ export type Kerngedanken = {
 export type Zitat = {
   text: string;
   quelle: string;
+  vortrag?: string | null;
+  anker?: string | null;
 };
 
 export type Parallelstelle = {
@@ -42,6 +44,8 @@ export type VarianteFassung = {
   text: string;
   quelle: string;
   abweichung?: string;
+  vortrag?: string | null;
+  anker?: string | null;
 };
 
 export type Varianten = {
@@ -52,6 +56,8 @@ export type Varianten = {
 export type EditorischerHinweis = {
   text: string;
   quelle: string;
+  vortrag?: string | null;
+  anker?: string | null;
 };
 
 export type Kommentar = {

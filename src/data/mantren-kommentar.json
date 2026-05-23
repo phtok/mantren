@@ -74,7 +74,9 @@
       "zitate": [
         {
           "text": "O Mensch, erkenne dich selbst! So tönt das Weltenwort.",
-          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 188"
+          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 188",
+          "vortrag": "stunde-18",
+          "anker": "drei-tafeln"
         }
       ]
     },
@@ -94,12 +96,42 @@
         "anmerkung": "In der Dreizehnten Stunde erstmals an die Tafel geschrieben und gesprochen, unmittelbar nach dem Weltenwort. In der Achtzehnten Stunde (12.7.1924) bezeichnet Steiner es ausdrücklich als ‹die zweite Tafel›. In der Fünften und Sechsten Wiederholungsstunde (15./17.9.1924) wird das Mantram meditativ entfaltet: der Hüter weist auf das Licht jenseits der Finsternis, auf die drei Tiere und auf die Dreiheit von Denken, Fühlen und Wollen."
       },
       "parallelstellen": [
-        { "ref": "GA 270a, Erste Stunde (15.2.1924), S. 22", "art": "Vorklang – ‹erste eherne Tafel›", "vortrag": "stunde-1", "anker": null },
-        { "ref": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89", "art": "Erstdeklamation", "vortrag": "stunde-13", "anker": "m-hueter" },
-        { "ref": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 189", "art": "Explizite Benennung ‹die zweite Tafel›", "vortrag": "stunde-18", "anker": null },
-        { "ref": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924), S. 215–218", "art": "Meditative Entfaltung – Hüter, drei Tiere, Dreiheit", "vortrag": "wh-5", "anker": null },
-        { "ref": "GA 270c, Sechste Wiederholungsstunde (17.9.1924), S. 119–127", "art": "Tafel-Trias, ‹Schau die Drei›", "vortrag": "wh-6", "anker": null },
-        { "ref": "App-Kommentar 13.2", "art": "Strophen-Kommentar zum selben Mantram", "vortrag": "stunde-13", "anker": "m-hueter" }
+        {
+          "ref": "GA 270a, Erste Stunde (15.2.1924), S. 22",
+          "art": "Vorklang – ‹erste eherne Tafel›",
+          "vortrag": "stunde-1",
+          "anker": "einleitung"
+        },
+        {
+          "ref": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89",
+          "art": "Erstdeklamation",
+          "vortrag": "stunde-13",
+          "anker": "m-hueter"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 189",
+          "art": "Explizite Benennung ‹die zweite Tafel›",
+          "vortrag": "stunde-18",
+          "anker": "m-hueter-wiederholung"
+        },
+        {
+          "ref": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924), S. 215–218",
+          "art": "Meditative Entfaltung – Hüter, drei Tiere, Dreiheit",
+          "vortrag": "wh-5",
+          "anker": "einleitung"
+        },
+        {
+          "ref": "GA 270c, Sechste Wiederholungsstunde (17.9.1924), S. 119–127",
+          "art": "Tafel-Trias, ‹Schau die Drei›",
+          "vortrag": "wh-6",
+          "anker": "einleitung"
+        },
+        {
+          "ref": "App-Kommentar 13.2",
+          "art": "Strophen-Kommentar zum selben Mantram",
+          "vortrag": "stunde-13",
+          "anker": "m-hueter"
+        }
       ],
       "kerngedanken": {
         "kurz": "Aus denselben Weltentiefen, aus denen das Weltenwort tönt, kommt eine zweite Stimme: der Hüter steht vor den Pforten des Geisterlandes und verwehrt dem Menschen mit bloßer Sinnenkraft und Verstandes-Macht den Einlass. Die Wahrheit über das eigene Wesen muss erst kraftvoll erobert werden – jenseits von Raumeswesenlosigkeit und Truggewalten der Zeit.",
@@ -113,8 +145,18 @@
         ]
       },
       "zitate": [
-        { "text": "Nun näherten wir uns dem Hüter. Die zweite Tafel ist da.", "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 189" },
-        { "text": "Daher nehmet auf, meine lieben Schwestern und Brüder, in Eure Herzen dasjenige, was Euch geben kann eine Vorempfindung dieser ernsten Gestalt, die da steht zwischen dem Nichterkennen und dem Erkennen.", "quelle": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924), S. 215" }
+        {
+          "text": "Nun näherten wir uns dem Hüter. Die zweite Tafel ist da.",
+          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 189",
+          "vortrag": "stunde-18",
+          "anker": "m-hueter-wiederholung"
+        },
+        {
+          "text": "Daher nehmet auf, meine lieben Schwestern und Brüder, in Eure Herzen dasjenige, was Euch geben kann eine Vorempfindung dieser ernsten Gestalt, die da steht zwischen dem Nichterkennen und dem Erkennen.",
+          "quelle": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924), S. 215",
+          "vortrag": "bern",
+          "anker": "hueter-hinfuehrung"
+        }
       ]
     },
     "dritte-tafel": {
@@ -133,10 +175,30 @@
         "anmerkung": "In der Dreizehnten Stunde unmittelbar nach dem Hüter-Wort gesprochen: ‹Wenn wir solches gehört haben, kann in uns andächtig das Gegenwort aus den Tiefen unserer Seele heraus sprechen›. In der Achtzehnten Stunde steht es im Anschluss an die als ‹zweite Tafel› benannte Hüter-Strophe und schließt die Tafel-Trias ab. In den Wiederholungsstunden kehrt es als rahmender Schlusston wieder."
       },
       "parallelstellen": [
-        { "ref": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 90", "art": "Erstdeklamation", "vortrag": "stunde-13", "anker": "m-gegenwort" },
-        { "ref": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 190", "art": "Tafel-Trias mit Hüter-Wort", "vortrag": "stunde-18", "anker": null },
-        { "ref": "GA 270c, Fünfte–Siebente Wiederholungsstunde (15.–20.9.1924)", "art": "Wiederkehr im Klassen-Gefüge", "vortrag": "wh-5", "anker": null },
-        { "ref": "App-Kommentar 13.3", "art": "Strophen-Kommentar zum selben Mantram", "vortrag": "stunde-13", "anker": "m-gegenwort" }
+        {
+          "ref": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 90",
+          "art": "Erstdeklamation",
+          "vortrag": "stunde-13",
+          "anker": "m-gegenwort"
+        },
+        {
+          "ref": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 190",
+          "art": "Tafel-Trias mit Hüter-Wort",
+          "vortrag": "stunde-18",
+          "anker": "m-gegenwort-wiederholung"
+        },
+        {
+          "ref": "GA 270c, Fünfte–Siebente Wiederholungsstunde (15.–20.9.1924)",
+          "art": "Wiederkehr im Klassen-Gefüge",
+          "vortrag": "wh-5",
+          "anker": "einleitung"
+        },
+        {
+          "ref": "App-Kommentar 13.3",
+          "art": "Strophen-Kommentar zum selben Mantram",
+          "vortrag": "stunde-13",
+          "anker": "m-gegenwort"
+        }
       ],
       "kerngedanken": {
         "kurz": "Nach Hüter-Wort und Schwellengang spricht aus den Tiefen der eigenen Seele andächtig das Gegenwort: das Ich tritt in die Sinneswelt, vom Erbe des vorirdischen Denkens und einer Gotteskraft hereingeführt, mit dem Tod am Wegesende. Wer das Christus-Wesen fühlt, weckt im Sterben des Stoffes die Geist-Geburt – und erkennt sich im Weltenwerden.",
@@ -150,8 +212,18 @@
         ]
       },
       "zitate": [
-        { "text": "Wenn wir solches gehört haben, kann in uns andächtig das Gegenwort aus den Tiefen unserer Seele heraus sprechen.", "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89" },
-        { "text": "Da schauen wir herüber, hinüber in die Sinneswelt, da fühlen wir gegenüber dieser Sinneswelt die Worte.", "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 190" }
+        {
+          "text": "Wenn wir solches gehört haben, kann in uns andächtig das Gegenwort aus den Tiefen unserer Seele heraus sprechen.",
+          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89",
+          "vortrag": "stunde-13",
+          "anker": "hueter-deutung"
+        },
+        {
+          "text": "Da schauen wir herüber, hinüber in die Sinneswelt, da fühlen wir gegenüber dieser Sinneswelt die Worte.",
+          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 190",
+          "vortrag": "stunde-18",
+          "anker": "m-gegenwort-wiederholung"
+        }
       ]
     }
   },
@@ -181,8 +253,8 @@
         {
           "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 17–18",
           "art": "Wiederholungsstunde",
-          "vortrag": null,
-          "anker": null
+          "vortrag": "wh-1",
+          "anker": "hueter-hinfuehrung"
         },
         {
           "ref": "GA 270a, Dritte Stunde (29.2.1924), S. 90 – Schlusswiederholung",
@@ -224,19 +296,27 @@
       "zitate": [
         {
           "text": "Dasjenige, was gewissermaßen wie eine erste eherne Tafel über unserer Schule stehen soll, das möchte ich zuallererst nunmehr vor Ihre Herzen, vor Ihre Seelen bringen.",
-          "quelle": "GA 270a, S. 23"
+          "quelle": "GA 270a, S. 23",
+          "vortrag": "stunde-1",
+          "anker": "einleitung"
         },
         {
           "text": "Das Naturdasein … es gibt uns nimmermehr Auskunft über uns selbst.",
-          "quelle": "GA 270a, S. 25"
+          "quelle": "GA 270a, S. 25",
+          "vortrag": "stunde-1",
+          "anker": "m1-deutung"
         },
         {
           "text": "Wir müssen eben uns erst selber zum Menschen machen, zum seelendurchwärmten, geisterstarkten Menschen machen, damit wir als Geist im Menschen finden den Geist in der Welt.",
-          "quelle": "GA 270a, S. 26"
+          "quelle": "GA 270a, S. 26",
+          "vortrag": "stunde-1",
+          "anker": "m1-deutung"
         },
         {
           "text": "Das tiefe Erleben dessen, daß … diese Welt uns keine Antwort gibt auf die Frage, was wir selber sind … das kraftet herauf aus der Seele diejenigen Impulse, welche uns hinauftragen können in die geistige Welt.",
-          "quelle": "GA 270a, S. 45 (Zweite Stunde)"
+          "quelle": "GA 270a, S. 45 (Zweite Stunde)",
+          "vortrag": "stunde-2",
+          "anker": "m1-rekap"
         }
       ],
       "varianten": {
@@ -246,36 +326,48 @@
             "fassung": "GA 270a, Erste Stunde (15.2.1924) – App-Fassung 1.1",
             "text": "Wo auf Erdengründen, Farb' an Farbe … An das Licht, das aus Finsternissen kraftet.",
             "quelle": "GA 270a, S. 24",
-            "abweichung": "Eigenständiges Mantram; Fortsetzung separat als 1.2."
+            "abweichung": "Eigenständiges Mantram; Fortsetzung separat als 1.2.",
+            "vortrag": "stunde-1",
+            "anker": "m1"
           },
           {
             "fassung": "GA 270c, Erste Wiederholungsstunde (6.9.1924)",
             "text": "Wo auf Erdengründen … / Und aus Finsternissen hellet sich … / Sieh, ich bin der Erkenntnis einzig Tor.",
             "quelle": "GA 270c, S. 20; Tafeltext S. 29",
-            "abweichung": "Erweiterte, zusammenhängende Hüter-Rede (1.1 + 1.2 vereint)."
+            "abweichung": "Erweiterte, zusammenhängende Hüter-Rede (1.1 + 1.2 vereint).",
+            "vortrag": "wh-1",
+            "anker": "m-hueter"
           },
           {
             "fassung": "GA 270c, Erste Prager Stunde (3.4.1924)",
             "text": "‹Wo auf Erdengründen, Farb' an Farbe …›",
             "quelle": "GA 270c, S. 179–185",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen.",
+            "vortrag": "prag-1",
+            "anker": "m-erdengruende"
           },
           {
             "fassung": "Breslau, Erste Stunde (12.6.1924)",
             "text": "‹Wo auf Erdengründen, Farb' an Farbe …›",
             "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest.",
+            "vortrag": "breslau-1",
+            "anker": "einleitung"
           }
         ]
       },
       "editorische_hinweise": [
         {
           "text": "In der letzten Zeile der zweiten Strophe und in der ersten Zeile der dritten Strophe wurde ‹aus den Finsternissen› gesprochen, an die Tafel jedoch ‹aus Finsternissen› geschrieben; in der vorletzten Zeile wurde ‹urgewaltiges Schöpferwort› statt ‹urgewaltig Schöpferwort› gesprochen.",
-          "quelle": "GA 270a, Zu den Mantramtexten der Ersten Stunde, S. 42; GA 270c, Hinweis zu S. 19"
+          "quelle": "GA 270a, Zu den Mantramtexten der Ersten Stunde, S. 42; GA 270c, Hinweis zu S. 19",
+          "vortrag": "stunde-1",
+          "anker": "ausblick"
         },
         {
           "text": "Die Textvorlage der Ersten Prager Stunde hat in der dritten Strophe ‹Ernstes Wort› statt ‹Ernstes Geisteswort›.",
-          "quelle": "GA 270c, Hinweis zu S. 179"
+          "quelle": "GA 270c, Hinweis zu S. 179",
+          "vortrag": "prag-1",
+          "anker": "m-erdengruende"
         }
       ]
     },
@@ -304,8 +396,8 @@
         {
           "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 17–18",
           "art": "Wiederholungsstunde – Schilderung des Hüters",
-          "vortrag": null,
-          "anker": null
+          "vortrag": "wh-1",
+          "anker": "hueter-hinfuehrung"
         },
         {
           "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924) – Wiederholung/Variante",
@@ -341,15 +433,21 @@
       "zitate": [
         {
           "text": "Daher steht an der Grenze zwischen Sinneswelt und Geisteswelt jener Götterbote, jener Geistesbote … der mahnend zu uns spricht, wie wir sein sollen und was wir ablegen sollen.",
-          "quelle": "GA 270a, S. 26"
+          "quelle": "GA 270a, S. 26",
+          "vortrag": "stunde-1",
+          "anker": "m1-deutung"
         },
         {
           "text": "Zum Ernste mahnt der ernste Geistesbote.",
-          "quelle": "GA 270a, S. 28"
+          "quelle": "GA 270a, S. 28",
+          "vortrag": "stunde-1",
+          "anker": "m3"
         },
         {
           "text": "Deshalb steht an der Grenze … jener Hüter, der mit seinem Ernst Menschen warnt davor, unvorbereitet in die geistige Welt hinüberzuwollen.",
-          "quelle": "GA 270a, S. 45 (Zweite Stunde)"
+          "quelle": "GA 270a, S. 45 (Zweite Stunde)",
+          "vortrag": "stunde-2",
+          "anker": "m1-rekap"
         }
       ],
       "varianten": {
@@ -359,25 +457,33 @@
             "fassung": "GA 270a, Erste Stunde – App-Fassung 1.2",
             "text": "Und aus Finsternissen hellet sich – Dich im Ebenbilde offenbarend …",
             "quelle": "GA 270a",
-            "abweichung": "Eigenständiges Mantram."
+            "abweichung": "Eigenständiges Mantram.",
+            "vortrag": "stunde-1",
+            "anker": "einleitung"
           },
           {
             "fassung": "GA 270c, Erste Wiederholungsstunde",
             "text": "… Und aus Finsternissen hellet sich … Sieh, ich bin der Erkenntnis einzig Tor.",
             "quelle": "GA 270c, S. 20–21; Tafeltext S. 29",
-            "abweichung": "Teil der zusammenhängenden Hüter-Rede (mit 1.1)."
+            "abweichung": "Teil der zusammenhängenden Hüter-Rede (mit 1.1).",
+            "vortrag": "wh-1",
+            "anker": "m-hueter"
           },
           {
             "fassung": "GA 270c, Erste Prager Stunde (3.4.1924)",
             "text": "‹Und aus Finsternissen hellet sich …› (der Geistesbote)",
             "quelle": "GA 270c, S. 179–185",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen.",
+            "vortrag": "prag-1",
+            "anker": "m-erdengruende"
           },
           {
             "fassung": "Breslau, Erste Stunde (12.6.1924)",
             "text": "‹Und aus Finsternissen hellet sich …›",
             "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest.",
+            "vortrag": "breslau-1",
+            "anker": "einleitung"
           }
         ]
       }
@@ -407,8 +513,8 @@
         {
           "ref": "GA 270c, Erste Wiederholungsstunde (6.9.1924), S. 14–15",
           "art": "Wiederholungsstunde – Weltenwort ›O Mensch, erkenne dich selbst‹",
-          "vortrag": null,
-          "anker": null
+          "vortrag": "wh-1",
+          "anker": "m-weltenwort"
         },
         {
           "ref": "GA 270a, Dritte Stunde (29.2.1924), S. 67–73 – Daseinswort & Dreispaltung",
@@ -450,15 +556,21 @@
       "zitate": [
         {
           "text": "Und diese drei Abgründe, sie sind nicht drei Abgründe, sie sind ein einziger Abgrund.",
-          "quelle": "GA 270a, S. 30"
+          "quelle": "GA 270a, S. 30",
+          "vortrag": "stunde-1",
+          "anker": "m3-deutung"
         },
         {
           "text": "Da spricht er, hinweisend auf diese scheinbare Finsternis, auf diese Maja-Finsternis …",
-          "quelle": "GA 270a, S. 46 (Zweite Stunde)"
+          "quelle": "GA 270a, S. 46 (Zweite Stunde)",
+          "vortrag": "stunde-2",
+          "anker": "m2"
         },
         {
           "text": "Wer das Wort … tief genug empfinden kann, der wird gewahr … wie das Zurückblicken … eine erste Selbsterkenntnis wird.",
-          "quelle": "GA 270a, S. 47 (Zweite Stunde)"
+          "quelle": "GA 270a, S. 47 (Zweite Stunde)",
+          "vortrag": "stunde-2",
+          "anker": "m3"
         }
       ],
       "varianten": {
@@ -468,32 +580,42 @@
             "fassung": "GA 270c, Erste Wiederholungsstunde – Vortragsfassung",
             "text": "… In den Weltgestaltungsmächten / Wollend wirkende Daseinswort: / O, du Mensch, erkenne dich selbst.",
             "quelle": "GA 270c, S. 22",
-            "abweichung": "‹Wollend›."
+            "abweichung": "‹Wollend›.",
+            "vortrag": "wh-1",
+            "anker": "daseinswort-hinfuehrung"
           },
           {
             "fassung": "GA 270c, Erste Wiederholungsstunde – Tafeltext",
             "text": "… In den Weltgestaltungsmächten / Wellend wirkende Daseinswort: / O, du Mensch, erkenne dich selbst.",
             "quelle": "GA 270c, S. 29 (Tafeltext)",
-            "abweichung": "‹Wellend› statt ‹Wollend›."
+            "abweichung": "‹Wellend› statt ‹Wollend›.",
+            "vortrag": "wh-1",
+            "anker": "tafeltexte"
           },
           {
             "fassung": "GA 270c, Erste Prager Stunde (3.4.1924)",
             "text": "‹Aus den Weiten der Raumeswesen …› (das Daseinswort)",
             "quelle": "GA 270c, S. 179–185",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen.",
+            "vortrag": "prag-1",
+            "anker": "m-erdengruende"
           },
           {
             "fassung": "Breslau, Erste Stunde (12.6.1924)",
             "text": "‹Aus den Weiten der Raumeswesen …›",
             "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest.",
+            "vortrag": "breslau-1",
+            "anker": "einleitung"
           }
         ]
       },
       "editorische_hinweise": [
         {
           "text": "Die Zeilen ‹Da ertönet im Seelensprechen› und ‹In den Weltengestaltungsmächten› stehen in der Ersten Wiederholungsstunde tafelgetreu als ‹ertönt› und ‹Weltgestaltungsmächten›, in der Ersten, Zweiten und Dritten Stunde stenogrammgemäss als ‹ertönet› und ‹Weltengestaltungsmächten›; die beiden Handschriften im Tafelband haben je eine der beiden Formen.",
-          "quelle": "GA 270c, Hinweis zu S. 21"
+          "quelle": "GA 270c, Hinweis zu S. 21",
+          "vortrag": "wh-1",
+          "anker": "m-hueter"
         }
       ]
     },
@@ -522,8 +644,8 @@
         {
           "ref": "GA 270c, Zweite Wiederholungsstunde",
           "art": "Wiederholungsstunde / Tafeltext (folgt)",
-          "vortrag": null,
-          "anker": null
+          "vortrag": "wh-2",
+          "anker": "einleitung"
         },
         {
           "ref": "GA 270a, Zweite Stunde (22.2.1924), S. 54–63 – drei Hüter-Sprüche zu Denken/Fühlen/Wollen",
@@ -583,19 +705,27 @@
       "zitate": [
         {
           "text": "Das … sind die drei großen Erkenntnisfeinde der Gegenwart, des gegenwärtigen Menschen.",
-          "quelle": "GA 270a, S. 34"
+          "quelle": "GA 270a, S. 34",
+          "vortrag": "stunde-1",
+          "anker": "m4-deutung"
         },
         {
           "text": "In Wahrheit ist es der Geist der Furcht … der, indem er zum Kopfe heraufspukt, sich metamorphosiert als logische Gründe. Furcht ist es.",
-          "quelle": "GA 270a, S. 34"
+          "quelle": "GA 270a, S. 34",
+          "vortrag": "stunde-1",
+          "anker": "m4-deutung"
         },
         {
           "text": "… jenes Denken, das aus der ganzen Welt ein Kino machen möchte … weil man dann nicht zu denken braucht.",
-          "quelle": "GA 270a, S. 35"
+          "quelle": "GA 270a, S. 35",
+          "vortrag": "stunde-1",
+          "anker": "m4-deutung"
         },
         {
           "text": "Im esoterischen Leben wirkt nichts anderes als die Wahrheit.",
-          "quelle": "GA 270a, S. 52 (Zweite Stunde)"
+          "quelle": "GA 270a, S. 52 (Zweite Stunde)",
+          "vortrag": "stunde-2",
+          "anker": "ernst"
         }
       ],
       "varianten": {
@@ -605,36 +735,48 @@
             "fassung": "GA 270a, Erste Stunde – App-Fassung 1.4",
             "text": "Doch du musst den Abgrund achten; Sonst verschlingen seine Tiere …",
             "quelle": "GA 270a",
-            "abweichung": "Orthografie ‹musst›."
+            "abweichung": "Orthografie ‹musst›.",
+            "vortrag": "stunde-1",
+            "anker": "einleitung"
           },
           {
             "fassung": "GA 270c, Erste Wiederholungsstunde",
             "text": "Doch du mußt den Abgrund achten … Erst wenn die drei von dir besiegt, / Werden Flügel deiner Seele wachsen …",
             "quelle": "GA 270c, S. 24",
-            "abweichung": "Wortgleich; Quell-Orthografie ‹mußt›."
+            "abweichung": "Wortgleich; Quell-Orthografie ‹mußt›.",
+            "vortrag": "wh-1",
+            "anker": "m-dreitiere"
           },
           {
             "fassung": "GA 270c, Erste Prager Stunde (3.4.1924)",
             "text": "‹Doch du mußt den Abgrund achten …› (die drei Tiere)",
             "quelle": "GA 270c, S. 179–185",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Prag, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Einführung über die Freie Hochschule und ihre Sektionen.",
+            "vortrag": "prag-1",
+            "anker": "m-erdengruende"
           },
           {
             "fassung": "Breslau, Erste Stunde (12.6.1924)",
             "text": "‹Doch du mußt den Abgrund achten …›",
             "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Breslau). Wortlaut wie die App-Fassung. Lilly Kolisko hielt vom Mantram-Wortlaut der Ersten Stunde nur die Anfangszeilen in Langschrift fest.",
+            "vortrag": "breslau-1",
+            "anker": "einleitung"
           }
         ]
       },
       "editorische_hinweise": [
         {
           "text": "Vierte Zeile der dritten Strophe: Tafeltext der Zweiten Wiederholungsstunde und eine Handschrift haben ‹Dein Haß› (analog ‹Deine Furcht› / ‹Dein Zweifel›); gesprochen wurde in der Ersten und Zweiten Stunde ‹Der Haß›. Die Zeile ‹Schmutzigrot erscheint dir die Gestalt› wurde bei der Schlusswiederholung gesprochen ‹Schmutzigrot erscheint die Gestalt dir›.",
-          "quelle": "GA 270a, Zu den Mantramtexten der Ersten Stunde, S. 42"
+          "quelle": "GA 270a, Zu den Mantramtexten der Ersten Stunde, S. 42",
+          "vortrag": "stunde-1",
+          "anker": "ausblick"
         },
         {
           "text": "Die Textvorlage der Ersten Prager Stunde hat in der dritten Strophe ‹Der Haß› statt ‹Dein Haß› und ‹muss es zähmen› statt ‹muss ihn zähmen›.",
-          "quelle": "GA 270c, Hinweis zu S. 183"
+          "quelle": "GA 270c, Hinweis zu S. 183",
+          "vortrag": "prag-1",
+          "anker": "m-dreitiere"
         }
       ]
     },
@@ -709,7 +851,9 @@
       "zitate": [
         {
           "text": "Sieh in dir Gedankenweben: Weltenschein erlebest du …",
-          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 82"
+          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 82",
+          "vortrag": "stunde-3",
+          "anker": "m-fuehlen"
         }
       ],
       "varianten": {
@@ -719,44 +863,58 @@
             "fassung": "GA 270a, Dritte Stunde – App-Fassung 3.1",
             "text": "Sieh in dir Gedankenweben …",
             "quelle": "GA 270a, Dritte Stunde",
-            "abweichung": "Ausgangsfassung der App."
+            "abweichung": "Ausgangsfassung der App.",
+            "vortrag": "stunde-3",
+            "anker": "einleitung"
           },
           {
             "fassung": "GA 270c, Zweite Wiederholungsstunde (9.9.1924) – Untertauch-Meditation",
             "text": "Sieh in dir Gedankenweben …",
             "quelle": "GA 270c, S. 43",
-            "abweichung": "Wortgleich; eingebettet in die dreistrophige Schein/Sein-Meditation (Denken/Fühlen/Wollen)."
+            "abweichung": "Wortgleich; eingebettet in die dreistrophige Schein/Sein-Meditation (Denken/Fühlen/Wollen).",
+            "vortrag": "wh-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – Rhythmus-Deutung",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß … (mit Rhythmus-Lehre)",
             "quelle": "GA 270c, S. 54–57",
-            "abweichung": "In der Dritten Wiederholungsstunde (GA 270c) deutet der Hüter den Rhythmus dieses Spruches: trochäisch (Hochton–Tiefton): Herunterbewegen der geistigen Welt; Schlüsselworte ‹verehren› / ‹Führerwesen›. Die Steigerung der Schlüsselworte zeigt den Aufstieg vom Schein über das scheinende Sein zum Sein."
+            "abweichung": "In der Dritten Wiederholungsstunde (GA 270c) deutet der Hüter den Rhythmus dieses Spruches: trochäisch (Hochton–Tiefton): Herunterbewegen der geistigen Welt; Schlüsselworte ‹verehren› / ‹Führerwesen›. Die Steigerung der Schlüsselworte zeigt den Aufstieg vom Schein über das scheinende Sein zum Sein.",
+            "vortrag": "wh-3",
+            "anker": "rhythmus-deutung"
           },
           {
             "fassung": "GA 270c, Zweite Prager Stunde (5.4.1924) – mit Rhythmus-Deutung",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 196–207",
-            "abweichung": "Frühe Prager Fassung (vor den Dornacher Stunden). Wortgleich; der Hüter deutet bereits den Rhythmus: trochäisch (Hochton–Tiefton); Schlüsselworte ‹verehren› / ‹Führerwesen›; das Denken als Schein anerkennen, das Ätherwesen verehren."
+            "abweichung": "Frühe Prager Fassung (vor den Dornacher Stunden). Wortgleich; der Hüter deutet bereits den Rhythmus: trochäisch (Hochton–Tiefton); Schlüsselworte ‹verehren› / ‹Führerwesen›; das Denken als Schein anerkennen, das Ätherwesen verehren.",
+            "vortrag": "prag-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "GA 270c, Notizen Zweite Londoner Stunde (27.8.1924)",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 238–240",
-            "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden."
+            "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden.",
+            "vortrag": "london-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "Breslau, Zweite Stunde (13.6.1924)",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
-            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild)."
+            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild).",
+            "vortrag": "breslau-2",
+            "anker": "einleitung"
           }
         ]
       },
       "editorische_hinweise": [
         {
           "text": "Das Wort ‹Führerwesen› in der Zeile ‹Deines Geistes Führerwesen› ist im Plural gemeint, wie aus den weiteren Darstellungen Rudolf Steiners hervorgeht.",
-          "quelle": "GA 270a, Hinweis zu S. 79; GA 270c, Hinweis zu S. 51"
+          "quelle": "GA 270a, Hinweis zu S. 79; GA 270c, Hinweis zu S. 51",
+          "vortrag": "stunde-3",
+          "anker": "m-denken"
         }
       ]
     },
@@ -825,7 +983,9 @@
       "zitate": [
         {
           "text": "Es mengen Schein und Sein sich dir …",
-          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 83"
+          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 83",
+          "vortrag": "stunde-3",
+          "anker": "deut-fuehlen"
         }
       ],
       "varianten": {
@@ -835,37 +995,49 @@
             "fassung": "GA 270a, Dritte Stunde – App-Fassung 3.2",
             "text": "Vernimm in dir Gefühle-Strömen …",
             "quelle": "GA 270a, Dritte Stunde",
-            "abweichung": "Ausgangsfassung der App."
+            "abweichung": "Ausgangsfassung der App.",
+            "vortrag": "stunde-3",
+            "anker": "einleitung"
           },
           {
             "fassung": "GA 270c, Zweite Wiederholungsstunde (9.9.1924) – Untertauch-Meditation",
             "text": "Vernimm in dir Gefühle-Strömen …",
             "quelle": "GA 270c, S. 43",
-            "abweichung": "Wortgleich; eingebettet in die dreistrophige Schein/Sein-Meditation (Denken/Fühlen/Wollen)."
+            "abweichung": "Wortgleich; eingebettet in die dreistrophige Schein/Sein-Meditation (Denken/Fühlen/Wollen).",
+            "vortrag": "wh-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – Rhythmus-Deutung",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß … (mit Rhythmus-Lehre)",
             "quelle": "GA 270c, S. 54–57",
-            "abweichung": "In der Dritten Wiederholungsstunde (GA 270c) deutet der Hüter den Rhythmus dieses Spruches: jambisch (Tiefton–Hochton): Hinaufstreben mit dem Gefühl; Schlüsselworte ‹bedenken› / ‹Lebensmächte›. Die Steigerung der Schlüsselworte zeigt den Aufstieg vom Schein über das scheinende Sein zum Sein."
+            "abweichung": "In der Dritten Wiederholungsstunde (GA 270c) deutet der Hüter den Rhythmus dieses Spruches: jambisch (Tiefton–Hochton): Hinaufstreben mit dem Gefühl; Schlüsselworte ‹bedenken› / ‹Lebensmächte›. Die Steigerung der Schlüsselworte zeigt den Aufstieg vom Schein über das scheinende Sein zum Sein.",
+            "vortrag": "wh-3",
+            "anker": "rhythmus-deutung"
           },
           {
             "fassung": "GA 270c, Zweite Prager Stunde (5.4.1924) – mit Rhythmus-Deutung",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 196–207",
-            "abweichung": "Frühe Prager Fassung (vor den Dornacher Stunden). Wortgleich; der Hüter deutet bereits den Rhythmus: jambisch (Tiefton–Hochton); Schlüsselworte ‹bedenken› / ‹Lebensmächte›; im Fühlen mengen sich Schein und Sein."
+            "abweichung": "Frühe Prager Fassung (vor den Dornacher Stunden). Wortgleich; der Hüter deutet bereits den Rhythmus: jambisch (Tiefton–Hochton); Schlüsselworte ‹bedenken› / ‹Lebensmächte›; im Fühlen mengen sich Schein und Sein.",
+            "vortrag": "prag-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "GA 270c, Notizen Zweite Londoner Stunde (27.8.1924)",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 238–240",
-            "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden."
+            "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden.",
+            "vortrag": "london-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "Breslau, Zweite Stunde (13.6.1924)",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
-            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild)."
+            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild).",
+            "vortrag": "breslau-2",
+            "anker": "einleitung"
           }
         ]
       }
@@ -935,7 +1107,9 @@
       "zitate": [
         {
           "text": "Dein Eigensein, es soll ergreifen Weltschöpfermacht …",
-          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 90"
+          "quelle": "GA 270a, Dritte Stunde (29.2.1924), S. 90",
+          "vortrag": "stunde-3",
+          "anker": "schluss"
         }
       ],
       "varianten": {
@@ -945,37 +1119,49 @@
             "fassung": "GA 270a, Dritte Stunde – App-Fassung 3.3",
             "text": "Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270a, Dritte Stunde",
-            "abweichung": "Ausgangsfassung der App."
+            "abweichung": "Ausgangsfassung der App.",
+            "vortrag": "stunde-3",
+            "anker": "einleitung"
           },
           {
             "fassung": "GA 270c, Zweite Wiederholungsstunde (9.9.1924) – Untertauch-Meditation",
             "text": "Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 43",
-            "abweichung": "Wortgleich; eingebettet in die dreistrophige Schein/Sein-Meditation (Denken/Fühlen/Wollen)."
+            "abweichung": "Wortgleich; eingebettet in die dreistrophige Schein/Sein-Meditation (Denken/Fühlen/Wollen).",
+            "vortrag": "wh-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – Rhythmus-Deutung",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß … (mit Rhythmus-Lehre)",
             "quelle": "GA 270c, S. 54–57",
-            "abweichung": "In der Dritten Wiederholungsstunde (GA 270c) deutet der Hüter den Rhythmus dieses Spruches: spondäisch (zwei Hochtöne): unmittelbar neben dem Sein; Schlüsselworte ‹ergreifen› / ‹Weltschöpfermacht›. Die Steigerung der Schlüsselworte zeigt den Aufstieg vom Schein über das scheinende Sein zum Sein."
+            "abweichung": "In der Dritten Wiederholungsstunde (GA 270c) deutet der Hüter den Rhythmus dieses Spruches: spondäisch (zwei Hochtöne): unmittelbar neben dem Sein; Schlüsselworte ‹ergreifen› / ‹Weltschöpfermacht›. Die Steigerung der Schlüsselworte zeigt den Aufstieg vom Schein über das scheinende Sein zum Sein.",
+            "vortrag": "wh-3",
+            "anker": "rhythmus-deutung"
           },
           {
             "fassung": "GA 270c, Zweite Prager Stunde (5.4.1924) – mit Rhythmus-Deutung",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 196–207",
-            "abweichung": "Frühe Prager Fassung (vor den Dornacher Stunden). Wortgleich; der Hüter deutet bereits den Rhythmus: spondäisch (Hochton–Hochton); Schlüsselworte ‹ergreifen› / ‹Weltschöpfermacht›; im Wollen Feuer im Feuer."
+            "abweichung": "Frühe Prager Fassung (vor den Dornacher Stunden). Wortgleich; der Hüter deutet bereits den Rhythmus: spondäisch (Hochton–Hochton); Schlüsselworte ‹ergreifen› / ‹Weltschöpfermacht›; im Wollen Feuer im Feuer.",
+            "vortrag": "prag-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "GA 270c, Notizen Zweite Londoner Stunde (27.8.1924)",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "GA 270c, S. 238–240",
-            "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden."
+            "abweichung": "Bruchstückhafte Notizen (George Adams). Wortgleich; mit Rhythmus-Deutung (trochäisch / jambisch / spondäisch) und dem Hinweis, dass das Michael-Zeichen und die Siegelgesten schon vor den Dornacher Wiederholungsstunden in London gegeben wurden.",
+            "vortrag": "london-2",
+            "anker": "m-untertauch"
           },
           {
             "fassung": "Breslau, Zweite Stunde (13.6.1924)",
             "text": "Sieh in dir Gedankenweben … / Vernimm in dir Gefühle-Strömen … / Laß walten in dir den Willens-Stoß …",
             "quelle": "Die Wiederholungsstunden in Breslau (12./13.6.1924), in: Der Meditationsweg der Michaelschule, hrsg. Thomas Meyer, Perseus Verlag Basel 2016",
-            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild)."
+            "abweichung": "Frühe Breslauer Fassung. Lilly Kolisko schrieb die drei Strophen dieses Mantrams in vollem Wortlaut in Langschrift mit; Wortlaut wie die App-Fassung. Mit ausführlicher Leichnam-/Ätherleib-Deutung und der Rhythmus-Erläuterung (trochäisch/jambisch/spondäisch; Berg-Bild).",
+            "vortrag": "breslau-2",
+            "anker": "einleitung"
           }
         ]
       }
@@ -1027,7 +1213,9 @@
       "zitate": [
         {
           "text": "Sie verfinstern dir das Ich.",
-          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 104"
+          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 104",
+          "vortrag": "stunde-4",
+          "anker": "deut-tiefen"
         }
       ],
       "varianten": {
@@ -1037,7 +1225,9 @@
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – kosmische Einordnung",
             "text": "Fühle wie die Erdentiefen … / Fühle wie aus Weltenweiten … / Fühle wie in Himmelshöhen …",
             "quelle": "GA 270c, S. 57–61",
-            "abweichung": "Der Hüter weist den Willen nach unten – Erdentiefen, die mit Schwere ziehen und das Ich verfinstern, wenn der Wille machtlos folgt."
+            "abweichung": "Der Hüter weist den Willen nach unten – Erdentiefen, die mit Schwere ziehen und das Ich verfinstern, wenn der Wille machtlos folgt.",
+            "vortrag": "wh-3",
+            "anker": "eingliederung-deutung"
           }
         ]
       }
@@ -1089,7 +1279,9 @@
       "zitate": [
         {
           "text": "Finde dich in ihnen liebend …",
-          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 105"
+          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 105",
+          "vortrag": "stunde-4",
+          "anker": "m-weiten"
         }
       ],
       "varianten": {
@@ -1099,7 +1291,9 @@
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – kosmische Einordnung",
             "text": "Fühle wie die Erdentiefen … / Fühle wie aus Weltenweiten … / Fühle wie in Himmelshöhen …",
             "quelle": "GA 270c, S. 57–61",
-            "abweichung": "Der Hüter weist das Fühlen in die horizontalen Weltenweiten – Göttermächte senden Geisteshelle; liebend findet man sich, weisheitwebend wird man Selbst."
+            "abweichung": "Der Hüter weist das Fühlen in die horizontalen Weltenweiten – Göttermächte senden Geisteshelle; liebend findet man sich, weisheitwebend wird man Selbst.",
+            "vortrag": "wh-3",
+            "anker": "eingliederung-deutung"
           }
         ]
       }
@@ -1151,7 +1345,9 @@
       "zitate": [
         {
           "text": "Fühle wie in Himmelshöhen Selbstsein selbstlos leben kann …",
-          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 108"
+          "quelle": "GA 270a, Vierte Stunde (7.3.1924), S. 108",
+          "vortrag": "stunde-4",
+          "anker": "gegenueberstellung"
         }
       ],
       "varianten": {
@@ -1161,7 +1357,9 @@
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – kosmische Einordnung",
             "text": "Fühle wie die Erdentiefen … / Fühle wie aus Weltenweiten … / Fühle wie in Himmelshöhen …",
             "quelle": "GA 270c, S. 57–61",
-            "abweichung": "Der Hüter weist das Denken in die Himmelshöhen – Selbstsein selbstlos; in Tapferkeit das von oben gnadevoll ertönende Wort vernehmen."
+            "abweichung": "Der Hüter weist das Denken in die Himmelshöhen – Selbstsein selbstlos; in Tapferkeit das von oben gnadevoll ertönende Wort vernehmen.",
+            "vortrag": "wh-3",
+            "anker": "eingliederung-deutung"
           }
         ]
       }
@@ -1219,7 +1417,9 @@
       "zitate": [
         {
           "text": "Du findest, lichtwärts strebend, dein Selbst vom Geiste dir genommen …",
-          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 130"
+          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 130",
+          "vortrag": "stunde-5",
+          "anker": "mut"
         }
       ],
       "tafelbild": {
@@ -1236,13 +1436,17 @@
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – Wiederholung",
             "text": "Es kämpft das Licht mit finstren Mächten … / Es kämpft das Warme mit dem Kalten … / Es kämpft das Leben mit dem Tode …",
             "quelle": "GA 270c, S. 62–63",
-            "abweichung": "Der Hüter belehrt: Denken zwischen Licht und finstren Mächten – lichtwärts das Selbst vom Geiste genommen, im Stoff das Selbst verlieren. Den Weg dazwischen gilt es zu finden."
+            "abweichung": "Der Hüter belehrt: Denken zwischen Licht und finstren Mächten – lichtwärts das Selbst vom Geiste genommen, im Stoff das Selbst verlieren. Den Weg dazwischen gilt es zu finden.",
+            "vortrag": "wh-3",
+            "anker": "m-kaempft"
           },
           {
             "fassung": "GA 270c, Vierte Wiederholungsstunde (13.9.1924) – Gleichgewichts-Lehre",
             "text": "Es kämpft das Licht mit finstren Mächten … (mit der Mahnung, das Gleichgewicht zu halten)",
             "quelle": "GA 270c, S. 73–78",
-            "abweichung": "Wortgleich; der Hüter rahmt es als Gleichgewichts-Forderung: Denken: nicht vom Licht in geistige Lichtohnmacht, nicht von der Finsternis in den Stoff – das Gleichgewicht halten. Naturbeispiel: Haare/Leib/Pflanze sind vom Licht gewoben, von der Finsternis durchdrungen."
+            "abweichung": "Wortgleich; der Hüter rahmt es als Gleichgewichts-Forderung: Denken: nicht vom Licht in geistige Lichtohnmacht, nicht von der Finsternis in den Stoff – das Gleichgewicht halten. Naturbeispiel: Haare/Leib/Pflanze sind vom Licht gewoben, von der Finsternis durchdrungen.",
+            "vortrag": "wh-4",
+            "anker": "rueckblick"
           }
         ]
       }
@@ -1300,7 +1504,9 @@
       "zitate": [
         {
           "text": "Du findest, Wärme liebend, dein Selbst in Geisteslust verwehend …",
-          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 133"
+          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 133",
+          "vortrag": "stunde-5",
+          "anker": "m-fuehlen"
         }
       ],
       "tafelbild": {
@@ -1317,13 +1523,17 @@
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – Wiederholung",
             "text": "Es kämpft das Licht mit finstren Mächten … / Es kämpft das Warme mit dem Kalten … / Es kämpft das Leben mit dem Tode …",
             "quelle": "GA 270c, S. 62–63",
-            "abweichung": "Der Hüter belehrt: Fühlen zwischen Warmem und Kaltem – in Geisteslust verwehen oder im Leid das Selbst verstäuben. Den Weg dazwischen gilt es zu finden."
+            "abweichung": "Der Hüter belehrt: Fühlen zwischen Warmem und Kaltem – in Geisteslust verwehen oder im Leid das Selbst verstäuben. Den Weg dazwischen gilt es zu finden.",
+            "vortrag": "wh-3",
+            "anker": "m-kaempft"
           },
           {
             "fassung": "GA 270c, Vierte Wiederholungsstunde (13.9.1924) – Gleichgewichts-Lehre",
             "text": "Es kämpft das Licht mit finstren Mächten … (mit der Mahnung, das Gleichgewicht zu halten)",
             "quelle": "GA 270c, S. 73–78",
-            "abweichung": "Wortgleich; der Hüter rahmt es als Gleichgewichts-Forderung: Fühlen: nicht von luziferischer Seelenwärme (Schönheit, Helligkeit) unselbständig, nicht von ahrimanischer Seelenkälte (Übermacht-Intellekt) verhärtet werden. Naturbeispiel: Haare/Leib/Pflanze sind vom Licht gewoben, von der Finsternis durchdrungen."
+            "abweichung": "Wortgleich; der Hüter rahmt es als Gleichgewichts-Forderung: Fühlen: nicht von luziferischer Seelenwärme (Schönheit, Helligkeit) unselbständig, nicht von ahrimanischer Seelenkälte (Übermacht-Intellekt) verhärtet werden. Naturbeispiel: Haare/Leib/Pflanze sind vom Licht gewoben, von der Finsternis durchdrungen.",
+            "vortrag": "wh-4",
+            "anker": "rueckblick"
           }
         ]
       }
@@ -1381,7 +1591,9 @@
       "zitate": [
         {
           "text": "Du findest, Leben fassend, dein Selbst in Geistesmacht verschwinden …",
-          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 135"
+          "quelle": "GA 270a, Fünfte Stunde (14.3.1924), S. 135",
+          "vortrag": "stunde-5",
+          "anker": "m-wollen"
         }
       ],
       "tafelbild": {
@@ -1398,13 +1610,17 @@
             "fassung": "GA 270c, Dritte Wiederholungsstunde (11.9.1924) – Wiederholung",
             "text": "Es kämpft das Licht mit finstren Mächten … / Es kämpft das Warme mit dem Kalten … / Es kämpft das Leben mit dem Tode …",
             "quelle": "GA 270c, S. 62–63",
-            "abweichung": "Der Hüter belehrt: Wollen zwischen Leben und Tod – in Geistesmacht verschwinden oder im Nichts das Selbst verkrampfen. Den Weg dazwischen gilt es zu finden."
+            "abweichung": "Der Hüter belehrt: Wollen zwischen Leben und Tod – in Geistesmacht verschwinden oder im Nichts das Selbst verkrampfen. Den Weg dazwischen gilt es zu finden.",
+            "vortrag": "wh-3",
+            "anker": "m-kaempft"
           },
           {
             "fassung": "GA 270c, Vierte Wiederholungsstunde (13.9.1924) – Gleichgewichts-Lehre",
             "text": "Es kämpft das Licht mit finstren Mächten … (mit der Mahnung, das Gleichgewicht zu halten)",
             "quelle": "GA 270c, S. 73–78",
-            "abweichung": "Wortgleich; der Hüter rahmt es als Gleichgewichts-Forderung: Wollen: nicht vom Leben verschlungen, nicht vom Tod verkrampft – mittendurch das Gleichgewicht finden. Naturbeispiel: Haare/Leib/Pflanze sind vom Licht gewoben, von der Finsternis durchdrungen."
+            "abweichung": "Wortgleich; der Hüter rahmt es als Gleichgewichts-Forderung: Wollen: nicht vom Leben verschlungen, nicht vom Tod verkrampft – mittendurch das Gleichgewicht finden. Naturbeispiel: Haare/Leib/Pflanze sind vom Licht gewoben, von der Finsternis durchdrungen.",
+            "vortrag": "wh-4",
+            "anker": "rueckblick"
           }
         ]
       }
@@ -1456,7 +1672,9 @@
       "zitate": [
         {
           "text": "Die Furcht vor deinem Selbst muß dir in Seelen-Mut sich wandeln.",
-          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 153"
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 153",
+          "vortrag": "stunde-6",
+          "anker": "m-u-erde"
         }
       ],
       "tafelbild": {
@@ -1473,7 +1691,9 @@
             "fassung": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924) – Bescheidenheit/Erweckung",
             "text": "Du steigst ins Erden-Wesenhafte … / Du lebest mit dem Wasserwesen … / Du sinnest in dem Lüftewehen …",
             "quelle": "GA 270c, S. 101–104",
-            "abweichung": "Wortgleich; der Hüter mahnt mit ‹allerbedeutsamstem Ernst›: Eintritt ins Erden-Wesenhafte als Denker – das Denken zeigt sich als eigene Tierheit; die Furcht vor dem Selbst muss sich in Seelen-Mut wandeln."
+            "abweichung": "Wortgleich; der Hüter mahnt mit ‹allerbedeutsamstem Ernst›: Eintritt ins Erden-Wesenhafte als Denker – das Denken zeigt sich als eigene Tierheit; die Furcht vor dem Selbst muss sich in Seelen-Mut wandeln.",
+            "vortrag": "wh-5",
+            "anker": "m-unterwelt"
           }
         ]
       }
@@ -1525,7 +1745,9 @@
       "zitate": [
         {
           "text": "Und Lahmheit deines Selbst muß dich zum Wachen führen.",
-          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 155"
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 155",
+          "vortrag": "stunde-6",
+          "anker": "m-u-wasser"
         }
       ],
       "tafelbild": {
@@ -1542,7 +1764,9 @@
             "fassung": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924) – Bescheidenheit/Erweckung",
             "text": "Du steigst ins Erden-Wesenhafte … / Du lebest mit dem Wasserwesen … / Du sinnest in dem Lüftewehen …",
             "quelle": "GA 270c, S. 101–104",
-            "abweichung": "Wortgleich; der Hüter mahnt mit ‹allerbedeutsamstem Ernst›: Eintritt ins Wasserwesen als Fühlender – dumpfes, träumendes Pflanzendasein; die Lahmheit des Selbst muss zum Wachen führen."
+            "abweichung": "Wortgleich; der Hüter mahnt mit ‹allerbedeutsamstem Ernst›: Eintritt ins Wasserwesen als Fühlender – dumpfes, träumendes Pflanzendasein; die Lahmheit des Selbst muss zum Wachen führen.",
+            "vortrag": "wh-5",
+            "anker": "m-unterwelt"
           }
         ]
       }
@@ -1594,7 +1818,9 @@
       "zitate": [
         {
           "text": "Doch deiner Selbstheit Kälte-Tod, er muß dem Geistesfeuer weichen.",
-          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 157"
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 157",
+          "vortrag": "stunde-6",
+          "anker": "unterwelt-deutung"
         }
       ],
       "tafelbild": {
@@ -1611,7 +1837,9 @@
             "fassung": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924) – Bescheidenheit/Erweckung",
             "text": "Du steigst ins Erden-Wesenhafte … / Du lebest mit dem Wasserwesen … / Du sinnest in dem Lüftewehen …",
             "quelle": "GA 270c, S. 101–104",
-            "abweichung": "Wortgleich; der Hüter mahnt mit ‹allerbedeutsamstem Ernst›: Eintritt ins Lüftewehen mit dem Wollen – nur Gedächtnis-Bilderformen, kalterstarrter Stein; der Kälte-Tod muss dem Geistesfeuer weichen."
+            "abweichung": "Wortgleich; der Hüter mahnt mit ‹allerbedeutsamstem Ernst›: Eintritt ins Lüftewehen mit dem Wollen – nur Gedächtnis-Bilderformen, kalterstarrter Stein; der Kälte-Tod muss dem Geistesfeuer weichen.",
+            "vortrag": "wh-5",
+            "anker": "m-unterwelt"
           }
         ]
       }
@@ -1663,7 +1891,9 @@
       "zitate": [
         {
           "text": "Besinnung auf die Erdennöte wird dich im Menschensein erhalten.",
-          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 161"
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 161",
+          "vortrag": "stunde-6",
+          "anker": "m-o-licht"
         }
       ],
       "tafelbild": {
@@ -1680,7 +1910,9 @@
             "fassung": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924) – Steigerung/Rettung",
             "text": "Du hältst von Lichtes-Scheines-Macht … / Du hältst vom Weltgestalten … / Du hältst vom Weltenleben …",
             "quelle": "GA 270c, S. 106–111",
-            "abweichung": "Wortgleich; der Hüter deutet: Lichtes-Scheines-Macht / Gedanken – wenn Lichtesschein sich selbst denkt: Selbstheitwahn; ‹Besinnung auf die Erdennöte› erhält das Menschensein. Steigerung: Menschensein erhalten – Menschenseele retten – waltenden Gott empfangen."
+            "abweichung": "Wortgleich; der Hüter deutet: Lichtes-Scheines-Macht / Gedanken – wenn Lichtesschein sich selbst denkt: Selbstheitwahn; ‹Besinnung auf die Erdennöte› erhält das Menschensein. Steigerung: Menschensein erhalten – Menschenseele retten – waltenden Gott empfangen.",
+            "vortrag": "wh-5",
+            "anker": "m-oberwelt"
           }
         ]
       }
@@ -1732,7 +1964,9 @@
       "zitate": [
         {
           "text": "Doch Liebe zu den Erdenwerten wird dir die Menschenseele retten.",
-          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 162"
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 162",
+          "vortrag": "stunde-6",
+          "anker": "m-o-gestalt"
         }
       ],
       "tafelbild": {
@@ -1749,7 +1983,9 @@
             "fassung": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924) – Steigerung/Rettung",
             "text": "Du hältst von Lichtes-Scheines-Macht … / Du hältst vom Weltgestalten … / Du hältst vom Weltenleben …",
             "quelle": "GA 270c, S. 106–111",
-            "abweichung": "Wortgleich; der Hüter deutet: Weltgestalten / Gefühle – wenn Weltenform sich selbst fühlt: ohnmächtiges Geist-Erleben; ‹Liebe zu den Erdenwerten› rettet die Menschenseele. Steigerung: Menschensein erhalten – Menschenseele retten – waltenden Gott empfangen."
+            "abweichung": "Wortgleich; der Hüter deutet: Weltgestalten / Gefühle – wenn Weltenform sich selbst fühlt: ohnmächtiges Geist-Erleben; ‹Liebe zu den Erdenwerten› rettet die Menschenseele. Steigerung: Menschensein erhalten – Menschenseele retten – waltenden Gott empfangen.",
+            "vortrag": "wh-5",
+            "anker": "m-oberwelt"
           }
         ]
       }
@@ -1801,7 +2037,9 @@
       "zitate": [
         {
           "text": "Doch Erdenwollen geist-ergeben, es läßt den Gott im Menschen walten.",
-          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 164"
+          "quelle": "GA 270a, Sechste Stunde (21.3.1924), S. 164",
+          "vortrag": "stunde-6",
+          "anker": "oberwelt-deutung"
         }
       ],
       "tafelbild": {
@@ -1818,7 +2056,9 @@
             "fassung": "GA 270c, Fünfte Wiederholungsstunde (15.9.1924) – Steigerung/Rettung",
             "text": "Du hältst von Lichtes-Scheines-Macht … / Du hältst vom Weltgestalten … / Du hältst vom Weltenleben …",
             "quelle": "GA 270c, S. 106–111",
-            "abweichung": "Wortgleich; der Hüter deutet: Weltenleben / Wollen – wenn Weltenleben voll erfasst: vernichtende Geistes-Lust; ‹geist-ergebenes Erdenwollen› lässt den Gott im Menschen walten. Steigerung: Menschensein erhalten – Menschenseele retten – waltenden Gott empfangen."
+            "abweichung": "Wortgleich; der Hüter deutet: Weltenleben / Wollen – wenn Weltenleben voll erfasst: vernichtende Geistes-Lust; ‹geist-ergebenes Erdenwollen› lässt den Gott im Menschen walten. Steigerung: Menschensein erhalten – Menschenseele retten – waltenden Gott empfangen.",
+            "vortrag": "wh-5",
+            "anker": "m-oberwelt"
           }
         ]
       }
@@ -1876,7 +2116,9 @@
       "zitate": [
         {
           "text": "O schau die Drei / Sie sind die Eins …",
-          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 177"
+          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 177",
+          "vortrag": "stunde-7",
+          "anker": "m-drei"
         }
       ],
       "tafelbild": {
@@ -1893,14 +2135,18 @@
             "fassung": "GA 270c, Sechste Wiederholungsstunde (17.9.1924) – Fassung ‹Schau die Drei›",
             "text": "Schau die Drei, / Sie sind die Eins, / Wenn du die Menschenprägung / Im Erdendasein trägst. … Sie sind die Drei, / Die Drei, die als das Eins / Im Erdendasein leben.",
             "quelle": "GA 270c, S. 126–128; Tafel S. 139 (GA 270i)",
-            "abweichung": "Beginnt mit ‹Schau die Drei› (ohne ‹O›); Schlussstrophe ‹Sie sind die Drei, Die Drei, die als das Eins Im Erdendasein leben›. Die App-Fassung der Siebten Stunde (11.4.1924) beginnt mit ‹O schau die Drei›. Die drei Mittelzeilen (Erlebe/Empfinde/Erdenke) sind von den drei Siegelzeichen begleitet (Dreieck aufwärts, Sanduhr, Dreieck abwärts)."
+            "abweichung": "Beginnt mit ‹Schau die Drei› (ohne ‹O›); Schlussstrophe ‹Sie sind die Drei, Die Drei, die als das Eins Im Erdendasein leben›. Die App-Fassung der Siebten Stunde (11.4.1924) beginnt mit ‹O schau die Drei›. Die drei Mittelzeilen (Erlebe/Empfinde/Erdenke) sind von den drei Siegelzeichen begleitet (Dreieck aufwärts, Sanduhr, Dreieck abwärts).",
+            "vortrag": "wh-6",
+            "anker": "m-schau"
           }
         ]
       },
       "editorische_hinweise": [
         {
           "text": "Die zittrigen Schriftzüge im handschriftlichen Entwurf deuten darauf hin, dass Rudolf Steiner das Mantram am 11. April 1924 auf der Autofahrt von Stuttgart nach Dornach niederschrieb, um unmittelbar nach der Ankunft die Siebente Stunde zu halten. In der Reinschrift lautet die erste Zeile bereits ‹Schau die Drei› statt ‹O schau die Drei›; in dieser Form erscheint sie auch in der Sechsten Wiederholungsstunde.",
-          "quelle": "GA 270a, Hinweis zu S. 176"
+          "quelle": "GA 270a, Hinweis zu S. 176",
+          "vortrag": "stunde-7",
+          "anker": "drei-hinfuehrung"
         }
       ]
     },
@@ -1957,7 +2203,9 @@
       "zitate": [
         {
           "text": "Des Kopfes Geist, du kannst ihn wollen …",
-          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 186"
+          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 186",
+          "vortrag": "stunde-7",
+          "anker": "umkehr-deutung"
         }
       ],
       "tafelbild": {
@@ -1974,7 +2222,9 @@
             "fassung": "GA 270c, Sechste Wiederholungsstunde (17.9.1924) – Wiederholung",
             "text": "Des Kopfes Geist, du kannst ihn wollen … Des Herzens Seele, du kannst sie fühlen … Der Glieder Kraft, du kannst sie denken …",
             "quelle": "GA 270c, S. 130–133",
-            "abweichung": "Wortgleich; die Steigerungen webest/lebest/strebest und Weisheit/Schein/Tugend werden ausdrücklich genannt."
+            "abweichung": "Wortgleich; die Steigerungen webest/lebest/strebest und Weisheit/Schein/Tugend werden ausdrücklich genannt.",
+            "vortrag": "wh-6",
+            "anker": "m-umkehr"
           }
         ]
       }
@@ -2026,7 +2276,9 @@
       "zitate": [
         {
           "text": "Tritt ein / Das Tor ist geöffnet …",
-          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 187"
+          "quelle": "GA 270a, Siebente Stunde (11.4.1924), S. 187",
+          "vortrag": "stunde-7",
+          "anker": "m-tor"
         }
       ],
       "tafelbild": {
@@ -2043,7 +2295,9 @@
             "fassung": "GA 270c, Sechste Wiederholungsstunde (17.9.1924) – Wiederholung",
             "text": "Tritt ein / Das Tor ist geöffnet / Du wirst / Ein wahrer Mensch werden.",
             "quelle": "GA 270c, S. 135; Tafel S. 139 (GA 270i)",
-            "abweichung": "Wortgleich; in der Sechsten Wiederholungsstunde mit roter Kreide quer zum ‹Schau die Drei›-Mantram an die Tafel geschrieben, ‹wie von Michael aus Weltenfernen›."
+            "abweichung": "Wortgleich; in der Sechsten Wiederholungsstunde mit roter Kreide quer zum ‹Schau die Drei›-Mantram an die Tafel geschrieben, ‹wie von Michael aus Weltenfernen›.",
+            "vortrag": "wh-6",
+            "anker": "tor-hinfuehrung"
           }
         ]
       }
@@ -2095,7 +2349,9 @@
       "zitate": [
         {
           "text": "O Mensch, erkenne dich selbst! So tönt das Weltenwort.",
-          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 200"
+          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 200",
+          "vortrag": "stunde-8",
+          "anker": "m-weltenwort"
         }
       ],
       "tafelbild": {
@@ -2108,7 +2364,9 @@
       "editorische_hinweise": [
         {
           "text": "Beim ersten Vortragen in der Achten Stunde wurde die Zeile ‹In deines Sinnes Seinserleben› gesprochen als ‹In deiner Sinne Seinserleben›; daraus ergibt sich die Frage, ob die Zeile als ‹In deines Sinnesseins Erleben› zu verstehen ist (vgl. die Ausführungen der Neunten Stunde). Die Zeilen ‹Du hörst es› / ‹Du fühlst es› und das Wort ‹Zeitvernichtungsstrom› wurden in frühen Übertragungen irrtümlich ‹Du hörest es› / ‹Du fühlest es› / ‹Zeitvernichtungsstrome›.",
-          "quelle": "GA 270a, Hinweis zu S. 200; Vorbemerkungen S. 18"
+          "quelle": "GA 270a, Hinweis zu S. 200; Vorbemerkungen S. 18",
+          "vortrag": "stunde-8",
+          "anker": "m-weltenwort"
         }
       ]
     },
@@ -2165,7 +2423,9 @@
       "zitate": [
         {
           "text": "Und das Wollen, es erstehet als Weltgedankenschaffen.",
-          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 208"
+          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 208",
+          "vortrag": "stunde-8",
+          "anker": "m-denken"
         }
       ],
       "tafelbild": {
@@ -2182,7 +2442,9 @@
             "fassung": "GA 270c, Siebente Wiederholungsstunde (20.9.1924)",
             "text": "Sieh hinter des Denkens Sinneslicht, / Wie in der finstern Geisteszelle / Wollen sich hebt aus Leibestiefen; … Und das Wollen, es erstehet / Als Weltgedankenschaffen.",
             "quelle": "GA 270c, S. 153–161; Tafeltexte S. 165; Tafel (GA 270i)",
-            "abweichung": "Wortgleich zur App-Fassung der Achten Stunde. Auf der Tafel der Siebenten Wiederholungsstunde ist zusätzlich ‹Sinneslicht› unterstrichen; die Unterstreichung von ‹fließen› fehlt dort."
+            "abweichung": "Wortgleich zur App-Fassung der Achten Stunde. Auf der Tafel der Siebenten Wiederholungsstunde ist zusätzlich ‹Sinneslicht› unterstrichen; die Unterstreichung von ‹fließen› fehlt dort.",
+            "vortrag": "wh-7",
+            "anker": "umkehr-denken"
           }
         ]
       }
@@ -2234,7 +2496,9 @@
       "zitate": [
         {
           "text": "Und das Weltenleben geistert als Menschenwesensmacht.",
-          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 210"
+          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 210",
+          "vortrag": "stunde-8",
+          "anker": "m-fuehlen"
         }
       ],
       "tafelbild": {
@@ -2251,14 +2515,18 @@
             "fassung": "GA 270c, Siebente Wiederholungsstunde (20.9.1924) – Fassung ‹Seelenweben›",
             "text": "Sieh in des Fühlens Seelenweben, / Wie in dem Träumedämmern / Leben aus Weltenfernen strömet; … Und das Weltenleben geistert / Als Menschenwesensmacht.",
             "quelle": "GA 270c, S. 156–161; Tafeltexte S. 165",
-            "abweichung": "Textvariante: Die Siebente Wiederholungsstunde hat ‹Sieh in des Fühlens Seelenweben› und ‹Leben aus Weltenfernen strömet›. In der Achten Stunde (erster Band, GA 270a; App-Fassung) wurde an die Tafel geschrieben ‹Seelenwehen› (statt ‹Seelenweben›) und ‹strömt› (statt ‹strömet›)."
+            "abweichung": "Textvariante: Die Siebente Wiederholungsstunde hat ‹Sieh in des Fühlens Seelenweben› und ‹Leben aus Weltenfernen strömet›. In der Achten Stunde (erster Band, GA 270a; App-Fassung) wurde an die Tafel geschrieben ‹Seelenwehen› (statt ‹Seelenweben›) und ‹strömt› (statt ‹strömet›).",
+            "vortrag": "wh-7",
+            "anker": "fuehlen-deutung"
           }
         ]
       },
       "editorische_hinweise": [
         {
           "text": "Rudolf Steiner wechselte zwischen ‹Seelenweben› und ‹Seelenwehen›: in der Achten Stunde wurde an die Tafel ‹Seelenwehen›, in der Siebenten Wiederholungsstunde ‹Seelenweben› geschrieben; auch beim Sprechen wechselte er, und beide Formen finden sich in den handschriftlichen Vorlagen.",
-          "quelle": "GA 270a, Hinweis zu S. 209"
+          "quelle": "GA 270a, Hinweis zu S. 209",
+          "vortrag": "stunde-8",
+          "anker": "fuehlen-deutung"
         }
       ]
     },
@@ -2315,7 +2583,9 @@
       "zitate": [
         {
           "text": "Und das Denken, es erscheinet als Willenszauberwesen.",
-          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 213"
+          "quelle": "GA 270a, Achte Stunde (18.4.1924), S. 213",
+          "vortrag": "stunde-8",
+          "anker": "m-wollen"
         }
       ],
       "tafelbild": {
@@ -2332,7 +2602,9 @@
             "fassung": "GA 270c, Siebente Wiederholungsstunde (20.9.1924)",
             "text": "Sieh über des Wollens Leibeswirken, / Wie in schlafende Wirkensfelder / Denken sich senkt aus Haupteskräften; … Und das Denken, es erscheinet / Als Willenszauberwesen.",
             "quelle": "GA 270c, S. 159–161; Tafeltexte S. 165",
-            "abweichung": "Wortgleich zur App-Fassung der Achten Stunde. Auf der Tafel der Siebenten Wiederholungsstunde fehlen die Unterstreichungen von ‹Wollens› und ‹verwandlen›."
+            "abweichung": "Wortgleich zur App-Fassung der Achten Stunde. Auf der Tafel der Siebenten Wiederholungsstunde fehlen die Unterstreichungen von ‹Wollens› und ‹verwandlen›.",
+            "vortrag": "wh-7",
+            "anker": "wollen-deutung"
           }
         ]
       }
@@ -2402,7 +2674,9 @@
       "zitate": [
         {
           "text": "O Mensch, erschaue dich in der Elemente Reich.",
-          "quelle": "GA 270a, Neunte Stunde (22.4.1924), S. 225"
+          "quelle": "GA 270a, Neunte Stunde (22.4.1924), S. 225",
+          "vortrag": "stunde-9",
+          "anker": "uebung-deutung"
         }
       ],
       "varianten": {
@@ -2412,20 +2686,26 @@
             "fassung": "GA 270c, Vierte Wiederholungsstunde (13.9.1924) – die neun Strahlen",
             "text": "O Mensch, ertaste … erlebe … erfühle … erdenke … erschaue dich in der Elemente Reich. / O Mensch, so lasse walten … erwese dich durch den Weltenkreis. / O Mensch, erhalte dir … erschaffe dich durch die Himmelsweisheit.",
             "quelle": "GA 270c, S. 79–88",
-            "abweichung": "Wortgleich; der Hüter deutet die Steigerungen Stütze–Bildner–Pfleger–Helfer und ertaste–erlebe–erfühle–erdenke und legt das Weltenwort ‹O Mensch, erkenne dich selbst!› in neun Strahlen auseinander (Leib/Elemente, Seele/Wandelsterne, Geist/Ruhesterne)."
+            "abweichung": "Wortgleich; der Hüter deutet die Steigerungen Stütze–Bildner–Pfleger–Helfer und ertaste–erlebe–erfühle–erdenke und legt das Weltenwort ‹O Mensch, erkenne dich selbst!› in neun Strahlen auseinander (Leib/Elemente, Seele/Wandelsterne, Geist/Ruhesterne).",
+            "vortrag": "wh-4",
+            "anker": "elemente-hinfuehrung"
           },
           {
             "fassung": "GA 270c, Berner Stunde (17.4.1924) – Schlussvariante ‹des Himmels Hüter›",
             "text": "O Mensch, ertaste in deines Leibes ganzem Sein … O Mensch, erschaffe dich durch des Himmels Hüter. (Schlusswiederholung: ‹durch die Himmelshüter›)",
             "quelle": "GA 270c, S. 222–227",
-            "abweichung": "Die Element- und Sternenstrophen sind wortgleich zur App-Fassung; die zusammenfassende Schlusszeile lautet jedoch ‹O Mensch, erschaffe dich durch des Himmels Hüter› bzw. in der Schlusswiederholung ‹durch die Himmelshüter› – statt ‹durch die Himmelsweisheit› (App-Fassung der Neunten Stunde / Vierten Wiederholungsstunde)."
+            "abweichung": "Die Element- und Sternenstrophen sind wortgleich zur App-Fassung; die zusammenfassende Schlusszeile lautet jedoch ‹O Mensch, erschaffe dich durch des Himmels Hüter› bzw. in der Schlusswiederholung ‹durch die Himmelshüter› – statt ‹durch die Himmelsweisheit› (App-Fassung der Neunten Stunde / Vierten Wiederholungsstunde).",
+            "vortrag": "bern",
+            "anker": "neun-hinfuehrung"
           }
         ]
       },
       "editorische_hinweise": [
         {
           "text": "In der Berner Stunde wurde gemäss Stenogramm an die Tafel ‹O Mensch, erschaffe dich durch des Himmels Hüter› geschrieben, sonst heisst es ‹die Himmelsweisheit›; bei der Schlusswiederholung der Berner Stunde wurde ‹die Himmelshüter› gesprochen.",
-          "quelle": "GA 270c, Hinweis zu S. 225"
+          "quelle": "GA 270c, Hinweis zu S. 225",
+          "vortrag": "bern",
+          "anker": "neun-hinfuehrung"
         }
       ]
     },
@@ -2470,7 +2750,9 @@
       "zitate": [
         {
           "text": "Und du schaust dich selbst als Leib aus Geisteshöhen.",
-          "quelle": "GA 270a, Neunte Stunde (22.4.1924), S. 231"
+          "quelle": "GA 270a, Neunte Stunde (22.4.1924), S. 231",
+          "vortrag": "stunde-9",
+          "anker": "m-trag"
         }
       ]
     },
@@ -2521,7 +2803,9 @@
       "zitate": [
         {
           "text": "Der Götter Sprache zeuget mich – bringt mich hervor, zeuget mich.",
-          "quelle": "GA 270b, Zehnte Stunde (25.4.1924), S. 20"
+          "quelle": "GA 270b, Zehnte Stunde (25.4.1924), S. 20",
+          "vortrag": "stunde-10",
+          "anker": "m-haupt-wiederholung"
         }
       ],
       "tafelbild": {
@@ -2579,7 +2863,9 @@
       "zitate": [
         {
           "text": "So lebet Ihr im Erdenleibe als Menschen-Wesenheit.",
-          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 37"
+          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 37",
+          "vortrag": "stunde-11",
+          "anker": "m1"
         }
       ],
       "tafelbild": {
@@ -2637,7 +2923,9 @@
       "zitate": [
         {
           "text": "So schreitet Ihr im Erdenwandel als Menschen-Schöpferkraft.",
-          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 39"
+          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 39",
+          "vortrag": "stunde-11",
+          "anker": "m2"
         }
       ],
       "tafelbild": {
@@ -2695,7 +2983,9 @@
       "zitate": [
         {
           "text": "So strebet Ihr im Erdenwerke als Menschen-Sinnes-Taten.",
-          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 42"
+          "quelle": "GA 270b, Elfte Stunde (2.5.1924), S. 42",
+          "vortrag": "stunde-11",
+          "anker": "m3"
         }
       ],
       "tafelbild": {
@@ -2759,7 +3049,9 @@
       "zitate": [
         {
           "text": "Blick' auf deiner Sinne Leuchtewesen.",
-          "quelle": "GA 270b, Zwölfte Stunde (11.5.1924), S. 55"
+          "quelle": "GA 270b, Zwölfte Stunde (11.5.1924), S. 55",
+          "vortrag": "stunde-12",
+          "anker": "denken-deutung"
         }
       ],
       "tafelbild": {
@@ -2823,7 +3115,9 @@
       "zitate": [
         {
           "text": "Fühl' der Erde mächtig Widerstreben.",
-          "quelle": "GA 270b, Zwölfte Stunde (11.5.1924), S. 61"
+          "quelle": "GA 270b, Zwölfte Stunde (11.5.1924), S. 61",
+          "vortrag": "stunde-12",
+          "anker": "m-denken"
         }
       ],
       "tafelbild": {
@@ -2887,7 +3181,9 @@
       "zitate": [
         {
           "text": "Blick' auf des Gewissens Seelen-Führung.",
-          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 80"
+          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 80",
+          "vortrag": "stunde-13",
+          "anker": "willen-deutung"
         }
       ],
       "tafelbild": {
@@ -2951,7 +3247,9 @@
       "zitate": [
         {
           "text": "Der vor des Geisterlandes Pforten steht …",
-          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89"
+          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 89",
+          "vortrag": "stunde-13",
+          "anker": "hueter-deutung"
         }
       ],
       "varianten": {
@@ -2961,7 +3259,9 @@
             "fassung": "GA 270c, Berner Stunde (17.4.1924)",
             "text": "Erkenne erst den ernsten Hüter, / Der vor des Geisterlandes Pforten steht, / Den Einlaß deiner Sinnenkraft / Und deines Verstandes Macht verwehrend …",
             "quelle": "GA 270c, S. 216",
-            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Bern, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Schilderung der alten Mysteriengrade und der Dreiheit jenseits der Schwelle (Sonne zwischen Denken und Fühlen, Mond zwischen Fühlen und Wollen)."
+            "abweichung": "Frühe, ausserhalb Dornachs gehaltene Fassung (Bern, vor den Dornacher Stunden). Wortgleich zur App-Fassung; eingebettet in die Schilderung der alten Mysteriengrade und der Dreiheit jenseits der Schwelle (Sonne zwischen Denken und Fühlen, Mond zwischen Fühlen und Wollen).",
+            "vortrag": "bern",
+            "anker": "m-hueter"
           }
         ]
       }
@@ -3007,7 +3307,9 @@
       "zitate": [
         {
           "text": "Es weckt in Stoffes-Sterben Geist-Geburt.",
-          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 90"
+          "quelle": "GA 270b, Dreizehnte Stunde (17.5.1924), S. 90",
+          "vortrag": "stunde-13",
+          "anker": "m-gegenwort"
         }
       ]
     },
@@ -3064,7 +3366,9 @@
       "zitate": [
         {
           "text": "Ich verlasse ihren Grund, so lang der Geist mich trägt.",
-          "quelle": "GA 270b, Vierzehnte Stunde (31.5.1924), S. 100"
+          "quelle": "GA 270b, Vierzehnte Stunde (31.5.1924), S. 100",
+          "vortrag": "stunde-14",
+          "anker": "gefahren"
         }
       ],
       "tafelbild": {
@@ -3128,7 +3432,9 @@
       "zitate": [
         {
           "text": "Erweck' in dir Innen-Licht in deinem Gottes-Welten-Licht.",
-          "quelle": "GA 270b, Fünfzehnte Stunde (21.6.1924), S. 129"
+          "quelle": "GA 270b, Fünfzehnte Stunde (21.6.1924), S. 129",
+          "vortrag": "stunde-15",
+          "anker": "hierarchien-deutung"
         }
       ]
     },
@@ -3179,7 +3485,9 @@
       "zitate": [
         {
           "text": "Erwecke dir in Weltenätherweiten die Lebensflammenschrift.",
-          "quelle": "GA 270b, Sechzehnte Stunde (28.6.1924), S. 146"
+          "quelle": "GA 270b, Sechzehnte Stunde (28.6.1924), S. 146",
+          "vortrag": "stunde-16",
+          "anker": "m-feuer"
         }
       ]
     },
@@ -3230,7 +3538,9 @@
       "zitate": [
         {
           "text": "Der Weltengeist in mir – mög' erleuchten mein Ich.",
-          "quelle": "GA 270b, Sechzehnte Stunde (28.6.1924), S. 148"
+          "quelle": "GA 270b, Sechzehnte Stunde (28.6.1924), S. 148",
+          "vortrag": "stunde-16",
+          "anker": "m-geheim"
         }
       ]
     },
@@ -3294,7 +3604,9 @@
       "zitate": [
         {
           "text": "Welt ist Ich-wollend Geistes-Wort.",
-          "quelle": "GA 270b, Siebzehnte Stunde (5.7.1924), S. 167"
+          "quelle": "GA 270b, Siebzehnte Stunde (5.7.1924), S. 167",
+          "vortrag": "stunde-17",
+          "anker": "rb-deutung"
         }
       ],
       "tafelbild": {
@@ -3365,7 +3677,9 @@
       "zitate": [
         {
           "text": "Empfanget das Licht der Höhen, daß ihr im Denken leuchten könnt …",
-          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 180"
+          "quelle": "GA 270b, Achtzehnte Stunde (12.7.1924), S. 180",
+          "vortrag": "stunde-18",
+          "anker": "m-goetter"
         }
       ]
     },
@@ -3429,7 +3743,9 @@
       "zitate": [
         {
           "text": "In des Urseins Liebe-Quell findet Menschen-Herz … Es ist Ich.",
-          "quelle": "GA 270b, Neunzehnte Stunde (2.8.1924), S. 196"
+          "quelle": "GA 270b, Neunzehnte Stunde (2.8.1924), S. 196",
+          "vortrag": "stunde-19",
+          "anker": "rueckblick"
         }
       ]
     },
@@ -3593,7 +3909,9 @@
       "zitate": [
         {
           "text": "Es ist das böse Gegenbild / Des Denkens, das in dir sich selbst / Verleugnet …",
-          "quelle": "GA 270a, Zweite Stunde (22.2.1924), S. 54"
+          "quelle": "GA 270a, Zweite Stunde (22.2.1924), S. 54",
+          "vortrag": "stunde-2",
+          "anker": "spruch-denken"
         }
       ],
       "varianten": {
@@ -3603,19 +3921,25 @@
             "fassung": "GA 270a, Zweite Stunde (22.2.1924) – Einführung und Deutung",
             "text": "Des dritten Tieres glasig Auge … Des zweiten Tieres Spottgesicht … Des ersten Tieres Knochengeist …",
             "quelle": "GA 270a, S. 53–61",
-            "abweichung": "Ausgangsfassung der App (Mantram 2), mit der vollständigen Hüter-Deutung."
+            "abweichung": "Ausgangsfassung der App (Mantram 2), mit der vollständigen Hüter-Deutung.",
+            "vortrag": "stunde-2",
+            "anker": "denken-leichnam"
           },
           {
             "fassung": "GA 270a, Dritte Stunde (29.2.1924) – Wiederholung",
             "text": "Des dritten Tieres glasig Auge … (wortgleich)",
             "quelle": "GA 270a, Dritte Stunde",
-            "abweichung": "Wortgleiche Wiederholung."
+            "abweichung": "Wortgleiche Wiederholung.",
+            "vortrag": "stunde-2",
+            "anker": "einleitung"
           },
           {
             "fassung": "GA 270c, Zweite Wiederholungsstunde (9.9.1924)",
             "text": "Des dritten Tieres glasig Auge … (Steigerung Bild – Kraft – Macht: Denken / Fühlen / Wollen)",
             "quelle": "GA 270c, S. 40–41",
-            "abweichung": "Wortgleich; der Hüter benennt ausdrücklich die Steigerung Bild – Kraft – Macht."
+            "abweichung": "Wortgleich; der Hüter benennt ausdrücklich die Steigerung Bild – Kraft – Macht.",
+            "vortrag": "wh-2",
+            "anker": "m-tiererklaerung"
           }
         ]
       }
