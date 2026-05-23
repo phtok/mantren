@@ -4,6 +4,7 @@ import { chapters, mantren, type Mantra } from '../lib/mantren';
 import { vortraegePublic } from '../lib/vortraege';
 import { kommentareForMantra } from '../lib/kommentar';
 import { tx } from '../lib/typografie';
+import quellenRaw from '../data/quellen.json';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 type SearchEntry =
@@ -30,6 +31,13 @@ type SearchEntry =
       chapter: string;
       key: string;
       kommentarTitel: string;
+      lines: string[];
+    }
+  | {
+      type: 'quelle';
+      href: string;
+      titel: string;
+      rubrik: string;
       lines: string[];
     };
 
@@ -103,12 +111,84 @@ for (const v of vortraegePublic) {
     })),
   });
 }
+
+// Quellen und editorische Notiz aus quellen.json
+type QuellenRaw = {
+  werk?: Record<string, string>;
+  quellen?: Array<Record<string, string | undefined>>;
+  textgrundlage?: Record<string, string>;
+  editorische_konventionen_webausgabe?: Record<string, string>;
+  ueberlieferung?: Record<string, string>;
+  rechtestatus?: Record<string, string>;
+  weiterfuehrende_literatur?: Array<{ ga: string; titel: string }>;
+  klassenstunden_uebersicht?: Record<string, string>;
+  editorische_beitraege?: Record<string, string>;
+  bearbeitung?: Record<string, string>;
+};
+const q = quellenRaw as QuellenRaw;
+
+function pushQuelle(anker: string, titel: string, rubrik: string, lines: string[]) {
+  const cleaned = lines.filter((l) => l && l.trim().length > 0).map(tx);
+  if (cleaned.length === 0) return;
+  searchIndex.push({
+    type: 'quelle',
+    href: `${base}quellen#${anker}`,
+    titel: tx(titel),
+    rubrik,
+    lines: cleaned,
+  });
+}
+
+if (q.werk) {
+  pushQuelle('werk', 'Werk', 'Quellen', [q.werk.titel, q.werk.autor, q.werk.gattung, q.werk.umfang_gesamt].filter(Boolean) as string[]);
+}
+if (q.editorische_beitraege) {
+  pushQuelle('editorische-beitraege', 'Editorische Beiträge zur Web-Ausgabe', 'Editorisches', Object.values(q.editorische_beitraege));
+}
+if (q.quellen) {
+  for (const eintrag of q.quellen) {
+    const id = String(eintrag.id || '');
+    if (!id) continue;
+    const lines: string[] = [];
+    for (const [k, v] of Object.entries(eintrag)) {
+      if (k === 'id') continue;
+      if (typeof v === 'string') lines.push(v);
+    }
+    pushQuelle(`q-${id}`, eintrag.kurztitel || eintrag.titel || id, 'Quellen', lines);
+  }
+}
+if (q.textgrundlage) {
+  pushQuelle('textgrundlage', 'Textgrundlage', 'Editorisches', Object.values(q.textgrundlage));
+}
+if (q.editorische_konventionen_webausgabe) {
+  pushQuelle('editorische-konventionen', 'Editorische Konventionen dieser Web-Ausgabe', 'Editorisches', Object.values(q.editorische_konventionen_webausgabe));
+}
+if (q.klassenstunden_uebersicht) {
+  pushQuelle('klassenstunden-uebersicht', 'Klassenstunden-Übersicht', 'Editorisches', Object.values(q.klassenstunden_uebersicht));
+}
+if (q.ueberlieferung) {
+  pushQuelle('ueberlieferung', 'Zur Überlieferung', 'Editorisches', Object.values(q.ueberlieferung));
+}
+if (q.rechtestatus) {
+  pushQuelle('rechtestatus', 'Rechtestatus', 'Editorisches', Object.values(q.rechtestatus));
+}
+if (q.weiterfuehrende_literatur && q.weiterfuehrende_literatur.length) {
+  pushQuelle(
+    'weiterfuehrende-literatur',
+    'Weiterführende Literatur',
+    'Quellen',
+    q.weiterfuehrende_literatur.map((l) => `GA ${l.ga} ${l.titel}`),
+  );
+}
+if (q.bearbeitung) {
+  pushQuelle('bearbeitungsstand', 'Bearbeitungsstand', 'Editorisches', Object.values(q.bearbeitung));
+}
 ---
 <Base title="Universalsuche">
   <article class="universalsuche">
     <header class="universalsuche-head">
       <h1 class="universalsuche-title">Universalsuche</h1>
-      <p class="universalsuche-subtitle">{tx('Durchsucht alle Texte dieser App: Mantren, Klassenstunden und Kommentare.')}</p>
+      <p class="universalsuche-subtitle">{tx('Durchsucht alle Texte dieser App: Mantren, Klassenstunden, Kommentare sowie Quellen und editorische Notiz.')}</p>
     </header>
 
     <label class="search-box" for="universal-search">
@@ -280,6 +360,31 @@ for (const v of vortraegePublic) {
           return { html: html, hits: matches.length };
         }
 
+        function renderQuelle(q, ql) {
+          var inTitel = q.titel && q.titel.toLowerCase().indexOf(ql) >= 0;
+          var matches = [];
+          for (var j = 0; j < q.lines.length; j++) {
+            var line = q.lines[j];
+            if (line.toLowerCase().indexOf(ql) >= 0) matches.push(snippet(line, ql, 90) || line);
+          }
+          if (!matches.length && !inTitel) return null;
+          var html = '<a class="result result-quelle" href="' + escapeHtml(q.href) + '">';
+          html += '<div class="result-head">';
+          html += '<span class="result-num"></span>';
+          html += '<span class="result-title">' + (inTitel ? highlight(q.titel, ql) : escapeHtml(q.titel)) + '</span>';
+          html += '<span class="result-chapter">' + escapeHtml(q.rubrik) + '</span>';
+          html += '</div>';
+          if (matches.length) {
+            html += '<div class="result-snippets">';
+            for (var m = 0; m < matches.length; m++) {
+              html += '<p class="snippet">' + highlight(matches[m], ql) + '</p>';
+            }
+            html += '</div>';
+          }
+          html += '</a>';
+          return { html: html, hits: matches.length };
+        }
+
         function render(q) {
           if (!q) {
             resultsEl.hidden = true;
@@ -295,6 +400,7 @@ for (const v of vortraegePublic) {
             mantra: { count: 0, hits: 0, html: '' },
             vortrag: { count: 0, hits: 0, html: '' },
             kommentar: { count: 0, hits: 0, html: '' },
+            quelle: { count: 0, hits: 0, html: '' },
           };
 
           for (var i = 0; i < data.length; i++) {
@@ -303,6 +409,7 @@ for (const v of vortraegePublic) {
             if (e.type === 'mantra') r = renderMantra(e, ql);
             else if (e.type === 'vortrag') r = renderVortrag(e, ql);
             else if (e.type === 'kommentar') r = renderKommentar(e, ql);
+            else if (e.type === 'quelle') r = renderQuelle(e, ql);
             if (!r) continue;
             var g = groups[e.type];
             g.count++;
@@ -310,7 +417,7 @@ for (const v of vortraegePublic) {
             g.html += r.html;
           }
 
-          var totalCount = groups.mantra.count + groups.vortrag.count + groups.kommentar.count;
+          var totalCount = groups.mantra.count + groups.vortrag.count + groups.kommentar.count + groups.quelle.count;
           if (totalCount === 0) {
             resultsEl.innerHTML = '<p class="no-results">Keine Treffer.</p>';
             return;
@@ -321,6 +428,7 @@ for (const v of vortraegePublic) {
           if (groups.mantra.count) summaryBits.push(groups.mantra.count + (groups.mantra.count === 1 ? ' Mantra' : ' Mantren'));
           if (groups.vortrag.count) summaryBits.push(groups.vortrag.count + (groups.vortrag.count === 1 ? ' Klassenstunde' : ' Klassenstunden'));
           if (groups.kommentar.count) summaryBits.push(groups.kommentar.count + (groups.kommentar.count === 1 ? ' Kommentar' : ' Kommentare'));
+          if (groups.quelle.count) summaryBits.push(groups.quelle.count + (groups.quelle.count === 1 ? ' Quelleneintrag' : ' Quelleneinträge'));
           html += '<p class="result-count">' + summaryBits.join(' · ') + '</p>';
 
           if (groups.mantra.count) {
@@ -334,6 +442,10 @@ for (const v of vortraegePublic) {
           if (groups.kommentar.count) {
             html += '<h2 class="result-group-head">Kommentare</h2>';
             html += groups.kommentar.html;
+          }
+          if (groups.quelle.count) {
+            html += '<h2 class="result-group-head">Quellen und Editorisches</h2>';
+            html += groups.quelle.html;
           }
 
           resultsEl.innerHTML = html;
