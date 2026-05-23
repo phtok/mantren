@@ -546,6 +546,10 @@ main.center {
   display: block;
 }
 
+.search-box + .index-nav {
+  margin-top: 1.6rem;
+}
+
 .search-input {
   width: 100%;
   border: 0;

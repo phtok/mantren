@@ -8,16 +8,39 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
+  actions: write
 
 concurrency:
   group: pages
   cancel-in-progress: true
 
 jobs:
+  # Auf main: den Stand auf den deploy-erlaubten Branch fast-forwarden
+  # und den eigenen Workflow per workflow_dispatch dort starten.
+  # (Pages-Environment Protection lässt main derzeit nicht zu;
+  # workflow_dispatch über GITHUB_TOKEN ist die Standard-Lösung.)
+  sync-deploy-branch:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fast-forward deploy branch to main
+        run: |
+          git push origin HEAD:refs/heads/claude/mantren-project-setup-KzVI1 --force-with-lease
+      - name: Dispatch deploy on deploy branch
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run deploy.yml --ref claude/mantren-project-setup-KzVI1 --repo "$GITHUB_REPOSITORY"
+
   build:
+    if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -45,6 +68,7 @@ jobs:
 
   deploy:
     needs: build
+    if: github.ref != 'refs/heads/main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
