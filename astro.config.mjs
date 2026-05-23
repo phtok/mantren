@@ -23,6 +23,10 @@ export default defineConfig({
       registerType: 'autoUpdate',
       base: `${base}/`,
       scope: `${base}/`,
+      // Register-Aufruf inline ins HTML; bei iOS Safari (PWA-Standalone)
+      // war das ausgelagerte /registerSW.js bisher nicht eingebunden,
+      // sodass der SW gar nicht registriert wurde.
+      injectRegister: 'inline',
       includeAssets: ['favicon.svg', 'fonts/*.woff2'],
       manifest: {
         name: 'Mantren',

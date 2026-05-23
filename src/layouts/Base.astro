@@ -43,6 +43,19 @@ const homeUrl = base;
     <meta name="description" content={description} />
     <meta name="robots" content="noai, noimageai" />
     <title>{fullTitle}</title>
+    <script is:inline define:vars={{ swUrl: `${base}sw.js`, swScope: base }}>
+      // Service-Worker-Registrierung explizit hier — die @vite-pwa/astro-
+      // Integration hat das injectRegister-Snippet bei uns nicht in die
+      // HTML-Seiten eingebaut (verifiziert via /offline-status/ auf iOS).
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register(swUrl, { scope: swScope }).catch(function (err) {
+            // Stillschweigend tolerieren — Diagnose-Seite zeigt es ohnehin.
+            try { console.warn('SW register failed:', err); } catch (e) {}
+          });
+        });
+      }
+    </script>
     <script is:inline>
       (function () {
         try {
