@@ -1184,6 +1184,14 @@ mark {
   color: var(--muted);
 }
 
+a.quelle-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 2px;
+}
+a.quelle-link:hover { text-decoration-color: var(--muted); }
+
 .klappe-section-head {
   font-size: 0.78rem;
   font-weight: 500;
@@ -1694,6 +1702,135 @@ dialog.tafel-fullscreen img {
   outline: none;
 }
 
+/* ─────────────── Quellen-Overlay ─────────────── */
+
+dialog.source-fullscreen[open] {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: var(--bg, #fff);
+  color: var(--text);
+  overflow: hidden;
+}
+
+dialog.source-fullscreen::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.source-fullscreen-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: max(env(safe-area-inset-top, 0px), 0.9rem) 1rem 0.7rem
+    max(env(safe-area-inset-left, 0px), 1rem);
+  border-bottom: 1px solid var(--line);
+  background: var(--bg, #fff);
+}
+
+.source-fullscreen-titles {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.source-fullscreen-eyebrow {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted-soft);
+}
+
+.source-fullscreen-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.source-fullscreen-meta {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.source-fullscreen-close {
+  flex: 0 0 auto;
+  background: transparent;
+  border: 0;
+  color: var(--muted);
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0.3rem 0.6rem;
+  margin: -0.3rem -0.3rem 0 0;
+  cursor: pointer;
+}
+.source-fullscreen-close:hover,
+.source-fullscreen-close:focus-visible {
+  color: var(--text);
+  outline: none;
+}
+
+.source-fullscreen-body {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem max(env(safe-area-inset-right, 0px), 1rem) 1.2rem
+    max(env(safe-area-inset-left, 0px), 1rem);
+}
+
+.source-fullscreen-loading {
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.source-fullscreen-vortrag {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+/* Wir blenden Headers/Footers der eingebetteten Vortragsseite aus —
+   die Kopfdaten stehen schon im Overlay-Header. */
+.source-fullscreen-vortrag .vortrag-head,
+.source-fullscreen-vortrag .pager,
+.source-fullscreen-vortrag .tts-player { display: none; }
+
+.source-fullscreen-vortrag .abschnitt {
+  margin: 0 0 1.4rem;
+}
+
+.source-fullscreen-foot {
+  flex: 0 0 auto;
+  padding: 0.7rem max(env(safe-area-inset-right, 0px), 1rem)
+    max(env(safe-area-inset-bottom, 0px), 0.8rem)
+    max(env(safe-area-inset-left, 0px), 1rem);
+  border-top: 1px solid var(--line);
+  background: var(--bg, #fff);
+}
+
+.source-fullscreen-open {
+  font-size: 0.88rem;
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+}
+.source-fullscreen-open:hover { text-decoration-color: var(--muted); }
+
 /* ─────────────── Druckansicht ─────────────── */
 
 @media print {
@@ -1715,6 +1852,7 @@ dialog.tafel-fullscreen img {
     max-height: none;
   }
   dialog.tafel-fullscreen { display: none; }
+  dialog.source-fullscreen { display: none; }
 }
 
 /* ─────────────── Index — Einführung ─────────────── */

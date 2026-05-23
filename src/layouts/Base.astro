@@ -91,6 +91,23 @@ const homeUrl = base;
       <img alt="" />
     </dialog>
 
+    <dialog id="source-fullscreen" class="source-fullscreen" aria-label="Quelle">
+      <header class="source-fullscreen-head">
+        <div class="source-fullscreen-titles">
+          <p class="source-fullscreen-eyebrow" data-source-eyebrow></p>
+          <h2 class="source-fullscreen-title" data-source-title></h2>
+          <p class="source-fullscreen-meta" data-source-meta></p>
+        </div>
+        <button type="button" class="source-fullscreen-close" aria-label="Schließen">×</button>
+      </header>
+      <div class="source-fullscreen-body" data-source-body>
+        <p class="source-fullscreen-loading">Lädt …</p>
+      </div>
+      <footer class="source-fullscreen-foot">
+        <a class="source-fullscreen-open" data-source-open href="#">Ganzen Vortrag öffnen →</a>
+      </footer>
+    </dialog>
+
     <script is:inline>
       (function () {
         var html = document.documentElement;
@@ -149,6 +166,8 @@ const homeUrl = base;
           }
           var dlg = document.getElementById('tafel-fullscreen');
           if (dlg && dlg.hasAttribute('open')) return;
+          var sdlg = document.getElementById('source-fullscreen');
+          if (sdlg && sdlg.hasAttribute('open')) return;
           var prev = document.querySelector('a[data-pager="prev"]');
           var next = document.querySelector('a[data-pager="next"]');
           if (e.key === 'ArrowLeft' && prev) { e.preventDefault(); prev.click(); }
@@ -204,6 +223,126 @@ const homeUrl = base;
           dialog.addEventListener('click', function (e) {
             if (e.target === dialog) closeTafel();
           });
+        })();
+
+        // Quellen-Overlay: lädt den Vortrag asynchron, zeigt den Abschnitt
+        // um den Anker plus etwas Folgekontext. X schließt; iOS-Rückkehr
+        // ohne Browser-Verlauf.
+        (function () {
+          var dialog = document.getElementById('source-fullscreen');
+          if (!dialog) return;
+          var body = dialog.querySelector('[data-source-body]');
+          var eyebrowEl = dialog.querySelector('[data-source-eyebrow]');
+          var titleEl = dialog.querySelector('[data-source-title]');
+          var metaEl = dialog.querySelector('[data-source-meta]');
+          var openLink = dialog.querySelector('[data-source-open]');
+          var closeBtn = dialog.querySelector('.source-fullscreen-close');
+
+          var cache = Object.create(null);
+
+          function show() {
+            if (typeof dialog.showModal === 'function') {
+              try { dialog.showModal(); } catch (e) { dialog.setAttribute('open', ''); }
+            } else dialog.setAttribute('open', '');
+            try { body.scrollTop = 0; } catch (e) {}
+          }
+          function close() {
+            if (typeof dialog.close === 'function') {
+              try { dialog.close(); } catch (e) { dialog.removeAttribute('open'); }
+            } else dialog.removeAttribute('open');
+          }
+
+          function fetchDoc(url) {
+            if (cache[url]) return Promise.resolve(cache[url]);
+            return fetch(url, { credentials: 'same-origin' })
+              .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.text(); })
+              .then(function (html) {
+                var doc = new DOMParser().parseFromString(html, 'text/html');
+                cache[url] = doc;
+                return doc;
+              });
+          }
+
+          function render(url, anker) {
+            body.innerHTML = '<p class="source-fullscreen-loading">Lädt …</p>';
+            eyebrowEl.textContent = '';
+            titleEl.textContent = '';
+            metaEl.textContent = '';
+            if (openLink) openLink.setAttribute('href', anker ? (url + '#' + anker) : url);
+            show();
+
+            fetchDoc(url).then(function (doc) {
+              // Kopfdaten aus der Vortragsseite
+              var head = doc.querySelector('.vortrag-head');
+              if (head) {
+                var t = head.querySelector('.vortrag-titel');
+                var m = head.querySelector('.vortrag-meta');
+                if (t) titleEl.textContent = t.textContent || '';
+                if (m) metaEl.textContent = (m.textContent || '').replace(/\s+/g, ' ').trim();
+              }
+              eyebrowEl.textContent = 'Quelle';
+
+              // Abschnitt am Anker + bis zu zwei folgende Abschnitte als Kontext
+              var section = anker ? doc.getElementById(anker) : null;
+              var frag = document.createDocumentFragment();
+              if (section) {
+                var node = section;
+                var taken = 0;
+                while (node && taken < 3) {
+                  frag.appendChild(node.cloneNode(true));
+                  // Nächsten Geschwister-Abschnitt finden
+                  node = node.nextElementSibling;
+                  while (node && !node.matches('.abschnitt')) node = node.nextElementSibling;
+                  taken++;
+                }
+              } else {
+                // Fallback: ersten Abschnitt
+                var first = doc.querySelector('.vortrag-body .abschnitt');
+                if (first) frag.appendChild(first.cloneNode(true));
+              }
+              body.innerHTML = '';
+              if (frag.childNodes.length === 0) {
+                body.innerHTML = '<p class="source-fullscreen-loading">Quelle nicht gefunden.</p>';
+              } else {
+                var wrapper = document.createElement('div');
+                wrapper.className = 'source-fullscreen-vortrag';
+                wrapper.appendChild(frag);
+                body.appendChild(wrapper);
+              }
+            }).catch(function () {
+              body.innerHTML = '<p class="source-fullscreen-loading">Konnte Quelle nicht laden.</p>';
+            });
+          }
+
+          document.addEventListener('click', function (e) {
+            var t = e.target;
+            if (!(t instanceof Element)) return;
+            var link = t.closest('a[data-source-link]');
+            if (!link) return;
+            var href = link.getAttribute('href');
+            if (!href) return;
+            // Externe Links bzw. neue Tabs werden nicht abgefangen
+            if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;
+            if (link.target === '_blank') return;
+
+            // Auflösen relativ zur aktuellen Seite
+            var url;
+            try { url = new URL(href, window.location.href); } catch (err) { return; }
+            // Nur eigene Origin
+            if (url.origin !== window.location.origin) return;
+
+            var anker = (url.hash || '').replace(/^#/, '');
+            var pageUrl = url.origin + url.pathname + url.search;
+
+            e.preventDefault();
+            render(pageUrl, anker || null);
+          });
+
+          if (closeBtn) closeBtn.addEventListener('click', close);
+          dialog.addEventListener('click', function (e) {
+            if (e.target === dialog) close();
+          });
+          dialog.addEventListener('cancel', function () { close(); });
         })();
 
         // Wischen links/rechts blättert wie eine Buchseite

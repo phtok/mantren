@@ -11,9 +11,12 @@ interface Props {
 const { kommentar, mantraId, klappenKey } = Astro.props;
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
-const vortragLink = kommentar.vortrag && kommentar.anker
-  ? `${base}${kommentar.vortrag}#${kommentar.anker}`
-  : null;
+const linkFor = (vortrag?: string | null, anker?: string | null): string | null => {
+  if (!vortrag) return null;
+  return anker ? `${base}${vortrag}#${anker}` : `${base}${vortrag}`;
+};
+
+const vortragLink = linkFor(kommentar.vortrag, kommentar.anker);
 
 const q = kommentar.quelle;
 const quelleParts = [q.stunde, q.ort, q.datum, `GA ${q.ga}, S. ${q.seiten}`].filter(Boolean);
@@ -74,12 +77,19 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
 
     {kommentar.zitate && kommentar.zitate.length > 0 && (
       <div class="klappe-zitate">
-        {kommentar.zitate.map((z) => (
-          <blockquote class="klappe-zitat">
-            <p>{tx(z.text)}</p>
-            <cite>{tx(z.quelle)}</cite>
-          </blockquote>
-        ))}
+        {kommentar.zitate.map((z) => {
+          const href = linkFor(z.vortrag, z.anker);
+          return (
+            <blockquote class="klappe-zitat">
+              <p>{tx(z.text)}</p>
+              {href ? (
+                <cite><a class="quelle-link" href={href} data-source-link>{tx(z.quelle)}</a></cite>
+              ) : (
+                <cite>{tx(z.quelle)}</cite>
+              )}
+            </blockquote>
+          );
+        })}
       </div>
     )}
 
@@ -101,10 +111,10 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
         <h3 class="klappe-section-head">Parallelstellen</h3>
         <ul>
           {kommentar.parallelstellen.map((p) => {
-            const link = p.vortrag && p.anker ? `${base}${p.vortrag}#${p.anker}` : null;
+            const link = linkFor(p.vortrag, p.anker);
             return (
               <li>
-                {link ? <a href={link}>{tx(p.ref)}</a> : <span>{tx(p.ref)}</span>}
+                {link ? <a href={link} data-source-link>{tx(p.ref)}</a> : <span>{tx(p.ref)}</span>}
                 {p.art && <span class="klappe-parallel-art"> – {tx(p.art)}</span>}
               </li>
             );
@@ -122,14 +132,21 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
           )}
           {kommentar.varianten.fassungen && kommentar.varianten.fassungen.length > 0 && (
             <ul class="klappe-fassungen">
-              {kommentar.varianten.fassungen.map((f) => (
-                <li class="klappe-fassung">
-                  <span class="klappe-fassung-name">{tx(f.fassung)}</span>
-                  {f.abweichung && <span class="klappe-fassung-abw"> – {tx(f.abweichung)}</span>}
-                  {f.text && <p class="klappe-fassung-text">{tx(f.text)}</p>}
-                  <cite class="klappe-fassung-quelle">{tx(f.quelle)}</cite>
-                </li>
-              ))}
+              {kommentar.varianten.fassungen.map((f) => {
+                const href = linkFor(f.vortrag, f.anker);
+                return (
+                  <li class="klappe-fassung">
+                    <span class="klappe-fassung-name">{tx(f.fassung)}</span>
+                    {f.abweichung && <span class="klappe-fassung-abw"> – {tx(f.abweichung)}</span>}
+                    {f.text && <p class="klappe-fassung-text">{tx(f.text)}</p>}
+                    {href ? (
+                      <cite class="klappe-fassung-quelle"><a class="quelle-link" href={href} data-source-link>{tx(f.quelle)}</a></cite>
+                    ) : (
+                      <cite class="klappe-fassung-quelle">{tx(f.quelle)}</cite>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           )}
         </div>
@@ -140,12 +157,19 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
       <details class="klappe-apparat klappe-hinweise">
         <summary class="klappe-apparat-summary">Editorische Hinweise</summary>
         <ul class="klappe-apparat-body klappe-hinweise-list">
-          {kommentar.editorische_hinweise.map((h) => (
-            <li>
-              <p>{tx(h.text)}</p>
-              <cite>{tx(h.quelle)}</cite>
-            </li>
-          ))}
+          {kommentar.editorische_hinweise.map((h) => {
+            const href = linkFor(h.vortrag, h.anker);
+            return (
+              <li>
+                <p>{tx(h.text)}</p>
+                {href ? (
+                  <cite><a class="quelle-link" href={href} data-source-link>{tx(h.quelle)}</a></cite>
+                ) : (
+                  <cite>{tx(h.quelle)}</cite>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </details>
     )}
@@ -157,7 +181,7 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
       )}
       {q.anmerkung && <p class="klappe-anmerkung">{tx(q.anmerkung)}</p>}
       {vortragLink && (
-        <a class="klappe-zur-stelle" href={vortragLink}>Zur Vortragsstelle →</a>
+        <a class="klappe-zur-stelle" href={vortragLink} data-source-link>Zur Vortragsstelle →</a>
       )}
     </div>
   </div>
