@@ -13,7 +13,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
 const linkFor = (vortrag?: string | null, anker?: string | null): string | null => {
   if (!vortrag) return null;
-  return anker ? `${base}${vortrag}#${anker}` : `${base}${vortrag}`;
+  return anker ? `${base}${vortrag}/#${anker}` : `${base}${vortrag}/`;
 };
 
 const vortragLink = linkFor(kommentar.vortrag, kommentar.anker);

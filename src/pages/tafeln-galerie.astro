@@ -72,7 +72,7 @@ items.sort((a, b) => a.datum.localeCompare(b.datum));
             <span aria-hidden="true"> · </span>
             <span>{tx(it.ga)}</span>
           </p>
-          <a class="galerie-lesen" href={`${base}${it.vortragId}#${it.anker}`}>
+          <a class="galerie-lesen" href={`${base}${it.vortragId}/#${it.anker}`}>
             Im Vortrag lesen →
           </a>
         </li>
@@ -82,11 +82,11 @@ items.sort((a, b) => a.datum.localeCompare(b.datum));
     <p class="vortrag-back">
       <a href={base}>← Zum Mantren-Index</a>
       <span aria-hidden="true"> · </span>
-      <a href={`${base}vortraege`}>Vorträge</a>
+      <a href={`${base}vortraege/`}>Vorträge</a>
       <span aria-hidden="true"> · </span>
-      <a href={`${base}glossar`}>Glossar</a>
+      <a href={`${base}glossar/`}>Glossar</a>
       <span aria-hidden="true"> · </span>
-      <a href={`${base}quellen`}>Quellen</a>
+      <a href={`${base}quellen/`}>Quellen</a>
     </p>
   </article>
 </Base>

@@ -8,7 +8,10 @@ const base = '/mantren';
 export default defineConfig({
   site,
   base,
-  trailingSlash: 'ignore',
+  // Astro-Routen IMMER mit Trailing-Slash. GitHub Pages macht sonst
+  // einen 301-Redirect (z.B. /stunde-1 → /stunde-1/), der offline
+  // nicht funktioniert und den SW-Precache aushebelt.
+  trailingSlash: 'always',
   build: {
     // CSS direkt ins HTML einbetten — vermeidet Hash-Mismatch zwischen
     // HTML und CSS-Datei bei PWA-Updates (alte HTML referenziert sonst

@@ -16,7 +16,7 @@ const searchIndex = mantren.map((m) => {
     }
   }
   return {
-    href: `${base}${m.id}`,
+    href: `${base}${m.id}/`,
     number: m.number ?? '',
     title: tx(m.title ?? ''),
     chapter: tx(chapter?.title ?? ''),
@@ -26,25 +26,25 @@ const searchIndex = mantren.map((m) => {
 
 const offlineUrls = [
   base,
-  ...mantren.map((m) => `${base}${m.id}`),
-  `${base}vortraege`,
-  ...vortraegePublic.map((v) => `${base}${v.id}`),
-  `${base}quellen`,
-  `${base}einfuehrung`,
-  `${base}tafeln-galerie`,
-  `${base}universalsuche`,
-  `${base}impressum`,
+  ...mantren.map((m) => `${base}${m.id}/`),
+  `${base}vortraege/`,
+  ...vortraegePublic.map((v) => `${base}${v.id}/`),
+  `${base}quellen/`,
+  `${base}einfuehrung/`,
+  `${base}tafeln-galerie/`,
+  `${base}universalsuche/`,
+  `${base}impressum/`,
   `${base}fonts/inclusive-sans.woff2`,
   `${base}favicon.svg`,
 ];
 
 const navLinks = [
-  { href: `${base}einfuehrung`, label: 'Einführung' },
-  { href: `${base}vortraege`, label: 'Klassenstunden' },
-  { href: `${base}tafeln-galerie`, label: 'Wandtafelgalerie' },
-  { href: `${base}quellen`, label: 'Quellen' },
-  { href: `${base}universalsuche`, label: 'Universalsuche' },
-  { href: `${base}impressum`, label: 'Impressum' },
+  { href: `${base}einfuehrung/`, label: 'Einführung' },
+  { href: `${base}vortraege/`, label: 'Klassenstunden' },
+  { href: `${base}tafeln-galerie/`, label: 'Wandtafelgalerie' },
+  { href: `${base}quellen/`, label: 'Quellen' },
+  { href: `${base}universalsuche/`, label: 'Universalsuche' },
+  { href: `${base}impressum/`, label: 'Impressum' },
 ];
 ---
 <Base title="Mantren">
@@ -86,7 +86,7 @@ const navLinks = [
           <ul class="toc-list">
             {list.map((m) => (
               <li>
-                <a class="toc-link" href={`${base}${m.id}`}>
+                <a class="toc-link" href={`${base}${m.id}/`}>
                   <span class="toc-number">{m.number || ''}</span>
                   {m.title && <span class="toc-title">{tx(m.title)}</span>}
                 </a>
