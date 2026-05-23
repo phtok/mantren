@@ -1,6 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const buildTime = new Date().toISOString();
+const swUrl = `${base}sw.js`;
+const swScope = base;
 ---
 <Base title="Offline-Status">
   <article class="offline-diag">
@@ -15,6 +18,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         <dt>Online</dt><dd id="diag-online">…</dd>
         <dt>Standalone (PWA installiert)</dt><dd id="diag-standalone">…</dd>
         <dt>User-Agent</dt><dd id="diag-ua">…</dd>
+        <dt>HTML-Build</dt><dd>{buildTime}</dd>
+        <dt>SW-URL</dt><dd>{swUrl}</dd>
       </dl>
     </section>
 
@@ -26,6 +31,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         <dt>Scope</dt><dd id="diag-sw-scope">…</dd>
         <dt>State</dt><dd id="diag-sw-state">…</dd>
         <dt>Controller aktiv</dt><dd id="diag-sw-ctrl">…</dd>
+        <dt>SW MIME-Type</dt><dd id="diag-sw-mime">…</dd>
+        <dt>Letzter Register-Fehler</dt><dd id="diag-sw-error">–</dd>
       </dl>
     </section>
 
@@ -50,7 +57,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     <section class="offline-diag-section">
       <h2>Aktionen</h2>
       <div class="offline-diag-actions">
-        <button class="offline-diag-btn" id="diag-update">Service Worker prüfen / aktualisieren</button>
+        <button class="offline-diag-btn" id="diag-register">Service Worker jetzt registrieren</button>
+        <button class="offline-diag-btn" id="diag-update">Update prüfen</button>
         <button class="offline-diag-btn offline-diag-btn--danger" id="diag-purge">
           Alle Caches und SW löschen
         </button>
@@ -65,7 +73,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     </p>
   </article>
 
-  <script is:inline>
+  <script is:inline define:vars={{ swUrl, swScope }}>
     (function () {
       function setText(id, v) {
         var el = document.getElementById(id);
@@ -189,13 +197,43 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         });
       }
 
+      // SW MIME-Type prüfen (HEAD request)
+      if (swSupport && navigator.onLine) {
+        fetch(swUrl, { method: 'HEAD', cache: 'no-store' }).then(function (r) {
+          var ct = r.headers.get('content-type') || '(leer)';
+          var ok = r.ok && /javascript|ecmascript/i.test(ct);
+          setText('diag-sw-mime', r.status + ' ' + ct);
+          setOk('diag-sw-mime', ok);
+        }).catch(function (e) {
+          setText('diag-sw-mime', 'Fehler: ' + (e.message || e));
+          setOk('diag-sw-mime', false);
+        });
+      } else {
+        setText('diag-sw-mime', navigator.onLine ? '–' : '(offline)');
+      }
+
       // Aktionen
+      var registerBtn = document.getElementById('diag-register');
+      if (registerBtn) registerBtn.addEventListener('click', function () {
+        if (!swSupport) { alert('Service Worker werden in diesem Browser nicht unterstützt.'); return; }
+        setText('diag-sw-error', 'registriere …');
+        navigator.serviceWorker.register(swUrl, { scope: swScope }).then(function (reg) {
+          setText('diag-sw-error', 'erfolgreich (Scope: ' + reg.scope + ')');
+          setOk('diag-sw-error', true);
+          setTimeout(function () { location.reload(); }, 1200);
+        }).catch(function (err) {
+          var msg = (err && err.name ? err.name + ': ' : '') + (err && err.message ? err.message : String(err));
+          setText('diag-sw-error', msg);
+          setOk('diag-sw-error', false);
+        });
+      });
+
       var updateBtn = document.getElementById('diag-update');
       if (updateBtn) updateBtn.addEventListener('click', function () {
         if (!swSupport) return;
         navigator.serviceWorker.getRegistration().then(function (reg) {
           if (!reg) {
-            alert('Kein Service Worker registriert. Online gehen und Startseite neu laden.');
+            alert('Kein Service Worker registriert. Erst auf ‹Service Worker jetzt registrieren› klicken.');
             return;
           }
           reg.update().then(function () {
