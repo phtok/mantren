@@ -32,35 +32,44 @@ const offlineUrls = [
   `${base}quellen`,
   `${base}einfuehrung`,
   `${base}tafeln-galerie`,
+  `${base}universalsuche`,
+  `${base}impressum`,
   `${base}fonts/inclusive-sans.woff2`,
   `${base}favicon.svg`,
+];
+
+const navLinks = [
+  { href: `${base}einfuehrung`, label: 'Einführung' },
+  { href: `${base}vortraege`, label: 'Klassenstunden' },
+  { href: `${base}tafeln-galerie`, label: 'Wandtafelgalerie' },
+  { href: `${base}quellen`, label: 'Quellen' },
+  { href: `${base}universalsuche`, label: 'Universalsuche' },
+  { href: `${base}impressum`, label: 'Impressum' },
 ];
 ---
 <Base title="Mantren">
   <div class="index-intro">
-    <h1 class="index-title">Mantren</h1>
-    <p class="index-subtitle">Rudolf Steiners mantrisches Spätwerk</p>
+    <h1 class="index-title">Rudolf Steiners<br />mantrisches Spätwerk</h1>
+    <p class="index-subtitle">{tx('Das Mantra der Ersten Klasse der Freien Hochschule für Geisteswissenschaft, Goetheanum.')}</p>
   </div>
 
-  <p class="index-intro-text">
-    {tx('Esoterische Klassenstunden Rudolf Steiners von 1924 — die mantrischen Sprüche der Ersten Klasse der Freien Hochschule für Geisteswissenschaft am Goetheanum.')}
-    {' '}
-    {tx('Lesefassung nach dem Mantrenbüchlein Basel 2024, ergänzt um die Klassenstunden GA 270a–c; Werknachweise auf der Quellenseite.')}
-    {' '}
-    {tx('Zum Einstieg bei der ‹Ersten Tafel› beginnen und der Nummerierung 1.1 bis 19+ folgen; Begriffe sind im Glossar erklärt.')}
-  </p>
-
-  <label class="search-box">
+  <label class="search-box" for="toc-search">
     <input
       class="search-input"
       type="search"
       id="toc-search"
-      placeholder="Suchen — Nummer, Titel, Wort"
+      placeholder="Mantren durchsuchen — Nummer, Titel, Wort"
       autocomplete="off"
       autocorrect="off"
       spellcheck="false"
     />
   </label>
+
+  <nav class="index-nav" aria-label="Bereiche">
+    {navLinks.map((l) => (
+      <a class="index-nav-link" href={l.href}>{l.label}</a>
+    ))}
+  </nav>
 
   <div class="offline-pane" id="offline-pane" aria-live="polite">
     <button class="offline-btn" id="offline-btn" type="button">
@@ -95,15 +104,6 @@ const offlineUrls = [
       );
     })}
   </div>
-
-  <footer class="index-footer">
-    {vortraegePublic.length > 0 && (
-      <a class="index-footer-link" href={`${base}vortraege`}>Vorträge der Klassenstunden</a>
-    )}
-    <a class="index-footer-link" href={`${base}tafeln-galerie`}>Wandtafelgalerie</a>
-    <a class="index-footer-link" href={`${base}einfuehrung`}>Einführung</a>
-    <a class="index-footer-link" href={`${base}quellen`}>Quellen und editorische Notiz</a>
-  </footer>
 
   <script type="application/json" id="search-data" set:html={JSON.stringify(searchIndex)} />
   <script type="application/json" id="offline-urls" set:html={JSON.stringify(offlineUrls)} />

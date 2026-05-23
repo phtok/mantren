@@ -184,20 +184,40 @@ main.center {
 
 .index-intro {
   text-align: left;
-  margin: 2rem 0 3rem;
+  margin: 2rem 0 2.2rem;
 }
 
 .index-title {
   font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 500;
   margin: 0 0 0.6rem;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .index-subtitle {
   color: var(--muted);
   margin: 0;
   font-size: 0.95rem;
+  max-width: 36rem;
+  line-height: 1.5;
+}
+
+.index-nav {
+  margin: 0 0 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.4rem;
+  font-size: 0.82rem;
+}
+
+.index-nav-link {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.index-nav-link:hover {
+  color: var(--text);
 }
 
 .toc-chapter {
@@ -683,27 +703,51 @@ mark {
   margin: 1rem 0;
 }
 
-/* ─────────────── Index-Fußzeile ─────────────── */
+/* ─────────────── Suchergebnis-Gruppen ─────────────── */
 
-.index-footer {
-  margin: 4rem 0 0;
-  padding-top: 1.2rem;
-  border-top: 1px solid var(--line);
+.result-group-head {
+  margin: 1.6rem 0 0.6rem;
   font-size: 0.78rem;
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem 1.4rem;
-}
-
-.index-footer-link {
-  color: var(--muted-soft);
-  text-decoration: none;
-  transition: color 0.15s;
-}
-
-.index-footer-link:hover {
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--muted);
+}
+
+.result-group-head:first-of-type {
+  margin-top: 0.4rem;
+}
+
+/* ─────────────── Universalsuche ─────────────── */
+
+.universalsuche {
+  max-width: 40rem;
+  margin: 0;
+  padding: 0 0 3rem;
+}
+
+.universalsuche-head {
+  margin-bottom: 1.6rem;
+}
+
+.universalsuche-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 500;
+  margin: 0 0 0.4rem;
+  line-height: 1.2;
+}
+
+.universalsuche-subtitle {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.universalsuche-hint {
+  margin: 1rem 0 2rem;
+  font-size: 0.85rem;
+  color: var(--muted-soft);
 }
 
 /* ─────────────── Vorträge — Index ─────────────── */
@@ -1855,13 +1899,48 @@ dialog.source-fullscreen::backdrop {
   dialog.source-fullscreen { display: none; }
 }
 
-/* ─────────────── Index — Einführung ─────────────── */
+/* ─────────────── Impressum ─────────────── */
 
-.index-intro-text {
+.impressum {
   max-width: 36rem;
-  margin: -1.5rem 0 2.5rem;
+  margin: 0;
+  padding: 0 0 3rem;
+}
+
+.impressum-head {
+  margin-bottom: 2.2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.impressum-title {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.impressum-section {
+  margin: 0 0 2rem;
+}
+
+.impressum-section h2 {
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.7rem;
+}
+
+.impressum-section p {
+  margin: 0 0 0.6rem;
   font-size: 0.95rem;
-  line-height: 1.65;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.impressum-section a {
   color: var(--text);
 }
 
