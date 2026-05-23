@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { tx } from '../lib/typografie';
+import { buildOfflineUrls } from '../lib/offline';
 
 interface Props {
   title?: string;
@@ -26,6 +27,7 @@ const fontUrl = `${base}fonts/inclusive-sans.woff2`;
 const faviconUrl = `${base}favicon.svg`;
 const manifestUrl = `${base}manifest.webmanifest`;
 const homeUrl = base;
+const offlineUrls = buildOfflineUrls(base);
 ---
 <!doctype html>
 <html lang="de">
@@ -102,20 +104,16 @@ const homeUrl = base;
               <span class="topbar-menu-icon" aria-hidden="true">◐</span>
               <span class="topbar-menu-label" data-theme-label>Dunkler Modus</span>
             </button>
-            <div class="topbar-menu-offline" id="offline-pane" aria-live="polite">
-              <button class="topbar-menu-item offline-btn" id="offline-btn" type="button" role="menuitem">
-                <span class="topbar-menu-icon offline-dot" aria-hidden="true"></span>
-                <span class="topbar-menu-label offline-text">offline laden</span>
-              </button>
-            </div>
-            <a class="topbar-menu-item" href={`${base}offline-status/`} role="menuitem">
-              <span class="topbar-menu-icon" aria-hidden="true">ⓘ</span>
-              <span class="topbar-menu-label">Offline-Status</span>
+            <a class="topbar-menu-item" href={`${base}offline/`} role="menuitem">
+              <span class="topbar-menu-icon" aria-hidden="true">◌</span>
+              <span class="topbar-menu-label">App und Offline</span>
             </a>
           </div>
         </details>
       </div>
     </header>
+
+    <script type="application/json" id="offline-urls" set:html={JSON.stringify(offlineUrls)} />
 
     <main class={center ? 'center' : ''}>
       <slot />
@@ -176,70 +174,10 @@ const homeUrl = base;
           });
         }
 
-        // Offline-Vorladen — Pane sitzt in der Topbar-Klappe.
-        // Daten kommen pro Seite via <script id="offline-urls"> (nur Startseite).
-        (function () {
-          var pane = document.getElementById('offline-pane');
-          var btn = document.getElementById('offline-btn');
-          var btnText = btn && btn.querySelector('.offline-text');
-          var urlsEl = document.getElementById('offline-urls');
-          if (!pane || !btn || !urlsEl) {
-            if (pane) pane.hidden = true;
-            return;
-          }
-          if (!('serviceWorker' in navigator)) { pane.hidden = true; return; }
-
-          var urls = JSON.parse(urlsEl.textContent || '[]');
-          var STORAGE_KEY = 'offline-ready-v1';
-
-          function showReady() {
-            pane.classList.add('is-ready');
-            pane.classList.remove('is-loading');
-            btn.disabled = true;
-            if (btnText) btnText.textContent = 'offline bereit';
-          }
-          function showProgress(done, total) {
-            pane.classList.add('is-loading');
-            pane.classList.remove('is-ready');
-            btn.disabled = true;
-            if (btnText) btnText.textContent = 'lädt … ' + done + ' / ' + total;
-          }
-          function showIdle() {
-            pane.classList.remove('is-ready', 'is-loading');
-            btn.disabled = false;
-            if (btnText) btnText.textContent = 'offline laden';
-          }
-
-          navigator.serviceWorker.getRegistration().then(function (reg) {
-            var flag = false;
-            try { flag = localStorage.getItem(STORAGE_KEY) === '1'; } catch (e) {}
-            if (reg && reg.active && flag) showReady(); else showIdle();
-          });
-
-          btn.addEventListener('click', function () {
-            var total = urls.length;
-            showProgress(0, total);
-            var batchSize = 6;
-            var idx = 0;
-            function runBatch() {
-              if (idx >= total) {
-                try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
-                showReady();
-                return;
-              }
-              var batch = urls.slice(idx, idx + batchSize);
-              idx += batch.length;
-              Promise.all(batch.map(function (u) {
-                return fetch(u, { credentials: 'same-origin' }).catch(function () {});
-              })).then(function () {
-                var done = idx > total ? total : idx;
-                showProgress(done, total);
-                runBatch();
-              });
-            }
-            runBatch();
-          });
-        })();
+        // Offline-Vorladen, Status- und Diagnose-Logik wohnen ab jetzt
+        // ausschließlich auf /offline/ (in der Topbar-Klappe verlinkt).
+        // Die URL-Liste #offline-urls steht hier global zur Verfügung,
+        // damit die App-Seite sie nutzen kann, ohne sie nochmal zu bauen.
 
         // Topbar bei Runterscrollen ausblenden, bei Hochscrollen wieder zeigen
         var topbar = document.getElementById('topbar');

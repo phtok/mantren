@@ -1,7 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
 import { chapters, mantren, mantrenByChapter } from '../lib/mantren';
-import { vortraegePublic } from '../lib/vortraege';
 import { tx } from '../lib/typografie';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
@@ -23,21 +22,6 @@ const searchIndex = mantren.map((m) => {
     lines,
   };
 });
-
-const offlineUrls = [
-  base,
-  ...mantren.map((m) => `${base}${m.id}/`),
-  `${base}vortraege/`,
-  ...vortraegePublic.map((v) => `${base}${v.id}/`),
-  `${base}quellen/`,
-  `${base}einfuehrung/`,
-  `${base}tafeln-galerie/`,
-  `${base}universalsuche/`,
-  `${base}impressum/`,
-  `${base}offline-status/`,
-  `${base}fonts/inclusive-sans.woff2`,
-  `${base}favicon.svg`,
-];
 
 const navLinks = [
   { href: `${base}einfuehrung/`, label: 'Einführung' },
@@ -100,7 +84,6 @@ const navLinks = [
   </div>
 
   <script type="application/json" id="search-data" set:html={JSON.stringify(searchIndex)} />
-  <script type="application/json" id="offline-urls" set:html={JSON.stringify(offlineUrls)} />
 
   <script is:inline>
     (function () {

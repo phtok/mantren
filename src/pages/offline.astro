@@ -1,0 +1,419 @@
+---
+import Base from '../layouts/Base.astro';
+import { tx } from '../lib/typografie';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const buildTime = new Date().toISOString();
+const swUrl = `${base}sw.js`;
+const swScope = base;
+---
+<Base title="App und Offline">
+  <article class="app-page">
+    <header class="app-page-head">
+      <h1 class="app-page-title">App und Offline</h1>
+      <p class="app-page-lead">{tx('Diese App ist so gebaut, dass sie auch ohne Internet alle Mantren, Vorträge, Kommentare und Wandtafeln zeigt. Hier siehst du den aktuellen Stand und kannst alles steuern, was offline und App-Installation betrifft.')}</p>
+    </header>
+
+    <!-- Status -->
+    <section class="app-status" id="app-status">
+      <h2 class="app-section-h">Status</h2>
+      <ul class="app-status-list" id="app-status-list">
+        <li class="app-status-item" data-key="online">
+          <span class="app-status-dot" aria-hidden="true"></span>
+          <span class="app-status-label">Internet</span>
+          <span class="app-status-value" id="st-online">…</span>
+        </li>
+        <li class="app-status-item" data-key="installed">
+          <span class="app-status-dot" aria-hidden="true"></span>
+          <span class="app-status-label">Als App installiert</span>
+          <span class="app-status-value" id="st-installed">…</span>
+        </li>
+        <li class="app-status-item" data-key="sw">
+          <span class="app-status-dot" aria-hidden="true"></span>
+          <span class="app-status-label">Service Worker aktiv</span>
+          <span class="app-status-value" id="st-sw">…</span>
+        </li>
+        <li class="app-status-item" data-key="cache">
+          <span class="app-status-dot" aria-hidden="true"></span>
+          <span class="app-status-label">Inhalte offline geladen</span>
+          <span class="app-status-value" id="st-cache">…</span>
+        </li>
+      </ul>
+      <p class="app-status-hint" id="st-hint"></p>
+    </section>
+
+    <!-- Aktionen -->
+    <section class="app-section" id="actions">
+      <h2 class="app-section-h">Aktionen</h2>
+
+      <div class="app-action">
+        <div class="app-action-text">
+          <h3 class="app-action-title">Alle Inhalte offline laden</h3>
+          <p class="app-action-desc">Holt alle Mantren, Vorträge, Kommentare und Wandtafel-Bilder in den lokalen Cache des Browsers. Einmalig nötig — danach funktioniert die App ohne Internet.</p>
+        </div>
+        <button class="app-btn" id="btn-offline-load" type="button">offline laden</button>
+      </div>
+
+      <div class="app-action">
+        <div class="app-action-text">
+          <h3 class="app-action-title">Auf neue Version prüfen</h3>
+          <p class="app-action-desc">Lädt den neuesten Stand vom Server, falls etwas Neues bereitsteht. Nach erfolgreichem Update gegebenenfalls einmal die Seite neu laden.</p>
+        </div>
+        <button class="app-btn" id="btn-update" type="button">Update prüfen</button>
+      </div>
+
+      <div class="app-action">
+        <div class="app-action-text">
+          <h3 class="app-action-title">Service Worker neu starten</h3>
+          <p class="app-action-desc">Versucht den Service Worker erneut zu registrieren. Hilft, falls die App offline gar nicht reagiert.</p>
+        </div>
+        <button class="app-btn" id="btn-register" type="button">Registrieren</button>
+      </div>
+    </section>
+
+    <!-- Installation -->
+    <section class="app-section" id="install">
+      <h2 class="app-section-h">Als App auf das Gerät bringen</h2>
+      <p class="app-section-lead" id="install-hint">…</p>
+
+      <details class="app-howto">
+        <summary>iPhone und iPad (Safari)</summary>
+        <ol>
+          <li>Diese Seite in Safari öffnen.</li>
+          <li>Auf das <strong>Teilen-Symbol</strong> tippen (Quadrat mit Pfeil nach oben).</li>
+          <li>Im Menü <strong>‹Zum Home-Bildschirm›</strong> wählen.</li>
+          <li><strong>‹Hinzufügen›</strong> bestätigen. Mantren erscheint als App-Symbol.</li>
+          <li>Symbol antippen — die App startet im Vollbild und richtet beim ersten Aufruf den Offline-Modus ein.</li>
+        </ol>
+      </details>
+
+      <details class="app-howto">
+        <summary>Android (Chrome)</summary>
+        <ol>
+          <li>Diese Seite in Chrome öffnen.</li>
+          <li>Oben rechts auf das Menü (⋮) tippen.</li>
+          <li><strong>‹App installieren›</strong> oder <strong>‹Zum Startbildschirm hinzufügen›</strong> wählen.</li>
+          <li>Bestätigen. Das App-Symbol erscheint auf dem Startbildschirm.</li>
+        </ol>
+      </details>
+
+      <details class="app-howto">
+        <summary>Mac, Windows, Linux (Chrome, Edge)</summary>
+        <ol>
+          <li>Diese Seite im Browser öffnen.</li>
+          <li>In der Adressleiste erscheint ein kleines Installations-Symbol (Bildschirm mit Pfeil). Anklicken.</li>
+          <li>Im Menü ‹Installieren› bestätigen. Mantren öffnet sich als eigenes Fenster.</li>
+        </ol>
+      </details>
+    </section>
+
+    <!-- Erklärung -->
+    <section class="app-section">
+      <h2 class="app-section-h">Wie funktioniert das?</h2>
+      <p>{tx('Beim ersten Aufruf legt der Browser eine Kopie aller Seiten dieser App lokal an. Ein kleiner Hintergrund-Helfer, der Service Worker, liefert die Inhalte dann direkt aus dem lokalen Cache — auch ohne Internet. Beim nächsten Online-Aufruf prüft er automatisch, ob eine neue Version verfügbar ist.')}</p>
+      <p>{tx('Die App ist etwa drei Megabyte groß — ein Bruchteil dessen, was ein einzelnes Foto auf dem Telefon belegt.')}</p>
+    </section>
+
+    <!-- Diagnose -->
+    <section class="app-section">
+      <h2 class="app-section-h">Technische Details</h2>
+      <details class="app-howto">
+        <summary>Diagnose anzeigen</summary>
+        <dl class="app-dl">
+          <dt>Online</dt><dd id="d-online">…</dd>
+          <dt>Standalone-Modus</dt><dd id="d-standalone">…</dd>
+          <dt>User-Agent</dt><dd id="d-ua">…</dd>
+          <dt>HTML-Build</dt><dd>{buildTime}</dd>
+          <dt>Service-Worker-URL</dt><dd>{swUrl}</dd>
+          <dt>Service-Worker unterstützt</dt><dd id="d-sw-support">…</dd>
+          <dt>Registriert</dt><dd id="d-sw-reg">…</dd>
+          <dt>Scope</dt><dd id="d-sw-scope">…</dd>
+          <dt>State</dt><dd id="d-sw-state">…</dd>
+          <dt>Controller</dt><dd id="d-sw-ctrl">…</dd>
+          <dt>SW MIME-Type</dt><dd id="d-sw-mime">…</dd>
+          <dt>Letzter Register-Fehler</dt><dd id="d-sw-error">–</dd>
+          <dt>Anzahl Caches</dt><dd id="d-cache-count">…</dd>
+          <dt>Gesamteinträge im Cache</dt><dd id="d-entry-count">…</dd>
+        </dl>
+        <div id="d-caches" class="app-caches">…</div>
+      </details>
+    </section>
+
+    <!-- Notfall -->
+    <section class="app-section">
+      <h2 class="app-section-h">Im Notfall</h2>
+      <p>{tx('Wenn nach einem Update etwas hängt: alle lokalen Daten löschen, dann online die Startseite öffnen — die App richtet sich frisch ein.')}</p>
+      <button class="app-btn app-btn--danger" id="btn-purge" type="button">Alle Caches und Service Worker löschen</button>
+    </section>
+
+    <p class="vortrag-back">
+      <a href={base}>← Zum Mantren-Index</a>
+    </p>
+  </article>
+
+  <script is:inline define:vars={{ swUrl, swScope }}>
+    (function () {
+      function $(id) { return document.getElementById(id); }
+      function setText(id, v) { var el = $(id); if (el) el.textContent = String(v); }
+      function setStateClass(itemKey, state) {
+        var li = document.querySelector('.app-status-item[data-key="' + itemKey + '"]');
+        if (!li) return;
+        li.classList.remove('is-ok', 'is-warn', 'is-bad', 'is-pending');
+        li.classList.add('is-' + state);
+      }
+
+      var swSupport = 'serviceWorker' in navigator;
+      var cachesSupport = typeof caches !== 'undefined';
+      var standalone = window.matchMedia('(display-mode: standalone)').matches
+        || window.navigator.standalone === true;
+
+      // Verbindung
+      function refreshOnline() {
+        var on = navigator.onLine;
+        setText('st-online', on ? 'verbunden' : 'offline');
+        setText('d-online', on ? 'ja' : 'nein');
+        setStateClass('online', on ? 'ok' : 'warn');
+      }
+      refreshOnline();
+      window.addEventListener('online', refreshOnline);
+      window.addEventListener('offline', refreshOnline);
+
+      // Installation
+      setText('st-installed', standalone ? 'ja' : 'nein (im Browser)');
+      setText('d-standalone', standalone ? 'ja' : 'nein');
+      setStateClass('installed', standalone ? 'ok' : 'warn');
+
+      var ua = navigator.userAgent;
+      setText('d-ua', ua);
+      var isIOS = /iPhone|iPad|iPod/.test(ua);
+      var isAndroid = /Android/.test(ua);
+      var hint;
+      if (standalone) {
+        hint = 'Mantren läuft im App-Modus — Offline funktioniert hier am zuverlässigsten.';
+      } else if (isIOS) {
+        hint = 'Auf dem iPhone: in Safari unten auf das Teilen-Symbol tippen und ‹Zum Home-Bildschirm› wählen. Im Standalone-Modus läuft die App offline am besten.';
+      } else if (isAndroid) {
+        hint = 'Auf Android: im Browser-Menü auf ‹App installieren› tippen. Danach gibt es ein App-Symbol auf dem Startbildschirm.';
+      } else {
+        hint = 'Im Desktop-Browser: das Installations-Symbol in der Adressleiste anklicken (Chrome, Edge), um Mantren als eigene App zu öffnen.';
+      }
+      setText('install-hint', hint);
+
+      // Service Worker
+      setText('d-sw-support', swSupport ? 'ja' : 'nein');
+      function readSW() {
+        if (!swSupport) {
+          setText('st-sw', 'nicht unterstützt');
+          setStateClass('sw', 'bad');
+          setText('d-sw-reg', '–');
+          setText('d-sw-scope', '–');
+          setText('d-sw-state', '–');
+          setText('d-sw-ctrl', '–');
+          return;
+        }
+        navigator.serviceWorker.getRegistration().then(function (reg) {
+          if (!reg) {
+            setText('st-sw', 'nicht aktiv');
+            setStateClass('sw', 'warn');
+            setText('d-sw-reg', 'nein');
+            setText('d-sw-scope', '–');
+            setText('d-sw-state', '–');
+          } else {
+            var w = reg.active || reg.waiting || reg.installing;
+            var st = w ? w.state : 'unbekannt';
+            setText('st-sw', st === 'activated' ? 'aktiv' : st);
+            setStateClass('sw', st === 'activated' ? 'ok' : 'warn');
+            setText('d-sw-reg', 'ja');
+            setText('d-sw-scope', reg.scope);
+            setText('d-sw-state', st);
+          }
+          var ctrl = navigator.serviceWorker.controller;
+          setText('d-sw-ctrl', ctrl ? 'ja (' + ctrl.scriptURL.split('/').pop() + ')' : 'nein');
+        });
+      }
+      readSW();
+
+      if (swSupport && navigator.onLine) {
+        fetch(swUrl, { method: 'HEAD', cache: 'no-store' }).then(function (r) {
+          setText('d-sw-mime', r.status + ' ' + (r.headers.get('content-type') || '–'));
+        }).catch(function (e) {
+          setText('d-sw-mime', 'Fehler: ' + (e.message || e));
+        });
+      } else {
+        setText('d-sw-mime', navigator.onLine ? '–' : '(offline)');
+      }
+
+      // Cache
+      function readCache() {
+        if (!cachesSupport) {
+          setText('st-cache', 'nicht unterstützt');
+          setStateClass('cache', 'bad');
+          setText('d-cache-count', '0');
+          setText('d-entry-count', '0');
+          return;
+        }
+        caches.keys().then(function (names) {
+          setText('d-cache-count', String(names.length));
+          if (names.length === 0) {
+            setText('st-cache', 'noch nichts geladen');
+            setStateClass('cache', 'warn');
+            setText('d-entry-count', '0');
+            var ce = $('d-caches'); if (ce) ce.innerHTML = '<p class="app-empty">(noch keine Caches)</p>';
+            return;
+          }
+          Promise.all(names.map(function (n) {
+            return caches.open(n).then(function (c) {
+              return c.keys().then(function (reqs) {
+                return { name: n, urls: reqs.map(function (r) { return r.url; }) };
+              });
+            });
+          })).then(function (caches_) {
+            var total = caches_.reduce(function (s, c) { return s + c.urls.length; }, 0);
+            setText('d-entry-count', String(total));
+            if (total >= 50) {
+              setText('st-cache', total + ' Einträge — alles bereit');
+              setStateClass('cache', 'ok');
+            } else if (total > 0) {
+              setText('st-cache', total + ' Einträge — lädt noch');
+              setStateClass('cache', 'pending');
+            } else {
+              setText('st-cache', 'noch nichts geladen');
+              setStateClass('cache', 'warn');
+            }
+            var html = '';
+            caches_.forEach(function (c) {
+              html += '<details class="app-cache"><summary>'
+                + '<span class="app-cache-name">' + c.name + '</span>'
+                + '<span class="app-cache-count">' + c.urls.length + ' Einträge</span>'
+                + '</summary>';
+              if (c.urls.length === 0) {
+                html += '<p class="app-empty">(leer)</p>';
+              } else {
+                html += '<ul class="app-cache-list">';
+                c.urls.slice(0, 200).sort().forEach(function (u) {
+                  html += '<li>' + u + '</li>';
+                });
+                if (c.urls.length > 200) html += '<li>… (' + (c.urls.length - 200) + ' weitere)</li>';
+                html += '</ul>';
+              }
+              html += '</details>';
+            });
+            var ce = $('d-caches'); if (ce) ce.innerHTML = html;
+          });
+        });
+      }
+      readCache();
+
+      function refreshOverallHint() {
+        var hintEl = $('st-hint');
+        if (!hintEl) return;
+        if (!navigator.onLine) {
+          hintEl.textContent = 'Du bist offline — was bereits geladen ist, bleibt verfügbar.';
+        } else if (!swSupport) {
+          hintEl.textContent = 'Dieser Browser unterstützt keinen Offline-Modus.';
+        } else if (!standalone) {
+          hintEl.textContent = 'Tipp: Lege Mantren auf den Home-Bildschirm — als App läuft sie offline am verlässlichsten.';
+        } else {
+          hintEl.textContent = '';
+        }
+      }
+      refreshOverallHint();
+      window.addEventListener('online', refreshOverallHint);
+      window.addEventListener('offline', refreshOverallHint);
+
+      // Buttons
+      var urlsEl = document.getElementById('offline-urls');
+      var urls = urlsEl ? JSON.parse(urlsEl.textContent || '[]') : [];
+      var STORAGE_KEY = 'offline-ready-v1';
+
+      var loadBtn = $('btn-offline-load');
+      function setLoadState(label, disabled) {
+        if (!loadBtn) return;
+        loadBtn.textContent = label;
+        loadBtn.disabled = !!disabled;
+      }
+      if (loadBtn) {
+        loadBtn.addEventListener('click', function () {
+          if (!urls.length) { alert('Keine URL-Liste verfügbar.'); return; }
+          var total = urls.length;
+          var idx = 0;
+          setLoadState('lädt … 0 / ' + total, true);
+          function runBatch() {
+            if (idx >= total) {
+              try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+              setLoadState('offline bereit', true);
+              readCache();
+              return;
+            }
+            var batch = urls.slice(idx, idx + 6);
+            idx += batch.length;
+            Promise.all(batch.map(function (u) {
+              return fetch(u, { credentials: 'same-origin' }).catch(function () {});
+            })).then(function () {
+              setLoadState('lädt … ' + Math.min(idx, total) + ' / ' + total, true);
+              runBatch();
+            });
+          }
+          runBatch();
+        });
+      }
+
+      var updateBtn = $('btn-update');
+      if (updateBtn) updateBtn.addEventListener('click', function () {
+        if (!swSupport) { alert('Service Worker werden nicht unterstützt.'); return; }
+        navigator.serviceWorker.getRegistration().then(function (reg) {
+          if (!reg) { alert('Noch kein Service Worker registriert. Erst auf ‹Registrieren› tippen.'); return; }
+          reg.update().then(function () {
+            alert('Update-Versuch angestoßen. Seite gegebenenfalls neu laden.');
+            readSW();
+          }).catch(function (e) {
+            alert('Update-Fehler: ' + (e.message || e));
+          });
+        });
+      });
+
+      var regBtn = $('btn-register');
+      if (regBtn) regBtn.addEventListener('click', function () {
+        if (!swSupport) { alert('Service Worker werden nicht unterstützt.'); return; }
+        setText('d-sw-error', 'registriere …');
+        navigator.serviceWorker.register(swUrl, { scope: swScope }).then(function (reg) {
+          setText('d-sw-error', 'erfolgreich (Scope: ' + reg.scope + ')');
+          readSW();
+          setTimeout(readCache, 1500);
+        }).catch(function (err) {
+          var msg = (err && err.name ? err.name + ': ' : '') + (err && err.message ? err.message : String(err));
+          setText('d-sw-error', msg);
+        });
+      });
+
+      var purgeBtn = $('btn-purge');
+      if (purgeBtn) purgeBtn.addEventListener('click', function () {
+        if (!confirm('Alle Caches und Service Worker dieser App löschen?')) return;
+        var jobs = [];
+        if (cachesSupport) jobs.push(caches.keys().then(function (n) {
+          return Promise.all(n.map(function (x) { return caches.delete(x); }));
+        }));
+        if (swSupport) jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) {
+          return Promise.all(rs.map(function (r) { return r.unregister(); }));
+        }));
+        try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+        Promise.all(jobs).then(function () {
+          alert('Alles gelöscht. Jetzt online die Startseite öffnen.');
+          location.reload();
+        });
+      });
+
+      if (cachesSupport) {
+        caches.keys().then(function (n) {
+          if (n.length === 0) {
+            setLoadState('offline laden', false);
+          } else {
+            var flag = false;
+            try { flag = localStorage.getItem(STORAGE_KEY) === '1'; } catch (e) {}
+            if (flag) setLoadState('offline bereit', true);
+            else setLoadState('offline laden', false);
+          }
+        });
+      }
+    })();
+  </script>
+</Base>
