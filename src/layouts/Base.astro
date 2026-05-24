@@ -73,6 +73,11 @@ const offlineUrls = buildOfflineUrls(base);
             document.documentElement.setAttribute('data-tafel-pref', 'hidden');
           }
         } catch (e) {}
+        try {
+          if (localStorage.getItem('edition') === 'plex') {
+            document.documentElement.setAttribute('data-edition', 'plex');
+          }
+        } catch (e) {}
       })();
     </script>
   </head>
@@ -103,6 +108,16 @@ const offlineUrls = buildOfflineUrls(base);
             >
               <span class="topbar-menu-icon" aria-hidden="true">◐</span>
               <span class="topbar-menu-label" data-theme-label>Dunkler Modus</span>
+            </button>
+            <button
+              class="topbar-menu-item"
+              id="edition-toggle"
+              type="button"
+              role="menuitemcheckbox"
+              aria-checked="false"
+            >
+              <span class="topbar-menu-icon" aria-hidden="true">⇄</span>
+              <span class="topbar-menu-label" data-edition-label>Schriftbild: Plex</span>
             </button>
             <a class="topbar-menu-item" href={`${base}offline/`} role="menuitem">
               <span class="topbar-menu-icon" aria-hidden="true">◌</span>
@@ -160,6 +175,25 @@ const offlineUrls = buildOfflineUrls(base);
             html.classList.toggle('theme-invert');
             try { localStorage.setItem('theme', html.classList.contains('theme-invert') ? 'dark' : 'light'); } catch (e) {}
             refreshThemeLabel();
+          });
+        }
+
+        var editionBtn = document.getElementById('edition-toggle');
+        var editionLabel = editionBtn && editionBtn.querySelector('[data-edition-label]');
+        function refreshEditionLabel() {
+          if (!editionBtn) return;
+          var isPlex = html.getAttribute('data-edition') === 'plex';
+          editionBtn.setAttribute('aria-checked', isPlex ? 'true' : 'false');
+          if (editionLabel) editionLabel.textContent = isPlex ? 'Schriftbild: Standard' : 'Schriftbild: Plex';
+        }
+        if (editionBtn) {
+          refreshEditionLabel();
+          editionBtn.addEventListener('click', function () {
+            var isPlex = html.getAttribute('data-edition') === 'plex';
+            if (isPlex) { html.removeAttribute('data-edition'); }
+            else { html.setAttribute('data-edition', 'plex'); }
+            try { localStorage.setItem('edition', isPlex ? 'default' : 'plex'); } catch (e) {}
+            refreshEditionLabel();
           });
         }
 

@@ -19,6 +19,12 @@ export function buildOfflineUrls(base: string): string[] {
     `${b}impressum/`,
     `${b}offline/`,
     `${b}fonts/inclusive-sans.woff2`,
+    `${b}fonts/plex-sans-300-normal.woff2`,
+    `${b}fonts/plex-sans-400-normal.woff2`,
+    `${b}fonts/plex-sans-500-normal.woff2`,
+    `${b}fonts/plex-mono-400-normal.woff2`,
+    `${b}fonts/plex-mono-400-italic.woff2`,
+    `${b}fonts/plex-mono-500-normal.woff2`,
     `${b}favicon.svg`,
   ];
 }

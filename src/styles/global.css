@@ -2817,3 +2817,117 @@ dialog.source-fullscreen::backdrop {
   color: var(--muted-soft);
   font-style: italic;
 }
+
+/* ═══════════════ Edition „Plex" (Richtung II) ═══════════════
+   Umschaltbare Zweit-Oberfläche. Eigene Achse via data-edition="plex"
+   auf <html>, komponiert mit theme-invert (Hell/Dunkel). Selektoren
+   bewusst gescopt — die Standard-Edition bleibt unberührt.
+   Quelle: RSA Brand Guideline, Richtung II (Plex + Rot/Tintenblau). */
+
+@font-face {
+  font-family: 'Plex Sans';
+  font-style: normal; font-weight: 300; font-display: swap;
+  src: url('/fonts/plex-sans-300-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plex Sans';
+  font-style: normal; font-weight: 400; font-display: swap;
+  src: url('/fonts/plex-sans-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plex Sans';
+  font-style: normal; font-weight: 500; font-display: swap;
+  src: url('/fonts/plex-sans-500-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plex Mono';
+  font-style: normal; font-weight: 400; font-display: swap;
+  src: url('/fonts/plex-mono-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plex Mono';
+  font-style: italic; font-weight: 400; font-display: swap;
+  src: url('/fonts/plex-mono-400-italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Plex Mono';
+  font-style: normal; font-weight: 500; font-display: swap;
+  src: url('/fonts/plex-mono-500-normal.woff2') format('woff2');
+}
+
+html[data-edition="plex"] {
+  --font-sans: 'Plex Sans', system-ui, sans-serif;
+  --font-mono: 'Plex Mono', ui-monospace, monospace;
+  /* Papier (hell) */
+  --bg: #f7f5ee;
+  --text: #0e0e0d;
+  --muted: #44423d;
+  --muted-soft: #7a7770;
+  --line: #d6d1c1;
+  --input-bg: #ffffff;
+  --petrol: #0e0e0d;
+  --petrol-soft: #efebdf;
+  --on-petrol: #f7f5ee;
+  --red: #d22a22;
+  --ink: #1f3a8a;
+}
+
+html.theme-invert[data-edition="plex"] {
+  /* Schiefer (dunkel) */
+  --bg: #0d0d0c;
+  --text: #ece9e1;
+  --muted: #b8b4a8;
+  --muted-soft: #7f7c72;
+  --line: #282824;
+  --input-bg: #181816;
+  --petrol: #ece9e1;
+  --petrol-soft: #181816;
+  --on-petrol: #0d0d0c;
+  --red: #ec3a32;
+  --ink: #6488ff;
+}
+
+html[data-edition="plex"] body {
+  font-feature-settings: "ss01", "kern" 1, "liga" 1;
+}
+
+/* Mono-Zweitstimme: Regie-Zeilen, Spruchnummer, Pager-Nummer */
+html[data-edition="plex"] .regie,
+html[data-edition="plex"] .pager-num {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum";
+}
+
+/* Spruchnummer als Mono-Marke in Rot */
+html[data-edition="plex"] .topbar-num {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum";
+  color: var(--red);
+}
+
+/* Glossar-Begriff: Mono-Italic in Rot (»hebt Begriffe ohne Familienbruch«) */
+html[data-edition="plex"] .glossar-inline > summary.glossar-term {
+  font-family: var(--font-mono);
+  font-style: italic;
+  color: var(--red);
+  border-bottom-color: color-mix(in srgb, var(--red) 45%, transparent);
+}
+html[data-edition="plex"] .glossar-inline > summary.glossar-term:hover {
+  border-bottom-color: var(--red);
+}
+
+/* Verweise & Daten → Tintenblau */
+html[data-edition="plex"] .klappe-parallel a,
+html[data-edition="plex"] .klappe-zur-stelle,
+html[data-edition="plex"] .glossar-verweis {
+  color: var(--ink);
+}
+
+/* Aktiv/Fokus → Rot */
+html[data-edition="plex"] .icon-btn:hover,
+html[data-edition="plex"] .topbar-menu-summary:hover {
+  color: var(--red);
+}
+html[data-edition="plex"] .search-input:focus {
+  border-bottom-color: var(--red);
+}
