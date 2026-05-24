@@ -23,8 +23,8 @@ function linkText(s: string) {
   return linkifyFirstOccurrence(tx(s), glossarSeen);
 }
 
-// Vorlesefunktion vorerst nur beim ersten Vortrag testen.
-const ttsEnabled = vortrag.id === 'stunde-1';
+// Vorlesefunktion vorerst ausgeblendet — Qualität noch nicht ausreichend.
+const ttsEnabled = false;
 ---
 <article class="vortrag" data-tts={ttsEnabled ? 'ready' : undefined}>
   <header class="vortrag-head">

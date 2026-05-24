@@ -10,7 +10,7 @@ const swScope = base;
   <article class="app-page">
     <header class="app-page-head">
       <h1 class="app-page-title">App und Offline</h1>
-      <p class="app-page-lead">{tx('Diese App ist so gebaut, dass sie auch ohne Internet alle Mantren, Vorträge, Kommentare und Wandtafeln zeigt. Hier siehst du den aktuellen Stand und kannst alles steuern, was offline und App-Installation betrifft.')}</p>
+      <p class="app-page-lead">{tx('Mantren läuft auch ohne Internet — Mantren, Vorträge, Kommentare und Wandtafeln sind dann lokal gespeichert.')}</p>
     </header>
 
     <!-- Status -->
@@ -41,32 +41,14 @@ const swScope = base;
       <p class="app-status-hint" id="st-hint"></p>
     </section>
 
-    <!-- Aktionen -->
+    <!-- Hauptaktion -->
     <section class="app-section" id="actions">
-      <h2 class="app-section-h">Aktionen</h2>
-
+      <h2 class="app-section-h">Offline laden</h2>
       <div class="app-action">
         <div class="app-action-text">
-          <h3 class="app-action-title">Alle Inhalte offline laden</h3>
-          <p class="app-action-desc">Holt alle Mantren, Vorträge, Kommentare und Wandtafel-Bilder in den lokalen Cache des Browsers. Einmalig nötig — danach funktioniert die App ohne Internet.</p>
+          <p class="app-action-desc">Holt einmalig alle Inhalte ins Gerät. Danach funktioniert die App ohne Internet. Updates kommen beim nächsten Online-Start automatisch.</p>
         </div>
         <button class="app-btn" id="btn-offline-load" type="button">offline laden</button>
-      </div>
-
-      <div class="app-action">
-        <div class="app-action-text">
-          <h3 class="app-action-title">Auf neue Version prüfen</h3>
-          <p class="app-action-desc">Lädt den neuesten Stand vom Server, falls etwas Neues bereitsteht. Nach erfolgreichem Update gegebenenfalls einmal die Seite neu laden.</p>
-        </div>
-        <button class="app-btn" id="btn-update" type="button">Update prüfen</button>
-      </div>
-
-      <div class="app-action">
-        <div class="app-action-text">
-          <h3 class="app-action-title">Service Worker neu starten</h3>
-          <p class="app-action-desc">Versucht den Service Worker erneut zu registrieren. Hilft, falls die App offline gar nicht reagiert.</p>
-        </div>
-        <button class="app-btn" id="btn-register" type="button">Registrieren</button>
       </div>
     </section>
 
@@ -75,49 +57,50 @@ const swScope = base;
       <h2 class="app-section-h">Als App auf das Gerät bringen</h2>
       <p class="app-section-lead" id="install-hint">…</p>
 
-      <details class="app-howto">
+      <details class="app-howto" id="howto-ios">
         <summary>iPhone und iPad (Safari)</summary>
         <ol>
-          <li>Diese Seite in Safari öffnen.</li>
+          <li>Seite in Safari öffnen.</li>
           <li>Auf das <strong>Teilen-Symbol</strong> tippen (Quadrat mit Pfeil nach oben).</li>
-          <li>Im Menü <strong>‹Zum Home-Bildschirm›</strong> wählen.</li>
-          <li><strong>‹Hinzufügen›</strong> bestätigen. Mantren erscheint als App-Symbol.</li>
-          <li>Symbol antippen — die App startet im Vollbild und richtet beim ersten Aufruf den Offline-Modus ein.</li>
+          <li><strong>‹Zum Home-Bildschirm›</strong> wählen, <strong>‹Hinzufügen›</strong> bestätigen.</li>
+          <li>Neues App-Symbol antippen — beim ersten Start richtet sich der Offline-Modus ein.</li>
         </ol>
       </details>
 
-      <details class="app-howto">
+      <details class="app-howto" id="howto-android">
         <summary>Android (Chrome)</summary>
         <ol>
-          <li>Diese Seite in Chrome öffnen.</li>
-          <li>Oben rechts auf das Menü (⋮) tippen.</li>
-          <li><strong>‹App installieren›</strong> oder <strong>‹Zum Startbildschirm hinzufügen›</strong> wählen.</li>
-          <li>Bestätigen. Das App-Symbol erscheint auf dem Startbildschirm.</li>
+          <li>Seite in Chrome öffnen.</li>
+          <li>Menü (⋮) → <strong>‹App installieren›</strong> bzw. <strong>‹Zum Startbildschirm hinzufügen›</strong>.</li>
+          <li>Bestätigen — das App-Symbol erscheint auf dem Startbildschirm.</li>
         </ol>
       </details>
 
-      <details class="app-howto">
+      <details class="app-howto" id="howto-desktop">
         <summary>Mac, Windows, Linux (Chrome, Edge)</summary>
         <ol>
-          <li>Diese Seite im Browser öffnen.</li>
-          <li>In der Adressleiste erscheint ein kleines Installations-Symbol (Bildschirm mit Pfeil). Anklicken.</li>
-          <li>Im Menü ‹Installieren› bestätigen. Mantren öffnet sich als eigenes Fenster.</li>
+          <li>Seite im Browser öffnen.</li>
+          <li>Installations-Symbol in der Adressleiste anklicken (Bildschirm mit Pfeil), ‹Installieren› bestätigen.</li>
         </ol>
       </details>
     </section>
 
-    <!-- Erklärung -->
+    <!-- Notfall + Diagnose -->
     <section class="app-section">
-      <h2 class="app-section-h">Wie funktioniert das?</h2>
-      <p>{tx('Beim ersten Aufruf legt der Browser eine Kopie aller Seiten dieser App lokal an. Ein kleiner Hintergrund-Helfer, der Service Worker, liefert die Inhalte dann direkt aus dem lokalen Cache — auch ohne Internet. Beim nächsten Online-Aufruf prüft er automatisch, ob eine neue Version verfügbar ist.')}</p>
-      <p>{tx('Die App ist etwa drei Megabyte groß — ein Bruchteil dessen, was ein einzelnes Foto auf dem Telefon belegt.')}</p>
-    </section>
+      <h2 class="app-section-h">Hilfe und Details</h2>
 
-    <!-- Diagnose -->
-    <section class="app-section">
-      <h2 class="app-section-h">Technische Details</h2>
       <details class="app-howto">
-        <summary>Diagnose anzeigen</summary>
+        <summary>Etwas hängt? Neu aufsetzen</summary>
+        <p class="app-howto-text">{tx('Löscht alle lokalen Daten dieser App. Danach online die Startseite öffnen — die App richtet sich frisch ein.')}</p>
+        <div class="app-howto-btns">
+          <button class="app-btn" id="btn-update" type="button">Update prüfen</button>
+          <button class="app-btn" id="btn-register" type="button">Service Worker neu starten</button>
+          <button class="app-btn app-btn--danger" id="btn-purge" type="button">Alles löschen</button>
+        </div>
+      </details>
+
+      <details class="app-howto">
+        <summary>Technische Diagnose</summary>
         <dl class="app-dl">
           <dt>Online</dt><dd id="d-online">…</dd>
           <dt>Standalone-Modus</dt><dd id="d-standalone">…</dd>
@@ -136,13 +119,6 @@ const swScope = base;
         </dl>
         <div id="d-caches" class="app-caches">…</div>
       </details>
-    </section>
-
-    <!-- Notfall -->
-    <section class="app-section">
-      <h2 class="app-section-h">Im Notfall</h2>
-      <p>{tx('Wenn nach einem Update etwas hängt: alle lokalen Daten löschen, dann online die Startseite öffnen — die App richtet sich frisch ein.')}</p>
-      <button class="app-btn app-btn--danger" id="btn-purge" type="button">Alle Caches und Service Worker löschen</button>
     </section>
 
     <p class="vortrag-back">
@@ -197,6 +173,13 @@ const swScope = base;
         hint = 'Im Desktop-Browser: das Installations-Symbol in der Adressleiste anklicken (Chrome, Edge), um Mantren als eigene App zu öffnen.';
       }
       setText('install-hint', hint);
+
+      // Passende Plattform-Anleitung aufklappen, falls nicht schon als App.
+      if (!standalone) {
+        var openId = isIOS ? 'howto-ios' : isAndroid ? 'howto-android' : 'howto-desktop';
+        var openEl = document.getElementById(openId);
+        if (openEl) openEl.open = true;
+      }
 
       // Service Worker
       setText('d-sw-support', swSupport ? 'ja' : 'nein');

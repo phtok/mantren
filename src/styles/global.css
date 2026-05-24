@@ -2685,7 +2685,6 @@ dialog.source-fullscreen::backdrop {
 .app-btn--danger {
   color: #c25656;
   border-color: #c2565640;
-  margin-top: 0.6rem;
 }
 
 .app-btn--danger:hover {
@@ -2731,6 +2730,20 @@ dialog.source-fullscreen::backdrop {
 }
 
 .app-howto ol li { margin: 0 0 0.3rem; }
+
+.app-howto-text {
+  margin: 0.6rem 0 0.8rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.app-howto-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.2rem 0 0.4rem;
+}
 
 /* Diagnose-Details */
 
