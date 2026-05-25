@@ -25,8 +25,13 @@ const quelleLine = tx(quelleParts.join(' · '));
 const tabKey = (klappenKey ?? mantraId).replace(/\./g, '-');
 const tabName = `klappe-${tabKey}`;
 const summaryTitle = tx(kommentar.titel || 'Kommentar');
-const keyForLabel = klappenKey ?? mantraId;
-const numericKey = /^[0-9]/.test(keyForLabel);
+const TAFEL_ZAEHLER: Record<string, string> = {
+  'erste-tafel': 'T1',
+  'zweite-tafel': 'T2',
+  'dritte-tafel': 'T3',
+};
+const keyForLabel = TAFEL_ZAEHLER[mantraId] ?? klappenKey ?? mantraId;
+const numericKey = /^(T?[0-9])/.test(keyForLabel);
 const summaryLabel = compact
   ? (numericKey ? `Hinweis zu ${keyForLabel}` : 'Hinweise')
   : summaryTitle;
