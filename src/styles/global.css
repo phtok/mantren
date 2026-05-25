@@ -1130,6 +1130,29 @@ mark {
 }
 .klappe--compact .klappe-body { margin-top: 0.8rem; }
 
+/* Geschlossenes Etikett deutlich leiser als das Mantra: nur ‹Hinweis zu 4.1›,
+   kleiner und gedämpft, ohne Titel/Rolle. Der Titel wandert in den geöffneten
+   Körper. */
+.klappe--compact .klappe-summary {
+  font-size: 0.74rem;
+  color: var(--muted-soft);
+}
+.klappe--compact .klappe-label {
+  color: var(--muted-soft);
+  letter-spacing: 0.03em;
+  font-variant-numeric: tabular-nums;
+}
+.klappe--compact .klappe-marker {
+  border-left-color: var(--muted-soft);
+  opacity: 0.7;
+}
+.klappe-inline-titel {
+  margin: 0 0 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+}
+
 .klappe-summary {
   cursor: pointer;
   display: flex;

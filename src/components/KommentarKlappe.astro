@@ -25,6 +25,7 @@ const quelleLine = tx(quelleParts.join(' · '));
 const tabKey = (klappenKey ?? mantraId).replace(/\./g, '-');
 const tabName = `klappe-${tabKey}`;
 const summaryTitle = tx(kommentar.titel || 'Kommentar');
+const summaryLabel = compact ? `Hinweis zu ${klappenKey ?? mantraId}` : summaryTitle;
 
 const k = kommentar.kerngedanken;
 const hasKurz = !!k.kurz;
@@ -40,11 +41,12 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
 <details class={`klappe${compact ? ' klappe--compact' : ''}`}>
   <summary class="klappe-summary">
     <span class="klappe-marker" aria-hidden="true"></span>
-    <span class="klappe-label">{summaryTitle}</span>
-    {kommentar.rolle && <span class="klappe-rolle">{tx(kommentar.rolle)}</span>}
+    <span class="klappe-label">{summaryLabel}</span>
+    {!compact && kommentar.rolle && <span class="klappe-rolle">{tx(kommentar.rolle)}</span>}
   </summary>
 
   <div class="klappe-body">
+    {compact && kommentar.titel && <p class="klappe-inline-titel">{summaryTitle}</p>}
     <div class="klappe-tabs">
       {hasKurz && (
         <input type="radio" name={tabName} id={`${tabName}-kurz`} value="kurz" checked={defaultTab === 'kurz'} />
