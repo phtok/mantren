@@ -7,9 +7,11 @@ import { tx } from '../lib/typografie';
 interface Props {
   mantra: Mantra;
   kommentare?: KommentarEntry[];
+  variant?: 'default' | 'compact';
 }
 
-const { mantra, kommentare } = Astro.props;
+const { mantra, kommentare, variant = 'default' } = Astro.props;
+const compact = variant === 'compact';
 
 function renderLine(line: string) {
   const raw = line.startsWith('/') ? line.slice(1) : line;
@@ -27,7 +29,7 @@ const kommentarForPart = (part: { lines?: string[] }) => {
 ---
 <article class="mantra">
 
-  <div class="mantra-body">
+  <div class={`mantra-body${compact ? ' mantra-body--compact' : ''}`}>
     {mantra.parts.map((part) => {
       const entry = kommentarForPart(part);
       return (
@@ -45,7 +47,7 @@ const kommentarForPart = (part: { lines?: string[] }) => {
             </p>
           )}
           {entry && (
-            <KommentarKlappe kommentar={entry.kommentar} mantraId={mantra.id} klappenKey={entry.key} />
+            <KommentarKlappe kommentar={entry.kommentar} mantraId={mantra.id} klappenKey={entry.key} compact={compact} />
           )}
         </section>
       );

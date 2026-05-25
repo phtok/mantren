@@ -1117,6 +1117,19 @@ mark {
   padding-top: 2rem;
 }
 
+/* Compact-/Test-Modus (per-Strophe-Klappe, z. B. Mantra 4):
+   Klappe dicht an ihre eigene Strophe binden statt sie mit großem
+   Abstand zur Folgestrophe zu drängen. Die Trennung zur nächsten
+   Strophe übernimmt der größere Body-Abstand unten. */
+.mantra-body--compact { gap: 3.4rem; }
+.mantra-body--compact .part { gap: 0.45rem; }
+.klappe--compact {
+  margin: 0.6rem 0 0;
+  border-top: 0;
+  padding-top: 0;
+}
+.klappe--compact .klappe-body { margin-top: 0.8rem; }
+
 .klappe-summary {
   cursor: pointer;
   display: flex;

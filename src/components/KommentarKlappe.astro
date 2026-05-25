@@ -6,9 +6,10 @@ interface Props {
   kommentar: Kommentar;
   mantraId: string;
   klappenKey?: string;
+  compact?: boolean;
 }
 
-const { kommentar, mantraId, klappenKey } = Astro.props;
+const { kommentar, mantraId, klappenKey, compact = false } = Astro.props;
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const linkFor = (vortrag?: string | null, anker?: string | null): string | null => {
@@ -29,12 +30,14 @@ const k = kommentar.kerngedanken;
 const hasKurz = !!k.kurz;
 const hasKompakt = !!k.kompakt;
 const hasAusf = !!(k.ausfuehrlich && k.ausfuehrlich.length);
-const defaultTab = hasKompakt ? 'kompakt' : hasKurz ? 'kurz' : 'ausf';
+const defaultTab = compact
+  ? (hasKurz ? 'kurz' : hasKompakt ? 'kompakt' : 'ausf')
+  : (hasKompakt ? 'kompakt' : hasKurz ? 'kurz' : 'ausf');
 
 const tafel = kommentar.tafelbild;
 const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${base}${tafel.bild}`) : null;
 ---
-<details class="klappe">
+<details class={`klappe${compact ? ' klappe--compact' : ''}`}>
   <summary class="klappe-summary">
     <span class="klappe-marker" aria-hidden="true"></span>
     <span class="klappe-label">{summaryTitle}</span>
