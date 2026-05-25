@@ -1123,12 +1123,15 @@ mark {
    Strophe übernimmt der größere Body-Abstand unten. */
 .mantra-body--compact { gap: 3.4rem; }
 .mantra-body--compact .part { gap: 0.45rem; }
-.klappe--compact {
+/* Tight-Platzierung nur für per-Strophe-Unterbrecher (innerhalb des
+   compact-Mantra-Körpers); die einzelne Klappe am Mantra-Ende behält ihre
+   Trennlinie und ihren Abstand (Basis-.klappe). */
+.mantra-body--compact .klappe--compact {
   margin: 0.6rem 0 0;
   border-top: 0;
   padding-top: 0;
 }
-.klappe--compact .klappe-body { margin-top: 0.8rem; }
+.mantra-body--compact .klappe--compact .klappe-body { margin-top: 0.8rem; }
 
 /* Geschlossenes Etikett deutlich leiser als das Mantra: nur ‹Hinweis zu 4.1›,
    kleiner und gedämpft, ohne Titel/Rolle. Der Titel wandert in den geöffneten

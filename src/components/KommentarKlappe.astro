@@ -25,7 +25,11 @@ const quelleLine = tx(quelleParts.join(' · '));
 const tabKey = (klappenKey ?? mantraId).replace(/\./g, '-');
 const tabName = `klappe-${tabKey}`;
 const summaryTitle = tx(kommentar.titel || 'Kommentar');
-const summaryLabel = compact ? `Hinweis zu ${klappenKey ?? mantraId}` : summaryTitle;
+const keyForLabel = klappenKey ?? mantraId;
+const numericKey = /^[0-9]/.test(keyForLabel);
+const summaryLabel = compact
+  ? (numericKey ? `Hinweis zu ${keyForLabel}` : 'Hinweise')
+  : summaryTitle;
 
 const k = kommentar.kerngedanken;
 const hasKurz = !!k.kurz;

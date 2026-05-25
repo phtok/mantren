@@ -81,9 +81,9 @@ const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${
             Tafel einblenden ›
           </button>
         )}
-        <MantraView mantra={props.mantra} kommentare={perPartKommentare} variant={props.mantra.id === '4' ? 'compact' : 'default'} />
+        <MantraView mantra={props.mantra} kommentare={perPartKommentare} variant={perPartKommentare ? 'compact' : 'default'} />
         {pageKommentar && (
-          <KommentarKlappe kommentar={pageKommentar.kommentar} mantraId={props.mantra.id} klappenKey={pageKommentar.key} />
+          <KommentarKlappe kommentar={pageKommentar.kommentar} mantraId={props.mantra.id} klappenKey={pageKommentar.key} compact />
         )}
       </div>
       {tafel && tafelImgSrc && (
