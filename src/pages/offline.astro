@@ -50,6 +50,12 @@ const swScope = base;
         </div>
         <button class="app-btn" id="btn-offline-load" type="button">offline laden</button>
       </div>
+      <div class="app-action">
+        <div class="app-action-text">
+          <p class="app-action-desc">Holt die neueste Fassung aller Inhalte frisch aus dem Netz und ersetzt die gespeicherten Dateien — nützlich nach einem Update. Funktioniert nur online.</p>
+        </div>
+        <button class="app-btn" id="btn-offline-reload" type="button">alles neu laden</button>
+      </div>
     </section>
 
     <!-- Installation -->
@@ -337,6 +343,56 @@ const swScope = base;
             });
           }
           runBatch();
+        });
+      }
+
+      // Alles neu laden: erzwingt die neueste Fassung. Da die App per Precache
+      // (revisioniert) ausgeliefert wird, erneuert der eigentliche Refresh über
+      // das SW-Update; zusätzlich ziehen wir alle URLs mit cache:'reload' frisch
+      // (Fortschritt, warmt nicht-precache-Routen). Wiederholbar.
+      var reloadBtn = $('btn-offline-reload');
+      function setReloadState(label, disabled) {
+        if (!reloadBtn) return;
+        reloadBtn.textContent = label;
+        reloadBtn.disabled = !!disabled;
+      }
+      function refreshReloadEnabled() {
+        if (reloadBtn && !/lädt/.test(reloadBtn.textContent)) reloadBtn.disabled = !navigator.onLine;
+      }
+      if (reloadBtn) {
+        refreshReloadEnabled();
+        window.addEventListener('online', refreshReloadEnabled);
+        window.addEventListener('offline', refreshReloadEnabled);
+        reloadBtn.addEventListener('click', function () {
+          if (!navigator.onLine) { alert('Zum Neuladen musst du online sein.'); return; }
+          if (!urls.length) { alert('Keine URL-Liste verfügbar.'); return; }
+          if (swSupport) {
+            navigator.serviceWorker.getRegistration().then(function (reg) {
+              if (reg) reg.update().catch(function () {});
+            });
+          }
+          var total = urls.length;
+          var idx = 0;
+          setReloadState('lädt neu … 0 / ' + total, true);
+          function runReload() {
+            if (idx >= total) {
+              try { localStorage.setItem(STORAGE_KEY, '1'); } catch (e) {}
+              setReloadState('neu geladen', true);
+              readCache();
+              readSW();
+              setTimeout(function () { setReloadState('alles neu laden', false); refreshReloadEnabled(); }, 3000);
+              return;
+            }
+            var batch = urls.slice(idx, idx + 6);
+            idx += batch.length;
+            Promise.all(batch.map(function (u) {
+              return fetch(u, { credentials: 'same-origin', cache: 'reload' }).catch(function () {});
+            })).then(function () {
+              setReloadState('lädt neu … ' + Math.min(idx, total) + ' / ' + total, true);
+              runReload();
+            });
+          }
+          runReload();
         });
       }
 
