@@ -1192,11 +1192,6 @@ mark {
   color: var(--muted);
 }
 
-.klappe-rolle {
-  color: var(--muted-soft);
-  font-size: 0.78rem;
-}
-
 .klappe-body {
   margin-top: 1.2rem;
   display: flex;

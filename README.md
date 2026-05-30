@@ -22,6 +22,8 @@ Live: <https://phtok.github.io/mantren/>
 
 PWA: lädt sich auf Wunsch komplett offline.
 
+Schriftbild-Umschalter (⋯-Menü): Standard oder Plex-Edition (Richtung II).
+
 ## Technik
 
 - Astro 5 (statische Generierung, Output in `dist/`).
