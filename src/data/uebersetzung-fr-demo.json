@@ -1,0 +1,113 @@
+{
+  "_hinweis": "Prototyp / nicht öffentlich verlinkt. Übersetzung ins Französische: Louis Defèche. Deutscher Originaltext: Rudolf Steiner (GA 270). Synoptische Demo zum Konzept ‹Parallelvarianten›. Text wortgetreu aus der Arbeitsfassung übernommen.",
+  "uebersetzerin": "Louis Defèche",
+  "sprache": "Französisch",
+  "eintraege": [
+    {
+      "id": "tafel-1",
+      "nummer": "Tafel I",
+      "titel": "Weltenwort",
+      "paare": [
+        {
+          "de": ["O Mensch, erkenne dich selbst!", "So tönt das Weltenwort.", "Du hörst es seelenkräftig,", "Du fühlst es geistgewaltig."],
+          "fr": ["O homme, connais-toi toi-même !", "Ainsi résonne le verbe du monde.", "Tu l'entends fortement dans l'âme,", "Tu le sens puissamment en esprit."]
+        },
+        {
+          "de": ["Wer spricht so weltenmächtig?", "Wer spricht so herzinniglich?", "Wirkt es durch des Raumes Weitenstrahlung", "In deines Sinnes Seinserleben?", "Tönt es durch der Zeiten Wellenweben", "In deines Lebens Werdestrom?"],
+          "fr": ["Qui parle avec cette puissance cosmique ?", "Qui parle avec cette intimité du cœur ?", "Cela agit-il à travers le rayonnement des étendues de l'espace", "Dans le vécu de l'existence sensorielle ?", "Cela résonne-t-il à travers la trame ondoyante du temps", "Dans le flux du devenir de ta vie ?"]
+        },
+        {
+          "de": ["Bist du es selbst, der sich", "Im Raumesfühlen, im Zeiterleben", "Das Wort erschafft, dich fremd", "Erfühlend in Raumes Seelenleere,", "Weil du des Denkens Kraft", "Verlierst im Zeitvernichtungsstrome."],
+          "fr": ["Est-ce toi-même qui,", "En ressentant l'espace, en éprouvant temps,", "Te crée ce verbe, te sentant étranger", "Dans le vide d'âme de l'espace,", "Parce que tu perds la force du penser", "Dans le cours anéantissant du temps ?"]
+        }
+      ]
+    },
+    {
+      "id": "mantra-4",
+      "nummer": "4",
+      "titel": "Mantram 4",
+      "paare": [
+        {
+          "de": ["Fühle wie die Erdentiefen", "Ihre Kräfte deinem Wesen", "In die Leibesglieder drängen.", "Du verlierest dich in ihnen,", "Wenn du deinen Willen machtlos", "Ihrem Streben anvertrauest;", "Sie verfinstern dir das Ich."],
+          "fr": ["Ressens comment les profondeurs", "Insufflent leurs forces en ton être", "Par les membres du corps.", "Tu te perds en elles", "Si tu livres impuissante", "Ta volonté à leur élan;", "Elles t'obscurcissent le Je."]
+        },
+        {
+          "de": ["Fühle wie aus Weltenweiten", "Göttermächte ihre Geisteshelle", "Dir ins Seelenwesen leuchten lassen.", "Finde dich in ihnen liebend,", "Und sie schaffen weisheitwebend", "Dich als Selbst in ihren Kreisen", "Stark für gutes Geistesschaffen."],
+          "fr": ["Ressens comment, des lointains du monde,", "Les puissances divine font luire", "Leur clarté spirituelle au sein de ton âme.", "Retrouve-toi en elles avec amour,", "Et, tissant la sagesse, elles font", "De toi un Soi dans leurs cercles,", "Paré pour le bon travail de l'esprit."]
+        },
+        {
+          "de": ["Fühle wie in Himmelshöhen", "Selbstsein selbstlos leben kann,", "Wenn es geisterfüllt Gedankenmächten", "In dem Höhenstreben folgen will", "Und in Tapferkeit das Wort vernimmt,", "Das von oben gnadevoll ertönet", "In des Menschen wahre Wesenheit."],
+          "fr": ["Ressens comment dans les hauteurs célestes", "L'être du Soi peut vivre sans égoïsme,", "Lorsqu'empli d'esprit il veut suivre", "Les puissances des pensées vers les hauteurs", "Et qu'avec bravoure il perçoit le Verbe", "Qui d'en haut résonne plein de grâce", "Dans l'entité humaine véritable."]
+        }
+      ]
+    },
+    {
+      "id": "mantra-5",
+      "nummer": "5",
+      "titel": "Mantram 5",
+      "paare": [
+        {
+          "de": ["Es kämpft das Licht mit finstren Mächten", "In jenem Reiche, wo dein Denken", "In Geistesdasein dringen möchte.", "Du findest, lichtwärts strebend,", "Dein Selbst vom Geiste dir genommen;", "Du kannst, wenn Finstres dich verlockt,", "Im Stoff das Selbst verlieren."],
+          "fr": ["La lumière lutte avec des puissances obscures", "En ce royaume où ton penser", "Veut pénétrer dans l'existence spirituelle.", "Tu vois, quand tu aspires à la lumière,", "Ton Soi dérobé par l'esprit ;", "Tu peux, quand les ténèbres te séduisent,", "Dans la matière perdre le Soi."]
+        },
+        {
+          "de": ["Es kämpft das Warme mit dem Kalten", "In jenem Reiche, wo dein Fühlen", "Im Geistesweben leben möchte.", "Du findest, Wärme liebend,", "Dein Selbst in Geisteslust verwehend;", "Du kannst, wenn Kälte dich verhärtet,", "Im Leid das Selbst verstäuben."],
+          "fr": ["La chaleur lutte avec le froid", "En ce royaume, où ton sentir", "Veut vivre dans la trame spirituelle.", "Tu vois, quand tu aimes la chaleur,", "Ton Soi se dissiper dans la volupté ;", "Tu peux, quand le froid te durcit,", "Dans la souffrance pulvériser le Soi."]
+        },
+        {
+          "de": ["Es kämpft das Leben mit dem Tode", "In jenem Reiche, wo dein Wollen", "Im Geistesschaffen walten möchte.", "Du findest, Leben fassend,", "Dein Selbst in Geistesmacht verschwinden;", "Du kannst, wenn Todesmacht dich bändigt,", "Im Nichts das Selbst verkrampfen."],
+          "fr": ["La vie lutte avec la mort", "En ce royaume où ton vouloir", "Veut imprégner l'activité spirituelle.", "Tu vois, quand tu saisit la vie,", "Ton Soi disparaître dans l'esprit ;", "Tu peux, quand la mort te subjugue,", "Dans le néant paralyser le Soi."]
+        }
+      ]
+    },
+    {
+      "id": "mantra-10",
+      "nummer": "10",
+      "titel": "Mantram 10",
+      "paare": [
+        {
+          "de": ["Ich lebe in dem finstren Erdbereich,", "Ich webe in dem Schein der Sterne,", "Ich lese in der Geister Taten,", "Ich höre in der Götter Sprache."],
+          "fr": ["Je vis dans l'obscurité de la terre,", "Je tisse dans l'éclat des étoiles,", "Je lis dans les actes des esprits,", "J'entends dans le langage des dieux."]
+        },
+        {
+          "de": ["Sehnend stimmt mich der Erde Finsternis,", "Tröstend ist mir der Sterne Schein,", "Lehrend sind mir der Geister Taten,", "Schaffend ist mir der Götter Sprache."],
+          "fr": ["Ardent me rend l'obscurité de la terre,", "Réconfortant m'est l'éclat des étoiles,", "Instructifs me sont les actes des esprits,", "Créateur m'est le langage des dieux."]
+        },
+        {
+          "de": ["Der Erde Finsternis verlöschet mich,", "Der Sterne Schein erwecket mich,", "Der Geister Taten rufen mich,", "Der Götter Sprache zeuget mich."],
+          "fr": ["L'obscurité de la terre m'éteint,", "L'éclat des étoiles m'éveille,", "Les actes des esprits m'appellent,", "Le langage des dieux m'engendre."]
+        }
+      ]
+    },
+    {
+      "id": "mantra-19",
+      "nummer": "19",
+      "titel": "Mantram 19",
+      "paare": [
+        {
+          "de": ["Wer spricht im Geistes-Wort", "Mit der Stimme,", "Die im Weltenfeuer lodert?", "", "Es sprechen Sternen-Flammen,", "Es flammen seraph'sche Feuer-Mächte;", "Sie flammen auch in meinem Herzen.", "In des Urseins Liebe-Quell", "Findet Menschen-Herz", "Schaffendes Geistes-Flammen-Sprechen:", "Es ist Ich."],
+          "fr": ["Qui parle dans le Verbe d'esprit", "De cette voix", "Qui flamboie dans le feu du cosmos ?", "", "Les flammes stellaires parlent,", "Les puissances de feu séraphiques flamboient;", "Elles flamboient aussi dans mon coeur.", "Dans la source d'amour de l'être originel", "Le coeur humain trouve", "La parole créatrice des flammes de l'esprit:", "C'est – «Je»."]
+        },
+        {
+          "de": ["Was denkt im Geistes-Wort", "Mit Gedanken,", "Die aus Weltenseelen bilden?", "", "Es denken der Sterne Leuchter,", "Es leuchten cherubin'sche Bilde-Kräfte;", "Sie leuchten auch in meinem Haupte.", "In des Urseins Lichtes-Quell", "Findet Menschen-Haupt", "Denkendes Seelen-Bilde-Wirken:", "Es ist Ich."],
+          "fr": ["Qui pense dans le Verbe d'esprit", "Par des pensées,", "Qui façonnent les âmes du monde?", "", "Les luminaires stellaires pensent,", "Les forces formatrices chérubiniques brillent;", "Elles brillent aussi dans ma tête.", "Dans la source de lumière de l'être originel", "La tête humaine trouve", "L'action pensante qui forme l'âme :", "C'est – «Je»."]
+        },
+        {
+          "de": ["Was kraftet im Geistes-Wort", "Mit Kräften,", "Die im Weltenleibe leben?", "", "Es kraftet der Sternen-Welten-Leib,", "Es leiben der Throne Trag-Gewalten;", "Sie leiben auch in meinen Gliedern.", "In des Urseins Lebens-Quell", "Finden Menschen-Glieder", "Kraftendes Welten-Träger-Walten:", "Es ist Ich."],
+          "fr": ["Qui exerce sa force dans le Verbe d'esprit", "Avec des forces", "Qui vivent dans le corps du cosmos ?", "", "Le corps cosmique des étoiles exerce sa force,", "Les pouvoirs porteurs des Thrones prennent corps ;", "Ils prennent corps aussi dans mes membres.", "Dans la source de vie de l'être originel", "Les membres humains trouvent", "Le pouvoir agissant des porteurs du cosmos:", "C'est – «Je»."]
+        }
+      ]
+    },
+    {
+      "id": "poesie-20",
+      "nummer": "19+",
+      "titel": "Sonderspruch (Poésie 20)",
+      "paare": [
+        {
+          "de": ["Seraphisch Feuermächte", "Aus meinem Herzen strahlet ihr", "Cherubinisch Bilderkräfte", "In meinem Haupte scheinet ihr", "Der Throne Traggewalten", "In meinen Gliedern kraftet ihr", "Mein Ich ist IHR."],
+          "fr": ["Puissances de feu séraphiques", "Vous rayonnez de mon coeur", "Forces formatrices chérubiniques", "Vous brillez dans ma tête", "Pouvoir porteurs des Thrones", "Vous pulsez dans mes membres", "Mon Je est VÔTRE."]
+        }
+      ]
+    }
+  ]
+}
