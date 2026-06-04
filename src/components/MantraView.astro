@@ -10,6 +10,9 @@ interface Props {
 }
 
 const { mantra, kommentare } = Astro.props;
+// Bei per-Strophe-Klappen den Mantra-Körper auf knappere Strophen-Bindung
+// und größere Trennung zur nächsten Strophe umschalten.
+const hasInline = !!(kommentare && kommentare.length);
 
 function renderLine(line: string) {
   const raw = line.startsWith('/') ? line.slice(1) : line;
@@ -27,7 +30,7 @@ const kommentarForPart = (part: { lines?: string[] }) => {
 ---
 <article class="mantra">
 
-  <div class="mantra-body">
+  <div class={`mantra-body${hasInline ? ' mantra-body--compact' : ''}`}>
     {mantra.parts.map((part) => {
       const entry = kommentarForPart(part);
       return (

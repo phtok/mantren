@@ -200,7 +200,7 @@
   "bearbeitung": {
     "projekt": "Mantren-Web-App https://phtok.github.io/mantren/",
     "stand": "GA 270a + 270b + 270c vollstaendig als Vortragsseiten aufbereitet (30 Seiten); 45 Strophen-Kommentare; 13 Tafelbilder. Apparat (Vorbemerkungen/Hinweise/Tafelband) gesichtet; editorischer Rahmen in diesem Quellennachweis zusammengefasst.",
-    "offen": "Optional: substanzielle Einzel-Varianten der Hinweise in betroffene Kommentare einarbeiten; separat gedruckter Schluss der 19. Stunde (Ausschluss-Text, GA 270b) als Abschnitt ergaenzen."
+    "offen": "Optional: substanzielle Einzel-Varianten der Hinweise in betroffene Kommentare einarbeiten."
   },
   "mantren_register": {
     "datei": "mantren-register.json",

@@ -1,0 +1,184 @@
+---
+import Base from '../../layouts/Base.astro';
+import demo from '../../data/uebersetzung-fr-demo.json';
+
+// Versteckter Prototyp — bewusst NICHT in Navigation, Index, Suche oder der
+// Offline-Liste verlinkt. Nur über die eigene URL erreichbar.
+// Zeigt das Konzept ‹Parallelvarianten› (synoptische Ansicht) mit echtem
+// Material: Originaltext Rudolf Steiners neben der französischen Übersetzung
+// von Louis Defèche.
+
+const eintraege = demo.eintraege;
+---
+<Base title="Werkstatt — Übersetzung (FR)">
+  <article class="uebersetzung">
+    <header class="ue-head">
+      <p class="ue-eyebrow">Prototyp · nicht öffentlich</p>
+      <h1 class="ue-title">Parallelvarianten</h1>
+      <p class="ue-sub">
+        Originaltext (Rudolf Steiner, GA 270) neben der französischen
+        Übersetzung von <strong>Louis Defèche</strong> — synoptisch.
+      </p>
+      <p class="ue-note">
+        Beispielseite zum Konzept der Übersetzer-Funktion. Auf schmalen
+        Schirmen zwischen den Sprachen wischen oder oben umschalten.
+      </p>
+    </header>
+
+    <div class="ue-controls" role="group" aria-label="Sprachansicht">
+      <button type="button" class="ue-seg" data-set-view="de" aria-pressed="false">Deutsch</button>
+      <button type="button" class="ue-seg" data-set-view="both" aria-pressed="true">Beide</button>
+      <button type="button" class="ue-seg" data-set-view="fr" aria-pressed="false">Français</button>
+    </div>
+
+    <div class="ue-stage" id="ue-stage" data-view="both">
+      {eintraege.map((e) => (
+        <section class="ue-entry">
+          <h2 class="ue-entry-head">
+            <span class="ue-entry-num">{e.nummer}</span>
+            <span class="ue-entry-titel">{e.titel}</span>
+          </h2>
+          {e.paare.map((p) => (
+            <div class="ue-pair">
+              <div class="ue-col ue-col-de" lang="de">
+                {p.de.map((line) => (
+                  line === '' ? <span class="ue-spacer" aria-hidden="true"></span> : <span class="ue-line">{line}</span>
+                ))}
+              </div>
+              <div class="ue-col ue-col-fr" lang="fr">
+                {p.fr.map((line) => (
+                  line === '' ? <span class="ue-spacer" aria-hidden="true"></span> : <span class="ue-line">{line}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </section>
+      ))}
+    </div>
+
+    <footer class="ue-foot">
+      <p>
+        Übersetzung ins Französische: Louis Defèche. Deutscher Originaltext:
+        Rudolf Steiner, Klassenmantren 1924 (GA 270). Arbeitsstand, wortgetreu
+        übernommen — interner Prototyp, keine Veröffentlichung.
+      </p>
+    </footer>
+  </article>
+
+  <style>
+    .uebersetzung { max-width: 62rem; margin: 0 auto; padding: 0 0 4rem; }
+
+    .ue-head { margin: 1.5rem 0 1rem; }
+    .ue-eyebrow {
+      font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+      opacity: 0.55; margin: 0 0 0.4rem;
+    }
+    .ue-title { font-size: 1.7rem; margin: 0 0 0.5rem; line-height: 1.15; }
+    .ue-sub { margin: 0 0 0.4rem; font-size: 1.02rem; }
+    .ue-note { margin: 0; font-size: 0.88rem; opacity: 0.7; }
+
+    /* Umschalter */
+    .ue-controls {
+      position: sticky; top: 0.5rem; z-index: 5;
+      display: inline-flex; gap: 0; margin: 1.25rem 0 1.5rem;
+      border: 1px solid currentColor; border-radius: 999px; overflow: hidden;
+      background: var(--bg, #fff);
+    }
+    .ue-seg {
+      appearance: none; border: 0; background: transparent; color: inherit;
+      font: inherit; font-size: 0.85rem; padding: 0.4rem 0.95rem; cursor: pointer;
+      opacity: 0.6; transition: opacity 0.15s, background 0.15s;
+    }
+    .ue-seg + .ue-seg { border-left: 1px solid currentColor; }
+    .ue-seg[aria-pressed="true"] { opacity: 1; background: rgba(127,127,127,0.16); }
+
+    .ue-entry { margin: 0 0 2.6rem; }
+    .ue-entry-head {
+      display: flex; align-items: baseline; gap: 0.6rem;
+      font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase;
+      opacity: 0.6; font-weight: 600; margin: 0 0 0.9rem;
+      border-bottom: 1px solid rgba(127,127,127,0.25); padding-bottom: 0.4rem;
+    }
+    .ue-entry-num {
+      display: inline-block; min-width: 2.4em; padding: 0.05em 0.5em;
+      border: 1px solid rgba(127,127,127,0.4); border-radius: 0.4em;
+      text-align: center; font-variant-numeric: tabular-nums;
+    }
+
+    .ue-pair {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem 2.5rem;
+      margin: 0 0 1.4rem;
+    }
+    .ue-col { display: flex; flex-direction: column; }
+    .ue-line { display: block; line-height: 1.5; }
+    .ue-col-de .ue-line { }
+    .ue-col-fr .ue-line { font-style: italic; opacity: 0.92; }
+    .ue-spacer { display: block; height: 0.7rem; }
+
+    /* Ansichts-Modi (Umschalter / Wischen) */
+    #ue-stage[data-view="de"] .ue-pair { grid-template-columns: 1fr; }
+    #ue-stage[data-view="de"] .ue-col-fr { display: none; }
+    #ue-stage[data-view="fr"] .ue-pair { grid-template-columns: 1fr; }
+    #ue-stage[data-view="fr"] .ue-col-de { display: none; }
+    #ue-stage[data-view="fr"] .ue-col-fr .ue-line { font-style: normal; opacity: 1; }
+
+    .ue-foot {
+      margin-top: 2.5rem; padding-top: 1rem;
+      border-top: 1px solid rgba(127,127,127,0.25);
+      font-size: 0.8rem; opacity: 0.6;
+    }
+
+    @media (max-width: 720px) {
+      .ue-pair { grid-template-columns: 1fr; gap: 0.9rem; }
+      /* Auf Mobil zeigt ‹Beide› die Sprachen gestapelt mit zarter Trennung */
+      #ue-stage[data-view="both"] .ue-col-fr {
+        padding-top: 0.7rem; margin-top: 0.2rem;
+        border-top: 1px dashed rgba(127,127,127,0.3);
+      }
+    }
+  </style>
+
+  <script is:inline>
+    (function () {
+      var stage = document.getElementById('ue-stage');
+      if (!stage) return;
+      var segs = Array.prototype.slice.call(document.querySelectorAll('.ue-seg'));
+
+      function setView(view) {
+        stage.setAttribute('data-view', view);
+        segs.forEach(function (b) {
+          b.setAttribute('aria-pressed', b.getAttribute('data-set-view') === view ? 'true' : 'false');
+        });
+        try { localStorage.setItem('ue:view', view); } catch (e) {}
+      }
+
+      segs.forEach(function (b) {
+        b.addEventListener('click', function () { setView(b.getAttribute('data-set-view')); });
+      });
+
+      // Startansicht: gespeicherte Wahl, sonst Mobil = Deutsch, Desktop = Beide.
+      var saved = null;
+      try { saved = localStorage.getItem('ue:view'); } catch (e) {}
+      if (saved === 'de' || saved === 'fr' || saved === 'both') setView(saved);
+      else setView(window.matchMedia('(max-width: 720px)').matches ? 'de' : 'both');
+
+      // Wischen links/rechts wechselt zwischen den Sprachen (Einzelansicht).
+      var tStart = null;
+      stage.addEventListener('touchstart', function (e) {
+        if (e.touches.length !== 1) { tStart = null; return; }
+        tStart = { x: e.touches[0].clientX, y: e.touches[0].clientY, t: Date.now() };
+      }, { passive: true });
+      stage.addEventListener('touchend', function (e) {
+        if (!tStart) return;
+        var t = e.changedTouches[0];
+        var dx = t.clientX - tStart.x;
+        var dy = t.clientY - tStart.y;
+        var dt = Date.now() - tStart.t;
+        tStart = null;
+        if (dt > 700 || Math.abs(dx) < 60 || Math.abs(dy) > Math.abs(dx) * 0.6) return;
+        // Nach links wischen → Französisch; nach rechts → Deutsch.
+        setView(dx < 0 ? 'fr' : 'de');
+      }, { passive: true });
+    })();
+  </script>
+</Base>

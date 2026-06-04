@@ -24,24 +24,32 @@ const quelleLine = tx(quelleParts.join(' · '));
 const tabKey = (klappenKey ?? mantraId).replace(/\./g, '-');
 const tabName = `klappe-${tabKey}`;
 const summaryTitle = tx(kommentar.titel || 'Kommentar');
+const TAFEL_ZAEHLER: Record<string, string> = {
+  'erste-tafel': 'T1',
+  'zweite-tafel': 'T2',
+  'dritte-tafel': 'T3',
+};
+const keyForLabel = TAFEL_ZAEHLER[mantraId] ?? klappenKey ?? mantraId;
+const numericKey = /^(T?[0-9])/.test(keyForLabel);
+const summaryLabel = numericKey ? `Hinweis zu ${keyForLabel}` : 'Hinweise';
 
 const k = kommentar.kerngedanken;
 const hasKurz = !!k.kurz;
 const hasKompakt = !!k.kompakt;
 const hasAusf = !!(k.ausfuehrlich && k.ausfuehrlich.length);
-const defaultTab = hasKompakt ? 'kompakt' : hasKurz ? 'kurz' : 'ausf';
+const defaultTab = hasKurz ? 'kurz' : hasKompakt ? 'kompakt' : 'ausf';
 
 const tafel = kommentar.tafelbild;
 const tafelImgSrc = tafel ? (/^(https?:|\/)/.test(tafel.bild) ? tafel.bild : `${base}${tafel.bild}`) : null;
 ---
-<details class="klappe">
+<details class="klappe klappe--compact">
   <summary class="klappe-summary">
     <span class="klappe-marker" aria-hidden="true"></span>
-    <span class="klappe-label">{summaryTitle}</span>
-    {kommentar.rolle && <span class="klappe-rolle">{tx(kommentar.rolle)}</span>}
+    <span class="klappe-label">{summaryLabel}</span>
   </summary>
 
   <div class="klappe-body">
+    {kommentar.titel && <p class="klappe-inline-titel">{summaryTitle}</p>}
     <div class="klappe-tabs">
       {hasKurz && (
         <input type="radio" name={tabName} id={`${tabName}-kurz`} value="kurz" checked={defaultTab === 'kurz'} />
