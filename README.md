@@ -58,6 +58,32 @@ Saubererer Weg langfristig: in Repo-Settings → Environments → `github-pages`
 Deployment branches `main` zulassen. Dann kann der Sync-Job entfernt und der
 Workflow direkt auf `main` deployt werden.
 
+## Geschenk-Domain: mantra.saetzerei.com (Vercel)
+
+Zweites Deploy-Ziel aus demselben Code. Vercel setzt beim Build `VERCEL=1`;
+`astro.config.mjs` schaltet dann auf `site = https://mantra.saetzerei.com`
+und `base = /`. Der GitHub-Pages-Deploy bleibt unverändert (und offen).
+
+Nur auf dieser Variante aktiv (`src/lib/geschenk.ts`):
+
+- **Digitales Geschenkpapier** — `/geschenk/` ist die Landingpage: Geheimwort
+  oder Magic-Link (`/geschenk/?s=<geheimwort>`) löst den Knoten, Ziehen am
+  roten Band packt die App aus.
+- **Zugangsschutz** — ohne freigeschalteten Zugang (localStorage) leiten alle
+  Seiten auf `/geschenk/` um. Client-seitig und bewusst sanft: es ist
+  Geschenkpapier, kein Tresor. Das Geheimwort steht als SHA-256-Hash im HTML;
+  Klartext-Default in `src/lib/geschenk.ts`, überschreibbar per
+  Env-Variable `GESCHENK_CODE` im Vercel-Projekt.
+- **Vercel Web Analytics** — Script ist eingebunden; liefert Zahlen, sobald
+  im Vercel-Dashboard unter Analytics „Web Analytics“ aktiviert ist.
+
+Lokal testen: `VERCEL=1 npm run build && VERCEL=1 npm run preview`
+(oder nur das Gate auf dem Pages-Build: `GESCHENK=1 npm run build`).
+
+Domain-Verdrahtung: Domain `mantra.saetzerei.com` im Vercel-Projekt
+hinzufügen und bei Cloudflare (DNS von saetzerei.com) einen CNAME
+`mantra` → `cname.vercel-dns.com` (DNS only) anlegen.
+
 ## Dateistruktur
 
 ```
@@ -65,7 +91,7 @@ src/
   data/         Inhalte (mantren.yaml, vortraege.json, mantren-kommentar.json,
                 quellen.json, glossar.json, onboarding.json)
   pages/        Astro-Seiten (index, universalsuche, einfuehrung, vortraege,
-                quellen, tafeln-galerie, impressum, [id] = Mantra-Seiten)
+                quellen, tafeln-galerie, impressum, geschenk, [id] = Mantra-Seiten)
   components/   LectureView, MantraView, KommentarKlappe, GlossarTerm
   layouts/      Base.astro
   lib/          mantren.ts, vortraege.ts, kommentar.ts, glossar.ts,

@@ -1,13 +1,18 @@
 import { defineConfig } from 'astro/config';
 import AstroPWA from '@vite-pwa/astro';
 
-// GitHub Pages: Projekt-Site unter https://phtok.github.io/mantren/
-const site = 'https://phtok.github.io';
-const base = '/mantren';
+// Zwei Deploy-Ziele aus demselben Code:
+// - GitHub Pages: Projekt-Site unter https://phtok.github.io/mantren/
+// - Vercel (Geschenk-Domain): https://mantra.saetzerei.com/ an der Wurzel.
+//   Vercel setzt beim Build automatisch VERCEL=1; lokal lässt sich diese
+//   Variante mit `VERCEL=1 npm run build` erzeugen.
+const aufVercel = !!process.env.VERCEL;
+const site = process.env.SITE || (aufVercel ? 'https://mantra.saetzerei.com' : 'https://phtok.github.io');
+const base = aufVercel ? '' : '/mantren';
 
 export default defineConfig({
   site,
-  base,
+  base: base || '/',
   // Astro-Routen IMMER mit Trailing-Slash. GitHub Pages macht sonst
   // einen 301-Redirect (z.B. /stunde-1 → /stunde-1/), der offline
   // nicht funktioniert und den SW-Precache aushebelt.
