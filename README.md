@@ -80,9 +80,17 @@ Nur auf dieser Variante aktiv (`src/lib/geschenk.ts`):
 Lokal testen: `VERCEL=1 npm run build && VERCEL=1 npm run preview`
 (oder nur das Gate auf dem Pages-Build: `GESCHENK=1 npm run build`).
 
-Domain-Verdrahtung: Domain `mantra.saetzerei.com` im Vercel-Projekt
-hinzufügen und bei Cloudflare (DNS von saetzerei.com) einen CNAME
-`mantra` → `cname.vercel-dns.com` (DNS only) anlegen.
+Deployed unter dem Vercel-Projekt `phtoks-projects/mantra`
+(<https://mantra-taupe.vercel.app>). Domain `mantra.saetzerei.com` ist im
+Projekt bereits hinterlegt; DNS von saetzerei.com läuft über Infomaniak
+(Nameserver `nsany1/2.infomaniak.com`) — dort fehlt noch ein Eintrag:
+
+```
+A    mantra.saetzerei.com    76.76.21.21
+```
+
+(von Vercel für dieses Setup empfohlen; Status prüfen mit
+`vercel domains inspect mantra.saetzerei.com --scope=phtoks-projects`).
 
 ## Dateistruktur
 

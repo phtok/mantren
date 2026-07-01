@@ -35,3 +35,5 @@ HANDOVER.md
 
 # vercel
 .vercel/
+.vercel
+.env*
