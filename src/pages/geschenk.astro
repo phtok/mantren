@@ -41,16 +41,34 @@ const faviconUrl = `${base}favicon.svg`;
 
       <section class="g-buehne" id="buehne">
         <div class="paket" id="paket" aria-hidden="false">
-          <div class="paket-papier"></div>
+          <div class="paket-papier">
+            <div class="paket-glanz"></div>
+          </div>
+          <div class="falte falte-links"></div>
+          <div class="falte falte-rechts"></div>
           <div class="band band-v"></div>
           <div class="band band-h"></div>
           <button class="schleife" id="schleife" type="button" aria-label="Am Geschenkband ziehen">
-            <svg viewBox="0 0 120 64" aria-hidden="true" focusable="false">
-              <path class="s-loop" d="M60 32 C 34 4, 8 10, 16 28 C 22 42, 46 40, 60 32 Z" />
-              <path class="s-loop" d="M60 32 C 86 4, 112 10, 104 28 C 98 42, 74 40, 60 32 Z" />
-              <path class="s-tail" d="M60 32 L 44 60 L 52 58 L 56 63 Z" />
-              <path class="s-tail" d="M60 32 L 76 60 L 68 58 L 64 63 Z" />
-              <circle class="s-knoten" cx="60" cy="32" r="8" />
+            <svg viewBox="0 0 140 78" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="gBand" x1="0" y1="0" x2="1" y2="1">
+                  <stop class="g-stop-hell" offset="0%" />
+                  <stop class="g-stop-mitte" offset="55%" />
+                  <stop class="g-stop-kante" offset="100%" />
+                </linearGradient>
+                <linearGradient id="gKnoten" x1="0" y1="0" x2="0" y2="1">
+                  <stop class="g-stop-mitte" offset="0%" />
+                  <stop class="g-stop-kante" offset="100%" />
+                </linearGradient>
+              </defs>
+              <path class="s-tail" d="M70 39 L50 74 L60 71 L65 77 Z" />
+              <path class="s-tail" d="M70 39 L90 74 L80 71 L75 77 Z" />
+              <path class="s-loop" d="M70 39 C 40 4, 6 10, 15 32 C 20 50, 48 48, 70 39 Z" />
+              <path class="s-loop" d="M70 39 C 100 4, 134 10, 125 32 C 120 50, 92 48, 70 39 Z" />
+              <path class="s-glanz" d="M68 37 C 48 17, 26 16, 20 29 C 27 24, 46 25, 64 35 Z" />
+              <path class="s-glanz" d="M72 37 C 92 17, 114 16, 120 29 C 113 24, 94 25, 76 35 Z" />
+              <circle class="s-knoten" cx="70" cy="39" r="9.5" />
+              <circle class="s-knoten-glanz" cx="66.5" cy="35.5" r="2.4" />
             </svg>
             <span class="band-zieher" aria-hidden="true"></span>
           </button>
@@ -79,6 +97,9 @@ const faviconUrl = `${base}favicon.svg`;
       </form>
 
       <section class="g-reveal" id="reveal" role="status">
+        <svg class="g-funke" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <path d="M16 1 C 16.8 9.5 17.5 13.5 26.5 15.5 C 17.5 17.5 16.8 21.5 16 30 C 15.2 21.5 14.5 17.5 5.5 15.5 C 14.5 13.5 15.2 9.5 16 1 Z" />
+        </svg>
         <h1 class="g-titel">Herzlichen Glückwunsch<br />zum Geburtstag!</h1>
         <p class="g-text">
           Ausgepackt: <strong>die Mantren</strong> — Rudolf Steiners mantrisches
@@ -90,7 +111,7 @@ const faviconUrl = `${base}favicon.svg`;
           Tipp: In der App unter ⋯ → „App und Offline“ lässt sie sich
           auf dem Handy installieren — dann ist sie immer dabei.
         </p>
-        <p class="g-klein g-von">Von Herzen, Philipp</p>
+        <p class="g-klein g-von">Von Herzen, Philipp&ensp;♡</p>
       </section>
     </main>
 
@@ -239,6 +260,11 @@ const faviconUrl = `${base}favicon.svg`;
     align-items: center;
     justify-content: center;
     padding: 2rem 1.25rem;
+    background: radial-gradient(60% 50% at 50% 38%, var(--geschenk-halo), transparent 72%), var(--bg);
+    --geschenk-halo: rgba(168, 58, 56, 0.06);
+  }
+  :global(html.theme-invert) .geschenk-body {
+    --geschenk-halo: rgba(181, 82, 74, 0.1);
   }
 
   .geschenk {
@@ -249,11 +275,19 @@ const faviconUrl = `${base}favicon.svg`;
     align-items: center;
     text-align: center;
     --band-farbe: #a83a38;
-    --band-kante: #8c2f2d;
+    --band-kante: #832d2b;
+    --band-hell: #d3695f;
+    --papier-1: #f3efe9;
+    --papier-2: #e4ded2;
+    --papier-dot: #c9c0ae;
   }
   :global(html.theme-invert) .geschenk {
     --band-farbe: #b5524a;
-    --band-kante: #93413b;
+    --band-kante: #7c332e;
+    --band-hell: #d98a78;
+    --papier-1: #262019;
+    --papier-2: #1a150f;
+    --papier-dot: #4a4030;
   }
 
   .g-eyebrow {
@@ -274,24 +308,68 @@ const faviconUrl = `${base}favicon.svg`;
     width: min(78vw, 17rem);
     aspect-ratio: 1;
     margin: 0 auto;
+    filter: drop-shadow(0 22px 32px rgba(30, 20, 10, 0.16));
+  }
+  :global(html.theme-invert) .paket {
+    filter: drop-shadow(0 22px 36px rgba(0, 0, 0, 0.5));
   }
 
   .paket-papier {
     position: absolute;
     inset: 0;
-    border-radius: 10px;
-    background-color: var(--petrol-soft);
-    background-image: radial-gradient(var(--muted-soft) 1px, transparent 1.4px);
-    background-size: 20px 20px;
-    background-position: 10px 10px;
-    box-shadow: inset 0 0 0 1px var(--line);
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: var(--papier-2);
+    background-image:
+      radial-gradient(var(--papier-dot) 1px, transparent 1.4px),
+      linear-gradient(128deg, var(--papier-1), var(--papier-2) 70%);
+    background-size: 20px 20px, 100% 100%;
+    background-position: 10px 10px, 0 0;
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 0, 0, 0.06),
+      inset 0 1px 0 rgba(255, 255, 255, 0.4);
     transition: opacity 0.5s ease 0.45s, transform 0.5s ease 0.45s;
+  }
+  :global(html.theme-invert) .paket-papier {
+    box-shadow:
+      inset 0 0 0 1px rgba(0, 0, 0, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .paket-glanz {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), transparent 42%);
+    mix-blend-mode: soft-light;
+  }
+  :global(html.theme-invert) .paket-glanz { opacity: 0.5; }
+
+  /* Gefaltete Papierecken unten — deuten das Einschlagen an */
+  .falte {
+    position: absolute;
+    bottom: -1px;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: linear-gradient(135deg, var(--papier-1), var(--papier-2));
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+    z-index: 1;
+    transition: opacity 0.5s ease 0.45s;
+  }
+  .falte-links {
+    left: -1px;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+  }
+  .falte-rechts {
+    right: -1px;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
   }
 
   .band {
     position: absolute;
-    background: var(--band-farbe);
-    box-shadow: inset 0 0 0 1px var(--band-kante);
+    z-index: 2;
+    box-shadow:
+      inset 0 0 0 1px var(--band-kante),
+      0 2px 6px rgba(20, 8, 6, 0.22);
     transition: transform 0.6s ease-in 0.15s, opacity 0.6s ease-in 0.15s;
   }
   .band-v {
@@ -299,16 +377,19 @@ const faviconUrl = `${base}favicon.svg`;
     left: 50%;
     width: 1.6rem;
     transform: translateX(-50%);
+    background: linear-gradient(90deg, var(--band-hell), var(--band-farbe) 42%, var(--band-kante) 52%, var(--band-farbe) 62%, var(--band-hell) 100%);
   }
   .band-h {
     left: -4px; right: -4px;
     top: 50%;
     height: 1.6rem;
     transform: translateY(-50%);
+    background: linear-gradient(180deg, var(--band-hell), var(--band-farbe) 42%, var(--band-kante) 52%, var(--band-farbe) 62%, var(--band-hell) 100%);
   }
 
   .schleife {
     position: absolute;
+    z-index: 3;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -58%);
@@ -331,13 +412,22 @@ const faviconUrl = `${base}favicon.svg`;
     display: block;
     width: 100%;
     height: auto;
+    overflow: visible;
+    filter: drop-shadow(0 6px 10px rgba(20, 8, 6, 0.28));
     transform: translateY(calc(var(--zug) * 0.18)) rotate(calc(var(--zug) / 40 * 1deg));
     transition: transform 0.2s ease;
   }
   .paket.am-ziehen .schleife svg { transition: none; }
-  .s-loop { fill: var(--band-farbe); stroke: var(--band-kante); stroke-width: 1.5; }
-  .s-tail { fill: var(--band-kante); }
-  .s-knoten { fill: var(--band-kante); }
+
+  .g-stop-hell { stop-color: var(--band-hell); }
+  .g-stop-mitte { stop-color: var(--band-farbe); }
+  .g-stop-kante { stop-color: var(--band-kante); }
+
+  .s-loop { fill: url(#gBand); stroke: var(--band-kante); stroke-width: 1.25; stroke-linejoin: round; }
+  .s-tail { fill: var(--band-farbe); stroke: var(--band-kante); stroke-width: 1; stroke-linejoin: round; }
+  .s-glanz { fill: rgba(255, 255, 255, 0.4); }
+  .s-knoten { fill: url(#gKnoten); stroke: var(--band-kante); stroke-width: 1; }
+  .s-knoten-glanz { fill: rgba(255, 255, 255, 0.55); }
 
   /* Herabhängendes Bandende als Zieh-Griff */
   .band-zieher {
@@ -346,8 +436,8 @@ const faviconUrl = `${base}favicon.svg`;
     top: 68%;
     width: 0.95rem;
     height: 4.4rem;
-    background: var(--band-farbe);
-    box-shadow: inset 0 0 0 1px var(--band-kante);
+    background: linear-gradient(90deg, var(--band-hell), var(--band-farbe) 45%, var(--band-kante) 55%, var(--band-hell));
+    box-shadow: inset 0 0 0 1px var(--band-kante), 0 2px 6px rgba(20, 8, 6, 0.22);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 82%, 0 100%);
     transform: translateX(-50%) translateY(calc(var(--zug) * 0.85)) rotate(3deg);
     transform-origin: top center;
@@ -382,8 +472,9 @@ const faviconUrl = `${base}favicon.svg`;
   }
   .geloest .band-v { transform: translateX(-50%) translateY(115%); opacity: 0; }
   .geloest .band-h { transform: translateY(-50%) translateX(120%); opacity: 0; }
-  .geloest .paket-papier { opacity: 0; transform: scale(0.965); }
-  .sofort .schleife, .sofort .band, .sofort .paket-papier { transition: none; }
+  .geloest .paket-papier,
+  .geloest .falte { opacity: 0; transform: scale(0.965); }
+  .sofort .schleife, .sofort .band, .sofort .paket-papier, .sofort .falte { transition: none; }
 
   /* ─────────────── Zustände ─────────────── */
 
@@ -432,6 +523,14 @@ const faviconUrl = `${base}favicon.svg`;
     cursor: pointer;
     text-decoration: none;
     white-space: nowrap;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .g-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.14);
+  }
+  :global(html.theme-invert) .g-btn:hover {
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
   }
   .g-fehler {
     margin: 0.8rem 0 0;
@@ -448,13 +547,29 @@ const faviconUrl = `${base}favicon.svg`;
 
   /* ─────────────── Reveal ─────────────── */
 
-  .g-reveal { animation: aufsteigen 0.7s ease both; }
+  .g-reveal { position: relative; animation: aufsteigen 0.7s ease both; }
   @keyframes aufsteigen {
     from { opacity: 0; transform: translateY(0.8rem); }
     to { opacity: 1; transform: translateY(0); }
   }
   @media (prefers-reduced-motion: reduce) {
     .g-reveal { animation: none; }
+  }
+
+  .g-funke {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 auto 0.6rem;
+    fill: var(--band-farbe);
+    opacity: 0.85;
+    animation: funkeln 2.4s ease-in-out infinite;
+  }
+  @keyframes funkeln {
+    0%, 100% { opacity: 0.55; transform: scale(0.92); }
+    50% { opacity: 0.95; transform: scale(1.05); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .g-funke { animation: none; }
   }
 
   .g-titel {

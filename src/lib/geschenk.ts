@@ -15,7 +15,7 @@ import { createHash } from 'node:crypto';
 export const aufVercel = !!process.env.VERCEL;
 export const geschenkAktiv = aufVercel || process.env.GESCHENK === '1';
 
-export const GESCHENK_CODE_DEFAULT = 'morgenlicht';
+export const GESCHENK_CODE_DEFAULT = 'time';
 
 const code = (process.env.GESCHENK_CODE || GESCHENK_CODE_DEFAULT).trim().toLowerCase();
 
