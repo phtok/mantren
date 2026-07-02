@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import { tx } from '../lib/typografie';
 import { buildOfflineUrls } from '../lib/offline';
-import { aufVercel, geschenkAktiv, ZUGANG_KEY, ZUGANG_WERT } from '../lib/geschenk';
+import { aufVercel, geschenkAktiv, ZUGANG_KEY, ZUGANG_WERT, OFFENE_HOSTS } from '../lib/geschenk';
 
 interface Props {
   title?: string;
@@ -35,11 +35,19 @@ const offlineUrls = buildOfflineUrls(base);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    {geschenkAktiv && <meta name="robots" content="noindex" id="geschenk-robots" />}
     {geschenkAktiv && (
-      <script is:inline define:vars={{ zugangWert: ZUGANG_WERT, zugangKey: ZUGANG_KEY, geschenkUrl: `${base}geschenk/` }}>
+      <script is:inline define:vars={{ zugangWert: ZUGANG_WERT, zugangKey: ZUGANG_KEY, geschenkUrl: `${base}geschenk/`, offeneHosts: OFFENE_HOSTS }}>
         // Geschenk-Zugang: ohne freigeschalteten Zugang (Band noch nicht
-        // gezogen) geht es zur Geschenkseite.
+        // gezogen) geht es zur Geschenkseite. Auf den öffentlichen
+        // Projekt-Domains (offeneHosts) greift weder das Gate noch das
+        // noindex — dort erscheint die App direkt und indexierbar.
         (function () {
+          if (offeneHosts.indexOf(location.hostname) !== -1) {
+            var robots = document.getElementById('geschenk-robots');
+            if (robots) robots.remove();
+            return;
+          }
           try {
             if (localStorage.getItem(zugangKey) === zugangWert) return;
           } catch (e) {}
@@ -47,7 +55,6 @@ const offlineUrls = buildOfflineUrls(base);
         })();
       </script>
     )}
-    {geschenkAktiv && <meta name="robots" content="noindex" />}
     {aufVercel && <script defer src="/_vercel/insights/script.js"></script>}
     <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
     <link rel="icon" type="image/svg+xml" href={faviconUrl} />

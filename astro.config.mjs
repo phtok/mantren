@@ -3,11 +3,15 @@ import AstroPWA from '@vite-pwa/astro';
 
 // Zwei Deploy-Ziele aus demselben Code:
 // - GitHub Pages: Projekt-Site unter https://phtok.github.io/mantren/
-// - Vercel (Geschenk-Domain): https://fuer-martje.saetzerei.com/ an der
-//   Wurzel. Vercel setzt beim Build automatisch VERCEL=1; lokal lässt
-//   sich diese Variante mit `VERCEL=1 npm run build` erzeugen.
+// - Vercel: https://mantra.saetzerei.com/ an der Wurzel — die
+//   öffentliche Projekt-Domain (kanonisch für site/Manifest/Sitemap).
+//   Dasselbe Deployment bedient zusätzlich die Geschenk-Domain
+//   fuer-martje.saetzerei.com; welche der beiden gilt, entscheidet zur
+//   Laufzeit src/lib/geschenk.ts (OFFENE_HOSTS). Vercel setzt beim
+//   Build automatisch VERCEL=1; lokal lässt sich diese Variante mit
+//   `VERCEL=1 npm run build` erzeugen.
 const aufVercel = !!process.env.VERCEL;
-const site = process.env.SITE || (aufVercel ? 'https://fuer-martje.saetzerei.com' : 'https://phtok.github.io');
+const site = process.env.SITE || (aufVercel ? 'https://mantra.saetzerei.com' : 'https://phtok.github.io');
 const base = aufVercel ? '' : '/mantren';
 
 export default defineConfig({

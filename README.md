@@ -58,35 +58,46 @@ Saubererer Weg langfristig: in Repo-Settings → Environments → `github-pages`
 Deployment branches `main` zulassen. Dann kann der Sync-Job entfernt und der
 Workflow direkt auf `main` deployt werden.
 
-## Geschenk-Domain: fuer-martje.saetzerei.com (Vercel)
+## Vercel: zwei Domains, ein Deployment
 
-Zweites Deploy-Ziel aus demselben Code. Vercel setzt beim Build `VERCEL=1`;
-`astro.config.mjs` schaltet dann auf `site = https://fuer-martje.saetzerei.com`
-und `base = /`. Der GitHub-Pages-Deploy bleibt unverändert (und offen).
-Die Subdomain ist bewusst unauffällig gewählt — sie soll nicht verraten,
-was hinter dem Geschenkpapier steckt.
+Zweites Deploy-Ziel aus demselben Code, zusätzlich zu GitHub Pages. Vercel
+setzt beim Build `VERCEL=1`; `astro.config.mjs` schaltet dann auf
+`site = https://mantra.saetzerei.com` und `base = /`. Der GitHub-Pages-Deploy
+bleibt unverändert (und offen).
 
-Nur auf dieser Variante aktiv (`src/lib/geschenk.ts`):
+Dasselbe Vercel-Projekt (`phtoks-projects/mantra`) bedient zwei Domains mit
+unterschiedlichem Verhalten — welche gilt, entscheidet zur Laufzeit
+`location.hostname` (`src/lib/geschenk.ts`, `OFFENE_HOSTS`):
 
-- **Digitales Geschenkpapier** — `/geschenk/` ist die Landingpage: ein
-  verschnürtes Paket, kein Formular. Ziehen am roten Band (oder Klick/Enter
-  darauf) packt die App aus — das Auspacken selbst ist die Pointe, kein
-  Geheimwort nötig.
-- **Zugangsschutz** — ohne freigeschalteten Zugang (localStorage-Flag, wird
-  beim Auspacken gesetzt) leiten alle Seiten auf `/geschenk/` um. Bewusst
-  kein Passwort: der Schutz besteht allein aus der unauffälligen Domain und
-  dem Band, das erst gezogen werden muss.
-- **Vercel Web Analytics** — Script ist eingebunden; liefert Zahlen, sobald
-  im Vercel-Dashboard unter Analytics „Web Analytics“ aktiviert ist.
+- **mantra.saetzerei.com** — die öffentliche Projekt-Domain. App direkt,
+  kein Gate, indexierbar.
+- **fuer-martje.saetzerei.com** — die Geschenk-Domain fürs Geburtstags-
+  Überraschungspaket, bewusst unauffällig benannt. Nur hier aktiv
+  (`src/lib/geschenk.ts`):
+  - **Digitales Geschenkpapier** — `/geschenk/` ist die Landingpage: ein
+    verschnürtes Paket, kein Formular. Ziehen am roten Band (oder
+    Klick/Enter darauf) packt die App aus — das Auspacken selbst ist die
+    Pointe, kein Geheimwort nötig.
+  - **Zugangsschutz** — ohne freigeschalteten Zugang (localStorage-Flag,
+    wird beim Auspacken gesetzt) leiten alle Seiten auf `/geschenk/` um.
+    Bewusst kein Passwort: der Schutz besteht allein aus der unauffälligen
+    Domain und dem Band, das erst gezogen werden muss.
+  - `noindex`, damit die Überraschung nicht in Suchmaschinen auftaucht.
 
-Lokal testen: `VERCEL=1 npm run build && VERCEL=1 npm run preview`
-(oder nur das Gate auf dem Pages-Build: `GESCHENK=1 npm run build`).
+**Vercel Web Analytics** — Script ist auf beiden Domains eingebunden;
+liefert Zahlen, sobald im Vercel-Dashboard unter Analytics „Web Analytics“
+aktiviert ist.
 
-Live unter <https://fuer-martje.saetzerei.com> — Vercel-Projekt
-`phtoks-projects/mantra` (Fallback-Domain
-<https://mantra-taupe.vercel.app>). DNS von saetzerei.com läuft über
-Infomaniak (Nameserver `nsany1/2.infomaniak.com`); dort liegt ein
-A-Record `fuer-martje.saetzerei.com → 76.76.21.21`.
+Lokal testen: `VERCEL=1 npm run build && VERCEL=1 npm run preview`. Für die
+host-abhängige Logik selbst unter den echten Namen testen: Einträge in
+`/etc/hosts` auf `127.0.0.1` anlegen und
+`npm run preview -- --host 0.0.0.0 --allowed-hosts mantra.saetzerei.com,fuer-martje.saetzerei.com`.
+(Oder nur das Gate auf dem Pages-Build: `GESCHENK=1 npm run build`.)
+
+Fallback-Domain <https://mantra-taupe.vercel.app> verhält sich wie
+fuer-martje.saetzerei.com (nicht in `OFFENE_HOSTS`, also gated). DNS von
+saetzerei.com läuft über Infomaniak (Nameserver `nsany1/2.infomaniak.com`);
+dort liegen A-Records für beide Subdomains → `76.76.21.21`.
 
 ## Dateistruktur
 
