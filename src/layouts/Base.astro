@@ -2,7 +2,7 @@
 import '../styles/global.css';
 import { tx } from '../lib/typografie';
 import { buildOfflineUrls } from '../lib/offline';
-import { aufVercel, geschenkAktiv, zugangHash, ZUGANG_KEY } from '../lib/geschenk';
+import { aufVercel, geschenkAktiv, ZUGANG_KEY, ZUGANG_WERT } from '../lib/geschenk';
 
 interface Props {
   title?: string;
@@ -36,16 +36,14 @@ const offlineUrls = buildOfflineUrls(base);
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     {geschenkAktiv && (
-      <script is:inline define:vars={{ zugangHash, zugangKey: ZUGANG_KEY, geschenkUrl: `${base}geschenk/` }}>
-        // Geschenk-Zugang: ohne freigeschalteten Zugang geht es zur
-        // Geschenkseite (dort löst Geheimwort oder Magic-Link den Knoten).
-        // Query-Parameter werden mitgenommen, damit ein Magic-Link auf
-        // die Wurzel (/?s=…) ebenfalls funktioniert.
+      <script is:inline define:vars={{ zugangWert: ZUGANG_WERT, zugangKey: ZUGANG_KEY, geschenkUrl: `${base}geschenk/` }}>
+        // Geschenk-Zugang: ohne freigeschalteten Zugang (Band noch nicht
+        // gezogen) geht es zur Geschenkseite.
         (function () {
           try {
-            if (localStorage.getItem(zugangKey) === zugangHash) return;
+            if (localStorage.getItem(zugangKey) === zugangWert) return;
           } catch (e) {}
-          location.replace(geschenkUrl + location.search);
+          location.replace(geschenkUrl);
         })();
       </script>
     )}

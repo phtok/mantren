@@ -58,33 +58,35 @@ Saubererer Weg langfristig: in Repo-Settings → Environments → `github-pages`
 Deployment branches `main` zulassen. Dann kann der Sync-Job entfernt und der
 Workflow direkt auf `main` deployt werden.
 
-## Geschenk-Domain: mantra.saetzerei.com (Vercel)
+## Geschenk-Domain: fuer-martje.saetzerei.com (Vercel)
 
 Zweites Deploy-Ziel aus demselben Code. Vercel setzt beim Build `VERCEL=1`;
-`astro.config.mjs` schaltet dann auf `site = https://mantra.saetzerei.com`
+`astro.config.mjs` schaltet dann auf `site = https://fuer-martje.saetzerei.com`
 und `base = /`. Der GitHub-Pages-Deploy bleibt unverändert (und offen).
+Die Subdomain ist bewusst unauffällig gewählt — sie soll nicht verraten,
+was hinter dem Geschenkpapier steckt.
 
 Nur auf dieser Variante aktiv (`src/lib/geschenk.ts`):
 
-- **Digitales Geschenkpapier** — `/geschenk/` ist die Landingpage: Geheimwort
-  oder Magic-Link (`/geschenk/?s=<geheimwort>`) löst den Knoten, Ziehen am
-  roten Band packt die App aus.
-- **Zugangsschutz** — ohne freigeschalteten Zugang (localStorage) leiten alle
-  Seiten auf `/geschenk/` um. Client-seitig und bewusst sanft: es ist
-  Geschenkpapier, kein Tresor. Das Geheimwort steht als SHA-256-Hash im HTML;
-  Klartext-Default in `src/lib/geschenk.ts`, überschreibbar per
-  Env-Variable `GESCHENK_CODE` im Vercel-Projekt.
+- **Digitales Geschenkpapier** — `/geschenk/` ist die Landingpage: ein
+  verschnürtes Paket, kein Formular. Ziehen am roten Band (oder Klick/Enter
+  darauf) packt die App aus — das Auspacken selbst ist die Pointe, kein
+  Geheimwort nötig.
+- **Zugangsschutz** — ohne freigeschalteten Zugang (localStorage-Flag, wird
+  beim Auspacken gesetzt) leiten alle Seiten auf `/geschenk/` um. Bewusst
+  kein Passwort: der Schutz besteht allein aus der unauffälligen Domain und
+  dem Band, das erst gezogen werden muss.
 - **Vercel Web Analytics** — Script ist eingebunden; liefert Zahlen, sobald
   im Vercel-Dashboard unter Analytics „Web Analytics“ aktiviert ist.
 
 Lokal testen: `VERCEL=1 npm run build && VERCEL=1 npm run preview`
 (oder nur das Gate auf dem Pages-Build: `GESCHENK=1 npm run build`).
 
-Live unter <https://mantra.saetzerei.com> — Vercel-Projekt
+Live unter <https://fuer-martje.saetzerei.com> — Vercel-Projekt
 `phtoks-projects/mantra` (Fallback-Domain
 <https://mantra-taupe.vercel.app>). DNS von saetzerei.com läuft über
 Infomaniak (Nameserver `nsany1/2.infomaniak.com`); dort liegt ein
-A-Record `mantra.saetzerei.com → 76.76.21.21`.
+A-Record `fuer-martje.saetzerei.com → 76.76.21.21`.
 
 ## Dateistruktur
 

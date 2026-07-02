@@ -1,25 +1,17 @@
-// Geburtstags-Geschenk: Zugangsschutz für die Geschenk-Domain
-// (mantra.saetzerei.com). Alles Build-Zeit-Konfiguration — die Site
-// bleibt rein statisch.
+// Geburtstags-Geschenk: Zugangsschutz für die Geschenk-Domain.
+// Alles Build-Zeit-Konfiguration — die Site bleibt rein statisch.
 //
-// - Aktiv, wenn der Build auf Vercel läuft (VERCEL=1 wird dort
-//   automatisch gesetzt) oder GESCHENK=1 explizit gesetzt ist.
-//   Der GitHub-Pages-Build bleibt dadurch wie bisher offen.
-// - Das Geheimwort kommt aus GESCHENK_CODE (Vercel-Projekt-Env),
-//   Fallback ist ein Default im Code. Im HTML landet nur der
-//   SHA-256-Hash; der Client vergleicht via crypto.subtle.
-// - Magic-Link: /geschenk/?s=<geheimwort> löst den Knoten direkt.
-
-import { createHash } from 'node:crypto';
+// Aktiv, wenn der Build auf Vercel läuft (VERCEL=1 wird dort automatisch
+// gesetzt) oder GESCHENK=1 explizit gesetzt ist. Der GitHub-Pages-Build
+// bleibt dadurch wie bisher offen.
+//
+// Kein Geheimwort: der Schutz besteht allein aus der unauffälligen
+// Domain und dem Geschenkband, das erst gezogen werden muss. Ohne
+// freigeschalteten Zugang (localStorage) leiten alle Seiten auf
+// /geschenk/ um; das Ziehen am Band merkt sich den Zugang.
 
 export const aufVercel = !!process.env.VERCEL;
 export const geschenkAktiv = aufVercel || process.env.GESCHENK === '1';
 
-export const GESCHENK_CODE_DEFAULT = 'time';
-
-const code = (process.env.GESCHENK_CODE || GESCHENK_CODE_DEFAULT).trim().toLowerCase();
-
-export const zugangHash = createHash('sha256').update(code, 'utf8').digest('hex');
-
-// localStorage-Schlüssel, unter dem der freigeschaltete Zugang liegt.
 export const ZUGANG_KEY = 'mantren:zugang';
+export const ZUGANG_WERT = 'ausgepackt';

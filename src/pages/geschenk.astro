@@ -3,10 +3,10 @@
 // Eigenständige Seite (ohne Base-Layout), damit das Zugangs-Gate hier
 // nicht greift und keine Topbar/Navigation das Geschenk verrät.
 //
-// Ablauf: Geheimwort (Eingabe oder Magic-Link /geschenk/?s=…) löst den
-// Knoten → am roten Band ziehen packt aus → die Mantren-App erscheint.
+// Kein Geheimwort — Ziehen am roten Band ist die einzige Aktion und
+// packt die Mantren-App aus.
 import '../styles/global.css';
-import { zugangHash, ZUGANG_KEY } from '../lib/geschenk';
+import { ZUGANG_KEY, ZUGANG_WERT } from '../lib/geschenk';
 
 const rawBase = import.meta.env.BASE_URL;
 const base = rawBase.endsWith('/') ? rawBase : `${rawBase}/`;
@@ -36,7 +36,20 @@ const faviconUrl = `${base}favicon.svg`;
     </script>
   </head>
   <body class="geschenk-body">
-    <main class="geschenk" id="geschenk" data-zustand="laden">
+    <main class="geschenk" id="geschenk" data-zustand="bereit">
+      <script is:inline define:vars={{ zugangKey: ZUGANG_KEY, zugangWert: ZUGANG_WERT }}>
+        // Schon ausgepackt: Zustand vor dem ersten Malen umschalten, damit
+        // die verschnürte Box bei Wiederbesuch nicht kurz aufblitzt.
+        (function () {
+          try {
+            if (localStorage.getItem(zugangKey) === zugangWert) {
+              var el = document.getElementById('geschenk');
+              el.setAttribute('data-zustand', 'geoeffnet');
+              el.classList.add('geloest', 'sofort');
+            }
+          } catch (e) {}
+        })();
+      </script>
       <p class="g-eyebrow">Für Martje</p>
 
       <section class="g-buehne" id="buehne">
@@ -76,26 +89,6 @@ const faviconUrl = `${base}favicon.svg`;
         <p class="g-hinweis" id="hinweis" aria-live="polite"></p>
       </section>
 
-      <form class="g-form" id="wortform" autocomplete="off">
-        <label class="g-label" for="geheimwort">Dieses Geschenk ist verschnürt. Das Geheimwort löst den Knoten.</label>
-        <div class="g-form-zeile">
-          <input
-            class="g-input"
-            id="geheimwort"
-            name="geheimwort"
-            type="text"
-            inputmode="text"
-            autocapitalize="off"
-            autocorrect="off"
-            spellcheck="false"
-            placeholder="Geheimwort"
-            required
-          />
-          <button class="g-btn" type="submit">Knoten lösen</button>
-        </div>
-        <p class="g-fehler" id="fehler" hidden>Das war leider nicht das richtige Wort.</p>
-      </form>
-
       <section class="g-reveal" id="reveal" role="status">
         <svg class="g-funke" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
           <path d="M16 1 C 16.8 9.5 17.5 13.5 26.5 15.5 C 17.5 17.5 16.8 21.5 16 30 C 15.2 21.5 14.5 17.5 5.5 15.5 C 14.5 13.5 15.2 9.5 16 1 Z" />
@@ -115,53 +108,28 @@ const faviconUrl = `${base}favicon.svg`;
       </section>
     </main>
 
-    <script is:inline define:vars={{ zugangHash, zugangKey: ZUGANG_KEY }}>
+    <script is:inline define:vars={{ zugangWert: ZUGANG_WERT, zugangKey: ZUGANG_KEY }}>
       (function () {
         var root = document.getElementById('geschenk');
         var paket = document.getElementById('paket');
         var schleife = document.getElementById('schleife');
         var hinweis = document.getElementById('hinweis');
-        var form = document.getElementById('wortform');
-        var input = document.getElementById('geheimwort');
-        var fehler = document.getElementById('fehler');
-
-        function setZustand(z) {
-          root.setAttribute('data-zustand', z);
-          if (z === 'bereit') {
-            hinweis.textContent = 'Der Knoten ist gelöst — zieh am roten Band.';
-          } else if (z === 'verschnuert') {
-            hinweis.textContent = '';
-          }
-        }
-
-        function sha256hex(text) {
-          var data = new TextEncoder().encode(text);
-          return crypto.subtle.digest('SHA-256', data).then(function (buf) {
-            var b = new Uint8Array(buf);
-            var out = '';
-            for (var i = 0; i < b.length; i++) out += b[i].toString(16).padStart(2, '0');
-            return out;
-          });
-        }
-
-        function pruefeWort(wort) {
-          var norm = String(wort || '').trim().toLowerCase();
-          if (!norm || !(window.crypto && crypto.subtle)) return Promise.resolve(false);
-          return sha256hex(norm).then(function (h) { return h === zugangHash; });
-        }
 
         function merkeZugang() {
-          try { localStorage.setItem(zugangKey, zugangHash); } catch (e) {}
+          try { localStorage.setItem(zugangKey, zugangWert); } catch (e) {}
         }
 
-        var ausgepackt = false;
+        // Bereits beim Rendern ausgepackt (siehe Script oben)?
+        var ausgepackt = root.getAttribute('data-zustand') === 'geoeffnet';
+        if (!ausgepackt) hinweis.textContent = 'Zieh am roten Band.';
+
         function auspacken() {
           if (ausgepackt) return;
           ausgepackt = true;
           merkeZugang();
           root.classList.add('geloest');
           hinweis.textContent = '';
-          setTimeout(function () { setZustand('geoeffnet'); }, 1050);
+          setTimeout(function () { root.setAttribute('data-zustand', 'geoeffnet'); }, 1050);
         }
 
         // ── Band ziehen (Pointer-Drag, Klick/Enter als Fallback) ──
@@ -205,49 +173,6 @@ const faviconUrl = `${base}favicon.svg`;
           setTimeout(auspacken, 180);
         });
 
-        // ── Geheimwort-Eingabe ──
-        form.addEventListener('submit', function (e) {
-          e.preventDefault();
-          pruefeWort(input.value).then(function (ok) {
-            if (ok) {
-              fehler.hidden = true;
-              setZustand('bereit');
-              schleife.focus();
-            } else {
-              fehler.hidden = false;
-              form.classList.remove('schuettel');
-              void form.offsetWidth;
-              form.classList.add('schuettel');
-            }
-          });
-        });
-
-        // ── Startzustand ──
-        var gespeichert = null;
-        try { gespeichert = localStorage.getItem(zugangKey); } catch (e) {}
-        if (gespeichert === zugangHash) {
-          // Schon ausgepackt: direkt die Karte zeigen, ohne Animation.
-          ausgepackt = true;
-          root.classList.add('geloest', 'sofort');
-          setZustand('geoeffnet');
-        } else {
-          var params = new URLSearchParams(location.search);
-          var s = params.get('s') || params.get('schluessel') || params.get('code');
-          if (s) {
-            setZustand('pruefen');
-            pruefeWort(s).then(function (ok) {
-              if (ok) {
-                // Magic-Link: Wort aus der Adresszeile nehmen.
-                try { history.replaceState(null, '', location.pathname); } catch (e) {}
-                setZustand('bereit');
-              } else {
-                setZustand('verschnuert');
-              }
-            });
-          } else {
-            setZustand('verschnuert');
-          }
-        }
       })();
     </script>
   </body>
@@ -478,40 +403,9 @@ const faviconUrl = `${base}favicon.svg`;
 
   /* ─────────────── Zustände ─────────────── */
 
-  .g-form, .g-reveal { display: none; }
-  [data-zustand='laden'] .g-buehne { visibility: hidden; }
-  [data-zustand='verschnuert'] .g-form { display: block; }
-  [data-zustand='geoeffnet'] .g-buehne,
-  [data-zustand='geoeffnet'] .g-form { display: none; }
+  [data-zustand='geoeffnet'] .g-buehne { display: none; }
   [data-zustand='geoeffnet'] .g-reveal { display: block; }
 
-  /* ─────────────── Geheimwort-Form ─────────────── */
-
-  .g-form { margin-top: 2rem; width: 100%; }
-  .g-label {
-    display: block;
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-  .g-form-zeile {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-  }
-  .g-input {
-    flex: 1;
-    min-width: 0;
-    max-width: 13rem;
-    padding: 0.55rem 0.8rem;
-    font: inherit;
-    color: var(--text);
-    background: var(--input-bg);
-    border: 1px solid var(--line);
-    border-radius: 8px;
-  }
-  .g-input:focus { outline: 2px solid var(--petrol); outline-offset: 1px; }
   .g-btn {
     padding: 0.55rem 1rem;
     font: inherit;
@@ -532,22 +426,10 @@ const faviconUrl = `${base}favicon.svg`;
   :global(html.theme-invert) .g-btn:hover {
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
   }
-  .g-fehler {
-    margin: 0.8rem 0 0;
-    font-size: 0.88rem;
-    color: var(--band-farbe);
-  }
-  .schuettel { animation: schuetteln 0.4s ease; }
-  @keyframes schuetteln {
-    0%, 100% { transform: translateX(0); }
-    25% { transform: translateX(-6px); }
-    50% { transform: translateX(6px); }
-    75% { transform: translateX(-4px); }
-  }
 
   /* ─────────────── Reveal ─────────────── */
 
-  .g-reveal { position: relative; animation: aufsteigen 0.7s ease both; }
+  .g-reveal { display: none; position: relative; animation: aufsteigen 0.7s ease both; }
   @keyframes aufsteigen {
     from { opacity: 0; transform: translateY(0.8rem); }
     to { opacity: 1; transform: translateY(0); }
