@@ -494,6 +494,55 @@ main.center {
   }
 }
 
+/* ─────────────── Synopse (Französisch-Umschalter) ─────────────── */
+/* Standard: nur das Original. FR-Spalte und Vermerk sind versteckt, die
+   Strophe bleibt einspaltig — optisch identisch zur reinen Lesefassung. */
+.mantra-fr-head { display: none; }
+.lines--fr { display: none; }
+
+/* Aktiv über das Modus-Menü (‹Französisch›). */
+html[data-lang="fr"] .mantra-fr-head {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  margin: 0 0 1.4rem;
+}
+
+html[data-lang="fr"] .strophe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem 2.4rem;
+  align-items: start;
+}
+html[data-lang="fr"] .lines--fr {
+  display: block;
+  font-style: italic;
+  color: var(--text);
+  opacity: 0.9;
+}
+html[data-lang="fr"] .lines--fr .line--folgt {
+  font-style: normal;
+  color: var(--muted-soft);
+  font-size: 0.9em;
+}
+
+/* Die Synopse braucht mehr Breite als die 36rem-Lesespalte. */
+html[data-lang="fr"] .mantra { max-width: 52rem; }
+@media (min-width: 1000px) {
+  html[data-lang="fr"] main:not(:has(.mantra-shell--with-tafel)) { max-width: 1120px; }
+  html[data-lang="fr"] .mantra { max-width: 60rem; }
+}
+
+/* Mobil: gestapelt statt zweispaltig, mit zarter Trennung. */
+@media (max-width: 720px) {
+  html[data-lang="fr"] .strophe { grid-template-columns: 1fr; gap: 0.6rem; }
+  html[data-lang="fr"] .lines--fr {
+    padding-top: 0.6rem;
+    border-top: 1px dashed rgba(127, 127, 127, 0.3);
+  }
+}
+
 /* ─────────────── Pager (vor/zurück) ─────────────── */
 
 .pager {

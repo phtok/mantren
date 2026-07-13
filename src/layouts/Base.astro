@@ -78,6 +78,11 @@ const offlineUrls = buildOfflineUrls(base);
             document.documentElement.setAttribute('data-edition', 'plex');
           }
         } catch (e) {}
+        try {
+          if (localStorage.getItem('lang') === 'fr') {
+            document.documentElement.setAttribute('data-lang', 'fr');
+          }
+        } catch (e) {}
       })();
     </script>
   </head>
@@ -118,6 +123,16 @@ const offlineUrls = buildOfflineUrls(base);
             >
               <span class="topbar-menu-icon" aria-hidden="true">⇄</span>
               <span class="topbar-menu-label" data-edition-label>Schriftbild: Plex</span>
+            </button>
+            <button
+              class="topbar-menu-item"
+              id="lang-toggle"
+              type="button"
+              role="menuitemcheckbox"
+              aria-checked="false"
+            >
+              <span class="topbar-menu-icon" aria-hidden="true">⇔</span>
+              <span class="topbar-menu-label" data-lang-label>Französisch</span>
             </button>
             <a class="topbar-menu-item" href={`${base}offline/`} role="menuitem">
               <span class="topbar-menu-icon" aria-hidden="true">◌</span>
@@ -194,6 +209,28 @@ const offlineUrls = buildOfflineUrls(base);
             else { html.setAttribute('data-edition', 'plex'); }
             try { localStorage.setItem('edition', isPlex ? 'default' : 'plex'); } catch (e) {}
             refreshEditionLabel();
+          });
+        }
+
+        // Französisch-Umschalter: schaltet die synoptische Ansicht (Original +
+        // Übersetzung) auf allen Mantra-Seiten frei. Reine Anzeige-Umschaltung
+        // über html[data-lang="fr"]; die Übersetzungen stecken bereits im HTML.
+        var langBtn = document.getElementById('lang-toggle');
+        var langLabel = langBtn && langBtn.querySelector('[data-lang-label]');
+        function refreshLangLabel() {
+          if (!langBtn) return;
+          var isFr = html.getAttribute('data-lang') === 'fr';
+          langBtn.setAttribute('aria-checked', isFr ? 'true' : 'false');
+          if (langLabel) langLabel.textContent = isFr ? 'Nur Deutsch' : 'Französisch';
+        }
+        if (langBtn) {
+          refreshLangLabel();
+          langBtn.addEventListener('click', function () {
+            var isFr = html.getAttribute('data-lang') === 'fr';
+            if (isFr) { html.removeAttribute('data-lang'); }
+            else { html.setAttribute('data-lang', 'fr'); }
+            try { localStorage.setItem('lang', isFr ? 'de' : 'fr'); } catch (e) {}
+            refreshLangLabel();
           });
         }
 

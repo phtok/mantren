@@ -1,0 +1,180 @@
+{
+  "_hinweis": "Französische Übersetzung, ausgerichtet an der Korpus-Struktur (Schlüssel = Mantra-ID). Pro Mantra ein Array 'strophen', dessen Reihenfolge den Zeilen-Parts des Originals folgt (Parts mit reiner Regie/Zwischenüberschrift zählen nicht mit). Fehlende Mantren bzw. Strophen kommen später. Übersetzung: Louis Defèche. Originaltext: Rudolf Steiner, GA 270.",
+  "uebersetzerin": "Louis Defèche",
+  "sprache": "Französisch",
+  "mantren": {
+    "erste-tafel": {
+      "strophen": [
+        [
+          "O homme, connais-toi toi-même !",
+          "Ainsi résonne le verbe du monde.",
+          "Tu l'entends fortement dans l'âme,",
+          "Tu le sens puissamment en esprit.",
+          "Qui parle avec cette puissance cosmique ?",
+          "Qui parle avec cette intimité du cœur ?",
+          "Cela agit-il à travers le rayonnement des étendues de l'espace",
+          "Dans le vécu de l'existence sensorielle ?",
+          "Cela résonne-t-il à travers la trame ondoyante du temps",
+          "Dans le flux du devenir de ta vie ?",
+          "Est-ce toi-même qui,",
+          "En ressentant l'espace, en éprouvant temps,",
+          "Te crée ce verbe, te sentant étranger",
+          "Dans le vide d'âme de l'espace,",
+          "Parce que tu perds la force du penser",
+          "Dans le cours anéantissant du temps ?"
+        ]
+      ]
+    },
+    "4": {
+      "strophen": [
+        [
+          "Ressens comment les profondeurs",
+          "Insufflent leurs forces en ton être",
+          "Par les membres du corps.",
+          "Tu te perds en elles",
+          "Si tu livres impuissante",
+          "Ta volonté à leur élan;",
+          "Elles t'obscurcissent le Je."
+        ],
+        [
+          "Ressens comment, des lointains du monde,",
+          "Les puissances divine font luire",
+          "Leur clarté spirituelle au sein de ton âme.",
+          "Retrouve-toi en elles avec amour,",
+          "Et, tissant la sagesse, elles font",
+          "De toi un Soi dans leurs cercles,",
+          "Paré pour le bon travail de l'esprit."
+        ],
+        [
+          "Ressens comment dans les hauteurs célestes",
+          "L'être du Soi peut vivre sans égoïsme,",
+          "Lorsqu'empli d'esprit il veut suivre",
+          "Les puissances des pensées vers les hauteurs",
+          "Et qu'avec bravoure il perçoit le Verbe",
+          "Qui d'en haut résonne plein de grâce",
+          "Dans l'entité humaine véritable."
+        ]
+      ]
+    },
+    "5": {
+      "strophen": [
+        [
+          "La lumière lutte avec des puissances obscures",
+          "En ce royaume où ton penser",
+          "Veut pénétrer dans l'existence spirituelle.",
+          "Tu vois, quand tu aspires à la lumière,",
+          "Ton Soi dérobé par l'esprit ;",
+          "Tu peux, quand les ténèbres te séduisent,",
+          "Dans la matière perdre le Soi."
+        ],
+        [
+          "La chaleur lutte avec le froid",
+          "En ce royaume, où ton sentir",
+          "Veut vivre dans la trame spirituelle.",
+          "Tu vois, quand tu aimes la chaleur,",
+          "Ton Soi se dissiper dans la volupté ;",
+          "Tu peux, quand le froid te durcit,",
+          "Dans la souffrance pulvériser le Soi."
+        ],
+        [
+          "La vie lutte avec la mort",
+          "En ce royaume où ton vouloir",
+          "Veut imprégner l'activité spirituelle.",
+          "Tu vois, quand tu saisit la vie,",
+          "Ton Soi disparaître dans l'esprit ;",
+          "Tu peux, quand la mort te subjugue,",
+          "Dans le néant paralyser le Soi."
+        ]
+      ]
+    },
+    "10": {
+      "strophen": [
+        [
+          "Je vis dans l'obscurité de la terre,",
+          "Je tisse dans l'éclat des étoiles,",
+          "Je lis dans les actes des esprits,",
+          "J'entends dans le langage des dieux."
+        ],
+        [
+          "Ardent me rend l'obscurité de la terre,",
+          "Réconfortant m'est l'éclat des étoiles,",
+          "Instructifs me sont les actes des esprits,",
+          "Créateur m'est le langage des dieux."
+        ],
+        [
+          "L'obscurité de la terre m'éteint,",
+          "L'éclat des étoiles m'éveille,",
+          "Les actes des esprits m'appellent,",
+          "Le langage des dieux m'engendre."
+        ]
+      ]
+    },
+    "19.1": {
+      "strophen": [
+        [
+          "Qui parle dans le Verbe d'esprit",
+          "De cette voix",
+          "Qui flamboie dans le feu du cosmos ?"
+        ],
+        [
+          "Les flammes stellaires parlent,",
+          "Les puissances de feu séraphiques flamboient;",
+          "Elles flamboient aussi dans mon coeur.",
+          "Dans la source d'amour de l'être originel",
+          "Le coeur humain trouve",
+          "La parole créatrice des flammes de l'esprit:",
+          "C'est – «Je»."
+        ]
+      ]
+    },
+    "19.2": {
+      "strophen": [
+        [
+          "Qui pense dans le Verbe d'esprit",
+          "Par des pensées,",
+          "Qui façonnent les âmes du monde?"
+        ],
+        [
+          "Les luminaires stellaires pensent,",
+          "Les forces formatrices chérubiniques brillent;",
+          "Elles brillent aussi dans ma tête.",
+          "Dans la source de lumière de l'être originel",
+          "La tête humaine trouve",
+          "L'action pensante qui forme l'âme :",
+          "C'est – «Je»."
+        ]
+      ]
+    },
+    "19.3": {
+      "strophen": [
+        [
+          "Qui exerce sa force dans le Verbe d'esprit",
+          "Avec des forces",
+          "Qui vivent dans le corps du cosmos ?"
+        ],
+        [
+          "Le corps cosmique des étoiles exerce sa force,",
+          "Les pouvoirs porteurs des Thrones prennent corps ;",
+          "Ils prennent corps aussi dans mes membres.",
+          "Dans la source de vie de l'être originel",
+          "Les membres humains trouvent",
+          "Le pouvoir agissant des porteurs du cosmos:",
+          "C'est – «Je»."
+        ]
+      ]
+    },
+    "19+": {
+      "strophen": [
+        [
+          "Puissances de feu séraphiques",
+          "Vous rayonnez de mon coeur",
+          "Forces formatrices chérubiniques",
+          "Vous brillez dans ma tête",
+          "Pouvoir porteurs des Thrones",
+          "Vous pulsez dans mes membres",
+          "Mon Je est VÔTRE."
+        ]
+      ]
+    }
+  }
+}

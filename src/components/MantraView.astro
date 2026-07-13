@@ -3,6 +3,7 @@ import type { Mantra } from '../lib/mantren';
 import type { KommentarEntry } from '../lib/kommentar';
 import KommentarKlappe from './KommentarKlappe.astro';
 import { tx } from '../lib/typografie';
+import { frForMantra, uebersetzerin } from '../lib/uebersetzung';
 
 interface Props {
   mantra: Mantra;
@@ -13,6 +14,11 @@ const { mantra, kommentare } = Astro.props;
 // Bei per-Strophe-Klappen den Mantra-Körper auf knappere Strophen-Bindung
 // und größere Trennung zur nächsten Strophe umschalten.
 const hasInline = !!(kommentare && kommentare.length);
+
+// Französische Übersetzung (falls vorhanden). Die Synopse wird immer in die
+// Seite gerendert, aber per CSS ausgeblendet — sichtbar erst, wenn im
+// Modus-Menü ‹Französisch› aktiv ist (html[data-lang="fr"]).
+const fr = frForMantra(mantra.id);
 
 function renderLine(line: string) {
   const raw = line.startsWith('/') ? line.slice(1) : line;
@@ -27,25 +33,47 @@ const kommentarForPart = (part: { lines?: string[] }) => {
   strophenIdx += 1;
   return kommentare[strophenIdx];
 };
+
+// FR-Strophen laufen parallel zu den Zeilen-Parts (gleiche Zählung wie oben).
+let frIdx = -1;
+const frForPart = (part: { lines?: string[] }): string[] | undefined => {
+  if (!part.lines || part.lines.length === 0) return undefined;
+  frIdx += 1;
+  return fr ? fr.strophen[frIdx] : undefined;
+};
 ---
-<article class="mantra">
+<article class="mantra" data-has-fr={fr ? 'true' : 'false'}>
+  <p class="mantra-fr-head" lang="fr">
+    {fr
+      ? `Français · Übersetzung: ${uebersetzerin} — Arbeitsstand`
+      : 'Français · Übersetzung folgt'}
+  </p>
 
   <div class={`mantra-body${hasInline ? ' mantra-body--compact' : ''}`}>
     {mantra.parts.map((part) => {
       const entry = kommentarForPart(part);
+      const frLines = frForPart(part);
+      const hasLines = !!(part.lines && part.lines.length > 0);
       return (
         <section class="part">
           {part.regie && <p class="regie">{tx(part.regie)}</p>}
           {part.section && <h2 class="section-head">{tx(part.section)}</h2>}
-          {part.lines && part.lines.length > 0 && (
-            <p class="lines">
-              {part.lines.map((raw) => {
-                const { text, cont } = renderLine(raw);
-                return (
-                  <span class={`line${cont ? ' line-cont' : ''}`}>{text}</span>
-                );
-              })}
-            </p>
+          {hasLines && (
+            <div class="strophe">
+              <p class="lines lines--de" lang="de">
+                {part.lines!.map((raw) => {
+                  const { text, cont } = renderLine(raw);
+                  return (
+                    <span class={`line${cont ? ' line-cont' : ''}`}>{text}</span>
+                  );
+                })}
+              </p>
+              <p class="lines lines--fr" lang="fr" aria-hidden="true">
+                {frLines && frLines.length > 0
+                  ? frLines.map((l) => <span class="line">{tx(l)}</span>)
+                  : <span class="line line--folgt">— Übersetzung folgt —</span>}
+              </p>
+            </div>
           )}
           {entry && (
             <KommentarKlappe kommentar={entry.kommentar} mantraId={mantra.id} klappenKey={entry.key} />
