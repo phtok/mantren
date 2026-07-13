@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import noms from '../data/noms-divins.json';
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+// Französischer Apparat. Inhalt in Originalsprache — bewusst KEINE deutsche
+// Typografie-Normalisierung (tx), damit die französischen Guillemets « » stehen bleiben.
+---
+<Base title="Apparat français — Noms divins">
+  <article class="apparat" lang="fr">
+    <header class="apparat-head">
+      <p class="apparat-eyebrow">Apparat français</p>
+      <h1 class="apparat-title">{noms.titel}</h1>
+      <p class="apparat-sub">{noms.untertitel}</p>
+    </header>
+
+    {noms.triaden.map((t) => (
+      <section class="nd-triade">
+        <h2 class="nd-triade-head">{t.triade}</h2>
+        <div class="nd-grid">
+          {t.range.map((r) => (
+            <article class="nd-card">
+              <h3 class="nd-latin">{r.latin}</h3>
+              <p class="nd-steiner">{r.steiner}</p>
+              <dl class="nd-meta">
+                <dt>{noms.kolonnen.grec}</dt>
+                <dd class="nd-grec">{r.grec}</dd>
+                <dt>{noms.kolonnen.sens}</dt>
+                <dd>{r.sens}</dd>
+              </dl>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <p class="vortrag-back" lang="de">
+      <a href={base}>← Zum Mantren-Index</a>
+    </p>
+  </article>
+
+  <style>
+    .apparat { max-width: 60rem; margin: 0; padding: 0 0 3rem; }
+    .apparat-head { margin-bottom: 2.2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--line); }
+    .apparat-eyebrow {
+      font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+      opacity: 0.55; margin: 0 0 0.4rem;
+    }
+    .apparat-title { font-size: clamp(1.5rem, 4vw, 2rem); font-weight: 500; margin: 0 0 0.4rem; line-height: 1.2; }
+    .apparat-sub { margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.5; }
+
+    .nd-triade { margin: 2rem 0 0; }
+    .nd-triade-head {
+      font-size: 0.82rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase;
+      color: var(--muted); margin: 0 0 0.9rem;
+    }
+    /* Raster auf breiten Schirmen, eine Spalte auf schmalen — kein Seitwärts-Scroll. */
+    .nd-grid {
+      display: grid; gap: 1rem;
+      grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+    }
+    .nd-card {
+      border: 1px solid var(--line); border-radius: 6px; padding: 1rem 1.1rem;
+      display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .nd-latin { font-size: 1.05rem; font-weight: 500; margin: 0; color: var(--text); }
+    .nd-steiner { margin: 0; font-size: 0.92rem; color: var(--text); font-style: italic; }
+    .nd-meta { margin: 0.2rem 0 0; display: flex; flex-direction: column; gap: 0.15rem; }
+    .nd-meta dt {
+      font-size: 0.68rem; letter-spacing: 0.04em; text-transform: uppercase;
+      color: var(--muted-soft); margin-top: 0.5rem;
+    }
+    .nd-meta dd { margin: 0; font-size: 0.86rem; line-height: 1.5; color: var(--muted); }
+    .nd-grec { font-variant-numeric: normal; }
+  </style>
+</Base>

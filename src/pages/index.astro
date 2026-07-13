@@ -28,6 +28,8 @@ const navLinks = [
   { href: `${base}vortraege/`, label: 'Klassenstunden' },
   { href: `${base}tafeln-galerie/`, label: 'Wandtafelgalerie' },
   { href: `${base}quellen/`, label: 'Quellen' },
+  // Nur im Französisch-Modus sichtbar (weiter links, vor der Suche).
+  { href: `${base}apparat-fr/`, label: 'Apparat', fr: true },
   { href: `${base}universalsuche/`, label: 'Universalsuche' },
   { href: `${base}impressum/`, label: 'Impressum' },
 ];
@@ -40,7 +42,7 @@ const navLinks = [
 
   <nav class="index-nav" aria-label="Bereiche">
     {navLinks.map((l) => (
-      <a class="index-nav-link" href={l.href}>{l.label}</a>
+      <a class={`index-nav-link${l.fr ? ' index-nav-fr' : ''}`} href={l.href}>{l.label}</a>
     ))}
   </nav>
 

@@ -1,0 +1,82 @@
+{
+  "_hinweis": "Französischer Apparat: Namen der Hierarchien. Übernommen aus Louis Defèches Notion ‹Leçons de classe› (Tabelle ‹Noms divins›). Übersetzung/Zusammenstellung: Louis Defèche.",
+  "titel": "Noms divins",
+  "untertitel": "Les hiérarchies célestes — nom latin, racine grecque, nom chez Steiner et étymologie.",
+  "kolonnen": {
+    "latin": "Nom latin",
+    "grec": "Nom grec (racine et sens)",
+    "steiner": "Nom chez Steiner",
+    "sens": "Explication étymologique"
+  },
+  "triaden": [
+    {
+      "triade": "Première hiérarchie",
+      "range": [
+        {
+          "latin": "Séraphim",
+          "grec": "Σεραφείμ (Serapheím), de l'hébreu śārāf = « brûler »",
+          "steiner": "Esprits de l'Amour",
+          "sens": "Êtres embrasés par l'amour divin ; symbolisent le feu purificateur."
+        },
+        {
+          "latin": "Chérubim",
+          "grec": "Χερουβείμ (Kheroubéím), de l'hébreu kerūb = « plénitude de science »",
+          "steiner": "Esprits de l'Harmonie",
+          "sens": "Représentent la sagesse cosmique et la contemplation ; gardiens de la lumière divine."
+        },
+        {
+          "latin": "Throni",
+          "grec": "Θρόνοι (Thrónoi), de thronos = « siège »",
+          "steiner": "Esprits de la Volonté",
+          "sens": "Symbolisent la stabilité et le fondement de la création, sièges de la puissance divine."
+        }
+      ]
+    },
+    {
+      "triade": "Deuxième hiérarchie",
+      "range": [
+        {
+          "latin": "Dominationes",
+          "grec": "Κυριότητες (Kyriotêtes), de kyrios = « seigneur, maître »",
+          "steiner": "Esprits de la Sagesse",
+          "sens": "Gouvernent les hiérarchies inférieures, médiateurs de la sagesse divine."
+        },
+        {
+          "latin": "Virtutes",
+          "grec": "Δυνάμεις (Dynameis), de dynamis = « force, puissance »",
+          "steiner": "Esprits du Mouvement",
+          "sens": "Influencent les forces naturelles et les rythmes cosmiques."
+        },
+        {
+          "latin": "Potestates",
+          "grec": "Ἐξουσίαι (Exousíai), de exousia = « autorité, pouvoir »",
+          "steiner": "Esprits de la Forme",
+          "sens": "Façonnent et maintiennent les lois de la matière et de la pensée."
+        }
+      ]
+    },
+    {
+      "triade": "Troisième hiérarchie",
+      "range": [
+        {
+          "latin": "Principatus",
+          "grec": "Ἀρχαί (Archaí), de archē = « commencement, principe »",
+          "steiner": "Esprits du Temps et de la Personnalité",
+          "sens": "Régulent les époques, les âmes collectives et les civilisations."
+        },
+        {
+          "latin": "Archangeli",
+          "grec": "Ἀρχάγγελοι (Archángeloi), de archos + angelos = « chef messager »",
+          "steiner": "Esprits du Feu ou des Peuples",
+          "sens": "Guidants des peuples et inspirateurs des impulsions historiques."
+        },
+        {
+          "latin": "Angeli",
+          "grec": "Ἄγγελοι (Ángeloi), de angelos = « messager »",
+          "steiner": "Esprits de la Vie ou du Crépuscule",
+          "sens": "Aident directement chaque être humain ; porteurs de la lumière intérieure."
+        }
+      ]
+    }
+  ]
+}

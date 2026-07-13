@@ -500,6 +500,10 @@ main.center {
 .mantra-fr-head { display: none; }
 .lines--fr { display: none; }
 
+/* Nav-Eintrag zum französischen Apparat: nur im fr-Modus sichtbar. */
+.index-nav-fr { display: none; }
+html[data-lang="fr"] .index-nav-fr { display: inline; }
+
 /* Aktiv über das Modus-Menü (‹Französisch›). */
 html[data-lang="fr"] .mantra-fr-head {
   display: block;

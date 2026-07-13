@@ -1,27 +1,67 @@
 {
-  "_hinweis": "Französische Übersetzung, ausgerichtet an der Korpus-Struktur (Schlüssel = Mantra-ID). Pro Mantra ein Array 'strophen', dessen Reihenfolge den Zeilen-Parts des Originals folgt (Parts mit reiner Regie/Zwischenüberschrift zählen nicht mit). Fehlende Mantren bzw. Strophen kommen später. Übersetzung: Louis Defèche. Originaltext: Rudolf Steiner, GA 270.",
+  "_hinweis": "Französische Übersetzung, ausgerichtet an der Korpus-Struktur (Schlüssel = Mantra-ID). Pro Mantra ‹strophen›, deren Reihenfolge den Zeilen-Parts des Originals folgt. Quelle: Louis Defèche, Notion ‹Leçons de classe› (revidierte Fassung). Original: Rudolf Steiner, GA 270. Weitere Mantren folgen.",
   "uebersetzerin": "Louis Defèche",
   "sprache": "Französisch",
   "mantren": {
-    "erste-tafel": {
+    "2": {
       "strophen": [
         [
-          "O homme, connais-toi toi-même !",
-          "Ainsi résonne le verbe du monde.",
-          "Tu l'entends fortement dans l'âme,",
-          "Tu le sens puissamment en esprit.",
-          "Qui parle avec cette puissance cosmique ?",
-          "Qui parle avec cette intimité du cœur ?",
-          "Cela agit-il à travers le rayonnement des étendues de l'espace",
-          "Dans le vécu de l'existence sensorielle ?",
-          "Cela résonne-t-il à travers la trame ondoyante du temps",
-          "Dans le flux du devenir de ta vie ?",
-          "Est-ce toi-même qui,",
-          "En ressentant l'espace, en éprouvant temps,",
-          "Te crée ce verbe, te sentant étranger",
-          "Dans le vide d'âme de l'espace,",
-          "Parce que tu perds la force du penser",
-          "Dans le cours anéantissant du temps ?"
+          "L'œil vitreux de la troisième bête",
+          "C'est la contre-image mauvaise",
+          "De la pensée, qui se renie",
+          "Elle-même en toi et se voue à la mort,",
+          "Déniant les pouvoirs de l’esprit, qui",
+          "Spirituellement, avant sa vie terrestre,",
+          "La maintenaient vivante dans les champs de l'esprit."
+        ],
+        [
+          "Le visage moqueur de la seconde bête",
+          "C'est la contre-force mauvaise",
+          "Du sentiment, qui évide ton âme",
+          "Et crée en elle la vacuité de vie",
+          "Au lieu du contenu d'esprit qui était sien",
+          "Avant l’existence terrestre, l’illuminant",
+          "De la puissance spirituelle solaire."
+        ],
+        [
+          "L'esprit squelettique de la première bête",
+          "C'est la puissance créatrice mauvaise",
+          "De la volonté, qui aliène ton corps",
+          "À la force de ton âme",
+          "Et le voue aux puissances adverses",
+          "Qui veulent, pour les temps futurs,",
+          "Dérober l’être du monde à l’être divin."
+        ]
+      ]
+    },
+    "3": {
+      "strophen": [
+        [
+          "Vois en toi la trame des pensées :",
+          "Tu ressens l'apparence du monde",
+          "L'être du Soi se cache à toi.",
+          "Plonge et descend dans l’apparence :",
+          "La vie de l'éther souffle en toi ;",
+          "L'être du Soi doit vénérer",
+          "La nature directrice de ton esprit."
+        ],
+        [
+          "Perçois en toi le flux des sentiments :",
+          "En toi se mêlent être et apparence,",
+          "Le Soi incline vers l'apparence ;",
+          "Plonge et descend dans l'être qui paraît :",
+          "Et les forces d'âme cosmiques vivent en toi ;",
+          "Le Soi, il doit considérer",
+          "Les puissances vitales de sa propre âme."
+        ],
+        [
+          "Laisse agir en toi l’élan de la volonté:",
+          "Il s’élève de tous les êtres d'apparence",
+          "Créateur et doué d'être personnel ;",
+          "Consacre-lui toute ta vie :",
+          "Il est empli de la puissance d’esprit du monde ;",
+          "L'être personnel, il doit saisir",
+          "Le pouvoir créateur du monde dans le Je-Esprit."
         ]
       ]
     },
@@ -34,7 +74,7 @@
           "Tu te perds en elles",
           "Si tu livres impuissante",
           "Ta volonté à leur élan;",
-          "Elles t'obscurcissent le Je."
+          "Elles t’obscurcissent le Je."
         ],
         [
           "Ressens comment, des lointains du monde,",
@@ -43,16 +83,16 @@
           "Retrouve-toi en elles avec amour,",
           "Et, tissant la sagesse, elles font",
           "De toi un Soi dans leurs cercles,",
-          "Paré pour le bon travail de l'esprit."
+          "Paré pour le bon travail de l’esprit."
         ],
         [
           "Ressens comment dans les hauteurs célestes",
-          "L'être du Soi peut vivre sans égoïsme,",
-          "Lorsqu'empli d'esprit il veut suivre",
+          "L’être du Soi peut vivre sans égoïsme,",
+          "Lorsqu’empli d’esprit il veut suivre",
           "Les puissances des pensées vers les hauteurs",
-          "Et qu'avec bravoure il perçoit le Verbe",
-          "Qui d'en haut résonne plein de grâce",
-          "Dans l'entité humaine véritable."
+          "Et qu’avec bravoure il perçoit le Verbe",
+          "Qui d’en haut résonne plein de grâce",
+          "Dans l’entité humaine véritable."
         ]
       ]
     },
@@ -65,7 +105,7 @@
           "Tu vois, quand tu aspires à la lumière,",
           "Ton Soi dérobé par l'esprit ;",
           "Tu peux, quand les ténèbres te séduisent,",
-          "Dans la matière perdre le Soi."
+          "Dans la matière perdre le Soi ."
         ],
         [
           "La chaleur lutte avec le froid",
@@ -79,7 +119,7 @@
         [
           "La vie lutte avec la mort",
           "En ce royaume où ton vouloir",
-          "Veut imprégner l'activité spirituelle.",
+          "Veut imprégner l’activité spirituelle.",
           "Tu vois, quand tu saisit la vie,",
           "Ton Soi disparaître dans l'esprit ;",
           "Tu peux, quand la mort te subjugue,",
@@ -87,32 +127,115 @@
         ]
       ]
     },
+    "8": {
+      "strophen": [
+        [
+          "Vois derrière la lumière sensorielle du penser",
+          "Comment dans la cellule spirituelle obscure,",
+          "Des profondeurs corporelles s’élève le vouloir ;",
+          "Par la force de ton âme laisse s’écouler",
+          "Le penser mort dans le néant du monde ;",
+          "Et le vouloir, il ressuscite",
+          "Comme création des pensées du monde."
+        ],
+        [
+          "Vois dans le souffle d’âme du sentir,",
+          "Comment dans le crépuscule des rêves,",
+          "Des lointains de l’univers afflue la vie;",
+          "Par la paix du coeur, laisse dans le sommeil",
+          "Le sentir humain se dissiper en silence  ;",
+          "Et la vie du monde, elle souffle",
+          "Comme puissance de l’être humain."
+        ],
+        [
+          "Vois par-dessus l’action corporelle du vouloir",
+          "Comment dans les champs d’action endormis",
+          "Depuis les forces de la tête descend le penser ;",
+          "Par la contemplation intérieure, laisse",
+          "Le vouloir humain se changer en lumière ;",
+          "Et le penser, il apparait",
+          "Comme l’être magicien de la volonté."
+        ]
+      ]
+    },
     "10": {
       "strophen": [
         [
-          "Je vis dans l'obscurité de la terre,",
+          "Je vis dans l’obscurité de la terre,",
           "Je tisse dans l'éclat des étoiles,",
           "Je lis dans les actes des esprits,",
           "J'entends dans le langage des dieux."
         ],
         [
-          "Ardent me rend l'obscurité de la terre,",
-          "Réconfortant m'est l'éclat des étoiles,",
+          "Ardent me rend l’obscurité de la terre,",
+          "Réconfortant m’est l’éclat des étoiles,",
           "Instructifs me sont les actes des esprits,",
-          "Créateur m'est le langage des dieux."
+          "Créateur m’est le langage des dieux."
         ],
         [
-          "L'obscurité de la terre m'éteint,",
-          "L'éclat des étoiles m'éveille,",
+          "L’obscurité de la terre m'éteint,",
+          "L’éclat des étoiles m'éveille,",
           "Les actes des esprits m'appellent,",
-          "Le langage des dieux m'engendre."
+          "Le langage des dieux m’engendre."
+        ]
+      ]
+    },
+    "erste-tafel": {
+      "strophen": [
+        [
+          "O homme, connais-toi toi-même !",
+          "Ainsi résonne le Verbe des mondes.",
+          "Tu l'entends avec force en l’âme,",
+          "Tu le sens avec puissance en esprit.",
+          "Qui parle avec cette puissance universelle ?",
+          "Qui parle avec cette intimité du cœur ?",
+          "Agit-il à travers le rayonnement des lointains de l'espace",
+          "Dans le vécu d’être de tes sens ?",
+          "Résonne-t-il à travers la trame ondoyante des temps",
+          "Dans le flux du devenir de ta vie ?",
+          "Est-ce toi-même qui,",
+          "Ressentant l'espace, éprouvant le temps,",
+          "Te crées ce Verbe, te sentant étranger",
+          "Dans le vide d'âme de l'espace,",
+          "Parce que tu perds la force du penser",
+          "Dans le flux anéantissant du temps ?"
+        ]
+      ]
+    },
+    "zweite-tafel": {
+      "strophen": [
+        [
+          "Reconnais d’abord le grave gardien",
+          "Devant la porte du pays des esprits",
+          "Barrant l’accès à la force de tes sens",
+          "Et à la puissance de ton intellect",
+          "Car dans la trame sensorielle",
+          "Et dans la formation des pensées",
+          "Du vide d’être de l’espace,",
+          "Des puissances illusoires du temps,",
+          "Tu dois d’abord conquérir avec force",
+          "La vérité sur ton propre être."
+        ]
+      ]
+    },
+    "dritte-tafel": {
+      "strophen": [
+        [
+          "Je pénétrais dans ce monde des sens,",
+          "Portant avec moi l’héritage de la pensée,",
+          "La force d’un dieu m’a conduit ici.",
+          "La mort, elle se tient au bout du chemin.",
+          "Je veux ressentir l’être du Christ.",
+          "Il suscite, dans la mort de la matière, la naissance de l’esprit.",
+          "En esprit, je trouve ainsi le monde,",
+          "Et me reconnais dans le devenir du cosmos."
         ]
       ]
     },
     "19.1": {
       "strophen": [
         [
-          "Qui parle dans le Verbe d'esprit",
+          "Qui parle dans le Verbe d’esprit",
           "De cette voix",
           "Qui flamboie dans le feu du cosmos ?"
         ],
@@ -120,17 +243,17 @@
           "Les flammes stellaires parlent,",
           "Les puissances de feu séraphiques flamboient;",
           "Elles flamboient aussi dans mon coeur.",
-          "Dans la source d'amour de l'être originel",
+          "Dans la source d’amour de l’être originel",
           "Le coeur humain trouve",
-          "La parole créatrice des flammes de l'esprit:",
-          "C'est – «Je»."
+          "La parole créatrice des flammes de l’esprit:",
+          "C’est – «Je»."
         ]
       ]
     },
     "19.2": {
       "strophen": [
         [
-          "Qui pense dans le Verbe d'esprit",
+          "Qui pense dans le Verbe d’esprit",
           "Par des pensées,",
           "Qui façonnent les âmes du monde?"
         ],
@@ -138,17 +261,17 @@
           "Les luminaires stellaires pensent,",
           "Les forces formatrices chérubiniques brillent;",
           "Elles brillent aussi dans ma tête.",
-          "Dans la source de lumière de l'être originel",
+          "Dans la source de lumière de l’être originel",
           "La tête humaine trouve",
-          "L'action pensante qui forme l'âme :",
-          "C'est – «Je»."
+          "L’action pensante qui forme l’âme :",
+          "C’est – «Je»."
         ]
       ]
     },
     "19.3": {
       "strophen": [
         [
-          "Qui exerce sa force dans le Verbe d'esprit",
+          "Qui exerce sa force dans le Verbe d’esprit",
           "Avec des forces",
           "Qui vivent dans le corps du cosmos ?"
         ],
@@ -156,10 +279,10 @@
           "Le corps cosmique des étoiles exerce sa force,",
           "Les pouvoirs porteurs des Thrones prennent corps ;",
           "Ils prennent corps aussi dans mes membres.",
-          "Dans la source de vie de l'être originel",
+          "Dans la source de vie de l’être originel",
           "Les membres humains trouvent",
           "Le pouvoir agissant des porteurs du cosmos:",
-          "C'est – «Je»."
+          "C’est – «Je»."
         ]
       ]
     },
