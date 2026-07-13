@@ -48,7 +48,32 @@ const frForPart = (part: { lines?: string[] }): string[] | undefined => {
     {fr
       ? `Français · Übersetzung: ${uebersetzerin} — Arbeitsstand`
       : 'Français · Übersetzung folgt'}
+    <button
+      type="button"
+      class="fr-note-toggle"
+      data-fr-note={mantra.id}
+      aria-expanded="false"
+      aria-label="Notiz zur Übersetzung"
+      title="Notiz zur Übersetzung"
+    >✎</button>
   </p>
+
+  <div class="fr-note-panel" data-fr-note-panel={mantra.id}>
+    <textarea
+      class="fr-note-text"
+      data-fr-note-text={mantra.id}
+      rows="3"
+      placeholder="Anmerkung zur Übersetzung — bleibt lokal auf diesem Gerät."
+      aria-label="Notiztext"
+    ></textarea>
+    <div class="fr-note-foot">
+      <span class="fr-note-status" data-fr-note-status aria-live="polite"></span>
+      <span class="fr-note-tools">
+        <button type="button" class="fr-note-link" data-fr-note-export>Alle exportieren</button>
+        <button type="button" class="fr-note-link" data-fr-note-import>Importieren</button>
+      </span>
+    </div>
+  </div>
 
   <div class="mantra-synopsis">
     <div class={`mantra-body${hasInline ? ' mantra-body--compact' : ''}`}>

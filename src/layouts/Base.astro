@@ -234,6 +234,96 @@ const offlineUrls = buildOfflineUrls(base);
           });
         }
 
+        // Notizfunktion (fr-Modus): pro Mantra eine lokale Notiz in
+        // localStorage; Export/Import als JSON zur Weitergabe. Bewusst ohne
+        // Server — reine Ablage, kein Editor.
+        (function () {
+          var toggle = document.querySelector('.fr-note-toggle');
+          if (!toggle) return;
+          var id = toggle.getAttribute('data-fr-note');
+          var panel = document.querySelector('.fr-note-panel[data-fr-note-panel="' + (window.CSS && CSS.escape ? CSS.escape(id) : id) + '"]');
+          var text = panel && panel.querySelector('.fr-note-text');
+          var status = panel && panel.querySelector('[data-fr-note-status]');
+          var PREFIX = 'mantren:fr-note:';
+          var key = PREFIX + id;
+
+          function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+          function markHas() {
+            var has = !!(read(key) || '').trim();
+            toggle.setAttribute('data-has-note', has ? 'true' : 'false');
+          }
+          // Initial füllen
+          if (text) { var v = read(key); if (v != null) text.value = v; }
+          markHas();
+
+          toggle.addEventListener('click', function () {
+            var open = panel.getAttribute('data-open') === 'true';
+            panel.setAttribute('data-open', open ? 'false' : 'true');
+            toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+            if (!open && text) text.focus();
+          });
+
+          if (text) {
+            var t = null;
+            text.addEventListener('input', function () {
+              if (t) clearTimeout(t);
+              t = setTimeout(function () {
+                try {
+                  var val = text.value;
+                  if (val.trim()) localStorage.setItem(key, val); else localStorage.removeItem(key);
+                  if (status) { status.textContent = 'Gespeichert'; setTimeout(function () { if (status) status.textContent = ''; }, 1500); }
+                } catch (e) { if (status) status.textContent = 'Speichern fehlgeschlagen'; }
+                markHas();
+              }, 300);
+            });
+          }
+
+          function allNotes() {
+            var out = {};
+            try {
+              for (var i = 0; i < localStorage.length; i++) {
+                var k = localStorage.key(i);
+                if (k && k.indexOf(PREFIX) === 0) out[k.slice(PREFIX.length)] = localStorage.getItem(k);
+              }
+            } catch (e) {}
+            return out;
+          }
+
+          var expBtn = panel.querySelector('[data-fr-note-export]');
+          if (expBtn) expBtn.addEventListener('click', function () {
+            var data = { _typ: 'mantren-fr-notizen', exportiert: new Date().toISOString(), notizen: allNotes() };
+            var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url; a.download = 'mantren-notizen-fr.json';
+            document.body.appendChild(a); a.click(); document.body.removeChild(a);
+            setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+          });
+
+          var impBtn = panel.querySelector('[data-fr-note-import]');
+          if (impBtn) impBtn.addEventListener('click', function () {
+            var inp = document.createElement('input');
+            inp.type = 'file'; inp.accept = 'application/json,.json';
+            inp.addEventListener('change', function () {
+              var f = inp.files && inp.files[0]; if (!f) return;
+              var r = new FileReader();
+              r.onload = function () {
+                try {
+                  var parsed = JSON.parse(String(r.result));
+                  var notes = parsed && parsed.notizen ? parsed.notizen : parsed;
+                  var n = 0;
+                  for (var k in notes) { if (Object.prototype.hasOwnProperty.call(notes, k) && typeof notes[k] === 'string') { localStorage.setItem(PREFIX + k, notes[k]); n++; } }
+                  if (text) { var cur = read(key); if (cur != null) text.value = cur; }
+                  markHas();
+                  if (status) { status.textContent = n + ' Notiz(en) importiert'; setTimeout(function () { if (status) status.textContent = ''; }, 2500); }
+                } catch (e) { if (status) status.textContent = 'Import fehlgeschlagen'; }
+              };
+              r.readAsText(f);
+            });
+            inp.click();
+          });
+        })();
+
         // Topbar-Menü: Klick außerhalb schließt die details-Klappe
         var menu = document.getElementById('topbar-menu');
         if (menu) {
