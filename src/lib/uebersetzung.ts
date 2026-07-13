@@ -4,8 +4,10 @@
 import raw from '../data/uebersetzung-fr.json';
 
 export type FrMantra = {
-  // Pro Zeilen-Strophe ein Array französischer Zeilen.
-  strophen: string[][];
+  // Part-genaue Synopse: pro Zeilen-Strophe ein Array französischer Zeilen.
+  strophen?: string[][];
+  // Durchgehende Spalte neben dem ganzen Mantra (Leerstring = Strophenabstand).
+  bloc?: string[];
 };
 
 type FrData = {
