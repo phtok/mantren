@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import { tx } from '../lib/typografie';
+import { KAFFEE_URL } from '../lib/unterstuetzung';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+<Base title="Kaffee als Dank">
+  <article class="impressum unterstuetzung">
+    <header class="impressum-head">
+      <h1 class="impressum-title">Kaffee als Dank</h1>
+    </header>
+
+    <section class="impressum-section">
+      <p>{tx('Diese Ausgabe entsteht in freier Arbeit und bleibt werbefrei — ohne Werbung, ohne Tracking. Wer die Pflege der Seite unterstützen möchte, kann hier einen Kaffee dalassen.')}</p>
+      <p class="unterstuetzung-klein">{tx('Freiwillig und ohne Gegenleistung; nicht steuerlich abzugsfähig. Die Zahlung läuft über Ko-fi (PayPal oder Karte). Der externe Dienst wird erst auf dieser Seite geladen — der Rest der Ausgabe bleibt frei davon.')}</p>
+    </section>
+
+    <div class="kofi-rahmen">
+      <iframe
+        id="kofiframe"
+        src="https://ko-fi.com/mantra7/?hidefeed=true&widget=true&embed=true&preview=true"
+        height="712"
+        title="Kaffee als Dank — Ko-fi"
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <p class="unterstuetzung-klein unterstuetzung-fallback">
+      {tx('Falls das Formular nicht lädt:')}
+      <a href={KAFFEE_URL} target="_blank" rel="noopener">Bei Ko-fi öffnen →</a>
+    </p>
+
+    <p class="vortrag-back">
+      <a href={base}>← Zum Mantren-Index</a>
+    </p>
+  </article>
+</Base>
