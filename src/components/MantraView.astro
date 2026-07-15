@@ -22,6 +22,14 @@ const fr = frForMantra(mantra.id);
 const mode: 'strophen' | 'bloc' = fr?.strophen ? 'strophen' : 'bloc';
 const bloc = fr?.bloc;
 
+// Flache Zeilenliste (Leerzeile = Strophenabstand) als Ausgangspunkt für den
+// Editor und als Vorlage, falls noch keine Fassung in der Datenbank liegt.
+const frFlat: string[] = fr?.bloc
+  ? fr.bloc
+  : fr?.strophen
+    ? fr.strophen.flatMap((s, i) => (i ? ['', ...s] : s))
+    : [];
+
 function renderLine(line: string) {
   const raw = line.startsWith('/') ? line.slice(1) : line;
   return { text: tx(raw), cont: line.startsWith('/') };
@@ -43,7 +51,8 @@ const frForPart = (part: { lines?: string[] }): string[] | undefined => {
   return fr?.strophen ? fr.strophen[frIdx] : undefined;
 };
 ---
-<article class="mantra" data-fr-mode={mode}>
+<article class="mantra" data-fr-mode={mode} data-mantra-id={mantra.id}>
+  <script type="application/json" class="fr-src" set:html={JSON.stringify(frFlat)} />
   <p class="mantra-fr-head" lang="fr">
     {fr
       ? `Français · Übersetzung: ${uebersetzerin} — Arbeitsstand`

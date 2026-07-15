@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { tx } from '../lib/typografie';
 import { buildOfflineUrls } from '../lib/offline';
+import { FR_BACKEND } from '../lib/fr-backend';
 
 interface Props {
   title?: string;
@@ -590,6 +591,108 @@ const offlineUrls = buildOfflineUrls(base);
           if (dx > 0 && prev) prev.click();
           else if (dx < 0 && next) next.click();
         }, { passive: true });
+      })();
+    </script>
+    <script is:inline define:vars={{ FR_BACKEND }}>
+      // Editierbare französische Übersetzung (Supabase).
+      // 1) Overlay: im fr-Modus die aktuelle DB-Fassung über die statische legen.
+      // 2) Editor: nur mit ?edit=<token> — Louis bearbeitet direkt seine Fassung.
+      (function () {
+        var art = document.querySelector('.mantra[data-mantra-id]');
+        if (!art) return;
+        var id = art.getAttribute('data-mantra-id');
+        var cfg = FR_BACKEND;
+        var synopsis = art.querySelector('.mantra-synopsis');
+        if (!synopsis) return;
+
+        function ensureBloc() {
+          var b = art.querySelector('.mantra-fr-bloc');
+          if (!b) {
+            b = document.createElement('aside');
+            b.className = 'mantra-fr-bloc';
+            b.setAttribute('lang', 'fr');
+            b.setAttribute('aria-hidden', 'true');
+            synopsis.appendChild(b);
+          }
+          return b;
+        }
+        function renderBloc(lines) {
+          art.setAttribute('data-fr-mode', 'bloc');
+          var b = ensureBloc();
+          b.innerHTML = '';
+          lines.forEach(function (l) {
+            var s = document.createElement('span');
+            if (l === '') { s.className = 'ue-spacer'; s.setAttribute('aria-hidden', 'true'); }
+            else { s.className = 'line'; s.textContent = l; }
+            b.appendChild(s);
+          });
+        }
+
+        var srcEl = art.querySelector('script.fr-src');
+        var currentLines = [];
+        try { currentLines = JSON.parse((srcEl && srcEl.textContent) || '[]'); } catch (e) {}
+
+        // 1) Overlay
+        var restUrl = cfg.url + '/rest/v1/' + cfg.table + '?mantra_id=eq.' + encodeURIComponent(id) + '&select=fassung';
+        fetch(restUrl, { headers: { apikey: cfg.anon, Authorization: 'Bearer ' + cfg.anon } })
+          .then(function (r) { return r.ok ? r.json() : []; })
+          .then(function (rows) {
+            if (rows && rows[0] && rows[0].fassung && Array.isArray(rows[0].fassung.bloc)) {
+              currentLines = rows[0].fassung.bloc;
+              renderBloc(currentLines);
+            }
+          })
+          .catch(function () {});
+
+        // 2) Editor
+        var token = null;
+        try { token = new URLSearchParams(location.search).get('edit'); } catch (e) {}
+        if (!token) return;
+        document.documentElement.setAttribute('data-lang', 'fr');
+
+        var ed = document.createElement('div');
+        ed.className = 'fr-editor';
+        var head = document.createElement('p');
+        head.className = 'fr-editor-head';
+        head.textContent = 'Bearbeiten · ' + id;
+        var area = document.createElement('textarea');
+        area.className = 'fr-editor-area';
+        area.setAttribute('spellcheck', 'false');
+        area.setAttribute('aria-label', 'Übersetzung bearbeiten');
+        var bar = document.createElement('div');
+        bar.className = 'fr-editor-bar';
+        var save = document.createElement('button');
+        save.type = 'button'; save.className = 'fr-editor-save'; save.textContent = 'Speichern';
+        var status = document.createElement('span');
+        status.className = 'fr-editor-status'; status.setAttribute('aria-live', 'polite');
+        var hint = document.createElement('span');
+        hint.className = 'fr-editor-hint'; hint.textContent = 'Leerzeile = Strophenabstand';
+        bar.appendChild(save); bar.appendChild(status); bar.appendChild(hint);
+        ed.appendChild(head); ed.appendChild(area); ed.appendChild(bar);
+        art.insertBefore(ed, synopsis);
+        area.value = currentLines.join('\n');
+
+        save.addEventListener('click', function () {
+          var lines = area.value.replace(/\r/g, '').split('\n');
+          while (lines.length && !lines[lines.length - 1].trim()) lines.pop();
+          save.disabled = true; status.textContent = 'Speichere …';
+          fetch(cfg.url + '/rest/v1/rpc/' + cfg.rpc, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', apikey: cfg.anon, Authorization: 'Bearer ' + cfg.anon },
+            body: JSON.stringify({ p_token: token, p_mantra_id: id, p_lines: lines })
+          })
+            .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+            .then(function (res) {
+              save.disabled = false;
+              if (res.ok && res.j && res.j.ok) {
+                currentLines = lines; renderBloc(lines);
+                status.textContent = 'Gespeichert';
+              } else {
+                status.textContent = 'Fehler: ' + ((res.j && res.j.error) || 'unbekannt');
+              }
+            })
+            .catch(function () { save.disabled = false; status.textContent = 'Netzwerkfehler'; });
+        });
       })();
     </script>
   </body>

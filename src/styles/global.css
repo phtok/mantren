@@ -570,6 +570,60 @@ html[data-lang="fr"] .fr-note-panel[data-open="true"] {
 }
 .fr-note-link:hover { color: var(--text); }
 
+/* Übersetzungs-Editor (nur mit Geheim-Link ?edit=…). Wird per JS eingefügt. */
+.fr-editor {
+  margin: 0 0 1.6rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--muted);
+  border-radius: 0 5px 5px 0;
+  background: rgba(127, 127, 127, 0.05);
+}
+.fr-editor-head {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+.fr-editor-area {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 12rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: clamp(1.02rem, 2vw, 1.12rem);
+  line-height: 1.55;
+  padding: 0.6rem 0.7rem;
+  resize: vertical;
+  outline: none;
+}
+.fr-editor-area:focus { border-color: var(--muted); }
+.fr-editor-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.fr-editor-save {
+  appearance: none;
+  border: 1px solid var(--muted);
+  background: var(--text);
+  color: var(--bg);
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.fr-editor-save:disabled { opacity: 0.5; cursor: default; }
+.fr-editor-hint { color: var(--muted-soft); }
+
 /* Aktiv über das Modus-Menü (‹Französisch›). */
 html[data-lang="fr"] .mantra-fr-head {
   display: block;
@@ -585,13 +639,13 @@ html[data-lang="fr"] .mantra[data-fr-mode="strophen"] .strophe {
   gap: 0.4rem 2.4rem;
   align-items: start;
 }
-html[data-lang="fr"] .lines--fr {
+html[data-lang="fr"] .mantra[data-fr-mode="strophen"] .lines--fr {
   display: block;
   font-style: italic;
   color: var(--text);
   opacity: 0.9;
 }
-html[data-lang="fr"] .lines--fr .line--folgt {
+html[data-lang="fr"] .mantra[data-fr-mode="strophen"] .lines--fr .line--folgt {
   font-style: normal;
   color: var(--muted-soft);
   font-size: 0.9em;
