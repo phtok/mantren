@@ -32,3 +32,8 @@ public/registerSW.js
 # private notes — bewusst lokal halten, nicht ins public repo
 TODO.md
 HANDOVER.md
+
+# vercel
+.vercel/
+.vercel
+.env*
