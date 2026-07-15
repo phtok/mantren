@@ -824,6 +824,41 @@ html.theme-invert .kaffee-hinweis {
   .kaffee-hinweis { transition: none; }
 }
 
+/* ─────────────── Unterstützungsseite (Kaffee als Dank) ─────────────── */
+
+.unterstuetzung-klein {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Das Ko-fi-Panel ist Fremdinhalt (iframe) und lässt sich innen nicht
+   umgestalten; der Rahmen holt es optisch auf die Seite: Linienfarbe und
+   Radius wie die Topbar-Klappe, Breite des schmalen Panels. Das Panel
+   selbst bleibt hell — auch im dunklen Modus. */
+.kofi-rahmen {
+  max-width: 26rem;
+  margin: 0 0 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f9f9f9;
+}
+
+.kofi-rahmen iframe {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: 712px;
+}
+
+.unterstuetzung-fallback {
+  margin-bottom: 2rem;
+}
+
+.unterstuetzung-fallback a {
+  color: var(--muted);
+}
+
 /* ─────────────── Suche ─────────────── */
 
 .search-box {

@@ -2,7 +2,6 @@
 import Base from '../layouts/Base.astro';
 import { chapters, mantren, mantrenByChapter } from '../lib/mantren';
 import { tx } from '../lib/typografie';
-import { KAFFEE_URL } from '../lib/unterstuetzung';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const searchIndex = mantren.map((m) => {
@@ -89,7 +88,7 @@ const navLinks = [
   <aside class="kaffee-hinweis" id="kaffee-hinweis" hidden>
     <p class="kaffee-hinweis-text">
       {tx('Diese Ausgabe entsteht in freier Arbeit und bleibt werbefrei.')}
-      <a class="kaffee-hinweis-link" href={KAFFEE_URL} target="_blank" rel="noopener">{tx('Ein Kaffee als Dank')} →</a>
+      <a class="kaffee-hinweis-link" href={`${base}unterstuetzung/`}>{tx('Ein Kaffee als Dank')} →</a>
     </p>
     <button type="button" class="kaffee-hinweis-close" aria-label="Schließen">×</button>
   </aside>

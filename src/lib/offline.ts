@@ -17,6 +17,7 @@ export function buildOfflineUrls(base: string): string[] {
     `${b}tafeln-galerie/`,
     `${b}universalsuche/`,
     `${b}impressum/`,
+    `${b}unterstuetzung/`,
     `${b}offline/`,
     `${b}fonts/inclusive-sans.woff2`,
     `${b}fonts/plex-sans-300-normal.woff2`,
