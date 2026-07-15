@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { tx } from '../lib/typografie';
 import { buildOfflineUrls } from '../lib/offline';
+import { FR_BACKEND } from '../lib/fr-backend';
 
 interface Props {
   title?: string;
@@ -78,6 +79,11 @@ const offlineUrls = buildOfflineUrls(base);
             document.documentElement.setAttribute('data-edition', 'plex');
           }
         } catch (e) {}
+        try {
+          if (localStorage.getItem('lang') === 'fr') {
+            document.documentElement.setAttribute('data-lang', 'fr');
+          }
+        } catch (e) {}
       })();
     </script>
   </head>
@@ -118,6 +124,16 @@ const offlineUrls = buildOfflineUrls(base);
             >
               <span class="topbar-menu-icon" aria-hidden="true">⇄</span>
               <span class="topbar-menu-label" data-edition-label>Schriftbild: Plex</span>
+            </button>
+            <button
+              class="topbar-menu-item"
+              id="lang-toggle"
+              type="button"
+              role="menuitemcheckbox"
+              aria-checked="false"
+            >
+              <span class="topbar-menu-icon" aria-hidden="true">⇔</span>
+              <span class="topbar-menu-label" data-lang-label>Französisch</span>
             </button>
             <a class="topbar-menu-item" href={`${base}offline/`} role="menuitem">
               <span class="topbar-menu-icon" aria-hidden="true">◌</span>
@@ -196,6 +212,118 @@ const offlineUrls = buildOfflineUrls(base);
             refreshEditionLabel();
           });
         }
+
+        // Französisch-Umschalter: schaltet die synoptische Ansicht (Original +
+        // Übersetzung) auf allen Mantra-Seiten frei. Reine Anzeige-Umschaltung
+        // über html[data-lang="fr"]; die Übersetzungen stecken bereits im HTML.
+        var langBtn = document.getElementById('lang-toggle');
+        var langLabel = langBtn && langBtn.querySelector('[data-lang-label]');
+        function refreshLangLabel() {
+          if (!langBtn) return;
+          var isFr = html.getAttribute('data-lang') === 'fr';
+          langBtn.setAttribute('aria-checked', isFr ? 'true' : 'false');
+          if (langLabel) langLabel.textContent = isFr ? 'Nur Deutsch' : 'Französisch';
+        }
+        if (langBtn) {
+          refreshLangLabel();
+          langBtn.addEventListener('click', function () {
+            var isFr = html.getAttribute('data-lang') === 'fr';
+            if (isFr) { html.removeAttribute('data-lang'); }
+            else { html.setAttribute('data-lang', 'fr'); }
+            try { localStorage.setItem('lang', isFr ? 'de' : 'fr'); } catch (e) {}
+            refreshLangLabel();
+          });
+        }
+
+        // Notizfunktion (fr-Modus): pro Mantra eine lokale Notiz in
+        // localStorage; Export/Import als JSON zur Weitergabe. Bewusst ohne
+        // Server — reine Ablage, kein Editor.
+        (function () {
+          var toggle = document.querySelector('.fr-note-toggle');
+          if (!toggle) return;
+          var id = toggle.getAttribute('data-fr-note');
+          var panel = document.querySelector('.fr-note-panel[data-fr-note-panel="' + (window.CSS && CSS.escape ? CSS.escape(id) : id) + '"]');
+          var text = panel && panel.querySelector('.fr-note-text');
+          var status = panel && panel.querySelector('[data-fr-note-status]');
+          var PREFIX = 'mantren:fr-note:';
+          var key = PREFIX + id;
+
+          function read(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+          function markHas() {
+            var has = !!(read(key) || '').trim();
+            toggle.setAttribute('data-has-note', has ? 'true' : 'false');
+          }
+          // Initial füllen
+          if (text) { var v = read(key); if (v != null) text.value = v; }
+          markHas();
+
+          toggle.addEventListener('click', function () {
+            var open = panel.getAttribute('data-open') === 'true';
+            panel.setAttribute('data-open', open ? 'false' : 'true');
+            toggle.setAttribute('aria-expanded', open ? 'false' : 'true');
+            if (!open && text) text.focus();
+          });
+
+          if (text) {
+            var t = null;
+            text.addEventListener('input', function () {
+              if (t) clearTimeout(t);
+              t = setTimeout(function () {
+                try {
+                  var val = text.value;
+                  if (val.trim()) localStorage.setItem(key, val); else localStorage.removeItem(key);
+                  if (status) { status.textContent = 'Gespeichert'; setTimeout(function () { if (status) status.textContent = ''; }, 1500); }
+                } catch (e) { if (status) status.textContent = 'Speichern fehlgeschlagen'; }
+                markHas();
+              }, 300);
+            });
+          }
+
+          function allNotes() {
+            var out = {};
+            try {
+              for (var i = 0; i < localStorage.length; i++) {
+                var k = localStorage.key(i);
+                if (k && k.indexOf(PREFIX) === 0) out[k.slice(PREFIX.length)] = localStorage.getItem(k);
+              }
+            } catch (e) {}
+            return out;
+          }
+
+          var expBtn = panel.querySelector('[data-fr-note-export]');
+          if (expBtn) expBtn.addEventListener('click', function () {
+            var data = { _typ: 'mantren-fr-notizen', exportiert: new Date().toISOString(), notizen: allNotes() };
+            var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+            var url = URL.createObjectURL(blob);
+            var a = document.createElement('a');
+            a.href = url; a.download = 'mantren-notizen-fr.json';
+            document.body.appendChild(a); a.click(); document.body.removeChild(a);
+            setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+          });
+
+          var impBtn = panel.querySelector('[data-fr-note-import]');
+          if (impBtn) impBtn.addEventListener('click', function () {
+            var inp = document.createElement('input');
+            inp.type = 'file'; inp.accept = 'application/json,.json';
+            inp.addEventListener('change', function () {
+              var f = inp.files && inp.files[0]; if (!f) return;
+              var r = new FileReader();
+              r.onload = function () {
+                try {
+                  var parsed = JSON.parse(String(r.result));
+                  var notes = parsed && parsed.notizen ? parsed.notizen : parsed;
+                  var n = 0;
+                  for (var k in notes) { if (Object.prototype.hasOwnProperty.call(notes, k) && typeof notes[k] === 'string') { localStorage.setItem(PREFIX + k, notes[k]); n++; } }
+                  if (text) { var cur = read(key); if (cur != null) text.value = cur; }
+                  markHas();
+                  if (status) { status.textContent = n + ' Notiz(en) importiert'; setTimeout(function () { if (status) status.textContent = ''; }, 2500); }
+                } catch (e) { if (status) status.textContent = 'Import fehlgeschlagen'; }
+              };
+              r.readAsText(f);
+            });
+            inp.click();
+          });
+        })();
 
         // Topbar-Menü: Klick außerhalb schließt die details-Klappe
         var menu = document.getElementById('topbar-menu');
@@ -463,6 +591,119 @@ const offlineUrls = buildOfflineUrls(base);
           if (dx > 0 && prev) prev.click();
           else if (dx < 0 && next) next.click();
         }, { passive: true });
+      })();
+    </script>
+    <script is:inline define:vars={{ FR_BACKEND }}>
+      // Editierbare französische Übersetzung (Supabase).
+      // 1) Overlay: im fr-Modus die aktuelle DB-Fassung über die statische legen.
+      // 2) Editor: nur mit ?edit=<token> — Louis bearbeitet direkt seine Fassung.
+      (function () {
+        var art = document.querySelector('.mantra[data-mantra-id]');
+        if (!art) return;
+        var id = art.getAttribute('data-mantra-id');
+        var cfg = FR_BACKEND;
+        var synopsis = art.querySelector('.mantra-synopsis');
+        if (!synopsis) return;
+
+        function ensureBloc() {
+          var b = art.querySelector('.mantra-fr-bloc');
+          if (!b) {
+            b = document.createElement('aside');
+            b.className = 'mantra-fr-bloc';
+            b.setAttribute('lang', 'fr');
+            b.setAttribute('aria-hidden', 'true');
+            synopsis.appendChild(b);
+          }
+          return b;
+        }
+        function renderBloc(lines) {
+          art.setAttribute('data-fr-mode', 'bloc');
+          var b = ensureBloc();
+          b.innerHTML = '';
+          lines.forEach(function (l) {
+            var s = document.createElement('span');
+            if (l === '') { s.className = 'ue-spacer'; s.setAttribute('aria-hidden', 'true'); }
+            else { s.className = 'line'; s.textContent = l; }
+            b.appendChild(s);
+          });
+        }
+
+        var srcEl = art.querySelector('script.fr-src');
+        var currentLines = [];
+        try { currentLines = JSON.parse((srcEl && srcEl.textContent) || '[]'); } catch (e) {}
+
+        // 1) Overlay
+        var restUrl = cfg.url + '/rest/v1/' + cfg.table + '?mantra_id=eq.' + encodeURIComponent(id) + '&select=fassung';
+        fetch(restUrl, { headers: { apikey: cfg.anon, Authorization: 'Bearer ' + cfg.anon } })
+          .then(function (r) { return r.ok ? r.json() : []; })
+          .then(function (rows) {
+            if (rows && rows[0] && rows[0].fassung && Array.isArray(rows[0].fassung.bloc)) {
+              currentLines = rows[0].fassung.bloc;
+              renderBloc(currentLines);
+            }
+          })
+          .catch(function () {});
+
+        // 2) Editor
+        var token = null;
+        try { token = new URLSearchParams(location.search).get('edit'); } catch (e) {}
+        if (!token) return;
+        document.documentElement.setAttribute('data-lang', 'fr');
+
+        // Im Bearbeiten-Modus den Token an die Blätter-Links hängen, damit
+        // Louis beim Vor-/Zurückblättern im Editor bleibt.
+        var pagerLinks = document.querySelectorAll('a[data-pager]');
+        for (var pi = 0; pi < pagerLinks.length; pi++) {
+          try {
+            var pu = new URL(pagerLinks[pi].getAttribute('href'), location.href);
+            pu.searchParams.set('edit', token);
+            pagerLinks[pi].setAttribute('href', pu.pathname + pu.search);
+          } catch (e) {}
+        }
+
+        var ed = document.createElement('div');
+        ed.className = 'fr-editor';
+        var head = document.createElement('p');
+        head.className = 'fr-editor-head';
+        head.textContent = 'Modifier · ' + id;
+        var area = document.createElement('textarea');
+        area.className = 'fr-editor-area';
+        area.setAttribute('spellcheck', 'false');
+        area.setAttribute('aria-label', 'Modifier la traduction');
+        var bar = document.createElement('div');
+        bar.className = 'fr-editor-bar';
+        var save = document.createElement('button');
+        save.type = 'button'; save.className = 'fr-editor-save'; save.textContent = 'Enregistrer';
+        var status = document.createElement('span');
+        status.className = 'fr-editor-status'; status.setAttribute('aria-live', 'polite');
+        var hint = document.createElement('span');
+        hint.className = 'fr-editor-hint'; hint.textContent = 'Ligne vide = séparation de strophe';
+        bar.appendChild(save); bar.appendChild(status); bar.appendChild(hint);
+        ed.appendChild(head); ed.appendChild(area); ed.appendChild(bar);
+        art.insertBefore(ed, synopsis);
+        area.value = currentLines.join('\n');
+
+        save.addEventListener('click', function () {
+          var lines = area.value.replace(/\r/g, '').split('\n');
+          while (lines.length && !lines[lines.length - 1].trim()) lines.pop();
+          save.disabled = true; status.textContent = 'Enregistrement…';
+          fetch(cfg.url + '/rest/v1/rpc/' + cfg.rpc, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', apikey: cfg.anon, Authorization: 'Bearer ' + cfg.anon },
+            body: JSON.stringify({ p_token: token, p_mantra_id: id, p_lines: lines })
+          })
+            .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+            .then(function (res) {
+              save.disabled = false;
+              if (res.ok && res.j && res.j.ok) {
+                currentLines = lines; renderBloc(lines);
+                status.textContent = 'Enregistré';
+              } else {
+                status.textContent = 'Erreur : ' + ((res.j && res.j.error) || 'inconnue');
+              }
+            })
+            .catch(function () { save.disabled = false; status.textContent = 'Erreur réseau'; });
+        });
       })();
     </script>
   </body>

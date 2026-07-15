@@ -494,6 +494,220 @@ main.center {
   }
 }
 
+/* ─────────────── Synopse (Französisch-Umschalter) ─────────────── */
+/* Standard: nur das Original. FR-Spalte und Vermerk sind versteckt, die
+   Strophe bleibt einspaltig — optisch identisch zur reinen Lesefassung. */
+.mantra-fr-head { display: none; }
+.lines--fr { display: none; }
+.mantra-fr-bloc { display: none; }
+
+/* Nav-Eintrag zum französischen Apparat: nur im fr-Modus sichtbar. */
+.index-nav-fr { display: none; }
+html[data-lang="fr"] .index-nav-fr { display: inline; }
+
+/* Notizfunktion: nur im fr-Modus, bewusst zurückhaltend. Notizen liegen
+   lokal (localStorage); Export/Import als JSON zur Weitergabe. */
+.fr-note-toggle { display: none; }
+.fr-note-panel { display: none; }
+html[data-lang="fr"] .fr-note-toggle {
+  display: inline;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted-soft);
+  font: inherit;
+  font-size: 0.9em;
+  line-height: 1;
+  padding: 0 0.15rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.15s, color 0.15s;
+}
+html[data-lang="fr"] .fr-note-toggle:hover { opacity: 1; color: var(--text); }
+html[data-lang="fr"] .fr-note-toggle[data-has-note="true"] { opacity: 1; color: var(--text); }
+html[data-lang="fr"] .fr-note-panel[data-open="true"] {
+  display: block;
+  margin: 0 0 1.4rem;
+}
+.fr-note-text {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  padding: 0.5rem 0.6rem;
+  resize: vertical;
+  outline: none;
+}
+.fr-note-text:focus { border-color: var(--muted); }
+.fr-note-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: var(--muted-soft);
+}
+.fr-note-tools { display: inline-flex; gap: 0.8rem; }
+.fr-note-link {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  padding: 0;
+}
+.fr-note-link:hover { color: var(--text); }
+
+/* Übersetzungs-Editor (nur mit Geheim-Link ?edit=…). Wird per JS eingefügt. */
+.fr-editor {
+  margin: 0 0 1.6rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--muted);
+  border-radius: 0 5px 5px 0;
+  background: rgba(127, 127, 127, 0.05);
+}
+.fr-editor-head {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 0.5rem;
+}
+.fr-editor-area {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 12rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: clamp(1.02rem, 2vw, 1.12rem);
+  line-height: 1.55;
+  padding: 0.6rem 0.7rem;
+  resize: vertical;
+  outline: none;
+}
+.fr-editor-area:focus { border-color: var(--muted); }
+.fr-editor-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.6rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.fr-editor-save {
+  appearance: none;
+  border: 1px solid var(--muted);
+  background: var(--text);
+  color: var(--bg);
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.fr-editor-save:disabled { opacity: 0.5; cursor: default; }
+.fr-editor-hint { color: var(--muted-soft); }
+
+/* Aktiv über das Modus-Menü (‹Französisch›). */
+html[data-lang="fr"] .mantra-fr-head {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  margin: 0 0 1.4rem;
+}
+
+html[data-lang="fr"] .mantra[data-fr-mode="strophen"] .strophe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem 2.4rem;
+  align-items: start;
+}
+html[data-lang="fr"] .mantra[data-fr-mode="strophen"] .lines--fr {
+  display: block;
+  font-style: italic;
+  color: var(--text);
+  opacity: 0.9;
+}
+html[data-lang="fr"] .mantra[data-fr-mode="strophen"] .lines--fr .line--folgt {
+  font-style: normal;
+  color: var(--muted-soft);
+  font-size: 0.9em;
+}
+
+/* bloc-Modus: durchgehende FR-Spalte neben dem ganzen Mantra. */
+html[data-lang="fr"] .mantra[data-fr-mode="bloc"] .mantra-synopsis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem 2.4rem;
+  align-items: start;
+}
+html[data-lang="fr"] .mantra-fr-bloc {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 4.5rem;
+  align-self: start;
+  font-style: italic;
+  color: var(--text);
+  opacity: 0.9;
+  font-size: clamp(1.05rem, 2vw, 1.18rem);
+  line-height: 1.55;
+}
+html[data-lang="fr"] .mantra-fr-bloc .line { display: block; }
+html[data-lang="fr"] .mantra-fr-bloc .ue-spacer { display: block; height: 0.7rem; }
+html[data-lang="fr"] .mantra-fr-folgt {
+  margin: 0;
+  font-style: normal;
+  color: var(--muted-soft);
+  font-size: 0.9rem;
+}
+
+/* Die Synopse braucht mehr Breite als die 36rem-Lesespalte. */
+html[data-lang="fr"] .mantra { max-width: 52rem; }
+@media (min-width: 1000px) {
+  html[data-lang="fr"] main:not(:has(.mantra-shell--with-tafel)) { max-width: 1120px; }
+  html[data-lang="fr"] .mantra { max-width: 60rem; }
+}
+
+/* Mobil: bloc-Spalte unter das Original stapeln. */
+@media (max-width: 720px) {
+  html[data-lang="fr"] .mantra[data-fr-mode="bloc"] .mantra-synopsis {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  html[data-lang="fr"] .mantra-fr-bloc {
+    position: static;
+    padding-top: 0.8rem;
+    border-top: 1px dashed rgba(127, 127, 127, 0.3);
+  }
+}
+
+/* Mobil: gestapelt statt zweispaltig, mit zarter Trennung. */
+@media (max-width: 720px) {
+  html[data-lang="fr"] .strophe { grid-template-columns: 1fr; gap: 0.6rem; }
+  html[data-lang="fr"] .lines--fr {
+    padding-top: 0.6rem;
+    border-top: 1px dashed rgba(127, 127, 127, 0.3);
+  }
+}
+
 /* ─────────────── Pager (vor/zurück) ─────────────── */
 
 .pager {

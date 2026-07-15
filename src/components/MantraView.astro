@@ -3,6 +3,7 @@ import type { Mantra } from '../lib/mantren';
 import type { KommentarEntry } from '../lib/kommentar';
 import KommentarKlappe from './KommentarKlappe.astro';
 import { tx } from '../lib/typografie';
+import { frForMantra, uebersetzerin } from '../lib/uebersetzung';
 
 interface Props {
   mantra: Mantra;
@@ -10,9 +11,24 @@ interface Props {
 }
 
 const { mantra, kommentare } = Astro.props;
-// Bei per-Strophe-Klappen den Mantra-Körper auf knappere Strophen-Bindung
-// und größere Trennung zur nächsten Strophe umschalten.
 const hasInline = !!(kommentare && kommentare.length);
+
+// Französische Übersetzung (falls vorhanden). Zwei Darstellungen:
+//   ‹strophen›  — Part-genaue Synopse (Zeilenraster deckungsgleich zum Original).
+//   ‹bloc›      — durchgehende Spalte neben dem ganzen Mantra (für Louis'
+//                 freiere Fassungen, die sich nicht Part für Part decken).
+// Ohne Eintrag: bloc-Modus mit einem einzelnen ‹folgt›-Hinweis.
+const fr = frForMantra(mantra.id);
+const mode: 'strophen' | 'bloc' = fr?.strophen ? 'strophen' : 'bloc';
+const bloc = fr?.bloc;
+
+// Flache Zeilenliste (Leerzeile = Strophenabstand) als Ausgangspunkt für den
+// Editor und als Vorlage, falls noch keine Fassung in der Datenbank liegt.
+const frFlat: string[] = fr?.bloc
+  ? fr.bloc
+  : fr?.strophen
+    ? fr.strophen.flatMap((s, i) => (i ? ['', ...s] : s))
+    : [];
 
 function renderLine(line: string) {
   const raw = line.startsWith('/') ? line.slice(1) : line;
@@ -20,38 +36,99 @@ function renderLine(line: string) {
 }
 
 // Je Strophe (Part mit lines) den nächsten Kommentar zuordnen.
-// Parts ohne lines (reine regie- oder section-Blöcke) überspringen das Mapping.
 let strophenIdx = -1;
 const kommentarForPart = (part: { lines?: string[] }) => {
   if (!kommentare || !part.lines || part.lines.length === 0) return undefined;
   strophenIdx += 1;
   return kommentare[strophenIdx];
 };
----
-<article class="mantra">
 
-  <div class={`mantra-body${hasInline ? ' mantra-body--compact' : ''}`}>
-    {mantra.parts.map((part) => {
-      const entry = kommentarForPart(part);
-      return (
-        <section class="part">
-          {part.regie && <p class="regie">{tx(part.regie)}</p>}
-          {part.section && <h2 class="section-head">{tx(part.section)}</h2>}
-          {part.lines && part.lines.length > 0 && (
-            <p class="lines">
-              {part.lines.map((raw) => {
-                const { text, cont } = renderLine(raw);
-                return (
-                  <span class={`line${cont ? ' line-cont' : ''}`}>{text}</span>
-                );
-              })}
-            </p>
-          )}
-          {entry && (
-            <KommentarKlappe kommentar={entry.kommentar} mantraId={mantra.id} klappenKey={entry.key} />
-          )}
-        </section>
-      );
-    })}
+// FR-Strophen (nur im strophen-Modus) parallel zu den Zeilen-Parts.
+let frIdx = -1;
+const frForPart = (part: { lines?: string[] }): string[] | undefined => {
+  if (!part.lines || part.lines.length === 0) return undefined;
+  frIdx += 1;
+  return fr?.strophen ? fr.strophen[frIdx] : undefined;
+};
+---
+<article class="mantra" data-fr-mode={mode} data-mantra-id={mantra.id}>
+  <script type="application/json" class="fr-src" set:html={JSON.stringify(frFlat)} />
+  <p class="mantra-fr-head" lang="fr">
+    {fr
+      ? `Français · Übersetzung: ${uebersetzerin} — Arbeitsstand`
+      : 'Français · Übersetzung folgt'}
+    <button
+      type="button"
+      class="fr-note-toggle"
+      data-fr-note={mantra.id}
+      aria-expanded="false"
+      aria-label="Notiz zur Übersetzung"
+      title="Notiz zur Übersetzung"
+    >✎</button>
+  </p>
+
+  <div class="fr-note-panel" data-fr-note-panel={mantra.id}>
+    <textarea
+      class="fr-note-text"
+      data-fr-note-text={mantra.id}
+      rows="3"
+      placeholder="Anmerkung zur Übersetzung — bleibt lokal auf diesem Gerät."
+      aria-label="Notiztext"
+    ></textarea>
+    <div class="fr-note-foot">
+      <span class="fr-note-status" data-fr-note-status aria-live="polite"></span>
+      <span class="fr-note-tools">
+        <button type="button" class="fr-note-link" data-fr-note-export>Alle exportieren</button>
+        <button type="button" class="fr-note-link" data-fr-note-import>Importieren</button>
+      </span>
+    </div>
+  </div>
+
+  <div class="mantra-synopsis">
+    <div class={`mantra-body${hasInline ? ' mantra-body--compact' : ''}`}>
+      {mantra.parts.map((part) => {
+        const entry = kommentarForPart(part);
+        const frLines = frForPart(part);
+        const hasLines = !!(part.lines && part.lines.length > 0);
+        return (
+          <section class="part">
+            {part.regie && <p class="regie">{tx(part.regie)}</p>}
+            {part.section && <h2 class="section-head">{tx(part.section)}</h2>}
+            {hasLines && (
+              <div class="strophe">
+                <p class="lines lines--de" lang="de">
+                  {part.lines!.map((raw) => {
+                    const { text, cont } = renderLine(raw);
+                    return (
+                      <span class={`line${cont ? ' line-cont' : ''}`}>{text}</span>
+                    );
+                  })}
+                </p>
+                {mode === 'strophen' && (
+                  <p class="lines lines--fr" lang="fr" aria-hidden="true">
+                    {frLines && frLines.length > 0
+                      ? frLines.map((l) => <span class="line">{tx(l)}</span>)
+                      : <span class="line line--folgt">—</span>}
+                  </p>
+                )}
+              </div>
+            )}
+            {entry && (
+              <KommentarKlappe kommentar={entry.kommentar} mantraId={mantra.id} klappenKey={entry.key} />
+            )}
+          </section>
+        );
+      })}
+    </div>
+
+    {mode === 'bloc' && (
+      <aside class="mantra-fr-bloc" lang="fr" aria-hidden="true">
+        {bloc
+          ? bloc.map((l) => (l === ''
+              ? <span class="ue-spacer" aria-hidden="true"></span>
+              : <span class="line">{tx(l)}</span>))
+          : <p class="mantra-fr-folgt">Übersetzung folgt.</p>}
+      </aside>
+    )}
   </div>
 </article>

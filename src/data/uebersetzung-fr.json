@@ -1,0 +1,839 @@
+{
+  "_hinweis": "Französische Übersetzung, ausgerichtet an der Korpus-Struktur (Schlüssel = Mantra-ID). Pro Mantra ‹strophen›, deren Reihenfolge den Zeilen-Parts des Originals folgt. Quelle: Louis Defèche, Notion ‹Leçons de classe› (revidierte Fassung). Original: Rudolf Steiner, GA 270. Weitere Mantren folgen.",
+  "uebersetzerin": "Louis Defèche",
+  "sprache": "Französisch",
+  "mantren": {
+    "2": {
+      "strophen": [
+        [
+          "L'œil vitreux de la troisième bête",
+          "C'est la contre-image mauvaise",
+          "De la pensée, qui se renie",
+          "Elle-même en toi et se voue à la mort,",
+          "Déniant les pouvoirs de l’esprit, qui",
+          "Spirituellement, avant sa vie terrestre,",
+          "La maintenaient vivante dans les champs de l'esprit."
+        ],
+        [
+          "Le visage moqueur de la seconde bête",
+          "C'est la contre-force mauvaise",
+          "Du sentiment, qui évide ton âme",
+          "Et crée en elle la vacuité de vie",
+          "Au lieu du contenu d'esprit qui était sien",
+          "Avant l’existence terrestre, l’illuminant",
+          "De la puissance spirituelle solaire."
+        ],
+        [
+          "L'esprit squelettique de la première bête",
+          "C'est la puissance créatrice mauvaise",
+          "De la volonté, qui aliène ton corps",
+          "À la force de ton âme",
+          "Et le voue aux puissances adverses",
+          "Qui veulent, pour les temps futurs,",
+          "Dérober l’être du monde à l’être divin."
+        ]
+      ]
+    },
+    "3": {
+      "strophen": [
+        [
+          "Vois en toi la trame des pensées :",
+          "Tu ressens l'apparence du monde",
+          "L'être du Soi se cache à toi.",
+          "Plonge et descend dans l’apparence :",
+          "La vie de l'éther souffle en toi ;",
+          "L'être du Soi doit vénérer",
+          "La nature directrice de ton esprit."
+        ],
+        [
+          "Perçois en toi le flux des sentiments :",
+          "En toi se mêlent être et apparence,",
+          "Le Soi incline vers l'apparence ;",
+          "Plonge et descend dans l'être qui paraît :",
+          "Et les forces d'âme cosmiques vivent en toi ;",
+          "Le Soi, il doit considérer",
+          "Les puissances vitales de sa propre âme."
+        ],
+        [
+          "Laisse agir en toi l’élan de la volonté:",
+          "Il s’élève de tous les êtres d'apparence",
+          "Créateur et doué d'être personnel ;",
+          "Consacre-lui toute ta vie :",
+          "Il est empli de la puissance d’esprit du monde ;",
+          "L'être personnel, il doit saisir",
+          "Le pouvoir créateur du monde dans le Je-Esprit."
+        ]
+      ]
+    },
+    "4": {
+      "strophen": [
+        [
+          "Ressens comment les profondeurs",
+          "Insufflent leurs forces en ton être",
+          "Par les membres du corps.",
+          "Tu te perds en elles",
+          "Si tu livres impuissante",
+          "Ta volonté à leur élan;",
+          "Elles t’obscurcissent le Je."
+        ],
+        [
+          "Ressens comment, des lointains du monde,",
+          "Les puissances divine font luire",
+          "Leur clarté spirituelle au sein de ton âme.",
+          "Retrouve-toi en elles avec amour,",
+          "Et, tissant la sagesse, elles font",
+          "De toi un Soi dans leurs cercles,",
+          "Paré pour le bon travail de l’esprit."
+        ],
+        [
+          "Ressens comment dans les hauteurs célestes",
+          "L’être du Soi peut vivre sans égoïsme,",
+          "Lorsqu’empli d’esprit il veut suivre",
+          "Les puissances des pensées vers les hauteurs",
+          "Et qu’avec bravoure il perçoit le Verbe",
+          "Qui d’en haut résonne plein de grâce",
+          "Dans l’entité humaine véritable."
+        ]
+      ]
+    },
+    "5": {
+      "strophen": [
+        [
+          "La lumière lutte avec des puissances obscures",
+          "En ce royaume où ton penser",
+          "Veut pénétrer dans l'existence spirituelle.",
+          "Tu vois, quand tu aspires à la lumière,",
+          "Ton Soi dérobé par l'esprit ;",
+          "Tu peux, quand les ténèbres te séduisent,",
+          "Dans la matière perdre le Soi ."
+        ],
+        [
+          "La chaleur lutte avec le froid",
+          "En ce royaume, où ton sentir",
+          "Veut vivre dans la trame spirituelle.",
+          "Tu vois, quand tu aimes la chaleur,",
+          "Ton Soi se dissiper dans la volupté ;",
+          "Tu peux, quand le froid te durcit,",
+          "Dans la souffrance pulvériser le Soi."
+        ],
+        [
+          "La vie lutte avec la mort",
+          "En ce royaume où ton vouloir",
+          "Veut imprégner l’activité spirituelle.",
+          "Tu vois, quand tu saisit la vie,",
+          "Ton Soi disparaître dans l'esprit ;",
+          "Tu peux, quand la mort te subjugue,",
+          "Dans le néant paralyser le Soi."
+        ]
+      ]
+    },
+    "6": {
+      "bloc": [
+        "Tu accède à l’essence de la Terre",
+        "En déployant tes forces de volonté ;",
+        "Foules en penseur l’existence terrestre,",
+        "La puissance des pensées en toi",
+        "Révèlera ta propre animalité ;",
+        "L’effroi face à ton Soi",
+        "Doit devenir courage de l’âme.",
+        "",
+        "Tu ne vis avec l’être de l’eau",
+        "Qu’en tissant le rêve du sentiment ;",
+        "Éveille-toi dans l’être de l’eau",
+        "Et l’âme montrera en toi",
+        "Sa sourde existence végétale ;",
+        "La torpeur de ton Soi",
+        "Doit te conduire à l’éveil.",
+        "",
+        "Tu ne penses dans les souffles des airs",
+        "Qu’en formant les images de la mémoire ;",
+        "Empare-toi de l’être des airs",
+        "Et ton âme te menacera",
+        "Telle une pierre froide et figée ;",
+        "Mais le froid mortel de ton Soi",
+        "Cédera au feu de l’esprit.",
+        "",
+        "Du pouvoir éclatant de la lumière",
+        "Tu ne gardes en toi que des pensées ;",
+        "Si l’éclat de la lumière en toi se pense",
+        "Un être spirituel fallacieux",
+        "Naîtra en toi comme illusion du Soi ;",
+        "Méditer sur les détresses terrestres",
+        "Te maintiendra dans l’existence humaine.",
+        "",
+        "Des formes de l’univers",
+        "Tu ne gardes en toi que des sentiments ;",
+        "Si la forme des mondes en toi se ressent,",
+        "Un vécu spirituel impuissant",
+        "Étouffera en toi l’être du Soi ;",
+        "L’amour pour les valeurs terrestres",
+        "Sauvera ton âme humaine.",
+        "",
+        "De la vie des mondes",
+        "Tu ne gardes en toi que le vouloir ;",
+        "Si la vie des mondes t’envahit,",
+        "Une volupté spirituelle destructrice",
+        "Tuera en toi le vécu du Soi ;",
+        "La volonté terrestre adonnée à l’esprit",
+        "Permet au Dieu d’œuvrer en l’être humain."
+      ]
+    },
+    "8": {
+      "strophen": [
+        [
+          "Vois derrière la lumière sensorielle du penser",
+          "Comment dans la cellule spirituelle obscure,",
+          "Des profondeurs corporelles s’élève le vouloir ;",
+          "Par la force de ton âme laisse s’écouler",
+          "Le penser mort dans le néant du monde ;",
+          "Et le vouloir, il ressuscite",
+          "Comme création des pensées du monde."
+        ],
+        [
+          "Vois dans le souffle d’âme du sentir,",
+          "Comment dans le crépuscule des rêves,",
+          "Des lointains de l’univers afflue la vie;",
+          "Par la paix du coeur, laisse dans le sommeil",
+          "Le sentir humain se dissiper en silence  ;",
+          "Et la vie du monde, elle souffle",
+          "Comme puissance de l’être humain."
+        ],
+        [
+          "Vois par-dessus l’action corporelle du vouloir",
+          "Comment dans les champs d’action endormis",
+          "Depuis les forces de la tête descend le penser ;",
+          "Par la contemplation intérieure, laisse",
+          "Le vouloir humain se changer en lumière ;",
+          "Et le penser, il apparait",
+          "Comme l’être magicien de la volonté."
+        ]
+      ]
+    },
+    "10": {
+      "strophen": [
+        [
+          "Je vis dans l’obscurité de la terre,",
+          "Je tisse dans l'éclat des étoiles,",
+          "Je lis dans les actes des esprits,",
+          "J'entends dans le langage des dieux."
+        ],
+        [
+          "Ardent me rend l’obscurité de la terre,",
+          "Réconfortant m’est l’éclat des étoiles,",
+          "Instructifs me sont les actes des esprits,",
+          "Créateur m’est le langage des dieux."
+        ],
+        [
+          "L’obscurité de la terre m'éteint,",
+          "L’éclat des étoiles m'éveille,",
+          "Les actes des esprits m'appellent,",
+          "Le langage des dieux m’engendre."
+        ]
+      ]
+    },
+    "13": {
+      "bloc": [
+        "III. Perçois le champs du vouloir",
+        "",
+        "Trônes (esprits de la volonté)",
+        "Il parle celui qui dirige les forces cosmiques, les sourdes,",
+        "Depuis les soubassements terrestres, les obscurs,",
+        "Dans les mouvements de tes membres :",
+        "Regarde l’essence de feu de tes pulsions",
+        "",
+        "Chérubins (esprits des harmonies)",
+        "Il parle celui qui fait circuler les rayons de l’esprit, les clairs,",
+        "Depuis les champs d’action de Dieu, gracieusement,",
+        "Dans ton sang :",
+        "Regarde la direction morale de l’âme",
+        "",
+        "Séraphins (esprits de l’amour)",
+        "Il parle celui qui fait respirer l’existence humaine, l’accomplie,",
+        "Par les morts et les naissances, avec justesse,",
+        "Dans le temps présent :",
+        "Regarde l’épreuve spirituelle de ton destin"
+      ]
+    },
+    "17": {
+      "bloc": [
+        "Le Gardien :",
+        "",
+        "Vois l’arc-en-ciel de l’éther",
+        "Puissante orbe de lumière",
+        "Laisse par la force",
+        "De lumière de tes yeux",
+        "Ton Je traverser ce cercle,",
+        "Puis regarde par l’autre côté",
+        "Le calice du monde parcouru de couleurs.",
+        "",
+        "Anges, Archanges, Principautés :",
+        "",
+        "Ressens de nos pensées",
+        "La vie respirant les couleurs",
+        "Dans les flux lumineux du calice;",
+        "Nous emportons l’éclat des sens",
+        "Aux royaumes d’êtres de l’esprit",
+        "Et nous tournons, emplis du monde,",
+        "Vers des esprits plus élevés, en serviteurs.",
+        "",
+        "Vertus, Puissances, Dominations :",
+        "",
+        "Ce que vous avez reçu et vivifié",
+        "Issue de l’éclat mort des sens :",
+        "Nous l’éveillons dans l’être;",
+        "Nous l’offrons aux rayons",
+        "Qui révèlent avec amour",
+        "Le néant de la matière",
+        "Dans l’être de l’esprit.",
+        "",
+        "Thrones, Chérubins, Séraphins :",
+        "",
+        "Dans tes mondes de volonté",
+        "Ressens l’action de nos mondes;",
+        "L’esprit brille dans la matière",
+        "Quand pensant nous créons,",
+        "L’esprit crée dans la matière",
+        "Quand voulant nous vivons;",
+        "Le monde est verbe d’esprit, voulant Je."
+      ]
+    },
+    "18": {
+      "bloc": [
+        "I",
+        "Anges :",
+        "Ils pensent les êtres humains !",
+        "Il nous faut la lumière des hauteurs",
+        "Pour pouvoir briller dans le penser.",
+        "",
+        "Dynamis :",
+        "Recevez la lumière des hauteurs",
+        "Pour pouvoir briller dans le penser",
+        "Lorsque les êtres humains pensent.",
+        "",
+        "II",
+        "Archanges :",
+        "Ils ressentent les êtres humains !",
+        "Il nous faut la chaleur de l’âme",
+        "Pour pouvoir vivre dans le sentir.",
+        "",
+        "Kyriotètes et Exusiai :",
+        "Recevez la chaleur de l’âme",
+        "Pour pouvoir vivre dans le sentir",
+        "Lorsque les êtres humains ressentent.",
+        "",
+        "III",
+        "Archées :",
+        "Ils veulent les êtres humains !",
+        "Il nous faut la force des profondeurs",
+        "Pour pouvoir agir dans le vouloir.",
+        "",
+        "Kyriotètes, Dynamis, Exusiai :",
+        "Recevez la force des profondeurs",
+        "Pour pouvoir agir dans le vouloir",
+        "Lorsque les êtres humains veulent."
+      ]
+    },
+    "erste-tafel": {
+      "strophen": [
+        [
+          "O homme, connais-toi toi-même !",
+          "Ainsi résonne le Verbe des mondes.",
+          "Tu l'entends avec force en l’âme,",
+          "Tu le sens avec puissance en esprit.",
+          "Qui parle avec cette puissance universelle ?",
+          "Qui parle avec cette intimité du cœur ?",
+          "Agit-il à travers le rayonnement des lointains de l'espace",
+          "Dans le vécu d’être de tes sens ?",
+          "Résonne-t-il à travers la trame ondoyante des temps",
+          "Dans le flux du devenir de ta vie ?",
+          "Est-ce toi-même qui,",
+          "Ressentant l'espace, éprouvant le temps,",
+          "Te crées ce Verbe, te sentant étranger",
+          "Dans le vide d'âme de l'espace,",
+          "Parce que tu perds la force du penser",
+          "Dans le flux anéantissant du temps ?"
+        ]
+      ]
+    },
+    "zweite-tafel": {
+      "strophen": [
+        [
+          "Reconnais d’abord le grave gardien",
+          "Devant la porte du pays des esprits",
+          "Barrant l’accès à la force de tes sens",
+          "Et à la puissance de ton intellect",
+          "Car dans la trame sensorielle",
+          "Et dans la formation des pensées",
+          "Du vide d’être de l’espace,",
+          "Des puissances illusoires du temps,",
+          "Tu dois d’abord conquérir avec force",
+          "La vérité sur ton propre être."
+        ]
+      ]
+    },
+    "dritte-tafel": {
+      "strophen": [
+        [
+          "Je pénétrais dans ce monde des sens,",
+          "Portant avec moi l’héritage de la pensée,",
+          "La force d’un dieu m’a conduit ici.",
+          "La mort, elle se tient au bout du chemin.",
+          "Je veux ressentir l’être du Christ.",
+          "Il suscite, dans la mort de la matière, la naissance de l’esprit.",
+          "En esprit, je trouve ainsi le monde,",
+          "Et me reconnais dans le devenir du cosmos."
+        ]
+      ]
+    },
+    "1.1": {
+      "bloc": [
+        "Là où, sur le sol terrestre, couleur à couleur,",
+        "Créatrice, la vie se manifeste ;",
+        "Là où, par les substances terrestres, forme à forme,",
+        "L'inanimé se façonne ;",
+        "Là où des êtres sensibles, plein de volonté,",
+        "Se réchauffent joyeusement à leur propre existence,",
+        "Là où, toi-même, ô être humain, tu acquiers,",
+        "Par la terre et l'air et la lumière, ton être corporel :",
+        "",
+        "Là, tu découvre les profondes ténèbres,",
+        "Froides et couvertes de nuit, de ton propre être ;",
+        "Dans cette obscurité tu ne demandes plus aux lointains",
+        "Qui tu es, qui tu étais, qui tu seras",
+        "Le jour s’obscurcit pour ton propre être",
+        "En une nuit de l'âme, une ténèbre de l’esprit;",
+        "Et tu te tournes l'âme soucieuse",
+        "Vers la lumière qui jaillit de cette obscurité."
+      ]
+    },
+    "1.2": {
+      "bloc": [
+        "EN VUE DU SEUIL:",
+        "",
+        "Et dans ces ténèbres s'éclaire pour toi",
+        "– Te révélant tel un portait,",
+        "Mais te condensant aussi en un symbole,",
+        "Grave parole de l'esprit dans l'éther universel,",
+        "Puissance active, audible à ton coeur –",
+        "Le messager de l'esprit qui seul",
+        "Peut éclairer ton chemin ;",
+        "Devant lui s'étendent les domaines sensoriels",
+        "Derrière lui s’ouvrent les profondeurs de l'abîme.",
+        "",
+        "Et devant ses étendues spirituelles obscures,",
+        "Au bord de l'abime béant de l'être,",
+        "Là résonne son puissant verbe créateur originel :",
+        "Vois, de la connaissance je suis l'unique porte."
+      ]
+    },
+    "1.3": {
+      "bloc": [
+        "LE GARDIEN PARLE – SUR LE SEUIL:",
+        "",
+        "Des étendues de l'espace",
+        "Qui, dans la lumière, ressentent l’existence,",
+        "De la marche du cours du temps",
+        "Qui, dans l'activité créatrice, se réalise,",
+        "De la profondeur du ressenti du coeur",
+        "Où, dans le Soi, l'univers se sonde:",
+        "",
+        "Ici résonne, dans le langage de l'âme,",
+        "Ici brille, depuis les pensées de l'esprit,",
+        "Le Verbe d'existence, actif et ondoyant,",
+        "Issu des forces divines de guérison",
+        "À travers les puissances formatrices du cosmos :",
+        "O être humain, connais-toi toi-même !"
+      ]
+    },
+    "1.4": {
+      "bloc": [
+        "DEPUIS L'ABÎME:",
+        "",
+        "Mais tu dois être attentif à l'abîme",
+        "Sans quoi ses bêtes te dévorent",
+        "Si tu t’empresse et me néglige ;",
+        "Ton temps cosmique en toi les a placés",
+        "Comme adversaires de la connaissance.",
+        "",
+        "Vois la première bête, le dos courbé,",
+        "La tête osseuse, le corps caleux,",
+        "Toute sa peau est d'un bleu pâle ;",
+        "Ta peur de l'être créateur de l'esprit",
+        "Créa ce monstre dans ta volonté ;",
+        "Seul le courage de ta connaissance peut le surmonter.",
+        "",
+        "Vois la seconde bête, elle montre les dents,",
+        "La face grimaçante, elle ment en se moquant,",
+        "Son corps est jaune maculé de tâches grises ;",
+        "Ta haine de la manifestation de l'esprit",
+        "Créa cet avorton dans ton sentiment ;",
+        "L’ardeur de ta connaissance doit le dompter.",
+        "",
+        "Vois la troisième bête, la gueule fendue,",
+        "L’œil vitreux et le corps avachi,",
+        "D'un rouge sale t'apparaît sa forme ;",
+        "Ton doute envers la puissance lumineuse de l'esprit",
+        "Créa ce fantôme dans ton penser ;",
+        "À la création de connaissance, il doit céder la place.",
+        "",
+        "Quand tu auras vaincu les trois",
+        "Des ailes pousseront à ton âme",
+        "Te permettant de franchir l'abîme",
+        "Qui te sépare des champs de connaissance",
+        "Auxquels l’aspiration de ton cœur,",
+        "En quête de guérison, voudrait se vouer."
+      ]
+    },
+    "7.1": {
+      "bloc": [
+        "O contemple les Trois",
+        "Ils ne font qu’Un",
+        "Quand tu portes l’empreinte humaine",
+        "Jusqu’en la vie terrestre",
+        "",
+        "Ressens la forme cosmique de la tête",
+        "Perçoit le battement cosmique du coeur",
+        "Pense la force cosmique des membres",
+        "",
+        "Tels sont les Trois",
+        "Les Trois qui, comme l’Un,",
+        "Vivent dans l’existence terrestre."
+      ]
+    },
+    "7.2": {
+      "bloc": [
+        "L’esprit de la tête",
+        "Tu peux le vouloir ;",
+        "Et le vouloir deviendra pour toi",
+        "Ouvrage céleste multiforme des sens;",
+        "Tu œuvre dans la sagesse.",
+        "",
+        "L’âme du coeur",
+        "Tu peux la ressentir ;",
+        "Et le ressenti deviendra pour toi",
+        "Vie cosmique qui germe dans pensée;",
+        "Tu vis dans l’éclat.",
+        "",
+        "La force des membres",
+        "Tu peux la penser;",
+        "Et la pensée deviendra pour toi",
+        "Aspiration humaine ciblée du vouloir;",
+        "Tu aspire en la vertu."
+      ]
+    },
+    "7.3": {
+      "bloc": [
+        "Franchis le seuil",
+        "La porte est ouverte",
+        "Ta vas devenir",
+        "Un véritable humain"
+      ]
+    },
+    "9.1": {
+      "bloc": [
+        "Vie",
+        "O Homme, tu touches dans tout l’être de ton corps,",
+        "Les forces terrestres qui te soutiennent dans l’existence. (terre)",
+        "",
+        "O Homme, tu vis dans tout le cercle de ton toucher,",
+        "Les êtres de l’eau qui te modèlent dans l’existence. (eau)",
+        "",
+        "O Homme, tu ressens dans toute la trame de ta vie,",
+        "Les pouvoirs de l’air qui te soignent dans l’existence. (air)",
+        "",
+        "O Homme, tu penses dans le flux de ton ressenti,",
+        "Les puissances du feu qui t’aident dans l’existence. (feu)",
+        "",
+        "O Homme, contemples-toi dans le royaume des éléments.",
+        "",
+        "Amour",
+        "O Homme, laisse régner dans les profondeurs de ton âme",
+        "Les puissances directrices cosmiques des planètes",
+        "",
+        "O Homme, puise ton essence à travers le cercle des mondes.",
+        "",
+        "Dévotion",
+        "O Homme, préserve dans l’activité créatrice de ton esprit",
+        "Le verbe des étoiles, messager du ciel.",
+        "",
+        "O Homme, crée-toi par la sagesse céleste."
+      ]
+    },
+    "9.2": {
+      "bloc": [
+        "Porte dans le vécu du penser",
+        "Qui, comme pure méditation,",
+        "En l’âme, plein de lumière,",
+        "Brille,",
+        "Sentir et vouloir.",
+        "Et tu es esprit",
+        "Parmi de purs esprit.",
+        "",
+        "Porte dans les forces du sentir",
+        "Qui, comme noble amour,",
+        "Réchauffantes à travers l’âme",
+        "Tissent,",
+        "Penser et vouloir.",
+        "Et tu es âme",
+        "Dans le royaume des esprits.",
+        "",
+        "Porte dans les puissances de volonté",
+        "Qui, comme impulsions de l’esprit",
+        "Agissantes autour de l’âme",
+        "Vivent,",
+        "Penser et sentir.",
+        "Et tu te contemple toi-même",
+        "Comme corps depuis les hauteurs de l’esprit."
+      ]
+    },
+    "11.1": {
+      "bloc": [
+        "O contemple les Trois",
+        "Ils ne font qu’Un",
+        "Quand tu portes l’empreinte humaine",
+        "Jusqu’en la vie terrestre"
+      ]
+    },
+    "11.2": {
+      "bloc": [
+        "Ressens la forme cosmique de la tête",
+        "Perçoit le battement cosmique du coeur",
+        "Pense la force cosmique des membres"
+      ]
+    },
+    "11.3": {
+      "bloc": [
+        "Tels sont les Trois",
+        "Les Trois qui, comme l’Un,",
+        "Vivent dans l’existence terrestre.",
+        "-",
+        "L’esprit de la tête",
+        "Tu peux le vouloir ;",
+        "Et le vouloir deviendra pour toi",
+        "Ouvrage céleste multiforme des sens;",
+        "Tu œuvre dans la sagesse."
+      ]
+    },
+    "12.1": {
+      "bloc": [
+        "I. En le champs du penser",
+        "",
+        "Anges – Esprits du demi-jour:",
+        "Il parle celui qui, dans la lumière de l’esprit,",
+        "Veut t’indiquer les chemins",
+        "D’existence terrestre en existence terrestre:",
+        "Regarde l’essence lumineuse de tes sens.",
+        "",
+        "Archanges – Esprits du feu:",
+        "Il parle celui qui, sur l’élan de l’âme,",
+        "Veut te porter vers les âmes",
+        "Dans le champs d’existence libéré de la matière:",
+        "Regarde l’action des forces de ton penser.",
+        "",
+        "Archées – Esprits de la personnalité:",
+        "Il parle celui qui parmi les esprits",
+        "Veut te donner une base d’existence",
+        "Dans les champs créateurs éloignés de la terre:",
+        "Regarde les figures imagées du souvenir."
+      ]
+    },
+    "12.2": {
+      "bloc": [
+        "II. Perçois le champs du sentir",
+        "",
+        "Exousiaï (esprits de la forme)",
+        "Il parle celui qui, comme pensée",
+        "Depuis les rayons solaires de l’esprit,",
+        "T’appelle à l’existence cosmique :",
+        "Ressens l’élan vital de ton souffle.",
+        "",
+        "Dynamis (esprits du mouvement)",
+        "Il parle celui qui t’offre l’existence cosmique",
+        "Dans les royaumes de l’esprit",
+        "Depuis les forces vitales des étoiles :",
+        "Ressens la trame ondoyante de ton sang.",
+        "",
+        "Kyriotètes (esprits de la sagesse)",
+        "Il parle celui qui veut te créer un sens spirituel,",
+        "Dans les hauts royaumes lumineux des dieux",
+        "Par le vouloir terrestre:",
+        "Ressens la puissante résistance de la Terre."
+      ]
+    },
+    "14.1": {
+      "bloc": [
+        "I) Gardien : Où est la fermeté de la terre qui te soutenait ?",
+        "Christ : Je quitte son sol, tant que l'esprit me porte.",
+        "Lucifer : Je ressens avec délice que je n'ai désormais plus besoin d'appui.",
+        "Ahriman : Je veux la marteler par la force de l'esprit encore plus fermement."
+      ]
+    },
+    "14.2": {
+      "bloc": [
+        "II) Gardien : Où est la force formatrice de l'eau qui te pénétrait ?",
+        "Christ : Ma vie l'éteint, tant que l'Esprit me forme.",
+        "Lucifer : Ma vie la dissipe, pour m'en délivrer.",
+        "Ahriman : Ma vie la consolide pour que je l’emporte dans le domaine de l'esprit."
+      ]
+    },
+    "14.3": {
+      "bloc": [
+        "III) Gardien : Où est la puissance stimulante des airs qui t’éveillait ?",
+        "Christ : Mon âme respire l'air céleste, tant que l'esprit souffle autour de moi.",
+        "Lucifer : Mon âme ne s'en soucie pas, dans la béatitude de l'esprit.",
+        "Ahriman : Mon âme l’absorbe, pour que j'apprenne à créer comme un dieu."
+      ]
+    },
+    "14.4": {
+      "bloc": [
+        "IV) Gardien : Où est la purification du feu qui enflammait ton Je ?",
+        "Christ : Mon Je flamboie dans le feu de Dieu, tant que l'Esprit m’enflamme.",
+        "Lucifer : Mon Je a pouvoir de flamme par la puissance solaire de l'Esprit.",
+        "Ahriman : Mon Je a son propre feu, qui ne flambe que par son propre accomplissement."
+      ]
+    },
+    "15.1": {
+      "bloc": [
+        "Gardien :",
+        "Que devient la fermeté de la terre qui te soutenait ?",
+        "De la troisième hiérarchie, les Anges :",
+        "Ressens comme nous ressentons dans ta pensée.",
+        "De la troisième hiérarchie, les Archanges :",
+        "Eprouve comment nous éprouvons dans ton ressenti.",
+        "De la troisième hiérarchie, les Archées :",
+        "Vois comment nous voyons dans ta volonté."
+      ]
+    },
+    "15.2": {
+      "bloc": [
+        "Gardien :",
+        "Que devient la force formatrice de l'eau qui te pénétrait ?",
+        "De la deuxième hiérarchie, les Exousiai :",
+        "Reconnais l’œuvre universelle de l'esprit dans l’œuvre du corps humain.",
+        "De la deuxième hiérarchie, les Dynamis :",
+        "Ressens la vie universel de l'esprit dans la vie du corps humain.",
+        "De la deuxième hiérarchie, les Kyriotetes :",
+        "Veux l'événement universel de l'esprit dans l'être du corps humain."
+      ]
+    },
+    "15.3": {
+      "bloc": [
+        "Gardien :",
+        "Que devient le pouvoir stimulant de l'air qui t'éveillait ?",
+        "De la première hiérarchie, les Thrones :",
+        "Saisis-toi consciemment de l'être intérieur dans ton être divin universel.",
+        "De la première hiérarchie, les Chérubins :",
+        "Réchauffe-toi à la vie intérieure dans ta vie divine universelle.",
+        "De la première hiérarchie, les Séraphins :",
+        "Éveille en toi la lumière intérieure dans ta lumière divine universelle."
+      ]
+    },
+    "16.1": {
+      "bloc": [
+        "Gardien :",
+        "Que devient la purification du feu qui enflammait ton Je ?",
+        "Anges, Exusiai, Trônes :",
+        "Eveille-toi l'écriture de flamme de la vie dans les lointains de l'éther du monde.",
+        "Archanges, Dynamis, Chérubins :",
+        "Crée-toi les forces expiatoires de l'âme dans les cercles ondoyants du temps.",
+        "",
+        "Archées, Kyriotetes, Séraphins :",
+        "Invoque-toi les puissances libératrices de l'esprit dans les actes éternels de l’être."
+      ]
+    },
+    "16.2": {
+      "bloc": [
+        "Gardien :",
+        "Ton esprit a-t-il compris ?",
+        "Je :",
+        "L'esprit du monde en moi",
+        "Il retint son souffle",
+        "Que sa présence",
+        "Éclaire mon Je.",
+        "",
+        "Gardien :",
+        "Ton âme a-t-elle saisi ?",
+        "Je :",
+        "Les âmes du monde en moi",
+        "Elles formaient un conseil stellaire",
+        "Que leurs harmonies",
+        "En résonnant créent mon Je.",
+        "",
+        "Gardien :",
+        "Ton corps a-t-il ressenti ?",
+        "Je :",
+        "Les forces du mondes en moi",
+        "Jugent les actes humains",
+        "Puissent leurs paroles de vérité",
+        "Guider mon Je."
+      ]
+    },
+    "19.1": {
+      "strophen": [
+        [
+          "Qui parle dans le Verbe d’esprit",
+          "De cette voix",
+          "Qui flamboie dans le feu du cosmos ?"
+        ],
+        [
+          "Les flammes stellaires parlent,",
+          "Les puissances de feu séraphiques flamboient;",
+          "Elles flamboient aussi dans mon coeur.",
+          "Dans la source d’amour de l’être originel",
+          "Le coeur humain trouve",
+          "La parole créatrice des flammes de l’esprit:",
+          "C’est – «Je»."
+        ]
+      ]
+    },
+    "19.2": {
+      "strophen": [
+        [
+          "Qui pense dans le Verbe d’esprit",
+          "Par des pensées,",
+          "Qui façonnent les âmes du monde?"
+        ],
+        [
+          "Les luminaires stellaires pensent,",
+          "Les forces formatrices chérubiniques brillent;",
+          "Elles brillent aussi dans ma tête.",
+          "Dans la source de lumière de l’être originel",
+          "La tête humaine trouve",
+          "L’action pensante qui forme l’âme :",
+          "C’est – «Je»."
+        ]
+      ]
+    },
+    "19.3": {
+      "strophen": [
+        [
+          "Qui exerce sa force dans le Verbe d’esprit",
+          "Avec des forces",
+          "Qui vivent dans le corps du cosmos ?"
+        ],
+        [
+          "Le corps cosmique des étoiles exerce sa force,",
+          "Les pouvoirs porteurs des Thrones prennent corps ;",
+          "Ils prennent corps aussi dans mes membres.",
+          "Dans la source de vie de l’être originel",
+          "Les membres humains trouvent",
+          "Le pouvoir agissant des porteurs du cosmos:",
+          "C’est – «Je»."
+        ]
+      ]
+    },
+    "19+": {
+      "strophen": [
+        [
+          "Puissances de feu séraphiques",
+          "Vous rayonnez de mon coeur",
+          "Forces formatrices chérubiniques",
+          "Vous brillez dans ma tête",
+          "Pouvoir porteurs des Thrones",
+          "Vous pulsez dans mes membres",
+          "Mon Je est VÔTRE."
+        ]
+      ]
+    }
+  }
+}
