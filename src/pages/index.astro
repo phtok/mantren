@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { chapters, mantren, mantrenByChapter } from '../lib/mantren';
 import { tx } from '../lib/typografie';
+import { KAFFEE_URL } from '../lib/unterstuetzung';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
 const searchIndex = mantren.map((m) => {
@@ -85,7 +86,43 @@ const navLinks = [
     })}
   </div>
 
+  <aside class="kaffee-hinweis" id="kaffee-hinweis" hidden>
+    <p class="kaffee-hinweis-text">
+      {tx('Diese Ausgabe entsteht in freier Arbeit und bleibt werbefrei.')}
+      <a class="kaffee-hinweis-link" href={KAFFEE_URL} target="_blank" rel="noopener">{tx('Ein Kaffee als Dank')} →</a>
+    </p>
+    <button type="button" class="kaffee-hinweis-close" aria-label="Schließen">×</button>
+  </aside>
+
   <script type="application/json" id="search-data" set:html={JSON.stringify(searchIndex)} />
+
+  <script is:inline>
+    // Kaffee-Hinweis: erscheint höchstens einmal im Kalendermonat, beim
+    // ersten Index-Besuch des Monats. Der Monat wird schon beim Einblenden
+    // vermerkt — wer den Hinweis übergeht, sieht ihn erst nächsten Monat
+    // wieder. Bewusst kein Dialog: nichts wird unterbrochen.
+    (function () {
+      var el = document.getElementById('kaffee-hinweis');
+      if (!el) return;
+      var KEY = 'mantren:kaffee-hinweis';
+      var monat = new Date().toISOString().slice(0, 7);
+      try {
+        if (localStorage.getItem(KEY) === monat) return;
+      } catch (e) { return; }
+      setTimeout(function () {
+        el.hidden = false;
+        requestAnimationFrame(function () {
+          el.classList.add('kaffee-hinweis-sichtbar');
+        });
+        try { localStorage.setItem(KEY, monat); } catch (e) {}
+      }, 2000);
+      var close = el.querySelector('.kaffee-hinweis-close');
+      if (close) close.addEventListener('click', function () {
+        el.classList.remove('kaffee-hinweis-sichtbar');
+        setTimeout(function () { el.hidden = true; }, 300);
+      });
+    })();
+  </script>
 
   <script is:inline>
     (function () {

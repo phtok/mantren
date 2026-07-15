@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { tx } from '../lib/typografie';
 import { buildOfflineUrls } from '../lib/offline';
 import { FR_BACKEND } from '../lib/fr-backend';
+import { KAFFEE_URL } from '../lib/unterstuetzung';
 
 interface Props {
   title?: string;
@@ -138,6 +139,10 @@ const offlineUrls = buildOfflineUrls(base);
             <a class="topbar-menu-item" href={`${base}offline/`} role="menuitem">
               <span class="topbar-menu-icon" aria-hidden="true">◌</span>
               <span class="topbar-menu-label">App und Offline</span>
+            </a>
+            <a class="topbar-menu-item" href={KAFFEE_URL} role="menuitem" target="_blank" rel="noopener">
+              <span class="topbar-menu-icon" aria-hidden="true">♡</span>
+              <span class="topbar-menu-label">Kaffee als Dank</span>
             </a>
           </div>
         </details>
