@@ -1,13 +1,22 @@
 import { defineConfig } from 'astro/config';
 import AstroPWA from '@vite-pwa/astro';
 
-// GitHub Pages: Projekt-Site unter https://phtok.github.io/mantren/
-const site = 'https://phtok.github.io';
-const base = '/mantren';
+// Zwei Deploy-Ziele aus demselben Code:
+// - GitHub Pages: Projekt-Site unter https://phtok.github.io/mantren/
+// - Vercel: https://mantra.saetzerei.com/ an der Wurzel — die
+//   öffentliche Projekt-Domain (kanonisch für site/Manifest/Sitemap).
+//   Dasselbe Deployment bedient zusätzlich die Geschenk-Domain
+//   fuer-martje.saetzerei.com; welche der beiden gilt, entscheidet zur
+//   Laufzeit src/lib/geschenk.ts (OFFENE_HOSTS). Vercel setzt beim
+//   Build automatisch VERCEL=1; lokal lässt sich diese Variante mit
+//   `VERCEL=1 npm run build` erzeugen.
+const aufVercel = !!process.env.VERCEL;
+const site = process.env.SITE || (aufVercel ? 'https://mantra.saetzerei.com' : 'https://phtok.github.io');
+const base = aufVercel ? '' : '/mantren';
 
 export default defineConfig({
   site,
-  base,
+  base: base || '/',
   // Astro-Routen IMMER mit Trailing-Slash. GitHub Pages macht sonst
   // einen 301-Redirect (z.B. /stunde-1 → /stunde-1/), der offline
   // nicht funktioniert und den SW-Precache aushebelt.
@@ -53,6 +62,10 @@ export default defineConfig({
         // Damit ist die ganze App offline verfügbar, sobald der SW einmal
         // installiert war — auch ohne dass ‹offline laden› geklickt wurde.
         navigateFallback: `${base}/`,
+        // Louis' Bearbeiten-Modus hängt ?edit=… an. Ohne dies würde der SW
+        // die Query nicht ignorieren, die Route im Precache verfehlen und auf
+        // navigateFallback (Home) zurückfallen. Also beim Cache-Lookup ignorieren.
+        ignoreURLParametersMatching: [/^utm_/, /^fbclid$/, /^edit$/],
         globPatterns: ['**/*.{js,css,html,woff2,svg,png,jpg,jpeg,webp,avif,ico,webmanifest}'],
         // 4 MB pro Datei (Default 2 MB); /universalsuche/ und /vortraege/
         // bringen den JSON-Datenstamm inline und sind die größten HTMLs.

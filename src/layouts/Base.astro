@@ -3,6 +3,7 @@ import '../styles/global.css';
 import { tx } from '../lib/typografie';
 import { buildOfflineUrls } from '../lib/offline';
 import { FR_BACKEND } from '../lib/fr-backend';
+import { aufVercel, geschenkAktiv, ZUGANG_KEY, ZUGANG_WERT, OFFENE_HOSTS } from '../lib/geschenk';
 
 interface Props {
   title?: string;
@@ -35,6 +36,27 @@ const offlineUrls = buildOfflineUrls(base);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    {geschenkAktiv && <meta name="robots" content="noindex" id="geschenk-robots" />}
+    {geschenkAktiv && (
+      <script is:inline define:vars={{ zugangWert: ZUGANG_WERT, zugangKey: ZUGANG_KEY, geschenkUrl: `${base}geschenk/`, offeneHosts: OFFENE_HOSTS }}>
+        // Geschenk-Zugang: ohne freigeschalteten Zugang (Band noch nicht
+        // gezogen) geht es zur Geschenkseite. Auf den öffentlichen
+        // Projekt-Domains (offeneHosts) greift weder das Gate noch das
+        // noindex — dort erscheint die App direkt und indexierbar.
+        (function () {
+          if (offeneHosts.indexOf(location.hostname) !== -1) {
+            var robots = document.getElementById('geschenk-robots');
+            if (robots) robots.remove();
+            return;
+          }
+          try {
+            if (localStorage.getItem(zugangKey) === zugangWert) return;
+          } catch (e) {}
+          location.replace(geschenkUrl);
+        })();
+      </script>
+    )}
+    {aufVercel && <script defer src="/_vercel/insights/script.js"></script>}
     <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
     <link rel="icon" type="image/svg+xml" href={faviconUrl} />
     <link rel="manifest" href={manifestUrl} />
@@ -600,12 +622,35 @@ const offlineUrls = buildOfflineUrls(base);
     <script is:inline define:vars={{ FR_BACKEND }}>
       // Editierbare französische Übersetzung (Supabase).
       // 1) Overlay: im fr-Modus die aktuelle DB-Fassung über die statische legen.
-      // 2) Editor: nur mit ?edit=<token> — Louis bearbeitet direkt seine Fassung.
+      // 2) Editor: mit Louis' Geheim-Link — er bearbeitet direkt seine Fassung.
       (function () {
+        var cfg = FR_BACKEND;
+        var LS_TOKEN = 'mantren:edit-token';
+
+        // Token einmalig aus ?edit=… übernehmen und lokal merken; danach die
+        // Query aus der URL nehmen, damit der Service-Worker beim Weiterblättern
+        // nicht auf die Startseite zurückfällt. So bleibt der Editor beim
+        // Bewegen durch die Seite sichtbar, ohne Token an jeden Link zu hängen.
+        var token = null;
+        try {
+          var params = new URLSearchParams(location.search);
+          var q = params.get('edit');
+          if (q) {
+            token = q;
+            try { localStorage.setItem(LS_TOKEN, q); } catch (e) {}
+            try {
+              params.delete('edit');
+              var qs = params.toString();
+              history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+            } catch (e) {}
+          } else {
+            try { token = localStorage.getItem(LS_TOKEN); } catch (e) {}
+          }
+        } catch (e) {}
+
         var art = document.querySelector('.mantra[data-mantra-id]');
         if (!art) return;
         var id = art.getAttribute('data-mantra-id');
-        var cfg = FR_BACKEND;
         var synopsis = art.querySelector('.mantra-synopsis');
         if (!synopsis) return;
 
@@ -635,8 +680,9 @@ const offlineUrls = buildOfflineUrls(base);
         var srcEl = art.querySelector('script.fr-src');
         var currentLines = [];
         try { currentLines = JSON.parse((srcEl && srcEl.textContent) || '[]'); } catch (e) {}
+        var area = null;
 
-        // 1) Overlay
+        // 1) Overlay: aktuelle DB-Fassung holen; danach ggf. das Editorfeld füllen.
         var restUrl = cfg.url + '/rest/v1/' + cfg.table + '?mantra_id=eq.' + encodeURIComponent(id) + '&select=fassung';
         fetch(restUrl, { headers: { apikey: cfg.anon, Authorization: 'Bearer ' + cfg.anon } })
           .then(function (r) { return r.ok ? r.json() : []; })
@@ -646,31 +692,26 @@ const offlineUrls = buildOfflineUrls(base);
               renderBloc(currentLines);
             }
           })
-          .catch(function () {});
+          .catch(function () {})
+          .then(function () { if (area && document.activeElement !== area) area.value = currentLines.join('\n'); });
 
-        // 2) Editor
-        var token = null;
-        try { token = new URLSearchParams(location.search).get('edit'); } catch (e) {}
+        // 2) Editor — nur mit Token (aus Link oder lokal gemerkt).
         if (!token) return;
         document.documentElement.setAttribute('data-lang', 'fr');
-
-        // Im Bearbeiten-Modus den Token an die Blätter-Links hängen, damit
-        // Louis beim Vor-/Zurückblättern im Editor bleibt.
-        var pagerLinks = document.querySelectorAll('a[data-pager]');
-        for (var pi = 0; pi < pagerLinks.length; pi++) {
-          try {
-            var pu = new URL(pagerLinks[pi].getAttribute('href'), location.href);
-            pu.searchParams.set('edit', token);
-            pagerLinks[pi].setAttribute('href', pu.pathname + pu.search);
-          } catch (e) {}
-        }
 
         var ed = document.createElement('div');
         ed.className = 'fr-editor';
         var head = document.createElement('p');
         head.className = 'fr-editor-head';
-        head.textContent = 'Modifier · ' + id;
-        var area = document.createElement('textarea');
+        head.appendChild(document.createTextNode('Modifier · ' + id + ' '));
+        var quit = document.createElement('button');
+        quit.type = 'button'; quit.className = 'fr-editor-quit'; quit.textContent = "Quitter l'édition";
+        quit.addEventListener('click', function () {
+          try { localStorage.removeItem(LS_TOKEN); } catch (e) {}
+          location.reload();
+        });
+        head.appendChild(quit);
+        area = document.createElement('textarea');
         area.className = 'fr-editor-area';
         area.setAttribute('spellcheck', 'false');
         area.setAttribute('aria-label', 'Modifier la traduction');

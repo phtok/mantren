@@ -623,6 +623,20 @@ html[data-lang="fr"] .fr-note-panel[data-open="true"] {
 }
 .fr-editor-save:disabled { opacity: 0.5; cursor: default; }
 .fr-editor-hint { color: var(--muted-soft); }
+.fr-editor-quit {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted-soft);
+  font: inherit;
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  padding: 0;
+}
+.fr-editor-quit:hover { color: var(--text); }
 
 /* Aktiv über das Modus-Menü (‹Französisch›). */
 html[data-lang="fr"] .mantra-fr-head {
