@@ -757,6 +757,73 @@ html[data-lang="fr"] .mantra { max-width: 52rem; }
 .pager .pager-num { font-variant-numeric: tabular-nums; color: var(--muted); }
 .pager .pager-arrow { color: var(--muted-soft); }
 
+/* ─────────────── Kaffee-Hinweis (Index, einmal im Monat) ─────────────── */
+
+.kaffee-hinweis {
+  position: fixed;
+  left: 50%;
+  bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+  transform: translate(-50%, 0.5rem);
+  z-index: 15;
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  max-width: min(30rem, calc(100vw - 2rem));
+  padding: 0.6rem 0.5rem 0.6rem 0.9rem;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-size: 0.85rem;
+  color: var(--muted);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+html.theme-invert .kaffee-hinweis {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.kaffee-hinweis-sichtbar {
+  opacity: 1;
+  transform: translate(-50%, 0);
+  pointer-events: auto;
+}
+
+.kaffee-hinweis-text {
+  margin: 0;
+  line-height: 1.45;
+}
+
+.kaffee-hinweis-link {
+  color: var(--text);
+  text-decoration-color: var(--muted-soft);
+  text-underline-offset: 0.15em;
+  white-space: nowrap;
+}
+
+.kaffee-hinweis-close {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted-soft);
+  font-size: 1.1rem;
+  line-height: 1;
+  padding: 0.1rem 0.45rem;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: color 0.15s;
+}
+
+.kaffee-hinweis-close:hover {
+  color: var(--text);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kaffee-hinweis { transition: none; }
+}
+
 /* ─────────────── Suche ─────────────── */
 
 .search-box {
