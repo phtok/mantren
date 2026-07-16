@@ -1,0 +1,36 @@
+# Diese Ausgabe soll nicht in Suchmaschinen erscheinen und nicht für
+# KI-Training genutzt werden. Ergänzend steht auf jeder Seite
+# <meta name="robots" content="noindex, nofollow, noai, noimageai"> und
+# (auf Vercel) ein X-Robots-Tag-Header.
+User-agent: *
+Disallow: /
+
+# KI-/LLM-Crawler ausdrücklich ausschließen
+User-agent: GPTBot
+Disallow: /
+User-agent: OAI-SearchBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: ClaudeBot
+Disallow: /
+User-agent: Claude-Web
+Disallow: /
+User-agent: anthropic-ai
+Disallow: /
+User-agent: Google-Extended
+Disallow: /
+User-agent: CCBot
+Disallow: /
+User-agent: PerplexityBot
+Disallow: /
+User-agent: Bytespider
+Disallow: /
+User-agent: Amazonbot
+Disallow: /
+User-agent: Applebot-Extended
+Disallow: /
+User-agent: cohere-ai
+Disallow: /
+User-agent: Meta-ExternalAgent
+Disallow: /

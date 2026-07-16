@@ -7,4 +7,5 @@ export const FR_BACKEND = {
   anon: 'sb_publishable_SXhY0mrhXjdTnjbJ5Uobtg_zAXW_xGY',
   table: 'mantren_uebersetzung_fr',
   rpc: 'mantren_fr_save',
+  rpcHist: 'mantren_fr_history',
 };
