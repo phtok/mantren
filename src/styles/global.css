@@ -637,6 +637,55 @@ html[data-lang="fr"] .fr-note-panel[data-open="true"] {
   padding: 0;
 }
 .fr-editor-quit:hover { color: var(--text); }
+.fr-editor-hist-toggle {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted-soft);
+  font: inherit;
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 3px;
+  padding: 0;
+}
+.fr-editor-hist-toggle:hover { color: var(--text); }
+.fr-editor-hist {
+  margin-top: 0.7rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.fr-hist-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 0.4rem 0.8rem;
+}
+.fr-hist-meta { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.fr-hist-prev { color: var(--text); font-style: italic; overflow: hidden; text-overflow: ellipsis; }
+.fr-hist-restore {
+  appearance: none;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.fr-hist-restore:hover { color: var(--text); border-color: var(--muted); }
+@media (max-width: 720px) {
+  .fr-hist-item { grid-template-columns: 1fr auto; }
+  .fr-hist-meta { grid-column: 1 / -1; }
+}
 
 /* Aktiv über das Modus-Menü (‹Französisch›). */
 html[data-lang="fr"] .mantra-fr-head {

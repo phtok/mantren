@@ -36,19 +36,14 @@ const offlineUrls = buildOfflineUrls(base);
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    {geschenkAktiv && <meta name="robots" content="noindex" id="geschenk-robots" />}
     {geschenkAktiv && (
       <script is:inline define:vars={{ zugangWert: ZUGANG_WERT, zugangKey: ZUGANG_KEY, geschenkUrl: `${base}geschenk/`, offeneHosts: OFFENE_HOSTS }}>
-        // Geschenk-Zugang: ohne freigeschalteten Zugang (Band noch nicht
-        // gezogen) geht es zur Geschenkseite. Auf den öffentlichen
-        // Projekt-Domains (offeneHosts) greift weder das Gate noch das
-        // noindex — dort erscheint die App direkt und indexierbar.
+        // Geschenk-Zugang: auf der öffentlichen Projekt-Domain (offeneHosts)
+        // erscheint die App direkt. Auf allen anderen Vercel-Hosts geht es ohne
+        // freigeschalteten Zugang (Band noch nicht gezogen) zur Geschenkseite.
+        // Die Seite ist generell nicht indexierbar (noindex steht fest im Kopf).
         (function () {
-          if (offeneHosts.indexOf(location.hostname) !== -1) {
-            var robots = document.getElementById('geschenk-robots');
-            if (robots) robots.remove();
-            return;
-          }
+          if (offeneHosts.indexOf(location.hostname) !== -1) return;
           try {
             if (localStorage.getItem(zugangKey) === zugangWert) return;
           } catch (e) {}
@@ -66,7 +61,7 @@ const offlineUrls = buildOfflineUrls(base);
     <meta name="apple-mobile-web-app-title" content="Mantren" />
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="description" content={description} />
-    <meta name="robots" content="noai, noimageai" />
+    <meta name="robots" content="noindex, nofollow, noai, noimageai" />
     <title>{fullTitle}</title>
     <script is:inline define:vars={{ swUrl: `${base}sw.js`, swScope: base }}>
       // Service-Worker-Registrierung explizit hier — die @vite-pwa/astro-
@@ -711,6 +706,12 @@ const offlineUrls = buildOfflineUrls(base);
           location.reload();
         });
         head.appendChild(quit);
+        var histBtn = document.createElement('button');
+        histBtn.type = 'button'; histBtn.className = 'fr-editor-hist-toggle';
+        histBtn.textContent = 'Historique';
+        histBtn.setAttribute('aria-expanded', 'false');
+        head.appendChild(document.createTextNode(' '));
+        head.appendChild(histBtn);
         area = document.createElement('textarea');
         area.className = 'fr-editor-area';
         area.setAttribute('spellcheck', 'false');
@@ -724,9 +725,55 @@ const offlineUrls = buildOfflineUrls(base);
         var hint = document.createElement('span');
         hint.className = 'fr-editor-hint'; hint.textContent = 'Ligne vide = séparation de strophe';
         bar.appendChild(save); bar.appendChild(status); bar.appendChild(hint);
-        ed.appendChild(head); ed.appendChild(area); ed.appendChild(bar);
+        var hist = document.createElement('div');
+        hist.className = 'fr-editor-hist'; hist.hidden = true;
+        ed.appendChild(head); ed.appendChild(area); ed.appendChild(bar); ed.appendChild(hist);
         art.insertBefore(ed, synopsis);
         area.value = currentLines.join('\n');
+
+        // Archiv: frühere Fassungen ansehen und zurückladen (token-geschützt).
+        var histLoaded = false;
+        function ladeHistorie() {
+          hist.textContent = 'Chargement…';
+          fetch(cfg.url + '/rest/v1/rpc/' + cfg.rpcHist, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', apikey: cfg.anon, Authorization: 'Bearer ' + cfg.anon },
+            body: JSON.stringify({ p_token: token, p_mantra_id: id })
+          })
+            .then(function (r) { return r.json(); })
+            .then(function (rows) {
+              if (!Array.isArray(rows)) { hist.textContent = 'Erreur : ' + ((rows && rows.error) || 'inconnue'); histLoaded = false; return; }
+              if (!rows.length) { hist.textContent = 'Aucune version enregistrée pour l’instant.'; return; }
+              hist.textContent = '';
+              rows.forEach(function (v) {
+                var item = document.createElement('div'); item.className = 'fr-hist-item';
+                var meta = document.createElement('span'); meta.className = 'fr-hist-meta';
+                var d = new Date(v.gespeichert);
+                meta.textContent = isNaN(d.getTime()) ? String(v.gespeichert) : d.toLocaleString('fr-CH');
+                var prev = document.createElement('span'); prev.className = 'fr-hist-prev';
+                var lines = Array.isArray(v.bloc) ? v.bloc.filter(function (x) { return x && x.trim(); }) : [];
+                prev.textContent = lines.slice(0, 2).join(' / ') + (lines.length > 2 ? ' …' : '');
+                var rest = document.createElement('button');
+                rest.type = 'button'; rest.className = 'fr-hist-restore'; rest.textContent = 'Restaurer';
+                rest.addEventListener('click', function () {
+                  if (Array.isArray(v.bloc)) {
+                    area.value = v.bloc.join('\n');
+                    area.focus();
+                    status.textContent = 'Version chargée — « Enregistrer » pour la rétablir';
+                  }
+                });
+                item.appendChild(meta); item.appendChild(prev); item.appendChild(rest);
+                hist.appendChild(item);
+              });
+            })
+            .catch(function () { hist.textContent = 'Erreur réseau'; histLoaded = false; });
+        }
+        histBtn.addEventListener('click', function () {
+          var open = !hist.hidden;
+          hist.hidden = open;
+          histBtn.setAttribute('aria-expanded', open ? 'false' : 'true');
+          if (!open && !histLoaded) { histLoaded = true; ladeHistorie(); }
+        });
 
         save.addEventListener('click', function () {
           var lines = area.value.replace(/\r/g, '').split('\n');
@@ -743,6 +790,8 @@ const offlineUrls = buildOfflineUrls(base);
               if (res.ok && res.j && res.j.ok) {
                 currentLines = lines; renderBloc(lines);
                 status.textContent = 'Enregistré';
+                // Historie neu laden lassen, sobald sie wieder geöffnet wird.
+                histLoaded = false; if (!hist.hidden) { histLoaded = true; ladeHistorie(); }
               } else {
                 status.textContent = 'Erreur : ' + ((res.j && res.j.error) || 'inconnue');
               }
