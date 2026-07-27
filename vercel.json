@@ -3,9 +3,39 @@
   "trailingSlash": true,
   "headers": [
     {
+      "source": "/(.*).(woff2|woff|ttf|otf|eot)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).(png|jpg|jpeg|gif|svg|ico|webp|avif|mp3|mp4|webm)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).(css|js|mjs|json)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    },
+    {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noai, noimageai" }
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noai, noimageai"
+        }
       ]
     }
   ]
