@@ -1,6 +1,8 @@
 # build output
 dist/
 .astro/
+# Gesamtexport (npm run export) — Build-Produkt, veraltet sofort
+export/
 
 # dependencies
 node_modules/

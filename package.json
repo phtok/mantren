@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "sync:fr": "node scripts/sync-fr.mjs"
+    "sync:fr": "node scripts/sync-fr.mjs",
+    "export": "node scripts/export-textdokument.mjs"
   },
   "dependencies": {
     "@vite-pwa/astro": "^0.5.0",
