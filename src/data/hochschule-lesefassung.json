@@ -1,0 +1,552 @@
+{
+  "titel": "Mantrisches Spätwerk für die Freie Hochschule für Geisteswissenschaft",
+  "autor": "Rudolf Steiner",
+  "untertitel": "Lesefassung der Mantren mit Hinweisen zu Situation und Meditation",
+  "zusatz": "Arbeitsmaterial für Mantren-Werkstätten",
+  "stand": "Bearbeitungsstand August 2025, Bodo von Plato, Elke Schmitter, Philipp Tok",
+  "vorbemerkung": {
+    "titel": "Vorbemerkung",
+    "absaetze": [
+      "Rudolf Steiner entwickelt in seinem mantrischen Spätwerk einen Transformationsweg des menschlichen Bewusstseins. Er eröffnet Möglichkeiten, sich bewusst mit den zum Menschen und zur Erde gehörigen geistigen Dimensionen des Daseins und ihren Wesen zu verbinden. Für diese Bewusstseinsentwicklung schildert er geistige Erfahrungen, konkretisiert sie zu Situationen und verdichtet sie in mantrische Form.",
+      "Dieses Werk entsteht 1924 im Rahmen der Stiftung der Freien Hochschule für Geisteswissenschaft, Goetheanum. Die Mantren und ihre Meditation bilden konzeptionell einen Kern der Hochschule. Steiner entwickelt die Mantren für die Arbeit in der Ersten Klasse. Er stellt sie in sogenannten Klassenstunden vor und erschließt sie in Schilderungen, Übungen und durch Meditationshinweise für die Teilnehmenden, die sie in ihre spirituelle Praxis aufnehmen wollen. Die Zahl der 19 Mantren ergibt sich durch 19 aneinander anschließende Klassenstunden, die er am Goetheanum hält. Drei Tafeln bilden eine Art Vor- und Nachtakt.[1] In dieser Lesefassung ergänzen wir ein Mantra aus demselben Kontext (Mantra 19+).[2] Der ganze Zusammenhang erweist sich als ein großes Mantra. Im September 2024 erweitert Steiner die Perspektive durch Zeichen und Siegel Michaels.",
+      "Seither entwickeln sich weltweit vielfältige individuelle und gemeinschaftliche Umgangs- und Arbeitsformen mit diesem mantrischen Spätwerk Steiners.[3]",
+      "Die hier vorliegende Lese- und Arbeitsfassung – erstmals bei einem Retreat in Chandolin im September 2025 verwendet – ist ein aktueller Auszug aus unserer kontinuierlichen Zusammenarbeit. Sie beginnt mit den Erfahrungen einer 2016 am Goetheanum realisierten „Hochschulwerkstatt“, die wir in Form von „Mantrenwerkstätten“ an verschiedenen Orten bis heute fortsetzen. Wir fassen in diesem Arbeitspapier Situationsbeschreibungen und Meditationshinweise zusammen, mit denen Rudolf Steiner jedes Mantra begleitet (kursiv); ihre Formulierungen lehnen sich eng an seine Wortwahl in den Klassenstunden an, gelegentlich übernehmen wir sie. Vor jeder Mantrengruppe notieren wir einige Daten, die Ort, Zeit und den Bezug zur Publikation in GA 270 dokumentieren (kleingedruckt). Von wem, wo oder woher das jeweilige Mantra erklingt, übernehmen wir bis zum 9. Mantra aus den Wiederholungs- oder Septemberstunden, dann formulieren wir sinngemäß. Die Unterstreichungen in den Mantren markieren Betonungen, die Steiner während seiner Schilderungen entwickelt und an der Tafel vornimmt.",
+      "Wir danken den vielen Menschen, die im Laufe der letzten Jahre in den verschiedenen Arbeitsgruppen und Gesprächen an der Entstehung dieser Handreichung mitwirkten und ganz besonders Paul Mackay für die Durchsicht der Hinweise zu Situation und Meditation."
+    ],
+    "zeichnung": "Bodo von Plato, Elke Schmitter und Philipp Tok\nBerlin / Dornach, August 2025",
+    "fussnoten": {
+      "1": "Am 15. Februar 1924 hält Rudolf Steiner die erste Klassenstunde, die letzte am 20. September 1924. Es gibt einen zusammenhängenden Lehrgang von 19 Klassenstunden am Goetheanum (Schreinerei), auf Reisen vier Einzelstunden in Prag, Bern und London und im September 1924 nochmals sieben sogenannte Wiederholungsstunden am Goetheanum (heute auch gelegentlich Septemberstunden genannt). Erstmals 1992 vollständig publiziert erscheinen die Klassenstunden heute in der Rudolf Steiner Gesamtausgabe: Rudolf Steiner, Esoterische Unterweisungen für die erste Klasse der Freien Hochschule für Geisteswissenschaft am Goetheanum 15. Februar – 20. September 1924, GA 270, 4. durchgesehene Auflage, Dornach 2020.",
+      "2": "Notizblatt mit Eurythmieform von 1924, in: Rudolf Steiner, Mantrische Sprüche, Seelenübungen II, GA 268, Dornach 1999",
+      "3": "Johannes Kiersch, Steiners individualisierte Esoterik einst und jetzt – zur Entwicklung der Freien Hochschule für Geisteswissenschaft, Dornach 2012"
+    }
+  },
+  "abschnitte": [
+    {
+      "id": "drei-tafeln",
+      "titel": "Drei Tafeln",
+      "eintraege": [
+        {
+          "id": "erste-tafel",
+          "titel": "Erste Tafel",
+          "meta": "Bern, 17. April 1924 / Dornach, 18. April 1924 (zu Beginn der 8. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Selbsterkenntnis führt zur Welterkenntnis; Welterkenntnis zur Menschenerkenntnis. Es tönt von allen Seiten und aus dem Weltenall (Ruhesterne, Wandelsterne, Erden-Elemente) als Aufforderung zur Selbsterkenntnis des Menschen." },
+            { "k": "regie", "t": "Das Weltenwort:" },
+            { "k": "verse", "l": ["O Mensch, erkenne dich selbst!", "So tönt das Weltenwort.", "Du hörst es seelenkräftig,", "Du fühlst es geistgewaltig."] },
+            { "k": "verse", "l": ["Wer spricht so weltenmächtig?", "Wer spricht so herzinniglich?"] },
+            { "k": "verse", "l": ["Wirkt es durch des Raumes Weitenstrahlung", "In deines Sinnes Seinserleben?", "Tönt es durch der Zeiten Wellenweben", "In deines Lebens Werdestrom?"] },
+            { "k": "verse", "l": ["Bist du es selbst, der sich", "Im Raumesfühlen, im Zeiterleben", "Das Wort erschafft, dich fremd", "Erfühlend in Raumes Seelenleere,", "Weil du des Denkens Kraft", "Verlierst im Zeitvernichtungsstrom."] }
+          ]
+        },
+        {
+          "id": "zweite-tafel",
+          "titel": "Zweite Tafel",
+          "meta": "Bern, 17. April 1924 / Dornach, 17. Mai 1924 (am Ende der 13. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Ein umfassendes Erkennen führt zu einer Grenzerfahrung. An der Schwelle, wo die gewohnte Sinneswelt und das gewohnte Denken enden, am Abgrund des Seins, steht der Hüter der Schwelle. Es tönt aus den Weltentiefen." },
+            { "k": "regie", "t": "Aus den Weltentiefen:" },
+            { "k": "verse", "l": ["Erkenne erst den ernsten Hüter,", "Der vor des Geisterlandes Pforten steht,", "Den Einlass deiner Sinnenkraft", "Und deines Verstandes Macht verwehrend,", "Weil du im Sinnesweben", "Und im Gedankenbilden", "Aus Raumeswesenlosigkeit,", "Aus Zeiten Truggewalten", "Des eignen Wesens Wahrheit", "Dir kraftvoll erst erobern musst."] }
+          ]
+        },
+        {
+          "id": "dritte-tafel",
+          "titel": "Dritte Tafel",
+          "meta": "Dornach, 17. Mai 1924 (am Ende der 13. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Als Antwort auf das Wort der Weltentiefen spricht es aus den Tiefen der Seele andächtig und still." },
+            { "k": "regie", "t": "Aus den Seelentiefen:" },
+            { "k": "verse", "l": ["Ich trat in diese Sinnes-Welt,", "Des Denkens Erbe mit mir führend,", "Eines Gottes Kraft hat mich hereingeführt.", "Der Tod, er steht an des Weges Ende.", "Ich will des Christus Wesen fühlen.", "Es weckt in Stoffes-Sterben Geist-Geburt.", "Im Geiste find' ich so die Welt", "Und erkenne mich im Weltenwerden"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19-mantren",
+      "titel": "19 Mantren / 19+",
+      "eintraege": [
+        {
+          "id": "mantra-1",
+          "titel": "Mantra 1",
+          "meta": "Dornach, 15. Februar 1924 (1. Stunde) / Prag, 3. April 1924 (1. Prager Stunde) / Dornach, 6. September 1924 (1. Wiederholungsstunde)",
+          "blocks": [
+            { "k": "stimmung", "label": "Erste Stimmung:", "t": "Am Anfang steht die Erfahrung der Erkenntnisgrenze in der physisch-sinnlichen Welt. Der Mensch findet sein eigenes Wesen nicht in der Sinneswelt. Der geistige Ursprung des Menschen hüllt sich in Finsternis." },
+            { "k": "regie", "t": "Für den Anfang – der Hüter spricht:" },
+            { "k": "verse", "l": ["Wo auf Erdengründen, Farb' an Farbe,", "Sich das Leben schaffend offenbart;", "Wo aus Erdenstoffen, Form an Form,", "Sich das Lebenslose ausgestaltet;", "Wo erfühlende Wesen, willenskräftig,", "Sich am eignen Dasein freudig wärmen;", "Wo du selbst, o Mensch, das Leibesein", "Dir aus Erd´ und Luft und Licht erwirbst:"] },
+            { "k": "verse", "l": ["Da betritst du deines Eigenwesens", "Tiefe, nachtbedeckte, kalte Finsternis;", "Du erfragest im Dunkel der Weiten", "Nimmer, wer du bist und warst und werdest.", "Für dein Eigensein finstert der Tag", "Sich zur Seelennacht, zum Geistesdunkel;", "Und du wendest seelensorgend dich", "An das Licht, das aus Finsternissen kraftet."] },
+            { "k": "sep" },
+            { "k": "stimmung", "label": "Zweite Stimmung:", "t": "Dem nach seinem Wesen suchenden Menschen hellt sich die Finsternis an der Schwelle zwischen Sinneswelt und Geisteswelt auf. Ihm tritt der Götterbote, der Geistesbote entgegen, der Hüter der Schwelle. Er erscheint dem Suchenden als Ebenbild. Er behütet den Abgrund zwischen sinnlicher und geistiger Welt, damit der Mensch ihn nicht unvorbereitet überschreitet. Er erscheint ernst und spricht zum Menschen." },
+            { "k": "regie", "t": "Im Anblick der Schwelle:" },
+            { "k": "verse", "l": ["Und aus Finsternissen hellet sich", "– Dich im Ebenbilde offenbarend,", "Doch zum Gleichnis auch dich bildend,", "Ernstes Geisteswort im Weltenäther,", "Deinem Herzen hörbar, kraftvoll wirkend –"] },
+            { "k": "verse", "l": ["Dir der Geistesbote, der allein", "Dir den Weg erleuchten kann;", "Vor ihm breiten sich die Sinnesfelder,", "Hinter ihm, da gähnen Abgrundtiefen."] },
+            { "k": "verse", "l": ["Und vor seinen finstern Geistesfeldern,", "Dicht am gähnenden Abgrund des Seins,", "Da ertönt sein urgewaltig Schöpferwort:", "Sieh, ich bin der Erkenntnis einzig Tor."] },
+            { "k": "sep" },
+            { "k": "stimmung", "label": "Dritte Stimmung:", "t": "Der Abgrund zwischen Sinnes- und Geisteswelt erscheint dreifach: Raum, Zeit und das Selbst des Menschen. Am Abgrund – drei Abgründe, die ein einziger Abgrund sind – hält uns der Hüter der Schwelle zurück, und es tönt aus der geistigen Welt." },
+            { "k": "regie", "t": "An der Schwelle – der Hüter am Abgrund:" },
+            { "k": "verse", "l": ["Aus den Weiten der Raumeswesen,", "Die im Lichte das Sein erleben,", "Aus dem Schritte des Zeitenganges,", "Der im Schaffen das Wirken findet,", "Aus den Tiefen des Herzempfindens,", "Wo im Selbst sich die Welt ergründet:"] },
+            { "k": "verse", "l": ["Da ertönet im Seelensprechen,", "Da erleuchtet aus Geistgedanken", "Das aus göttlichen Heileskräften", "In den Weltengestaltungsmächten", "Wellend wirkende Daseinswort:", "O, du Mensch, erkenne dich selbst."] },
+            { "k": "sep" },
+            { "k": "stimmung", "label": "Vierte Stimmung:", "t": "Der Hüter der Schwelle spricht über die Hindernisse der Geisterkenntnis in der Gegenwart. Wir fühlen diese Hindernisse am Abgrund zwischen Schein und Sein. Aus dem Abgrund steigen hintereinander drei Tiere auf – als Zerrbild unserer Seelenfähigkeiten Denken, Fühlen und Wollen." },
+            { "k": "regie", "t": "Der Hüter spricht ganz am Abgrund des Seins:" },
+            { "k": "verse", "l": ["Doch du musst den Abgrund achten;", "Sonst verschlingen seine Tiere", "Dich, wenn du an mir vorübereilst;", "Sie hat deine Weltenzeit in dir", "Als Erkenntnisfeinde hingestellt."] },
+            { "k": "verse", "l": ["Schau das _erste_ Tier, den Rücken krumm,", "Knochenhaft das Haupt, von dürrem Leib,", "Ganz von stumpfem Blau ist seine Haut;", "Deine _Furcht_ vor Geistes-Schöpfer-Sein", "Schuf das Ungetüm in deinem _Willen_;", "Dein Erkenntnismut nur überwindet es."] },
+            { "k": "verse", "l": ["Schau das _zweite_ Tier, es zeigt die Zähne", "Im verzerrten Angesicht, es lügt im Spotten,", "Gelb mit grauem Einschlag ist sein Leib;", "Dein _Hass_ auf Geistes-Offenbarung", "Schuf den Schwächling dir im _Fühlen_;", "Dein Erkenntnisfeuer muss ihn zähmen."] },
+            { "k": "verse", "l": ["Schau das _dritte_ Tier, mit gespaltnem Maul,", "Glasig ist sein Auge, schlaff die Haltung,", "Schmutzigrot erscheint dir die Gestalt;", "Dein _Zweifel_ an Geistes-Licht-Gewalt", "Schuf dir dies Gespenst in deinem _Denken_;", "Dem Erkenntnisschaffen muss es weichen."] },
+            { "k": "verse", "l": ["Erst wenn die drei von dir besiegt,", "Werden Flügel deiner Seele wachsen,", "Um den Abgrund zu übersetzen,", "Der dich trennet vom Erkenntnisfelde,", "Dem sich deine Herzenssehnsucht", "Heilerstrebend weihen möchte."] }
+          ]
+        },
+        {
+          "id": "mantra-2",
+          "titel": "Mantra 2",
+          "meta": "Dornach, 22. Februar 1924 (2. Stunde) / Dornach, 9. September 1924 (2. Wiederholungsstunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Der Mensch erfasst und empfindet am Abgrund des Seins die Dreiheit von Denken, Fühlen und Wollen im Bild der drei Tiere. Die drei Seelenfähigkeiten erscheinen ihm wie sie geworden sind, wie Denken und Fühlen einst waren, und für das Wollen wird eine zukünftige Absicht der Gegenmächte geoffenbart. Der Hüter spricht vertraulich weiter zum Herzen des Selbsterkenntnis suchenden Menschen." },
+            { "k": "regie", "t": "Der Hüter spricht:" },
+            { "k": "verse", "l": ["Des _dritten_ Tieres glasig Auge,", "Es ist das _böse_ Gegen_bild_", "Des _Denkens_, das in dir sich selbst", "Verleugnet und den Tod sich wählet,", "Absagend Geistgewalten, die es", "Vor seinem Erdenleben geistig", "In Geistesfeldern lebend hielten."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Des _zweiten_ Tieres Spottgesicht,", "Es ist die _böse_ Gegen_kraft_", "Des _Fühlens_, das die eigne Seele", "Aushöhlet und Lebensleerheit", "In ihr erschafft statt Geistgehalt,", "Der vor dem Erdensein erleuchtend", "Aus Geistessonnenmacht ihr ward."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Des _ersten_ Tieres Knochengeist,", "Er ist die _böse_ Schöpfer_macht_", "Des _Wollens_, die den eignen Leib", "Entfremdet deiner Seelenkraft", "Und ihn den Gegenmächten weiht,", "Die Weltensein dem Göttersein", "In Zukunftzeiten rauben wollen."] }
+          ]
+        },
+        {
+          "id": "mantra-3",
+          "titel": "Mantra 3",
+          "meta": "Dornach, 29. Februar 1924 (3. Stunde) / Prag, 5. April 1924 (2. Prager Stunde) / London, 27. August 1924 (Notizen zur zweiten Londoner Stunde) / Dornach, 9. September 1924 (2. Wiederholungsstunde) / Dornach, 11. September 1924 (3. Wiederholungsstunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Die Wege auf der Suche nach einer bewussten Erfahrung der geistigen Welt vollzieht der Mensch zunächst in Gedanken. Auf diesem Weg wächst die Unsicherheit, Schein und Sein unterscheiden zu können. Denken, Fühlen und Wollen werden immer weniger durch den physischen Leib zusammengehalten, sie treten auseinander. Die Bildung eines neuen Unterscheidungsvermögens für Wahrheit oder Irrtum, Wirklichkeit oder Illusion, Sein oder Schein wird nötig. Damit der Mensch sich am Abgrund des Seins nicht verliert, braucht er eine gesteigerte Selbsterkenntnis der Dreiheit von Denken, Fühlen und Wollen, um sie zusammenhalten zu können." },
+            { "k": "regie", "t": "Der Hüter spricht zum Menschen:" },
+            { "k": "rhythmus", "t": "Rhythmus trochäisch (lang – kurz; von oben nach unten; betonte Silbe – unbetonte Silbe)" },
+            { "k": "verse", "l": ["Sieh in dir Gedankenweben:", "Weltenschein erlebest du,", "Selbstheitsein verbirgt sich dir;", "Tauche unter in den Schein:", "Ätherwesen weht in dir;", "Selbstheitsein, es soll _verehren_", "Deines Geistes _Führerwesen_."] },
+            { "k": "sep" },
+            { "k": "rhythmus", "t": "Rhythmus jambisch (kurz – lang; von unten nach oben; unbetonte Silbe – betonte Silbe)" },
+            { "k": "verse", "l": ["Vernimm in dir Gefühle-Strömen:", "Es mengen Schein und Sein sich dir,", "Die Selbstheit neigt dem Scheine sich;", "So tauche unter in scheinendes Sein:", "Und Welten-Seelenkräfte sind in dir;", "Die Selbstheit, sie soll _bedenken_", "Der eignen Seele _Lebensmächte_."] },
+            { "k": "sep" },
+            { "k": "rhythmus", "t": "Rhythmus spondäisch (lang – lang; in der Ebene; betonte Silbe – betonte Silbe)" },
+            { "k": "verse", "l": ["Lass walten in dir den Willens-Stoß:", "Der steigt aus allem Scheineswesen", "Mit Eigensein erschaffend auf;", "Ihm wende zu all dein Leben:", "Der ist erfüllt von Welten-Geistesmacht;", "Dein Eigensein, es soll _ergreifen_", "_Weltschöpfermacht_ im Geistes-Ich."] }
+          ]
+        },
+        {
+          "id": "mantra-4",
+          "titel": "Mantra 4",
+          "meta": "Dornach, 7. März 1924 (4. Stunde) / Dornach, 11. September 1924 (3. Wiederholungsstunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Nicht im Wissen liegt das Wesen der Esoterik, sondern im unmittelbaren Erleben; nicht das Erinnerungsvermögen, sondern alle anderen Seelenkräfte der Vergegenwärtigung werden aufgerufen. In dem Maße, in dem Denken, Fühlen und Wollen auseinandertreten, ist es nötig, aus uns herauszukommen und zusammenzuwachsen mit der Welt in einem dreifachen Blick: hinunter (Erde), in die Weiten (Sonnenlauf) und hinauf (Sternenhimmel). Im Wollen realisiert sich der Mensch als mit den Kräften der Erde verbunden, im Fühlen mit dem Umkreis, im Denken mit dem Himmlischen." },
+            { "k": "regie", "t": "Der Hüter belehrt Wollen, Fühlen, Denken:" },
+            { "k": "verse", "l": ["Fühle wie die Erdentiefen", "Ihre Kräfte deinem Wesen", "In die Leibesglieder drängen.", "Du verlierest dich in ihnen,", "Wenn du deinen Willen machtlos", "Ihrem Streben anvertrauest;", "Sie verfinstern dir das Ich."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Fühle wie aus Weltenweiten", "Göttermächte ihre Geisteshelle", "Dir ins Seelenwesen leuchten lassen.", "Finde dich in ihnen liebend,", "Und sie schaffen weisheitwebend", "Dich als Selbst in ihren Kreisen", "Stark für gutes Geistesschaffen."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Fühle wie in Himmelshöhen", "Selbstsein selbstlos leben kann,", "Wenn es geisterfüllt Gedankenmächten", "In dem Höhenstreben folgen will", "Und in Tapferkeit das Wort vernimmt,", "Das von oben gnadevoll ertönet", "In des Menschen wahre Wesenheit."] },
+            { "k": "stimmung", "t": "Diese Meditation kann kontrastiert werden mit der Meditation des 2. Mantras, um das Tiefenbewusstsein, das Weitenbewusstsein und das Höhenbewusstsein zu empfinden:" },
+            { "k": "kontrast", "t": "„Des dritten Tieres glasig Auge...“ (Mantra 2,1) mit „Fühle wie die Erdentiefen...“ (mit Mantra 4,1):", "f": "Erblickst du des dritten Tieres glasig Auge, stehe fest und fühle, was die Erdentiefen von dir wollen." },
+            { "k": "kontrast", "t": "„Des zweiten Tieres Spottgesicht...“ (Mantra 2,2) mit „Fühle wie aus Weltenweiten...“ (Mantra 4,2):", "f": "Schaust du des zweiten Tieres Spottgesicht, empfange liebend Sonnenlicht." },
+            { "k": "kontrast", "t": "„Des ersten Tieres Knochengeist...“ (Mantra 2,3) mit „Fühle wie in Himmelshöhen...“ (Mantra 4,3):", "f": "Erstarrst du durch des ersten Tieres Knochengeist, erwarme menschlich als Mensch, indem du zu den Himmelshöhen das Herz warm erhebest." }
+          ]
+        },
+        {
+          "id": "mantra-5",
+          "titel": "Mantra 5",
+          "meta": "Dornach, 14. März 1924 (5. Stunde) / Dornach, 11. September 1924 (3. Wiederholungsstunde) / Dornach, 13. September 1924 (4. Wiederholungsstunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "An der Schwelle öffnet sich die Kluft zwischen Natur (Elemente) und dem Inneren des Menschen (Seelenkräfte), wir suchen eine Brücke über die Kluft zwischen dem Natürlichen und dem Moralischen, dem Stofflichen und dem Geistigen und realisieren: Im Denken leben wir im Licht, im Fühlen in der Wärme, im Wollen in der Luft – in Elementen, die jetzt wesenhaft erlebt werden. Das Selbst wird gebildet auf einem Weg zwischen Gegensätzen, im Kampf zwischen Licht und Finsternis, Wärme und Kälte, Leben und Tod die Kraft, sich selbst als Menschen-Selbst zu finden – verbunden mit der Welt.\nDer Hüter spricht, indem wir ihm mit unserem selbständiger gewordenen Denken, Fühlen und Wollen begegnen." },
+            { "k": "regie", "t": "Der Hüter am Abgrund – Gleichgewicht fordernd:" },
+            { "k": "verse", "l": ["Es kämpft das Licht mit finstren Mächten", "In jenem Reiche, wo dein Denken", "In Geistesdasein dringen möchte.", "Du findest, lichtwärts strebend,", "Dein Selbst vom Geiste dir genommen;", "Du kannst, wenn Finstres dich verlockt,", "Im Stoff das Selbst verlieren."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Es kämpft das Warme mit dem Kalten", "In jenem Reiche, wo dein Fühlen", "Im Geistesweben leben möchte.", "Du findest, Wärme liebend,", "Dein Selbst in Geisteslust verwehend;", "Du kannst, wenn Kälte dich verhärtet,", "Im Leid das Selbst verstäuben."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Es kämpft das Leben mit dem Tode", "In jenem Reiche, wo dein Wollen", "Im Geistesschaffen walten möchte.", "Du findest, Leben fassend,", "Dein Selbst in Geistesmacht verschwinden;", "Du kannst, wenn Todesmacht dich bändigt,", "Im Nichts das Selbst verkrampfen."] },
+            { "k": "stimmung", "t": "Meditativ klingt in diesem Mantra, was Verstorbene in den drei Phasen des Nachtodlichen hören können. Ohne diese mantrisch-meditative Vorbereitung kann es im Nachtodlichen immer weniger oder nicht mehr verstanden werden." },
+            { "k": "stimmung", "t": "Mantra 5,3 („Es kämpft das Leben mit dem Tode...“) klingt in der ersten Phase (Ätherwelt – Lebenspanorama)." },
+            { "k": "stimmung", "t": "Mantra 5,2 („Es kämpft das Warme mit dem Kalten...“) klingt in der zweiten Phase (Seelenreich – Läuterung)." },
+            { "k": "stimmung", "t": "Mantra 5,1 („Es kämpft das Licht mit finstren Mächten...“) klingt in der dritten Phase (Geisterreich – Vorbereitung des kommenden Erdenlebens)." }
+          ]
+        },
+        {
+          "id": "mantra-6",
+          "titel": "Mantra 6",
+          "meta": "Dornach, 21. März 1924 (6. Stunde) / Dornach, 15. September 1924 (5. Wiederholungsstunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Die Entwicklung der Seele schreitet fort zu einem selbsterkennenden Sich-hinein-Fühlen in die irdische und kosmische Welt. Je wacher das Bewusstsein für die spirituelle Welt wird, je inniger soll die Verbundenheit mit der irdischen werden, um in beiden Welten Mensch sein und werden zu können. Wie ein Tor dahin ist es zu erfühlen, was in uns und in der Welt zugleich ist – Seelenkräfte einerseits (in uns), Elemente und Ätherarten andererseits (in der Welt). Die Erlebnisse der inneren Verwandtschaft mit Wärme, Licht und Luft (bewusst), mit Wasser und Erde (unbewusst, ahrimanisch), mit Weltgestaltung und Weltenleben (unbewusst, luziferisch) werden zu imaginativem Leben. Darin entsteht zuerst ein Aufruf zur Selbstverwandtschaft, dann zur Erdenliebe." },
+            { "k": "regie", "t": "Der Hüter mit allerbedeutsamstem Ernst:" },
+            { "k": "verse", "l": ["Du steigst ins Erden-Wesenhafte", "Mit deines Willens Kraftentfaltung;", "Betritt als Denker du das Erdensein,", "Es wird Gedankenmacht dir dich", "Als deine eigne Tierheit zeigen;", "Die Furcht vor deinem Selbst", "Muss dir in Seelen-Mut sich wandeln."] },
+            { "k": "verse", "l": ["Du lebest mit dem Wasserwesen", "Nur durch des Fühlens Traumesweben;", "Durchdring erwachend Wassersein,", "Es wird die Seele sich in dir", "Als dumpfes Pflanzendasein geben;", "Und Lahmheit deines Selbst", "Muss dich zum Wachen führen."] },
+            { "k": "verse", "l": ["Du sinnest in dem Lüftewehen", "Nur in Gedächtnis-Bilderformen;", "Ergreife wollend Lüftewesen,", "Es wird die eigne Seele dich", "Als kalterstarrter Stein bedrohn;", "Doch deiner Selbstheit Kälte-Tod,", "Er muss dem Geistesfeuer weichen."] },
+            { "k": "regie", "t": "Der Hüter spricht, wie wenn das Weltenwort selber ertönte:" },
+            { "k": "verse", "l": ["Du hältst von Lichtes-Scheines-Macht", "Gedanken nur im Innern fest;", "Wenn Lichtesschein in dir sich selber denkt,", "So wird unwahres Geisteswesen", "In dir als Selbstheitwahn erstehn;", "Besinnung auf die Erdennöte", "Wird dich im Menschensein erhalten."] },
+            { "k": "verse", "l": ["Du hältst vom Weltgestalten", "Gefühle nur im Innern fest;", "Wenn Weltenform in dir sich selber fühlt,", "So wird ohnmächtig Geist-Erleben", "In dir das Selbstheitsein ersticken;", "Doch Liebe zu den Erdenwerten", "Wird dir die Menschenseele retten."] },
+            { "k": "verse", "l": ["Du hältst vom Weltenleben", "Das Wollen nur im Innern fest;", "Wenn Weltenleben dich voll erfasst,", "So wird vernichtend Geistes-Lust", "In dir das Selbst-Erleben töten;", "Doch Erdenwollen geist-ergeben,", "Es lässt den Gott im Menschen walten."] }
+          ]
+        },
+        {
+          "id": "mantra-7",
+          "titel": "Mantra 7",
+          "meta": "Dornach, 11. April 1924 (7. Stunde) / Dornach 17. September 1924 (6. Wiederholungsstunde)\nIn der 6. Wiederholungsstunde schildert Rudolf Steiner die Situation des 7. Mantra anders als in der 7. Stunde. Hier folgen wir den Schilderungen der 6. Wiederholungsstunde.",
+          "blocks": [
+            { "k": "stimmung", "t": "Der Mensch steht vorbereitet am Abgrund zwischen sinnlicher und geistiger Welt. Der Hüter der Schwelle macht ihn aufmerksam auf den mikro-makrokosmischen Zusammenhang der sich trennenden Einheit von Denken, Fühlen und Wollen, die zur Dreiheit wird. In dieser ineinander webenden Dreiheit kann der Mensch die Kraft bilden, den Abgrund zu übersetzen. Die Aufforderung dazu tönt ihm entgegen." },
+            { "k": "regie", "t": "Der Hüter mahnt:" },
+            { "k": "verse", "l": ["O schau die Drei,", "Sie sind die Eins,", "Wenn du die Menschenprägung", "Im Erdendasein trägst."] },
+            { "k": "verse", "dreieck": true, "l": ["Erlebe des Kopfes Weltgestalt.", "Empfinde des Herzens Weltenschlag.", "Erdenke der Glieder Weltenkraft."] },
+            { "k": "verse", "l": ["Sie sind die Drei,", "Die Drei, die als das Eins", "Im Erdendasein leben."] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Des Hüters letzte Mahnung:" },
+            { "k": "verse", "l": ["Des Kopfes Geist,", "Du kannst ihn wollen;", "Und Wollen wird dir", "Der Sinne vielgestaltig Himmelsweben;"] },
+            { "k": "verse", "l": ["Du webest in der Weisheit."] },
+            { "k": "verse", "l": ["Des Herzens Seele,", "Du kannst sie fühlen;", "Und Fühlen wird dir", "Des Denkens-Wollens / Wollens-Denkens keimerweckend Weltenleben;"] },
+            { "k": "verse", "l": ["Du lebest in dem Scheine."] },
+            { "k": "verse", "l": ["Der Glieder Kraft,", "Du kannst sie denken;", "Und Denken wird dir", "Des Wollens zielerfassend Menschenstreben;"] },
+            { "k": "verse", "l": ["Du strebest in der Tugend."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Tritt ein", "Das Tor ist geöffnet", "Du wirst ein wahrer Mensch werden."] }
+          ]
+        },
+        {
+          "id": "mantra-8",
+          "titel": "Mantra 8",
+          "meta": "Dornach, 18. April 1924 (8. Stunde) / Dornach, 20. September 1924 (7. Wiederholungsstunde)\nZum 8. Mantra entwickelt Rudolf Steiner in der 7. Wiederholungsstunde andere Schilderungen als in der 8. Stunde. Hier verbinden wir beide Schilderungen miteinander.\nZu Beginn der 8. Stunde führt Rudolf Steiner die erste Tafel ein.",
+          "blocks": [
+            { "k": "stimmung", "t": "Jetzt befindet sich der Mensch jenseits der Schwelle zwischen Sinneswelt und Geisteswelt. Der Hüter weist den Menschen an, innezuhalten, sich umzudrehen, zurückzuschauen und auf seinen zurückgelassenen Erdenmenschen zu blicken – auf seine dreigliedrige Gestalt in der sinnlichen Welt. Hinter dieser Gestalt erscheinen imaginativ-erinnernd zuerst der Mond, dann die Sonne und schließlich die Erde.\nSelbst wird zur Welt, Welt wird zum Selbst; die Außenwelt (Ruhesterne, Wandelsterne, Erde) wird zum menschlichen Inneren und das Innenleben des Menschen wird Außenwelt; ein umgestülptes Bewusstsein beginnt." },
+            { "k": "regie", "t": "Der Hüter wird in der sich hellenden Finsternis gehört also:" },
+            { "k": "verse", "l": ["Sieh hinter des Denkens Sinneslicht,", "Wie in der finstren Geisteszelle", "Wollen sich hebt aus Leibestiefen;", "Lasse fließen durch deiner Seele Stärke", "Totes Denken in das Weltennichts;", "Und das Wollen, es erstehet", "Als Weltgedankenschaffen."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Sieh in des Fühlens Seelenweben,", "Wie in dem Träumedämmern", "Leben aus Weltenfernen strömt;", "Lass in Schlaf durch die Herzensruhe", "Menschenfühlen still verwehen;", "Und das Weltenleben geistert", "Als Menschenwesensmacht."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Sieh über des Wollens Leibeswirken,", "Wie in schlafende Wirkensfelder", "Denken sich senkt aus Haupteskräften;", "Lass durch die Seelenschau zu Licht", "Menschenwollen sich verwandeln;", "Und das Denken, es erscheinet", "Als Willenszauberwesen."] }
+          ]
+        },
+        {
+          "id": "mantra-9",
+          "titel": "Mantra 9",
+          "meta": "Bern, 17. April 1924 (Berner Stunde, erster Teil des 9. Mantras) / Dornach, 22. April 1924 (9. Stunde) / London 27. August 1924 (Notizen von der zweiten Londoner Stunde) / Dornach, 13. September 1924 (4. Wiederholungsstunde, erster Teil)",
+          "blocks": [
+            { "k": "stimmung", "t": "Vorbereitung der Meditation: Den Blick in die Sternenweiten richten, dann innerlich das Bild nachschaffen und rege machen; ebenso mit den Wandelsternen in Bewegung; ebenso mit der Erde, der Erdgebundenheit. Im Bewusstsein wird der Mensch als Leib eins mit den Elementen der Erde, als Seele mit den Wandelsternen und als Geist mit den Ruhesternen. Der Hüter fordert uns zur Selbsterkenntnis nach Leib, Seele und Geist auf." },
+            { "k": "regie", "t": "Die Lehre des Hüters:" },
+            { "k": "verse", "tag": "Erde", "l": ["O Mensch, _ertaste_ in deines Leibes ganzem Sein,", "Wie Erdenkräfte dir im Dasein _Stütze_ sind."] },
+            { "k": "verse", "tag": "Wasser", "l": ["O Mensch, _erlebe_ in deines Tastens ganzem Kreis,", "Wie Wasserwesen dir im Dasein _Bildner_ sind."] },
+            { "k": "verse", "tag": "Luft", "l": ["O Mensch, _erfühle_ in deines Lebens ganzem Weben,", "Wie Luftgewalten dir im Dasein _Pfleger_ sind."] },
+            { "k": "verse", "tag": "Feuer", "l": ["O Mensch, _erdenke_ in deines Fühlens ganzem Strömen,", "Wie Feuermächte dir im Dasein _Helfer_ sind."] },
+            { "k": "klein", "t": "Zusammenfassend die Elemente der Erde:" },
+            { "k": "verse", "tag": "Leben", "l": ["O Mensch, erschaue dich in der Elemente Reich."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["O Mensch, so lasse walten in deiner Seele Tiefen", "Der Wandelsterne weltenweisende Mächte."] },
+            { "k": "klein", "t": "Zusammenfassend die Bewegung der Wandelsterne:" },
+            { "k": "verse", "tag": "Liebe", "l": ["O Mensch, erwese dich durch den Weltenkreis."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["O Mensch, erhalte dir in deines Geistes Schaffen", "Der Ruhesterne himmelkündende Worte."] },
+            { "k": "klein", "t": "Zusammenfassend den Sinn der Ruhesterne:" },
+            { "k": "verse", "tag": "Frommsein", "l": ["O Mensch, erschaffe dich durch die Himmelsweisheit."] },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "Der Mensch fühlt sich außerhalb seines Leibes. Das Denken ruht jetzt in den Ruhesternen, das Fühlen kreist mit den Planeten, das Wollen gliedert sich den Kräften der Erde ein. Denken, Fühlen und Wollen sind im Weltensein auseinandergetreten, und wir fassen sie durch seelische Stärke, durch mantrische Vertiefung zu einer neuen geistigen Einheit zusammen. Der Mensch fühlt sich in die geistige Welt geführt." },
+            { "k": "verse", "l": ["Trag' in Denk-Erleben", "Das als reines Sinnen", "In der Seele lichtvoll glänzt", "Fühlen und Wollen", "Und du bist Geist", "Unter reinen Geistern."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Trag' in Fühlenskräfte", "Die als edle Liebe", "Durch die Seele wärmend weben", "Denken und Wollen", "Und du bist Seele", "Im Reich der Geister."] },
+            { "k": "sep" },
+            { "k": "verse", "l": ["Trag' in Willensmächte", "Die als Geistestriebe", "Um die Seele wirkend leben", "Denken und Fühlen", "Und du schaust dich selbst", "Als Leib aus Geisteshöhen."] }
+          ]
+        },
+        {
+          "id": "mantra-10",
+          "titel": "Mantra 10",
+          "meta": "Dornach, 25. April 1924 (10. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Die Seele erlebt sich in irdischer Finsternis und weitet sich in den Kosmos bis zu den Weltenimaginationen; dann schaut sie, von der anderen Seite lesend, die Geistestaten an und beginnt schließlich, auf geistige Art die Sprache der Götter zu hören. Diese vier Erlebnisschritte erweitern sich zunächst zum Dialog, dann zur Tat." },
+            { "k": "regie", "t": "Der Mensch erlebt meditierend:" },
+            { "k": "verse", "l": ["Ich lebe in dem finstren Erdbereich.", "Ich webe in dem Schein der Sterne.", "Ich lese in der Geister Taten.", "Ich höre in der Götter Sprache."] },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "Dann empfindet die Seele diese Worte so, als spräche sie ein anderes Wesen aus Geistestiefen, und sie bringt den Worten eine Empfindung entgegen (Anhören – Empfindung entgegenbringen; das erste wie verobjektivierend, das zweite ausströmend vom Herzen; Rede des Geistes – Gegenrede des Herzens). Eine Meditation im Zwiegespräch." },
+            { "k": "regie", "t": "Der Mensch hört aus Geistestiefen und antwortet aus dem Herzen – ein Zwiegespräch:" },
+            { "k": "verse", "l": ["Ich lebe in dem finstren Erdbereich,", "Sehnend stimmt mich der Erde Finsternis."] },
+            { "k": "verse", "l": ["Ich webe in dem Schein der Sterne,", "Tröstend ist mir der Sterne Schein."] },
+            { "k": "verse", "l": ["Ich lese in der Geister Taten,", "Lehrend sind mir der Geister Taten."] },
+            { "k": "verse", "l": ["Ich höre in der Götter Sprache,", "Schaffend ist mir der Götter Sprache."] },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "Jetzt vergegenwärtigt sich die Seele das Zwiegespräch, sie erlebt, wie das eine in dem anderen wirkt; dann erinnert sie sich und bekräftigt willentlich, was sie durch das Zwiegespräch erlebt. Es entsteht ein Dreischritt: Aus Geistestiefen tönt es, das Herz antwortet, der Wille erfasst einen Impuls aus dem Zwiegespräch." },
+            { "k": "regie", "t": "Der Mensch bekräftigt das Zwiegespräch aus dem Willen:" },
+            { "k": "verse", "l": ["Ich lebe in dem finstren Erdbereich,", "Sehnend stimmt mich der Erde Finsternis,", "Der Erde Finsternis verlöschet mich."] },
+            { "k": "verse", "l": ["Ich webe in dem Schein der Sterne,", "Tröstend ist mir der Sterne Schein,", "Der Sterne Schein erwecket mich."] },
+            { "k": "verse", "l": ["Ich lese in der Geister Taten,", "Lehrend sind mir der Geister Taten,", "Der Geister Taten rufen mich."] },
+            { "k": "verse", "l": ["Ich höre in der Götter Sprache,", "Schaffend ist mir der Götter Sprache,", "Der Götter Sprache zeuget mich."] },
+            { "k": "stimmung", "t": "Im Unterbewussten werden wir in drei Schritten zurückgeführt.\nRede des Geistes (jeweils erste Zeile): Die Seele nähert sich im Unbewussten dem Ausgangspunkt des Erdenlebens.\nAntwort des Herzens (jeweils zweite Zeile): Die Seele lebt sich im Unbewussten in das vorirdische Dasein ein.\nWille, Bekräftigung (jeweils dritte Zeile): Die Seele findet sich im Unbewussten in der vorigen Inkarnation, den vorigen Inkarnationen.\nIm mantrischen Vollzug geht uns der tiefere Schicksalszusammenhang ahnend auf." }
+          ]
+        },
+        {
+          "id": "mantra-11",
+          "titel": "Mantra 11",
+          "meta": "Dornach, 2. Mai 1924 (11. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Dreiteilig ist jeder der drei Sprüche: Zuerst ein objektives Erklingen aus dem Kosmos; dann die eigene intime Antwort aus dem Inneren der Seele wie ein Echo; schließlich das Sprechen des Angelos zu den Welten-Wesen." },
+            { "k": "stimmung", "t": "Indem wir „Ich“ durch die Kraft des ruhenden Hauptes sagen, sprechen in uns die Götter des Weltenraumes. Wir schauen hinauf, und aus dem Weltenraum tönen die Worte von allen Seiten wie Posaunenklang." },
+            { "k": "regie", "t": "Aus dem Weltenraum:" },
+            { "k": "verse", "l": ["Welten-Sternen-Stätten,", "Götter-Heimat-Orte!"] },
+            { "k": "regie", "t": "Echo der Seele:" },
+            { "k": "verse", "l": ["Spricht in Haupteshöhe", "Menschen-Geistes-Strahlung", "Das «Ich bin»:"] },
+            { "k": "regie", "t": "Der Engel zu den Göttern:" },
+            { "k": "verse", "l": ["So lebet Ihr im Erdenleibe", "Als Menschen-Wesenheit."] },
+            { "k": "stimmung", "t": "Das ist das erste Zwiegespräch des dreigliedrigen Menschen mit dem Kosmos und den Ruhesternen." },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "In ihrer Bewegung durchziehen Sonne und Wandelsterne, melodisch-klingend, Atmung und Blutzirkulation unseres rhythmisch-bewegten Inneren." },
+            { "k": "regie", "t": "Aus dem Weltenumkreis:" },
+            { "k": "verse", "l": ["Welten-Sonnen-Kreise,", "Geister-Wirkens-Wege!"] },
+            { "k": "regie", "t": "Echo der Seele:" },
+            { "k": "verse", "l": ["Tönt in Herzensmitte", "Menschen-Seelen-Weben", "Das «Ich lebe»:"] },
+            { "k": "regie", "t": "Der Engel zu den Geistern:" },
+            { "k": "verse", "l": ["So schreitet Ihr im Erdenwandel", "Als Menschen-Schöpferkraft."] },
+            { "k": "stimmung", "t": "Das ist das zweite Zwiegespräch des Menschen mit dem Weltenumkreis und den Wandelsternen." },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "In dem, was in den Armen und Beinen lebt und sich in den Stoffwechsel nach innen fortsetzt, was uns zum eigentlichen Erdenmenschen macht, hören wir das dumpfe Raunen des Weltengrundes." },
+            { "k": "regie", "t": "Aus den Weltentiefen:" },
+            { "k": "verse", "l": ["Welten-Grundes-Mächte,", "Schöpfer-Liebes-Glänzen!"] },
+            { "k": "regie", "t": "Echo der Seele:" },
+            { "k": "verse", "l": ["Schafft in Leibesgliedern", "Menschen-Wirkens-Strömung", "Das «Ich will»:"] },
+            { "k": "regie", "t": "Der Engel zu den Schöpfer-Mächten:" },
+            { "k": "verse", "l": ["So strebet Ihr im Erdenwerke", "Als Menschen-Sinnes-Taten."] },
+            { "k": "stimmung", "t": "Das ist das dritte Zwiegespräch des Menschen mit den Erdenkräften." },
+            { "k": "stimmung", "t": "Der mantrische Charakter entsteht dadurch, dass sich im Meditieren der Sinn und die Bedeutung des Spruches auflöst in Situation und Geschehen (Situationsmeditation). Im Meditieren sind wir nicht allein in der Welt, wir sind im Zwiegespräch mit der geistigen Welt, mit den geistigen Wesen. Die geistige Welt ersteht im Tempelbau, es ist der Weg zum Tempel: Das erste Mantra wird zum Tempelgewölbe, das zweite zu den Tempelwänden, das dritte zum Tempelboden. Und in dem Tempel erscheinen die geistigen Wesen." }
+          ]
+        },
+        {
+          "id": "mantra-12",
+          "titel": "Mantra 12",
+          "meta": "Dornach, 11. Mai 1924 (12. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Vorbereitung der Meditation: Intimes Sprechen und die Kraft spüren; das Sprechen in den Sprachorganen spüren (Kehlkopf, Gebiet der Archangeloi). Dann denken und spüren, wo das Denken innerlich stattfindet (Hinterhaupt, Gebiet der Angeloi). Dann erinnern und spüren, wo das Erinnern innerlich stattfindet (unter den Sprachorganen, Gebiet der Archai).\nDie Seele stellt sich vor, dass sie jenseits der Schwelle in der geistigen Welt vor dem Hüter steht und schweigt. Sie vernimmt dreimal ein Tönen aus dem Weltenall (I, II, III). Nach jedem Tönen beschreibt der Hüter die Beziehung der neun hierarchischen Wesen zum Menschen. Anschließend sprechen die hierarchischen Wesen selbst zum Menschen. Im 12. Mantra stellt der Hüter die Wesen der dritten und zweiten Hierarchie vor, im 13. Mantra sind es die Wesen der ersten Hierarchie." },
+            { "k": "regie", "t": "Aus dem Weltenall, dem Bereich der dritten Hierarchie:" },
+            { "k": "ueberschrift", "t": "I. Vernimm des _Denkens_ Feld:" },
+            { "k": "regie", "t": "Der Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der dir die Wege", "Von Erdensein zu Erdensein", "Im Geisteslichte weisen will:"] },
+            { "k": "regie", "t": "Angeloi:" },
+            { "k": "verse", "l": ["_Blick' auf deiner Sinne Leuchtewesen._"] },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der dich zu Seelen", "Im stoffbefreiten Seinsgebiete", "Auf Seelenschwingen tragen will:"] },
+            { "k": "regie", "t": "Archangeloi:" },
+            { "k": "verse", "l": ["_Blick' auf deines Denkens Kräftewirken._"] },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der unter Geistern", "Im erdenfernen Schöpferfelde", "Den Daseinsgrund dir geben will:"] },
+            { "k": "regie", "t": "Archai:" },
+            { "k": "verse", "l": ["_Blick' auf der Erinnerung Bildgestalten._"] },
+            { "k": "stimmung", "t": "Die Wort-Meditation kann durch folgende Bild-Vorstellung verstärkt werden, die während der ganzen Meditation im Bewusstsein bleibt: Ein hinaufblickendes Auge vernimmt den Kreis der höheren Hierarchien (Kreisbogen). Sie lassen die Kräfte der Welt zum Auge hinabströmen. Das Auge vernimmt den Kreis der unteren Hierarchien, die sich zu den höheren Hierarchien hinwenden (Wellenlinie) und deren Strahlen weiter zum Menschen schicken." },
+            { "k": "sep" },
+            { "k": "regie", "t": "Aus dem Weltenall, dem Bereich der zweiten Hierarchie:" },
+            { "k": "ueberschrift", "t": "II. Vernimm des _Fühlens_ Feld:" },
+            { "k": "regie", "t": "Der Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der als Gedanke", "Aus Geistes-Sonnenstrahlen", "Dich zum Weltendasein ruft:"] },
+            { "k": "regie", "t": "Exusiai:" },
+            { "k": "verse", "l": ["_Fühl' in deines Atems Lebensregung._"] },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der Weltendasein", "Aus Sternen-Lebenskräften", "Dir in Geistesreichen schenket:"] },
+            { "k": "regie", "t": "Dynamis:" },
+            { "k": "verse", "l": ["_Fühl' in deines Blutes Wellenweben._"] },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der dir den Geistes-Sinn", "In lichten Götter-Höhenreichen", "Aus Erdenwollen schaffen will:"] },
+            { "k": "regie", "t": "Kyriotetes:" },
+            { "k": "verse", "l": ["_Fühl' der Erde mächtig Widerstreben._"] }
+          ]
+        },
+        {
+          "id": "mantra-13",
+          "titel": "Mantra 13",
+          "meta": "Dornach, 17. Mai 1924 (13. Stunde)\nAm Ende der 13. Stunde Einführung der zweiten und dritten Tafel.",
+          "blocks": [
+            { "k": "stimmung", "t": "Fortsetzung derselben Disposition wie im 12. Mantra.\nDer Hüter stellt die Wesen der ersten Hierarchie vor, und sie sprechen zum Menschen." },
+            { "k": "regie", "t": "Aus dem Weltenall, dem Bereich der ersten Hierarchie:" },
+            { "k": "ueberschrift", "t": "III. Vernimm des _Willens_ Feld" },
+            { "k": "regie", "t": "Der Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der die Weltenkräfte, die dumpfen", "Aus den Erden-Untergründen, den finstren", "In deiner Glieder Regsamkeiten lenket:"] },
+            { "k": "klein", "t": "Dabei webende Wolken (blau), Sitze als Wesen der Throne innerlich vorstellen." },
+            { "k": "regie", "t": "Throne:" },
+            { "k": "verse", "l": ["_Blick' auf deiner Triebe Feuer-Wesen._"] },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der die Geistesstrahlen, die hellen", "Aus Gottes-Wirkensfeldern, gnadevoll", "In deinem Blute kreisen lässt:"] },
+            { "k": "klein", "t": "Dabei Wolken-durchzuckende Blitze (rot), Blitze als Werkzeuge der Cherubine vorstellen." },
+            { "k": "regie", "t": "Cherubine:" },
+            { "k": "verse", "l": ["_Blick' auf des Gewissens Seelen-Führung._"] },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "verse", "l": ["Es spricht, der das Menschensein, das vollbrachte", "Durch Tode und Geburten, sinngerecht", "Zum Atmen bringt in gegenwärt'ger Zeit:"] },
+            { "k": "klein", "t": "Dabei über allem webende Weltenhitze (gelb), Hitze als Schein der Seraphine vorstellen." },
+            { "k": "regie", "t": "Seraphine:" },
+            { "k": "verse", "l": ["_Blick' auf deines Schicksales Geistes-Prüfung._"] },
+            { "k": "stimmung", "t": "Die Wort-Meditation begleitend folgendes Bild vorstellen: Sitze – Blitze – Hitze.\nAnschließend: Wolken – Throne – Wesen. Blitze – Cherubine – Werkzeuge. Weltenhitze – Seraphine – Schein." }
+          ]
+        },
+        {
+          "id": "mantra-14",
+          "titel": "Mantra 14",
+          "meta": "Dornach, 31. Mai 1924 (14. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Der Mensch wird gewahr, wie zwei Seelenverfassungen in ihm Wirklichkeit werden können: die Seelenverfassung in der sinnlichen Welt mit dem gewöhnlichen Bewusstsein und die Seelenverfassung jenseits der Schwelle, außerhalb des physischen und des ätherischen Leibes, also die Seelenverfassung in der rein geistigen Welt.\nIn der sinnlichen Welt entsprechen die vier Wesensglieder des Menschen (physischer Leib, ätherischer Leib, astralischer Leib und Ich) den vier Elementen (Erde, Wasser, Luft und Feuer).\nIn der geistigen Welt hört die Differenzierung der vier Elemente und ihrer Eigenschaften auf, und die Seele muss sich neu orientieren. Christus bekräftigt ein menschenstarkes Innenbewusstsein – „so lang“; Luzifer liebt die Auflösung, will nur die geistige Gegebenheit, flieht die Erde; Ahriman will die irdischen Gegebenheiten vollständig beherrschen, sie in die geistige Welt versetzen oder die geistigen Gegebenheiten in der physischen Welt verfestigen. Alle drei Inspirationen wollen meditiert werden, um sich schließlich frei für die Christus-inspirierte Antwort zu entscheiden.\nDer Mensch ist in der geistigen Welt, der Hüter fordert ihn auf, sich zu ihm umzuwenden; dann beginnt ein Zwiegespräch zwischen dem Hüter und der dreifach inspirierten Seele." },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Wo ist der Erde Festigkeit, die dich stützte?" },
+            { "k": "regie", "t": "Die Seele antwortet in dreifacher Weise – von Christus, Luzifer und Ahriman inspiriert:" },
+            { "k": "dialog", "rows": [["Christus", "Ich verlasse ihren Grund, _so lang_ der Geist mich trägt."], ["Luzifer", "Ich fühle wonnig, dass ich fortan der Stütze nicht bedarf."], ["Ahriman", "Ich will durch Geistes Kraft fester noch sie hämmern."]] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Wo ist des Wassers Bildekraft, die dich durchdrang?" },
+            { "k": "dialog", "rows": [["Christus", "Mein Leben verlöscht sie, _so lang_ der Geist mich formt."], ["Luzifer", "Mein Leben zerschmilzt sie, dass ich erlöst von ihr werde."], ["Ahriman", "Mein Leben befestigt sie, dass ich sie ins Geistgebiet versetze."]] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Wo ist der Lüfte Reizgewalt, die dich erweckte?" },
+            { "k": "dialog", "rows": [["Christus", "Meine Seele atmet Himmelsluft, _so lang_ der Geist um mich besteht."], ["Luzifer", "Meine Seele achtet ihrer nicht in Geistes Seligkeit."], ["Ahriman", "Meine Seele saugt sie auf, dass ich göttlich schaffen lerne."]] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Wo ist des Feuers Reinigung, die dir das Ich erflammte?" },
+            { "k": "dialog", "rows": [["Christus", "Mein Ich lodert im Gottesfeuer, _so lang_ der Geist mich zündet."], ["Luzifer", "Mein Ich hat Flammenmacht durch Geistes Sonnenkraft."], ["Ahriman", "Mein Ich hat Eigenfeuer, das rein durch Selbstentfaltung flammt."]] }
+          ]
+        },
+        {
+          "id": "mantra-15",
+          "titel": "Mantra 15",
+          "meta": "Dornach, 21. Juni 1924 (15. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Die Seele ist jenseits des Abgrundes im Finstern, der Hüter ihr zur Seite. Es ist durch die bisherigen mantrischen Meditationen eine Stimmung entstanden, die der Seele das Erfühlen der geistigen Welt ermöglicht. Sie fühlt sich inmitten der hierarchischen Wesen, wie sie sich in der sinnlichen Welt inmitten der drei Naturreiche fühlte, bevor sie in der übersinnlichen Welt zu schauen lernt. Der Hüter spricht mit Bezug auf die Elemente Erde, Wasser und Luft (15. Mantra), und seine Worte rufen aus den Untergründen die Antworten der drei Hierarchien hervor; im 16. Mantra folgt das Element des Feuers." },
+            { "k": "regie", "t": "Der Hüter fragt weiter:" },
+            { "k": "frage", "t": "Was wird aus der Erde Festigkeit, die dich stützte?" },
+            { "k": "regie", "t": "Aus der dritten Hierarchie antworten:" },
+            { "k": "dialog", "rows": [["Angeloi", "Empfinde, wie wir in deinem Denken empfinden."], ["Archangeloi", "Erlebe, wie wir in deinem Fühlen erleben."], ["Archai", "Schaue, wie wir in deinem Wollen schauen."]] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Was wird aus des Wassers Bildekraft, die dich durchdrang?" },
+            { "k": "regie", "t": "Aus der zweiten Hierarchie antworten:" },
+            { "k": "dialog", "rows": [["Exusiai", "Erkenne Geistes-Welten-Schaffen im Menschen-Körper-Schaffen."], ["Dynamis", "Erfühle Geistes-Welten-Leben im Menschen-Körper-Leben."], ["Kyriotetes", "Wolle Geistes-Welt-Geschehen im Menschen-Körper-Sein."]] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Was wird aus der Lüfte Reizgewalt, die dich erweckte?" },
+            { "k": "regie", "t": "Aus der ersten Hierarchie antworten:" },
+            { "k": "dialog", "rows": [["Throne", "Ergreife wissend Innen-Sein in deinem Gottes-Welten-Sein."], ["Cherubine", "Erwarme am Innen-Leben in deinem Gottes-Welten-Leben."], ["Seraphine", "Erweck' in dir Innen-Licht in deinem Gottes-Welten-Licht."]] },
+            { "k": "stimmung", "t": "Mit diesem Mantra fühlen wir die Welt herankommen und den Kosmos mit den Wesen der geistigen Hierarchien in uns wirken; dann von uns ausgehend ein Glimmern, ein immer Hellerwerden der nachtbedeckten Finsternis in der geistigen Welt durch die Kraft unseres Selbstbewusstseins." }
+          ]
+        },
+        {
+          "id": "mantra-16",
+          "titel": "Mantra 16",
+          "meta": "Dornach, 28. Juni 1924 (16. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Fortsetzung derselben Disposition wie im 15. Mantra. Das Element der Wärme tritt hinzu und durchdringt alles; was in uns warm oder kalt ist, sind wir selber. In dem Feuerelement klingen aus unserem Ich die Wesensordnungen aller Hierarchien chorartig zusammen. Sie klingen aus den aufeinanderfolgenden Reichen, in denen wir zwischen Tod und neuer Geburt leben (ätherische, seelische und geistige Welt)." },
+            { "k": "regie", "t": "Der Hüter spricht:" },
+            { "k": "frage", "t": "Was wird aus des Feuers Reinigung, die dir das Ich entflammte?" },
+            { "k": "regie", "t": "Im Chor der drei Hierarchien sprechen" },
+            { "k": "regie", "t": "Angeloi, Exusiai, Throne:" },
+            { "k": "verse", "l": ["Erwecke dir in Weltenätherweiten die Lebensflammenschrift."] },
+            { "k": "regie", "t": "Archangeloi, Dynamis, Cherubine:" },
+            { "k": "verse", "l": ["Erschaffe dir in Zeitenwellenkreisen die Seelensühnekräfte."] },
+            { "k": "regie", "t": "Archai, Kyriotetes, Seraphine:" },
+            { "k": "verse", "l": ["Erbitte dir in ew'gen Wesentaten die Geisterlösermächte."] },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "Nachdem die Seele mit dem Hüter und den Hierarchien die Umwandlung der Elemente in geistige Wesen und ihre Wirksamkeit erlebt hat, fühlt sie ein mildes, webendes, wirkendes Licht.\nDer Hüter neigt sich in der gefühlten Helligkeit zur Seele, und sie kommt ihm näher. Er fragt vertraulich nach ihrer geistigen, seelischen und leiblichen Erfahrung. Unser Inneres wird warm und andächtig, antwortet bescheiden auf seine Fragen. Der Mensch fühlt sich in Geist, Seele und Leib als Ich ganz im Weltenzusammenhang.\nEin intimes Zwiegespräch zwischen dem Hüter und dem Menschen vollzieht sich im mild webend-wirkenden Licht." },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Hat verstanden dein Geist?" },
+            { "k": "regie", "t": "Ich:" },
+            { "k": "verse", "l": ["Der Weltengeist in mir", "Er hielt den Atem an", "Und seine Gegenwart", "Mög' erleuchten mein Ich."] },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Hat begriffen deine Seele?" },
+            { "k": "regie", "t": "Ich:" },
+            { "k": "verse", "l": ["Die Weltenseelen in mir", "Sie lebten im Sternenrat", "Und ihre Harmonien", "Mögen klingend schaffen mein Ich."] },
+            { "k": "regie", "t": "Hüter:" },
+            { "k": "frage", "t": "Hat erlebt dein Leib?" },
+            { "k": "regie", "t": "Ich:" },
+            { "k": "verse", "l": ["Die Weltenkräfte in mir", "Sie richten Menschentaten", "Und ihre Wahrspruchworte", "Mögen lenken mir das Ich."] }
+          ]
+        },
+        {
+          "id": "mantra-17",
+          "titel": "Mantra 17",
+          "meta": "Dornach, 5. Juli 1924 (17. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Der Mensch und der Hüter stehen jenseits der Schwelle im gefühlten, webenden Licht. Allmählich nimmt die Helligkeit zu. Das Licht wird nicht nur gefühlt – es wird langsam geschaut, seelisch wahrgenommen. Dabei schaut die Seele in den Worten des Hüters eine Weltenimagination – den Regenbogen, durch den die Geister hereinleuchten. Der Regenbogen ist ein Anblick, in dem der Zusammenhang zwischen sinnlicher und geistiger Welt unmittelbar auftaucht." },
+            { "k": "regie", "t": "Der Hüter:" },
+            { "k": "verse", "l": ["Sieh' des Äther-Farbenbogens", "Lichtgewalt´ges Rund,", "Lass´ durch deiner Augen", "Lichterschaffene Kraft", "Dein Ich den Kreis durchdringen,", "Und dann schau von jenseit'ger Warte", "Farbenflutend die Weltenschale."] },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "In dem zur Weltenschale verwandelten Regenbogen erscheinen die Wesenheiten der dritten Hierarchie. Es hellt sich auf, Sonne wird die Weltenschale mit ihren Farbenfluten." },
+            { "k": "regie", "t": "Angeloi, Archangeloi, Archai:" },
+            { "k": "verse", "l": ["Empfind' unsrer Gedanken", "Farbenatmend Leben", "In der Schale Lichtesfluten;", "Wir tragen Sinnenschein", "In Geistes-Wesensreiche", "Und wenden weltdurchdrungen", "Uns höhern Geistern dienend zu."] },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "Die Sonne weitet sich und erfüllt das ganze Weltenall. Darin erscheinen die Wesenheiten der zweiten Hierarchie, die Sonnenbewohner. Sie empfangen, was ihnen die Wesen der dritten Hierarchie belebt entgegenbringen. Dann übergeben sie es, weiter verwandelt, den Wesen der ersten Hierarchie, den Strahlen der Sonne und Sterne. Der ganze Kosmos wird jetzt erfüllt von ihrer schaffenden Liebe. Die Seele wird erstmals im Zuhören Zeuge eines Himmelsgesprächs zwischen hierarchischen Wesen." },
+            { "k": "regie", "t": "Exusiai, Dynamis, Kyriotetes:" },
+            { "k": "verse", "l": ["Euer Empfangenes", "Aus totem Sinnenschein Belebtes:", "Wir wecken es im Sein;", "Wir schenken es den Strahlen,", "Die des Stoffes Nichtigkeit", "In des Geistes Wesenheit", "Liebewebend offenbaren."] },
+            { "k": "sep" },
+            { "k": "stimmung", "t": "Im Mitvollziehen dieses Himmelsgesprächs hellt sich für das Geistesauge die nachtbedeckte Finsternis auf, in der zunächst das Licht nur gefühlt wurde. Es sieht jetzt, was von der zweiten Hierarchie in Liebe Gewandelte und den Sonnen- und Sternenstrahlen Mitgeteilte von den Wesenheiten der ersten Hierarchie übernommen wird. Sie verwandeln es in Schaffenskräfte, aus denen sie neue Welten gestalten. Mit den Geistesohren hören wir nun, welches Wort durch den Chor aller Hierarchien an den Menschen gerichtet wird – im Weltenwort der ersten Hierarchie." },
+            { "k": "regie", "t": "Throne, Cherubine, Seraphine:" },
+            { "k": "verse", "l": ["In deinen Willenswelten", "Fühl´ unser Weltenwirken;", "Geist erglänzt im Stoffe,", "Wenn wir denkend schaffen;", "Geist erschafft im Stoffe,", "Wenn wir wollend leben;", "Welt ist Ich-wollend Geistes-Wort."] },
+            { "k": "stimmung", "t": "Das Geisteswort, das Ich wollend, ist die Welt – im Hören dieses Wortes wird es hell-strahlend in der geistigen Welt. Dann fühlt der Mensch den Hüter der Schwelle so, wie wenn er uns die Hand auf die Augen legte, so dass wir von der Geisteshelle nichts mehr sehen und in uns die Sinneswelt wie eine Erinnerung aufsteigt.\nEs folgt die dritte Tafel." }
+          ]
+        },
+        {
+          "id": "mantra-18",
+          "titel": "Mantra 18",
+          "meta": "Dornach, 12. Juli 1924 (18. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Aus der Erfahrung des Lebens im Geiste steht die Seele in der Wahrheit: Geist ist, auch in der Sinneswelt. Ich erfasse als Mensch geistiges Sein. Überall, wo Geist ist, ist Etwas, und wo nicht Geist ist, ist Nichts. Das Nichts empfinde ich, weil ich zu schwach bin, das Etwas zu schauen. Und die Nichtse begreife ich als die Reiche der Natur. Das ist die große Illusion des gewöhnlichen Bewusstseins.\nJetzt, wenn ich in der Helligkeit des Geistes stehe, spricht der Hüter am Abgrund nicht. Stumm deutet er auf die miteinander sprechenden Wesen der geistigen Hierarchien. Die Wesen der dritten Hierarchie wenden sich an die Wesen der zweiten Hierarchie." },
+            { "k": "regie", "t": "Angeloi:" },
+            { "k": "verse", "l": ["Es denken die Menschenwesen!", "Wir brauchen das Licht der Höhen,", "Dass wir im Denken leuchten können."] },
+            { "k": "regie", "t": "Dynamis:" },
+            { "k": "verse", "l": ["Empfanget das Licht der Höhen,", "Dass ihr im Denken leuchten könnt,", "Wenn Menschenwesen denken."] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Archangeloi:" },
+            { "k": "verse", "l": ["Es fühlen die Menschenwesen!", "Wir brauchen die Seelenwärme,", "Dass wir im Fühlen leben können."] },
+            { "k": "regie", "t": "Kyriotetes und Exusiai:" },
+            { "k": "verse", "l": ["Empfanget die Seelenwärme,", "Dass ihr im Fühlen leben könnt,", "Wenn Menschenwesen fühlen."] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Archai:" },
+            { "k": "verse", "l": ["Es wollen die Menschenwesen!", "Wir brauchen die Tiefenkraft,", "Dass wir im Wollen wirken können."] },
+            { "k": "regie", "t": "Kyriotetes, Dynamis und Exusiai:" },
+            { "k": "verse", "l": ["Empfanget die Tiefenkraft,", "Dass ihr im Wollen wirken könnt,", "Wenn Menschenwesen wollen."] },
+            { "k": "stimmung", "t": "Der Mensch wird Zeuge dessen, was die Götter in ihrer Sorge um die Menschenwelt miteinander sprechen. Diese meditative Erfahrung wird ihm Orientierung nach dem Tode und in dem Leben zwischen Tod und einer neuen Geburt." }
+          ]
+        },
+        {
+          "id": "mantra-19",
+          "titel": "Mantra 19",
+          "meta": "Dornach, 2. August 1924 (19. Stunde)",
+          "blocks": [
+            { "k": "stimmung", "t": "Ich lebt im Geisteswort, das dem Weltenschaffen zugrunde liegt. Welt und Mensch sind durchdrungen von diesem Geisteswort. Der Hüter ist nun ganz in der Ferne und lässt letzte Fragen leise an das Menschen-Ich herantönen; Antworten klingen aus dem Reich der ersten Hierarchie. Ich fühle die Sprache des Weltenwortes in meinem Innern." },
+            { "k": "regie", "t": "Der Hüter spricht aus der Ferne; das Menschen-Ich weiß sich im Bereich des seraphisch-cherubinisch-Throne-getragenen Geistes-Wortes:" },
+            { "k": "frage", "t": "Wer spricht im Geistes-Wort,\nMit der Stimme,\nDie im Weltenfeuer lodert?" },
+            { "k": "regie", "t": "Aus dem Reich der ersten Hierarchie:" },
+            { "k": "verse", "l": ["Es sprechen Sternen-Flammen,", "Es flammen seraph'sche Feuer-Mächte;", "Sie flammen auch in meinen Herzen.", "In des Urseins Liebe-Quell", "Findet Menschen-Herz", "Schaffendes Geistes-Flammen-Sprechen:", "/Es ist Ich."] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Der Hüter aus der Ferne:" },
+            { "k": "frage", "t": "Was denkt im Geistes-Wort,\nMit Gedanken,\nDie aus Weltenseelen bilden?" },
+            { "k": "regie", "t": "Aus dem Reich der ersten Hierarchie:" },
+            { "k": "verse", "l": ["Es denken der Sterne Leuchter,", "Es leuchten cherubin´sche Bilde-Kräfte;", "Sie leuchten auch in meinem Haupte.", "In des Urseins Lichtes-Quell", "Findet Menschen-Haupt", "Denkendes Seelen-Bilde-Wirken:", "/Es ist Ich."] },
+            { "k": "sep" },
+            { "k": "regie", "t": "Der Hüter aus der Ferne:" },
+            { "k": "frage", "t": "Was kraftet im Geistes-Wort,\nMit Kräften,\nDie im Weltenleibe leben?" },
+            { "k": "regie", "t": "Aus dem Reich der ersten Hierarchie:" },
+            { "k": "verse", "l": ["Es kraftet der Sternen-Welten-Leib,", "Es leiben der Throne Trag-Gewalten;", "Sie leiben auch in meinen Gliedern.", "In des Urseins Lebens-Quell", "Finden Menschen-Glieder", "Kraftendes Welten-Träger-Walten:", "/Es ist Ich."] },
+            { "k": "stimmung", "t": "Der Weg hat in der sinnlichen Welt begonnen – hin zur Schwelle der geistigen Welt. Der Hüter der Schwelle hat den Menschen durch die Selbsterkenntnis in die geistigen Reiche geführt und dort die Chöre der geistigen Hierarchien hören lassen. Mit der dreifachen Erfahrung „Es ist Ich“ in Herz, Haupt und Gliedern als Echo der Seraphine, Cherubine und Throne auf die Fragen des Hüters endet der mantrische Zyklus." }
+          ]
+        },
+        {
+          "id": "mantra-19-plus",
+          "titel": "Mantra 19+",
+          "meta": "Dornach, 1924 – Diese Formulierung findet sich auf einem Notizblatt mit Eurythmieform, B618, Archiv N. 6476, GA 268",
+          "blocks": [
+            { "k": "stimmung", "t": "Der verwandelte, seiner geistigen Umgebung bewusste Mensch, der mit den Göttern fühlt, denkt und handelt." },
+            { "k": "verse", "l": ["Seraphisch Feuermächte", "Aus meinem Herzen strahlet ihr"] },
+            { "k": "verse", "l": ["Chrubinisch Bildekräfte", "In meinem Haupte scheinet ihr"] },
+            { "k": "verse", "l": ["Der Throne Traggewalten", "In meinen Gleidern kraftet ihr"] },
+            { "k": "verse", "l": ["Mein Ich ist IHR"] }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "michael",
+      "titel": "Zeichen und Siegel Michaels",
+      "text": true,
+      "absaetze": [
+        "Im August 1924 intensiviert Rudolf Steiner seine Schilderung des Michael-Mysteriums.[4] „Sobald man in die geistige Welt mit seiner Anschauung hinaufdringt, kommt man an konkrete geistige Wesensmächte heran. In alten Lehren hat man die Macht, aus der die Gedanken der Dinge erfließen, mit dem Namen Michael bezeichnet. Der Name kann beibehalten werden.“[5]",
+        "Intelligenz, Freiheit und Verwandlungskraft erscheinen als die wesentlichen im Menschen mit Michael zusammenhängenden Befähigungen, die einer Kultur bedürfen. Das Selbständig-Werden des Menschen, seine Herauslösung aus allen geistigen und natürlichen Gegebenheiten wie auch sein bewusst und aus freiem Willen gesuchter Zusammenklang mit dem irdischen, menschlichen und himmlischen Ganzen stehen in Beziehung zu Michael.",
+        "Ab August 1924 stellt Rudolf Steiner die Arbeit der Hochschule und der Klassenstunden ganz ausdrücklich in den Zusammenhang mit Michael, den er als mit der Sonne verbundenen Zeitgeist schildert. Er charakterisiert die Mantren der Hochschule als von Michael ausgehend und vom Hüter der Schwelle vermittelt, die Hochschule als eine michaelische Schule der Verbindung von Mikrokosmos und Makrokosmos, als eine Brücke zwischen geistiger und irdischer Welt, zwischen kosmischem und sinnlichem Menschen.",
+        "Eine alles durchziehende Trinität wird konstitutiv – Michaels Verbindung zur Sonne offenbart sich als Licht, Wärme und Kraft; sie durchziehen Denken, Fühlen und Wollen des Menschen, leben in den Transzendentalien, die als Wahrheit, Schönheit und Güte in Lehren und Leben der Rosenkreuzer auftauchen und sich in den Worten rosae et crucis konzentrieren:\n_Ex Deo Nascimur (EDN) – In Christo Morimur (ICM) – Per Spiritum Sanctum Reviviscimus (PSSR)_",
+        "Rudolf Steiner endet ab September jede Stunde der „Michael-Schule in der Gegenwart“, dieser „Himmels-Institution“[6] mit Zeichen und Siegel Michaels. Michaels Zeichen bekräftigt seine Anwesenheit, seine Siegelgesten die Verbindung zur Rosenkreuzer-Strömung, die des Menschen Eigenwesens- und Entwicklungs-Geheimnisse in Vergangenheit, Gegenwart und Zukunft offenbart.",
+        "Michaels Zeichen ist ein offener Fünfstern.",
+        "Michaels Siegel verbindet die Worte rosae et crucis mit Geste und stillem Empfinden:\nEDN – Geste nach unten – stilles Empfinden: Ich bewundere den Vater\nICM – Geste gekreuzt in der Mitte – stilles Empfinden: Ich liebe den Sohn\nPSSR – Geste nach oben – stilles Empfinden: Ich verbinde mich dem Geiste",
+        "Eine Klassenstunde im Rahmen der Freien Hochschule für Geisteswissenschaft wird heute in der Regel mit der ersten Tafel eröffnet und beendet, ggfs. ergänzt durch die zweite und dritte Tafel und mit Zeichen und Siegel Michaels geschlossen."
+      ],
+      "fussnoten": {
+        "4": "Rudolf Steiner, Anthroposophische Leitsätze – Der Erkenntnisweg der Anthroposophie – Das Michael-Mysterium, GA 26",
+        "5": "Rudolf Steiner, Im Anbruch des Michael-Zeitalters, GA 26",
+        "6": "Erste Wiederholungsstunde, 6. September 1924, GA 270"
+      }
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+---
+import Base from '../../layouts/Base.astro';
+import { tx } from '../../lib/typografie';
+import raw from '../../data/hochschule-lesefassung.json';
+
+// Versteckte Unterseite — bewusst NICHT in Navigation, Index, Suche oder der
+// Offline-Liste verlinkt. Nur über die eigene URL erreichbar:
+//   /werkstatt/hochschule/
+// Bildschirmlesbare Fassung des Arbeitsmaterials ‹Mantrisches Spätwerk für die
+// Freie Hochschule für Geisteswissenschaft› (Lesefassung mit Hinweisen zu
+// Situation und Meditation, Stand August 2025). Quelle der Daten:
+// src/data/hochschule-lesefassung.json — dort Konventionen:
+//   _wort_      Betonung (Unterstreichung im Original)
+//   [1]         Fußnotenverweis
+//   Zeile mit / eingerückt
+
+type Block = {
+  k: string;
+  t?: string;
+  label?: string;
+  f?: string;
+  l?: string[];
+  tag?: string;
+  dreieck?: boolean;
+  rows?: string[][];
+};
+type Eintrag = { id: string; titel: string; meta: string; blocks: Block[] };
+type Abschnitt = {
+  id: string;
+  titel: string;
+  eintraege?: Eintrag[];
+  text?: boolean;
+  absaetze?: string[];
+  fussnoten?: Record<string, string>;
+};
+
+const data = raw as any;
+const abschnitte = data.abschnitte as Abschnitt[];
+
+const esc = (s: string) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+// Betonung (_x_ → <u>) bzw. Kursiv (nur im Michael-Text), Fußnotenmarken.
+function rich(s: string, kursiv = false): string {
+  let out = esc(tx(s));
+  out = out.replace(/_([^_]+)_/g, kursiv ? '<em>$1</em>' : '<u>$1</u>');
+  out = out.replace(/\[(\d)\]/g, '<sup class="fn-ref"><a href="#fn-$1" id="fn-ref-$1">$1</a></sup>');
+  return out;
+}
+
+const vorb = data.vorbemerkung;
+---
+<Base title="Werkstatt — Lesefassung Hochschule">
+  <article class="hs">
+    <header class="hs-head">
+      <p class="hs-eyebrow">Arbeitsmaterial · nicht öffentlich</p>
+      <p class="hs-autor">{data.autor}</p>
+      <h1 class="hs-title">{tx(data.titel)}</h1>
+      <p class="hs-sub">{tx(data.untertitel)}</p>
+      <p class="hs-stand">{data.zusatz} · {data.stand}</p>
+    </header>
+
+    <nav class="hs-toc" aria-label="Inhalt">
+      <h2 class="hs-toc-title">Inhalt</h2>
+      <ul class="hs-toc-list">
+        <li><a href="#vorbemerkung">Vorbemerkung</a></li>
+        {abschnitte.map((a) => (
+          <li>
+            <a href={`#${a.id}`}>{tx(a.titel)}</a>
+            {a.eintraege && a.id === '19-mantren' && (
+              <ul class="hs-toc-mantren">
+                {a.eintraege.map((e) => (
+                  <li><a href={`#${e.id}`}>{e.titel.replace('Mantra ', '')}</a></li>
+                ))}
+              </ul>
+            )}
+            {a.eintraege && a.id === 'drei-tafeln' && (
+              <ul class="hs-toc-mantren hs-toc-tafeln">
+                {a.eintraege.map((e) => (
+                  <li><a href={`#${e.id}`}>{e.titel}</a></li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </nav>
+
+    <section class="hs-text" id="vorbemerkung">
+      <h2 class="hs-sec-title">{vorb.titel}</h2>
+      {vorb.absaetze.map((p: string) => <p set:html={rich(p)} />)}
+      <p class="hs-zeichnung">{vorb.zeichnung}</p>
+      <ol class="hs-fn">
+        {Object.entries(vorb.fussnoten).map(([n, t]) => (
+          <li id={`fn-${n}`} value={Number(n)}>
+            <span set:html={rich(t as string)} /> <a class="hs-fn-back" href={`#fn-ref-${n}`} aria-label="Zurück zum Text">↑</a>
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    {abschnitte.map((a) => (
+      <section class="hs-abschnitt" id={a.id}>
+        <h2 class="hs-sec-title">{tx(a.titel)}</h2>
+
+        {a.eintraege && a.eintraege.map((e) => (
+          <article class="hs-mantra" id={e.id}>
+            <header class="hs-mantra-head">
+              <h3 class="hs-mantra-title">{e.titel}</h3>
+              <p class="hs-meta">{tx(e.meta)}</p>
+            </header>
+
+            {e.blocks.map((b) => {
+              switch (b.k) {
+                case 'stimmung':
+                  return (
+                    <div class="hs-stimmung">
+                      {b.label && <p class="hs-stimmung-label">{b.label}</p>}
+                      <p set:html={rich(b.t ?? '')} />
+                    </div>
+                  );
+                case 'regie':
+                  return <p class="regie hs-regie" set:html={rich(b.t ?? '')} />;
+                case 'rhythmus':
+                  return <p class="hs-rhythmus">{tx(b.t ?? '')}</p>;
+                case 'klein':
+                  return <p class="hs-klein" set:html={rich(b.t ?? '')} />;
+                case 'ueberschrift':
+                  return <p class="hs-ueberschrift" set:html={rich(b.t ?? '')} />;
+                case 'frage':
+                  return <p class="lines hs-frage" set:html={rich(b.t ?? '')} />;
+                case 'kontrast':
+                  return (
+                    <div class="hs-kontrast">
+                      <p class="hs-kontrast-t">{tx(b.t ?? '')}</p>
+                      <p class="hs-kontrast-f">{tx(b.f ?? '')}</p>
+                    </div>
+                  );
+                case 'sep':
+                  return <hr class="hs-sep" aria-hidden="true" />;
+                case 'dialog':
+                  return (
+                    <dl class="lines hs-dialog">
+                      {(b.rows ?? []).map(([rolle, text]) => (
+                        <div class="hs-dialog-row">
+                          <dt>{rolle}</dt>
+                          <dd set:html={rich(text)} />
+                        </div>
+                      ))}
+                    </dl>
+                  );
+                case 'verse':
+                  return (
+                    <div class={`hs-strophe${b.tag ? ' hs-strophe--tag' : ''}`}>
+                      <p class="lines">
+                        {(b.l ?? []).map((z) => {
+                          const cont = z.startsWith('/');
+                          return (
+                            <span class={`line${cont ? ' hs-einzug' : ''}`} set:html={rich(cont ? z.slice(1) : z)} />
+                          );
+                        })}
+                      </p>
+                      {b.tag && <span class="hs-tag">{b.tag}</span>}
+                      {b.dreieck && (
+                        <svg class="hs-dreieck" viewBox="0 0 40 60" aria-label="Dreieckszeichen: aufwärts, abwärts, aufwärts, abwärts" role="img">
+                          <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+                            <path d="M20 2 L36 22 L4 22 Z" />
+                            <path d="M4 22 L36 22 L20 42 Z" />
+                            <path d="M10 34 L30 34 L20 58 Z" />
+                          </g>
+                        </svg>
+                      )}
+                    </div>
+                  );
+                default:
+                  return null;
+              }
+            })}
+          </article>
+        ))}
+
+        {a.text && (
+          <div class="hs-text">
+            {(a.absaetze ?? []).map((p) => <p set:html={rich(p, true)} />)}
+            {a.fussnoten && (
+              <ol class="hs-fn">
+                {Object.entries(a.fussnoten).map(([n, t]) => (
+                  <li id={`fn-${n}`} value={Number(n)}>
+                    <span set:html={rich(t)} /> <a class="hs-fn-back" href={`#fn-ref-${n}`} aria-label="Zurück zum Text">↑</a>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </div>
+        )}
+      </section>
+    ))}
+
+    <p class="hs-top"><a href="#">↑ Zum Anfang</a></p>
+  </article>
+</Base>
+
+<style is:global>
+  .hs { max-width: 38rem; margin: 0; padding: 1rem 0 5rem; }
+  .hs-head { margin-bottom: 2rem; padding-bottom: 1.2rem; border-bottom: 1px solid var(--line); }
+  .hs-eyebrow { margin: 0 0 1rem; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .hs-autor { margin: 0 0 0.4rem; font-size: 0.95rem; font-weight: 500; }
+  .hs-title { margin: 0 0 0.6rem; font-size: clamp(1.4rem, 3.5vw, 1.9rem); font-weight: 500; line-height: 1.2; text-wrap: balance; }
+  .hs-sub { margin: 0 0 0.9rem; font-size: 1rem; color: var(--text); line-height: 1.45; }
+  .hs-stand { margin: 0; font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+
+  .hs-toc { margin: 0 0 3rem; }
+  .hs-toc-title, .hs-sec-title { font-size: clamp(1.2rem, 2.6vw, 1.5rem); font-weight: 500; line-height: 1.25; margin: 0 0 1rem; }
+  .hs-toc-title { font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 400; margin-bottom: 0.6rem; }
+  .hs-toc-list, .hs-toc-mantren { list-style: none; margin: 0; padding: 0; }
+  .hs-toc-list > li { margin: 0.35rem 0; line-height: 1.5; }
+  .hs-toc a { text-decoration: none; }
+  .hs-toc a:hover, .hs-toc a:focus-visible { text-decoration: underline; }
+  .hs-toc-mantren { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.45rem 0 0.7rem; }
+  .hs-toc-mantren a {
+    display: inline-block; min-width: 2.6rem; padding: 0.35rem 0.6rem; text-align: center;
+    border: 1px solid var(--line); border-radius: 0.4rem; font-size: 0.9rem;
+  }
+  .hs-toc-mantren a:hover, .hs-toc-mantren a:focus-visible { background: var(--petrol-soft); text-decoration: none; }
+
+  .hs-text { margin: 0 0 4rem; scroll-margin-top: 4rem; }
+  .hs-text p { margin: 0 0 1rem; font-size: 1rem; line-height: 1.65; text-wrap: pretty; white-space: pre-line; }
+  .hs-zeichnung { color: var(--muted); }
+  .hs-fn { margin: 1.5rem 0 0; padding: 1rem 0 0 1.2rem; border-top: 1px solid var(--line); font-size: 0.82rem; line-height: 1.5; color: var(--muted); }
+  .hs-fn li { margin: 0 0 0.4rem; scroll-margin-top: 4rem; }
+  .hs-fn-back { text-decoration: none; }
+  .fn-ref a { text-decoration: none; padding: 0 0.1rem; }
+
+  .hs-abschnitt { margin: 0 0 3rem; scroll-margin-top: 4rem; }
+  .hs-abschnitt > .hs-sec-title { padding-top: 1.5rem; border-top: 1px solid var(--line); margin-bottom: 2rem; }
+
+  .hs-mantra { display: flex; flex-direction: column; gap: 0.9rem; margin: 0 0 4.5rem; scroll-margin-top: 4rem; }
+  .hs-mantra-head { margin-bottom: 0.4rem; }
+  .hs-mantra-title { margin: 0 0 0.35rem; font-size: 1.15rem; font-weight: 500; }
+  .hs-meta { margin: 0; font-size: 0.78rem; line-height: 1.5; color: var(--muted); white-space: pre-line; }
+
+  .hs-stimmung { margin: 0.3rem 0; padding-left: 0.9rem; border-left: 2px solid var(--line); }
+  .hs-stimmung p { margin: 0; font-size: 0.88rem; line-height: 1.6; font-style: italic; color: var(--muted); white-space: pre-line; text-wrap: pretty; }
+  .hs-stimmung .hs-stimmung-label { font-style: normal; font-weight: 500; margin-bottom: 0.15rem; }
+  .hs-rhythmus { margin: 0.3rem 0 0; font-size: 0.82rem; font-style: italic; color: var(--muted); }
+  .hs-klein { margin: 0; font-size: 0.82rem; font-style: italic; color: var(--muted); line-height: 1.5; }
+  .hs-ueberschrift { margin: 0.2rem 0 0; font-size: clamp(1.05rem, 2vw, 1.18rem); font-weight: 500; line-height: 1.4; }
+  .hs-regie { margin-top: 0.5rem; }
+
+  .hs-strophe { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.2rem 1.5rem; }
+  .hs-strophe .lines { font-weight: 500; }
+  .hs-strophe--tag .lines { max-width: 100%; }
+  .hs-tag { font-size: 0.85rem; letter-spacing: 0.04em; color: var(--muted); }
+  .hs-einzug { padding-left: 1.4rem; }
+  .hs-frage { font-weight: 500; white-space: pre-line; }
+  .hs-dreieck { width: 2rem; height: auto; color: var(--muted); flex: none; }
+  .hs u, .hs-mantra u { text-decoration-thickness: 1px; text-underline-offset: 0.18em; }
+
+  .hs-sep { width: 100%; max-width: 6rem; margin: 0.9rem 0; border: 0; border-top: 1px solid var(--line); }
+
+  .hs-dialog { margin: 0; display: flex; flex-direction: column; gap: 0.5rem; font-weight: 500; }
+  .hs-dialog-row { display: grid; grid-template-columns: 7.2rem 1fr; gap: 0 0.8rem; }
+  .hs-dialog dt { color: var(--muted); font-weight: 400; font-size: 0.9rem; padding-top: 0.1rem; }
+  .hs-dialog dd { margin: 0; }
+  @media (max-width: 30rem) {
+    .hs-dialog-row { grid-template-columns: 1fr; gap: 0; }
+  }
+
+  .hs-kontrast { margin: 0.2rem 0; }
+  .hs-kontrast-t { margin: 0; font-size: 0.85rem; font-style: italic; color: var(--muted); line-height: 1.5; }
+  .hs-kontrast-f { margin: 0.1rem 0 0.8rem; font-size: 0.95rem; font-weight: 500; line-height: 1.5; }
+
+  .hs-top { margin: 3rem 0 0; font-size: 0.9rem; }
+  .hs-top a { color: var(--muted); text-decoration: none; }
+  .hs-top a:hover { text-decoration: underline; }
+</style>
