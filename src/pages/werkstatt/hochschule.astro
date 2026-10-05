@@ -93,7 +93,7 @@ const vorb = data.vorbemerkung;
       <ol class="hs-fn">
         {Object.entries(vorb.fussnoten).map(([n, t]) => (
           <li id={`fn-${n}`} value={Number(n)}>
-            <span set:html={rich(t as string)} /> <a class="hs-fn-back" href={`#fn-ref-${n}`} aria-label="Zurück zum Text">↩</a>
+            <span set:html={rich(t as string)} /> <a class="hs-fn-back" href={`#fn-ref-${n}`} aria-label="Zurück zum Text">↑</a>
           </li>
         ))}
       </ol>
@@ -186,7 +186,7 @@ const vorb = data.vorbemerkung;
               <ol class="hs-fn">
                 {Object.entries(a.fussnoten).map(([n, t]) => (
                   <li id={`fn-${n}`} value={Number(n)}>
-                    <span set:html={rich(t)} /> <a class="hs-fn-back" href={`#fn-ref-${n}`} aria-label="Zurück zum Text">↩</a>
+                    <span set:html={rich(t)} /> <a class="hs-fn-back" href={`#fn-ref-${n}`} aria-label="Zurück zum Text">↑</a>
                   </li>
                 ))}
               </ol>
