@@ -1,12 +1,12 @@
 # «Was ist erquicklicher als Licht?»
 
-**Goethes Märchen und die Mantren Rudolf Steiners. Ein Hör-Essay**
+**Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. Ein Hör-Essay**
 
-16:10 Min. · Sendemanuskript mit Zeitmarken
+Sendemanuskript mit Zeitmarken
 
 Idee, Auftrag und Redaktion: Philipp Tok. Text und Produktion: Claude, ein Sprachmodell von Anthropic. Stimmen, Musik und Geräusche: ElevenLabs (synthetisch). Grundlage: [Studie](../studie-goethe-maerchen.md).
 
-Stimmen: Essay, tragend (Essay-Tragend, entworfen) · Märchen, frisch (Jorin) · Steiner, weckend: Prosa und Mantren (Leo Liest) · Ansage (NWR Chronist). Goethe nach der Ausgabe letzter Hand, Schreibung modernisiert; Mantren nach der Lesefassung 2024. Regie *kursiv*.
+Stimmen: Essay, tragend (Essay-Tragend) · Märchen (Märchen-Erzählerin, die Stimme der Textprobe) · Steiner, weckend: Prosa und Mantren (Leo Liest) · Ansage (NWR Chronist). Goethe nach der Ausgabe letzter Hand, Schreibung modernisiert; Mantren nach der Lesefassung 2024. Regie *kursiv*.
 
 ---
 
@@ -46,15 +46,15 @@ Das Gespräch, antwortete diese.
 
 *Stille, 2.5 s*
 
-`01:41` **Essay (tragend)** *(warm, ruhig)*  
-Das Gespräch. … Höher als das Gold. Höher als das Licht. … Dieser Essay folgt einem Gespräch, das hundertneunundzwanzig Jahre umspannt. Es führt von Goethes Märchen zu den Sprüchen, die Rudolf Steiner am Ende seines Lebens an eine Tafel schrieb.
+`01:42` **Essay (tragend)** *(warm, ruhig)*  
+Das Gespräch. … Höher als das Gold. Höher als das Licht. … Dieser Essay folgt einem Gespräch, das hundertneunundzwanzig Jahre umspannt. Es führt von Goethes Märchen zu Rudolf Steiners mantrischem Spätwerk. Zu den Mantren, die er am Ende seines Lebens an eine Tafel schrieb.
 
 *Stille, 1.5 s*
 
 *Musik (Cello und Harfe): Thema, frei 8 s*
 
-`02:11` **Ansage** *(ruhig)*  
-«Was ist erquicklicher als Licht?» … Goethes Märchen und die Mantren Rudolf Steiners. … Ein Hör-Essay.
+`02:14` **Ansage** *(ruhig)*  
+«Was ist erquicklicher als Licht?» … Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. … Ein Hör-Essay.
 
 *Musik (Cello und Harfe): Thema, frei 5 s*
 
@@ -62,57 +62,57 @@ Das Gespräch. … Höher als das Gold. Höher als das Licht. … Dieser Essay f
 
 ## I. Ein Leben lang
 
-`02:27` **Essay (tragend)** *(warm, ruhig)*  
+`02:30` **Essay (tragend)** *(warm, ruhig)*  
 Rudolf Steiner hat dieses Märchen nie losgelassen. … Mit dreissig spricht er darüber in Wien, vor dem Goethe-Verein. Mit neununddreissig in Berlin, vor einem kleinen Kreis in einer Bibliothek. Mit neunundvierzig schreibt er ein Drama, das aus dem Märchen gewachsen ist. Mit siebenundfünfzig legt er seine ausführlichste Deutung vor. … Alles, sagt er, sei nur die Entfaltung jenes ersten Abends in Wien gewesen.
 
 *Stille, 1.2 s*
 
-`02:58` **Essay (tragend)** *(ruhig)*  
+`03:00` **Essay (tragend)** *(ruhig)*  
 Über den Abend in Berlin schreibt er später:
 
 *Stille, 0.6 s*
 
-`03:01` **Steiner (weckend)** *(ruhig, klar)*  
+`03:04` **Steiner (weckend)** *(ruhig, klar)*  
 Und in diesem Vortrag wurde ich in Anknüpfung an das Märchen ganz esoterisch. … Es war ein wichtiges Erlebnis für mich, in Worten, die aus der Geistwelt heraus geprägt waren, sprechen zu können.
 
 *Stille, 1.5 s*
 
-`03:15` **Essay (tragend)** *(warm, ruhig)*  
+`03:18` **Essay (tragend)** *(warm, ruhig)*  
 Ganz esoterisch. Das heisst bei Steiner: nicht mehr über das Geistige reden, sondern in Worten, die aus ihm geprägt sind. … Das Märchen war ihm die Tür dazu.
 
 *Stille, 1.5 s*
 
-`03:29` **Essay (tragend)** *(warm, ruhig)*  
-Mit dreiundsechzig steht er in Dornach bei Basel an einer Wandtafel. Das Goetheanum, sein grosser Bau aus Holz, ist verbrannt. … In der Schreinerei daneben hält er neunzehn Stunden für eine neu gegründete Schule. In jeder schreibt er Sprüche an die Tafel. Er nennt sie Mantren.
+`03:32` **Essay (tragend)** *(warm, ruhig)*  
+Mit dreiundsechzig steht er in Dornach bei Basel an einer Wandtafel. Das Goetheanum, sein grosser Bau aus Holz, ist verbrannt. … In der Schreinerei daneben hält er neunzehn Stunden für eine neu gegründete Schule. In jeder schreibt er Mantren an die Tafel.
 
 *Geräusch (7 s): chalk writing slowly on an old blackboard in a quiet wooden hall, soft, intimate*
 
-`03:52` **Essay (tragend)** *(warm, ruhig)*  
-Sprüche zum Meditieren. Sie erklären nichts. Sie sprechen den Menschen an. Mit Du.
+`03:53` **Essay (tragend)** *(warm, ruhig)*  
+Mantren sind Worte zum Meditieren. Sie erklären nichts. Sie sprechen den Menschen an. Mit Du.
 
 *Stille, 1 s*
 
-`04:01` **Steiner (weckend)** *(klar, wach, langsam)*  
+`04:02` **Steiner (weckend)** *(klar, wach, langsam)*  
 O Mensch, erkenne dich selbst! … So tönt das Weltenwort.
 
 *Stille, 2 s*
 
-`04:09` **Essay (tragend)** *(ruhig)*  
-Woher kommen diese Sprüche? … In der sechsten Stunde nennt Steiner die Voraussetzung, um sie zu hören:
+`04:10` **Essay (tragend)** *(ruhig)*  
+Woher kommen diese Mantren? … In der sechsten Stunde nennt Steiner die Voraussetzung, um sie zu hören:
 
 *Stille, 0.6 s*
 
-`04:16` **Steiner (weckend)** *(ruhig, klar)*  
+`04:18` **Steiner (weckend)** *(ruhig, klar)*  
 Dass dasjenige, was hier gesagt wird, die Unterweisung des Hüters der Schwelle selber ist, entstanden unmittelbar aus dem, was man im Gespräche mit dem Hüter erhalten kann.
 
 *Stille, 2 s*
 
-`04:29` **Essay (tragend)** *(ruhig, langsam)*  
+`04:31` **Essay (tragend)** *(ruhig, langsam)*  
 Im Gespräche.
 
 *Stille, 2 s*
 
-`04:33` **Essay (tragend)** *(warm, ruhig)*  
+`04:34` **Essay (tragend)** *(warm, ruhig)*  
 Das Märchen nennt Steiner in diesen Stunden nicht. Soweit die Mitschriften reichen, kein einziges Mal. … Und doch geht das Gespräch weiter. Man muss nur hinhören.
 
 *Stille, 1.5 s*
@@ -121,78 +121,78 @@ Das Märchen nennt Steiner in diesen Stunden nicht. Soweit die Mitschriften reic
 
 ## II. Drei Könige
 
-`04:54` **Essay (tragend)** *(warm, ruhig)*  
+`04:55` **Essay (tragend)** *(warm, ruhig)*  
 Im Tempel unter der Erde stehen vier Könige. Einer aus Gold. Einer aus Silber. Einer aus Erz. … Der vierte ist aus allen dreien gegossen. Nur schlecht.
 
 *Stille, 0.6 s*
 
-`05:09` **Märchen (frisch)** *(amüsiert, ruhig)*  
+`05:10` **Märchen (frisch)** *(amüsiert, ruhig)*  
 Aber beim Gusse schienen diese Materien nicht recht zusammen geschmolzen zu sein. Goldne und silberne Adern liefen unregelmässig durch eine eherne Masse hindurch und gaben dem Bilde ein unangenehmes Ansehn.
 
 *Stille, 1.5 s*
 
-`05:24` **Essay (tragend)** *(warm, ruhig)*  
+`05:26` **Essay (tragend)** *(warm, ruhig)*  
 Am Ende hebt sich der Tempel aus der Erde. Er zieht unter dem Fluss hindurch und steigt ans Licht. … Die Sonne geht auf. Und der Alte mit der Lampe ruft drei Worte.
 
 *Stille, 0.8 s*
 
-`05:38` **Märchen (frisch)** *(ruhig, langsam, ohne die Stimme zu heben)*  
+`05:39` **Märchen (frisch)** *(ruhig, langsam, ohne die Stimme zu heben)*  
 Drei sind, die da herrschen auf Erden: … die Weisheit, der Schein und die Gewalt.
 
 *Stille, 1.5 s*
 
-`05:48` **Essay (tragend)** *(warm, ruhig)*  
+`05:50` **Essay (tragend)** *(warm, ruhig)*  
 Bei jedem Wort steht ein König auf. Der gemischte aber sinkt in sich zusammen. … Goethe erzählt es mit einem Lächeln.
 
 *Stille, 0.6 s*
 
-`05:58` **Märchen (frisch)** *(amüsiert)*  
+`06:00` **Märchen (frisch)** *(amüsiert)*  
 Denn er sass nicht, er lag nicht, er lehnte sich nicht an, sondern er war unförmlich zusammengesunken.
 
 *Stille, 1.5 s*
 
-`06:08` **Essay (tragend)** *(warm, ruhig)*  
+`06:10` **Essay (tragend)** *(warm, ruhig)*  
 Steiner deutet die Könige als die drei Kräfte der Seele. Denken, Fühlen, Wollen. … Im Alltag sind sie ineinander gegossen wie der vierte König. Keine ist ganz frei. … Neunzehnhundertachtzehn schreibt er, was der Seele durch die drei zuteilwird.
 
 *Stille, 0.6 s*
 
-`06:29` **Steiner (weckend)** *(ruhig, klar)*  
+`06:31` **Steiner (weckend)** *(ruhig, klar)*  
 Die Macht, durch welche die Tugend wirkt, offenbart sich dem Willen. … Die Schönheit, der schöne Schein, offenbart sich dem Fühlen. … Die Weisheit offenbart sich dem Erkennen.
 
 *Stille, 2 s*
 
-`06:45` **Essay (tragend)** *(warm, ruhig)*  
+`06:46` **Essay (tragend)** *(warm, ruhig)*  
 Weisheit. Schein. Tugend. … Sechs Jahre später, in Dornach, schreibt er ein Mantram an die Tafel. Es spricht vom Kopf, vom Herzen und von den Gliedern. … Hören Sie, wie jede Strophe endet.
 
 *Stille, 1.5 s*
 
-`07:03` **Steiner (weckend)** *(klar, wach, langsam)*  
+`07:05` **Steiner (weckend)** *(klar, wach, langsam)*  
 Des Kopfes Geist, du kannst ihn wollen; und Wollen wird dir der Sinne vielgestaltig Himmelsweben; … du webest in der Weisheit.
 
 *Stille, 1.5 s*
 
-`07:16` **Steiner (weckend)** *(klar, wach, langsam)*  
+`07:17` **Steiner (weckend)** *(klar, wach, langsam)*  
 Des Herzens Seele, du kannst sie fühlen; und Fühlen wird dir des Denkens-Wollens, Wollens-Denkens keimerweckend Weltenleben; … du lebest in dem Scheine.
 
 *Stille, 1.5 s*
 
-`07:31` **Steiner (weckend)** *(klar, wach, langsam)*  
+`07:33` **Steiner (weckend)** *(klar, wach, langsam)*  
 Der Glieder Kraft, du kannst sie denken; und Denken wird dir des Wollens zielerfassend Menschenstreben; … du strebest in der Tugend.
 
 *Stille, 3 s*
 
-`07:46` **Essay (tragend)** *(ruhig, langsam)*  
+`07:47` **Essay (tragend)** *(ruhig, langsam)*  
 Weisheit. Schein. Tugend.
 
 *Stille, 2.5 s*
 
-`07:52` **Essay (tragend)** *(ruhig, langsam)*  
+`07:54` **Essay (tragend)** *(ruhig, langsam)*  
 Dieselben Worte.
 
 *Stille, 2.5 s*
 
-`07:56` **Essay (tragend)** *(warm, ruhig)*  
-Aus der Deutung eines Märchens ist ein Spruch geworden. Aus einem Bild eine Anrede. … Und etwas hat sich umgekehrt. Den Geist des Kopfes soll man wollen. Die Kraft der Glieder soll man denken. … So, sagt Steiner, ist es jenseits der Schwelle. Dort trennen sich die drei Kräfte. Der schlechte Guss hält nicht mehr. … Im Märchen ist das eine Szene, über die man lachen darf. Im Mantram ist es eine Übung, die man ernst nimmt.
+`07:58` **Essay (tragend)** *(warm, ruhig)*  
+Aus der Deutung eines Märchens ist ein Mantram geworden. Aus einem Bild eine Anrede. … Und etwas hat sich umgekehrt. Den Geist des Kopfes soll man wollen. Die Kraft der Glieder soll man denken. … So, sagt Steiner, ist es jenseits der Schwelle. Dort trennen sich die drei Kräfte. Der schlechte Guss hält nicht mehr. … Im Märchen ist das eine Szene, über die man lachen darf. Im Mantram ist es eine Übung, die man ernst nimmt.
 
 *Stille, 1.5 s*
 
@@ -202,7 +202,7 @@ Aus der Deutung eines Märchens ist ein Spruch geworden. Aus einem Bild eine Anr
 
 *Geräusch (16 s): a calm river by day, gentle current along a reedy bank, soft and close, no birds*
 
-`08:42` **Essay (tragend)** *(warm, ruhig)*  
+`08:43` **Essay (tragend)** *(warm, ruhig)*  
 Goethes Märchen ist um einen Fluss gebaut. Diesseits das Vertraute. Jenseits die schöne Lilie. … Wer sie berührt, stirbt. Und doch zieht sie alle an.
 
 *Stille, 1 s*
@@ -212,12 +212,12 @@ Goethes Märchen ist um einen Fluss gebaut. Diesseits das Vertraute. Jenseits di
 
 *Stille, 0.8 s*
 
-`09:16` **Märchen (frisch)** *(leise, traurig)*  
+`09:17` **Märchen (frisch)** *(leise, traurig)*  
 Ach! warum steht der Tempel nicht am Flusse! … Ach! warum ist die Brücke nicht gebaut!
 
 *Stille, 2 s*
 
-`09:25` **Essay (tragend)** *(warm, ruhig)*  
+`09:26` **Essay (tragend)** *(warm, ruhig)*  
 In Steiners Mantren ist der Fluss ein Abgrund. An seinem Rand steht eine ernste Gestalt, der Hüter der Schwelle. … Er hält zurück, wer unvorbereitet hinüber will. Und er sagt, was es braucht.
 
 *Stille, 0.8 s*
@@ -227,65 +227,65 @@ Erst wenn die drei von dir besiegt, werden Flügel deiner Seele wachsen, um den 
 
 *Stille, 2 s*
 
-`09:58` **Essay (tragend)** *(warm, ruhig)*  
+`09:59` **Essay (tragend)** *(warm, ruhig)*  
 Übersetzen. Dasselbe Wort wie beim Fährmann. … Und dieselbe Gefahr. Der Jüngling, der Lilie liebt, hält das Warten nicht mehr aus. Er stürzt auf sie zu. Ihre Berührung nimmt ihm das Bewusstsein, dann das Leben. … Steiner nennt ihn den «zur Unzeit» Berührten. Und der Hüter warnt:
 
 *Stille, 0.8 s*
 
-`10:21` **Steiner (weckend)** *(klar, wach, langsam)*  
+`10:22` **Steiner (weckend)** *(klar, wach, langsam)*  
 Doch du musst den Abgrund achten; sonst verschlingen seine Tiere dich, wenn du an mir vorübereilt'st.
 
 *Stille, 2 s*
 
-`10:30` **Essay (tragend)** *(warm, ruhig)*  
+`10:31` **Essay (tragend)** *(warm, ruhig)*  
 Gegen die Eile setzt das Märchen eine leise Weisheit. Der Alte mit der Lampe spricht sie aus.
 
 *Stille, 0.6 s*
 
-`10:38` **Märchen (frisch)** *(ruhig, warm)*  
+`10:39` **Märchen (frisch)** *(ruhig, warm)*  
 Ein Einzelner hilft nicht, sondern wer sich mit vielen zur rechten Stunde vereinigt. … Aufschieben wollen wir und hoffen.
 
 *Stille, 2 s*
 
-`10:49` **Essay (tragend)** *(warm, ruhig)*  
+`10:50` **Essay (tragend)** *(warm, ruhig)*  
 Um Mitternacht ist es so weit. Die Schlange hat einen Kreis um den toten Jüngling gelegt. … Sie tragen ihn über den Fluss. Am anderen Ufer fragt der Alte die Schlange, was sie beschlossen hat.
 
 *Stille, 2.5 s*
 
-`11:04` **Märchen (frisch)** *(leise, langsam)*  
+`11:05` **Märchen (frisch)** *(leise, langsam)*  
 Mich aufzuopfern, ehe ich aufgeopfert werde.
 
 *Stille, 3 s*
 
-`11:11` **Essay (tragend)** *(warm, ruhig)*  
+`11:12` **Essay (tragend)** *(warm, ruhig)*  
 Der Jüngling erwacht. Die Schlange zerfällt in tausend leuchtende Steine. Der Alte schüttet sie in den Fluss.
 
 *Geräusch (5 s): a handful of small glass-like gemstones gently falling into a calm river, soft splashes and tiny glittering ripples, quiet*
 
 *Stille, 1 s*
 
-`11:24` **Märchen (frisch)** *(leise)*  
+`11:26` **Märchen (frisch)** *(leise)*  
 Wie leuchtende und blinkende Sterne schwammen die Steine mit den Wellen hin. … Und man konnte nicht unterscheiden, ob sie sich in der Ferne verloren oder untersanken.
 
 *Stille, 2 s*
 
-`11:37` **Essay (tragend)** *(warm, ruhig)*  
+`11:39` **Essay (tragend)** *(warm, ruhig)*  
 Am Morgen steht dort eine Brücke. Ihre Pfeiler sind die Reste der Schlange. … Steiner hat diesen Augenblick in einen einzigen Satz gefasst. Er steht auf einer der Tafeln, die seine Stunden rahmen.
 
 *Stille, 0.8 s*
 
-`11:51` **Steiner (weckend)** *(klar, wach, langsam)*  
+`11:53` **Steiner (weckend)** *(klar, wach, langsam)*  
 Der Tod, er steht an des Weges Ende. … Ich will des Christus Wesen fühlen. … Es weckt in Stoffes-Sterben Geist-Geburt.
 
 *Stille, 2.5 s*
 
-`12:06` **Essay (tragend)** *(ruhig, langsam)*  
+`12:08` **Essay (tragend)** *(ruhig, langsam)*  
 Es weckt.
 
 *Stille, 1.5 s*
 
-`12:09` **Essay (tragend)** *(warm, ruhig)*  
-Das ist das Zeitwort dieser Sprüche. Sie wollen nicht belehren. Sie wollen wecken.
+`12:10` **Essay (tragend)** *(warm, ruhig)*  
+Das ist das Zeitwort dieser Mantren. Sie wollen nicht belehren. Sie wollen wecken.
 
 *Stille, 1.5 s*
 
@@ -295,77 +295,77 @@ Das ist das Zeitwort dieser Sprüche. Sie wollen nicht belehren. Sie wollen weck
 
 *Geräusch (18 s): early morning by a wide river, soft flowing water, a few distant birds, peaceful*
 
-`12:28` **Essay (tragend)** *(warm, ruhig)*  
+`12:29` **Essay (tragend)** *(warm, ruhig)*  
 Im aufgestiegenen Tempel führt der Alte den Jüngling zu den drei Königen. Jeder gibt ihm ein Zeichen. Und jeder sagt ein einziges Wort.
 
 *Stille, 0.8 s*
 
-`12:39` **Märchen (frisch)** *(ruhig, ohne die Stimme zu heben)*  
+`12:40` **Märchen (frisch)** *(ruhig, ohne die Stimme zu heben)*  
 Das Schwert an der Linken, die Rechte frei!
 
 *Stille, 1.2 s*
 
-`12:42` **Märchen (frisch)** *(ruhig, ohne die Stimme zu heben)*  
+`12:43` **Märchen (frisch)** *(ruhig, ohne die Stimme zu heben)*  
 Weide die Schafe!
 
 *Stille, 1.2 s*
 
-`12:45` **Märchen (frisch)** *(ruhig, ohne die Stimme zu heben)*  
+`12:46` **Märchen (frisch)** *(ruhig, ohne die Stimme zu heben)*  
 Erkenne das Höchste!
 
 *Stille, 1.5 s*
 
-`12:48` **Essay (tragend)** *(warm, ruhig)*  
+`12:49` **Essay (tragend)** *(warm, ruhig)*  
 Schwert, Szepter, Kranz. Goethe beschreibt genau, wo sie wirken. In den Gliedern, im Herzen, im Haupt. … Dieselbe Ordnung hat das Mantram vom Kopf, vom Herzen und von den Gliedern. … Im September vierundzwanzig schreibt Steiner mit roter Kreide quer über die Tafel:
 
 *Stille, 0.8 s*
 
-`13:10` **Steiner (weckend)** *(klar, wach, langsam)*  
+`13:12` **Steiner (weckend)** *(klar, wach, langsam)*  
 Tritt ein. … Das Tor ist geöffnet. … Du wirst ein wahrer Mensch werden.
 
 *Stille, 2.5 s*
 
-`13:20` **Essay (tragend)** *(warm, ruhig)*  
+`13:21` **Essay (tragend)** *(warm, ruhig)*  
 Gekrönt sieht der Jüngling sich um. Und er bemerkt, was den drei Königen fehlt.
 
 *Stille, 0.6 s*
 
-`13:26` **Märchen (frisch)** *(ruhig, warm)*  
+`13:28` **Märchen (frisch)** *(ruhig, warm)*  
 Du hast die vierte Kraft vergessen, die noch früher, allgemeiner, gewisser die Welt beherrscht: … die Kraft der Liebe.
 
 *Stille, 1.5 s*
 
-`13:37` **Märchen (frisch)** *(ruhig, warm)*  
+`13:38` **Märchen (frisch)** *(ruhig, warm)*  
 Die Liebe herrscht nicht, aber sie bildet, und das ist mehr.
 
 *Stille, 2.5 s*
 
-`13:45` **Essay (tragend)** *(warm, ruhig)*  
+`13:46` **Essay (tragend)** *(warm, ruhig)*  
 Sie bildet. … Vielleicht liegt darin das Geheimnis dieses langen Gesprächs. Ein Märchen wird nicht erklärt. Es bildet den, der es liest.
 
 *Stille, 1.5 s*
 
-`13:57` **Essay (tragend)** *(warm, ruhig)*  
+`13:58` **Essay (tragend)** *(warm, ruhig)*  
 Goethe erzählt am Ende von vielen. Ein ganzes Volk geht über die neue Brücke.
 
 *Stille, 0.5 s*
 
-`14:03` **Märchen (frisch)** *(ruhig, lebendig)*  
+`14:04` **Märchen (frisch)** *(ruhig, lebendig)*  
 Und bis auf den heutigen Tag wimmelt die Brücke von Wanderern, und der Tempel ist der besuchteste auf der ganzen Erde.
 
 *Stille, 1.5 s*
 
-`14:12` **Essay (tragend)** *(warm, ruhig)*  
+`14:13` **Essay (tragend)** *(warm, ruhig)*  
 Steiners Mantren enden bei einem Einzelnen. Er spricht die höchsten Engelwesen der alten Überlieferung an. Seraphim, Cherubim, Throne. … Und er sagt:
 
 *Stille, 0.8 s*
 
-`14:25` **Steiner (weckend)** *(klar, wach, langsam)*  
+`14:26` **Steiner (weckend)** *(klar, wach, langsam)*  
 Seraphisch Feuermächte, aus meinem Herzen strahlet ihr. … Cherubinisch Bildekräfte, in meinem Haupte scheinet ihr. … Der Throne Traggewalten, in meinen Gliedern kraftet ihr. … Mein Ich ist Ihr.
 
 *Stille, 2.5 s*
 
-`14:47` **Essay (tragend)** *(warm, ruhig)*  
+`14:48` **Essay (tragend)** *(warm, ruhig)*  
 Viele auf der Brücke. Einer, der die Brücke in sich baut. … Zwei Enden desselben Weges. Dazwischen hundertneunundzwanzig Jahre. Und ein Leser, der nie aufgehört hat, zu fragen.
 
 *Stille, 2 s*
@@ -375,7 +375,7 @@ Was ist herrlicher als Gold? … Das Licht. … Was ist erquicklicher als Licht?
 
 *Stille, 3 s*
 
-`15:15` **Essay (tragend)** *(ruhig, langsam)*  
+`15:16` **Essay (tragend)** *(ruhig, langsam)*  
 Das Gespräch.
 
 *Stille, 3.5 s*
@@ -384,6 +384,6 @@ Das Gespräch.
 
 *Musik (Cello und Harfe): Thema, Schluss*
 
-`15:24` **Ansage** *(ruhig)*  
-«Was ist erquicklicher als Licht?» Goethes Märchen und die Mantren Rudolf Steiners. Ein Hör-Essay. … Die Zitate folgen Goethes Ausgabe letzter Hand, der Lesefassung der Mantren von zweitausendvierundzwanzig und Steiners Gesamtausgabe. … Idee, Auftrag und Redaktion: Philipp Tok. Text und Produktion: Claude, ein Sprachmodell von Anthropic. Stimmen, Musik und Geräusche: ElevenLabs. … Die Stimmen sind synthetisch. Sie lesen Zitate und ahmen niemanden nach.
+`15:25` **Ansage** *(ruhig)*  
+«Was ist erquicklicher als Licht?» Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. Ein Hör-Essay. … Die Zitate folgen Goethes Ausgabe letzter Hand, der Lesefassung der Mantren von zweitausendvierundzwanzig und Steiners Gesamtausgabe. … Idee, Auftrag und Redaktion: Philipp Tok. Text und Produktion: Claude, ein Sprachmodell von Anthropic. Stimmen, Musik und Geräusche: ElevenLabs. … Die Stimmen sind synthetisch. Sie lesen Zitate und ahmen niemanden nach.
 

@@ -24,7 +24,7 @@ MODELL = 'eleven_v4'
 STIMMEN = {
     'ERZÄHLERIN': 'nzC30P1U2LuQhAoEQcYi',  # NWR Erzählerin
     'CHRONIST': 'IcDVpTMW6YwgOc2vCZgG',    # NWR Chronist
-    'GOETHE': 'hMURwqm1rkRSDLdNzQCM',      # Märchen-Erzähler
+    'GOETHE': 'jhhOoZ28WmHOJDBuCSGG',      # Märchen-Erzählerin, die Stimme der Textprobe (Wunsch 9. 10. 2026)
     'STEINER': 'NBqeXKdZHweef6y0B67V',     # Christian Plasa
     'MANTRA': '6dD0VbyJ548lcuDpD5ew',      # Märchen-Leise
 }
@@ -372,7 +372,7 @@ def mischen(ausgabe):
             f'measured_LRA={j["input_lra"]}:measured_thresh={j["input_thresh"]}:offset={j["target_offset"]}:linear=true')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', wav + '.raw',
                     '-af', filt + ',aresample=44100', '-c:a', 'libmp3lame', '-b:a', '160k',
-                    '-metadata', 'title=' + (_konf['titel'] if STUECK != 'manuskript' else '«Es ist an der Zeit» – Goethes Märchen und die Mantren Rudolf Steiners'),
+                    '-metadata', 'title=' + (_konf['titel'] if STUECK != 'manuskript' else '«Es ist an der Zeit» – Goethes Märchen und Rudolf Steiners mantrisches Spätwerk'),
                     '-metadata', 'artist=Sätzerei', '-metadata', 'comment=Synthetische Stimmen (ElevenLabs). Text und Produktion: Claude (Anthropic).',
                     ausgabe], check=True)
     os.remove(wav + '.raw')

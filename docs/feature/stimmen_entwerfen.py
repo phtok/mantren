@@ -22,8 +22,8 @@ ROLLEN = {
                         'cultural radio essayist. Calm and unhurried, elevated yet natural and personal, never pompous, '
                         'with gentle pauses between thoughts. Close, intimate microphone.',
         'text': 'Das Gespräch. Höher als das Gold. Höher als das Licht. Dieser Essay folgt einem Gespräch, das '
-                'hundertneunundzwanzig Jahre umspannt. Es führt von Goethes Märchen zu den Sprüchen, die Rudolf '
-                'Steiner am Ende seines Lebens an eine Tafel schrieb. Rudolf Steiner hat dieses Märchen nie '
+                'hundertneunundzwanzig Jahre umspannt. Es führt von Goethes Märchen zu Rudolf Steiners mantrischem '
+                'Spätwerk, zu den Mantren, die er am Ende seines Lebens an eine Tafel schrieb. Rudolf Steiner hat dieses Märchen nie '
                 'losgelassen. Mit dreissig spricht er darüber in Wien, vor dem Goethe-Verein.',
     },
     'MÄRCHEN': {

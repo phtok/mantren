@@ -1,4 +1,4 @@
-# «Was ist erquicklicher als Licht?» — Goethes Märchen und die Mantren Rudolf Steiners
+# «Was ist erquicklicher als Licht?» — Goethes Märchen und Rudolf Steiners mantrisches Spätwerk
 # Ein Hör-Essay. Regie-Liste wie beim Feature (ROLLE|Text · STILLE · MUSIK · GERÄUSCH).
 # Stimmen: ESSAY (tragend) · MÄRCHEN (frisch) · STEINER (weckend; Prosa und Mantren) · ANSAGE
 # Leitwort, dreimal: «Das Gespräch.»
@@ -19,10 +19,10 @@ MÄRCHEN|[ruhig] Wo kommst du her?[Pause] Aus den Klüften, versetzte die Schlan
 STILLE|1.5 s
 MÄRCHEN|[ruhig, langsam] Das Gespräch,[Atem] antwortete diese.
 STILLE|2.5 s
-ESSAY|[warm, ruhig] Das Gespräch.[Pause] Höher als das Gold.[Atem] Höher als das Licht.[Pause] Dieser Essay folgt einem Gespräch, das hundertneunundzwanzig Jahre umspannt.[Atem] Es führt von Goethes Märchen zu den Sprüchen,[Atem] die Rudolf Steiner am Ende seines Lebens an eine Tafel schrieb.
+ESSAY|[warm, ruhig] Das Gespräch.[Pause] Höher als das Gold.[Atem] Höher als das Licht.[Pause] Dieser Essay folgt einem Gespräch, das hundertneunundzwanzig Jahre umspannt.[Atem] Es führt von Goethes Märchen zu Rudolf Steiners mantrischem Spätwerk.[Atem] Zu den Mantren, die er am Ende seines Lebens an eine Tafel schrieb.
 STILLE|1.5 s
 MUSIK|Thema, frei 8 s
-ANSAGE|[ruhig] «Was ist erquicklicher als Licht?»[Pause] Goethes Märchen und die Mantren Rudolf Steiners.[Pause] Ein Hör-Essay.
+ANSAGE|[ruhig] «Was ist erquicklicher als Licht?»[Pause] Goethes Märchen und Rudolf Steiners mantrisches Spätwerk.[Pause] Ein Hör-Essay.
 MUSIK|Thema, frei 5 s
 MUSIK|Thema aus
 
@@ -36,13 +36,13 @@ STEINER|[ruhig, klar] Und in diesem Vortrag wurde ich in Anknüpfung an das Mär
 STILLE|1.5 s
 ESSAY|[warm, ruhig] Ganz esoterisch.[Atem] Das heisst bei Steiner: nicht mehr über das Geistige reden,[Atem] sondern in Worten, die aus ihm geprägt sind.[Pause] Das Märchen war ihm die Tür dazu.
 STILLE|1.5 s
-ESSAY|[warm, ruhig] Mit dreiundsechzig steht er in Dornach bei Basel an einer Wandtafel.[Atem] Das Goetheanum, sein grosser Bau aus Holz, ist verbrannt.[Pause] In der Schreinerei daneben hält er neunzehn Stunden für eine neu gegründete Schule.[Atem] In jeder schreibt er Sprüche an die Tafel.[Atem] Er nennt sie Mantren.
+ESSAY|[warm, ruhig] Mit dreiundsechzig steht er in Dornach bei Basel an einer Wandtafel.[Atem] Das Goetheanum, sein grosser Bau aus Holz, ist verbrannt.[Pause] In der Schreinerei daneben hält er neunzehn Stunden für eine neu gegründete Schule.[Atem] In jeder schreibt er Mantren an die Tafel.
 GERÄUSCH|chalk writing slowly on an old blackboard in a quiet wooden hall, soft, intimate, 7 s
-ESSAY|[warm, ruhig] Sprüche zum Meditieren.[Atem] Sie erklären nichts.[Atem] Sie sprechen den Menschen an.[Atem] Mit Du.
+ESSAY|[warm, ruhig] Mantren sind Worte zum Meditieren.[Atem] Sie erklären nichts.[Atem] Sie sprechen den Menschen an.[Atem] Mit Du.
 STILLE|1 s
 STEINER|[klar, wach, langsam] O Mensch, erkenne dich selbst![Pause] So tönt das Weltenwort.
 STILLE|2 s
-ESSAY|[ruhig] Woher kommen diese Sprüche?[Pause] In der sechsten Stunde nennt Steiner die Voraussetzung, um sie zu hören:
+ESSAY|[ruhig] Woher kommen diese Mantren?[Pause] In der sechsten Stunde nennt Steiner die Voraussetzung, um sie zu hören:
 STILLE|0.6 s
 STEINER|[ruhig, klar] Dass dasjenige, was hier gesagt wird, die Unterweisung des Hüters der Schwelle selber ist,[Atem] entstanden unmittelbar aus dem,[Atem] was man im Gespräche mit dem Hüter erhalten kann.
 STILLE|2 s
@@ -82,7 +82,7 @@ ESSAY|[ruhig, langsam] Weisheit.[Atem] Schein.[Atem] Tugend.
 STILLE|2.5 s
 ESSAY|[ruhig, langsam] Dieselben Worte.
 STILLE|2.5 s
-ESSAY|[warm, ruhig] Aus der Deutung eines Märchens ist ein Spruch geworden.[Atem] Aus einem Bild eine Anrede.[Pause] Und etwas hat sich umgekehrt.[Atem] Den Geist des Kopfes soll man wollen.[Atem] Die Kraft der Glieder soll man denken.[Pause] So, sagt Steiner, ist es jenseits der Schwelle.[Atem] Dort trennen sich die drei Kräfte.[Atem] Der schlechte Guss hält nicht mehr.[Pause] Im Märchen ist das eine Szene, über die man lachen darf.[Atem] Im Mantram ist es eine Übung, die man ernst nimmt.
+ESSAY|[warm, ruhig] Aus der Deutung eines Märchens ist ein Mantram geworden.[Atem] Aus einem Bild eine Anrede.[Pause] Und etwas hat sich umgekehrt.[Atem] Den Geist des Kopfes soll man wollen.[Atem] Die Kraft der Glieder soll man denken.[Pause] So, sagt Steiner, ist es jenseits der Schwelle.[Atem] Dort trennen sich die drei Kräfte.[Atem] Der schlechte Guss hält nicht mehr.[Pause] Im Märchen ist das eine Szene, über die man lachen darf.[Atem] Im Mantram ist es eine Übung, die man ernst nimmt.
 STILLE|1.5 s
 MUSIK|Thema, Brücke 7 s
 
@@ -122,7 +122,7 @@ STEINER|[klar, wach, langsam] Der Tod, er steht an des Weges Ende.[Pause] Ich wi
 STILLE|2.5 s
 ESSAY|[ruhig, langsam] Es weckt.
 STILLE|1.5 s
-ESSAY|[warm, ruhig] Das ist das Zeitwort dieser Sprüche.[Atem] Sie wollen nicht belehren.[Atem] Sie wollen wecken.
+ESSAY|[warm, ruhig] Das ist das Zeitwort dieser Mantren.[Atem] Sie wollen nicht belehren.[Atem] Sie wollen wecken.
 STILLE|1.5 s
 MUSIK|Thema, Brücke 7 s
 
@@ -167,4 +167,4 @@ STILLE|3.5 s
 ## SCHLUSS
 
 MUSIK|Thema, Schluss
-ANSAGE|[ruhig] «Was ist erquicklicher als Licht?»[Atem] Goethes Märchen und die Mantren Rudolf Steiners.[Atem] Ein Hör-Essay.[Pause] Die Zitate folgen Goethes Ausgabe letzter Hand,[Atem] der Lesefassung der Mantren von zweitausendvierundzwanzig[Atem] und Steiners Gesamtausgabe.[Pause] Idee, Auftrag und Redaktion: Philipp Tok.[Atem] Text und Produktion: Claude, ein Sprachmodell von Anthropic.[Atem] Stimmen, Musik und Geräusche: ElevenLabs.[Pause] Die Stimmen sind synthetisch.[Atem] Sie lesen Zitate und ahmen niemanden nach.
+ANSAGE|[ruhig] «Was ist erquicklicher als Licht?»[Atem] Goethes Märchen und Rudolf Steiners mantrisches Spätwerk.[Atem] Ein Hör-Essay.[Pause] Die Zitate folgen Goethes Ausgabe letzter Hand,[Atem] der Lesefassung der Mantren von zweitausendvierundzwanzig[Atem] und Steiners Gesamtausgabe.[Pause] Idee, Auftrag und Redaktion: Philipp Tok.[Atem] Text und Produktion: Claude, ein Sprachmodell von Anthropic.[Atem] Stimmen, Musik und Geräusche: ElevenLabs.[Pause] Die Stimmen sind synthetisch.[Atem] Sie lesen Zitate und ahmen niemanden nach.

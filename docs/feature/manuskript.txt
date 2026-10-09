@@ -1,4 +1,4 @@
-# «Es ist an der Zeit» — Goethes Märchen und die Mantren Rudolf Steiners
+# «Es ist an der Zeit» — Goethes Märchen und Rudolf Steiners mantrisches Spätwerk
 # Ein Feature. Regie-Liste: ROLLE|Text · STILLE|n s · MUSIK|… · GERÄUSCH|<englischer Prompt>, n s
 # Rollen: ERZÄHLERIN · CHRONIST · GOETHE (Zitatorin/Zitator Märchen) · STEINER (Zitator Prosa) · MANTRA
 # [Atem] = 550 ms, [Pause] = 1100 ms. Stimmungs-Tags werden für eleven_v4 übersetzt.
@@ -14,7 +14,7 @@ GOETHE|[ruhig] Mitten in der Nacht weckten ihn einige laute Stimmen.[Atem] Er h�
 STILLE|2 s
 MANTRA|[leise, langsam] Werden Flügel deiner Seele wachsen,[Atem] um den Abgrund zu übersetzen.
 STILLE|2 s
-ERZÄHLERIN|[ruhig] Zwei Texte.[Pause] Der eine ist ein Märchen.[Atem] Goethe schreibt es siebzehnhundertfünfundneunzig.[Pause] Der andere ist eine Reihe von Sprüchen.[Atem] Rudolf Steiner schreibt sie neunzehnhundertvierundzwanzig an eine Wandtafel.[Pause] Zwischen ihnen liegen hundertneunundzwanzig Jahre.[Pause] In beiden will jemand über ein Wasser,[Atem] über das man nicht gehen kann.
+ERZÄHLERIN|[ruhig] Zwei Texte.[Pause] Der eine ist ein Märchen.[Atem] Goethe schreibt es siebzehnhundertfünfundneunzig.[Pause] Der andere ist Rudolf Steiners mantrisches Spätwerk.[Atem] Steiner schreibt es neunzehnhundertvierundzwanzig an eine Wandtafel.[Pause] Zwischen ihnen liegen hundertneunundzwanzig Jahre.[Pause] In beiden will jemand über ein Wasser,[Atem] über das man nicht gehen kann.
 STILLE|1.5 s
 GOETHE|[ruhig] Ich weiss das vierte, sagte die Schlange,[Atem] näherte sich dem Alten und zischte ihm etwas ins Ohr.[Pause] [ohne die Stimme zu heben] Es ist an der Zeit![Atem] rief der Alte mit gewaltiger Stimme.
 STILLE|2.5 s
@@ -22,7 +22,7 @@ STILLE|2.5 s
 ## TITEL
 
 MUSIK|Thema, frei 8 s
-CHRONIST|[sachlich] «Es ist an der Zeit».[Pause] Goethes Märchen und die Mantren Rudolf Steiners.[Pause] Ein Feature.
+CHRONIST|[sachlich] «Es ist an der Zeit».[Pause] Goethes Märchen und Rudolf Steiners mantrisches Spätwerk.[Pause] Ein Feature.
 MUSIK|Thema, frei 5 s
 MUSIK|Thema aus
 ERZÄHLERIN|[ruhig] In Goethes Märchen fällt ein Satz dreimal.[Atem] Es ist an der Zeit.[Pause] Eine Frau namens Lilie muss ihn dreimal hören.[Atem] Erst dann geschieht, worauf alle warten.[Pause] Achten Sie auf diesen Satz.
@@ -56,7 +56,7 @@ ERZÄHLERIN|[ruhig] Neunzehnhundertzehn schreibt er ein Drama.[Atem] «Die Pfort
 STILLE|1 s
 CHRONIST|[sachlich] Dornach.[Atem] Februar bis August neunzehnhundertvierundzwanzig.
 GERÄUSCH|chalk writing slowly on an old blackboard in a quiet wooden hall, soft, intimate, 7 s
-ERZÄHLERIN|[ruhig] Das erste Goetheanum ist abgebrannt.[Atem] Steiner spricht in der Schreinerei daneben.[Pause] Er hat eine Hochschule gegründet.[Atem] Von drei geplanten Klassen kommt nur die erste zustande.[Pause] Neunzehn Stunden hält er.[Atem] In jeder schreibt er Sprüche an die Tafel.[Atem] Er nennt sie Mantren.[Pause] Sie sind zum Meditieren gemacht, nicht zum Lesen.[Atem] Und sie sprechen den Menschen mit Du an.
+ERZÄHLERIN|[ruhig] Das erste Goetheanum ist abgebrannt.[Atem] Steiner spricht in der Schreinerei daneben.[Pause] Er hat eine Hochschule gegründet.[Atem] Von drei geplanten Klassen kommt nur die erste zustande.[Pause] Neunzehn Stunden hält er.[Atem] In jeder schreibt er Mantren an die Tafel.[Pause] Sie sind zum Meditieren gemacht, nicht zum Lesen.[Atem] Und sie sprechen den Menschen mit Du an.
 STILLE|1 s
 ERZÄHLERIN|[ruhig] Meist spricht in ihnen eine Gestalt am Rand eines Abgrunds.[Atem] Der Hüter der Schwelle.
 STILLE|1 s
@@ -229,4 +229,4 @@ STILLE|3 s
 ## SCHLUSS
 
 MUSIK|Thema, Schluss
-CHRONIST|[sachlich] «Es ist an der Zeit».[Atem] Goethes Märchen und die Mantren Rudolf Steiners.[Pause] Die Zitate folgen Goethes Ausgabe letzter Hand,[Atem] der Lesefassung der Mantren von zweitausendvierundzwanzig[Atem] und Steiners Gesamtausgabe.[Pause] Idee, Auftrag und Redaktion: Philipp Tok.[Atem] Recherche, Text und Produktion: Claude, ein Sprachmodell von Anthropic.[Atem] Stimmen, Musik und Geräusche: ElevenLabs.[Pause] Die Stimmen sind synthetisch.[Atem] Sie lesen Zitate,[Atem] sie ahmen niemanden nach.
+CHRONIST|[sachlich] «Es ist an der Zeit».[Atem] Goethes Märchen und Rudolf Steiners mantrisches Spätwerk.[Pause] Die Zitate folgen Goethes Ausgabe letzter Hand,[Atem] der Lesefassung der Mantren von zweitausendvierundzwanzig[Atem] und Steiners Gesamtausgabe.[Pause] Idee, Auftrag und Redaktion: Philipp Tok.[Atem] Recherche, Text und Produktion: Claude, ein Sprachmodell von Anthropic.[Atem] Stimmen, Musik und Geräusche: ElevenLabs.[Pause] Die Stimmen sind synthetisch.[Atem] Sie lesen Zitate,[Atem] sie ahmen niemanden nach.
