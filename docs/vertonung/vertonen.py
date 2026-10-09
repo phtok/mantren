@@ -211,6 +211,79 @@ VORLAGEN += [
            ['upright piano, cabaret', 'muted trumpet', 'clarinet', 'recorded in a small theatre'], 'F minor', '72 BPM, slow tango feel',
            haltung=['the singer serves the text', 'lyrics in German, every word intelligible']),
 ]
+# ---------------------------------------------------------------- Figuren (Runde 4, 9. 10. 2026)
+# Rückmeldung auf Runde 2 und 3: Gesang, nicht Sprechen. Nähe und tonale Objektivität. Kein Pathos,
+# keine Sentimentalität. Drei Figurenarten: der Hüter (erkennbar, eine grosse Seele in der Stimme —
+# die Jazzerin ohne Klischee), der Mensch (in Nuancen und Gesten), die Engel/Götter (aus anderen
+# Welten; die Chöre bleiben den späteren Stunden vorbehalten). Pausen für den Sinn (Lehre aus 9).
+HUETERIN = ['a mature contralto with jazz-trained phrasing: exact pitch, dark warm timbre, flexible conversational timing, a big soul serving the text',
+            'no smoky-bar cliché, no scoops, no breathiness, no swing']
+MENSCH = ['a plain male voice, close and personal, tonally exact, like a person speaking in song',
+          'the persona present and serving, never self-absorbed, the voice used like an instrument']
+ANDERE_WELT = ['a single high clear voice from another world, glassy, with a microtonal shimmer around it', 'not a choir',
+               'weightless, precise, strange']
+PAUSEN = ['a rest after every line, the accompaniment waits', 'unhurried: the sense of each line lands before the next']
+
+
+def studie(nr, slug, titel, figur, ansatz, stimme, tonart, tempo, teile, vor=3, nach=4, instrumente=None, ref=None):
+    """Kurze Studie: Vorspiel 3 s, Textabschnitte, Nachspiel 4 s. teile: (Name, Quelle, Dauer, Stile[, Regie])."""
+    instrumente = instrumente or (teile[0][3] if teile else [])
+    t = [('Eingang', None, vor, instrumente + ['instrumental introduction, brief'], [], '')]
+    for teil in teile:
+        name, quelle, dauer, stile = teil[:4]
+        t.append((name, quelle, dauer, stile + PAUSEN, [], teil[4] if len(teil) > 4 else ''))
+    t.append(('Ausgang', None, nach, instrumente + ['instrumental ending, brief'], [], ''))
+    return {'nr': nr, 'slug': slug, 'titel': titel, 'text': figur, 'ansatz': ansatz, 'stimme': stimme,
+            'tonart': tonart, 'tempo': tempo, 'teile': t, 'ref': ref}
+
+
+TINT = ['tintinnabuli: the voice moves stepwise, a viola sounds only the notes of one triad', 'a single bell', 'piano, single notes left to ring']
+VORLAGEN += [
+    studie(23, 'weltenwort', 'Weltenwort', 'Hüter · Erste Tafel',
+           'Der Hüter als Weltenwort: Tintinnabuli (Stimme schrittweise, Bratsche auf dem Dreiklang, eine Glocke), eine Pause nach jeder Zeile.',
+           HUETERIN, 'A minor', 'very slow', [('Weltenwort', ('erste-tafel', 0, 0, 8), 44, TINT)]),
+    studie(24, 'abgrund', 'Am Abgrund', 'Hüter · 1.4',
+           'Der Hüter am Abgrund: ein Solocello wie in einer Suite, die Stimme im Kontrapunkt dazu.',
+           HUETERIN, 'E minor', 'sarabande, slow', [('Der Abgrund', ('1.4', 0), 36, ['solo cello like a Baroque suite sarabande', 'the voice in counterpoint with the cello line', 'nothing else'])]),
+    studie(25, 'erstes-tier', 'Das erste Tier', 'Hüter · 1.4',
+           'Die Beschreibung des Tiers aus liebevollem Interesse: ein Klavier-Ostinato, das den inneren Raum langsam weitet; Aufmerksamkeit statt Gefühl.',
+           HUETERIN, 'D minor', '66 BPM', [('Das erste Tier', ('1.4', 1), 40, ['felt piano ostinato that slowly widens the inner space', 'patient, attentive tone, describing a frightened creature with care', 'warm, exact, never sentimental'])]),
+    studie(26, 'ruhesterne', 'O Mensch', 'Hüter · 9.1',
+           'Die Lehre des Hüters mit dem Ruf «O Mensch»: jeder Ruf anders verziert (Melisma), sparsame Palmas, sauberer Subbass, sonst leer.',
+           HUETERIN, 'E Phrygian', '70 BPM', [('Erde und Wasser', [('9.1', 1), ('9.1', 2)], 28, ['melisma on «O Mensch», each call ornamented differently', 'sparse palmas handclaps', 'deep clean sub bass', 'otherwise empty space']),
+                                              ('Luft und Feuer', [('9.1', 3), ('9.1', 4)], 28, ['melisma on «O Mensch»', 'sparse palmas handclaps', 'deep clean sub bass', 'the space fills a little'])]),
+    studie(27, 'wo-ist', 'Wo ist der Erde Festigkeit', 'Hüter und Mensch · 14.1',
+           'Der Hüter fragt, die Seele antwortet dreifach in einer Stimme: christlich schlicht und offen, luziferisch hoch und zu schön, ahrimanisch hart und hämmernd.',
+           HUETERIN, 'B minor', 'slow', [('Die Frage', ('14.1', 0), 12, ['string quartet sustained'] + HUETERIN),
+                                        ('Christus', ('14.1', 2), 10, MENSCH + ['plain, warm, straight tone, open vowels', 'string quartet sustained']),
+                                        ('Luzifer', ('14.1', 3), 10, MENSCH + ['the same voice now high, airy, ornamented, sweet, floating upward, slightly too beautiful', 'glass harmonica']),
+                                        ('Ahriman', ('14.1', 4), 10, MENSCH + ['the same voice now low, clipped, percussive, hard consonants, hammering rhythm', 'col legno strings'])],
+           instrumente=['string quartet sustained']),
+    studie(28, 'ich-trat', 'Ich trat in diese Sinnes-Welt', 'Mensch · Dritte Tafel',
+           'Der Mensch als Ich: Choralharmonik am Klavier, ein Akkord je Zeile, die Stimme obenauf; Nähe und tonale Objektivität.',
+           MENSCH, 'G major', 'chorale, slow', [('Ich trat', ('dritte-tafel', 0), 46, ['four-part chorale harmony on piano, one chord per line, the voice on top', 'clear cadences', 'syllabic: one note per syllable, the words exactly as written'])]),
+    studie(29, 'hat-verstanden', 'Hat verstanden dein Geist?', 'Hüter und Ich · 16.2',
+           'Zwiegespräch: der Hüter fragt über Harmonium und Cello (der Klang aus Vorlage 2), das Ich antwortet über Klavierakkorden.',
+           HUETERIN, 'D Dorian', 'free, speech rhythm',
+           [('Frage 1', ('16.2', 0), 7, HUETERIN + ['Indian harmonium drone', 'cello sustained']),
+            ('Antwort 1', ('16.2', 1), 16, MENSCH + ['piano chords, sparse']),
+            ('Frage 2', ('16.2', 2), 7, HUETERIN + ['Indian harmonium drone', 'cello sustained']),
+            ('Antwort 2', ('16.2', 3), 16, MENSCH + ['piano chords, sparse']),
+            ('Frage 3', ('16.2', 4), 7, HUETERIN + ['Indian harmonium drone', 'cello sustained']),
+            ('Antwort 3', ('16.2', 5), 16, MENSCH + ['piano chords, sparse', 'the harmonium returns under the last line'])],
+           instrumente=['Indian harmonium drone', 'cello sustained']),
+    studie(30, 'empfinde', 'Empfinde, wie wir empfinden', 'Hüter und Engel · 15.1',
+           'Der Hüter fragt; Angeloi, Archangeloi, Archai antworten in einer einzigen hohen Stimme aus einer anderen Welt, jede Hierarchie eine Stufe höher; Glasharmonika, gestrichene Crotales.',
+           HUETERIN, 'F sharp, open', 'no pulse',
+           [('Die Frage', ('15.1', 0), 9, HUETERIN + ['glass harmonica', 'bowed crotales']),
+            ('Angeloi', ('15.1', 2), 9, ANDERE_WELT + ['glass harmonica', 'bowed crotales']),
+            ('Archangeloi', ('15.1', 3), 9, ANDERE_WELT + ['a step higher', 'glass harmonica']),
+            ('Archai', ('15.1', 4), 9, ANDERE_WELT + ['another step higher, at the edge of hearing', 'bowed crotales'])],
+           instrumente=['glass harmonica', 'bowed crotales']),
+    studie(31, 'feuermaechte', 'Mein Ich ist IHR', 'Mensch · 19+',
+           'Der Mensch vor den Hierarchien: Klavier und Streicher schwellen langsam, strahlend und doch schlicht, sakral ohne Pathos.',
+           MENSCH, 'E major', 'slow', [('Feuermächte', ('19+', 0), 42, ['piano and strings slowly swelling', 'radiant but plain', 'sacral without pathos', 'the last line held long'])], nach=5),
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
@@ -222,12 +295,14 @@ def mantren_laden():
 
 
 def zeilen(mantren, quelle):
+    if isinstance(quelle, list):
+        return [z for q in quelle for z in zeilen(mantren, q)]
     mid, teil = quelle[0], quelle[1]
     lines = mantren[mid]['parts'][teil]['lines']
     if len(quelle) == 4:
         lines = lines[quelle[2]:quelle[3]]
     # Der Gesang braucht keine Gedankenstriche und Schrägstriche; Wortlaut bleibt.
-    return [re.sub(r'\s*/\s*', ', ', z.replace('–', '').replace('  ', ' ')).strip() for z in lines]
+    return [re.sub(r'\s*/\s*', ', ', z.lstrip('/').replace('–', '').replace('  ', ' ')).strip() for z in lines]
 
 
 def plan(nr, mantren=None):
@@ -248,6 +323,14 @@ def plan(nr, mantren=None):
             nicht.append('vocals')
         chunks.append({'text': text, 'duration_ms': int(dauer * 1000), 'positive_styles': stile[:50],
                        'negative_styles': nicht[:50], 'context_adherence': 'high'})
+    if v.get('ref'):   # (Vorlage-Nr, von s, bis s[, Stärke]): Klang und Stimme dieser Passage weitertragen
+        nr_ref, von, bis = v['ref'][:3]
+        sid = song_id(nr_ref, mantren)
+        if sid:
+            chunks[0]['conditioning_ref'] = {'song_id': sid, 'range': {'start_ms': int(von * 1000), 'end_ms': int(bis * 1000)}}
+            chunks[0]['condition_strength'] = v['ref'][3] if len(v['ref']) > 3 else 'high'
+        else:
+            print(f'  Hinweis: Vorlage {nr_ref} ist nicht gespeichert (kein song_id), Referenz entfällt')
     for c in chunks:
         for z in c['text'].split('\n'):
             assert len(z) <= 200, z
@@ -261,7 +344,7 @@ def dauer_s(p):
 
 
 # ---------------------------------------------------------------- ElevenLabs
-def anfrage(pfad, koerper=None, binaer=False, versuche=4, methode=None, roh=None, kopf=None):
+def anfrage(pfad, koerper=None, binaer=False, versuche=4, methode=None, roh=None, kopf=None, mit_kopf=False):
     key = os.environ['XI_KEY']
     for v in range(versuche):
         daten = roh if roh is not None else (json.dumps(koerper).encode() if koerper is not None else None)
@@ -271,6 +354,8 @@ def anfrage(pfad, koerper=None, binaer=False, versuche=4, methode=None, roh=None
         try:
             with urllib.request.urlopen(req, timeout=900) as r:
                 aus = r.read()
+                if mit_kopf:
+                    return dict(r.headers), aus
                 return aus if binaer else json.loads(aus)
         except urllib.error.HTTPError as e:
             text = e.read().decode('utf8', 'replace')[:600]
@@ -285,6 +370,33 @@ def schluessel(p):
     return hashlib.sha1(json.dumps(p, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:16]
 
 
+def multipart(kopf, body):
+    """multipart/mixed des detailed-Endpunkts: JSON-Teil und Audio-Teil."""
+    ct = next((w for h, w in kopf.items() if h.lower() == 'content-type'), '')
+    if 'boundary=' not in ct:
+        return None, body
+    grenze = ct.split('boundary=')[1].split(';')[0].strip('"').encode()
+    meta, audio = None, None
+    for teil in body.split(b'--' + grenze)[1:]:
+        if teil.strip() in (b'', b'--'):
+            continue
+        h, _, inhalt = teil.partition(b'\r\n\r\n')
+        inhalt = inhalt.rstrip(b'\r\n')
+        if b'application/json' in h:
+            meta = json.loads(inhalt)
+        else:
+            audio = inhalt
+    return meta, audio
+
+
+def song_id(nr, mantren):
+    k = schluessel(plan(nr, mantren))
+    pf = os.path.join(CACHE, f'mus_{k}.plan.json')
+    if not os.path.exists(pf):
+        return None
+    return json.load(open(pf)).get('song_id')
+
+
 def bauen(nr, mantren):
     v = VORLAGE[nr]
     p = plan(nr, mantren)
@@ -295,9 +407,15 @@ def bauen(nr, mantren):
     if not os.path.exists(roh):
         print(f'Vorlage {nr} «{v["titel"]}»: {len(p["chunks"])} Abschnitte, {dauer_s(p):.0f} s — erzeuge …', flush=True)
         t0 = time.time()
-        daten = anfrage(f'/v1/music?output_format={FORMAT}', {'composition_plan': p, 'model_id': MODELL}, binaer=True)
+        kopf, body = anfrage(f'/v1/music/detailed?output_format={FORMAT}',
+                             {'composition_plan': p, 'model_id': MODELL, 'store_for_inpainting': True}, mit_kopf=True)
+        meta, daten = multipart(kopf, body)
         open(roh, 'wb').write(daten)
-        json.dump(p, open(os.path.join(CACHE, f'mus_{k}.plan.json'), 'w'), ensure_ascii=False, indent=1)
+        sid = next((w for h, w in kopf.items() if 'song' in h.lower() and 'id' in h.lower()), None)
+        json.dump({'plan': p, 'song_id': sid, 'meta': meta}, open(os.path.join(CACHE, f'mus_{k}.plan.json'), 'w'),
+                  ensure_ascii=False, indent=1)
+        if not sid:
+            print(f'  Hinweis: kein song_id in den Kopfzeilen: {sorted(kopf)}')
         print(f'  {len(daten) / 1e6:.1f} MB in {time.time() - t0:.0f} s', flush=True)
     else:
         print(f'Vorlage {nr} «{v["titel"]}»: aus dem Cache')
