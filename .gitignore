@@ -39,3 +39,8 @@ HANDOVER.md
 .vercel/
 .vercel
 .env*
+
+# Feature-Produktion: erzeugte Clips (Cache) und Mischungen
+docs/feature/clips/
+docs/feature/*.mp3
+docs/feature/*.marken.json
