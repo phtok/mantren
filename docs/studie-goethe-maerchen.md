@@ -47,7 +47,11 @@ das, und sie sind am Wortlaut nachprüfbar:
 
 In den Klassenstunden nennt Steiner das Märchen kein einziges Mal. Was die
 beiden Texte verbindet, ist seine Auslegung, an der er über dreißig Jahre
-gearbeitet hat (1891–1918, Abschnitt 1).
+gearbeitet hat (1891–1918, Abschnitt 1). Das Mittelglied sind die vier
+Mysteriendramen (1910–1913, Abschnitt 1b). In ihnen hört Johannes aus
+Quellen und Felsen «O Mensch, erkenne dich!», und der Hüter der Schwelle
+steht zum ersten Mal als Gestalt auf der Bühne, bevor er 1924 in den Mantren
+spricht.
 
 Was die Texte trennt, ist ebenso deutlich: Das Märchen endet in einer
 Gemeinschaft auf der Brücke, «bis auf den heutigen Tag» [135]. Die Mantren
@@ -143,6 +147,118 @@ schönen Schein, und 1924 heißt es in Mantra 7.2 nur noch «Schein».
 [GA 14](https://rudolfsteinerelib.org/Download/German/Vier_Mysteriendramen--Rudolf_Steiner--014.pdf) ·
 [GA 237](https://archive.org/download/rudolf-steiner-ga-237/rudolf-steiner-ga-237.pdf) ·
 GA 270a–c und GA 260 nach den PDFs auf odysseetheater.org
+
+---
+
+## 1b. Das Mittelglied: die Mysteriendramen (1910–1913)
+
+*Ergänzt am 9. 10. 2026. Belegt aus GA 14 (Vier Mysteriendramen; Seiten der
+gedruckten 5. Auflage 1998, im PDF der Online-Fassung jeweils acht Seiten
+später), GA 44 (Entwürfe), GA 28 (Mein Lebensgang). Die Schlüsselstellen
+sind am Scan gegengelesen.*
+
+Zwischen Bild und Anrede liegt die Bühne. Das Märchen erzählt 1795 von
+außen, in der dritten Person. In den Dramen sprechen die Gestalten selbst,
+und Steiner besteht darauf, dass die geistigen Wesen dort «nicht allegorisch
+oder symbolisch gemeint» sind, «sondern als Realitäten» (GA 14,
+Personenverzeichnis zu «Der Hüter der Schwelle»). 1924 sprechen die Mantren
+den Hörer mit «du» an. Diese Abfolge in drei Stufen (Bild, Bühne, Anrede)
+ist eine Deutung. Die folgenden Stellen tragen sie.
+
+**Steiner über das Märchen und die Dramen (GA 28, Kap. XII):**
+
+> Nicht die Erklärung, wohl aber die Anregungen zu seelischem Erleben, die
+> mir von der Beschäftigung mit dem Märchen kamen, waren mir wichtig. Diese
+> Anregungen wirkten dann in meinem folgenden Seelenleben fort bis in die
+> Gestaltung meiner später geschaffenen Mysteriendramen hinein.
+
+Und an derselben Stelle: «Mir wurde, was sich an Seeleninhalt in Anlehnung
+an das Märchen ergab, ein wichtiger Meditationsstoff. Ich kam immer wieder
+darauf zurück.» Damit ist das Bindeglied zu den Mantren benannt: Das Märchen
+war Steiner kein Gegenstand der Erklärung, sondern ein Gegenstand der
+Meditation.
+
+**Die erste Niederschrift (GA 44):** In seinem ersten Entwurf zur «Pforte
+der Einweihung» lässt Steiner die Gestalten noch unter Märchennamen sprechen.
+Es gibt Sprecherangaben wie «1. Irrlicht», «König des Willens», «König des
+Gefühls», «Mann mit der Lampe», «Schlange», «Frau des Mannes mit der Lampe»,
+«1.–3. Mädchen» und «Riese». Eine eigenhändige Notiz deutet: «Riese:
+unbewußte Kräfte / Jüngling: Mensch / Lilie: die Vollkommenheit» (GA 44,
+S. 16). Die Entsprechungstabelle in GA 44, S. 12 stammt dagegen von den
+Herausgebern, nicht von Steiner. Sie lautet: Lilie – Maria, Mensch – Johannes
+Thomasius, die beiden Irrlichter – Capesius und Strader, König des Willens –
+Romanus, König des Gefühls – Theodosius, Mann mit der Lampe – Felix Balde,
+Schlange – die andere Maria, Frau – Felicia Balde, die drei Mädchen –
+Philia, Astrid, Luna, Riese – German, Kanarienvogel – das Kind. Ein König der
+Weisheit und ein gemischter König fehlen darin. Die verbreitete Gleichung
+«Retardus = gemischter König» ist nicht belegt.
+
+**Die drei Mädchen werden Seelenkräfte.** Im Personenverzeichnis der
+«Pforte» heißen Philia, Astrid und Luna Freundinnen Marias, «deren Urbilder
+im Verlaufe als Geister von Marias Seelenkräften sich offenbaren». Astrid
+gehört zum Denken («deines Denkens Kraft», «Der Seelen Erwachen», 9. Bild),
+Luna zum Wollen («Sie ist gegründet / Im Menschenwollen», «Die Prüfung der
+Seele», 1. Bild). Dass Philia für das Fühlen steht, ist naheliegend, aber
+nirgends ausgesprochen. Was bei Goethe die drei Dienerinnen Lilies sind, wird
+in den Dramen zu den drei Seelenkräften, die in den Mantren immer wieder
+angesprochen werden (Mantren 3, 4, 7, 8).
+
+**Der unterirdische Tempel und der Sonnentempel.** Das 5. Bild der «Pforte»
+spielt in einem Raum, den die Regie so beschreibt: «Ein unterirdischer
+Felsentempel, die verborgene Mysterienstätte der Hierophanten». Darin stehen vier Gestalten an den vier Himmelsrichtungen:
+Benedictus im Osten, Theodosius im Süden, Romanus im Westen, Retardus im
+Norden. Das 11. Bild spielt im «Sonnentempel; oberirdisch». Wie bei Goethe
+gibt es einen verborgenen Tempel unter der Erde mit vier Gestalten und einen
+Tempel im Licht. Das Drama setzt die Gestalten aber nicht mit den Königen
+gleich.
+
+**«O Mensch, erkenne dich!» und das Wesen im Abgrund.** Im 2. Bild der
+«Pforte» sitzt Johannes Thomasius in Meditation. Aus Quellen und Felsen tönt
+es: «O Mensch, erkenne dich!» Dann:
+
+> Da, aus dem finstern Abgrund, Welch Wesen glotzt mich an? […]
+> Wer bist du, schauervolles Wesen?
+> (Es tönt aus Quellen und Felsen: O Mensch, erkenne dich!)
+> O, ich erkenne dich.
+> Ich bin es selbst. — GA 14, S. 52
+
+Die Erste Tafel der Klassenstunden beginnt mit demselben Wort: «O Mensch,
+erkenne dich selbst! / So tönt das Weltenwort.» Mantra 1.4 hat denselben
+Abgrund und die Wesen darin, und es sagt wie Johannes, dass sie aus dem
+Menschen selbst stammen: «Deine Furcht vor Geistes-Schöpfer-Sein / Schuf das
+Ungetüm in deinem Willen». Die Szene von 1910 enthält damit schon den ganzen
+Kern der Abgrund-Mantren von 1924, aber noch als Bühnengeschehen.
+
+**Der Hüter der Schwelle wird Gestalt.** Als sprechende Figur tritt er nur
+in den Dramen 3 und 4 auf. Seine ersten Worte (Drama 3, 7. Bild) handeln von
+der Eile:
+
+> So stürmen Menschenseelen, die mir nahen,
+> Bevor sie noch Gelassenheit sich voll errungen. […]
+> Die Seelen, welche hier sich so bezeugen,
+> Ich muß zur Erde sie zurück verweisen. — GA 14, S. 351
+
+Johannes antwortet: «will ich mich an dir vorbei / Zu Theodora drängen,
+welche ich / Im Lande jenseits dieser Schwelle weiß.» Das ist der stürmende
+Jüngling des Märchens und zugleich das «vorübereilt'st» aus Mantra 1.4.
+
+Dazu kommen wörtliche Vorstufen der Tafeln:
+
+| Mysteriendramen (1911–1913) | Klassenmantren (1924) |
+|---|---|
+| «Der vor des Geisterlandes Schwelle steht» (Benedictus, «Prüfung», 13. Bild; Romanus, «Erwachen», 13. Bild) | «Der vor des Geisterlandes Pforten steht» (Zweite Tafel) |
+| «Dem ernsten Hüter bist du oft begegnet, / Der strenge Wache an der Schwelle hält, / Die Geistessein von Sinneswelten trennt» (Maria, «Hüter», 2. Bild) | «Erkenne erst den ernsten Hüter» (Zweite Tafel) |
+| «Es schwanken deine Gedanken / Am Abgrund des Seins» (Stimme des Gewissens, «Hüter», 2. Bild) | «Dicht am gähnenden Abgrund des Seins» (1.2) |
+| «In deinem Denken leben Weltgedanken, / In deinem Fühlen weben Weltenkräfte, / In deinem Willen wirken Weltenwesen» (Benedictus, «Prüfung», 1. Bild) | die Dreiheit Denken, Fühlen, Wollen in den Mantren 3, 4, 7, 8 |
+
+**Was die Dramen nicht haben.** Schlange, Lilie, Lampe und Irrlicht kommen
+in GA 14 nicht vor, ebenso wenig der Satz «Es ist an der Zeit». «Brücke»
+steht viermal, immer im übertragenen Sinn, etwa bei Romanus: «Ich finde
+nicht die Brücke, / Die von Ideen / Zu Taten wahrhaft führen könnte.» Die
+Märchen, die Felicia Balde erzählt, sind eigene Märchen, nicht Goethes. Die
+Dramen übernehmen vom Märchen also die Struktur, nicht die Bilder. Steiner
+sagt es 1924 selbst: «in der Struktur – wenn auch im ganzen Inhalte anders –
+ähnlich» (GA 237).
 
 ---
 

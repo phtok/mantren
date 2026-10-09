@@ -27,6 +27,8 @@ sich aus diesen Dateien neu bauen, siehe unten.
 | `stimmen_entwerfen.py` | entwirft Stimmen (Voice Design) und wählt messbar aus |
 | `pruefen.py` | vergleicht die Scribe-Abschrift der Mischung Wort für Wort mit dem Manuskript |
 | `sendemanuskript.py` | baut die Sendemanuskripte aus Regie-Liste und Zeitmarken neu |
+| `knacks.py` | zählt harte Abbrüche (Klang fällt in 5 ms in Stille), Vergleich zweier Fassungen |
+| `selbstgespraech.txt`, `selbstgespraech.json`, `selbstgespraech-sendemanuskript.md` | das dritte Stück, «Durchsichtig» |
 
 ## Neu bauen
 
@@ -183,4 +185,72 @@ für ein breites Kulturpublikum.»
 STUECK=essay XI_KEY=… python3 -I docs/feature/produktion.py stimmen
 STUECK=essay XI_KEY=… python3 -I docs/feature/produktion.py klaenge
 STUECK=essay python3 -I docs/feature/produktion.py mischen /tmp/was-ist-erquicklicher-als-licht.mp3
+```
+
+## Schnitte ohne Hubbler (9. 10. 2026)
+
+Rückmeldung: «unangenehme Schnitte, Hubbler, Sprünge im Audio, fast nur bei
+der Hauptsprecherin». **Ursache war der Mischer, nicht die Stimme.** Die
+Atempausen wurden in die fertige Zeile geschnitten, und zwar in der Mitte
+zwischen zwei Zeichen laut Zeitmarken. Bei der Essay-Stimme trafen 24 von
+111 Schnitten hörbaren Klang, bei der Steiner-Stimme 18 von 37, weil sie die
+Verszeilen fast lückenlos aneinanderreiht. Dazu kam, dass der Anfang jeder
+Zeile bis auf 20 ms gekürzt wurde, und dann fehlt der Atem vor dem ersten
+Wort.
+
+Seither gilt:
+
+- Geschnitten wird nur noch am leisesten 12-ms-Fenster rund um die Fuge, und
+  nur, wenn es mindestens 35 dB unter dem Pegel der Zeile liegt. Sonst
+  bleibt der Fluss, wie er ist (im Essay entfallen so 7 von 162 Schnitten).
+- Die Blenden an Schnitten sind Kosinus-Blenden von 15 ms.
+- Vor dem ersten Wort bleiben bis zu 0,25 s Vorlauf stehen, danach bis zu
+  0,3 s Ausklang.
+- Verse (Rollen in `getrennt`) werden Zeile für Zeile gesprochen, mit
+  `previous_text`/`next_text` für den Zusammenhang.
+
+Messung mit `knacks.py`: harte Abbrüche im Essay 33 → 1, im Feature 26 → 1.
+
+**Noch eine Lehre:** Ein sehr kurzer Vers («O Mensch, erkenne dich!»)
+wurde einmal als «O Mensch, o Mensch, erkenne dich» gesprochen. Das hat die
+Spracherkennung gefunden («insert»). Kurze Zeilen deshalb immer einzeln
+nachprüfen.
+
+## Selbstgespräch «Durchsichtig»
+
+Auftrag (9. 10. 2026): «Dichtung, Poem, Sprachschöpfung ist auch möglich. Es
+ist gut so zu erzählen, dass nichts vorausgesetzt wird. Einfach Interesse und
+Hingabe an die Stoffe. Welche Fragen werden aufgeworfen bei dieser
+Annäherung? Lässt sich der Gang zum Dialog, Selbstgespräch ausarbeiten?
+Weniger wissend, belehrend und doch den Stoff erzählen! Viel verfügbar und
+durchsichtig machen.»
+
+- **Form:** Zwei Stimmen einer Seele, «die Eine» und «der Andere», fragen
+  statt zu erklären. Die Texte antworten selbst: das Märchen, Johannes und
+  der Hüter aus den Mysteriendramen, die Mantren. Kleine eigene
+  Gedichtzeilen stehen dazwischen («Aus Schlange wird Bogen. / Aus Bogen
+  wird Brücke …»). Am Schluss wird aus dem Fragen ein Zwiegespräch: Der Hüter
+  fragt dreimal (Mantram 16), und die Stimme der Einen antwortet als Ich.
+- **Leitfragen:** Muss ich es verstehen? · Warum ist das Gespräch
+  erquicklicher als Licht? · Was heißt durchsichtig werden? · Wie kommt man
+  hinüber, und wer hält zurück? · Wer ist das Wesen im Abgrund? · Was trennt
+  sich, was muss ich selbst verbinden? · Was bildet, wenn nichts herrscht? ·
+  Wer spricht?
+- **Haltung:** Steiners eigener Satz über das Märchen (GA 28): «Nicht die
+  Erklärung, wohl aber die Anregungen zu seelischem Erleben … waren mir
+  wichtig.»
+- **Titel:** Die Schlange frisst Gold und wird «durchsichtig und leuchtend»
+  (Märchen [11]). Am Ende ist die Brücke aus «durchsichtigem Edelstein»
+  ([61]).
+- **Stimmen:** Die Eine (Essay-Tragend), der Andere und Johannes
+  («Christian – Lyrical Silence», Bibliothek `a5IGPlKvc75qLpuahLq4`), das
+  Märchen (Märchen-Erzählerin), Steiner, Hüter und Mantren (Leo Liest, Vers
+  für Vers), die Ansage (NWR Chronist).
+- **Prüfung:** 99,2 % Übereinstimmung, ein leiser Abbruch (−32 dB),
+  −16,4 LUFS, 15:40 Min.
+
+```sh
+STUECK=selbstgespraech XI_KEY=… python3 -I docs/feature/produktion.py stimmen
+STUECK=selbstgespraech XI_KEY=… python3 -I docs/feature/produktion.py klaenge
+STUECK=selbstgespraech python3 -I docs/feature/produktion.py mischen /tmp/durchsichtig.mp3
 ```

@@ -19,8 +19,18 @@ STUECKE = {
     'essay': {
         'quelle': 'essay.txt', 'marken': 'was-ist-erquicklicher-als-licht.marken.json', 'ziel': 'essay-sendemanuskript.md',
         'titel': '«Was ist erquicklicher als Licht?»', 'untertitel': 'Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. Ein Hör-Essay',
-        'rollen': {'ESSAY': 'Essay (tragend)', 'MÄRCHEN': 'Märchen (frisch)', 'STEINER': 'Steiner (weckend)', 'ANSAGE': 'Ansage'},
-        'besetzung': 'Essay, tragend (Essay-Tragend) · Märchen (Märchen-Erzählerin, die Stimme der Textprobe) · Steiner, weckend: Prosa und Mantren (Leo Liest) · Ansage (NWR Chronist)',
+        'rollen': {'ESSAY': 'Essay (tragend)', 'MÄRCHEN': 'Märchen', 'STEINER': 'Steiner (weckend)',
+                   'MANTRA': 'Mantram (weckend)', 'ANSAGE': 'Ansage'},
+        'besetzung': 'Essay, tragend (Essay-Tragend) · Märchen (Märchen-Erzählerin, die Stimme der Textprobe) · Steiner, weckend: Prosa und Mantren (Leo Liest; Mantren Vers für Vers) · Ansage (NWR Chronist)',
+        'musik': 'Cello und Harfe',
+    },
+    'selbstgespraech': {
+        'quelle': 'selbstgespraech.txt', 'marken': 'durchsichtig.marken.json', 'ziel': 'selbstgespraech-sendemanuskript.md',
+        'titel': '«Durchsichtig»', 'untertitel': 'Ein Selbstgespräch über Goethes Märchen und Rudolf Steiners mantrisches Spätwerk',
+        'rollen': {'EINE': 'Die Eine', 'ANDERE': 'Der Andere', 'MÄRCHEN': 'Märchen', 'STEINER': 'Steiner',
+                   'MANTRA': 'Mantram', 'HÜTER': 'Der Hüter', 'JOHANNES': 'Johannes («Die Pforte der Einweihung», 2. Bild)',
+                   'ICH': 'Das Ich (Mantram 16)', 'ANSAGE': 'Ansage'},
+        'besetzung': 'Die Eine (Essay-Tragend) · Der Andere und Johannes (Christian – Lyrical Silence) · Märchen (Märchen-Erzählerin, die Stimme der Textprobe) · Steiner, Hüter und Mantren (Leo Liest, Vers für Vers) · Ansage (NWR Chronist)',
         'musik': 'Cello und Harfe',
     },
 }
@@ -48,7 +58,8 @@ def main(name):
             k = z[3:]
             k = re.sub(r'^([IVX]+\. )?(.*)$', lambda m: (m.group(1) or '') + m.group(2).capitalize(), k)
             for alt, neu in (('— ein', '— Ein'), ('— drei', '— Drei'), ('könige', 'Könige'), ('fluss', 'Fluss'),
-                             ('leser', 'Leser'), ('leben', 'Leben'), ('kraft', 'Kraft')):
+                             ('leser', 'Leser'), ('leben', 'Leben'), ('kraft', 'Kraft'), ('licht', 'Licht'),
+                             ('gespräch', 'Gespräch'), ('brücke', 'Brücke')):
                 k = k.replace(alt, neu)
             out += ['', '## ' + k, '']
             continue

@@ -31,7 +31,7 @@ STIMMEN = {
 TAGS = {
     'ruhig': 'calm', 'langsam': 'slowly', 'leise': 'quietly', 'eindringlich': 'serious',
     'amüsiert': 'amused', 'warm': 'warm', 'traurig': 'sad',
-    'lebendig': 'lively', 'klar': 'clear', 'wach': 'awake',
+    'lebendig': 'lively', 'klar': 'clear', 'wach': 'awake', 'erschrocken': 'startled',
     'ohne die Stimme zu heben': 'without raising the voice', 'sachlich': None,
 }
 # Ein zweites Stück aus derselben Werkstatt: STUECK=essay liest essay.txt und essay.json
@@ -39,6 +39,9 @@ STUECK = os.environ.get('STUECK', 'manuskript')
 if STUECK != 'manuskript':
     _konf = json.load(open(os.path.join(HIER, f'{STUECK}.json'), encoding='utf8'))
     STIMMEN = _konf['stimmen']
+# Verse (Mantren) werden Zeile für Zeile gesprochen: Die Stimme zieht die Zeilen sonst
+# lückenlos zusammen, und jeder nachträgliche Schnitt träfe Klang.
+GETRENNT = set(_konf.get('getrennt', ['MANTRA'])) if STUECK != 'manuskript' else {'MANTRA'}
 ATEM, PAUSE = 0.55, 1.10
 LUECKE_WECHSEL, LUECKE_GLEICH = 0.85, 0.65
 
@@ -116,9 +119,59 @@ def rede_text(cue):
     return gesendet.strip(), pausen
 
 
+def segmente(cue):
+    """Für Verse: die Zeile an [Atem]/[Pause] zerlegt; jedes Stück trägt die Regie der Zeile.
+    Liefert (gesendeter Text, Pause danach in s)."""
+    roh = cue['text']
+    m = re.match(r'^((?:\s*\[[^\]]+\])*)', roh)
+    kopf = ''.join(t for t in re.findall(r'\[[^\]]+\]', m.group(1)) if t not in ('[Atem]', '[Pause]'))
+    rest = roh[m.end():]
+    teile = re.split(r'(\[Atem\]|\[Pause\])', rest)
+    aus = []
+    for i in range(0, len(teile), 2):
+        stueck = teile[i].strip()
+        if not stueck:
+            continue
+        pause = 0.0
+        if i + 1 < len(teile):
+            pause = ATEM if teile[i + 1] == '[Atem]' else PAUSE
+        text, _ = rede_text({'text': kopf + ' ' + stueck})
+        aus.append((text, pause))
+    return aus
+
+
+def tts(sid, text, vorher=None, nachher=None):
+    k = schluessel('tts', MODELL, sid, text, vorher or '', nachher or '')
+    mp3, js = os.path.join(CACHE, f'tts_{k}.mp3'), os.path.join(CACHE, f'tts_{k}.json')
+    if os.path.exists(mp3) and os.path.exists(js):
+        return k, False
+    koerper = {'text': text, 'model_id': MODELL, 'language_code': 'de'}
+    if vorher:
+        koerper['previous_text'] = vorher
+    if nachher:
+        koerper['next_text'] = nachher
+    antwort = anfrage(f'/v1/text-to-speech/{sid}/with-timestamps?output_format=mp3_44100_128', koerper)
+    open(mp3, 'wb').write(base64.b64decode(antwort['audio_base64']))
+    json.dump({'text': text, 'alignment': antwort.get('alignment')}, open(js, 'w'), ensure_ascii=False)
+    return k, True
+
+
+def ohne_regie(t):
+    return re.sub(r'\s*\[[^\]]+\]\s*', ' ', t).strip()
+
+
 def stimme_erzeugen(cue):
-    text, _ = rede_text(cue)
     sid = STIMMEN[cue['rolle']]
+    if cue['rolle'] in GETRENNT:
+        seg = segmente(cue)
+        neu = False
+        for j, (text, _) in enumerate(seg):
+            vorher = ohne_regie(seg[j - 1][0]) if j > 0 else None
+            nachher = ohne_regie(seg[j + 1][0]) if j + 1 < len(seg) else None
+            _, frisch = tts(sid, text, vorher, nachher)
+            neu = neu or frisch
+        return 'segmente', neu
+    text, _ = rede_text(cue)
     k = schluessel('tts', MODELL, sid, text)
     mp3, js = os.path.join(CACHE, f'tts_{k}.mp3'), os.path.join(CACHE, f'tts_{k}.json')
     if os.path.exists(mp3) and os.path.exists(js):
@@ -183,23 +236,69 @@ def blende(x, ein=0.005, aus=0.005):
     return x
 
 
-def zuschneiden(x, schwelle=db(-48)):
+def zuschneiden(x, schwelle=db(-55)):
+    """Stille an den Rändern kürzen, aber den Atem vor dem ersten Wort und den Ausklang
+    stehen lassen (Lehre der Textprobe: «der Anfang huckelt, es fehlt Luft vor dem ersten Wort»)."""
     laut = np.where(np.abs(x).max(axis=1) > schwelle)[0]
     if not len(laut):
         return x
-    a, e = max(0, laut[0] - int(0.02 * SR)), min(len(x), laut[-1] + int(0.06 * SR))
-    return blende(x[a:e], 0.01, 0.03)
+    a = max(0, laut[0] - min(int(0.25 * SR), laut[0]))
+    e = min(len(x), laut[-1] + int(0.3 * SR))
+    return blende(x[a:e].copy(), 0.02, 0.08)
+
+
+def cos_blende(x, ein=0.015, aus=0.015):
+    """Weiche Blenden (Kosinus) an Schnittstellen."""
+    n1, n2 = min(len(x), int(ein * SR)), min(len(x), int(aus * SR))
+    if n1:
+        x[:n1] *= (0.5 - 0.5 * np.cos(np.linspace(0, np.pi, n1)))[:, None]
+    if n2:
+        x[-n2:] *= (0.5 + 0.5 * np.cos(np.linspace(0, np.pi, n2)))[:, None]
+    return x
+
+
+def leiseste_stelle(m, von, bis):
+    """Mitte des leisesten 12-ms-Fensters zwischen von und bis (Sekunden) und sein Pegel in dB."""
+    a, b = max(0, int(von * SR)), min(len(m), int(bis * SR))
+    fr = int(0.012 * SR)
+    if b - a <= fr:
+        return a, 0.0
+    leist = np.convolve(m[a:b] ** 2, np.ones(fr) / fr, mode='valid')
+    i = int(np.argmin(leist))
+    return a + i + fr // 2, 10 * np.log10(leist[i] + 1e-12)
+
+
+SCHNITT_STATISTIK = {'gesetzt': 0, 'ausgelassen': 0}
 
 
 def rede_audio(cue):
+    sid = STIMMEN[cue['rolle']]
+    if cue['rolle'] in GETRENNT:
+        seg = segmente(cue)
+        stuecke = []
+        for j, (text, pause) in enumerate(seg):
+            vorher = ohne_regie(seg[j - 1][0]) if j > 0 else None
+            nachher = ohne_regie(seg[j + 1][0]) if j + 1 < len(seg) else None
+            k = schluessel('tts', MODELL, sid, text, vorher or '', nachher or '')
+            x = zuschneiden(dekodieren(os.path.join(CACHE, f'tts_{k}.mp3')))
+            stuecke.append(x)
+            if pause:
+                stuecke.append(stille(max(0.1, pause - 0.2)))   # zuschneiden lässt rund 0,2 s Ausklang stehen
+        return np.concatenate(stuecke)
     text, pausen = rede_text(cue)
-    k = schluessel('tts', MODELL, STIMMEN[cue['rolle']], text)
-    x = dekodieren(os.path.join(CACHE, f'tts_{k}.mp3'))
+    k = schluessel('tts', MODELL, sid, text, '', '')
+    pfad = os.path.join(CACHE, f'tts_{k}.mp3')
+    if not os.path.exists(pfad):   # Cache aus der Zeit vor previous/next_text
+        k = schluessel('tts', MODELL, sid, text)
+        pfad = os.path.join(CACHE, f'tts_{k}.mp3')
+    x = dekodieren(pfad)
     al = json.load(open(os.path.join(CACHE, f'tts_{k}.json')))['alignment']
     zeichen, anf, end = al['characters'], al['character_start_times_seconds'], al['character_end_times_seconds']
     if ''.join(zeichen) != text:
         print(f'  Hinweis: Zeitmarken passen nicht zum Text ({cue["rolle"]}: {text[:40]}…), Pausen entfallen')
         pausen = []
+    m = x.mean(axis=1)
+    ref = rms_db(x)
     schnitte = []
     for pos, dauer in pausen:
         i1 = pos - 1
@@ -211,15 +310,20 @@ def rede_audio(cue):
         if i1 < 0 or i2 >= len(zeichen):
             continue
         t1, t2 = end[i1], anf[i2]
+        # nur in echter Stille schneiden: leisestes Fenster rund um die Fuge suchen
+        n, pegel = leiseste_stelle(m, t1 - 0.04, t2 + 0.06)
+        if pegel - ref > -35:
+            SCHNITT_STATISTIK['ausgelassen'] += 1
+            continue
+        SCHNITT_STATISTIK['gesetzt'] += 1
         luecke = max(0.0, t2 - t1)
-        schnitte.append(((t1 + t2) / 2, max(0.12, dauer - luecke)))
+        schnitte.append((n, max(0.12, dauer - luecke)))
     stuecke, letzt = [], 0
-    for t, extra in schnitte:
-        n = int(t * SR)
-        stuecke.append(blende(x[letzt:n].copy(), 0.0 if not stuecke else 0.004, 0.004))
+    for n, extra in schnitte:
+        stuecke.append(cos_blende(x[letzt:n].copy(), 0.0 if not stuecke else 0.015, 0.015))
         stuecke.append(stille(extra))
         letzt = n
-    stuecke.append(blende(x[letzt:].copy(), 0.004 if stuecke else 0.0, 0.0))
+    stuecke.append(cos_blende(x[letzt:].copy(), 0.015 if stuecke else 0.0, 0.0))
     return zuschneiden(np.concatenate(stuecke))
 
 
@@ -378,6 +482,7 @@ def mischen(ausgabe):
     os.remove(wav + '.raw')
     json.dump([{'t': round(a, 2), 'rolle': b, 'text': c} for a, b, c in marken],
               open(ausgabe.rsplit('.', 1)[0] + '.marken.json', 'w'), ensure_ascii=False, indent=0)
+    print(f"Schnitte für Atem: {SCHNITT_STATISTIK['gesetzt']} gesetzt, {SCHNITT_STATISTIK['ausgelassen']} ausgelassen (keine Stille an der Stelle)")
     print(f'fertig: {ausgabe}  Länge {gesamt / 60:.1f} min  Sprache {sum(len(a) for _, a in stimme) / SR / 60:.1f} min'
           f'  Musik {"ja" if musik is not None else "fehlt"}')
 
