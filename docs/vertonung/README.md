@@ -276,16 +276,18 @@ Mensch erwacht):
 
 | Nr | Stand |
 |---|---|
-| 37 | **Geplant und trocken geprüft**, nicht erzeugt: Credits aufgebraucht (256 übrig, 440 nötig für das erste Lied). Die Montage ist mit vorhandenem Audio durchgespielt und schneidet auf die Sekunde. |
-
-Sobald das Kontingent erneuert ist (<https://elevenlabs.io/app/subscription>):
+| 37 | **Erzeugt** (9. 10. 2026, nach Erneuerung der Credits): zwei Lieder, 32 s Hüter und 56 s Mensch, montiert zu 1:45. Rückschrift 98 % («klingend» als «klingt» gehört). −16,2 LUFS. Kosten rund 1 200 Credits. |
 
 ```sh
-XI_KEY=… python3 -I docs/vertonung/vertonen.py bauen 37
-XI_KEY=… python3 -I docs/vertonung/vertonen.py pruefen 37
+XI_KEY=… python3 -I docs/vertonung/vertonen.py bauen 37      # beide Lieder (Cache), dann Montage und Master
+XI_KEY=… python3 -I docs/vertonung/vertonen.py pruefen 37    # Rückschrift in der Folge des Dialogs
 ```
 
-Kosten: rund 1 200 Credits für beide Lieder.
+**Was die Montage noch nicht kann:** Ob Duo und Einzelstimme so klingen,
+wie beschrieben, entscheidet weiter das Modell je Lied; die Montage
+garantiert nur, dass sie **verschiedene** Stimmen sind und dass zwischen
+Frage und Antwort Stille steht. Gefällt eine Rolle, wird ihr Lied zur
+Referenz (`ref`) für alle weiteren Dialoge.
 
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
