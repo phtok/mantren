@@ -2,10 +2,10 @@
  "titel": "«Was die Schlange weiss» – Ein Gespräch über Goethes Märchen und Rudolf Steiners mantrisches Spätwerk",
  "stimmen": {
   "ESTHER": "34qvTxBeZxm8QcfSvTS8",
-  "MARTIN": "OFFEN",
+  "MARTIN": "BfwuiKSWxqDOcSYQr6EC",
   "MÄRCHEN": "jhhOoZ28WmHOJDBuCSGG",
-  "STEINER": "OFFEN",
-  "HÜTER": "OFFEN",
+  "STEINER": "b0JqlN5qkeuPi5BoQiHn",
+  "HÜTER": "9VojQrRhoFFUbqyNRsxF",
   "ICH": "34qvTxBeZxm8QcfSvTS8",
   "JOHANNES": "a5IGPlKvc75qLpuahLq4",
   "ERZÄHLER": "IcDVpTMW6YwgOc2vCZgG",
@@ -13,28 +13,59 @@
  },
  "stimmen_namen": {
   "ESTHER": "Essay-Tragend",
-  "MARTIN": "OFFEN",
+  "MARTIN": "Andres – Interesting and Charming (Bibliothek, leichter Schweizer Akzent)",
   "MÄRCHEN": "Märchen-Erzählerin",
-  "STEINER": "OFFEN",
-  "HÜTER": "OFFEN",
+  "STEINER": "Hermann – Sympathetic and Trustworthy (Bibliothek, österreichisch)",
+  "HÜTER": "Kathy Calm – Rough, Deep Tone (Bibliothek, Vers für Vers, weiter Raum)",
   "ICH": "Essay-Tragend (Vers für Vers)",
   "JOHANNES": "Christian – Lyrical Silence (Vers für Vers)",
   "ERZÄHLER": "NWR Chronist",
   "ANSAGE": "NWR Chronist"
  },
- "getrennt": ["HÜTER", "ICH", "JOHANNES"],
- "textrollen": ["MÄRCHEN", "STEINER", "HÜTER", "ICH", "JOHANNES", "ERZÄHLER", "ANSAGE"],
- "luecken": [0.38, 0.3],
+ "getrennt": [
+  "HÜTER",
+  "ICH",
+  "JOHANNES"
+ ],
+ "textrollen": [
+  "MÄRCHEN",
+  "STEINER",
+  "HÜTER",
+  "ICH",
+  "JOHANNES",
+  "ERZÄHLER",
+  "ANSAGE"
+ ],
+ "luecken": [
+  0.38,
+  0.3
+ ],
  "luecke_text": 0.7,
  "kontext": true,
  "ereignis_max": 10,
  "ereignis_vorlauf": 2.6,
  "raeume": {
-  "wohnung": [0.5, -17, 0.006],
+  "wohnung": [
+   0.5,
+   -17,
+   0.006
+  ],
   "draussen": null,
-  "HÜTER": [2.8, -8, 0.045],
-  "ICH": [1.4, -15, 0.02],
-  "JOHANNES": [1.5, -14, 0.02]
+  "HÜTER": [
+   2.8,
+   -8,
+   0.045
+  ],
+  "ICH": [
+   1.4,
+   -15,
+   0.02
+  ],
+  "JOHANNES": [
+   1.5,
+   -14,
+   0.02
+  ]
  },
  "musik": {
   "prompt": "Classical string quartet in the style of Joseph Haydn around 1790, bright and witty, G major, Allegretto, the four instruments trade short phrases like a lively and good-humoured conversation, graceful legato answers and light staccato, transparent dry chamber recording, not sad, not sentimental, no vocals, no percussion",
