@@ -117,7 +117,7 @@ neun Minuten in drei Stücken.
 
 ---
 
-## 1.4 «Drei Tiere» — der Blick in den Abgrund (geplant)
+## 1.4 «Drei Tiere» — der Blick in den Abgrund (gebaut: Vorlage 39)
 
 ### Situation
 
@@ -234,7 +234,9 @@ Tier-Zusammenhang).
 
 ### Was offen bleibt
 
-Ob die Referenz die Stimme der 38 wirklich hält, zeigt erst der erste Lauf
+Gebaut am 9. 10. 2026 als Vorlage 39 (README § Runde 9): Referenz gesetzt,
+Gestalten nach Wortzeiten gelegt, Rückschrift 97 %. Philipp hört.
+Ob die Referenz die Stimme der 38 wirklich hält, zeigt erst das Hören
 (die Doku verspricht «musikalische Charakteristik», nicht Identität). Ob
 die Gestalten unter dem Gesang als Gestalt oder als Störung wirken,
 entscheidet Philipp. Mantram 2 (die drei Tiere erklärt, rückwärts) folgt

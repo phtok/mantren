@@ -314,6 +314,30 @@ Antwort heller und aufrecht.
 |---|---|
 | 38 | Erzeugt: Bett 30 s, Hüter 40 s, Mensch 69 s, montiert zu 1:55. Rückschrift 98 %. −16,2 LUFS. Rund 1 900 Credits. |
 
+## 1.4 «Drei Tiere» (Runde 9)
+
+Die Szene steht in `szenen.md` (§ 1.4 und § Der Tier-Zusammenhang); hier
+nur, was gebaut wurde. Zwei Mittel sind neu in der Montage:
+
+- **Referenz auf ein Lied** (`ref` im Lied-Eintrag): Das Hüter-Lied der 39
+  trägt die erste Frage des Hüter-Lieds der 38 als `conditioning_ref`
+  (Sekunde 4 bis 13, Stärke `high`). Dieselbe Stimme, derselbe Bordun —
+  so weit das Modell das hält.
+- **Einlagen nach Wortzeiten** (`einlagen`): Die drei Gestalten (eigene
+  15-s-Lieder, geschleift) liegen genau unter bestimmten Zeilen. Die
+  Zeiten kommen aus der Scribe-Rückschrift des Hüter-Lieds, Wort für Wort
+  auf die Zeilen abgebildet. Unter «Schau … / Gestalt / Farbe» klingt die
+  Gestalt (−12 dB), unter Herkunft und Gegenmittel schweigt sie. Unter
+  «Sonst verschlingen seine Tiere» erscheinen alle drei je 1,4 s, leise,
+  nacheinander.
+
+| Nr | Stand |
+|---|---|
+| 39 | Erzeugt: Hüter 172 s, drei Gestalten je 15 s, Bett aus der 38 (Cache); montiert zu 3:12. Rückschrift 97 % (nur Schreibweisen). −16,2 LUFS. Rund 3 000 Credits. Die Gestalten liegen unter dem ersten Tier bei 2,6–16,6 s des Abschnitts, beim zweiten 2,2–17,6 s, beim dritten 2,5–16,9 s. |
+
+Die drei Gestalten sind damit festgelegt und liegen im Cache; Mantram 2
+und 3 verwenden sie wieder (§ Der Tier-Zusammenhang in `szenen.md`).
+
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
@@ -409,8 +433,9 @@ Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 - 38 ist angenommen (Philipp, 9. 10. 2026: «Ja.»); das Hüter-Lied der 38
   ist die Referenz für den Hüter. Jede weitere Sinneinheit wird zuerst als
-  Szene durchdrungen (`szenen.md`), dann gebaut. Als nächste Szene ist
-  1.4 «Drei Tiere» ausgearbeitet und wartet auf das Go.
+  Szene durchdrungen (`szenen.md`), dann gebaut. 1.4 «Drei Tiere» ist
+  gebaut (39) und wartet auf Philipps Urteil; dann Mantram 2 (Gestalten
+  rückwärts, aus dem Cache) und 3 (Gestalten verwandelt).
   Vorlage 36 ist durch 37 und 38 überholt.
 - 19+ neu denken: Heraustreten statt Kirche.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke

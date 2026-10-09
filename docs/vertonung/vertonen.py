@@ -435,6 +435,42 @@ VORLAGEN += [
         'bett': 'bett', 'bett_db': -9, 'vorlauf': 3.0, 'schluss': 4.0,
      }},
 ]
+# ---------------------------------------------------------------- 1.4 «Drei Tiere» (Runde 9, 9. 10. 2026) — siehe szenen.md
+ZEIGEND = ['showing, pointing: exact, calm, warm, attentive, like a physician naming a finding', 'never frightened, never accusing',
+           'the voice does not illustrate the beast']
+GESTALT_NICHT = ['vocals', 'melody', 'pulse', 'drums', 'reverb wash', 'film score', 'horror']
+VORLAGEN += [
+    {'nr': 39, 'slug': 'drei-tiere', 'titel': 'Drei Tiere', 'text': 'Hüter · 1.4, montiert',
+     'ansatz': 'Der Blick in den Abgrund: der Hüter (Stimme der 38) zeigt die drei Tiere, ohne sie zu spielen; drei Instrumental-Gestalten aus dem entstellten Grundton D liegen unter Gestalt und Farbe jedes Tiers und ziehen sich unter Herkunft und Gegenmittel zurück; Stille vor jedem «Schau»; die Flügel als Weitung, nicht als Erlösung.',
+     'stimme': [], 'tonart': 'D, open modal, drone on D', 'tempo': 'very slow, free, no pulse',
+     'montage': {
+        'lieder': {
+            'bett': {'nicht': ['vocals', 'melody', 'pulse'], 'teile': [('Bordun', None, 30, BORDUN_D + ['instrumental, the drone alone, very even, loopable'])]},
+            'hueter': {'nicht': NIE_KIRCHE + NICHT_SPRECH + ['female voice', 'horror', 'growling', 'film score', 'illustrative sound effects'],
+                       'ref': (38, 'hueter', 4.0, 13.0, 'high'),
+                       'teile': [('Bordun', None, 4, BORDUN_D + ['the cello drone alone, instrumental']),
+                                 ('Warnung', ('1.4', 0), 26, HUETER_BASS + BORDUN_D + LANGSAM + ['a warning without fear: steady, low, matter-of-fact']), NUR_BORDUN,
+                                 ('Das erste Tier', ('1.4', 1), 30, HUETER_BASS + BORDUN_D + LANGSAM + ZEIGEND), NUR_BORDUN,
+                                 ('Das zweite Tier', ('1.4', 2), 30, HUETER_BASS + BORDUN_D + LANGSAM + ZEIGEND), NUR_BORDUN,
+                                 ('Das dritte Tier', ('1.4', 3), 30, HUETER_BASS + BORDUN_D + LANGSAM + ZEIGEND),
+                                 ('Bordun', None, 4, BORDUN_D + ['the cello drone alone, instrumental, no voice']),
+                                 ('Flügel', ('1.4', 4), 34, HUETER_BASS + LANGSAM + ['the drone opens to a fifth, A above D', 'the voice a step higher, open, widening', 'no triumph, a wish', 'the last line held long']),
+                                 ('Bordun', None, 5, BORDUN_D + ['the cello drone with the fifth, instrumental, fading'])]},
+            'holz': {'nicht': GESTALT_NICHT, 'teile': [('Gestalt', None, 15, ['double bass col legno: dry wooden taps on a very low D, sparse, stiff, bone-dry', 'no sustained tone, no melody, no pulse', 'instrumental, close, dry room'])]},
+            'rohr': {'nicht': GESTALT_NICHT, 'teile': [('Gestalt', None, 15, ['a single thin reed (clarinet or harmonium reed) holding a D a quarter-tone flat, thin and nasal, slightly out of tune, unresolved', 'no melody, no pulse', 'instrumental, dry'])]},
+            'glas': {'nicht': GESTALT_NICHT, 'teile': [('Gestalt', None, 15, ['bowed glass and high violin harmonics on the overtones of D, static, hollow, glassy, without bass', 'no movement, no melody, no pulse', 'instrumental'])]},
+        },
+        'folge': [('hueter', 1, 4.0), ('hueter', 3, 3.0), ('hueter', 5, 3.0), ('hueter', 7, 4.0), ('hueter', 9, 0.0)],
+        # Gestalt unter Zeile 1–3 jedes Tiers (Imperativ, Gestalt, Farbe); unter der Warnung je ein Atemzug aller drei
+        'einlagen': [('holz', 0, 'Sonst verschlingen seine Tiere', 'Sonst verschlingen seine Tiere', -14, 0.0, 1.4),
+                     ('rohr', 0, 'Sonst verschlingen seine Tiere', 'Sonst verschlingen seine Tiere', -14, 1.2, 1.4),
+                     ('glas', 0, 'Sonst verschlingen seine Tiere', 'Sonst verschlingen seine Tiere', -14, 2.4, 1.4),
+                     ('holz', 1, 'Schau das erste Tier', 'Ganz von stumpfem Blau ist seine Haut;', -12),
+                     ('rohr', 2, 'Schau das zweite Tier', 'Gelb mit grauem Einschlag ist sein Leib;', -12),
+                     ('glas', 3, 'Schau das dritte Tier', 'Schmutzigrot erscheint dir die Gestalt;', -12)],
+        'bett': 'bett', 'bett_db': -9, 'vorlauf': 3.0, 'schluss': 5.0,
+     }},
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
@@ -620,7 +656,47 @@ def lied_plan(v, name, mantren):
             nicht.append('vocals')
         chunks.append({'text': text, 'duration_ms': int(dauer * 1000), 'positive_styles': stile[:50],
                        'negative_styles': nicht[:50], 'context_adherence': 'high'})
+    if lied.get('ref'):   # (Vorlage-Nr, Lied-Name, von s, bis s[, Stärke]): Stimme und Klang dieses Lieds weitertragen
+        nr_ref, lname, von, bis = lied['ref'][:4]
+        pr = lied_plan(VORLAGE[nr_ref], lname, mantren)
+        pf = os.path.join(CACHE, f'mus_{schluessel(pr)}.plan.json')
+        sid = json.load(open(pf)).get('song_id') if os.path.exists(pf) else None
+        if sid:
+            chunks[0]['conditioning_ref'] = {'song_id': sid, 'range': {'start_ms': int(von * 1000), 'end_ms': int(bis * 1000)}}
+            chunks[0]['condition_strength'] = lied['ref'][4] if len(lied['ref']) > 4 else 'high'
+        else:
+            print(f'  Hinweis: Lied «{lname}» der Vorlage {nr_ref} ist nicht gespeichert, Referenz entfällt')
     return {'chunks': chunks}
+
+
+def wortzeiten(pfad):
+    """Scribe-Wörter eines Lieds: (normiert, Anfang s, Ende s). Braucht XI_KEY; Cache wie pruefen."""
+    d = scribe(pfad)
+    return [(norm(w['text']), w['start'], w['end']) for w in d.get('words', []) if w.get('type') == 'word' and norm(w['text'])]
+
+
+def zeilenfenster(woerter, chunk_text, von, bis, erste, letzte):
+    """Zeitfenster (s) der Zeilen `erste` bis `letzte` eines Abschnitts, aus den Wortzeiten zwischen von und bis."""
+    text = [norm(w) for z in chunk_text.split('\n')[1:] for w in z.split() if norm(w)]
+    fenster = [(i, w) for i, w in enumerate(woerter) if von - 0.5 <= w[1] <= bis + 0.5]
+    erkannt = [w[0] for _, w in fenster]
+    sm = difflib.SequenceMatcher(None, text, erkannt, autojunk=False)
+    karte = {}
+    for a, b, n in sm.get_matching_blocks():
+        for k in range(n):
+            karte[a + k] = fenster[b + k][1]
+    def index(zeile, letzter):
+        ws = [norm(w) for w in zeile.split() if norm(w)]
+        for i in range(len(text) - len(ws) + 1):
+            if text[i:i + len(ws)] == ws:
+                return i + len(ws) - 1 if letzter else i
+        return None
+    i1, i2 = index(erste, False), index(letzte, True)
+    if i1 is None or i2 is None:
+        return None
+    t1 = next((karte[i][1] for i in range(i1, i2 + 1) if i in karte), None)
+    t2 = next((karte[i][2] for i in range(i2, i1 - 1, -1) if i in karte), None)
+    return (t1, t2) if t1 is not None and t2 is not None else None
 
 
 def montieren(v, mantren):
@@ -655,6 +731,7 @@ def montieren(v, mantren):
     def ohne_text(name, i):
         return 0 <= i < len(plaene[name]['chunks']) and '\n' not in plaene[name]['chunks'][i]['text']
     teile = [stille(m.get('vorlauf', 0.0))]
+    lage = []                                 # je Folge-Eintrag: (Startsample im Mix, Lied, Schnittanfang im Lied)
     for name, i, pause in m['folge']:
         von, bis = grenzen[name][i]
         ein, aus = 0.04, 0.12
@@ -664,11 +741,36 @@ def montieren(v, mantren):
         if ohne_text(name, i + 1):            # und bis in die Mitte des Bordun-Abschnitts danach
             bis = sum(grenzen[name][i + 1]) / 2
             aus = 0.6
+        lage.append((sum(len(t) for t in teile), name, von))
         x = audio[name][int(von * SR):min(len(audio[name]), int(bis * SR))].copy()
         teile.append(blende(x, ein, aus))
         teile.append(stille(pause))
     teile.append(stille(m.get('schluss', 3.0)))
     mix = np.concatenate(teile)
+    # Einlagen: (Gestalt-Lied, Folge-Index, erste Zeile, letzte Zeile, dB[, Versatz s, Dauer s]) — die Gestalt
+    # liegt genau unter diesen Zeilen; Zeiten aus der Rückschrift des Rollen-Lieds.
+    zeiten = {}
+    for e in m.get('einlagen', []):
+        gestalt, fi, erste, letzte, dbw = e[:5]
+        versatz, dauer = (e[5] if len(e) > 5 else 0.0), (e[6] if len(e) > 6 else None)
+        start, name, von = lage[fi]
+        _, i, _ = m['folge'][fi]
+        if name not in zeiten:
+            zeiten[name] = wortzeiten(erzeugen(plaene[name], name))
+        f = zeilenfenster(zeiten[name], plaene[name]['chunks'][i]['text'], *grenzen[name][i], erste, letzte)
+        if not f:
+            print(f'  Hinweis: Zeilen «{erste[:20]} … {letzte[:20]}» nicht in der Rückschrift gefunden, Einlage entfällt')
+            continue
+        t1, t2 = f[0] + versatz, (f[0] + versatz + dauer) if dauer else f[1]
+        g = audio[gestalt]
+        n = int((t2 - t1 + 0.8) * SR)
+        if len(g) < n:
+            g = np.concatenate([g] * (n // len(g) + 1))
+        y = blende(g[:n].copy(), 0.5, 0.8) * 10 ** (dbw / 20)
+        a = start + int((t1 - von - 0.3) * SR)
+        if 0 <= a and a + n <= len(mix):
+            mix[a:a + n] += y
+        print(f'  Einlage {gestalt}: {t1 - von:.1f}–{t2 - von:.1f} s im Abschnitt «{erste[:24]}»')
     if m.get('bett'):                         # durchgehender Bordun unter allem, geschleift mit Kreuzblende
         b = audio[m['bett']]
         u = int(2.0 * SR)
