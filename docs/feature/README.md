@@ -23,6 +23,8 @@ sich aus diesen Dateien neu bauen, siehe unten.
 | `essay.txt`, `essay.json` | Regie-Liste des Hör-Essays; Besetzung, Musik-Prompt, Titel |
 | `essay-sendemanuskript.md` | der Essay zum Lesen, mit Zeitmarken |
 | `stimmen_entwerfen.py` | entwirft Stimmen (Voice Design) und wählt messbar aus |
+| `pruefen.py` | vergleicht die Scribe-Abschrift der Mischung Wort für Wort mit dem Manuskript |
+| `sendemanuskript.py` | baut die Sendemanuskripte aus Regie-Liste und Zeitmarken neu |
 
 ## Neu bauen
 
@@ -47,12 +49,17 @@ diese Zeile. `clips/` gehört nicht ins Repo.
 |---|---|---|
 | Erzählerin | NWR Erzählerin `nzC30P1U2LuQhAoEQcYi` | warm, ruhig; bekannt aus dem Podcast |
 | Chronist | NWR Chronist `IcDVpTMW6YwgOc2vCZgG` | sachlich: Ansagen, Orte, Daten, Absage |
-| Zitator Goethe | Märchen-Erzähler `hMURwqm1rkRSDLdNzQCM` | älterer Erzähler, langsam |
+| Zitatorin Goethe | Märchen-Erzählerin `jhhOoZ28WmHOJDBuCSGG` | die Stimme der Textprobe, die das ganze Märchen gelesen hat |
 | Zitator Steiner | Christian Plasa `NBqeXKdZHweef6y0B67V` | neutral warm, keine Nachahmung |
 | Stimme der Mantren | Märchen-Leise `6dD0VbyJ548lcuDpD5ew` | leise, fern, sehr ruhig |
 
 Die Zitatoren lesen Zitate. Sie ahmen niemanden nach, und die Absage sagt
 das.
+
+**Hausregel (Wunsch 9. 10. 2026):** Goethes Märchen liest immer die
+Märchen-Erzählerin, die Stimme der Textprobe. Das gilt in Feature und Essay.
+Zuerst lasen es der Märchen-Erzähler (Feature) und Jorin (Essay); beide
+waren «nicht optimal».
 
 ## Regeln, die gelten
 
@@ -141,7 +148,7 @@ für ein breites Kulturpublikum.»
   | Rolle | Stimme | Herkunft |
   |---|---|---|
   | Essay, tragend | Essay-Tragend `34qvTxBeZxm8QcfSvTS8` | im Konto entworfen (warme Altstimme, Fünfzigerin) |
-  | Märchen, frisch | Jorin `wloRHjPaKZv3ucH7TQOT` | Voice Library |
+  | Märchen | Märchen-Erzählerin `jhhOoZ28WmHOJDBuCSGG` | die Stimme der Textprobe |
   | Steiner, weckend (Prosa und Mantren) | Leo Liest `9T2VzpdyzVPMLIjcYVqp` | Voice Library |
   | Ansage | NWR Chronist `IcDVpTMW6YwgOc2vCZgG` | aus dem Podcast |
 
@@ -154,8 +161,9 @@ für ein breites Kulturpublikum.»
 - **Grenze:** Das Konto (Starter) hält höchstens **10 eigene Stimmen**, und
   nach «Essay-Tragend» war es voll. Entworfene Stimmen lassen sich
   ungespeichert nicht verwenden. Stimmen aus der Voice Library zählen nicht
-  zur Grenze und gehen per API direkt, ohne Aufnahme ins Konto. Darum sind
-  «frisch» und «weckend» Bibliotheksstimmen. Weitere eigene Stimmen
+  zur Grenze und gehen per API direkt, ohne Aufnahme ins Konto. Darum war
+  «weckend» eine Bibliotheksstimme und «frisch» zuerst auch (Jorin), bevor
+  das Märchen an die Märchen-Erzählerin ging. Weitere eigene Stimmen
   brauchen einen freien Platz; das entscheidet Philipp.
 - **Musik:** ein eigenes Motiv für Cello und Harfe (60 s, `music_v2_5`).
   Die Geräusche sind dieselben wie im Feature (aus dem Cache).

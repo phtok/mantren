@@ -24,7 +24,7 @@ MODELL = 'eleven_v4'
 STIMMEN = {
     'ERZÄHLERIN': 'nzC30P1U2LuQhAoEQcYi',  # NWR Erzählerin
     'CHRONIST': 'IcDVpTMW6YwgOc2vCZgG',    # NWR Chronist
-    'GOETHE': 'hMURwqm1rkRSDLdNzQCM',      # Märchen-Erzähler
+    'GOETHE': 'jhhOoZ28WmHOJDBuCSGG',      # Märchen-Erzählerin, die Stimme der Textprobe (Wunsch 9. 10. 2026)
     'STEINER': 'NBqeXKdZHweef6y0B67V',     # Christian Plasa
     'MANTRA': '6dD0VbyJ548lcuDpD5ew',      # Märchen-Leise
 }
