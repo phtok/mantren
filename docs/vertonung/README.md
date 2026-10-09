@@ -233,6 +233,60 @@ rund 71 000 Credits für 76 Minuten Musik. Was gelernt wurde, steht in den
 Rückmeldungen oben; die Richtung ist seit Runde 6 klar genug, dass die
 nächsten Stücke keine Stilproben mehr sein müssen.
 
+## Der Dialog als Montage (Runde 7)
+
+Rückmeldung auf 35 (9. 10. 2026): «Eine Stimme nur? Wo ist die Harmonie
+der Doppelstimme? Warum hat der Mensch dieselbe Stimme wie der Hüter?
+Frage jagt Antwort als wäre es ein Satz … Klare Grundelemente und
+Gliederung bitte! Und keine hoppelnde Melodie. Es geht um diesen intimen,
+inneren Vorgang, ein Gewahrwerden, kein Volkstänzchen, eher ein Erwachen in
+eine neue, höhere Wirklichkeit.»
+
+**Die Ursache liegt im Werkzeug:** Eleven Music hält innerhalb eines
+Stücks keine zwei Stimmen auseinander. Was in verschiedenen Abschnitten
+als Duo und als Einzelstimme beschrieben ist, mittelt es zu einem Sänger,
+und es lässt zwischen den Abschnitten keine Stille — Frage und Antwort
+kleben aneinander. Darum ist 35 so geworden, wie es wurde, und darum geht
+es so nicht weiter.
+
+**Darum seit Runde 7 die Montage** (`montage` im Eintrag, `montieren()`):
+Jede Rolle wird als **eigenes Stück** erzeugt, beide über demselben
+Grundton, mit exakt vorgegebenen Abschnittsdauern (bei `music_v2_5`
+verbindlich, also schneidbar). Erst danach werden die Abschnitte in der
+Folge des Dialogs zusammengesetzt, mit **echter Stille** dazwischen und
+ohne jeden Zusatz; der Master ist derselbe wie bisher. Die Stille kostet
+nichts; Vorlage 37 braucht 88 Sekunden Musik für 105 Sekunden Stück.
+
+Die Grundelemente der 37, aus der Situation (der Hüter übergibt, der
+Mensch erwacht):
+
+1. **Der Bordun** auf D, ein Cello, in beiden Liedern. Der Boden.
+2. **Das Duo**, Frau und Mann, gehaltene Töne in Quinte oder Terz, beide
+   jederzeit hörbar, die Frage endet offen und steigt leicht. Erst sie etwas
+   stärker, dann gleich, dann er.
+3. **Die Einzelstimme**, eine junge Frau, nie verdoppelt: Sie beginnt fast
+   auf einem Ton, wie inneres Sprechen, das zu Klang wird; schrittweise,
+   gehaltene Töne, keine Sprünge, kein Puls, kein Schmuck.
+4. **Die Stille**: 2,5 s nach jeder Frage, 3 s nach jeder Antwort. Dort
+   geschieht das Gewahrwerden.
+5. **Eine Blüte**: bei «Mögen klingend schaffen mein Ich» ein einziger
+   Kantele-Akkord, die Stimme öffnet sich ein wenig, dann wieder still.
+   Die dritte Antwort heller, offener, der Bordun öffnet sich zur Quinte;
+   aufrecht, wach, ohne Triumph; die letzte Zeile lang in die Stille.
+
+| Nr | Stand |
+|---|---|
+| 37 | **Geplant und trocken geprüft**, nicht erzeugt: Credits aufgebraucht (256 übrig, 440 nötig für das erste Lied). Die Montage ist mit vorhandenem Audio durchgespielt und schneidet auf die Sekunde. |
+
+Sobald das Kontingent erneuert ist (<https://elevenlabs.io/app/subscription>):
+
+```sh
+XI_KEY=… python3 -I docs/vertonung/vertonen.py bauen 37
+XI_KEY=… python3 -I docs/vertonung/vertonen.py pruefen 37
+```
+
+Kosten: rund 1 200 Credits für beide Lieder.
+
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
@@ -326,10 +380,10 @@ Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 ## Offen
 
-- Philipps Urteil über den Dialog (35): Trägt die Situation die Mittel?
-  Dann Vorlage 36 bauen (Credits), eine Passage des Duos als Referenz
-  wählen und die Sinneinheiten der Stunden 1–7 so bauen: zuerst die
-  Situation, dann die Mittel, Rollen aus dem Sinn, Norden statt Kirche.
+- Vorlage 37 erzeugen, sobald Credits da sind; dann Philipps Urteil: Trägt
+  die Montage die Rollen? Dann alle Dialoge (12, 14, 15, 16, 17, 18, 19)
+  nach diesem Muster, und die Sinneinheiten der Stunden 1–7 mit Rollen aus
+  dem Sinn. Vorlage 36 (35 mit junger Frau) ist durch 37 überholt.
 - 19+ neu denken: Heraustreten statt Kirche.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke
   irgendwo liegen dürfen, wo die Site sie laden kann.

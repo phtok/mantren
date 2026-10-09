@@ -360,6 +360,44 @@ VORLAGEN += [
     dialog(35, 'dialog-hat-verstanden-er', 'a young man, light plain tenor-range voice, close, unforced, no vibrato', 'junger Mann'),
     dialog(36, 'dialog-hat-verstanden-sie', 'a young woman, light plain mid-range voice, close, unforced, no vibrato', 'junge Frau'),
 ]
+# ---------------------------------------------------------------- Der Dialog als Montage (Runde 7, 9. 10. 2026)
+# Rückmeldung auf 35: «Eine Stimme nur? Wo ist die Harmonie der Doppelstimme? Warum hat der Mensch
+# dieselbe Stimme wie der Hüter? Frage jagt Antwort als wäre es ein Satz. Klare Grundelemente und
+# Gliederung bitte! Keine hoppelnde Melodie. Ein Gewahrwerden, kein Volkstänzchen, eher ein Erwachen
+# in eine neue, höhere Wirklichkeit.»
+# Grundelemente: (1) der Bordun auf D, in beiden Liedern; (2) das Duo, Frau und Mann, gehaltene Töne in
+# Quinte oder Terz, beide hörbar, die Frage offen endend; (3) die Einzelstimme, eine junge Frau, auf
+# einem Ton beginnend, schrittweise, kein Puls; (4) die Stille zwischen Frage und Antwort; (5) eine
+# einzige Blüte bei «Mögen klingend schaffen mein Ich».
+BORDUN = ['a low sustained cello drone on D underneath, nothing else', 'no pulse, no rhythm, no dance']
+LANGSAM = ['very slow, long held tones, stepwise motion, mostly repeated notes, no leaps', 'no melody to fall into',
+           'dry intimate acoustics, no reverb wash']
+DUO_FM = ['two voices, one female contralto and one male baritone, singing together in sustained parallel harmony a fifth or a third apart, both clearly audible at all times',
+          'the question left open, rising slightly at the end', 'tentative, quiet, letting go, serving the text',
+          'lyrics in German, every word intelligible', 'no vibrato']
+MENSCHIN = ['a single young woman, light clear voice, alone, never doubled, no harmony',
+            'begins almost on one repeated pitch, like inner speech becoming tone, and gains tone line by line',
+            'syllabic, no ornament, plain, serving the text', 'lyrics in German, every word intelligible', 'no vibrato']
+VORLAGEN += [
+    {'nr': 37, 'slug': 'montage-hat-verstanden', 'titel': 'Hat verstanden dein Geist?', 'text': 'Hüter (Duo) und Mensch · 16.2, montiert',
+     'ansatz': 'Hüter und Mensch getrennt erzeugt, über demselben Bordun auf D, dann mit echter Stille montiert: das Duo aus Frau und Mann fragt in gehaltenen Quinten, die junge Frau antwortet allein, schrittweise, ohne Puls; eine Blüte bei «Mögen klingend schaffen mein Ich».',
+     'stimme': [], 'tonart': 'D, open modal, drone on D', 'tempo': 'very slow, no pulse',
+     'montage': {
+        'lieder': {
+            'hueter': {'nicht': NIE_KIRCHE + ['solo voice', 'single voice'],
+                       'teile': [('Bordun', None, 5, BORDUN + ['the cello drone alone, instrumental']),
+                                 ('Frage 1', ('16.2', 0), 9, DUO_FM + BORDUN + LANGSAM + ['the female voice slightly stronger']),
+                                 ('Frage 2', ('16.2', 2), 9, DUO_FM + BORDUN + LANGSAM + ['both voices equal, gentler']),
+                                 ('Frage 3', ('16.2', 4), 9, DUO_FM + BORDUN + LANGSAM + ['the male voice slightly stronger, the last question, tender'])]},
+            'mensch': {'nicht': NIE_KIRCHE + ['duet', 'two voices', 'drums', 'percussion'],
+                       'teile': [('Antwort 1', ('16.2', 1), 18, MENSCHIN + LANGSAM + ['a faint cello drone on D far away', 'a held breath before the last line']),
+                                 ('Antwort 2', ('16.2', 3), 19, MENSCHIN + LANGSAM + ['a faint cello drone on D', 'on the last two lines a single kantele chord blooms once and the voice opens a little, then quiet again']),
+                                 ('Antwort 3', ('16.2', 5), 19, MENSCHIN + LANGSAM + ['brighter, more open register, the drone opens to a fifth', 'calm, upright, awake, no triumph', 'the last line held long into silence'])]},
+        },
+        'folge': [('hueter', 0, 0.0), ('hueter', 1, 2.5), ('mensch', 0, 3.0), ('hueter', 2, 2.5), ('mensch', 1, 3.0), ('hueter', 3, 2.5), ('mensch', 2, 0.0)],
+        'schluss': 4.0,
+     }},
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
@@ -384,6 +422,10 @@ def zeilen(mantren, quelle):
 def plan(nr, mantren=None):
     mantren = mantren or mantren_laden()
     v = VORLAGE[nr]
+    if v.get('montage'):
+        m = v['montage']
+        plaene = {name: lied_plan(v, name, mantren) for name in m['lieder']}
+        return {'chunks': [plaene[name]['chunks'][i] for name, i, _ in m['folge']], 'montage': True}
     chunks = []
     for name, quelle, dauer, plus, minus, regie in v['teile']:
         text = f'[{name}]'
@@ -473,34 +515,111 @@ def song_id(nr, mantren):
     return json.load(open(pf)).get('song_id')
 
 
-def bauen(nr, mantren):
-    v = VORLAGE[nr]
-    p = plan(nr, mantren)
+def erzeugen(p, name=''):
+    """Ein Kompositionsplan → rohe MP3 im Cache (gespeichert bei ElevenLabs, song_id im Plan-JSON)."""
     k = schluessel(p)
     os.makedirs(CACHE, exist_ok=True)
-    os.makedirs(AUSGABE, exist_ok=True)
     roh = os.path.join(CACHE, f'mus_{k}.mp3')
-    if not os.path.exists(roh):
-        print(f'Vorlage {nr} «{v["titel"]}»: {len(p["chunks"])} Abschnitte, {dauer_s(p):.0f} s — erzeuge …', flush=True)
-        t0 = time.time()
-        kopf, body = anfrage(f'/v1/music/detailed?output_format={FORMAT}',
-                             {'composition_plan': p, 'model_id': MODELL, 'store_for_inpainting': True}, mit_kopf=True)
-        meta, daten = multipart(kopf, body)
-        open(roh, 'wb').write(daten)
-        sid = next((w for h, w in kopf.items() if 'song' in h.lower() and 'id' in h.lower()), None)
-        json.dump({'plan': p, 'song_id': sid, 'meta': meta}, open(os.path.join(CACHE, f'mus_{k}.plan.json'), 'w'),
-                  ensure_ascii=False, indent=1)
-        if not sid:
-            print(f'  Hinweis: kein song_id in den Kopfzeilen: {sorted(kopf)}')
-        print(f'  {len(daten) / 1e6:.1f} MB in {time.time() - t0:.0f} s', flush=True)
+    if os.path.exists(roh):
+        print(f'  {name}: aus dem Cache')
+        return roh
+    print(f'  {name}: {len(p["chunks"])} Abschnitte, {dauer_s(p):.0f} s — erzeuge …', flush=True)
+    t0 = time.time()
+    kopf, body = anfrage(f'/v1/music/detailed?output_format={FORMAT}',
+                         {'composition_plan': p, 'model_id': MODELL, 'store_for_inpainting': True}, mit_kopf=True)
+    meta, daten = multipart(kopf, body)
+    open(roh, 'wb').write(daten)
+    sid = next((w for h, w in kopf.items() if 'song' in h.lower() and 'id' in h.lower()), None)
+    json.dump({'plan': p, 'song_id': sid, 'meta': meta}, open(os.path.join(CACHE, f'mus_{k}.plan.json'), 'w'),
+              ensure_ascii=False, indent=1)
+    if not sid:
+        print(f'  Hinweis: kein song_id in den Kopfzeilen: {sorted(kopf)}')
+    print(f'  {len(daten) / 1e6:.1f} MB in {time.time() - t0:.0f} s', flush=True)
+    return roh
+
+
+def bauen(nr, mantren):
+    v = VORLAGE[nr]
+    os.makedirs(AUSGABE, exist_ok=True)
+    print(f'Vorlage {nr} «{v["titel"]}»')
+    if v.get('montage'):
+        roh = montieren(v, mantren)
     else:
-        print(f'Vorlage {nr} «{v["titel"]}»: aus dem Cache')
+        roh = erzeugen(plan(nr, mantren), v['titel'])
     ziel = os.path.join(AUSGABE, f'vorlage-{nr:02d}-{v["slug"]}.mp3')
     mastern(roh, ziel, nr, v['titel'] + ' – ' + v['ansatz'].split(':')[0].split(',')[0])
     laenge = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', ziel],
                                   capture_output=True, text=True).stdout.strip() or 0)
     print(f'  fertig: {ziel}  {laenge / 60:.1f} min')
     return ziel
+
+
+# ---------------------------------------------------------------- Montage: Rollen getrennt erzeugen, dann zusammensetzen
+# Lehre aus Vorlage 35: Eleven Music hält in einem Stück keine zwei Stimmen auseinander — der Mensch
+# bekam die Stimme des Hüters, die Duo-Harmonie verschwand, Frage jagte Antwort. Darum werden die
+# Rollen als eigene Stücke über demselben Grundton erzeugt (Abschnittsdauern sind bei music_v2_5
+# exakt, also schneidbar) und erst hier mit echter Stille zusammengesetzt.
+SR = 44100
+
+
+def dekodieren(pfad):
+    import numpy as np
+    roh = subprocess.run(['ffmpeg', '-v', 'error', '-i', pfad, '-f', 'f32le', '-ac', '2', '-ar', str(SR), '-'],
+                         capture_output=True, check=True).stdout
+    return np.frombuffer(roh, dtype=np.float32).reshape(-1, 2).copy()
+
+
+def lied_plan(v, name, mantren):
+    lied = v['montage']['lieder'][name]
+    chunks = []
+    for teil in lied['teile']:
+        tname, quelle, dauer, plus = teil[:4]
+        text = f'[{tname}]'
+        if quelle:
+            text += '\n' + '\n'.join(zeilen(mantren, quelle))
+        stile = list(dict.fromkeys(plus + ECHT + [v['tonart'], v['tempo']]))
+        nicht = list(dict.fromkeys(NIE + lied.get('nicht', [])))
+        if not quelle:
+            nicht.append('vocals')
+        chunks.append({'text': text, 'duration_ms': int(dauer * 1000), 'positive_styles': stile[:50],
+                       'negative_styles': nicht[:50], 'context_adherence': 'high'})
+    return {'chunks': chunks}
+
+
+def montieren(v, mantren):
+    import numpy as np
+    m = v['montage']
+    audio, grenzen = {}, {}
+    for name in m['lieder']:
+        p = lied_plan(v, name, mantren)
+        x = dekodieren(erzeugen(p, name))
+        x *= 10 ** ((-20 - 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-9)) / 20)   # je Lied −20 dBFS RMS
+        audio[name] = x
+        t, g = 0, []
+        for c in p['chunks']:
+            g.append((t, t + c['duration_ms'] / 1000))
+            t += c['duration_ms'] / 1000
+        grenzen[name] = g
+    teile = []
+
+    def stille(sek):
+        return np.zeros((int(sek * SR), 2), dtype=np.float32)
+
+    def blende(x, ein=0.04, aus=0.12):
+        n1, n2 = int(ein * SR), int(aus * SR)
+        x[:n1] *= (0.5 - 0.5 * np.cos(np.linspace(0, np.pi, n1)))[:, None]
+        x[-n2:] *= (0.5 + 0.5 * np.cos(np.linspace(0, np.pi, n2)))[:, None]
+        return x
+    for name, i, pause in m['folge']:
+        von, bis = grenzen[name][i]
+        x = audio[name][int(von * SR):min(len(audio[name]), int(bis * SR))].copy()
+        teile.append(blende(x))
+        teile.append(stille(pause))
+    mix = np.concatenate(teile + [stille(m.get('schluss', 3.0))])
+    roh = os.path.join(CACHE, f'mont_{schluessel(m)}.wav')
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', roh],
+                   input=mix.astype(np.float32).tobytes(), check=True)
+    return roh
 
 
 def mastern(roh, ziel, nr, titel):
