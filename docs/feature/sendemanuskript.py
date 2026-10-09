@@ -10,7 +10,7 @@ HIER = os.path.dirname(os.path.abspath(__file__))
 STUECKE = {
     'feature': {
         'quelle': 'manuskript.txt', 'marken': 'es-ist-an-der-zeit.marken.json', 'ziel': 'sendemanuskript.md',
-        'titel': '«Es ist an der Zeit»', 'untertitel': 'Goethes Märchen und die Mantren Rudolf Steiners. Ein Feature',
+        'titel': '«Es ist an der Zeit»', 'untertitel': 'Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. Ein Feature',
         'rollen': {'ERZÄHLERIN': 'Erzählerin', 'CHRONIST': 'Chronist', 'GOETHE': 'Zitatorin (Goethe)',
                    'STEINER': 'Zitator (Steiner)', 'MANTRA': 'Stimme der Mantren'},
         'besetzung': 'Erzählerin (NWR Erzählerin) · Chronist (NWR Chronist) · Zitatorin Goethe (Märchen-Erzählerin, die Stimme der Textprobe) · Zitator Steiner (Christian Plasa) · Stimme der Mantren (Märchen-Leise)',
@@ -18,7 +18,7 @@ STUECKE = {
     },
     'essay': {
         'quelle': 'essay.txt', 'marken': 'was-ist-erquicklicher-als-licht.marken.json', 'ziel': 'essay-sendemanuskript.md',
-        'titel': '«Was ist erquicklicher als Licht?»', 'untertitel': 'Goethes Märchen und die Mantren Rudolf Steiners. Ein Hör-Essay',
+        'titel': '«Was ist erquicklicher als Licht?»', 'untertitel': 'Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. Ein Hör-Essay',
         'rollen': {'ESSAY': 'Essay (tragend)', 'MÄRCHEN': 'Märchen (frisch)', 'STEINER': 'Steiner (weckend)', 'ANSAGE': 'Ansage'},
         'besetzung': 'Essay, tragend (Essay-Tragend) · Märchen (Märchen-Erzählerin, die Stimme der Textprobe) · Steiner, weckend: Prosa und Mantren (Leo Liest) · Ansage (NWR Chronist)',
         'musik': 'Cello und Harfe',

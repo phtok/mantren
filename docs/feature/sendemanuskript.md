@@ -1,6 +1,6 @@
 # «Es ist an der Zeit»
 
-**Goethes Märchen und die Mantren Rudolf Steiners. Ein Feature**
+**Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. Ein Feature**
 
 Sendemanuskript mit Zeitmarken
 
@@ -32,11 +32,11 @@ Werden Flügel deiner Seele wachsen, um den Abgrund zu übersetzen.
 *Stille, 2 s*
 
 `00:38` **Erzählerin** *(ruhig)*  
-Zwei Texte. … Der eine ist ein Märchen. Goethe schreibt es siebzehnhundertfünfundneunzig. … Der andere ist eine Reihe von Sprüchen. Rudolf Steiner schreibt sie neunzehnhundertvierundzwanzig an eine Wandtafel. … Zwischen ihnen liegen hundertneunundzwanzig Jahre. … In beiden will jemand über ein Wasser, über das man nicht gehen kann.
+Zwei Texte. … Der eine ist ein Märchen. Goethe schreibt es siebzehnhundertfünfundneunzig. … Der andere ist Rudolf Steiners mantrisches Spätwerk. Steiner schreibt es neunzehnhundertvierundzwanzig an eine Wandtafel. … Zwischen ihnen liegen hundertneunundzwanzig Jahre. … In beiden will jemand über ein Wasser, über das man nicht gehen kann.
 
 *Stille, 1.5 s*
 
-`01:04` **Zitatorin (Goethe)** *(ruhig, ohne die Stimme zu heben)*  
+`01:05` **Zitatorin (Goethe)** *(ruhig, ohne die Stimme zu heben)*  
 Ich weiss das vierte, sagte die Schlange, näherte sich dem Alten und zischte ihm etwas ins Ohr. … Es ist an der Zeit! rief der Alte mit gewaltiger Stimme.
 
 *Stille, 2.5 s*
@@ -45,88 +45,88 @@ Ich weiss das vierte, sagte die Schlange, näherte sich dem Alten und zischte ih
 
 *Musik (Harfe): Thema, frei 8 s*
 
-`01:27` **Chronist** *(sachlich)*  
-«Es ist an der Zeit». … Goethes Märchen und die Mantren Rudolf Steiners. … Ein Feature.
+`01:28` **Chronist** *(sachlich)*  
+«Es ist an der Zeit». … Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. … Ein Feature.
 
 *Musik (Harfe): Thema, frei 5 s*
 
 *Musik (Harfe): Thema aus*
 
-`01:41` **Erzählerin** *(ruhig)*  
+`01:43` **Erzählerin** *(ruhig)*  
 In Goethes Märchen fällt ein Satz dreimal. Es ist an der Zeit. … Eine Frau namens Lilie muss ihn dreimal hören. Erst dann geschieht, worauf alle warten. … Achten Sie auf diesen Satz.
 
 *Stille, 1 s*
 
-`01:57` **Erzählerin** *(ruhig)*  
+`01:58` **Erzählerin** *(ruhig)*  
 Drei Stationen. … Erste Station: ein Leser. Zweite Station: drei Könige. Dritte Station: ein Fluss.
 
 *Stille, 2 s*
 
 ## Station 1 — Ein Leser
 
-`02:09` **Chronist** *(sachlich)*  
+`02:11` **Chronist** *(sachlich)*  
 Erste Station. Ein Leser.
 
 *Stille, 1 s*
 
-`02:13` **Erzählerin** *(ruhig)*  
+`02:14` **Erzählerin** *(ruhig)*  
 Siebzehnhundertfünfundneunzig. Friedrich Schiller gibt in Jena eine Zeitschrift heraus. Sie heisst «Die Horen». … Goethe schickt eine Reihe von Erzählungen. Die letzte heisst nur: «Das Märchen». … Kein Ort, keine Zeit.
 
 *Stille, 1 s*
 
-`02:32` **Erzählerin** *(ruhig)*  
+`02:33` **Erzählerin** *(ruhig)*  
 Erzählt wird von einem Fluss. Diesseits wohnen ein Fährmann, ein Alter mit einer Lampe und seine Frau. … Jenseits wohnt die schöne Lilie. Wer sie berührt, stirbt. … Ein Jüngling liebt sie. Ihre Nähe hat ihn gelähmt. … Eine grüne Schlange frisst Gold und beginnt zu leuchten. … Und unter der Erde, in einem Tempel, warten vier Könige. Einer aus Gold. Einer aus Silber. Einer aus Erz. … Der vierte ist aus allen dreien gemischt.
 
 *Stille, 1.5 s*
 
-`03:09` **Zitatorin (Goethe)** *(ruhig)*  
+`03:10` **Zitatorin (Goethe)** *(ruhig)*  
 Was ist herrlicher als Gold? fragte der König. … Das Licht, antwortete die Schlange. … Was ist erquicklicher als Licht? fragte jener. … Das Gespräch, antwortete diese.
 
 *Stille, 2 s*
 
-`03:28` **Erzählerin** *(ruhig)*  
+`03:29` **Erzählerin** *(ruhig)*  
 Was das bedeuten soll, hat Goethe nie gesagt. … Einer der beharrlichsten Leser dieses Märchens war Rudolf Steiner.
 
 *Stille, 1 s*
 
-`03:37` **Chronist** *(sachlich)*  
+`03:38` **Chronist** *(sachlich)*  
 Wien. Siebenundzwanzigster November achtzehnhunderteinundneunzig.
 
-`03:42` **Erzählerin** *(ruhig)*  
+`03:44` **Erzählerin** *(ruhig)*  
 Steiner ist dreissig Jahre alt. Im Wiener Goethe-Verein spricht er über das Märchen. … Siebenundzwanzig Jahre später schreibt er dazu eine Anmerkung.
 
 *Stille, 0.8 s*
 
-`03:53` **Zitator (Steiner)** *(ruhig)*  
+`03:54` **Zitator (Steiner)** *(ruhig)*  
 Alles, was ich seither über das «Märchen» habe drucken lassen oder mündlich ausgesprochen habe, ist nur eine weitere Ausgestaltung der in jenem Vortrage ausgesprochenen Gedanken.
 
 *Stille, 1.5 s*
 
-`04:06` **Chronist** *(sachlich)*  
+`04:07` **Chronist** *(sachlich)*  
 Berlin. Herbst neunzehnhundert.
 
-`04:10` **Erzählerin** *(ruhig)*  
+`04:11` **Erzählerin** *(ruhig)*  
 Ein kleiner Kreis in einer Bibliothek. Steiner spricht wieder über das Märchen. … In seiner Lebensbeschreibung erinnert er sich an diesen Abend.
 
 *Stille, 0.8 s*
 
-`04:20` **Zitator (Steiner)** *(ruhig, eindringlich)*  
+`04:21` **Zitator (Steiner)** *(ruhig, eindringlich)*  
 Und in diesem Vortrag wurde ich in Anknüpfung an das Märchen ganz esoterisch. … Es war ein wichtiges Erlebnis für mich, in Worten, die aus der Geistwelt heraus geprägt waren, sprechen zu können.
 
 *Stille, 1.5 s*
 
-`04:34` **Erzählerin** *(ruhig)*  
+`04:35` **Erzählerin** *(ruhig)*  
 Neunzehnhundertzehn schreibt er ein Drama. «Die Pforte der Einweihung». … Es sei, sagt er, «eine Frucht jener Gedanken». … Das dritte dieser Dramen trägt den Titel: «Der Hüter der Schwelle». … Neunzehnhundertachtzehn folgt seine ausführlichste Deutung des Märchens. Wir kommen auf sie zurück.
 
 *Stille, 1 s*
 
-`04:57` **Chronist** *(sachlich)*  
+`04:59` **Chronist** *(sachlich)*  
 Dornach. Februar bis August neunzehnhundertvierundzwanzig.
 
 *Geräusch (7 s): chalk writing slowly on an old blackboard in a quiet wooden hall, soft, intimate*
 
-`05:05` **Erzählerin** *(ruhig)*  
-Das erste Goetheanum ist abgebrannt. Steiner spricht in der Schreinerei daneben. … Er hat eine Hochschule gegründet. Von drei geplanten Klassen kommt nur die erste zustande. … Neunzehn Stunden hält er. In jeder schreibt er Sprüche an die Tafel. Er nennt sie Mantren. … Sie sind zum Meditieren gemacht, nicht zum Lesen. Und sie sprechen den Menschen mit Du an.
+`05:06` **Erzählerin** *(ruhig)*  
+Das erste Goetheanum ist abgebrannt. Steiner spricht in der Schreinerei daneben. … Er hat eine Hochschule gegründet. Von drei geplanten Klassen kommt nur die erste zustande. … Neunzehn Stunden hält er. In jeder schreibt er Mantren an die Tafel. … Sie sind zum Meditieren gemacht, nicht zum Lesen. Und sie sprechen den Menschen mit Du an.
 
 *Stille, 1 s*
 
@@ -375,7 +375,7 @@ In den Mantren steht an diesem Ufer der Hüter. Er warnt vor drei Tieren im Abgr
 
 *Stille, 0.8 s*
 
-`13:52` **Stimme der Mantren** *(leise, langsam)*  
+`13:51` **Stimme der Mantren** *(leise, langsam)*  
 Erst wenn die drei von dir besiegt, werden Flügel deiner Seele wachsen, um den Abgrund zu übersetzen, … der dich trennet vom Erkenntnisfelde, dem sich deine Herzenssehnsucht heilerstrebend weihen möchte.
 
 *Stille, 2 s*
@@ -533,5 +533,5 @@ Es ist an der Zeit.
 *Musik (Harfe): Thema, Schluss*
 
 `19:57` **Chronist** *(sachlich)*  
-«Es ist an der Zeit». Goethes Märchen und die Mantren Rudolf Steiners. … Die Zitate folgen Goethes Ausgabe letzter Hand, der Lesefassung der Mantren von zweitausendvierundzwanzig und Steiners Gesamtausgabe. … Idee, Auftrag und Redaktion: Philipp Tok. Recherche, Text und Produktion: Claude, ein Sprachmodell von Anthropic. Stimmen, Musik und Geräusche: ElevenLabs. … Die Stimmen sind synthetisch. Sie lesen Zitate, sie ahmen niemanden nach.
+«Es ist an der Zeit». Goethes Märchen und Rudolf Steiners mantrisches Spätwerk. … Die Zitate folgen Goethes Ausgabe letzter Hand, der Lesefassung der Mantren von zweitausendvierundzwanzig und Steiners Gesamtausgabe. … Idee, Auftrag und Redaktion: Philipp Tok. Recherche, Text und Produktion: Claude, ein Sprachmodell von Anthropic. Stimmen, Musik und Geräusche: ElevenLabs. … Die Stimmen sind synthetisch. Sie lesen Zitate, sie ahmen niemanden nach.
 

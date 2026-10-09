@@ -1,5 +1,7 @@
 # Feature «Es ist an der Zeit» und Hör-Essay «Was ist erquicklicher als Licht?»
 
+*Goethes Märchen und Rudolf Steiners mantrisches Spätwerk*
+
 *Werkstatt · Radio-Feature und Hör-Essay · Stand 2026-10-09*
 
 Zwei Stücke aus derselben Werkstatt. Der **Hör-Essay** (16:10 Min.) ist die
@@ -55,6 +57,10 @@ diese Zeile. `clips/` gehört nicht ins Repo.
 
 Die Zitatoren lesen Zitate. Sie ahmen niemanden nach, und die Absage sagt
 das.
+
+**Wortwahl (Wunsch 9. 10. 2026):** Die Mantren heißen nie «Sprüche». Es sind
+Mantren, als Werk «Rudolf Steiners mantrisches Spätwerk», wie der Titel
+dieser Ausgabe.
 
 **Hausregel (Wunsch 9. 10. 2026):** Goethes Märchen liest immer die
 Märchen-Erzählerin, die Stimme der Textprobe. Das gilt in Feature und Essay.
