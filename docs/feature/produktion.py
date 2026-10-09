@@ -31,14 +31,20 @@ STIMMEN = {
 TAGS = {
     'ruhig': 'calm', 'langsam': 'slowly', 'leise': 'quietly', 'eindringlich': 'serious',
     'amüsiert': 'amused', 'warm': 'warm', 'traurig': 'sad',
+    'lebendig': 'lively', 'klar': 'clear', 'wach': 'awake',
     'ohne die Stimme zu heben': 'without raising the voice', 'sachlich': None,
 }
+# Ein zweites Stück aus derselben Werkstatt: STUECK=essay liest essay.txt und essay.json
+STUECK = os.environ.get('STUECK', 'manuskript')
+if STUECK != 'manuskript':
+    _konf = json.load(open(os.path.join(HIER, f'{STUECK}.json'), encoding='utf8'))
+    STIMMEN = _konf['stimmen']
 ATEM, PAUSE = 0.55, 1.10
 LUECKE_WECHSEL, LUECKE_GLEICH = 0.85, 0.65
 
 
 # ---------------------------------------------------------------- Regie-Liste
-def lesen(pfad=os.path.join(HIER, 'manuskript.txt')):
+def lesen(pfad=os.path.join(HIER, f'{STUECK}.txt')):
     cues = []
     for z in open(pfad, encoding='utf8'):
         z = z.rstrip('\n')
@@ -144,6 +150,8 @@ MUSIK_PROMPT = ('Solo concert harp, slow and spacious, calm, intimate, sparse ar
                 'with gentle suspended notes, warm low strings very softly underneath, no percussion, '
                 'no vocals, reflective, like the opening of a cultural radio feature, 72 bpm')
 MUSIK_DAUER = 45
+if STUECK != 'manuskript':
+    MUSIK_PROMPT, MUSIK_DAUER = _konf['musik']['prompt'], _konf['musik']['dauer']
 
 
 # ---------------------------------------------------------------- Audio
@@ -364,7 +372,7 @@ def mischen(ausgabe):
             f'measured_LRA={j["input_lra"]}:measured_thresh={j["input_thresh"]}:offset={j["target_offset"]}:linear=true')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', wav + '.raw',
                     '-af', filt + ',aresample=44100', '-c:a', 'libmp3lame', '-b:a', '160k',
-                    '-metadata', 'title=«Es ist an der Zeit» – Goethes Märchen und die Mantren Rudolf Steiners',
+                    '-metadata', 'title=' + (_konf['titel'] if STUECK != 'manuskript' else '«Es ist an der Zeit» – Goethes Märchen und die Mantren Rudolf Steiners'),
                     '-metadata', 'artist=Sätzerei', '-metadata', 'comment=Synthetische Stimmen (ElevenLabs). Text und Produktion: Claude (Anthropic).',
                     ausgabe], check=True)
     os.remove(wav + '.raw')
@@ -405,7 +413,7 @@ def main():
         k, frisch = klang_erzeugen('mus', MUSIK_PROMPT, MUSIK_DAUER)
         print('mus', k, 'neu' if frisch else 'Cache')
     elif befehl == 'mischen':
-        mischen(sys.argv[2] if len(sys.argv) > 2 else os.path.join(HIER, 'es-ist-an-der-zeit.mp3'))
+        mischen(sys.argv[2] if len(sys.argv) > 2 else os.path.join(HIER, f'{STUECK}.mp3'))
     else:
         raise SystemExit(__doc__)
 

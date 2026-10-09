@@ -1,0 +1,19 @@
+{
+ "titel": "«Was ist erquicklicher als Licht?» – Goethes Märchen und die Mantren Rudolf Steiners. Ein Hör-Essay",
+ "stimmen": {
+  "ESSAY": "34qvTxBeZxm8QcfSvTS8",
+  "MÄRCHEN": "wloRHjPaKZv3ucH7TQOT",
+  "STEINER": "9T2VzpdyzVPMLIjcYVqp",
+  "ANSAGE": "IcDVpTMW6YwgOc2vCZgG"
+ },
+ "stimmen_namen": {
+  "ESSAY": "Essay-Tragend (entworfen 9. 10. 2026)",
+  "MÄRCHEN": "Jorin – Captivating and Soft (Bibliothek)",
+  "STEINER": "Leo Liest – Deep and calm (Bibliothek)",
+  "ANSAGE": "NWR Chronist"
+ },
+ "musik": {
+  "prompt": "Intimate chamber music for solo cello and concert harp, slow and luminous, warm and tender, D major with gentle suspensions, long sustained cello lines over sparse harp arpeggios, spacious, no percussion, no vocals, reflective, like the opening of a literary radio essay, 66 bpm",
+  "dauer": 60
+ }
+}
