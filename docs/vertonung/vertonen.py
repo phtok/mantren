@@ -320,6 +320,46 @@ VORLAGEN += [
             ('Antwort 3', ('16.2', 5), 16, ICH + ['one low piano note per line', 'the cello returns very softly under the last line'])],
            instrumente=['cello and viola sustained']),
 ]
+# ---------------------------------------------------------------- Der Dialog (Runde 6, 9. 10. 2026)
+# Rückmeldung auf Runde 5: «Deutscher Gospel? Komm bitte aus der Kirche raus. Lieber skandinavische
+# Landschaften. Das Ineinander-Duo dachte ich zweigeschlechtlich. Kein Fallenlassen in eine Melodie.
+# Alles gestalten, wach werden lassen von innen. Langsam überraschen. Dehnen. Wecken. Halten.
+# Konzentration. Die Einzelstimme des Menschen fehlt. Realisiere zuerst die Situation und gewinne von
+# da die Stilmittel.» — 16.2 ist eine intime Höhepunktsituation: Der Hüter verabschiedet sich und
+# übergibt seine Rolle dem Menschen. Er fragt tastend, der Mensch antwortet aus der erwachenden
+# inneren Stimme; am Ende ist er eingeweiht, gekrönt und gezeptert wie der Prinz im Märchen. Weniger
+# Jubilieren; die Hallelujas an den richtigen Stellen.
+NORDEN = ['Nordic folk colours: a single fiddle with drone strings, a plucked kantele, sparse',
+          'cool clear air, wide open landscape, dry wooden-room acoustics', 'no church, no organ, no reverb wash']
+GESTALTEN = ['everything shaped, no melody to fall into: each line a shaped gesture', 'slow surprises: a stretched syllable, a held note, a sudden quiet',
+             'concentration, awake, inward']
+HUETER_DUO = ['the Guardian as a duo: one female and one male voice always sounding together, interwoven, never apart',
+              'asked tentatively, quietly, unhurried, as if about to let go']
+NIE_KIRCHE = ['gospel', 'choir', 'church organ', 'cathedral reverb', 'jubilant', 'hallelujah', 'triumphant', 'pop ballad', 'swelling strings']
+
+
+def dialog(nr, slug, mensch, mensch_wort):
+    ich = [mensch, 'alone, a single voice, never doubled', 'the awakening inner voice: begins almost without tone, like inner speech becoming sound, and gains tone line by line',
+           'held notes, stretched syllables, honest, no ornament']
+    return {'nr': nr, 'slug': slug, 'titel': 'Hat verstanden dein Geist?', 'text': f'Hüter (Duo) und Mensch ({mensch_wort}) · 16.2',
+            'ansatz': f'Der Abschied des Hüters: das Duo aus Frau und Mann fragt dreimal tastend, der Mensch ({mensch_wort}) antwortet allein aus der erwachenden inneren Stimme; einmal, bei «Mögen klingend schaffen mein Ich», klingen die Harmonien hörbar; am Ende steht er aufrecht, ohne Jubel. Norden statt Kirche.',
+            'stimme': [], 'tonart': 'D, open modal', 'tempo': 'free, slow, speech rhythm',
+            'teile': [
+                ('Eingang', None, 4, NORDEN + ['a single fiddle drone, cool and clear', 'instrumental introduction, brief'], NIE_KIRCHE, ''),
+                ('Frage 1', ('16.2', 0), 7, HUETER_DUO + ['the female voice slightly leading'] + NORDEN + GESTALTEN + ['fiddle drone only'], NIE_KIRCHE, ''),
+                ('Antwort 1', ('16.2', 1), 16, ich + GESTALTEN + ['no accompaniment except a faint fiddle drone far away', 'a held breath before the last line'], NIE_KIRCHE, ''),
+                ('Frage 2', ('16.2', 2), 7, HUETER_DUO + ['both voices equal, gentler than the first question'] + NORDEN + GESTALTEN + ['fiddle drone only'], NIE_KIRCHE, ''),
+                ('Antwort 2', ('16.2', 3), 17, ich + GESTALTEN + ['on the last two lines the kantele enters and the two Guardian voices quietly sound with the human in harmony for a moment: the harmonies become audible, then withdraw'], NIE_KIRCHE, ''),
+                ('Frage 3', ('16.2', 4), 7, HUETER_DUO + ['the male voice slightly leading', 'firm but tender, the last question'] + NORDEN + GESTALTEN + ['fiddle drone only'], NIE_KIRCHE, ''),
+                ('Antwort 3', ('16.2', 5), 18, ich + GESTALTEN + ['grounded now: a very soft frame drum pulse and the fiddle', 'the voice standing upright, calm authority without triumph', 'the last line held and released into silence'], NIE_KIRCHE, ''),
+                ('Ausgang', None, 6, NORDEN + ['fiddle drone and kantele fade', 'one struck kantele tone, then silence', 'instrumental ending, brief'], NIE_KIRCHE, ''),
+            ]}
+
+
+VORLAGEN += [
+    dialog(35, 'dialog-hat-verstanden-er', 'a young man, light plain tenor-range voice, close, unforced, no vibrato', 'junger Mann'),
+    dialog(36, 'dialog-hat-verstanden-sie', 'a young woman, light plain mid-range voice, close, unforced, no vibrato', 'junge Frau'),
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
