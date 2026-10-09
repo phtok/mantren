@@ -289,6 +289,31 @@ garantiert nur, dass sie **verschiedene** Stimmen sind und dass zwischen
 Frage und Antwort Stille steht. Gefällt eine Rolle, wird ihr Lied zur
 Referenz (`ref`) für alle weiteren Dialoge.
 
+## Der Dialog, zweiter Schnitt (Runde 8)
+
+Rückmeldung auf 37 (9. 10. 2026): «Es hubbelt. Die Schnitte sind nicht
+sauber und der Rhythmus hält nicht. Wieder eine Sprecherin statt einer
+Sängerin, im Delirium. Nicht deutlich, ob sie nicht auch den Hüter
+mitgesungen hat. Der Gesamtminimalismus und die klare Gliederung sind
+stimmige Stilmittel. Der innere Ton ist noch nicht ganz da.»
+
+Drei Ursachen, drei Mittel:
+
+| Fehler | Ursache | Mittel in 38 |
+|---|---|---|
+| Hubbeln | geschnitten an Abschnittsgrenzen, wo die Stimme noch ausklingt | Jedes Lied hat zwischen den Gesangsteilen 3-s-Abschnitte «nur Bordun»; geschnitten wird in deren Mitte, mit 0,4 s und 0,6 s Blende. Darunter ein durchgehendes **Bordun-Bett** (eigenes 30-s-Lied, geschleift, −9 dB), das die Nähte trägt und in der Stille den Boden hält. |
+| Sprecherin im Delirium | selbst bestellt: «beginnt fast ohne Ton, wie inneres Sprechen» | «sung clearly, cantabile, pure tone, simple sustained notes»; Sprech-, Hauch- und Flüsterwörter in den Gegen-Stilen. |
+| Hüter nicht vom Menschen zu unterscheiden | das Duo aus Frau und Mann ist das eine Mittel, das Eleven Music nicht verlässlich liefert | Der Hüter eine **einzige tiefe Männerstimme** (Bass-Bariton), der Mensch eine **Frauenstimme** (Mezzo). Die Doppelstimme bleibt als Idee notiert, bis das Werkzeug sie kann. |
+
+Geblieben: Bordun auf D, Stille zwischen Frage und Antwort (1 s nach der
+Frage, 1,5 s nach der Antwort, dazu je 1,5 s Bordun aus den Schnitträndern),
+eine Kantele-Blüte bei «Mögen klingend schaffen mein Ich», die dritte
+Antwort heller und aufrecht.
+
+| Nr | Stand |
+|---|---|
+| 38 | Erzeugt: Bett 30 s, Hüter 40 s, Mensch 69 s, montiert zu 1:55. Rückschrift 98 %. −16,2 LUFS. Rund 1 900 Credits. |
+
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
@@ -382,10 +407,11 @@ Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 ## Offen
 
-- Vorlage 37 erzeugen, sobald Credits da sind; dann Philipps Urteil: Trägt
-  die Montage die Rollen? Dann alle Dialoge (12, 14, 15, 16, 17, 18, 19)
-  nach diesem Muster, und die Sinneinheiten der Stunden 1–7 mit Rollen aus
-  dem Sinn. Vorlage 36 (35 mit junger Frau) ist durch 37 überholt.
+- Philipps Urteil über 38: Sitzen die Schnitte, sind es zwei Sängerinnen
+  bzw. Sänger, ist der innere Ton näher? Dann wird das Hüter-Lied der 38
+  zur Referenz und alle Dialoge (12, 14, 15, 16, 17, 18, 19) folgen dem
+  Muster; danach die Sinneinheiten der Stunden 1–7 mit Rollen aus dem Sinn.
+  Vorlage 36 ist durch 37 und 38 überholt.
 - 19+ neu denken: Heraustreten statt Kirche.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke
   irgendwo liegen dürfen, wo die Site sie laden kann.
