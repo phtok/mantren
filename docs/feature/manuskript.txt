@@ -1,0 +1,232 @@
+# «Es ist an der Zeit» — Goethes Märchen und die Mantren Rudolf Steiners
+# Ein Feature. Regie-Liste: ROLLE|Text · STILLE|n s · MUSIK|… · GERÄUSCH|<englischer Prompt>, n s
+# Rollen: ERZÄHLERIN · CHRONIST · GOETHE (Zitatorin/Zitator Märchen) · STEINER (Zitator Prosa) · MANTRA
+# [Atem] = 550 ms, [Pause] = 1100 ms. Stimmungs-Tags werden für eleven_v4 übersetzt.
+# Leitsatz, dreimal wörtlich: «Es ist an der Zeit.»
+
+## AUFTAKT
+
+GERÄUSCH|a wide river at night after heavy rain, deep steady flowing water, very calm, distant, no voices, 20 s
+STILLE|3 s
+GOETHE|[ruhig, langsam] An dem grossen Flusse, der eben von einem starken Regen geschwollen und übergetreten war,[Atem] lag in seiner kleinen Hütte,[Atem] müde von den Anstrengungen des Tages,[Atem] der alte Fährmann und schlief.
+STILLE|1.5 s
+GOETHE|[ruhig] Mitten in der Nacht weckten ihn einige laute Stimmen.[Atem] Er hörte, dass Reisende übergesetzt sein wollten.
+STILLE|2 s
+MANTRA|[leise, langsam] Werden Flügel deiner Seele wachsen,[Atem] um den Abgrund zu übersetzen.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Zwei Texte.[Pause] Der eine ist ein Märchen.[Atem] Goethe schreibt es siebzehnhundertfünfundneunzig.[Pause] Der andere ist eine Reihe von Sprüchen.[Atem] Rudolf Steiner schreibt sie neunzehnhundertvierundzwanzig an eine Wandtafel.[Pause] Zwischen ihnen liegen hundertneunundzwanzig Jahre.[Pause] In beiden will jemand über ein Wasser,[Atem] über das man nicht gehen kann.
+STILLE|1.5 s
+GOETHE|[ruhig] Ich weiss das vierte, sagte die Schlange,[Atem] näherte sich dem Alten und zischte ihm etwas ins Ohr.[Pause] [ohne die Stimme zu heben] Es ist an der Zeit![Atem] rief der Alte mit gewaltiger Stimme.
+STILLE|2.5 s
+
+## TITEL
+
+MUSIK|Thema, frei 8 s
+CHRONIST|[sachlich] «Es ist an der Zeit».[Pause] Goethes Märchen und die Mantren Rudolf Steiners.[Pause] Ein Feature.
+MUSIK|Thema, frei 5 s
+MUSIK|Thema aus
+ERZÄHLERIN|[ruhig] In Goethes Märchen fällt ein Satz dreimal.[Atem] Es ist an der Zeit.[Pause] Eine Frau namens Lilie muss ihn dreimal hören.[Atem] Erst dann geschieht, worauf alle warten.[Pause] Achten Sie auf diesen Satz.
+STILLE|1 s
+ERZÄHLERIN|[ruhig] Drei Stationen.[Pause] Erste Station: ein Leser.[Atem] Zweite Station: drei Könige.[Atem] Dritte Station: ein Fluss.
+STILLE|2 s
+
+## STATION 1 — EIN LESER
+
+CHRONIST|[sachlich] Erste Station.[Atem] Ein Leser.
+STILLE|1 s
+ERZÄHLERIN|[ruhig] Siebzehnhundertfünfundneunzig.[Atem] Friedrich Schiller gibt in Jena eine Zeitschrift heraus.[Atem] Sie heisst «Die Horen».[Pause] Goethe schickt eine Reihe von Erzählungen.[Atem] Die letzte heisst nur: «Das Märchen».[Pause] Kein Ort, keine Zeit.
+STILLE|1 s
+ERZÄHLERIN|[ruhig] Erzählt wird von einem Fluss.[Atem] Diesseits wohnen ein Fährmann,[Atem] ein Alter mit einer Lampe[Atem] und seine Frau.[Pause] Jenseits wohnt die schöne Lilie.[Atem] Wer sie berührt, stirbt.[Pause] Ein Jüngling liebt sie.[Atem] Ihre Nähe hat ihn gelähmt.[Pause] Eine grüne Schlange frisst Gold und beginnt zu leuchten.[Pause] Und unter der Erde, in einem Tempel, warten vier Könige.[Atem] Einer aus Gold.[Atem] Einer aus Silber.[Atem] Einer aus Erz.[Pause] Der vierte ist aus allen dreien gemischt.
+STILLE|1.5 s
+GOETHE|[ruhig] Was ist herrlicher als Gold?[Atem] fragte der König.[Pause] Das Licht,[Atem] antwortete die Schlange.[Pause] Was ist erquicklicher als Licht?[Atem] fragte jener.[Pause] Das Gespräch,[Atem] antwortete diese.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Was das bedeuten soll, hat Goethe nie gesagt.[Pause] Einer der beharrlichsten Leser dieses Märchens war Rudolf Steiner.
+STILLE|1 s
+CHRONIST|[sachlich] Wien.[Atem] Siebenundzwanzigster November achtzehnhunderteinundneunzig.
+ERZÄHLERIN|[ruhig] Steiner ist dreissig Jahre alt.[Atem] Im Wiener Goethe-Verein spricht er über das Märchen.[Pause] Siebenundzwanzig Jahre später schreibt er dazu eine Anmerkung.
+STILLE|0.8 s
+STEINER|[ruhig] Alles, was ich seither über das «Märchen» habe drucken lassen oder mündlich ausgesprochen habe,[Atem] ist nur eine weitere Ausgestaltung der in jenem Vortrage ausgesprochenen Gedanken.
+STILLE|1.5 s
+CHRONIST|[sachlich] Berlin.[Atem] Herbst neunzehnhundert.
+ERZÄHLERIN|[ruhig] Ein kleiner Kreis in einer Bibliothek.[Atem] Steiner spricht wieder über das Märchen.[Pause] In seiner Lebensbeschreibung erinnert er sich an diesen Abend.
+STILLE|0.8 s
+STEINER|[ruhig, eindringlich] Und in diesem Vortrag wurde ich in Anknüpfung an das Märchen ganz esoterisch.[Pause] Es war ein wichtiges Erlebnis für mich,[Atem] in Worten, die aus der Geistwelt heraus geprägt waren, sprechen zu können.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Neunzehnhundertzehn schreibt er ein Drama.[Atem] «Die Pforte der Einweihung».[Pause] Es sei, sagt er, «eine Frucht jener Gedanken».[Pause] Das dritte dieser Dramen trägt den Titel: «Der Hüter der Schwelle».[Pause] Neunzehnhundertachtzehn folgt seine ausführlichste Deutung des Märchens.[Atem] Wir kommen auf sie zurück.
+STILLE|1 s
+CHRONIST|[sachlich] Dornach.[Atem] Februar bis August neunzehnhundertvierundzwanzig.
+GERÄUSCH|chalk writing slowly on an old blackboard in a quiet wooden hall, soft, intimate, 7 s
+ERZÄHLERIN|[ruhig] Das erste Goetheanum ist abgebrannt.[Atem] Steiner spricht in der Schreinerei daneben.[Pause] Er hat eine Hochschule gegründet.[Atem] Von drei geplanten Klassen kommt nur die erste zustande.[Pause] Neunzehn Stunden hält er.[Atem] In jeder schreibt er Sprüche an die Tafel.[Atem] Er nennt sie Mantren.[Pause] Sie sind zum Meditieren gemacht, nicht zum Lesen.[Atem] Und sie sprechen den Menschen mit Du an.
+STILLE|1 s
+ERZÄHLERIN|[ruhig] Meist spricht in ihnen eine Gestalt am Rand eines Abgrunds.[Atem] Der Hüter der Schwelle.
+STILLE|1 s
+MANTRA|[leise, langsam] Vor ihm breiten sich die Sinnesfelder,[Pause] hinter ihm, da gähnen Abgrundtiefen.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Im Herbst wird Steiner krank.[Atem] Im März neunzehnhundertfünfundzwanzig stirbt er.[Pause] In den Klassenstunden, soweit die Mitschriften reichen,[Atem] nennt er das Märchen nicht.
+STILLE|2.5 s
+ERZÄHLERIN|[ruhig, langsam] Kein einziges Mal.
+STILLE|2.5 s
+ERZÄHLERIN|[ruhig] Und doch klingen die beiden Texte zusammen.[Pause] Manchmal Wort für Wort.
+STILLE|1.5 s
+MUSIK|Thema, Brücke 7 s
+
+## STATION 2 — DREI KÖNIGE
+
+CHRONIST|[sachlich] Zweite Station.[Atem] Drei Könige.
+STILLE|1 s
+ERZÄHLERIN|[ruhig] Gegen Ende des Märchens stehen alle im Tempel unter der Erde.[Atem] Der gemischte König fragt, wer die Welt beherrschen wird.[Pause] Der Alte antwortet:
+STILLE|0.8 s
+GOETHE|[ruhig] Wer auf seinen Füssen steht.[Pause] Es wird sich offenbaren,[Atem] denn es ist an der Zeit.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Lilie hört den Satz zum dritten Mal.[Atem] Der Tempel beginnt sich zu bewegen.[Atem] Er zieht unter dem Fluss hindurch und steigt empor.[Pause] Bei Sonnenaufgang tritt der Alte zwischen den Jüngling und Lilie.
+STILLE|0.8 s
+GOETHE|[langsam, eindringlich] Drei sind, die da herrschen auf Erden:[Pause] die Weisheit,[Atem] der Schein[Atem] und die Gewalt.
+STILLE|1.5 s
+GOETHE|[ruhig] Bei dem ersten Worte stand der goldne König auf,[Atem] bei dem zweiten der silberne,[Atem] und bei dem dritten hatte sich der eherne langsam empor gehoben.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Weisheit, Schein, Gewalt.[Pause] Drei Könige, drei Metalle, drei Worte.[Pause] Neunzehnhundertachtzehn liest Steiner sie als die drei Kräfte der Seele.[Atem] Wille, Gefühl, Erkenntnis.[Pause] Und er sagt, was jede von ihnen empfängt.
+STILLE|0.8 s
+STEINER|[ruhig, langsam] Die Macht, durch welche die Tugend wirkt, offenbart sich dem Willen.[Pause] Die Schönheit, der schöne Schein, offenbart sich dem Fühlen.[Pause] Die Weisheit offenbart sich dem Erkennen.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Die Gewalt ist zur Tugend geworden.[Pause] Merken Sie sich die drei Worte.[Atem] Weisheit.[Atem] Schein.[Atem] Tugend.
+STILLE|1.5 s
+CHRONIST|[sachlich] Dornach.[Atem] Elfter April neunzehnhundertvierundzwanzig.[Atem] Siebente Klassenstunde.
+STILLE|0.8 s
+ERZÄHLERIN|[ruhig] Sechs Jahre nach seiner Deutung schreibt Steiner ein Mantram an die Tafel.[Atem] Es hat drei Strophen.
+STILLE|1 s
+MANTRA|[leise, langsam] Des Kopfes Geist,[Atem] du kannst ihn wollen;[Atem] und Wollen wird dir[Atem] der Sinne vielgestaltig Himmelsweben;[Pause] du webest in der Weisheit.
+STILLE|1.5 s
+MANTRA|[leise, langsam] Des Herzens Seele,[Atem] du kannst sie fühlen;[Atem] und Fühlen wird dir[Atem] des Denkens-Wollens, Wollens-Denkens[Atem] keimerweckend Weltenleben;[Pause] du lebest in dem Scheine.
+STILLE|1.5 s
+MANTRA|[leise, langsam] Der Glieder Kraft,[Atem] du kannst sie denken;[Atem] und Denken wird dir[Atem] des Wollens zielerfassend Menschenstreben;[Pause] du strebest in der Tugend.
+STILLE|3 s
+ERZÄHLERIN|[ruhig, langsam] Weisheit.[Atem] Schein.[Atem] Tugend.
+STILLE|2.5 s
+ERZÄHLERIN|[ruhig] Es sind dieselben Worte.
+STILLE|2.5 s
+ERZÄHLERIN|[ruhig, langsam] Dieselben Worte.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Nur stehen sie an einem anderen Ort.[Pause] Neunzehnhundertachtzehn gehört die Weisheit dem Erkennen.[Atem] Im Mantram soll man den Geist des Kopfes wollen.[Pause] Die Kraft der Glieder, sonst der Ort des Willens,[Atem] soll man denken.[Pause] Steiner nennt das die völlige Umkehrung in der geistigen Welt.[Pause] Die Deutung eines Märchens kehrt wieder.[Atem] Als Wort, das von jenseits der Schwelle gesprochen wird.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Und der vierte König?[Atem] Goethe beschreibt ihn genau.
+STILLE|0.8 s
+GOETHE|[ruhig] Genau betrachtet war es eine Mischung der drei Metalle,[Atem] aus denen seine Brüder gebildet waren.[Pause] Aber beim Gusse schienen diese Materien nicht recht zusammen geschmolzen zu sein.
+STILLE|1 s
+ERZÄHLERIN|[ruhig] Als die drei anderen aufstehen, sinkt er zusammen.[Atem] Goethe erzählt es nicht feierlich.
+STILLE|0.8 s
+GOETHE|[amüsiert, ruhig] Wer ihn sah, konnte sich, ungeachtet des feierlichen Augenblicks, kaum des Lachens enthalten.[Pause] Denn er sass nicht,[Atem] er lag nicht,[Atem] er lehnte sich nicht an,[Atem] sondern er war unförmlich zusammengesunken.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Für Steiner ist dieser Klumpen ein Bild für uns.[Atem] Denken, Fühlen und Wollen sind ineinander gegossen.[Atem] Keines ist frei.
+STILLE|0.8 s
+STEINER|[ruhig] Er wird die freie Persönlichkeit in dem Masse erringen,[Atem] als er mit vollem Bewusstsein die Gaben der drei in ihrer besonderen Eigenart,[Atem] jede für sich, empfängt[Atem] und sie erst, in freier bewusster Betätigung, in seiner Seele selbst vereinigt.[Pause] Dann zerfällt in sich, was ihn vorher bezwungen hat.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] In der siebenten Klassenstunde mahnt der Hüter:
+STILLE|0.8 s
+MANTRA|[leise, langsam] O schau die Drei,[Atem] sie sind die Eins,[Atem] wenn du die Menschenprägung[Atem] im Erdendasein trägst.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Auf der Erde sind die Drei eins.[Atem] Jenseits der Schwelle, sagt Steiner, trennen sie sich sofort.[Pause] Bei Goethe ist das eine Szene.[Atem] Der falsche Guss hält, solange nichts geschieht.[Atem] Ist es an der Zeit, zerfällt er.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Der Alte führt den Jüngling zu den drei Königen.[Atem] Jeder gibt ihm etwas.[Atem] Jeder sagt dazu einen Satz.
+STILLE|0.8 s
+GOETHE|[ruhig, ohne die Stimme zu heben] Das Schwert an der Linken, die Rechte frei!
+STILLE|1.2 s
+GOETHE|[ruhig, ohne die Stimme zu heben] Weide die Schafe!
+STILLE|1.2 s
+GOETHE|[ruhig, ohne die Stimme zu heben] Erkenne das Höchste!
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Das Schwert wirkt in Brust, Armen und Füssen.[Atem] Der Szepter mildert die Kraft.[Atem] Der Kranz belebt das Gesicht und das Auge.[Pause] Glieder, Herz, Haupt.[Atem] Es ist die Ordnung des Mantrams.[Pause] Und «Erkenne das Höchste» klingt wie das Wort auf Steiners erster Tafel.
+STILLE|0.8 s
+MANTRA|[leise, langsam] O Mensch, erkenne dich selbst!
+STILLE|2 s
+ERZÄHLERIN|[ruhig] In einer Wiederholungsstunde im September schreibt Steiner mit roter Kreide quer über die Tafel:
+STILLE|0.8 s
+MANTRA|[leise, langsam] Tritt ein.[Pause] Das Tor ist geöffnet.[Pause] Du wirst ein wahrer Mensch werden.
+STILLE|2 s
+MUSIK|Thema, Brücke 7 s
+
+## STATION 3 — EIN FLUSS
+
+CHRONIST|[sachlich] Dritte Station.[Atem] Ein Fluss.
+GERÄUSCH|a calm river by day, gentle current along a reedy bank, soft and close, no birds, 16 s
+STILLE|1 s
+ERZÄHLERIN|[ruhig] Beide Texte haben dieselbe Landschaft.[Pause] Diesseits liegt, was wir sehen und anfassen.[Atem] Jenseits liegt, wonach wir uns sehnen.[Atem] Dazwischen ein Wasser.[Atem] Ein Abgrund.[Pause] Und beide haben für den Weg hinüber dasselbe Wort.[Pause] Übersetzen.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Die Schlange erklärt den Fährmann so:
+STILLE|0.5 s
+GOETHE|[ruhig] Er darf jedermann herüber,[Atem] niemand hinüber bringen.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Wer hinüber will, braucht einen anderen Weg.[Atem] Der Schatten eines Riesen trägt in der Dämmerung.[Atem] Die Schlange trägt am Mittag.[Atem] Dann spannt sie sich als Brücke über den Fluss.[Pause] Am anderen Ufer singt Lilie zur Harfe.
+STILLE|0.8 s
+GOETHE|[leise, traurig] Ach! warum steht der Tempel nicht am Flusse![Pause] Ach! warum ist die Brücke nicht gebaut!
+STILLE|2 s
+ERZÄHLERIN|[ruhig] In den Mantren steht an diesem Ufer der Hüter.[Atem] Er warnt vor drei Tieren im Abgrund.[Atem] Und er sagt, was es braucht, um hinüberzukommen.
+STILLE|0.8 s
+MANTRA|[leise, langsam] Erst wenn die drei von dir besiegt,[Atem] werden Flügel deiner Seele wachsen,[Atem] um den Abgrund zu übersetzen,[Pause] der dich trennet vom Erkenntnisfelde,[Atem] dem sich deine Herzenssehnsucht[Atem] heilerstrebend weihen möchte.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Herzenssehnsucht.[Pause] Der Jüngling im Märchen hat sie.[Atem] Er lebt, sagt er, in einer getrennten Gegenwart.[Pause] Eines Abends hält er es nicht mehr aus.
+STILLE|0.8 s
+GOETHE|[ruhig, ohne die Stimme zu heben] Er aber stürzte auf die Schöne los.[Atem] Sie streckte die Hände aus, ihn abzuhalten,[Atem] und berührte ihn nur desto früher.[Pause] Das Bewusstsein verliess ihn.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Steiner nennt ihn den «zur Unzeit» Berührten.[Pause] Zur Unzeit.[Pause] In der ersten Klassenstunde warnt der Hüter vor genau diesem Eilen.
+STILLE|0.8 s
+MANTRA|[leise, langsam] Doch du musst den Abgrund achten;[Atem] sonst verschlingen seine Tiere dich,[Atem] wenn du an mir vorübereilt'st.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Das Märchen ist eine Erzählung gegen die Eile.[Pause] Die Irrlichter haben es eilig.[Atem] Der Jüngling hat es eilig.[Pause] Der Alte mit der Lampe nicht.
+STILLE|0.8 s
+GOETHE|[ruhig] Ein Einzelner hilft nicht,[Atem] sondern wer sich mit vielen zur rechten Stunde vereinigt.[Pause] Aufschieben wollen wir und hoffen.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Um Mitternacht kommen alle zusammen.[Atem] Die Schlange hat einen Kreis um den toten Jüngling gezogen.[Pause] Sie tragen ihn über den Fluss.[Atem] Am anderen Ufer fragt der Alte die Schlange, was sie beschlossen hat.
+STILLE|2.5 s
+GOETHE|[leise, langsam] Mich aufzuopfern,[Atem] ehe ich aufgeopfert werde.
+STILLE|3 s
+ERZÄHLERIN|[ruhig] Lilie berührt die Schlange und den Geliebten.[Atem] Der Jüngling regt sich.[Pause] Die Schlange zerfällt in tausend leuchtende Edelsteine.[Atem] Der Alte schüttet sie in den Fluss.
+GERÄUSCH|a handful of small glass-like gemstones gently falling into a calm river, soft splashes and tiny glittering ripples, quiet, 5 s
+STILLE|1.5 s
+GOETHE|[leise] Wie leuchtende und blinkende Sterne schwammen die Steine mit den Wellen hin.[Pause] Und man konnte nicht unterscheiden,[Atem] ob sie sich in der Ferne verloren oder untersanken.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Am Morgen steht über dem Fluss eine Brücke.[Atem] Mit vielen Bögen.[Pause] Ihre Pfeiler sind die Reste der Schlange.[Pause] Steiner liest das als einen Vorgang in der Seele.
+STILLE|0.8 s
+STEINER|[ruhig] Dann ist auch die Zeit gekommen,[Atem] in der die Seele in sich die Brücke bilden kann[Atem] zwischen dem diesseitigen und jenseitigen Gebiet des Flusses.[Pause] Diese Brücke entsteht aus dem Stoffe der Schlange selbst.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Auf einer der drei Tafeln, die die Klassenstunden rahmen, steht der Satz dazu.
+STILLE|0.8 s
+MANTRA|[leise, langsam] Der Tod, er steht an des Weges Ende.[Pause] Ich will des Christus Wesen fühlen.[Pause] Es weckt in Stoffes-Sterben Geist-Geburt.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Noch ein Bild teilen die beiden Texte.[Pause] Goethes Brücke ist ein Bogen aus Farbe.[Atem] Aus Jaspis und Smaragd.[Atem] Bei Nacht ein leuchtender Kreis.[Pause] Im Juli neunzehnhundertvierundzwanzig spricht der Hüter:
+STILLE|0.8 s
+MANTRA|[leise, langsam] Sieh' des Äther-Farbenbogens[Atem] lichtgewalt'ges Rund,[Pause] lass' durch deiner Augen[Atem] lichterschaffene Kraft[Atem] dein Ich den Kreis durchdringen,[Pause] und dann schau von jenseit'ger Warte[Atem] farbenflutend die Weltenschale.
+STILLE|2 s
+ERZÄHLERIN|[ruhig] Steiner nennt diesen Bogen in derselben Stunde eine Brücke.[Atem] Die Brücke des Regenbogens.[Pause] Über sie werden die Gedanken der Menschen ins Geisterreich geleitet.[Pause] Engel tragen sie weiter,[Atem] wie in einem gewaltigen Opfer.
+STILLE|2 s
+MUSIK|Thema, Brücke 7 s
+
+## WAS BLEIBT
+
+GERÄUSCH|early morning by a wide river, soft flowing water, a few distant birds, peaceful, 18 s
+ERZÄHLERIN|[ruhig] Was bleibt?[Pause] Drei Dinge.
+STILLE|1 s
+ERZÄHLERIN|[ruhig] Erstens.[Atem] Steiner hat das Märchen über dreissig Jahre gelesen.[Atem] In den Mantren nennt er es nicht.[Atem] Aber sie sprechen seine Sprache.
+STILLE|1.2 s
+ERZÄHLERIN|[ruhig] Zweitens.[Atem] Goethe erzählt in Bildern, von aussen.[Atem] Steiner spricht dieselben Bilder als Du.[Atem] Aus der Geschichte wird eine Anrede.
+STILLE|1.2 s
+ERZÄHLERIN|[ruhig] Drittens.[Atem] Die Texte enden an verschiedenen Orten.[Pause] Bei Goethe geht ein ganzes Volk über die Brücke.
+STILLE|0.5 s
+GOETHE|[ruhig] Und bis auf den heutigen Tag wimmelt die Brücke von Wanderern,[Atem] und der Tempel ist der besuchteste auf der ganzen Erde.
+STILLE|1.5 s
+ERZÄHLERIN|[ruhig] Die Mantren enden bei einem Einzelnen.[Atem] Er spricht die höchsten geistigen Wesen an.[Atem] Seraphim, Cherubim, Throne.
+STILLE|0.8 s
+MANTRA|[leise, langsam] Seraphisch Feuermächte,[Atem] aus meinem Herzen strahlet ihr.[Pause] Cherubinisch Bildekräfte,[Atem] in meinem Haupte scheinet ihr.[Pause] Der Throne Traggewalten,[Atem] in meinen Gliedern kraftet ihr.[Pause] Mein Ich ist Ihr.
+STILLE|2.5 s
+ERZÄHLERIN|[ruhig] Als der Jüngling gekrönt ist, sieht er sich um.[Atem] Und er bemerkt, was den drei Königen fehlt.
+STILLE|0.8 s
+GOETHE|[ruhig, warm] Du hast die vierte Kraft vergessen,[Atem] die noch früher, allgemeiner, gewisser die Welt beherrscht:[Pause] die Kraft der Liebe.
+STILLE|1.5 s
+GOETHE|[ruhig, warm] Die Liebe herrscht nicht,[Atem] aber sie bildet,[Atem] und das ist mehr.
+STILLE|3 s
+ERZÄHLERIN|[ruhig, langsam] Es ist an der Zeit.
+STILLE|3 s
+
+## SCHLUSS
+
+MUSIK|Thema, Schluss
+CHRONIST|[sachlich] «Es ist an der Zeit».[Atem] Goethes Märchen und die Mantren Rudolf Steiners.[Pause] Die Zitate folgen Goethes Ausgabe letzter Hand,[Atem] der Lesefassung der Mantren von zweitausendvierundzwanzig[Atem] und Steiners Gesamtausgabe.[Pause] Idee, Auftrag und Redaktion: Philipp Tok.[Atem] Recherche, Text und Produktion: Claude, ein Sprachmodell von Anthropic.[Atem] Stimmen, Musik und Geräusche: ElevenLabs.[Pause] Die Stimmen sind synthetisch.[Atem] Sie lesen Zitate,[Atem] sie ahmen niemanden nach.
