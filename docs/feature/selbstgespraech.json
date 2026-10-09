@@ -1,0 +1,35 @@
+{
+ "titel": "«Durchsichtig» – Ein Selbstgespräch über Goethes Märchen und Rudolf Steiners mantrisches Spätwerk",
+ "stimmen": {
+  "EINE": "34qvTxBeZxm8QcfSvTS8",
+  "ICH": "34qvTxBeZxm8QcfSvTS8",
+  "ANDERE": "a5IGPlKvc75qLpuahLq4",
+  "JOHANNES": "a5IGPlKvc75qLpuahLq4",
+  "MÄRCHEN": "jhhOoZ28WmHOJDBuCSGG",
+  "STEINER": "9T2VzpdyzVPMLIjcYVqp",
+  "MANTRA": "9T2VzpdyzVPMLIjcYVqp",
+  "HÜTER": "9T2VzpdyzVPMLIjcYVqp",
+  "ANSAGE": "IcDVpTMW6YwgOc2vCZgG"
+ },
+ "stimmen_namen": {
+  "EINE": "Essay-Tragend",
+  "ICH": "Essay-Tragend (Vers für Vers)",
+  "ANDERE": "Christian – Lyrical Silence (Bibliothek)",
+  "JOHANNES": "Christian – Lyrical Silence (Vers für Vers)",
+  "MÄRCHEN": "Märchen-Erzählerin",
+  "STEINER": "Leo Liest",
+  "MANTRA": "Leo Liest (Vers für Vers)",
+  "HÜTER": "Leo Liest (Vers für Vers)",
+  "ANSAGE": "NWR Chronist"
+ },
+ "getrennt": [
+  "MANTRA",
+  "HÜTER",
+  "ICH",
+  "JOHANNES"
+ ],
+ "musik": {
+  "prompt": "Intimate chamber music for solo cello and concert harp, slow and luminous, warm and tender, D major with gentle suspensions, long sustained cello lines over sparse harp arpeggios, spacious, no percussion, no vocals, reflective, like the opening of a literary radio essay, 66 bpm",
+  "dauer": 60
+ }
+}

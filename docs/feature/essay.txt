@@ -1,6 +1,6 @@
 # «Was ist erquicklicher als Licht?» — Goethes Märchen und Rudolf Steiners mantrisches Spätwerk
 # Ein Hör-Essay. Regie-Liste wie beim Feature (ROLLE|Text · STILLE · MUSIK · GERÄUSCH).
-# Stimmen: ESSAY (tragend) · MÄRCHEN (frisch) · STEINER (weckend; Prosa und Mantren) · ANSAGE
+# Stimmen: ESSAY (tragend) · MÄRCHEN (Märchen-Erzählerin) · STEINER (weckend, Prosa) · MANTRA (dieselbe Stimme, Vers für Vers) · ANSAGE
 # Leitwort, dreimal: «Das Gespräch.»
 
 ## AUFTAKT
@@ -40,7 +40,7 @@ ESSAY|[warm, ruhig] Mit dreiundsechzig steht er in Dornach bei Basel an einer Wa
 GERÄUSCH|chalk writing slowly on an old blackboard in a quiet wooden hall, soft, intimate, 7 s
 ESSAY|[warm, ruhig] Mantren sind Worte zum Meditieren.[Atem] Sie erklären nichts.[Atem] Sie sprechen den Menschen an.[Atem] Mit Du.
 STILLE|1 s
-STEINER|[klar, wach, langsam] O Mensch, erkenne dich selbst![Pause] So tönt das Weltenwort.
+MANTRA|[klar, wach, langsam] O Mensch, erkenne dich selbst![Pause] So tönt das Weltenwort.
 STILLE|2 s
 ESSAY|[ruhig] Woher kommen diese Mantren?[Pause] In der sechsten Stunde nennt Steiner die Voraussetzung, um sie zu hören:
 STILLE|0.6 s
@@ -72,11 +72,11 @@ STEINER|[ruhig, klar] Die Macht, durch welche die Tugend wirkt, offenbart sich d
 STILLE|2 s
 ESSAY|[warm, ruhig] Weisheit.[Atem] Schein.[Atem] Tugend.[Pause] Sechs Jahre später, in Dornach, schreibt er ein Mantram an die Tafel.[Atem] Es spricht vom Kopf, vom Herzen und von den Gliedern.[Pause] Hören Sie, wie jede Strophe endet.
 STILLE|1.5 s
-STEINER|[klar, wach, langsam] Des Kopfes Geist,[Atem] du kannst ihn wollen;[Atem] und Wollen wird dir[Atem] der Sinne vielgestaltig Himmelsweben;[Pause] du webest in der Weisheit.
+MANTRA|[klar, wach, langsam] Des Kopfes Geist,[Atem] du kannst ihn wollen;[Atem] und Wollen wird dir[Atem] der Sinne vielgestaltig Himmelsweben;[Pause] du webest in der Weisheit.
 STILLE|1.5 s
-STEINER|[klar, wach, langsam] Des Herzens Seele,[Atem] du kannst sie fühlen;[Atem] und Fühlen wird dir[Atem] des Denkens-Wollens, Wollens-Denkens[Atem] keimerweckend Weltenleben;[Pause] du lebest in dem Scheine.
+MANTRA|[klar, wach, langsam] Des Herzens Seele,[Atem] du kannst sie fühlen;[Atem] und Fühlen wird dir[Atem] des Denkens-Wollens, Wollens-Denkens[Atem] keimerweckend Weltenleben;[Pause] du lebest in dem Scheine.
 STILLE|1.5 s
-STEINER|[klar, wach, langsam] Der Glieder Kraft,[Atem] du kannst sie denken;[Atem] und Denken wird dir[Atem] des Wollens zielerfassend Menschenstreben;[Pause] du strebest in der Tugend.
+MANTRA|[klar, wach, langsam] Der Glieder Kraft,[Atem] du kannst sie denken;[Atem] und Denken wird dir[Atem] des Wollens zielerfassend Menschenstreben;[Pause] du strebest in der Tugend.
 STILLE|3 s
 ESSAY|[ruhig, langsam] Weisheit.[Atem] Schein.[Atem] Tugend.
 STILLE|2.5 s
@@ -97,11 +97,11 @@ MÄRCHEN|[leise, traurig] Ach! warum steht der Tempel nicht am Flusse![Pause] Ac
 STILLE|2 s
 ESSAY|[warm, ruhig] In Steiners Mantren ist der Fluss ein Abgrund.[Atem] An seinem Rand steht eine ernste Gestalt, der Hüter der Schwelle.[Pause] Er hält zurück, wer unvorbereitet hinüber will.[Atem] Und er sagt, was es braucht.
 STILLE|0.8 s
-STEINER|[klar, wach, langsam] Erst wenn die drei von dir besiegt,[Atem] werden Flügel deiner Seele wachsen,[Atem] um den Abgrund zu übersetzen,[Pause] der dich trennet vom Erkenntnisfelde,[Atem] dem sich deine Herzenssehnsucht[Atem] heilerstrebend weihen möchte.
+MANTRA|[klar, wach, langsam] Erst wenn die drei von dir besiegt,[Atem] werden Flügel deiner Seele wachsen,[Atem] um den Abgrund zu übersetzen,[Pause] der dich trennet vom Erkenntnisfelde,[Atem] dem sich deine Herzenssehnsucht[Atem] heilerstrebend weihen möchte.
 STILLE|2 s
 ESSAY|[warm, ruhig] Übersetzen.[Atem] Dasselbe Wort wie beim Fährmann.[Pause] Und dieselbe Gefahr.[Atem] Der Jüngling, der Lilie liebt, hält das Warten nicht mehr aus.[Atem] Er stürzt auf sie zu.[Atem] Ihre Berührung nimmt ihm das Bewusstsein, dann das Leben.[Pause] Steiner nennt ihn den «zur Unzeit» Berührten.[Atem] Und der Hüter warnt:
 STILLE|0.8 s
-STEINER|[klar, wach, langsam] Doch du musst den Abgrund achten;[Atem] sonst verschlingen seine Tiere dich,[Atem] wenn du an mir vorübereiltst.
+MANTRA|[klar, wach, langsam] Doch du musst den Abgrund achten;[Atem] sonst verschlingen seine Tiere dich,[Atem] wenn du an mir vorübereiltst.
 STILLE|2 s
 ESSAY|[warm, ruhig] Gegen die Eile setzt das Märchen eine leise Weisheit.[Atem] Der Alte mit der Lampe spricht sie aus.
 STILLE|0.6 s
@@ -118,7 +118,7 @@ MÄRCHEN|[leise] Wie leuchtende und blinkende Sterne schwammen die Steine mit de
 STILLE|2 s
 ESSAY|[warm, ruhig] Am Morgen steht dort eine Brücke.[Atem] Ihre Pfeiler sind die Reste der Schlange.[Pause] Steiner hat diesen Augenblick in einen einzigen Satz gefasst.[Atem] Er steht auf einer der Tafeln, die seine Stunden rahmen.
 STILLE|0.8 s
-STEINER|[klar, wach, langsam] Der Tod, er steht an des Weges Ende.[Pause] Ich will des Christus Wesen fühlen.[Pause] Es weckt in Stoffes-Sterben Geist-Geburt.
+MANTRA|[klar, wach, langsam] Der Tod, er steht an des Weges Ende.[Pause] Ich will des Christus Wesen fühlen.[Pause] Es weckt in Stoffes-Sterben Geist-Geburt.
 STILLE|2.5 s
 ESSAY|[ruhig, langsam] Es weckt.
 STILLE|1.5 s
@@ -139,7 +139,7 @@ MÄRCHEN|[ruhig, ohne die Stimme zu heben] Erkenne das Höchste!
 STILLE|1.5 s
 ESSAY|[warm, ruhig] Schwert, Szepter, Kranz.[Atem] Goethe beschreibt genau, wo sie wirken.[Atem] In den Gliedern, im Herzen, im Haupt.[Pause] Dieselbe Ordnung hat das Mantram vom Kopf, vom Herzen und von den Gliedern.[Pause] Im September vierundzwanzig schreibt Steiner mit roter Kreide quer über die Tafel:
 STILLE|0.8 s
-STEINER|[klar, wach, langsam] Tritt ein.[Pause] Das Tor ist geöffnet.[Pause] Du wirst ein wahrer Mensch werden.
+MANTRA|[klar, wach, langsam] Tritt ein.[Pause] Das Tor ist geöffnet.[Pause] Du wirst ein wahrer Mensch werden.
 STILLE|2.5 s
 ESSAY|[warm, ruhig] Gekrönt sieht der Jüngling sich um.[Atem] Und er bemerkt, was den drei Königen fehlt.
 STILLE|0.6 s
@@ -155,7 +155,7 @@ MÄRCHEN|[ruhig, lebendig] Und bis auf den heutigen Tag wimmelt die Brücke von 
 STILLE|1.5 s
 ESSAY|[warm, ruhig] Steiners Mantren enden bei einem Einzelnen.[Atem] Er spricht die höchsten Engelwesen der alten Überlieferung an.[Atem] Seraphim, Cherubim, Throne.[Pause] Und er sagt:
 STILLE|0.8 s
-STEINER|[klar, wach, langsam] Seraphisch Feuermächte,[Atem] aus meinem Herzen strahlet ihr.[Pause] Cherubinisch Bildekräfte,[Atem] in meinem Haupte scheinet ihr.[Pause] Der Throne Traggewalten,[Atem] in meinen Gliedern kraftet ihr.[Pause] Mein Ich ist Ihr.
+MANTRA|[klar, wach, langsam] Seraphisch Feuermächte,[Atem] aus meinem Herzen strahlet ihr.[Pause] Cherubinisch Bildekräfte,[Atem] in meinem Haupte scheinet ihr.[Pause] Der Throne Traggewalten,[Atem] in meinen Gliedern kraftet ihr.[Pause] Mein Ich ist Ihr.
 STILLE|2.5 s
 ESSAY|[warm, ruhig] Viele auf der Brücke.[Atem] Einer, der die Brücke in sich baut.[Pause] Zwei Enden desselben Weges.[Atem] Dazwischen hundertneunundzwanzig Jahre.[Atem] Und ein Leser, der nie aufgehört hat, zu fragen.
 STILLE|2 s

@@ -4,16 +4,21 @@
   "ESSAY": "34qvTxBeZxm8QcfSvTS8",
   "MÄRCHEN": "jhhOoZ28WmHOJDBuCSGG",
   "STEINER": "9T2VzpdyzVPMLIjcYVqp",
-  "ANSAGE": "IcDVpTMW6YwgOc2vCZgG"
+  "ANSAGE": "IcDVpTMW6YwgOc2vCZgG",
+  "MANTRA": "9T2VzpdyzVPMLIjcYVqp"
  },
  "stimmen_namen": {
   "ESSAY": "Essay-Tragend (entworfen 9. 10. 2026)",
   "MÄRCHEN": "Märchen-Erzählerin (Stimme der Textprobe)",
   "STEINER": "Leo Liest – Deep and calm (Bibliothek)",
-  "ANSAGE": "NWR Chronist"
+  "ANSAGE": "NWR Chronist",
+  "MANTRA": "Leo Liest (Mantren, Vers für Vers)"
  },
  "musik": {
   "prompt": "Intimate chamber music for solo cello and concert harp, slow and luminous, warm and tender, D major with gentle suspensions, long sustained cello lines over sparse harp arpeggios, spacious, no percussion, no vocals, reflective, like the opening of a literary radio essay, 66 bpm",
   "dauer": 60
- }
+ },
+ "getrennt": [
+  "MANTRA"
+ ]
 }
