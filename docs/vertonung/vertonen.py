@@ -284,6 +284,42 @@ VORLAGEN += [
            'Der Mensch vor den Hierarchien: Klavier und Streicher schwellen langsam, strahlend und doch schlicht, sakral ohne Pathos.',
            MENSCH, 'E major', 'slow', [('Feuermächte', ('19+', 0), 42, ['piano and strings slowly swelling', 'radiant but plain', 'sacral without pathos', 'the last line held long'])], nach=5),
 ]
+# ---------------------------------------------------------------- Doppelstimme (Runde 5, 9. 10. 2026)
+# Rückmeldung auf Runde 4: 26 ein Treffer, 27 trifft, 29 hat Seele, 30 sehr gut — das Zusammenklingen
+# ist die Spur; weniger Effekt, mehr Akustik. Keine romantischen, maskulinen Arien (23–25). 31 schön,
+# aber Kirchenhall weckt falsche Assoziationen. Idee: der Hüter weiblich, als Doppelstimme, immer
+# ineinanderklingend, die Dominanz leicht nach Inhalt wechselnd. Und mit den Rollen arbeiten: zwei
+# sprechen miteinander, existenzielle Begegnung.
+DOPPEL = ['two female voices, a contralto and a mezzo-soprano, always sounding together, interweaving in close harmony',
+          'one voice slightly leads and the lead shifts with the sense of the line', 'acoustic, no effects, no electronics',
+          'exact, plain, no vibrato, serving the text']
+ICH = ['a single plain human voice, mid-range, close, warm, no vibrato, not operatic', 'alone, exposed, honest']
+AKUSTISCH_FERN = ['a single high clear voice, otherworldly through purity and unusual intervals, not through effects',
+                  'acoustic, dry, close', 'not a choir']
+VORLAGEN += [
+    studie(32, 'doppelstimme-schau-die-drei', 'O schau die Drei', 'Hüter als Doppelstimme · 7.1',
+           'Der Hüter als Doppelstimme: Alt und Mezzo immer zusammen, ineinander, die Führung wechselt mit dem Sinn; nur eine gehaltene Bratsche.',
+           DOPPEL, 'A minor', 'slow', [('Schau die Drei', ('7.1', 0), 46, ['a single sustained viola underneath, nothing else'])],
+           instrumente=['a single sustained viola']),
+    studie(33, 'doppelstimme-erste-hierarchie', 'Was wird aus der Lüfte Reizgewalt', 'Hüter als Doppelstimme und erste Hierarchie · 15.3',
+           'Der Hüter fragt als Doppelstimme; Throne, Cherubine, Seraphine antworten in einer einzigen hohen Stimme, jede eine Stufe höher — akustisch, ohne Effekt, über Flageoletts einer Geige.',
+           DOPPEL, 'F sharp, open', 'no pulse',
+           [('Die Frage', ('15.3', 0), 10, DOPPEL + ['solo violin harmonics']),
+            ('Throne', ('15.3', 2), 9, AKUSTISCH_FERN + ['solo violin harmonics']),
+            ('Cherubine', ('15.3', 3), 9, AKUSTISCH_FERN + ['a step higher', 'solo violin harmonics']),
+            ('Seraphine', ('15.3', 4), 9, AKUSTISCH_FERN + ['another step higher, at the edge of hearing', 'solo violin harmonics'])],
+           instrumente=['solo violin harmonics']),
+    studie(34, 'begegnung-hat-verstanden', 'Hat verstanden dein Geist?', 'Hüter als Doppelstimme und Ich · 16.2',
+           'Existenzielle Begegnung mit getrennten Rollen: der Hüter fragt als Doppelstimme über Cello und Bratsche, das Ich antwortet allein, eine einzige schlichte Stimme über je einem tiefen Klavierton.',
+           DOPPEL, 'D minor', 'free, speech rhythm',
+           [('Frage 1', ('16.2', 0), 7, DOPPEL + ['cello and viola sustained']),
+            ('Antwort 1', ('16.2', 1), 16, ICH + ['one low piano note per line, nothing else']),
+            ('Frage 2', ('16.2', 2), 7, DOPPEL + ['cello and viola sustained']),
+            ('Antwort 2', ('16.2', 3), 16, ICH + ['one low piano note per line, nothing else']),
+            ('Frage 3', ('16.2', 4), 7, DOPPEL + ['cello and viola sustained']),
+            ('Antwort 3', ('16.2', 5), 16, ICH + ['one low piano note per line', 'the cello returns very softly under the last line'])],
+           instrumente=['cello and viola sustained']),
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
