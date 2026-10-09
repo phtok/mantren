@@ -1,25 +1,76 @@
-# «Nach innen» — Vertonung der Mantren, Stunden 1–7
+# «Nach innen» — Vertonung der Mantren als Vorlagen
 
-*Werkstatt · Liederzyklus · Erstfassung 9. 10. 2026*
+*Werkstatt · Liedvorlagen · Runde 2 vom 9. 10. 2026*
 
-Auftrag: «Ich wünsche mir eine musikalische Vertonung der Mantren. Beginne
-mit 1–7. Inspiration? Arvo Pärt, Ludovico Einaudi, Mine, Bon Iver, Goldberg
-Variationen, Francis and the Lights, Rosalía, Brian Eno, Pascal Schumacher,
-Billie Eilish, Radiohead. Was ist mit Elevenlabs möglich? Nach Innen.»
+Auftrag (9. 10. 2026): «Ich wünsche mir eine musikalische Vertonung der
+Mantren. Beginne mit 1–7. Inspiration? Arvo Pärt, Ludovico Einaudi, Mine,
+Bon Iver, Goldberg Variationen, Francis and the Lights, Rosalía, Brian Eno,
+Pascal Schumacher, Billie Eilish, Radiohead. Was ist mit Elevenlabs möglich?
+Nach Innen.»
 
-Sieben Stücke, eines je Stunde, 24 Minuten. Der Text ist Wort für Wort die
-Lesefassung 2024 aus `src/data/mantren.yaml`; nichts ist gekürzt, nichts
-umgestellt. Die Musik erzeugt **Eleven Music** (`music_v2_5`) nach einem
-Kompositionsplan je Stück, den `vertonen.py` aus den Mantren baut. Die
-Audiodateien liegen nicht im Repo (35 MB); sie lassen sich aus diesen
-Dateien neu bauen, siehe unten.
+Rückmeldung auf die Erstfassung (sieben Stücke nach Stunden, 9. 10. 2026):
+«Die Gliederung nach Stunden geht nicht schön auf, besonders am Anfang. Die
+1 ist unsinnig lang. Sie enthält mehrere Lieder. Nutze die Gliederung in
+Titel, Motive und Sinnzusammenhänge. Der monotone Ansatz der Vertonung
+spricht mich nicht an. Probiere mehr aus. Es braucht keinen künstlichen
+Ernst oder starken seelischen Ausdruck. Die Gesangsstimme, die Töne
+schaffen die Erlebnisse. Die oder der Singende stellt sich zur Verfügung.
+Noch ein wichtiges, gutes Beispiel: Laurie Anderson „Songs from the Bardo".
+Die Atmo sollte nicht billig-synthetisch wirken. Komplex, herausfordernd,
+vertiefend, tiefe Gefühle ermöglichen. Deine 6. Stunde ist schön. Und sehr
+lang. Also probier mehr aus, biete mir mehr an. Ich habe eine leise Ahnung.
+Ich brauche Vorlagen, die Resonanz haben.»
+
+Seither gilt: **Eine Vorlage ist eine Sinneinheit** (ein Titel der
+Lesefassung: Erdengründe, Daseinswort, Drei Tiere, Willens-Stoß …) **in
+einem Ansatz**, 1,3 bis 2,3 Minuten. Derselbe Text darf in zwei Ansätzen
+stehen, damit sich vergleichen lässt. Die Stimme dient dem Text und trägt
+nicht vor: keine Hauch-Stimme, kein Pathos, kein Vibrato. Instrumente sind
+echte, in einem Raum. Der Text ist Wort für Wort die Lesefassung 2024 aus
+`src/data/mantren.yaml`; die einzige Wiederholung ist das Daseinswort in
+Vorlage 4. Die Musik erzeugt **Eleven Music** (`music_v2_5`) nach einem
+Kompositionsplan je Vorlage, den `vertonen.py` aus den Mantren baut. Die
+Audiodateien liegen nicht im Repo; sie lassen sich neu bauen, siehe unten.
+
+## Die zwölf Vorlagen (Runde 2)
+
+| Nr | Text | Ansatz | Worauf hören | Dauer |
+|---|---|---|---|---|
+| 1 | Erdengründe (1.1) | **Bardo.** Gesprochen über Klangschalen, Bordun und Geige, wie eine Anweisung an jemanden, der hinübergeht. Gong am Ende der ersten Hälfte, eine zweite tiefere Stimme auf den letzten zwei Zeilen. | Trägt der gesprochene Text ohne Melodie? Rückschrift 100 %. | 1,9 min |
+| 2 | Erdengründe (1.1) | **Litanei.** Derselbe Text auf einem Ton rezitiert, Kadenz am Zeilenende, Harmonium und Cello; in der zweiten Hälfte eine zweite Stimme eine Quinte tiefer (Organum). | Vergleich mit 1: Sprechen oder Psalmodieren? | 1,8 min |
+| 3 | Daseinswort (1.3) | **Chor.** A cappella, gemischter Chor in langsamen, sich verschiebenden Akkorden; «O, du Mensch, erkenne dich selbst» im Unisono auf einem tiefen Ton, dann öffnet sich der Akkord. | Die Harmonik: fordernd genug? | 1,5 min |
+| 4 | Daseinswort (1.3) | **Ruf und Antwort.** Eine Männerstimme spricht die Zeilen über Filzklavier und gestrichenem Kontrabass, ein Chor aus einer Frauenstimme summt darunter und singt dann das Daseinswort, zweimal. | Vergleich mit 3. Bei 0:21 fehlt der Erkennung eine Zeile («Aus dem Schritte des Zeitenganges») — nachhören. | 2,0 min |
+| 5 | Im Anblick der Schwelle (1.2) | **Der Hüter.** Eine Männerstimme, eine Oktave tiefer durch den Vocoder, halb gesprochen; Geige, Waterphone, analoger Bass. «Sieh, ich bin der Erkenntnis einzig Tor» spricht eine unverfremdete leise Frauenstimme. | Das Bardo-Muster der Autoritätsstimme. Rückschrift 100 % (zweiter Lauf; der erste sang erfundene Wörter). | 1,8 min |
+| 6 | Drei Tiere (1.4) | **Sprechgesang.** Trocken, in 7/8; jedes Tier ein Instrument: Kontrabassklarinette (blau), präpariertes Klavier (gelbgrau), Glasharmonika (schmutzigrot). «Flügel» wird zum ersten Mal gesungen, mit Streichern. | Ohne den Abgrund-Vorspann (Teil 1 des Mantrams) — der gehört zu Vorlage 5 oder davor. | 2,3 min |
+| 7 | Willens-Stoß (3) | **Lied.** Dieselbe schlichte Melodie für alle drei Strophen, Gitarre und Kontrabass, Strophe 2 mit zweiter Stimme in Terzen, Strophe 3 mit Akkordeon; ein Sänger, der nicht vorträgt. | Das Volkslied-Muster. Die Stimme wiederholt einmal «Ätherwesen weht in dir» (0:29). | 2,0 min |
+| 8 | Schau die Drei · Tritt ein (7.1, 7.3) | **Hell.** Celesta, Nylongitarre, gebürstete Trommel, eine klare, leichte Popstimme; «Tritt ein» a cappella mit geschichteter Harmonie. | Darf ein Mantram leicht sein? Rückschrift 98 %. | 1,3 min |
+| 9 | Erdenwerte I (6: Erde, Wasser, Luft) | **Variationen.** Der Ansatz der Erstfassung als eigenes Lied: fester Bass im Dreiertakt, Filzklavier, dann Cello, dann Streicher ohne Klavier. | Die gelobte 6 in halber Länge. | 2,1 min |
+| 10 | Erdenwerte II (6: Licht, Gestalt, Leben) | **Streicher und Puls.** Die zweite Hälfte der Erstfassung als eigenes Lied: Streicher, leiser elektronischer Puls, der Chor aus einer Stimme auf den letzten zwei Zeilen. | Nach dem Text singt die Stimme im Nachspiel erfundene Silben (1:57) — bei Gefallen neu erzeugen. | 2,1 min |
+| 11 | Es kämpft (5) | **Zwei Stimmen.** Eine Männerstimme spricht, eine Frauenstimme hält lange wortlose Töne auf den Schlüsselwörtern; Streichquartett in wandernden Dissonanzen, die spät auflösen; gestrichenes Vibraphon. | Bardo mit Pärt: Sprechen und ein Ton. Rückschrift 96 %. | 2,2 min |
+| 12 | Tiefe – Weite – Höhe (4) | **Harmonizer.** Eine Stimme durch den Vocoder-Harmonizer, die Akkorde machen den Raum: tief und eng (Cello, Kontrabass), weit und offen (Quartett), hoch und schimmernd (Falsett, Flageoletts, E-Dur). | Die Stimme wiederholt bei 0:41 die ersten Zeilen und singt im Nachspiel «ihrem Tun» — nachhören. | 2,1 min |
+
+Zusammen 23 Minuten, rund 21 000 Credits (dazu zwei Wiederholungen,
+Vorlagen 4 und 5, rund 3 400). Alle zwölf sind auf −16 LUFS gemastert.
+
+**Was die Prüfung sagt:** Scribe hat jede Vorlage zurückgeschrieben;
+Wortübereinstimmung 83 bis 100 %. Gesprochene Vorlagen (1, 5) erreichen
+100 %, gesungene liegen bei 85 bis 98 %, fast immer wegen getrennt
+geschriebener Komposita («Welten Gestaltungsmächten»). Wirklich nachzuhören
+sind die vier Stellen in der Tabelle (4, 7, 10, 12). **Eine Lehre:** Wo ein
+Abschnitt ohne Text eine Stimme erlaubt («(ooh)», wortloser Chor), erfindet
+das Modell gern Silben; wortlose Nachspiele bekommen künftig «vocals» in
+die Gegen-Stile.
+
+**Den Klang beurteilt Philipp.** Claude kann nicht hören. Die Frage an
+jede Vorlage ist nicht «ist sie fertig», sondern «hat sie Resonanz» — dann
+wird aus dem Ansatz die Regel für die nächsten Sinneinheiten.
 
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
   Sprache, Deutsch eingeschlossen; die Stilangaben müssen englisch sein.
-  Die Rückschrift mit Scribe trifft 82 bis 98 % der Wörter (Tabelle
-  unten); fast alle Abweichungen sind Schreibweisen der Erkennung
+  Die Rückschrift mit Scribe trifft 83 bis 100 % der Wörter (Tabelle
+  oben); fast alle Abweichungen sind Schreibweisen der Erkennung
   («Selbstheit Sein», «Geisteslichtgewalt»).
 - **Kompositionsplan statt Prompt.** Ein Stück ist eine Folge von bis zu 30
   Abschnitten, jeder 3 bis 120 Sekunden, jeder mit eigenem Text, eigenen
@@ -28,8 +79,9 @@ Dateien neu bauen, siehe unten.
   mit drei Tieren) als Form der Musik abbilden: jede Strophe ein Abschnitt
   mit eigenem Klang.
 - **Regie im Text.** Abschnittsnamen in eckigen Klammern, Anweisungen in
-  geschweiften (`{whispered}`), Laute in runden (`(ooh)`). Die Erkennung
-  hat keine Anweisung mitgesungen gehört.
+  geschweiften (`{spoken}`), Laute in runden (`(ooh)`). Die Erkennung hat
+  keine Anweisung mitgesungen gehört. **Gesprochener Text** über Musik
+  geht (Vorlagen 1, 4, 5, 11): das ist die Bardo-Form.
 - **Keine Künstlernamen.** Die API weist Prompts mit Namen ab
   (`bad_prompt`). Jede Inspiration ist darum als Klangbeschreibung
   übersetzt (unten).
@@ -38,8 +90,9 @@ Dateien neu bauen, siehe unten.
   Melodie, und die Lautheit (die Stücke kamen zwischen −17 und −31 LUFS
   aus dem Modell — der Master gleicht das aus). Eine Zeile ändern heisst
   das ganze Stück neu erzeugen; der Cache hilft nur bei unverändertem Plan.
-- **Preis:** 900 Credits je Minute Musik. Der Zyklus (24,6 min) kostete
-  rund 22 000 Credits, die sieben Prüfläufe mit Scribe dazu wenig. Der
+- **Preis:** 900 Credits je Minute Musik. Die Erstfassung (24,6 min) kostete
+  rund 22 000 Credits, die zwölf Vorlagen samt zwei Wiederholungen rund
+  24 000; die Prüfläufe mit Scribe dazu wenig. Der
   Schlüssel darf den Zähler nicht lesen (`guthaben` meldet 401 ohne das
   Recht «User: Read»); der Stand steht im Konto:
   <https://elevenlabs.io/app/subscription>.
@@ -48,38 +101,21 @@ Dateien neu bauen, siehe unten.
   § Vor einer Veröffentlichung). Für die Werkstatt unerheblich; bevor eine
   anthroposophische Institution die Stücke sendet, ist das zu klären.
 
-## Die Form: Arie, Variationen, Arie
+## Erstfassung (9. 10. 2026, zurückgebaut)
 
-Der Zyklus borgt sich von den Goldberg-Variationen die Klammer: Stunde 1
-ist die Arie, Stunde 7 die Arie da capo — dasselbe Klavier-Arpeggio,
-dieselbe Tintinnabuli-Fläche, d-Moll am Anfang, D-Dur am Ende. Dazwischen
-fünf Stunden, jede in einer eigenen Klangwelt, weil der Hüter in jeder
-Stunde anders spricht.
-
-| Stunde | Stück | Klangwelt (Inspiration, als Beschreibung) | Dauer |
-|---|---|---|---|
-| 1 | **Erdengründe** (1.1–1.4) | Filzklavier und Tintinnabuli (Einaudi, Pärt); die Altstimme nah, fast gesprochen (Eilish). «Sieh, ich bin der Erkenntnis einzig Tor» gesprochen über einer Klaviernote. Die drei Tiere mit verstimmten Streichern und Glitches (Radiohead), jedes in seiner Farbe: stumpfblau pizzicato, gelbgrau gedämpftes Blech, schmutzigrot gläserne Flageoletts. «Flügel» kippt nach D-Dur mit geschichteten Stimmen (Bon Iver). | 6,7 min |
-| 2 | **Die drei Tiere** (2) | Ambient-Drone ohne Puls (Eno), Subbass, die Stimme geflüstert (Eilish). Drei Strophen, jede eine Lage tiefer: Denken, Fühlen, Wollen. Die letzte Zeile wird gesungen. | 2,6 min |
-| 3 | **Willens-Stoß** (3) | Vibraphon-Muster und Bassklarinette (Schumacher), 84 bpm. Strophe 1 Vibraphon allein, Strophe 2 Puls, Strophe 3 der Chor aus einer Stimme (Francis and the Lights) auf «Weltschöpfermacht im Geistes-Ich». | 2,5 min |
-| 4 | **Tiefe – Weite – Höhe** (4) | Eine Männerstimme in drei Lagen: Bruststimme über Cello und Kontrabass (Erdentiefen), Mittellage über Streichquartett (Weltenweiten), Falsett in Schichten mit Vocoder-Farbe (Himmelshöhen; Bon Iver). e-Moll nach E-Dur. | 2,6 min |
-| 5 | **Es kämpft** (5) | Phrygisch, Nylongitarre, sparsame Palmas, Melismen (Rosalía), moderner Subbass. Jede Strophe ein Kampf; die letzten zwei Zeilen jeder Strophe a cappella. | 2,5 min |
-| 6 | **Erdenwerte** (6) | Sechs Variationen über einen festen Bass in langsamem Dreiertakt (Goldberg). Erde, Wasser, Luft: Klavier, dann Cello, dann Streicher. Dann die zweite Regie «wie wenn das Weltenwort selber ertönte»: Indie-Pop mit Streichern und leisem elektronischem Puls (Mine), der Chor trägt «Es lässt den Gott im Menschen walten». | 4,7 min |
-| 7 | **Schau die Drei** (7.1–7.3) | Arie da capo in D-Dur, zwei Frauenstimmen im Kanon. Kopf, Herz, Glieder je ein kurzer Abschnitt (Streicher, Klavier, beides). Stille. «Tritt ein» erst geflüstert, dann einmal voll gesungen; das Arpeggio löst sich in eine Drone (Eno) und verklingt. | 3,1 min |
-
-**Die Stimme des Hüters ist eine Altstimme.** Die Mantren sagen «der Hüter
-spricht», aber der Hüter ist kein Mann, und der Auftrag nennt drei
-Sängerinnen. Nur Stunde 4 ist eine Männerstimme, weil der Weg von der
-Tiefe in die Höhe dort mit einer Stimme durch drei Lagen geht. Eleven Music
-vergibt keine Stimm-IDs; dieselbe Beschreibung ergibt in jedem Stück eine
-ähnliche, nicht dieselbe Stimme.
+Sieben Stücke nach Stunden, 24,6 Minuten, als Klammer Arie – fünf
+Variationen – Arie da capo, mit einer Hauch-Altstimme als Hüter. Die
+Rückmeldung steht oben; geblieben ist der Ansatz der Stunde 6 (Vorlagen 9
+und 10). Die Pläne der Erstfassung stehen in der Git-Geschichte (Commit
+«Vertonung «Nach innen»: Stunden 1–7»), die Stücke im Cache `clips/`.
 
 ## Dateien
 
 | Datei | Inhalt |
 |---|---|
-| `vertonen.py` | die sieben Pläne (Abschnitte, Dauern, Stile), Erzeugung, Master, Prüfung |
-| `clips/` | Cache: rohe MP3 und Plan je Stück (nicht im Repo) |
-| `ausgabe/nach-innen-<n>.mp3` | die gemasterten Stücke mit Titel und Albumtag (nicht im Repo) |
+| `vertonen.py` | die Vorlagen (Abschnitte, Dauern, Stile), Erzeugung, Master, Prüfung |
+| `clips/` | Cache: rohe MP3 und Plan je Vorlage (nicht im Repo) |
+| `ausgabe/vorlage-<nr>-<name>.mp3` | die gemasterten Vorlagen mit Titel und Albumtag (nicht im Repo) |
 
 ## Neu bauen
 
@@ -88,56 +124,40 @@ Umgebungsvariable des einzelnen Befehls übergeben. Er darf nie in eine
 Datei. Er braucht die Rechte «Music» und für die Prüfung «Speech to Text».
 
 ```sh
-python3 -I docs/vertonung/vertonen.py plan 3                   # Plan der Stunde 3 ansehen, kostet nichts
+python3 -I docs/vertonung/vertonen.py plan 3                   # Plan der Vorlage 3 ansehen, kostet nichts
 XI_KEY=… python3 -I docs/vertonung/vertonen.py bauen 1 2 3     # erzeugen (Cache), mastern nach ausgabe/
 XI_KEY=… python3 -I docs/vertonung/vertonen.py pruefen 1 2 3   # Scribe schreibt zurück, Vergleich mit dem Text
-python3 -I docs/vertonung/vertonen.py bauen                    # alle sieben aus dem Cache mastern, kostet nichts
+python3 -I docs/vertonung/vertonen.py bauen                    # alle zwölf aus dem Cache mastern, kostet nichts
 ```
 
-Ein geänderter Plan erzeugt das Stück neu (900 Credits je Minute). Ein
-unveränderter Plan kommt aus dem Cache.
+Ein geänderter Plan erzeugt die Vorlage neu (900 Credits je Minute). Ein
+unveränderter Plan kommt aus dem Cache. **Eine neue Vorlage** ist ein
+Eintrag in `VORLAGEN` in `vertonen.py`: Sinneinheit, Ansatz in einem Satz,
+Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 ## Technik
 
 - `POST /v1/music` mit `composition_plan` (Chunks: `text`, `duration_ms`,
   `positive_styles`, `negative_styles`, `context_adherence: high`),
   `model_id: music_v2_5`, Ausgabe `mp3_44100_192`.
-- Stile je Abschnitt: Stimme (nur wo Text ist) + Klangwelt des Abschnitts +
-  Grundton des Zyklus («sacred minimalism», «silence is part of the
-  music») + Tonart und Tempo des Stücks. Gegen-Stile: Schlagzeug, Rap,
-  Autotune, Trailer-Pathos, englischer Text; Abschnitte ohne Text
-  zusätzlich «vocals».
+- Stile je Abschnitt: Stimme der Vorlage und Haltung («the singer serves
+  the text and does not emote», «no vibrato») nur wo Text ist, dazu die
+  Instrumente des Abschnitts, «real acoustic instruments recorded in a real
+  room», «complex, slowly shifting harmony», Tonart und Tempo. Gegen-Stile:
+  billige Synth-Flächen, New Age, Hall-Soße, Rock-Schlagzeug, Rap, Autotune,
+  Trailer-Pathos, Theatralik, Hauch-Flüstern, englischer Text; Abschnitte
+  ohne Text zusätzlich «vocals».
+- Gesprochene Abschnitte tragen `{spoken}` im Text und «spoken, not sung»
+  in den Stilen; das Modell hält sich daran (Vorlagen 1, 4, 5, 11).
 - Master: `loudnorm` in zwei Durchgängen auf −16 LUFS, −1,5 dBTP,
   linear (keine Verdichtung — die Stille bleibt Stille), MP3 192 kbit/s.
 - Prüfung: Scribe (`scribe_v1`, `deu`, Wortmarken) gegen den Liedtext,
   Wort für Wort wie bei den Features (`../feature/pruefen.py`).
 
-## Prüfung der Erstfassung (9. 10. 2026)
-
-| Stunde | Wörter | Übereinstimmung | Wirkliche Abweichungen |
-|---|---|---|---|
-| 1 | 379 | 97,5 % | keine (nur Schreibweisen: «Geist Gedanken», «Schlaf» für «schlaff») |
-| 2 | 98 | 93,9 % | keine |
-| 3 | 98 | 81,6 % | «dem» als «im» (01:07); der Rest sind getrennt geschriebene Komposita |
-| 4 | 94 | 96,3 % | keine; das «(ooh)» des Nachspiels wird als «Huh» erkannt |
-| 5 | 112 | 96,4 % | «in» als «im» (00:21) |
-| 6 | 201 | 90,2 % | «wandeln» als «andämmern» (00:49) — nachhören |
-| 7 | 113 | 93,9 % | «Menschenstreben» als «schön Streben» (02:07) — nachhören |
-
-Lautheit nach dem Master: alle sieben −16,2 bis −16,4 LUFS, Spitzen −1,6
-bis −6,1 dBFS. Vor dem Master lagen sie zwischen −17 und −31 LUFS.
-
-**Den Klang beurteilt Philipp.** Claude kann nicht hören; die Prüfung sagt
-nur, dass die Worte da sind. Was zu beurteilen ist: ob die Altstimme als
-Hüter trägt, ob die drei Tiere in Stunde 1 zu weit vom Zyklus wegführen,
-ob Stunde 5 (Flamenco) und 6b (Indie-Pop) im Ganzen bestehen, und ob die
-Stücke lieber eine Stimme teilen sollen (dann Stunde 4 anpassen).
-
 ## Offen
 
-- Stunden 8–19 und die drei Tafeln (die Erste Tafel «O Mensch, erkenne dich
-  selbst» könnte als Prolog vor Stunde 1 stehen: das Weltenwort, das in
-  Stunde 1.3 als Daseinswort wiederkehrt).
+- Philipps Urteil über die zwölf Vorlagen: Welche haben Resonanz? Daraus
+  wird die Regel für die übrigen Sinneinheiten der Stunden 1–7 (der
+  Abgrund 1.4 Teil 1, Mantram 2, 7.2) und dann für 8–19 und die Tafeln.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke
-  irgendwo liegen dürfen, wo die Site sie laden kann (35 MB sind zu viel
-  fürs Repo).
+  irgendwo liegen dürfen, wo die Site sie laden kann.
