@@ -39,7 +39,7 @@ STUECKE = {
         'rollen': {'ESTHER': 'Esther', 'MARTIN': 'Martin', 'MÄRCHEN': 'Märchen', 'STEINER': 'Steiner',
                    'HÜTER': 'Der Hüter', 'ICH': 'Das Ich (Mantram 16.2)', 'JOHANNES': 'Johannes («Die Pforte der Einweihung», 2. Bild)',
                    'ERZÄHLER': 'Erzähler', 'ANSAGE': 'Ansage'},
-        'besetzung': 'BESETZUNG',
+        'besetzung': 'Esther (Essay-Tragend) · Martin (Andres, leichter Schweizer Akzent) · Märchen (Märchen-Erzählerin, die Stimme der Textprobe) · Steiner (Hermann, österreichisch) · Hüter (Kathy Calm, Vers für Vers, weiter Raum) · Das Ich (Stimme Esthers, Vers für Vers) · Johannes (Christian – Lyrical Silence) · Erzähler und Ansage (NWR Chronist)',
         'musik': 'Streichquartett',
         'stille_ab': 1.5,
         'ersetzen': [('Mein Ich ist Ihr.', 'Mein Ich ist IHR.')],
@@ -70,7 +70,9 @@ def main(name):
             k = re.sub(r'^([IVX]+\. )?(.*)$', lambda m: (m.group(1) or '') + m.group(2).capitalize(), k)
             for alt, neu in (('— ein', '— Ein'), ('— drei', '— Drei'), ('könige', 'Könige'), ('fluss', 'Fluss'),
                              ('leser', 'Leser'), ('leben', 'Leben'), ('kraft', 'Kraft'), ('licht', 'Licht'),
-                             ('gespräch', 'Gespräch'), ('brücke', 'Brücke')):
+                             ('gespräch', 'Gespräch'), ('brücke', 'Brücke'), ('wohnung', 'Wohnung'),
+                             ('leute', 'Leute'), ('schlange', 'Schlange'), ('heft', 'Heft'), ('hüter', 'Hüter'),
+                             ('fähre', 'Fähre'), ('ufer', 'Ufer')):
                 k = k.replace(alt, neu)
             out += ['', '## ' + k, '']
             continue
