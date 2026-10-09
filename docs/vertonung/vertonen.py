@@ -398,6 +398,43 @@ VORLAGEN += [
         'schluss': 4.0,
      }},
 ]
+# ---------------------------------------------------------------- Der Dialog, zweiter Schnitt (Runde 8, 9. 10. 2026)
+# Rückmeldung auf 37: «Es hubbelt. Die Schnitte sind nicht sauber und der Rhythmus hält nicht. Wieder eine
+# Sprecherin statt einer Sängerin, im Delirium. Nicht deutlich, ob sie nicht auch den Hüter mitgesungen
+# hat. Gesamtminimalismus und klare Gliederung sind stimmig.» — Darum: Schnitte nur in Bordun-Abschnitten,
+# ein durchgehendes Bordun-Bett; klar gesungen statt «wie inneres Sprechen»; der Hüter eine einzige tiefe
+# Männerstimme, der Mensch eine Frauenstimme — zwei Stimmen, die das Werkzeug verlässlich auseinanderhält.
+BORDUN_D = ['a low sustained cello drone on D, breathing slowly, no melody, no pulse']
+HUETER_BASS = ['a single deep male voice, bass-baritone, calm, sung clearly, cantabile, simple sustained notes',
+               'no vibrato, no performance, no drama', 'the question asked tentatively, left open, rising slightly at the end',
+               'lyrics in German, every word intelligible']
+MENSCH_MEZZO = ['a single female voice, mezzo-soprano, sung clearly, cantabile, pure tone', 'simple sustained notes, stepwise, no leaps, no ornament',
+                'no vibrato, plain and awake, serving the text', 'lyrics in German, every word intelligible']
+NICHT_SPRECH = ['spoken word', 'whispering', 'breathy', 'speech-like', 'mumbling', 'duet', 'choir', 'two voices', 'drums', 'percussion']
+NUR_BORDUN = ('Bordun', None, 3, BORDUN_D + ['the cello drone alone, instrumental, no voice'])
+VORLAGEN += [
+    {'nr': 38, 'slug': 'montage-hat-verstanden-II', 'titel': 'Hat verstanden dein Geist?', 'text': 'Hüter (Bass) und Mensch (Mezzo) · 16.2, montiert',
+     'ansatz': 'Zweiter Schnitt: der Hüter eine tiefe Männerstimme, der Mensch eine Frauenstimme, beide klar gesungen über demselben Cello-Bordun; geschnitten nur in Bordun-Abschnitten, ein durchgehendes Bordun-Bett unter allem; Stille zwischen Frage und Antwort; eine Kantele-Blüte bei «Mögen klingend schaffen mein Ich».',
+     'stimme': [], 'tonart': 'D, open modal, drone on D', 'tempo': 'very slow, free, no pulse',
+     'montage': {
+        'lieder': {
+            'bett': {'nicht': ['vocals', 'melody', 'pulse'], 'teile': [('Bordun', None, 30, BORDUN_D + ['instrumental, the drone alone, very even, loopable'])]},
+            'hueter': {'nicht': NIE_KIRCHE + NICHT_SPRECH + ['female voice'],
+                       'teile': [('Bordun', None, 4, BORDUN_D + ['the cello drone alone, instrumental']),
+                                 ('Frage 1', ('16.2', 0), 9, HUETER_BASS + BORDUN_D + LANGSAM), NUR_BORDUN,
+                                 ('Frage 2', ('16.2', 2), 9, HUETER_BASS + BORDUN_D + LANGSAM + ['gentler than the first']), NUR_BORDUN,
+                                 ('Frage 3', ('16.2', 4), 9, HUETER_BASS + BORDUN_D + LANGSAM + ['the last question, tender']), NUR_BORDUN]},
+            'mensch': {'nicht': NIE_KIRCHE + NICHT_SPRECH + ['male voice'],
+                       'teile': [NUR_BORDUN,
+                                 ('Antwort 1', ('16.2', 1), 18, MENSCH_MEZZO + BORDUN_D + LANGSAM + ['quiet, inward, a held breath before the last line']), NUR_BORDUN,
+                                 ('Antwort 2', ('16.2', 3), 19, MENSCH_MEZZO + BORDUN_D + LANGSAM + ['on the last two lines a single kantele chord sounds once, then quiet again']), NUR_BORDUN,
+                                 ('Antwort 3', ('16.2', 5), 19, MENSCH_MEZZO + LANGSAM + ['brighter, more open register, the drone opens to a fifth', 'calm, upright, awake, no triumph', 'the last line held long']),
+                                 ('Bordun', None, 4, BORDUN_D + ['the cello drone alone, instrumental, fading'])]},
+        },
+        'folge': [('hueter', 1, 1.0), ('mensch', 1, 1.5), ('hueter', 3, 1.0), ('mensch', 3, 1.5), ('hueter', 5, 1.0), ('mensch', 5, 0.0)],
+        'bett': 'bett', 'bett_db': -9, 'vorlauf': 3.0, 'schluss': 4.0,
+     }},
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
@@ -587,35 +624,60 @@ def lied_plan(v, name, mantren):
 
 
 def montieren(v, mantren):
+    """Rollen-Lieder in Dialogfolge schneiden. Seit Vorlage 38: geschnitten wird nur in der Mitte von
+    Abschnitten ohne Text («nur Bordun»), nie an einer Stimme; lange Blenden; darunter ein durchgehendes
+    Bordun-Bett (Lied `bett`, geschleift), das die Nähte trägt."""
     import numpy as np
     m = v['montage']
-    audio, grenzen = {}, {}
+    audio, plaene, grenzen = {}, {}, {}
     for name in m['lieder']:
         p = lied_plan(v, name, mantren)
         x = dekodieren(erzeugen(p, name))
         x *= 10 ** ((-20 - 20 * np.log10(np.sqrt(np.mean(x ** 2)) + 1e-9)) / 20)   # je Lied −20 dBFS RMS
-        audio[name] = x
+        audio[name], plaene[name] = x, p
         t, g = 0, []
         for c in p['chunks']:
             g.append((t, t + c['duration_ms'] / 1000))
             t += c['duration_ms'] / 1000
         grenzen[name] = g
-    teile = []
 
     def stille(sek):
         return np.zeros((int(sek * SR), 2), dtype=np.float32)
 
-    def blende(x, ein=0.04, aus=0.12):
-        n1, n2 = int(ein * SR), int(aus * SR)
-        x[:n1] *= (0.5 - 0.5 * np.cos(np.linspace(0, np.pi, n1)))[:, None]
-        x[-n2:] *= (0.5 + 0.5 * np.cos(np.linspace(0, np.pi, n2)))[:, None]
+    def blende(x, ein, aus):
+        n1, n2 = min(len(x), int(ein * SR)), min(len(x), int(aus * SR))
+        if n1:
+            x[:n1] *= (0.5 - 0.5 * np.cos(np.linspace(0, np.pi, n1)))[:, None]
+        if n2:
+            x[-n2:] *= (0.5 + 0.5 * np.cos(np.linspace(0, np.pi, n2)))[:, None]
         return x
+
+    def ohne_text(name, i):
+        return 0 <= i < len(plaene[name]['chunks']) and '\n' not in plaene[name]['chunks'][i]['text']
+    teile = [stille(m.get('vorlauf', 0.0))]
     for name, i, pause in m['folge']:
         von, bis = grenzen[name][i]
+        ein, aus = 0.04, 0.12
+        if ohne_text(name, i - 1):            # in die Mitte des Bordun-Abschnitts davor hinein
+            von = sum(grenzen[name][i - 1]) / 2
+            ein = 0.4
+        if ohne_text(name, i + 1):            # und bis in die Mitte des Bordun-Abschnitts danach
+            bis = sum(grenzen[name][i + 1]) / 2
+            aus = 0.6
         x = audio[name][int(von * SR):min(len(audio[name]), int(bis * SR))].copy()
-        teile.append(blende(x))
+        teile.append(blende(x, ein, aus))
         teile.append(stille(pause))
-    mix = np.concatenate(teile + [stille(m.get('schluss', 3.0))])
+    teile.append(stille(m.get('schluss', 3.0)))
+    mix = np.concatenate(teile)
+    if m.get('bett'):                         # durchgehender Bordun unter allem, geschleift mit Kreuzblende
+        b = audio[m['bett']]
+        u = int(2.0 * SR)
+        bett = b.copy()
+        while len(bett) < len(mix):
+            k = np.linspace(0, 1, u, dtype=np.float32)[:, None]
+            bett = np.concatenate([bett[:-u], bett[-u:] * (1 - k) + b[:u] * k, b[u:]])
+        bett = bett[:len(mix)] * 10 ** (m.get('bett_db', -9) / 20)
+        mix = mix + blende(bett, 2.0, 3.0)
     roh = os.path.join(CACHE, f'mont_{schluessel(m)}.wav')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '2', '-i', '-', roh],
                    input=mix.astype(np.float32).tobytes(), check=True)
