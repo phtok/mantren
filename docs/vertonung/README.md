@@ -157,6 +157,33 @@ Alle auf −16 LUFS.
   je Schlüssel setzt Philipp unter
   <https://elevenlabs.io/app/developers/api-keys>.
 
+## Die Doppelstimme (Runde 5)
+
+Rückmeldung auf Runde 4 (9. 10. 2026), gekürzt: 26 ein eigenartiger
+Treffer, Text mit Stimmung. 23–25 irrelevant: keine romantischen,
+maskulinen Arien. 27 trifft, schönes Liedset — die Stimmen und Rollen in
+Frage und Antwort herausarbeiten. 29 hat Seele, aber die Rollen fehlen:
+zwei sprechen miteinander, existenzielle Begegnung. 30 sehr gut, das
+Zusammenklingen ist eine grosse Spur; weniger Effekt, mehr Akustik. 31
+schön, passt nicht: klassischer sakraler Gesang mit Kirchenhall weckt
+falsche Assoziationen; die letzte Szene erzählt vom neuen Menschen, der aus
+den innersten Erlebnissen geboren heraustritt zu neuen Taten. **Idee:** der
+Hüter weiblich, als Doppelstimme, immer ineinanderklingend, die Dominanz
+leicht nach Inhalt wechselnd.
+
+| Nr | Figur · Text | Ansatz | Nachhören |
+|---|---|---|---|
+| 32 | Hüter · 7.1 «O schau die Drei» | **Doppelstimme:** Alt und Mezzo immer zusammen, ineinander, die Führung wechselt mit dem Sinn; nur eine gehaltene Bratsche, keine Effekte. | 98 %. |
+| 33 | Hüter und erste Hierarchie · 15.3 «Was wird aus der Lüfte Reizgewalt» | Die Doppelstimme fragt; Throne, Cherubine, Seraphine antworten in einer einzigen hohen Stimme, jede eine Stufe höher, fremd durch Reinheit und Intervalle, nicht durch Effekt; Flageoletts einer Geige. | «Gottes-Welten-Leben» klingt bei 0:28 wie «-Licht»; am Ende ein erfundenes «Geh». |
+| 34 | Hüter und Ich · 16.2 «Hat verstanden dein Geist?» | **Begegnung mit Rollen:** die Doppelstimme fragt über Cello und Bratsche, das Ich antwortet allein, eine einzige schlichte Stimme über je einem tiefen Klavierton. | 98 %. |
+
+Zusammen 2,9 Minuten, rund 2 600 Credits. Alle auf −16 LUFS.
+
+**Für 19+ («Mein Ich ist IHR») gilt seither:** kein Kirchenhall, kein
+klassisch-sakraler Ton. Die Szene ist ein Heraustreten: wach, hell,
+rhythmisch, nach aussen gewandt, mit neuen Verbindungen in die
+Götterwelten — noch nicht gebaut.
+
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
@@ -185,8 +212,8 @@ Alle auf −16 LUFS.
   das ganze Stück neu erzeugen; der Cache hilft nur bei unverändertem Plan.
 - **Preis:** 900 Credits je Minute Musik. Die Erstfassung (24,6 min) kostete
   rund 22 000 Credits, die zwölf Vorlagen samt zwei Wiederholungen rund
-  24 000, die Stimmenprobe rund 13 000, die Figuren-Studien rund 7 900;
-  die Prüfläufe mit Scribe dazu wenig. Der
+  24 000, die Stimmenprobe rund 13 000, die Figuren-Studien rund 7 900,
+  die Doppelstimme rund 2 600; die Prüfläufe mit Scribe dazu wenig. Der
   Schlüssel darf den Zähler nicht lesen (`guthaben` meldet 401 ohne das
   Recht «User: Read»); der Stand steht im Konto:
   <https://elevenlabs.io/app/subscription>.
@@ -250,8 +277,10 @@ Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 ## Offen
 
-- Philipps Urteil über die Figuren-Studien 23–31: Welche Hüter-Passage
-  wird die Referenz für den Zyklus? Dann die Sinneinheiten der Stunden 1–7
-  in dieser Stimme, mit Referenz, aus dem Sinn.
+- Philipps Urteil über die Doppelstimme (32–34): Wird sie der Hüter des
+  Zyklus? Dann eine Passage als Referenz wählen und die Sinneinheiten der
+  Stunden 1–7 in dieser Stimme bauen, mit den Rollen (Hüter, Mensch,
+  Hierarchien) aus dem Sinn.
+- 19+ neu denken: Heraustreten statt Kirche.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke
   irgendwo liegen dürfen, wo die Site sie laden kann.
