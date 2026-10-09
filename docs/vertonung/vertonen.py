@@ -160,6 +160,57 @@ VORLAGEN = [
         ('Ausgang', None, 8, ['vocoder chord fading, wordless', 'instrumental ending'], [], '(ooh)'),
      ]},
 ]
+# ---------------------------------------------------------------- Stimmenprobe (Runde 3, 9. 10. 2026)
+# «Gerne mehr Stimmen. Reifere! Charaktervollere!» — Eleven Music vergibt keine Stimm-IDs; die Stimme
+# ist eine Beschreibung. Zehn Stimmen singen oder sprechen denselben Text (7.2, Des Hüters letzte
+# Mahnung), jede in der Besetzung, die zu ihr passt. Die Haltung bleibt: dienen, nicht vortragen.
+def stimme(nr, slug, titel, ansatz, stimme, instrumente, tonart, tempo, haltung=None, regie='', dauern=(6, 24, 26, 24, 8)):
+    return {'nr': nr, 'slug': f'stimme-{slug}', 'titel': titel, 'text': '7.2', 'ansatz': ansatz, 'stimme': stimme,
+            'tonart': tonart, 'tempo': tempo, 'haltung': haltung,
+            'teile': [('Eingang', None, dauern[0], instrumente + ['instrumental introduction'], [], ''),
+                      ('Des Kopfes Geist', ('7.2', 0), dauern[1], instrumente, [], regie),
+                      ('Des Herzens Seele', ('7.2', 1), dauern[2], instrumente, [], regie),
+                      ('Der Glieder Kraft', ('7.2', 2), dauern[3], instrumente, [], regie),
+                      ('Ausgang', None, dauern[4], instrumente + ['instrumental ending'], [], '')]}
+
+
+SPRECHEND = ['spoken word, not sung', 'speaks plainly, serves the text', 'every word intelligible, German']
+VORLAGEN += [
+    stimme(13, 'alt-siebzig', 'Die Alte', 'Eine Frau um siebzig, verwitterte Altstimme mit Korn und Luft, mehr gesprochen als gesungen; Harmonium und Cello.',
+           ['a weathered contralto, a woman around seventy, grain and air in the voice, unhurried, half speaks half sings on few notes', 'lived-in, warm, unforced'],
+           ['Indian harmonium drone', 'cello sustained', 'recorded close in a quiet room'], 'D Dorian', 'free, speech rhythm'),
+    stimme(14, 'bariton-alt', 'Der alte Mann', 'Ein alter Mann, brüchiger tiefer Bariton, halb gesprochen, müde und freundlich; Nylongitarre.',
+           ["an old man's cracked low baritone, half spoken, world-weary and kind", 'rough edges, breath audible, no polish'],
+           ['nylon-string guitar, slow fingerpicking', 'upright bass', 'recorded in a wooden room'], 'A minor', '64 BPM'),
+    stimme(15, 'mezzo-lied', 'Die Liedsängerin', 'Eine ausgebildete Mezzosopranistin um sechzig, volle Stimme, aber schlicht vorgetragen; Klavier wie ein Kunstlied.',
+           ['a trained mezzo-soprano around sixty, full mature voice with natural warmth, art song (Lied) delivery kept plain', 'rich lower register, controlled'],
+           ['grand piano, art song accompaniment, sparse', 'recorded in a concert hall'], 'E flat major', '60 BPM',
+           haltung=['the singer serves the text and does not dramatize', 'lyrics in German, every word intelligible']),
+    stimme(16, 'bass-moench', 'Der Bass', 'Ein sehr tiefer Bass, Mönchsgesang, über einem Bordun aus Männerstimmen; a cappella.',
+           ['a very deep basso profondo, Orthodox church bass, monastic chant', 'enormous low notes, slow, dark'],
+           ['a cappella', 'a drone of low male voices humming underneath', 'recorded in a stone monastery'], 'low C', 'very slow'),
+    stimme(17, 'jazz-rauchig', 'Die Jazzsängerin', 'Eine rauchige Jazzsängerin um fünfundfünfzig, dunkles Timbre, singt hinter dem Beat; Klaviertrio, gebürstet.',
+           ['a smoky jazz singer in her mid-fifties, dark timbre, sings behind the beat, conversational phrasing', 'husky, intimate, late-night'],
+           ['jazz piano trio', 'upright bass', 'brushed drums, very soft', 'slow ballad', 'recorded live in a small club'], 'D flat major', '58 BPM ballad',
+           haltung=['the singer serves the text, no vocal acrobatics', 'lyrics in German, every word intelligible']),
+    stimme(18, 'tenor-kantor', 'Der Kantor', 'Ein alter Kantor, dünner heller Tenor, Melismen über einer Shrutibox; fast allein.',
+           ["an elderly cantor's tenor, thin and bright, slightly nasal, long melismatic lines", 'liturgical, unaccompanied feel, ornamented'],
+           ['shruti box drone', 'otherwise unaccompanied', 'recorded in a synagogue-like hall'], 'E Phrygian dominant', 'free, unmeasured'),
+    stimme(19, 'countertenor', 'Der Countertenor', 'Ein reifer Countertenor, rein und leicht körnig; Gambe und Theorbe.',
+           ['a mature countertenor, pure head voice with a slight grain, early music style', 'floating, precise'],
+           ['viola da gamba', 'theorbo', 'early music chamber', 'recorded in a chapel'], 'G minor', 'slow, in 3'),
+    stimme(20, 'volkssaengerin', 'Die Volkssängerin', 'Eine ältere ungeschulte Sängerin, nasal, mit dem Ruf-Klang nordischer Hirtenlieder; eine Fiedel, sonst nichts.',
+           ['an untrained older woman folk singer, nasal and bright, the open calling tone of Nordic herding songs', 'raw, outdoors, no polish'],
+           ['solo fiddle, sparse, between the lines', 'outdoor air, distant space'], 'A Mixolydian', 'free'),
+    stimme(21, 'schauspielerin', 'Die Schauspielerin', 'Eine Theaterschauspielerin um fünfundsechzig, nur gesprochen, trocken und genau; Klangschalen und Geige.',
+           ['a stage actress around sixty-five, dry, precise stage diction, warm low speaking voice'] + SPRECHEND,
+           ['Tibetan singing bowls', 'solo violin harmonics', 'low string drone', 'no pulse', 'recorded in a large stone room'], 'drone on D', 'no pulse',
+           haltung=SPRECHEND, regie='{spoken}'),
+    stimme(22, 'kabarett-bariton', 'Der Kabarettist', 'Ein trockener Kabarett-Bariton der zwanziger Jahre, spricht-singt mit Biss, leicht ironisch; Klavier und gedämpfte Trompete.',
+           ['a dry cabaret baritone in the style of 1920s Berlin theatre song, speak-singing with bite, slightly ironic, never sentimental', 'crisp consonants'],
+           ['upright piano, cabaret', 'muted trumpet', 'clarinet', 'recorded in a small theatre'], 'F minor', '72 BPM, slow tango feel',
+           haltung=['the singer serves the text', 'lyrics in German, every word intelligible']),
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
@@ -191,7 +242,7 @@ def plan(nr, mantren=None):
             text += '\n' + '\n'.join(zeilen(mantren, quelle))
             if name == 'Das Daseinswort':   # die eine Wiederholung des Zyklus
                 text += '\n' + '\n'.join(zeilen(mantren, quelle))
-        stile = list(dict.fromkeys(((v['stimme'] + DIENT) if quelle else []) + plus + ECHT + [v['tonart'], v['tempo']]))
+        stile = list(dict.fromkeys(((v['stimme'] + (v.get('haltung') or DIENT)) if quelle else []) + plus + ECHT + [v['tonart'], v['tempo']]))
         nicht = list(dict.fromkeys(NIE + minus))
         if not quelle and '(' not in regie:
             nicht.append('vocals')

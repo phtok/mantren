@@ -65,6 +65,38 @@ die Gegen-Stile.
 jede Vorlage ist nicht «ist sie fertig», sondern «hat sie Resonanz» — dann
 wird aus dem Ansatz die Regel für die nächsten Sinneinheiten.
 
+## Die Stimmenprobe (Runde 3)
+
+Auftrag (9. 10. 2026): «Gerne mehr Stimmen. Reifere! Charaktervollere!»
+
+Eleven Music vergibt keine Stimm-IDs; die Stimme ist eine Beschreibung in
+den Stilen. Zehn Stimmen singen oder sprechen darum **denselben Text**,
+7.2 «Des Hüters letzte Mahnung» (drei kurze Strophen, 1,5 Minuten), jede
+in der kleinen Besetzung, die zu ihr passt. So lässt sich die Stimme
+vergleichen, nicht das Stück. Eine gewählte Stimme wird dann zur
+Beschreibung in den anderen Vorlagen (`stimme` im Eintrag).
+
+| Nr | Stimme | Besetzung | Nachhören |
+|---|---|---|---|
+| 13 | **Die Alte.** Eine Frau um siebzig, verwitterte Altstimme mit Korn und Luft, mehr gesprochen als gesungen. | Harmonium, Cello | Rückschrift 91 %, nur Schreibweisen. |
+| 14 | **Der alte Mann.** Brüchiger tiefer Bariton, halb gesprochen, müde und freundlich. | Nylongitarre, Kontrabass | 96 %. |
+| 15 | **Die Liedsängerin.** Ausgebildete Mezzosopranistin um sechzig, volle Stimme, schlicht vorgetragen. | Flügel wie im Kunstlied | 82 %: Die Erkennung hört dreimal «er/sie» statt «dir» und «Willekraft» statt «Glieder Kraft» (0:58) — die Stimme verschleift Konsonanten. |
+| 16 | **Der Bass.** Sehr tiefer Bass, Mönchsgesang über einem Bordun aus Männerstimmen. | a cappella | 88 %. |
+| 17 | **Die Jazzsängerin.** Rauchig, um fünfundfünfzig, dunkel, singt hinter dem Beat. | Klaviertrio, Besen | 79 %: «wird» als «wir» (dreimal), sonst Komposita. |
+| 18 | **Der Kantor.** Alter, dünner heller Tenor, Melismen über der Shrutibox. | Shrutibox | 86 %: «der» als «dir». |
+| 19 | **Der Countertenor.** Reif, rein, leicht körnig. | Gambe, Theorbe | 95 %. |
+| 20 | **Die Volkssängerin.** Älter, ungeschult, nasal, mit dem Rufklang nordischer Hirtenlieder. | eine Fiedel | 83 %: «wird» als «wir». |
+| 21 | **Die Schauspielerin.** Um fünfundsechzig, nur gesprochen, trocken und genau. | Klangschalen, Geige | 91 %, aber bei 0:27 eine erfundene Zeile zwischen den Strophen — nachhören. |
+| 22 | **Der Kabarettist.** Trockener Bariton der zwanziger Jahre, spricht-singt mit Biss, leicht ironisch. | Klavier, gedämpfte Trompete, Klarinette | 85 %: «der Weisheit» als «dir weit» (0:28). |
+
+Zusammen 14,7 Minuten, rund 13 000 Credits. Alle auf −16 LUFS.
+
+**Was die Rückschrift hier heisst:** Bei allen zehn fällt «Denkens-Wollens
+/ Wollens-Denkens keimerweckend» auseinander; das ist die Zeile, nicht die
+Stimme. Niedrige Werte (15, 17, 20) zeigen eher, dass die Stimme Charakter
+hat (verschleift, nuschelt, ruft) als dass sie den Text verfehlt. Ob der
+Charakter trägt, hört Philipp.
+
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
@@ -92,7 +124,8 @@ wird aus dem Ansatz die Regel für die nächsten Sinneinheiten.
   das ganze Stück neu erzeugen; der Cache hilft nur bei unverändertem Plan.
 - **Preis:** 900 Credits je Minute Musik. Die Erstfassung (24,6 min) kostete
   rund 22 000 Credits, die zwölf Vorlagen samt zwei Wiederholungen rund
-  24 000; die Prüfläufe mit Scribe dazu wenig. Der
+  24 000, die Stimmenprobe rund 13 000; die Prüfläufe mit Scribe dazu
+  wenig. Der
   Schlüssel darf den Zähler nicht lesen (`guthaben` meldet 401 ohne das
   Recht «User: Read»); der Stand steht im Konto:
   <https://elevenlabs.io/app/subscription>.
@@ -156,8 +189,9 @@ Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 ## Offen
 
-- Philipps Urteil über die zwölf Vorlagen: Welche haben Resonanz? Daraus
-  wird die Regel für die übrigen Sinneinheiten der Stunden 1–7 (der
-  Abgrund 1.4 Teil 1, Mantram 2, 7.2) und dann für 8–19 und die Tafeln.
+- Philipps Urteil über die zwölf Vorlagen und die zehn Stimmen: Welche
+  haben Resonanz? Daraus wird die Regel für die übrigen Sinneinheiten der
+  Stunden 1–7 (der Abgrund 1.4 Teil 1, Mantram 2) und dann für 8–19 und
+  die Tafeln.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke
   irgendwo liegen dürfen, wo die Site sie laden kann.
