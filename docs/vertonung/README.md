@@ -184,6 +184,55 @@ klassisch-sakraler Ton. Die Szene ist ein Heraustreten: wach, hell,
 rhythmisch, nach aussen gewandt, mit neuen Verbindungen in die
 Götterwelten — noch nicht gebaut.
 
+## Der Dialog (Runde 6)
+
+Rückmeldung auf Runde 5 (9. 10. 2026): «Deutscher Gospel? Komm bitte aus
+der Kirche raus. Lieber skandinavische Landschaften. Das Ineinander-Duo
+dachte ich zweigeschlechtlich. Kein Fallenlassen in eine Melodie. Alles
+gestalten, wach werden lassen von innen. Langsam überraschen. Dehnen.
+Wecken. Halten. Konzentration. Die Einzelstimme des Menschen fehlt. Wurde
+auch gechort. Realisiere zuerst die Situation und gewinne von da die
+stimmigen Stilmittel. „Hat verstanden dein …" ist eine intime
+Höhepunktsituation: Der Hüter verabschiedet sich, übergibt seine Rolle dem
+Menschen. Er fragt tastend, der Mensch antwortet aus seiner erwachenden
+inneren Stimme. Gekrönt und gezeptert wie der Prinz im Märchen. Weniger
+lustiges Jubilieren. Die Hallelujas an den richtigen Stellen!»
+
+**Die Situation, aus der die Mittel kommen (16.2):** Der Hüter tritt
+zurück. Drei Fragen, jede leiser, jede ein Loslassen; das Duo aus Frau und
+Mann immer zusammen, die Führung wechselt (erst sie, dann gleich, dann
+er). Der Mensch antwortet allein, eine einzige Stimme, nie verdoppelt: Sie
+beginnt fast ohne Ton, wie inneres Sprechen, das zu Klang wird, und gewinnt
+Zeile um Zeile Ton. Keine Melodie, in die man fällt; jede Zeile eine
+Gestalt, gedehnt, gehalten. **Einmal** klingen die Harmonien hörbar: Bei
+«Mögen klingend schaffen mein Ich» tritt die Kantele ein und die beiden
+Hüterstimmen klingen für einen Moment mit dem Menschen, dann ziehen sie
+sich zurück. Die dritte Antwort steht: ein sehr leiser Rahmentrommel-Puls,
+die Fiedel, die Stimme aufrecht, ruhige Autorität ohne Triumph, die letzte
+Zeile gehalten und in die Stille entlassen. Klangraum: Fiedel mit
+Bordunsaiten, Kantele, trockene Holzstube im Norden. Gegen-Stile: Gospel,
+Chor, Orgel, Kathedralenhall, Jubel, Halleluja, Popballade.
+
+| Nr | Mensch | Nachhören |
+|---|---|---|
+| 35 | junger Mann, leichte schlichte Stimme | Rückschrift 100 %. |
+| 36 | junge Frau, gleicher Plan | **nicht erzeugt: Credits aufgebraucht** (siehe unten). |
+
+### Credits: Stand 9. 10. 2026, Abend
+
+Das Konto hat ein Kontingent von 122 129 Credits; nach Vorlage 35 blieben
+284. Vorlage 36 (82 s) hätte 1 128 gebraucht — die API meldet
+`quota_exceeded` und sagt den Bedarf genau. **Gemessen:** 82 Sekunden
+kosten 1 128 Credits, also rund 825 je Minute (nicht 900). Weiter geht es,
+wenn das Kontingent erneuert ist: <https://elevenlabs.io/app/subscription>.
+Dann: `XI_KEY=… python3 -I docs/vertonung/vertonen.py bauen 36`.
+
+Verbrauch des Tages, gerundet: Erstfassung 22 000, Vorlagen 24 000,
+Stimmenprobe 13 000, Figuren 7 900, Doppelstimme 2 600, Dialog 1 100 —
+rund 71 000 Credits für 76 Minuten Musik. Was gelernt wurde, steht in den
+Rückmeldungen oben; die Richtung ist seit Runde 6 klar genug, dass die
+nächsten Stücke keine Stilproben mehr sein müssen.
+
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
@@ -277,10 +326,10 @@ Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 ## Offen
 
-- Philipps Urteil über die Doppelstimme (32–34): Wird sie der Hüter des
-  Zyklus? Dann eine Passage als Referenz wählen und die Sinneinheiten der
-  Stunden 1–7 in dieser Stimme bauen, mit den Rollen (Hüter, Mensch,
-  Hierarchien) aus dem Sinn.
+- Philipps Urteil über den Dialog (35): Trägt die Situation die Mittel?
+  Dann Vorlage 36 bauen (Credits), eine Passage des Duos als Referenz
+  wählen und die Sinneinheiten der Stunden 1–7 so bauen: zuerst die
+  Situation, dann die Mittel, Rollen aus dem Sinn, Norden statt Kirche.
 - 19+ neu denken: Heraustreten statt Kirche.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke
   irgendwo liegen dürfen, wo die Site sie laden kann.
