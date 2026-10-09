@@ -29,6 +29,8 @@ sich aus diesen Dateien neu bauen, siehe unten.
 | `sendemanuskript.py` | baut die Sendemanuskripte aus Regie-Liste und Zeitmarken neu |
 | `knacks.py` | zählt harte Abbrüche (Klang fällt in 5 ms in Stille), Vergleich zweier Fassungen |
 | `selbstgespraech.txt`, `selbstgespraech.json`, `selbstgespraech-sendemanuskript.md` | das dritte Stück, «Durchsichtig» |
+| `schlange.txt`, `schlange.json`, `schlange-sendemanuskript.md` | das vierte Stück, «Was die Schlange weiss» (Gespräch) |
+| `stimmproben.py` | Stimmproben je Rolle: Scribe-Treffer, Tempo, Grundton, Harmonizität (Mass gegen Behauchung) |
 
 ## Neu bauen
 
@@ -253,4 +255,60 @@ durchsichtig machen.»
 STUECK=selbstgespraech XI_KEY=… python3 -I docs/feature/produktion.py stimmen
 STUECK=selbstgespraech XI_KEY=… python3 -I docs/feature/produktion.py klaenge
 STUECK=selbstgespraech python3 -I docs/feature/produktion.py mischen /tmp/durchsichtig.mp3
+```
+
+## Gespräch «Was die Schlange weiss»
+
+Philipps Rückmeldung zu «Durchsichtig» (9. 10. 2026), gekürzt:
+- **Ton:** «merkwürdig naiv-belehrend», der Sprecher «belehrt permanent», «zu viel geflüstert».
+- **Form:** «Bröckchen an Bröckchen», «zu viele kluge Sätze nacheinander». Erzählerin und Sprecherin sind sich zu nah: «Wer spricht jetzt?»
+- **Wunsch:**
+  - «Plastizität, Greifbarkeit, Kontrast; konkretes menschliches Leben»
+  - «nur einen Gedanken, der langsam … gebildet wird»
+  - Humor mit gesetzten Pausen
+  - Musik, die nicht sentimental ist
+- **Die Frage:** «Was muss passieren, damit es erquicklicher als Gold wird? Ich denke, es muss die Schlange, die Lebenserfahrung aufgehen, zu leuchten beginnen.»
+
+**Form.** Zwei Geschwister räumen in Basel die Wohnung ihres verstorbenen Vaters: Esther, Dolmetscherin in Lausanne, und Martin, Schreiner in Basel. Die beiden Texte sind Fundstücke.
+- Das blaue Heft mit den Mantren («Es hatte ein Gummiband») und der Goethe-Band des Vaters mit drei Bleistiftstrichen unter «Alle diese Erfahrungen».
+- Die Szenen: Wohnung, Fähre über den Rhein, Steinstufen unter dem Münster, Brücke.
+- Ein Erzähler gibt nur die Fakten, damit die Figuren nicht belehren müssen.
+- Die Figuren sind erfunden, die Zitate nicht. Alle Zitate sind an den Quellen geprüft (Studie § 6b).
+
+**Der eine Gedanke.** Die Schlange kennt den Tempel nur im Dunkeln, «durchs Gefühl». Sie frisst das Gold und leuchtet. Verstanden wird erst im Gespräch. Am Ende erinnert sich Martin an den Satz des Vaters über Dornach: «Wir hören zu.» Esther erkennt, dass sie ihren Beruf aus seinem Schweigen gelernt hat. Der Hüter kommt aus Steiners Text, nicht aus einer Deutung: «aus dem Kontobuche deines eigenen Lebens gewoben», die Schwelle «gezimmert aus einem jeglichen Furchtgefühl» (GA 10).
+
+**Besetzung.** Gewählt nach Proben, gemessen mit `stimmproben.py` (Scribe-Treffer, Tempo, Grundton, Harmonizität als Mass gegen Behauchung):
+
+| Rolle | Stimme | warum |
+|---|---|---|
+| Esther, Ich | Essay-Tragend `34qvTxBeZxm8QcfSvTS8` | Philipp: «sehr gut» |
+| Martin | Andres `BfwuiKSWxqDOcSYQr6EC` (Bibliothek) | warm, ruhig, leichter Schweizer Akzent: ein Basler |
+| Märchen | Märchen-Erzählerin `jhhOoZ28WmHOJDBuCSGG` | Hausregel; Philipp: «am angenehmsten» |
+| Steiner | Hermann `b0JqlN5qkeuPi5BoQiHn` (Bibliothek) | gemütvoll, sonor, österreichisch (Wunsch) |
+| Hüter | Kathy Calm `9VojQrRhoFFUbqyNRsxF` (Bibliothek) | tief und rau, die am wenigsten behauchte Probe; weiter Raum |
+| Johannes | Christian – Lyrical Silence `a5IGPlKvc75qLpuahLq4` | Philipp: «gut besetzt» |
+| Erzähler, Ansage | NWR Chronist `IcDVpTMW6YwgOc2vCZgG` | sachlich, männlich, deutlich anders als die Frauenstimmen |
+
+**Technik (neu in `produktion.py`).**
+- `ATMO|<Prompt>, n s`: Szenenbett. Unter dem Gespräch liegt es bei −24 dB. Bei Märchen, Steiner, Hüter und Erzähler sinkt es auf −44 dB. So spricht der Text in der Stille, das Leben im Raum.
+- `RAUM|wohnung`: kurzer Nachhall (0,5 s) für die Geschwister. Draussen gibt es keinen Nachhall.
+- Eigene Räume für Rollen: Der Hüter bekommt 2,8 s Nachhall mit Vorverzögerung, Ich und Johannes je einen mittleren Raum.
+- `MUSIK|Platte an/aus`: Das Quartett läuft als Schallplatte im Zimmer, mit Bandbegrenzung, Knistern und Zimmerhall. Dieselbe Musik trägt den Schluss.
+- **Gesprächstempo:**
+  - 0,38 s beim Sprecherwechsel, 0,3 s beim selben Sprecher, 0,7 s zwischen Leben und Text.
+  - Prosa wird nicht mehr zerschnitten. Pausen für Pointen stehen als eigene `STILLE`-Zeilen.
+- **Kontext:** Gesprächszeilen schicken die Nachbarzeile als `previous_text`/`next_text` mit, damit die Antworten wie Antworten klingen.
+- **Musik-Prompt:** Er darf keinen Komponistennamen enthalten. «in the style of Joseph Haydn» lehnt ElevenLabs als `copyrighted_material_detected` ab, also heisst es jetzt «Viennese classical style of the 1790s».
+
+**Prüfung.**
+- 99,4 % Übereinstimmung mit dem Manuskript. Die Abweichungen sind fast nur Kurzformen wie «nehm»/«nehme», die die Erkennung auffüllt.
+- Keine harten Abbrüche.
+- −16,4 LUFS, Spitze −1,6 dBFS. Länge 25:12.
+- Der Hintergrund liegt in den Pausen unter Märchen und Erzähler bei −60 dBFS, im Gespräch bei −40 dBFS.
+- Scribe erkennt zwölf echte Lacher. An einer Stelle nennt es die Fähre «tuckert». Der Clip allein klingt laut Messung nicht nach Motor (kein tiefer Brummanteil, kein Takt). Beim Hören prüfen.
+
+```sh
+STUECK=schlange XI_KEY=… python3 -I docs/feature/produktion.py stimmen
+STUECK=schlange XI_KEY=… python3 -I docs/feature/produktion.py klaenge
+STUECK=schlange python3 -I docs/feature/produktion.py mischen /tmp/was-die-schlange-weiss.mp3
 ```

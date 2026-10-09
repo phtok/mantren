@@ -27,7 +27,7 @@ def main(manuskript, scribe):
     ref = []
     for z in open(manuskript, encoding='utf8'):
         m = re.match(rollen, z.rstrip('\n'))
-        if m and m.group(1) not in ('STILLE', 'MUSIK', 'GERÄUSCH'):
+        if m and m.group(1) not in ('STILLE', 'MUSIK', 'GERÄUSCH', 'ATMO', 'RAUM'):
             ref += [(norm(w), m.group(1)) for w in re.sub(r'\[[^\]]*\]', ' ', m.group(2)).split() if norm(w)]
     d = json.load(open(scribe))
     stt = [(norm(w['text']), w['start'], w['text']) for w in d['words'] if w.get('type') == 'word' and norm(w['text'])]

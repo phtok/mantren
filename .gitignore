@@ -45,6 +45,8 @@ docs/feature/clips/
 docs/feature/*.mp3
 docs/feature/*.marken.json
 docs/feature/entwuerfe/
+docs/feature/proben/
+docs/feature/proben.json
 
 # Vertonung: erzeugte Stücke (Cache) und Master
 docs/vertonung/clips/
