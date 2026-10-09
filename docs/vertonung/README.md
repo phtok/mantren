@@ -407,10 +407,10 @@ Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 ## Offen
 
-- Philipps Urteil über 38: Sitzen die Schnitte, sind es zwei Sängerinnen
-  bzw. Sänger, ist der innere Ton näher? Dann wird das Hüter-Lied der 38
-  zur Referenz und alle Dialoge (12, 14, 15, 16, 17, 18, 19) folgen dem
-  Muster; danach die Sinneinheiten der Stunden 1–7 mit Rollen aus dem Sinn.
+- 38 ist angenommen (Philipp, 9. 10. 2026: «Ja.»); das Hüter-Lied der 38
+  ist die Referenz für den Hüter. Jede weitere Sinneinheit wird zuerst als
+  Szene durchdrungen (`szenen.md`), dann gebaut. Als nächste Szene ist
+  1.4 «Drei Tiere» ausgearbeitet und wartet auf das Go.
   Vorlage 36 ist durch 37 und 38 überholt.
 - 19+ neu denken: Heraustreten statt Kirche.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke
