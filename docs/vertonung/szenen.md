@@ -58,6 +58,65 @@ Referenz für den Hüter im Zyklus.
 
 ---
 
+## Der Tier-Zusammenhang: drei Stücke, eine Familie
+
+Die Tiere beginnen nicht erst mit «Schau das erste Tier». Sie sind da,
+sobald der Hüter sagt «Doch du musst den Abgrund achten; sonst verschlingen
+seine Tiere dich» (1.4, Warnung), und sie enden nicht mit den Flügeln:
+
+| Stück | Stunde | Was mit den Tieren geschieht | Reihenfolge |
+|---|---|---|---|
+| **1.4 Drei Tiere** | 1 | **Schauen.** Der Hüter zeigt sie, Gestalt, Farbe, Herkunft, Gegenmittel. | Wille, Fühlen, Denken (von unten nach oben) |
+| **2** «Des dritten Tieres glasig Auge» | 2 | **Erkennen.** Der Hüter erklärt, was jedes Tier *ist*: das böse Gegenbild des Denkens, die Gegenkraft des Fühlens, die Schöpfermacht des Wollens, die den Leib den Gegenmächten weiht. | Denken, Fühlen, Wille (rückwärts, vom Kopf hinunter) |
+| **3 Willens-Stoß** | 2 | **Wandeln.** Dieselben drei Kräfte, aber als Weg: «Sieh in dir Gedankenweben … Tauche unter in den Schein», «Vernimm in dir Gefühle-Strömen», «Lass walten in dir den Willens-Stoß». Das Gegenmittel aus 1.4 wird Übung. | Denken, Fühlen, Wille |
+
+Danach wird die Dreiheit weitergetragen (4 Tiefe–Weite–Höhe, 5 Es kämpft,
+6 Erdenwerte, 7 Schau die Drei), aber ohne Tiere: Dort sind es Räume,
+Kämpfe, Elemente, Glieder. Die Tiere selbst sind ein **Zyklus im Zyklus**
+aus drei Stücken, zwei Stunden.
+
+**Darum drei Stücke, nicht eines.** Jedes ist eine eigene Lehrstunde mit
+eigener Haltung (zeigen, erklären, üben), und ein Stück von sieben Minuten
+hätte wieder «mehrere Lieder in einem» (die Rückmeldung auf die
+Erstfassung). Aber sie sind **eine Familie**, und das hörbar:
+
+1. **Eine Stimme.** Der Hüter der 38 in allen drei (Referenz).
+2. **Ein Boden.** Derselbe Bordun auf D (Bett der 38).
+3. **Drei Gestalten, einmal erzeugt, dreimal gebraucht.** Die drei
+   Instrumental-Gestalten (trockenes Holz, schiefes Rohrblatt, stehendes
+   Glas) werden *einmal* erzeugt und aus dem Cache in alle drei Stücke
+   gelegt: in 1.4 in der Folge Wille–Fühlen–Denken, in 2 rückwärts
+   Denken–Fühlen–Wille (der Hörer erkennt sie wieder und hört die
+   Umkehrung), in 3 **verwandelt**: dieselben drei Plätze, aber die Gestalt
+   ist geheilt — das Holz wird eine warme tiefe Cellolinie, das Rohrblatt
+   stimmt und klingt in die Quinte, das Glas wird eine klare hohe Glocke.
+   Drei neue kurze Instrumentale, die ihrer Tier-Gestalt antworten.
+4. **Die Tiere sind der eigene Grundton, entstellt.** «Sie hat deine
+   Weltenzeit in dir … hingestellt»: Sie kommen aus dem Menschen. Darum
+   sind alle drei Gestalten aus dem D gebaut, das der Bordun hält: das
+   knochige Holz ein D eine Oktave tiefer, trocken geschlagen; das
+   Rohrblatt ein D, einen Viertelton verrutscht (das ist die Lüge); das
+   Glas die hohen Obertöne des D, ohne Grund (das ist der Zweifel). In 3
+   kehren sie in den reinen Ton zurück. Ob das Modell diese Tonhöhen
+   wirklich trifft, zeigt der erste Lauf; die Absicht steht in den Stilen,
+   und was abweicht, wird nachgezogen oder gestrichen.
+5. **Die Warnung enthält die Tiere schon.** Unter «Sonst verschlingen
+   seine Tiere dich» erscheinen die drei Gestalten je einen Atemzug lang,
+   leise, unbenannt — so dass «Schau das erste Tier» ein Wiedererkennen
+   ist. Das ist die einzige Stelle, an der alle drei zusammen klingen.
+
+**Reihenfolge des Bauens:** 1.4 zuerst. Dort entstehen die drei
+Gestalten; ihr Klang ist dann festgelegt. Mantram 2 kostet danach nur das
+Hüter-Lied (Gestalten aus dem Cache). Mantram 3 kostet Hüter-Lied und drei
+Verwandlungen.
+
+**Kosten der Familie, geschätzt:** 1.4 rund 2 900 Credits (Hüter 165 s,
+drei Gestalten je 15 s); 2 rund 2 100 (Hüter 150 s); 3 rund 2 700 (Hüter
+150 s, drei Verwandlungen je 15 s). Zusammen rund 7 700 Credits für etwa
+neun Minuten in drei Stücken.
+
+---
+
 ## 1.4 «Drei Tiere» — der Blick in den Abgrund (geplant)
 
 ### Situation
@@ -170,7 +229,8 @@ Hüter-Lied: 5 Teile (26 + 30 + 30 + 30 + 34 s) und fünf Bordun-Ränder
 (15 s), etwa 165 s. Drei Gestalten je 15 s, geschleift: 45 s. Bett aus der
 38 (Cache, kostenlos). Zusammen rund 210 s ≈ 2 900 Credits; das Stück wird
 etwa 3:10 lang. Prüfung wie immer mit Scribe; die Gestalten tragen keinen
-Text.
+Text. Die Gestalten werden in Mantram 2 und 3 wiederverwendet (§ Der
+Tier-Zusammenhang).
 
 ### Was offen bleibt
 
