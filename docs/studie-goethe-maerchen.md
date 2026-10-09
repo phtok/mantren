@@ -14,11 +14,15 @@ denselben Weg zweimal: Goethe als Bild, das man von außen sieht, Steiner
 als Anrede, die den Meditierenden mit «du» trifft. Fünf Befunde tragen
 das, und sie sind am Wortlaut nachprüfbar:
 
-1. **Weisheit, Schein, Gewalt — Weisheit, Schein, Tugend.** Der Alte ruft
-   im Tempel «die Weisheit, der Schein und die Gewalt» [113]; Mantra 7.2
-   schließt mit «Weisheit», «Scheine», «Tugend». Zwei der drei Worte sind
-   dieselben und stehen in derselben Reihenfolge. Das dritte hat sich
-   gewandelt: Aus der *Gewalt* ist die *Tugend* geworden.
+1. **Weisheit, Schein, Tugend: Mantra 7.2 nimmt Steiners eigene Deutung
+   der drei Könige auf.** Bei Goethe ruft der Alte «die Weisheit, der
+   Schein und die Gewalt» [113]. Steiner las die Könige 1918 als Erkennen,
+   Fühlen und Wille. Ihre Gaben seien «die Weisheit», «der schöne Schein»
+   und «die Macht, durch welche die Tugend wirkt» (GA 22). Mantra 7.2
+   schließt 1924 mit «Weisheit», «Scheine», «Tugend». Die Schlusszeilen des
+   Mantrams folgen also seiner Märchendeutung, mit einem Unterschied: Die
+   Seelenkräfte sind dort, wie es jenseits der Schwelle geschieht,
+   vertauscht.
 2. **Der gemischte König zerfällt, wo die Drei sich trennen.** Bei Goethe
    bricht der König aus schlecht verschmolzenem Gold, Silber und Erz
    zusammen, sobald die drei reinen Könige aufstehen [113–115]. Mantra 7.1
@@ -41,6 +45,10 @@ das, und sie sind am Wortlaut nachprüfbar:
    und der Weg endet in beiden Texten am geöffneten Tor (7.3: «Du wirst ein
    wahrer Mensch werden»).
 
+In den Klassenstunden nennt Steiner das Märchen kein einziges Mal. Was die
+beiden Texte verbindet, ist seine Auslegung, an der er über dreißig Jahre
+gearbeitet hat (1891–1918, Abschnitt 1).
+
 Was die Texte trennt, ist ebenso deutlich: Das Märchen endet in einer
 Gemeinschaft auf der Brücke, «bis auf den heutigen Tag» [135]. Die Mantren
 enden in einem Satz: «Mein Ich ist IHR» (19+).
@@ -60,6 +68,11 @@ enden in einem Satz: «Mein Ich ist IHR» (19+).
   Typ `deutung` geben Steiners Rede dort **verdichtet** wieder; sie sind
   hier als «verdichtet» markiert und nicht als wörtliches Steiner-Zitat
   zu lesen.
+- **Steiners Märchen-Deutungen:** Die Zitate aus GA 22, 28, 30, 53, 57
+  und 237 sind am 9. 10. 2026 gegen die PDFs der Online-Fassungen geprüft.
+  Bei GA 22 richten sich die Seitenzahlen nach dieser Fassung. Die
+  Fehlanzeige für GA 270 und GA 260 beruht auf einer Volltextsuche ohne
+  OCR-Prüfung. Alle Quellen stehen am Ende von Abschnitt 1.
 
 Die Befunde sind in drei Grade gestuft:
 
@@ -76,7 +89,60 @@ Entsprechungen, die der Text nicht trägt.
 
 ## 1. Der historische Faden
 
-<!-- HISTORIE -->
+Steiner hat das Märchen sein Leben lang ausgelegt, in den Klassenstunden
+aber nennt er es nicht. Eine Volltextsuche nach «Märchen», «Schlange» und
+«Lilie» in GA 270a–c und GA 260 bleibt ohne Treffer; die Texte dieser
+Ausgabe bestätigen das. Die Zusammenklänge sind also keine Zitate. Sie
+sind Spuren einer Beschäftigung, die 1891 begann:
+
+- **27. 11. 1891, Wiener Goethe-Verein.** Erster Vortrag über das Märchen.
+  Alles Spätere sei «nur eine weitere Ausgestaltung der in jenem Vortrage
+  ausgesprochenen Gedanken» (GA 22, Anm. 5).
+- **1899, «Goethes geheime Offenbarung».** Aufsatz im *Magazin für
+  Literatur* zum 150. Geburtstag Goethes (GA 30). Darin: «Die drei Könige
+  sind die Symbole für die drei Grundkräfte der menschlichen Seele.»
+- **Herbst 1900, Berlin.** Vortrag in der Bibliothek der Brockdorffs,
+  gleicher Titel. Steiner dazu im Rückblick: «Und in diesem Vortrag wurde
+  ich in Anknüpfung an das Märchen ganz esoterisch» (GA 28, Kap. XXX).
+  Das oft genannte Datum, der 29. 9. 1900, ist nach den Herausgebern von
+  GA 28 nicht dokumentarisch nachgewiesen.
+- **1905 und 1908, Berlin.** Weitere Auslegungen: 16. 2., 23. 2. und
+  2. 3. 1905 (GA 53) sowie 22. und 24. 10. 1908, die zweite davon
+  esoterisch (GA 57).
+- **1910, «Die Pforte der Einweihung. Ein Rosenkreuzermysterium»**
+  (GA 14), nach Steiner «eine Frucht jener Gedanken» (GA 22, Anm. 5).
+  1924 nennt er das Drama dem Märchen «in der Struktur – wenn auch im
+  ganzen Inhalte anders – ähnlich» (GA 237, 8. 7. 1924). Aus diesen
+  Dramen kommt die Gestalt, die die Klassenmantren tragen: Das dritte
+  Drama (1912) heißt «Der Hüter der Schwelle».
+- **1918, GA 22, Teil III: «Goethes Geistesart in seiner Offenbarung
+  durch sein ‹Märchen›».** Die ausführlichste Deutung, und die, an die
+  die Mantren am engsten anschließen:
+
+> In dem Menschen, der auf dem Wege zur freien Persönlichkeit ist, sind
+> drei Seelenkräfte in Mischung wirksam: der Wille (das Kupfer), das
+> Fühlen (Silber), die Erkenntnis (Gold). Die Lebenserfahrung gibt im
+> Laufe des Daseins aus ihren Offenbarungen, was die Seele sich durch
+> diese drei Kräfte aneignet: die Macht, durch welche die Tugend wirkt,
+> offenbart sich dem Willen; die Schönheit (der schöne Schein) offenbart
+> sich dem Fühlen; die Weisheit offenbart sich dem Erkennen. — GA 22,
+> S. 55 f.
+
+Die Zuordnung des silbernen Königs hat sich dabei verschoben. 1899
+deutete Steiner ihn als «Frömmigkeit», 1905 als Buddhi, Liebe und «Reich
+des Scheins», 1908 als «Erkenntnisvermögen des objektiven
+Gefühls». 1918 steht er für Fühlen und
+schönen Schein, und 1924 heißt es in Mantra 7.2 nur noch «Schein».
+
+**Quellen:**
+[GA 22](https://anthroposophie.byu.edu/files/2025/06/022.pdf) ·
+[GA 28](https://anthroposophie.byu.edu/files/2025/06/028.pdf) ·
+[GA 30](https://rudolfsteinerelib.org/Download/German/Methodische_Grundlagen_der_Anthroposophie--Rudolf_Steiner--030.pdf) ·
+[GA 53](https://anthroposophie.byu.edu/files/2025/06/053_16.pdf) ·
+[GA 57](https://anthroposophie.byu.edu/files/2025/06/057_03.pdf) ·
+[GA 14](https://rudolfsteinerelib.org/Download/German/Vier_Mysteriendramen--Rudolf_Steiner--014.pdf) ·
+[GA 237](https://archive.org/download/rudolf-steiner-ga-237/rudolf-steiner-ga-237.pdf) ·
+GA 270a–c und GA 260 nach den PDFs auf odysseetheater.org
 
 ---
 
@@ -98,19 +164,30 @@ Es ist die engste wörtliche Berührung beider Texte. Wichtig ist auch, was
 Erscheinung. Steiner deutet den Schein in der Siebenten Stunde als
 «Weltenschein, in dem alle Geistwesen erstrahlen» (GA 270a, S. 185,
 verdichtet); in der Sechsten Wiederholungsstunde steht dafür «Gloria»
-(GA 270c, S. 129, verdichtet). Goethes silberner König, mit Edelsteinen
+(GA 270c, S. 129, verdichtet). Dasselbe Wort hatte er schon 1905 auf den
+silbernen König des Märchens angewandt: Mit dessen «Reich des Scheins» sei
+gemeint, «was das Christentum als Glorie bezeichnet (Gloria in
+excelsis)» (GA 53, Berlin 1905). Goethes silberner König, mit Edelsteinen
 geschmückt und von der «Heiterkeit des Stolzes» [23], ist eben dieser
 Glanz.
 
-Die Abweichung am dritten Glied ist kein Bruch, sondern lesbar als
-Verwandlung. Goethes eherner König ist die *Gewalt*, und doch gibt er dem
-Jüngling das Schwert mit einer Gebärde der Zurückhaltung: «Das Schwert an
-der Linken, die Rechte frei!» [116]. Bei Steiner wird die Kraft der Glieder
-*gedacht*, und erst dadurch wird sie zur Tugend: «Der Glieder Kraft, / Du
-kannst sie denken; / Und Denken wird dir / Des Wollens zielerfassend
-Menschenstreben; / Du strebest in der Tugend.» Was bei Goethe die Gewalt
-ist, ist bei Steiner die Gewalt, die durchs Denken gegangen ist. Das
-lateinische *virtus* trägt beides noch in sich: Kraft und Tugend.
+Dass aus der *Gewalt* die *Tugend* wird, hat Steiner selbst
+ausgesprochen. 1918 nennt er die Gabe des ehernen Königs «die Macht,
+durch welche die Tugend wirkt» (GA 22, S. 55 f.; Wortlaut in Abschnitt 1).
+Weisheit, schöner Schein und Tugend sind dort die Gaben der drei Könige an
+Erkennen, Fühlen und Wille. Die Schlusszeilen von Mantra 7.2 sind diese
+Dreiheit, und zwar wörtlich. Schon Goethe zeigt die Gewalt gebändigt: Der
+eherne König gibt das Schwert mit einer Gebärde der Zurückhaltung, «Das
+Schwert an der Linken, die Rechte frei!» [116].
+
+Neu ist im Mantram die Richtung. 1918 gehört die Weisheit dem Erkennen,
+der Schein dem Fühlen und die Tugend dem Willen. In 7.2 bleiben die drei
+Worte an ihren Orten: die Weisheit am Kopf, wo sonst das Erkennen wohnt,
+der Schein am Herzen, die Tugend an den Gliedern, dem Ort des Willens. Die
+Tätigkeiten aber sind vertauscht: «Des Kopfes Geist, / Du kannst ihn wollen», «Der Glieder
+Kraft, / Du kannst sie denken». Steiner nennt das die «völlige Umkehrung in
+der geistigen Welt» (GA 270a, S. 185, verdichtet). Mantra 7.2 ist demnach
+seine Märchendeutung von 1918, gesehen von jenseits der Schwelle.
 
 ### 2.2 Der gemischte König und «Die Drei, die als das Eins»
 
@@ -138,12 +215,15 @@ beantwortet der Alte mit «Wer auf seinen Füßen steht» [105]. Das
 Erden-Eins der Mantren ist bei Goethe also ein schlechter Guss: Er hält,
 solange nichts geschieht, und zerfällt an der Schwelle.
 
-Dabei ist ein Unterschied wichtig. Das Märchen kennt nur den Zerfall der
-falschen Einheit und das Aufstehen der Drei. Steiner geht einen Schritt
-weiter, in Mantra 7.2 kreuzt er die Kräfte: Den Geist des Kopfes kann man
-*wollen*, die Seele des Herzens *fühlen*, die Kraft der Glieder *denken*.
-Die Einheit wird jenseits der Schwelle bewusst neu geknüpft. Im Märchen
-entspricht dem erst der Gang des Jünglings von König zu König (2.5).
+Den nächsten Schritt hat Steiner 1918 am Märchen selbst beschrieben: Der
+Mensch werde die freie Persönlichkeit «in dem Maße erringen, als er mit
+vollem Bewusstsein die Gaben der drei in ihrer besonderen Eigenart, jede
+für sich, empfängt und sie erst – in freier bewusster Betätigung – in
+seiner Seele selbst vereinigt. Dann zerfällt in sich, was ihn vorher
+bezwungen hat, die chaotische Mischung der Gaben des Wollens, Fühlens und
+Erkennens» (GA 22, S. 56). Im Märchen ist dieser Schritt der Gang des
+Jünglings von König zu König (2.5). In den Mantren ist es die Kreuzung von
+7.2, die die Kräfte bewusst neu verbindet.
 
 ### 2.3 Den Abgrund übersetzen
 
@@ -216,6 +296,12 @@ Damit sind alle drei Züge der Goetheschen Brücke versammelt: Sie ist ein
 > aufgeopferten Körpers, sind die Grundpfeiler dieser herrlichen Brücke,
 > auf ihnen hat sie sich selbst erbaut und wird sich selbst erhalten. —
 > [121]
+
+Steiner hat diese Brücke 1918 als einen Vorgang in der Seele gelesen. Die
+Schlange ist dort «die Lebenserfahrung der Seele». Hat sie sich geopfert,
+dann sei «die Zeit gekommen, in der die Seele in sich die Brücke bilden
+kann zwischen dem diesseitigen und jenseitigen Gebiet des Flusses. Diese
+Brücke entsteht aus dem Stoffe der Schlange selbst» (GA 22, S. 55).
 
 Auch die Belebung des Toten («Aus totem Sinnenschein Belebtes») hat bei
 Goethe ihre Szenen. Die Lampe
@@ -327,7 +413,9 @@ auch ein sanftes Licht von sich» [88].
 Das Märchen ist eine Erzählung gegen die Eile. Die Irrlichter haben
 «große Eile» [1] und «sterben vor Ungeduld» [16]. Der Jüngling hält es
 nicht mehr aus, «stürzte auf die Schöne los» und verliert das Bewusstsein
-[76–77]. Dagegen steht der Alte mit seinem Satz: «ein Einzelner hilft
+[76–77]. Steiner spricht 1918 von der «Wiederbelebung des zur Unzeit von
+dem Übersinnlichen – der Lilie – berührten und daher gelähmten und
+ertöteten Jünglings» (GA 22, S. 55). Dagegen steht der Alte mit seinem Satz: «ein Einzelner hilft
 nicht, sondern wer sich mit vielen zur rechten Stunde vereinigt.
 Aufschieben wollen wir und hoffen» [87]. Dazu kommt der Ruf «Es ist an der
 Zeit», den Lilie dreimal hören muss, bevor der Tempel steigt [55, 69,
@@ -425,9 +513,13 @@ den Kopf «wieder zur Erde biegen» [13] und *trägt* die Wanderer auf ihrem
 Rücken hinüber [51]. Das passt auffallend gut, auch zu Mantra 6 («Wenn
 Lichtesschein in dir sich selber denkt, / So wird […] / In dir als
 Selbstheitwahn ersteh'n»; die Irrlichter sind mit der Schlange «nur von
-Seiten des Scheins verwandt» [12]). Aber Goethe gibt den Irrlichtern eine
-nützliche Rolle, die kein Gegner hat: Sie öffnen das Tor [102] und lösen
-den gemischten König auf [115]. Das Schema geht also nicht glatt auf.
+Seiten des Scheins verwandt» [12]). Steiner nennt sie 1918 die «von der
+Sinneswelt sich loslösende, in Aberglauben oder tumultuarisches Denken
+verirrte Weisheit» (GA 22, S. 61). Das kommt der luziferischen Antwort
+nahe. Aber dieselbe Stelle gibt ihnen eine Aufgabe, die kein Gegner hat:
+Diese Weisheit «dient dazu, das Tor aufzuschließen» [102]. Außerdem lösen die
+Irrlichter den gemischten König auf [115]. Das Schema geht also nicht
+glatt auf.
 
 **Der Strom als Zeitstrom.** Die Erste Tafel spricht von «deines Lebens
 Werdestrom» und vom «Zeitvernichtungsstrom». Goethes Fluss nimmt kein
