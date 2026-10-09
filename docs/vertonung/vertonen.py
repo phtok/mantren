@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""«Nach innen» — Vertonung der Mantren der Ersten Klasse, Stunden 1–7 (Eleven Music).
+"""«Nach innen» — Vertonung der Mantren der Ersten Klasse als Vorlagen (Eleven Music).
 
-    python3 -I vertonen.py plan 3                    # Kompositionsplan der Stunde 3 zeigen (kostet nichts)
-    XI_KEY=… python3 -I vertonen.py bauen 1 2 3      # Stücke erzeugen (Cache: clips/), fertige MP3 nach ausgabe/
+    python3 -I vertonen.py plan 3                    # Kompositionsplan der Vorlage 3 zeigen (kostet nichts)
+    XI_KEY=… python3 -I vertonen.py bauen 1 2 3      # Vorlagen erzeugen (Cache: clips/), fertige MP3 nach ausgabe/
     XI_KEY=… python3 -I vertonen.py pruefen 1        # Scribe schreibt das Stück zurück, Vergleich mit dem Liedtext
     XI_KEY=… python3 -I vertonen.py guthaben         # Credit-Stand (nur mit Recht «User: Read»)
 
 Der Liedtext kommt unverändert aus src/data/mantren.yaml (Lesefassung 2024).
-Jede Stunde ist ein Stück; jeder Teil eines Mantrams ein Abschnitt (Chunk) mit
-eigenem Klang. Stile auf Englisch (Vorgabe der API), keine Künstlernamen (die
+Jede Vorlage ist eine Sinneinheit (ein Titel der Lesefassung) in einem Ansatz;
+jeder Teil des Mantrams ein Abschnitt (Chunk) mit eigenem Klang. Stile auf Englisch (Vorgabe der API), keine Künstlernamen (die
 API weist sie ab), der Text auf Deutsch.
 """
 import difflib, hashlib, json, os, re, subprocess, sys, time, urllib.request, urllib.error, uuid
@@ -21,117 +21,146 @@ API = 'https://api.elevenlabs.io'
 MODELL = 'music_v2_5'
 FORMAT = 'mp3_44100_192'
 
-# ---------------------------------------------------------------- Klang des Zyklus
-# Eine Stimme für den Hüter durch den ganzen Zyklus: eine Altstimme, nah am Mikrofon,
-# leise, nie gehoben. Die Mantren sagen «der Hüter spricht» — er ist kein Mann, die
-# Stimme ist eine Wahl (siehe README).
-STIMME = ['female alto vocalist, very close to the microphone, breathy and quiet, intimate whisper-sung delivery',
-          'lyrics sung in German with clear diction', 'every word intelligible', 'slow phrasing with space between lines']
-GRUND = ['sacred minimalism', 'inward and contemplative', 'very slow', 'silence is part of the music',
-         'warm analog recording', 'great production quality']
-NIE = ['drum kit', 'rock drums', 'trap beat', 'rap', 'auto-tune pitch correction', 'EDM', 'cheesy', 'epic trailer',
-       'sentimental film strings', 'stadium reverb', 'distorted electric guitar', 'English lyrics', 'spoken announcer',
-       'loud', 'fast']
-
-# Klangwelten (ohne Namen, die API lehnt Namen ab — jede Zeile ist eine Übersetzung der Inspiration):
-KLAVIER = ['soft felt piano', 'sparse repeating arpeggios', 'simple diatonic harmony', 'single sustained notes left to ring']
-TINTINNABULI = ['tintinnabuli texture: one voice moves stepwise while a second voice sounds only the notes of one triad',
-                'bell-like sustained string tones', 'long silences between phrases', 'pure consonance']
-AMBIENT = ['ambient', 'slowly evolving drone', 'generative texture with no pulse', 'tape-warm pads', 'deep sub bass felt more than heard']
-GESCHICHTET = ['stacked vocal harmonies of the same voice, a choir made of one singer', 'vocoder-tinted harmonies',
-               'falsetto layers', 'folktronica']
-VIBRAPHON = ['vibraphone mallet patterns', 'minimalist chamber jazz', 'bass clarinet', 'gentle interlocking rhythms']
-FLAMENCO = ['flamenco-inflected melisma', 'nylon-string guitar', 'sparse palmas handclaps', 'sudden a cappella moments',
-            'modern production with sub bass']
+# ---------------------------------------------------------------- Haltung (Runde 2, 9. 10. 2026)
+# «Es braucht keinen künstlichen Ernst oder starken seelischen Ausdruck. Die Gesangsstimme, die
+# Töne schaffen die Erlebnisse. Die oder der Singende stellt sich zur Verfügung.» — darum keine
+# Hauch-Stimme mehr, kein Pathos; Instrumente echt, in einem Raum; Harmonik darf fordern.
+DIENT = ['plain unaffected delivery: the singer serves the text and does not emote', 'no vibrato, straight tone',
+         'lyrics in German, every word intelligible']
+ECHT = ['real acoustic instruments recorded in a real room', 'natural room reverb', 'complex, slowly shifting harmony',
+        'great production quality']
+NIE = ['cheap synth pads', 'preset synthesizer sounds', 'stock ambient pad', 'new age', 'digital reverb wash',
+       'rock drums', 'trap beat', 'rap', 'auto-tune pitch correction', 'EDM', 'epic trailer', 'cheesy', 'sentimental',
+       'theatrical', 'dramatic emoting', 'heavy vibrato', 'breathy ASMR whisper', 'English lyrics', 'loud']
 GOLDBERG = ['aria and variations over a fixed ground bass', 'sarabande rhythm in slow triple meter', 'baroque voice-leading',
             'each strophe a new variation on the same bass line']
-INDIE = ['German indie pop with orchestral strings', 'soft muted electronic pulse', 'warm synth pads', 'intimate pop vocal']
-UNRUHE = ['unsettling', 'detuned bowed strings', 'low cello drones', 'sparse electronic glitches', 'odd meter', 'anxious']
 
-# ---------------------------------------------------------------- die sieben Stücke
-# Jeder Abschnitt: (Name, Quelle, Dauer s, Stile, Nicht-Stile, Regie im Text)
-#   Quelle: (Mantram-ID, Teil-Nr.) → Zeilen aus mantren.yaml; None → ohne Text (Vorspiel, Zwischenspiel, Nachspiel)
-#   Regie: Zeilen in geschweiften Klammern, die vor dem Text stehen ({whispered} …)
-STUECKE = {
-    1: {'titel': 'Erdengründe', 'mantren': ['1.1', '1.2', '1.3', '1.4'], 'tonart': 'D minor', 'tempo': '58 BPM',
-        'welt': KLAVIER + TINTINNABULI,
-        'teile': [
-            ('Vorspiel', None, 14, KLAVIER + TINTINNABULI + ['instrumental introduction', 'a single piano note, then silence, then the arpeggio begins'], ['vocals'], ''),
-            ('Erdengründe I', ('1.1', 0, 0, 8), 42, KLAVIER + TINTINNABULI + ['the voice enters almost speaking, on one or two notes'], [], ''),
-            ('Erdengründe II', ('1.1', 0, 8, 16), 46, KLAVIER + TINTINNABULI + ['the harmony darkens', 'the piano thins out to single notes'], [], ''),
-            ('Im Anblick der Schwelle', ('1.2', 0, 0, 12), 58, TINTINNABULI + ['strings only, no piano', 'the voice floats above sustained string tones', 'growing light'], ['piano'], ''),
-            ('Das Tor', ('1.2', 0, 12, 13), 14, ['near silence', 'one low piano note', 'the voice speaks rather than sings'], ['strings'], '{spoken softly, almost whispered}'),
-            ('Daseinswort', ('1.3', 0, 0, 12), 56, KLAVIER + TINTINNABULI + ['the full texture returns', 'wide and calm', 'the last line sung on one repeated note'], [], ''),
-            ('Zwischenspiel', None, 10, UNRUHE + ['instrumental transition', 'the strings begin to detune'], ['vocals', 'piano'], ''),
-            ('Der Abgrund', ('1.4', 0), 26, UNRUHE + ['the voice is tense and low'], ['piano'], ''),
-            ('Das erste Tier', ('1.4', 1), 30, UNRUHE + ['dull blue colour: bone-dry pizzicato', 'hollow'], ['piano'], ''),
-            ('Das zweite Tier', ('1.4', 2), 30, UNRUHE + ['yellow-grey colour: mocking, thin, nasal muted brass far away'], ['piano'], ''),
-            ('Das dritte Tier', ('1.4', 3), 30, UNRUHE + ['dirty red colour: glassy high string harmonics', 'slack and limp'], ['piano'], ''),
-            ('Flügel', ('1.4', 4), 34, KLAVIER + GESCHICHTET + ['the key turns to D major', 'the piano returns', 'hope without triumph'], UNRUHE, ''),
-            ('Nachspiel', None, 14, KLAVIER + TINTINNABULI + ['instrumental ending', 'the opening arpeggio once more, then one note left to ring into silence'], ['vocals'], ''),
-        ]},
-    2: {'titel': 'Die drei Tiere', 'mantren': ['2'], 'tonart': 'A minor', 'tempo': 'no pulse',
-        'welt': AMBIENT,
-        'teile': [
-            ('Vorspiel', None, 12, AMBIENT + ['instrumental introduction', 'a drone rises from silence'], ['vocals'], ''),
-            ('Des Denkens', ('2', 0), 42, AMBIENT + ['whispered close-mic vocal, almost spoken', 'highest register of the three strophes'], [], '{whispered}'),
-            ('Des Fühlens', ('2', 1), 42, AMBIENT + ['whispered close-mic vocal, almost spoken', 'middle register', 'the drone thickens'], [], '{whispered}'),
-            ('Des Wollens', ('2', 2), 44, AMBIENT + ['the voice sinks to the lowest register', 'sub bass swells', 'the last line sung, not whispered'], [], ''),
-            ('Nachspiel', None, 14, AMBIENT + ['instrumental ending', 'the drone thins to a single sine tone and fades'], ['vocals'], ''),
-        ]},
-    3: {'titel': 'Willens-Stoß', 'mantren': ['3'], 'tonart': 'F major', 'tempo': '84 BPM',
-        'welt': VIBRAPHON,
-        'teile': [
-            ('Vorspiel', None, 10, VIBRAPHON + ['instrumental introduction', 'vibraphone alone, a four-note pattern'], ['vocals'], ''),
-            ('Gedankenweben', ('3', 0), 40, VIBRAPHON + ['vibraphone alone under the voice', 'the voice is light and clear'], ['bass clarinet'], ''),
-            ('Gefühle-Strömen', ('3', 1), 42, VIBRAPHON + ['bass clarinet enters', 'a gentle pulse appears', 'the harmony warms'], [], ''),
-            ('Willens-Stoß', ('3', 2), 46, VIBRAPHON + GESCHICHTET + ['the stacked choir of one voice enters on the last two lines', 'rising', 'bright'], [], ''),
-            ('Nachspiel', None, 12, VIBRAPHON + ['instrumental ending', 'the four-note pattern slows down and stops'], ['vocals'], ''),
-        ]},
-    4: {'titel': 'Tiefe – Weite – Höhe', 'mantren': ['4'], 'tonart': 'E minor to E major', 'tempo': '66 BPM',
-        'welt': GESCHICHTET,
-        'teile': [
-            ('Vorspiel', None, 10, ['instrumental introduction', 'solo cello in the lowest register', 'double bass drone'] + GESCHICHTET[3:], ['vocals'], ''),
-            ('Erdentiefen', ('4', 0), 42, ['male baritone vocalist in his lowest chest register, close and dark', 'cello and double bass only', 'heavy and slow'], ['falsetto', 'strings high'], ''),
-            ('Weltenweiten', ('4', 1), 42, ['the same male voice in his warm middle register', 'warm string quartet enters', 'wide stereo image', 'loving'] + GESCHICHTET[:2], [], ''),
-            ('Himmelshöhen', ('4', 2), 46, ['the same male voice now in pure falsetto', 'stacked falsetto harmonies'] + GESCHICHTET + ['high string harmonics', 'the key brightens to E major', 'weightless'], ['cello', 'double bass'], ''),
-            ('Nachspiel', None, 14, GESCHICHTET + ['instrumental ending', 'wordless falsetto harmonies (ooh) dissolve into air'], [], '(ooh)'),
-        ]},
-    5: {'titel': 'Es kämpft', 'mantren': ['5'], 'tonart': 'E Phrygian', 'tempo': '72 BPM',
-        'welt': FLAMENCO,
-        'teile': [
-            ('Vorspiel', None, 8, FLAMENCO + ['instrumental introduction', 'nylon-string guitar alone, one Phrygian cadence'], ['vocals'], ''),
-            ('Licht und Finsternis', ('5', 0), 44, FLAMENCO + ['the voice fights: full and bright on «Licht», dark and low on «finstren»', 'a cappella on the last two lines'], [], ''),
-            ('Warm und Kalt', ('5', 1), 44, FLAMENCO + ['palmas enter softly', 'warm melisma on «Wärme»', 'the sound turns cold and dry on «Kälte»', 'a cappella on the last two lines'], [], ''),
-            ('Leben und Tod', ('5', 2), 46, FLAMENCO + ['the fullest strophe', 'sub bass under the guitar', 'then everything stops: the last line a cappella, barely voiced'], [], ''),
-            ('Nachspiel', None, 10, FLAMENCO + ['instrumental ending', 'guitar alone, the Phrygian cadence once more, unresolved'], ['vocals'], ''),
-        ]},
-    6: {'titel': 'Erdenwerte', 'mantren': ['6'], 'tonart': 'G minor', 'tempo': '60 BPM in slow triple meter',
-        'welt': GOLDBERG,
-        'teile': [
-            ('Aria', None, 14, GOLDBERG + KLAVIER + ['instrumental introduction', 'the ground bass alone on felt piano, eight bars'], ['vocals'], ''),
-            ('Erde', ('6', 0), 40, GOLDBERG + KLAVIER + ['variation 1: piano alone under the voice'], [], ''),
-            ('Wasser', ('6', 1), 40, GOLDBERG + KLAVIER + ['variation 2: a cello joins on the ground bass', 'flowing'], [], ''),
-            ('Luft', ('6', 2), 40, GOLDBERG + ['variation 3: strings in long tones, no piano', 'cold and clear', 'the last line warms'], ['piano'], ''),
-            ('Zwischenspiel', None, 8, INDIE + ['instrumental transition', 'a soft muted electronic pulse begins under sustained strings'], ['vocals'], ''),
-            ('Licht', ('6', 3), 40, INDIE + GOLDBERG[:1] + ['variation 4: the ground bass now in the synth bass', 'the voice closer and more personal'], [], ''),
-            ('Gestalt', ('6', 4), 40, INDIE + GOLDBERG[:1] + ['variation 5: orchestral strings swell gently', 'tender on «Liebe zu den Erdenwerten»'], [], ''),
-            ('Leben', ('6', 5), 42, INDIE + GESCHICHTET[:1] + GOLDBERG[:1] + ['variation 6: the stacked choir carries the last two lines', 'the pulse stops before the final line'], [], ''),
-            ('Aria da capo', None, 16, GOLDBERG + KLAVIER + ['instrumental ending', 'the ground bass alone on felt piano once more, slower, into silence'], ['vocals', 'electronic pulse'], ''),
-        ]},
-    7: {'titel': 'Schau die Drei', 'mantren': ['7.1', '7.2', '7.3'], 'tonart': 'D major', 'tempo': '58 BPM',
-        'welt': KLAVIER + TINTINNABULI,
-        'teile': [
-            ('Vorspiel', None, 12, KLAVIER + TINTINNABULI + ['instrumental introduction', 'the same arpeggio as the first piece of the cycle, now in D major'], ['vocals'], ''),
-            ('Schau die Drei', ('7.1', 0), 48, KLAVIER + TINTINNABULI + ['two female voices in canon, the second following the first one bar later', 'luminous'], [], ''),
-            ('Des Kopfes Geist', ('7.2', 0), 24, TINTINNABULI + ['strings only, high and clear', 'a single voice'], ['piano'], ''),
-            ('Des Herzens Seele', ('7.2', 1), 28, KLAVIER + ['piano only, warm middle register', 'a single voice'], ['strings'], ''),
-            ('Der Glieder Kraft', ('7.2', 2), 24, KLAVIER + TINTINNABULI + ['piano and strings together', 'firm and quiet'], [], ''),
-            ('Stille', None, 6, ['near silence', 'one sustained string tone only'], ['vocals', 'piano'], ''),
-            ('Tritt ein', ('7.3', 0), 22, ['whispered first, then the three lines sung once in full open voice', 'wide and warm', 'the piano arpeggio returns under the last line'] + GESCHICHTET[:1], [], '{whispered}'),
-            ('Nachspiel', None, 20, AMBIENT + KLAVIER[:1] + ['instrumental ending', 'the arpeggio dissolves into an ambient drone', 'long fade into silence'], ['vocals'], ''),
-        ]},
-}
+# ---------------------------------------------------------------- die Vorlagen
+# Jede Vorlage: eine Sinneinheit (Titel der Lesefassung), ein Ansatz. Abschnitte:
+#   (Name, Quelle, Dauer s, Stile, Nicht-Stile, Regie im Text)
+#   Quelle: (Mantram-ID, Teil-Nr.[, von, bis]) → Zeilen aus mantren.yaml; None → ohne Text
+#   Regie: Zeile in geschweiften Klammern vor dem Text ({spoken} …); Laute in runden ((mmm))
+BARDO = ['Tibetan singing bowls struck and left to ring', 'low tanpura-like string drone', 'solo violin harmonics',
+         'recorded in a large stone room', 'no pulse']
+VORLAGEN = [
+    {'nr': 1, 'slug': 'erdengruende-bardo', 'titel': 'Erdengründe', 'text': '1.1',
+     'ansatz': 'Gesprochen über Klangschalen, Bordun und Geige, wie eine Anweisung an jemanden, der hinübergeht.',
+     'tonart': 'drone on D', 'tempo': 'no pulse', 'stimme': ['spoken word: a calm female speaking voice reciting plainly, unhurried', 'spoken, not sung'],
+     'teile': [
+        ('Eingang', None, 12, BARDO + ['instrumental introduction', 'one bowl, silence, a second bowl'], [], ''),
+        ('Erdengründe', ('1.1', 0, 0, 8), 44, BARDO + ['a gong once at the end of the section'], [], '{spoken}'),
+        ('Finsternis', ('1.1', 0, 8, 16), 46, BARDO + ['the drone deepens', 'a second, lower speaking voice doubles the last two lines'], [], '{spoken}'),
+        ('Ausgang', None, 12, BARDO + ['instrumental ending', 'the bowls ring out into silence'], [], ''),
+     ]},
+    {'nr': 2, 'slug': 'erdengruende-litanei', 'titel': 'Erdengründe', 'text': '1.1',
+     'ansatz': 'Derselbe Text als Litanei: auf einem Ton rezitiert, Kadenz am Zeilenende, Harmonium und Cello.',
+     'tonart': 'D Dorian', 'tempo': 'free, speech rhythm', 'stimme': ['liturgical chant on a single reciting tone with a small cadence at the end of each line', 'female voice', 'medieval plainchant style'],
+     'teile': [
+        ('Eingang', None, 8, ['Indian harmonium drone', 'cello sustained', 'instrumental introduction'], [], ''),
+        ('Erdengründe', ('1.1', 0, 0, 8), 44, ['Indian harmonium drone', 'cello sustained'], [], ''),
+        ('Finsternis', ('1.1', 0, 8, 16), 46, ['Indian harmonium drone', 'cello sustained', 'a second voice joins a fifth below on the cadences, organum'], [], ''),
+        ('Ausgang', None, 8, ['Indian harmonium drone', 'cello sustained', 'instrumental ending'], [], ''),
+     ]},
+    {'nr': 3, 'slug': 'daseinswort-chor', 'titel': 'Daseinswort', 'text': '1.3',
+     'ansatz': 'A cappella, gemischter Chor in langsamen Akkorden; die letzte Zeile im Unisono.',
+     'tonart': 'A minor with cluster harmony', 'tempo': 'very slow', 'stimme': ['mixed a cappella choir SATB, slow homophonic chords', 'Renaissance polyphony meeting modern cluster harmony', 'straight tone'],
+     'teile': [
+        ('Daseinswort', ('1.3', 0, 0, 11), 60, ['recorded in a stone chapel', 'the chords shift under each line'], [], ''),
+        ('Erkenne dich', ('1.3', 0, 11, 12), 20, ['the whole choir in unison on one low note, then the chord opens wide'], [], ''),
+        ('Nachklang', None, 10, ['the last chord held, wordless hum, fading'], [], '(mmm)'),
+     ]},
+    {'nr': 4, 'slug': 'daseinswort-ruf-und-antwort', 'titel': 'Daseinswort', 'text': '1.3',
+     'ansatz': 'Derselbe Text als Ruf und Antwort: gesprochen, dann singt der Chor aus einer Stimme das Daseinswort.',
+     'tonart': 'F major', 'tempo': '60 BPM', 'stimme': [],
+     'teile': [
+        ('Eingang', None, 8, ['felt piano, a single repeated note', 'bowed upright bass', 'instrumental introduction'], [], ''),
+        ('Aus den Weiten', ('1.3', 0, 0, 6), 40, ['a male speaking voice says each line plainly', 'spoken, not sung', 'felt piano', 'bowed upright bass'], [], '{spoken}'),
+        ('Da ertönet', ('1.3', 0, 6, 11), 36, ['the same male speaking voice', 'spoken, not sung', 'stacked vocal harmonies of one female voice hum underneath and grow'], [], '{spoken}'),
+        ('Das Daseinswort', ('1.3', 0, 11, 12), 26, ['now sung: a stacked choir made of one female voice, harmonized in wide chords', 'the line sung twice, slowly, no other words'], [], ''),
+        ('Ausgang', None, 8, ['felt piano', 'instrumental ending'], [], ''),
+     ]},
+    {'nr': 5, 'slug': 'schwelle-hueter', 'titel': 'Im Anblick der Schwelle', 'text': '1.2',
+     'ansatz': 'Der Hüter als verfremdete Stimme (Oktave tiefer, Vocoder), halb gesprochen; die letzte Zeile unverfremdet und leise.',
+     'tonart': 'C minor', 'tempo': 'slow', 'stimme': [],
+     'teile': [
+        ('Eingang', None, 10, ['bowed metal, waterphone', 'violin', 'warm analog modular synth bass through a real speaker', 'instrumental introduction'], [], ''),
+        ('Geistesbote', ('1.2', 0, 0, 9), 50, ['a low male voice pitch-shifted down an octave through a vocoder, half spoken half sung on a few notes', 'a voice of authority, dry and close', 'violin long tones above', 'analog synth bass'], [], ''),
+        ('Abgrund', ('1.2', 0, 9, 12), 24, ['the same processed low voice', 'only the written lines, no improvised words', 'the texture thins', 'waterphone'], [], ''),
+        ('Das Tor', ('1.2', 0, 12, 13), 14, ['the processing drops away: an unprocessed quiet female voice speaks the line plainly', 'spoken, not sung', 'near silence'], [], '{spoken}'),
+        ('Ausgang', None, 8, ['violin alone', 'instrumental ending'], [], ''),
+     ]},
+    {'nr': 6, 'slug': 'drei-tiere-sprechgesang', 'titel': 'Drei Tiere', 'text': '1.4',
+     'ansatz': 'Sprechgesang, trocken, in 7/8; jedes Tier ein Instrument (Kontrabassklarinette, präpariertes Klavier, Glasharmonika); «Flügel» wird zum ersten Mal gesungen.',
+     'tonart': 'E minor', 'tempo': '7/8, slow irregular pulse', 'stimme': ['talk-singing (Sprechgesang) female voice, matter-of-fact'],
+     'teile': [
+        ('Eingang', None, 8, ['bass clarinet', 'prepared piano', 'dry close-miked', 'instrumental introduction'], [], ''),
+        ('Das erste Tier', ('1.4', 1), 30, ['contrabass clarinet, bone-dry', 'muted and hollow'], [], ''),
+        ('Das zweite Tier', ('1.4', 2), 30, ['prepared piano with metallic buzz', 'thin and mocking'], [], ''),
+        ('Das dritte Tier', ('1.4', 3), 30, ['glass harmonica, glassy high tones', 'slack'], [], ''),
+        ('Flügel', ('1.4', 4), 34, ['the voice sings for the first time, a simple rising line, plainly', 'strings enter', 'open'], [], ''),
+        ('Ausgang', None, 8, ['strings', 'instrumental ending'], [], ''),
+     ]},
+    {'nr': 7, 'slug': 'willens-stoss-lied', 'titel': 'Willens-Stoß', 'text': '3',
+     'ansatz': 'Ein Lied: dieselbe schlichte Melodie für alle drei Strophen, Gitarre und Kontrabass, ein Sänger, der nicht vorträgt.',
+     'tonart': 'G major', 'tempo': '76 BPM', 'stimme': ['male voice singing simply, like a folk singer who does not perform', 'a plain unadorned melody, the same for every strophe'],
+     'teile': [
+        ('Vorspiel', None, 8, ['steel-string acoustic guitar fingerpicking', 'upright bass', 'recorded live in a wooden room', 'instrumental introduction'], [], ''),
+        ('Strophe 1', ('3', 0), 34, ['steel-string acoustic guitar fingerpicking', 'upright bass'], [], ''),
+        ('Strophe 2', ('3', 1), 34, ['steel-string acoustic guitar fingerpicking', 'upright bass', 'a second voice in parallel thirds'], [], ''),
+        ('Strophe 3', ('3', 2), 36, ['steel-string acoustic guitar fingerpicking', 'upright bass', 'accordion joins', 'fuller'], [], ''),
+        ('Nachspiel', None, 8, ['acoustic guitar', 'instrumental ending'], [], ''),
+     ]},
+    {'nr': 8, 'slug': 'schau-die-drei-hell', 'titel': 'Schau die Drei · Tritt ein', 'text': '7.1 + 7.3',
+     'ansatz': 'Hell und leicht: Celesta, Nylongitarre, gebürstete Trommel, eine klare Popstimme; «Tritt ein» a cappella.',
+     'tonart': 'C major', 'tempo': '96 BPM', 'stimme': ['light clear female pop voice, unforced, with a slight smile'],
+     'teile': [
+        ('Intro', None, 6, ['celesta', 'glockenspiel', 'nylon-string guitar', 'soft brushed drums', 'German indie pop', 'bright and playful', 'instrumental introduction'], [], ''),
+        ('Schau die Drei', ('7.1', 0), 46, ['celesta', 'nylon-string guitar', 'soft brushed drums', 'German indie pop', 'bright and playful'], [], ''),
+        ('Tritt ein', ('7.3', 0), 16, ['the beat stops', 'a cappella with a stacked harmony of the same voice'], ['drums'], ''),
+        ('Outro', None, 8, ['celesta', 'instrumental ending'], [], ''),
+     ]},
+    {'nr': 9, 'slug': 'erdenwerte-I', 'titel': 'Erdenwerte I', 'text': '6 (Erde, Wasser, Luft)',
+     'ansatz': 'Der Ansatz der Erstfassung, als eigenes Lied: Variationen über einen festen Bass, Filzklavier, Cello, Streicher.',
+     'tonart': 'G minor', 'tempo': '60 BPM in slow triple meter', 'stimme': ['female voice'],
+     'teile': [
+        ('Aria', None, 10, GOLDBERG + ['soft felt piano', 'the ground bass alone', 'instrumental introduction'], [], ''),
+        ('Erde', ('6', 0), 36, GOLDBERG + ['soft felt piano', 'variation 1: piano alone under the voice'], [], ''),
+        ('Wasser', ('6', 1), 36, GOLDBERG + ['soft felt piano', 'variation 2: a cello joins on the ground bass', 'flowing'], [], ''),
+        ('Luft', ('6', 2), 36, GOLDBERG + ['variation 3: strings in long tones, no piano', 'cold and clear'], ['piano'], ''),
+        ('Ausgang', None, 8, GOLDBERG + ['soft felt piano', 'the ground bass once more, slower', 'instrumental ending'], [], ''),
+     ]},
+    {'nr': 10, 'slug': 'erdenwerte-II', 'titel': 'Erdenwerte II', 'text': '6 (Licht, Gestalt, Leben)',
+     'ansatz': 'Die zweite Hälfte der Erstfassung als eigenes Lied: Streicher, leiser elektronischer Puls, der Chor aus einer Stimme am Ende.',
+     'tonart': 'G minor to B flat major', 'tempo': '60 BPM', 'stimme': ['female voice, close and personal'],
+     'teile': [
+        ('Eingang', None, 8, ['sustained strings', 'soft muted electronic pulse', 'warm analog synth bass', 'instrumental introduction'], [], ''),
+        ('Licht', ('6', 3), 36, GOLDBERG[:1] + ['sustained strings', 'soft muted electronic pulse', 'the ground bass in the synth bass', 'German indie pop with orchestral strings'], [], ''),
+        ('Gestalt', ('6', 4), 36, GOLDBERG[:1] + ['orchestral strings swell gently', 'soft muted electronic pulse', 'German indie pop with orchestral strings'], [], ''),
+        ('Leben', ('6', 5), 38, GOLDBERG[:1] + ['a stacked choir of the same voice carries the last two lines', 'the pulse stops before the final line'], [], ''),
+        ('Ausgang', None, 10, ['strings alone', 'instrumental ending', 'fading'], [], ''),
+     ]},
+    {'nr': 11, 'slug': 'es-kaempft-zwei-stimmen', 'titel': 'Es kämpft', 'text': '5',
+     'ansatz': 'Zwei Stimmen: eine spricht den Text, eine hält lange Töne auf den Schlüsselwörtern; Streichquartett in wandernden Dissonanzen.',
+     'tonart': 'B minor, dissonant', 'tempo': 'slow', 'stimme': ['a male speaking voice reads plainly', 'spoken, not sung', 'a female singing voice holds single long wordless tones over the key words'],
+     'teile': [
+        ('Eingang', None, 8, ['string quartet harmonics', 'bowed vibraphone', 'instrumental introduction'], [], ''),
+        ('Licht und Finsternis', ('5', 0), 38, ['string quartet in slowly shifting dissonant chords that resolve late'], [], '{spoken}'),
+        ('Warm und Kalt', ('5', 1), 38, ['string quartet', 'the held tones rise', 'bowed vibraphone'], [], '{spoken}'),
+        ('Leben und Tod', ('5', 2), 40, ['string quartet', 'the held tone stays alone after the last line'], [], '{spoken}'),
+        ('Ausgang', None, 8, ['one sustained tone, then silence', 'instrumental ending'], [], ''),
+     ]},
+    {'nr': 12, 'slug': 'tiefe-weite-hoehe-vocoder', 'titel': 'Tiefe – Weite – Höhe', 'text': '4',
+     'ansatz': 'Eine Stimme durch den Harmonizer: die Akkorde machen den Raum — tief und eng, weit und offen, hoch und schimmernd.',
+     'tonart': 'E minor to E major', 'tempo': '64 BPM', 'stimme': ['talk-sung male voice through a vocoder harmonizer, many-voiced chords from one voice', 'folktronica'],
+     'teile': [
+        ('Eingang', None, 8, ['vocoder chord, wordless', 'cello', 'instrumental introduction'], [], '(ooh)'),
+        ('Erdentiefen', ('4', 0), 36, ['a low dense cluster chord', 'cello and double bass', 'narrow'], [], ''),
+        ('Weltenweiten', ('4', 1), 36, ['a wide open chord', 'string quartet', 'stereo width'], [], ''),
+        ('Himmelshöhen', ('4', 2), 36, ['a high shimmering chord, falsetto layers', 'string harmonics', 'E major'], ['cello', 'double bass'], ''),
+        ('Ausgang', None, 8, ['vocoder chord fading, wordless', 'instrumental ending'], [], '(ooh)'),
+     ]},
+]
+VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
 # ---------------------------------------------------------------- Text aus mantren.yaml
@@ -152,17 +181,19 @@ def zeilen(mantren, quelle):
 
 def plan(nr, mantren=None):
     mantren = mantren or mantren_laden()
-    st = STUECKE[nr]
+    v = VORLAGE[nr]
     chunks = []
-    for i, (name, quelle, dauer, plus, minus, regie) in enumerate(st['teile']):
+    for name, quelle, dauer, plus, minus, regie in v['teile']:
         text = f'[{name}]'
         if regie:
             text += '\n' + regie
         if quelle:
             text += '\n' + '\n'.join(zeilen(mantren, quelle))
-        stile = list(dict.fromkeys((STIMME if quelle else []) + plus + GRUND + [st['tonart'], st['tempo']]))
+            if name == 'Das Daseinswort':   # die eine Wiederholung des Zyklus
+                text += '\n' + '\n'.join(zeilen(mantren, quelle))
+        stile = list(dict.fromkeys(((v['stimme'] + DIENT) if quelle else []) + plus + ECHT + [v['tonart'], v['tempo']]))
         nicht = list(dict.fromkeys(NIE + minus))
-        if not quelle and 'vocals' not in nicht and '(ooh)' not in regie:
+        if not quelle and '(' not in regie:
             nicht.append('vocals')
         chunks.append({'text': text, 'duration_ms': int(dauer * 1000), 'positive_styles': stile[:50],
                        'negative_styles': nicht[:50], 'context_adherence': 'high'})
@@ -204,23 +235,23 @@ def schluessel(p):
 
 
 def bauen(nr, mantren):
-    st = STUECKE[nr]
+    v = VORLAGE[nr]
     p = plan(nr, mantren)
     k = schluessel(p)
     os.makedirs(CACHE, exist_ok=True)
     os.makedirs(AUSGABE, exist_ok=True)
     roh = os.path.join(CACHE, f'mus_{k}.mp3')
     if not os.path.exists(roh):
-        print(f'Stunde {nr} «{st["titel"]}»: {len(p["chunks"])} Abschnitte, {dauer_s(p):.0f} s — erzeuge …', flush=True)
+        print(f'Vorlage {nr} «{v["titel"]}»: {len(p["chunks"])} Abschnitte, {dauer_s(p):.0f} s — erzeuge …', flush=True)
         t0 = time.time()
         daten = anfrage(f'/v1/music?output_format={FORMAT}', {'composition_plan': p, 'model_id': MODELL}, binaer=True)
         open(roh, 'wb').write(daten)
         json.dump(p, open(os.path.join(CACHE, f'mus_{k}.plan.json'), 'w'), ensure_ascii=False, indent=1)
         print(f'  {len(daten) / 1e6:.1f} MB in {time.time() - t0:.0f} s', flush=True)
     else:
-        print(f'Stunde {nr} «{st["titel"]}»: aus dem Cache')
-    ziel = os.path.join(AUSGABE, f'nach-innen-{nr}.mp3')
-    mastern(roh, ziel, nr, st['titel'])
+        print(f'Vorlage {nr} «{v["titel"]}»: aus dem Cache')
+    ziel = os.path.join(AUSGABE, f'vorlage-{nr:02d}-{v["slug"]}.mp3')
+    mastern(roh, ziel, nr, v['titel'] + ' – ' + v['ansatz'].split(':')[0].split(',')[0])
     laenge = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', ziel],
                                   capture_output=True, text=True).stdout.strip() or 0)
     print(f'  fertig: {ziel}  {laenge / 60:.1f} min')
@@ -236,7 +267,7 @@ def mastern(roh, ziel, nr, titel):
     filt = (f'loudnorm=I=-16:TP=-1.5:LRA=20:measured_I={j["input_i"]}:measured_TP={j["input_tp"]}:'
             f'measured_LRA={j["input_lra"]}:measured_thresh={j["input_thresh"]}:offset={j["target_offset"]}:linear=true')
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', roh, '-af', filt + ',aresample=44100', '-c:a', 'libmp3lame', '-b:a', '192k',
-                    '-metadata', f'title={nr}. Stunde – {titel}', '-metadata', 'album=Nach innen – Mantren der Ersten Klasse',
+                    '-metadata', f'title={nr}. {titel}', '-metadata', 'album=Nach innen – Vorlagen',
                     '-metadata', f'track={nr}', '-metadata', 'artist=Sätzerei',
                     '-metadata', 'comment=Eleven Music (synthetisch). Text: Rudolf Steiner, Lesefassung 2024. Plan: Claude (Anthropic).',
                     ziel], check=True)
@@ -266,7 +297,8 @@ def scribe(pfad):
 
 
 def pruefen(nr, mantren):
-    pfad = os.path.join(AUSGABE, f'nach-innen-{nr}.mp3')
+    v = VORLAGE[nr]
+    pfad = os.path.join(AUSGABE, f'vorlage-{nr:02d}-{v["slug"]}.mp3')
     p = plan(nr, mantren)
     ref = []
     for c in p['chunks']:
@@ -278,7 +310,7 @@ def pruefen(nr, mantren):
     stt = [(norm(w['text']), w['start'], w['text']) for w in d.get('words', []) if w.get('type') == 'word' and norm(w['text'])]
     b = [x[0] for x in stt]
     sm = difflib.SequenceMatcher(None, ref, b, autojunk=False)
-    print(f'Stunde {nr}: Ähnlichkeit {sm.ratio():.3f}  ({len(ref)} Wörter im Text, {len(b)} erkannt)')
+    print(f'Vorlage {nr}: Ähnlichkeit {sm.ratio():.3f}  ({len(ref)} Wörter im Text, {len(b)} erkannt)')
     for op, i1, i2, j1, j2 in sm.get_opcodes():
         if op == 'equal':
             continue
@@ -290,15 +322,15 @@ def pruefen(nr, mantren):
 # ---------------------------------------------------------------- Befehle
 def main():
     befehl = sys.argv[1] if len(sys.argv) > 1 else 'plan'
-    nummern = [int(a) for a in sys.argv[2:]] or sorted(STUECKE)
+    nummern = [int(a) for a in sys.argv[2:]] or sorted(VORLAGE)
     mantren = mantren_laden()
     if befehl == 'plan':
         for nr in nummern:
             p = plan(nr, mantren)
-            print(f'# Stunde {nr} «{STUECKE[nr]["titel"]}» — {len(p["chunks"])} Abschnitte, {dauer_s(p) / 60:.1f} min, '
+            print(f'# Vorlage {nr} «{VORLAGE[nr]["titel"]}» — {VORLAGE[nr]["ansatz"]}\n#   — {len(p["chunks"])} Abschnitte, {dauer_s(p) / 60:.1f} min, '
                   f'{sum(len(c["text"]) for c in p["chunks"])} Zeichen')
             print(json.dumps(p, ensure_ascii=False, indent=1))
-        print(f'# Zyklus gesamt: {sum(dauer_s(plan(n, mantren)) for n in STUECKE) / 60:.1f} min')
+        print(f'# Vorlagen gesamt: {sum(dauer_s(plan(n, mantren)) for n in VORLAGE) / 60:.1f} min')
     elif befehl == 'bauen':
         for nr in nummern:
             bauen(nr, mantren)
