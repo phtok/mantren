@@ -2,7 +2,7 @@
 
 *Studie · Werkstatt · Textvergleich*
 
-Stand: 2026-10-09 · Arbeitsstudie, kein Kommentartext · nichts davon ist
+Stand: 2026-10-09, mit Gegenprobe · Arbeitsstudie, kein Kommentartext · nichts davon ist
 in der Ausgabe sichtbar
 
 ---
@@ -56,6 +56,10 @@ spricht.
 Was die Texte trennt, ist ebenso deutlich: Das Märchen endet in einer
 Gemeinschaft auf der Brücke, «bis auf den heutigen Tag» [135]. Die Mantren
 enden in einem Satz: «Mein Ich ist IHR» (19+).
+
+Die Gegenprobe (Abschnitt 6b) liest diese Befunde noch einmal gegen den
+Strich. Mehrere Wortbrücken tragen weniger, als es aussah. Die Verbindung,
+die trägt, liegt in der Übung und im Gespräch.
 
 ---
 
@@ -677,7 +681,7 @@ Belegbar ist das nicht.
 | Wer spricht | Könige aus Metall, ein Alter | der Hüter, die neun Hierarchien |
 | Ton | Ernst mit Witz (Mops, der zerfallende König, über den man «kaum des Lachens enthalten» kann [114]) | «mit allerbedeutsamstem Ernst» (Regie zu 6) |
 | Christus | verborgen (Opfer, «Weide die Schafe») | genannt (Dritte Tafel, 14) |
-| Ziel | Gemeinschaft: «bis auf den heutigen Tag wimmelt die Brücke von Wanderern» [135] | das Ich: «Mein Ich ist IHR» (19+) |
+| Ziel | Gemeinschaft: «bis auf den heutigen Tag wimmelt die Brücke von Wanderern» [135] | das Ich: «Es ist Ich» (19.1–19.3); dazu der Sonderspruch «Mein Ich ist IHR» (19+, siehe 6b) |
 
 Der letzte Unterschied ist der wichtigste. Goethe erzählt, was geschieht,
 *wenn* die Brücke steht: Ein Volk geht hinüber und herüber. Die Mantren
@@ -685,6 +689,105 @@ führen den Einzelnen bis an die Stelle, an der sie gebaut wird. Beide
 Texte wissen dabei, dass einer allein sie nicht baut. Bei Goethe heißt es
 «ein Einzelner hilft nicht» [87], und Steiner gab die Mantren in einer
 Schule, nicht in einem Buch.
+
+---
+
+## 6b. Gegenprobe
+
+*Ergänzt am 9. 10. 2026, nach drei Hörstücken. Ziel war, die eigenen
+Befunde gegen den Strich zu lesen.*
+
+### Was schwächer ist, als es aussah
+
+- **Dreiheiten sind billig.** Märchen zählen bis drei, und Steiner gliedert
+  den Menschen seit «Von Seelenrätseln» (1917) in Kopf, Herz und Glieder.
+  Dass Goethes drei Gaben auf Glieder, Gemüt und Haupt wirken (2.5), ist
+  deshalb eine Lesart (B) und kein Beleg (A). Goethe beschreibt eine
+  Wirkung auf den ganzen Jüngling. Die Zuordnung zum Herzen bringt Steiners
+  Schema mit.
+- **«Übersetzen» ist das gewöhnliche Wort für das Fahren über einen
+  Fluss.** Dass das Märchen und 1.4 es teilen (2.3), beweist nichts (B).
+  Lebendig wird das Wort erst im Hören, weil es zugleich das Dolmetschen
+  meint. Das ist ein Spiel der deutschen Sprache, kein Befund.
+- **Der Bogen** (2.4) ist ein Urbild, das in vielen Überlieferungen
+  wiederkehrt. Bemerkenswert bleibt die Verbindung von Bogen, Brücke und
+  Opfer, nicht die einzelne Bildgleichheit.
+- **Weisheit, Schein, Tugend** (2.1) bleibt die engste wörtliche Berührung.
+  Sie zeigt aber nur, dass Steiner 1924 mit den Worten seiner eigenen
+  Deutung von 1918 schrieb. Dass das Mantram aus dem Märchen stammt, zeigt
+  sie nicht.
+- **«Mein Ich ist IHR» ist nicht der Schluss der Klassenstunden.** Es ist
+  ein Sonderspruch von einem Notizblatt (Nachweis in
+  `src/data/quellen.json`). Die Neunzehnte Stunde endet mit dem dreifachen
+  «Es ist Ich». Außerdem ist «IHR» eine Anrede im Plural: Der Mensch spricht
+  Seraphim, Cherubim und Throne an. Der Gegensatz in Abschnitt 6
+  (Märchen = Gemeinschaft, Mantren = Ich) war darum zu scharf gezogen. Auch
+  dieser Spruch endet nicht beim Einzelnen, sondern bei einem
+  angesprochenen Ihr.
+
+### Was stärker ist, als die Studie sagte
+
+1. **Die Übung, nicht der Wortlaut.** Steiner hat das Märchen dreißig
+   Jahre lang so gebraucht, wie die Mantren gebraucht werden wollen: als
+   «ein wichtiger Meditationsstoff. Ich kam immer wieder darauf zurück»
+   (GA 28, Kap. XII). Die tragende Verbindung ist also keine Parallelstelle,
+   sondern eine Praxis. Umgekehrt erzählen die Klassenstunden einen Weg: die
+   Sinneswelt, den Hüter, den Abgrund mit den Tieren, die Hierarchien. Das
+   Märchen ist eine Geschichte, die als Mantram gebraucht wurde. Die Klasse
+   ist eine Folge von Mantren, die als Geschichte gebaut ist.
+2. **Das Gespräch.** «Was ist erquicklicher als Licht? – Das Gespräch»
+   [22] ist die These des Märchens. Das Gespräch ist zugleich die Form der
+   Klasse. Steiner nennt sie «die Unterweisung des Hüters der Schwelle
+   selber […], entstanden unmittelbar aus dem, was man im Gespräche mit dem
+   Hüter erhalten kann», und sagt: «Es ist die Praxis des Erkennens, die in
+   diesen Stunden vorgeführt wird – nicht eine Schilderung theoretischer
+   Dinge» (GA 270a, Sechste Stunde, S. 165). In 16.2 ist das Verstehen ein
+   angehaltener Atem: «Hat verstanden dein Geist? / Der Weltengeist in mir /
+   Er hielt den Atem an».
+3. **Der Rahmen.** Goethe stellt das Märchen an das Ende der
+   «Unterhaltungen deutscher Ausgewanderten» (Die Horen, 1795). Eine
+   Familie flieht vor den französischen Truppen über den Rhein, und ein
+   Streit über die Revolution treibt den Geheimrat aus dem Haus. Die
+   Baronesse sagt darauf: «O ihr Menschen, wird die Noth, die euch unter
+   Ein Dach, in Eine enge Hütte zusammen drängt, euch nicht duldsam gegen
+   einander machen?» Am Ende verspricht der Alte «ein Mährchen, durch das
+   Sie an nichts und an alles erinnert werden sollen» (Die Horen 1795,
+   9. Stück, S. 52). Das Märchen ist also Goethes Antwort auf ein
+   zerbrochenes Gespräch. Die Erste Klasse beginnt am 15. Februar 1924,
+   gut ein Jahr nach dem Brand des ersten Goetheanum und nach der
+   Neugründung der Gesellschaft an der Weihnachtstagung 1923/24. Ob man
+   darin eine Parallele sieht, ist Deutung (C). Die Lage beider Texte ist
+   belegt.
+4. **Der Hüter und die Schlange.** Eine Hüterfigur hat das Märchen nicht
+   (Abschnitt 5). Was der Hüter verwehrt, «Den Einlass deiner Sinnenkraft /
+   Und deines Verstandes Macht» (Zweite Tafel), verwehrt im Märchen aber der
+   Fluss dem Gold. Bezahlt wird dort nur mit den «Früchten der Erde» [8].
+   Steiners erste Schilderung des Hüters lässt ihn aus dem Menschen selbst
+   heraustreten: «ich bin es selbst, die Wesenheit, die sich einen Leib
+   gebildet hat aus deinen edlen und deinen üblen Verrichtungen. Meine
+   gespenstige Gestalt ist aus dem Kontobuche deines eigenen Lebens
+   gewoben.» Und weiter: «Meine Schwelle aber ist gezimmert aus einem
+   jeglichen Furchtgefühl, das noch in dir ist» (GA 10, Online-Fassung
+   2010, S. 152 f.). Die Tiere aus 1.4 sind entsprechend aus «Furcht»,
+   «Hass» und «Zweifel» des Menschen geschaffen. Im Märchen trägt dagegen
+   die Schlange den Stoff des eigenen Lebens. Steiner sagt 1918, sie nehme
+   «das Gold auf, die Weisheit, die aus den Erfahrungen des Lebens und der
+   Wissenschaft stammt, und die von der Seele angeeignet werden muss, so
+   dass Weisheit und Seele eins werden» (GA 22, S. 53). Beide Bilder
+   handeln also vom selben Stoff, dem eigenen Leben. Ungesehen und
+   gefürchtet steht er als Schwelle im Weg. Angeeignet und hingegeben wird
+   er zur Brücke (C).
+5. **Das vierte Geheimnis.** Steiner deutet es 1918: Die Schlange sagt dem
+   Alten ins Ohr, dass sie sich opfern will. Der Alte «weiß, dass sie sich
+   aufopfern muss […]. Aber dieses sein Wissen ist nicht entscheidend. Er
+   muss mit diesem Wissen warten, bis die Schlange aus den Tiefen ihres
+   Wesens heraus zu dem Entschlusse der Aufopferung sich reif findet»
+   (GA 22, S. 53). Das Entscheidende geschieht im Märchen von Ohr zu Ohr,
+   zwischen zweien. Ohne den freien Entschluss ist auch ein offenbares
+   Wissen wertlos.
+
+Das vierte Hörstück, «Was die Schlange weiss» (`docs/feature/`), ist aus
+dieser Gegenprobe gebaut.
 
 ---
 

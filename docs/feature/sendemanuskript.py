@@ -33,6 +33,17 @@ STUECKE = {
         'besetzung': 'Die Eine (Essay-Tragend) · Der Andere und Johannes (Christian – Lyrical Silence) · Märchen (Märchen-Erzählerin, die Stimme der Textprobe) · Steiner, Hüter und Mantren (Leo Liest, Vers für Vers) · Ansage (NWR Chronist)',
         'musik': 'Cello und Harfe',
     },
+    'schlange': {
+        'quelle': 'schlange.txt', 'marken': 'was-die-schlange-weiss.marken.json', 'ziel': 'schlange-sendemanuskript.md',
+        'titel': '«Was die Schlange weiss»', 'untertitel': 'Ein Gespräch über Goethes Märchen und Rudolf Steiners mantrisches Spätwerk',
+        'rollen': {'ESTHER': 'Esther', 'MARTIN': 'Martin', 'MÄRCHEN': 'Märchen', 'STEINER': 'Steiner',
+                   'HÜTER': 'Der Hüter', 'ICH': 'Das Ich (Mantram 16.2)', 'JOHANNES': 'Johannes («Die Pforte der Einweihung», 2. Bild)',
+                   'ERZÄHLER': 'Erzähler', 'ANSAGE': 'Ansage'},
+        'besetzung': 'BESETZUNG',
+        'musik': 'Streichquartett',
+        'stille_ab': 1.5,
+        'ersetzen': [('Mein Ich ist Ihr.', 'Mein Ich ist IHR.')],
+    },
 }
 
 
@@ -73,9 +84,17 @@ def main(name):
             txt = re.sub(r'\[Pause\]', ' … ', txt)
             tags = re.findall(r'\[([^\]]+)\]', txt)
             txt = re.sub(r'\s+', ' ', re.sub(r'\s*\[[^\]]+\]\s*', ' ', txt)).strip().replace('vorübereiltst', "vorübereilt'st")
+            for alt, neu in s.get('ersetzen', []):
+                txt = txt.replace(alt, neu)
             out += [f'`{int(t // 60):02d}:{int(t % 60):02d}` **{s["rollen"][art]}**' + (f' *({", ".join(tags)})*' if tags else '') + '  ', txt, '']
         elif art == 'STILLE':
-            out += [f'*Stille, {rest}*', '']
+            if float(rest.split()[0]) >= s.get('stille_ab', 0):
+                out += [f'*Stille, {rest}*', '']
+        elif art == 'ATMO':
+            p, _, d = rest.rpartition(',')
+            out += [f'*Atmo: {p.strip()}*', '']
+        elif art == 'RAUM':
+            continue
         elif art == 'MUSIK':
             out += [f"*Musik ({s['musik']}): {rest}*", '']
         elif art == 'GERÄUSCH':

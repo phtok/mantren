@@ -1,0 +1,374 @@
+# «Was die Schlange weiss» — Ein Gespräch über Goethes Märchen und Rudolf Steiners mantrisches Spätwerk
+# Regie-Liste: ROLLE|Text · STILLE|n s · GERÄUSCH|Prompt, n s · ATMO|Prompt, n s (Szenenbett bis zum nächsten ATMO)
+#   · RAUM|wohnung/draussen (Raumklang der Lebensstimmen) · MUSIK|Platte an/aus, Platte frei n s, Thema …
+# Zwei Geschwister räumen die Wohnung ihres Vaters. ESTHER (Dolmetscherin, Lausanne) und MARTIN (Schreiner, Basel).
+# Die Texte sprechen in ihrem eigenen Raum, ohne Atmo: MÄRCHEN (Märchen-Erzählerin) · STEINER · HÜTER (Vers für Vers,
+# jenseitiger Raum) · ICH (Antwort in Mantram 16.2, Stimme Esthers) · JOHANNES · ERZÄHLER (Fakten) · ANSAGE.
+# Ein Gedanke: Was man im Dunkeln weiss, leuchtet erst im Gespräch. Die Schlange ist die Lebenserfahrung.
+
+## I. DIE WOHNUNG
+
+RAUM|wohnung
+ATMO|empty apartment interior with bare walls and wooden floor, late afternoon, an open window, a wide fast river far below, distant city murmur, a far tram bell once, subtle room tone, no voices, no music, 30 s
+GERÄUSCH|packing tape pulled loudly off a roll and pressed onto a cardboard box in an empty room with wooden floor, 3 s
+MARTIN|[trocken] Dreiundvierzig.
+ESTHER|Dreiundvierzig was?
+MARTIN|Dübellöcher. Ich hab sie gezählt, beim Zuspachteln. Er hat jedes Bild mindestens zweimal aufgehängt. Das über dem Sofa viermal.
+STILLE|0.4 s
+ESTHER|[lacht leise] Er hat nie gewusst, wo etwas hingehört.
+MARTIN|Morgen um zehn kommt der Verwalter. Und der zählt nach.
+STILLE|1.4 s
+ERZÄHLER|Basel, ein Samstag im Oktober, dritter Stock, das Fenster geht auf den Rhein. Esther und Martin räumen die Wohnung ihres Vaters. Er ist im Sommer gestorben, mit einundneunzig. Esther lebt seit dreissig Jahren in Lausanne und dolmetscht im Spital und vor Gericht. Martin ist Schreiner und in Basel geblieben.
+STILLE|0.8 s
+GERÄUSCH|a heavy cardboard box set down on a wooden floor in an empty room, 2 s
+ESTHER|Und die Bücher?
+MARTIN|Die Bücher nimmst du, ich nehm den Schrank. Den will sonst keiner. Der ist aus Eiche, der geht nicht durchs Treppenhaus, den haben sie damals am Seil durchs Fenster hereingezogen. Ich war sechs und hab gedacht, jetzt fällt das Haus um.
+STILLE|0.8 s
+GERÄUSCH|an old book pulled from a wooden shelf, a small notebook falls out onto the wooden floor, 3 s
+ESTHER|[überrascht] Was ist denn das?
+MARTIN|Was?
+ESTHER|Ein Heft. Blau, mit einem Gummiband drum. Das ist seine Schrift.
+STILLE|1.0 s
+MARTIN|[zögernd] Ach, das. Das sind seine Mantren. So hat er das genannt. Das hatte er dabei, wenn er sonntags mit dem Zehner nach Dornach gefahren ist.
+ESTHER|Hast du da mal reingeschaut?
+MARTIN|Nein.
+ESTHER|In vierzig Jahren nicht?
+MARTIN|Es hatte ein Gummiband.
+STILLE|1.8 s
+ESTHER|[lacht] Du bist unglaublich.
+STILLE|0.6 s
+GERÄUSCH|a rubber band snapped off a small notebook, then a little paper card falls onto a wooden floor, 2 s
+ESTHER|Da fällt eine Karte raus. Ganz klein geschrieben. [langsam] Was ist erquicklicher als Licht? Das Gespräch.
+STILLE|1.0 s
+ESTHER|Das ist Goethe. Aus dem Märchen.
+MARTIN|[trocken] Das hat sich einer aufgeschrieben, der sonntags kein Wort geredet hat.
+STILLE|2.0 s
+MARTIN|Weisst du noch, was er gemacht hat, wenn er aus Dornach zurückkam? Mantel an den Haken, Hut auf den Schrank, und dann das hier.
+GERÄUSCH|an old turntable is switched on, the tone arm is lowered and the needle drops onto a vinyl record with soft crackle, in a room, 3 s
+MUSIK|Platte an
+MUSIK|Platte, frei 5 s
+MARTIN|Haydn. Immer dieselbe Platte. Und immer zu laut.
+MUSIK|Platte, frei 3 s
+ANSAGE|Was die Schlange weiss. Ein Gespräch über Goethes Märchen und Rudolf Steiners mantrisches Spätwerk.
+MUSIK|Platte, frei 5 s
+
+## II. FÜR LEUTE, DIE NICHT MEHR MITEINANDER REDEN
+
+ESTHER|Weisst du, für wen Goethe das Märchen geschrieben hat?
+MARTIN|Für Kinder, nehm ich an.
+ESTHER|Für Leute, die nicht mehr miteinander reden konnten.
+STILLE|0.8 s
+ESTHER|Es steht am Schluss von einem Buch, das heisst «Unterhaltungen deutscher Ausgewanderten». Siebzehnhundertfünfundneunzig. Die französischen Truppen brechen ein, und eine Baronin flieht mit ihrer Familie über den Rhein, auf ein Gut auf der anderen Seite. Lauter Flüchtlinge unter einem Dach. Und bald streiten sie über die Revolution. Der junge Vetter wünscht der Guillotine eine gute Ernte, auch in Deutschland, und der alte Geheimrat lässt anspannen und fährt davon.
+STILLE|0.6 s
+MARTIN|[trocken] Wie bei uns an Weihnachten.
+STILLE|1.4 s
+ESTHER|[lacht] Ungefähr. Und dann sagt die Baronin einen Satz, den ich mir gemerkt habe: O ihr Menschen, wird die Not, die euch unter ein Dach, in eine enge Hütte zusammendrängt, euch nicht duldsam gegeneinander machen?
+STILLE|1.0 s
+ESTHER|Und sie verbietet die Politik am Tisch, und sie fangen an, sich Geschichten zu erzählen. Und am Ende verspricht ihnen ein alter Mann ein Märchen, durch das sie, so sagt er, an nichts und an alles erinnert werden sollen.
+MARTIN|Und? Hat es geholfen?
+ESTHER|Das erfährt man nicht. Das Buch hört mit dem Märchen auf.
+STILLE|1.2 s
+MARTIN|Dann lies vor.
+ESTHER|Ich lese nicht gut vor. Ich übersetze, das ist was anderes.
+MARTIN|Lies trotzdem.
+GERÄUSCH|the needle is lifted off a vinyl record with a soft click, the turntable stops, 2 s
+MUSIK|Platte aus
+STILLE|1.2 s
+MÄRCHEN|An dem grossen Flusse, der eben von einem starken Regen geschwollen und übergetreten war, lag in seiner kleinen Hütte, müde von den Anstrengungen des Tages, der alte Fährmann und schlief. Mitten in der Nacht weckten ihn einige laute Stimmen; er hörte, dass Reisende übergesetzt sein wollten.
+STILLE|0.6 s
+MÄRCHEN|Als er vor die Tür hinaustrat, sah er zwei grosse Irrlichter über dem angebundenen Kahne schweben, die ihm versicherten, dass sie grosse Eile hätten und schon an jenem Ufer zu sein wünschten.
+STILLE|0.6 s
+MÄRCHEN|Hier ist für Eure Mühe!, riefen die Reisenden, und es fielen, indem sie sich schüttelten, viele glänzende Goldstücke in den feuchten Kahn. Ums Himmels willen, rief der Alte, wäre ein Goldstück ins Wasser gefallen, so würde der Strom, der dies Metall nicht leiden kann, sich in entsetzliche Wellen erhoben, das Schiff und mich verschlungen haben! Ihr müsst wissen, dass man mich nur mit den Früchten der Erde bezahlen kann.
+STILLE|0.5 s
+MÄRCHEN|Mit Früchten der Erde? Wir verschmähen sie, und haben sie nie genossen. Und doch kann ich euch nicht loslassen, bis ihr mir versprecht, dass ihr mir drei Kohlhäupter, drei Artischocken und drei grosse Zwiebeln liefert.
+STILLE|1.2 s
+MARTIN|[lacht] Kohl, Artischocken und Zwiebeln. Das ist ein Mann, der weiss, was er will.
+ESTHER|Und die Irrlichter: Haben wir nie genossen.
+MARTIN|Die kenn ich. Die sitzen in jeder Bausitzung. Reden wunderbar und haben noch nie ein Brett in der Hand gehabt.
+ESTHER|Goethe sagt es später noch genauer. Mit der grössten Sicherheit und mit vielem Ausdruck sagten sie ziemlich gewöhnliche Sachen.
+STILLE|1.6 s
+MARTIN|[lacht] Das schreib ich dem Bauleiter auf eine Karte.
+STILLE|1.4 s
+ERZÄHLER|Goethe hat das Märchen nie erklärt. Rudolf Steiner hat es ein Leben lang ausgelegt. Mit dreissig sprach er in Wien zum ersten Mal darüber, mit siebenundfünfzig schrieb er ein Buch dazu. In seiner Lebensbeschreibung steht:
+STILLE|0.6 s
+STEINER|Nicht die Erklärung, wohl aber die Anregungen zu seelischem Erleben, die mir von der Beschäftigung mit dem Märchen kamen, waren mir wichtig.
+STILLE|0.8 s
+STEINER|Mir wurde, was sich an Seeleninhalt in Anlehnung an das Märchen ergab, ein wichtiger Meditationsstoff. Ich kam immer wieder darauf zurück.
+STILLE|1.4 s
+MARTIN|Ein Märchen als Meditationsstoff.
+ESTHER|Eins, in dem ein Mops zu Stein wird und wieder lebendig. Ja.
+STILLE|0.8 s
+MARTIN|Und Papa mit seinem Heft. Auch Meditationsstoff. Mit Gummiband.
+STILLE|1.2 s
+
+## III. DIE SCHLANGE
+
+ESTHER|Hör zu, jetzt kommt das Beste. Der Fährmann darf das Gold ja nicht in den Fluss werfen, also schüttet er es in eine Felsspalte. Und da unten schläft eine Schlange.
+STILLE|0.8 s
+MÄRCHEN|In dieser Kluft befand sich die schöne grüne Schlange, die durch die herabklingende Münze aus ihrem Schlaf geweckt wurde. Sie ersah kaum die leuchtenden Scheiben, als sie solche auf der Stelle mit grosser Begierde verschlang.
+STILLE|0.5 s
+MÄRCHEN|Kaum waren sie verschlungen, so fühlte sie mit der angenehmsten Empfindung das Gold in ihren Eingeweiden schmelzen und sich durch ihren ganzen Körper ausbreiten, und zur grössten Freude bemerkte sie, dass sie durchsichtig und leuchtend geworden war.
+STILLE|1.2 s
+MARTIN|Sie frisst es.
+ESTHER|Die Irrlichter schütteln es ab. Und sie frisst es.
+MARTIN|[nachdenklich] Ich hab einmal zwei Lehrlinge gehabt, im selben Jahr. Der eine konnte alles aufsagen, was im Buch stand, und hat es vergessen, sobald er's gesagt hatte. Der andere hat nie was gesagt. Der hat alles gefressen. Der hat heute eine eigene Werkstatt.
+STILLE|0.8 s
+ESTHER|Und in ihr wird das Gold zu Licht. Und jetzt macht sie etwas Merkwürdiges. Sie kriecht in einen Tempel tief unter der Erde. Den kennt sie, da war sie schon hundertmal drin. Aber immer im Dunkeln.
+STILLE|0.6 s
+MÄRCHEN|Denn ob sie gleich durch diese Abgründe ohne ein Licht zu kriechen genötigt war, so konnte sie doch durchs Gefühl die Gegenstände recht wohl unterscheiden. Alle diese Erfahrungen wünschte sie noch zuletzt durch den Sinn des Auges zusammenzufassen, und das, was sie nur mutmasste, zu bestätigen.
+STILLE|1.4 s
+ESTHER|[überrascht] Da hat er etwas angestrichen.
+MARTIN|Wer?
+ESTHER|Papa. In seinem Goethe, mit Bleistift. Drei Striche. Unter «Alle diese Erfahrungen».
+STILLE|1.8 s
+MARTIN|[langsam] Was man mit dem Bauch kennt und noch nie gesehen hat.
+STILLE|0.8 s
+MARTIN|Das hab ich mit Holz. Ich weiss mit geschlossenen Augen, ob ein Brett trägt. Ich klopf drauf und hör es. Aber frag mich nicht, warum.
+ESTHER|Steiner sagt, die Schlange, das sei die Lebenserfahrung.
+MARTIN|Wo sagt er das?
+ESTHER|Hier, in dem grauen Band. Er hat ja alles von Steiner, zwei Meter Regal.
+STILLE|0.6 s
+STEINER|Diese Seelenkraft ist in der grünen Schlange verkörpert. Sie nimmt das Gold auf, die Weisheit, die aus den Erfahrungen des Lebens und der Wissenschaft stammt, und die von der Seele angeeignet werden muss, so dass Weisheit und Seele eins werden.
+STILLE|1.4 s
+MARTIN|Angeeignet. Also gefressen.
+ESTHER|[lacht] Also gefressen.
+STILLE|1.0 s
+ESTHER|Und in ihrem Licht fängt eine goldene Figur an zu reden. Ein König.
+STILLE|0.6 s
+MÄRCHEN|Wo kommst du her? Aus den Klüften, versetzte die Schlange, in denen das Gold wohnt. Was ist herrlicher als Gold?, fragte der König. Das Licht, antwortete die Schlange. Was ist erquicklicher als Licht?, fragte jener. Das Gespräch, antwortete diese.
+STILLE|1.6 s
+MARTIN|Erquicklich. Was heisst das eigentlich genau?
+ESTHER|Quick ist ein altes Wort für lebendig. Quecksilber ist das lebendige Silber. Erquicken heisst, etwas wieder lebendig machen.
+MARTIN|Das Licht zeigt einem, was da ist. Und das Gespräch macht es lebendig.
+ESTHER|[trocken] Sagt Goethe. Und Papa schreibt es sich auf eine Karte.
+MARTIN|Und fährt nach Dornach und schweigt.
+STILLE|2.2 s
+
+## IV. DAS HEFT
+
+ERZÄHLER|Neunzehnhundertvierundzwanzig, ein Jahr nachdem sein Goetheanum, ein grosser Holzbau über Dornach, in einer Silvesternacht abgebrannt war, beginnt Rudolf Steiner dort eine Schule, die Erste Klasse. In neunzehn Stunden schreibt er Verse an eine Tafel. Mantren: Worte, die man nicht einmal liest, sondern immer wieder. Wer dabei ist, soll sie nicht weitergeben. Heute stehen sie in Büchern, die jeder kaufen kann. Steiner sagt über diese Stunden:
+STILLE|0.6 s
+STEINER|Es ist die Praxis des Erkennens, die in diesen Stunden vorgeführt wird, nicht eine Schilderung theoretischer Dinge. Nicht Theorien zu geben ist die Absicht, sondern die geistige Welt selber sprechen zu lassen.
+STILLE|1.4 s
+MARTIN|Er hat sie aus einem Buch abgeschrieben, das jeder kaufen kann. Und trotzdem ein Gummiband drum.
+STILLE|1.2 s
+ESTHER|[lacht] Das offenbare Geheimnis.
+MARTIN|Was?
+ESTHER|Kommt auch im Märchen vor, später. Lies du mal. Aus seinem Heft, die erste Seite.
+MARTIN|Ich?
+ESTHER|Du bist dran.
+STILLE|1.0 s
+MARTIN|[zögernd, langsam] O Mensch, erkenne dich selbst. So tönt das Weltenwort. Du hörst es seelenkräftig, du fühlst es geistgewaltig.
+STILLE|0.8 s
+MARTIN|[trocken] Geistgewaltig. Weiter komm ich nicht.
+ESTHER|Lies weiter.
+MARTIN|[langsam] Wer spricht so weltenmächtig? Wer spricht so herzinniglich?
+STILLE|1.6 s
+ESTHER|[nachdenklich] Das ist meine Frage.
+MARTIN|Wieso deine?
+ESTHER|Wer spricht. Das frag ich mich jeden Tag. Im Spital sitzt eine alte Frau aus Portugal, und der Arzt sagt ihr, wie es um sie steht, und ich sag es ihr auf Portugiesisch. Dann antwortet sie, und ich sag zum Arzt: Ich habe Angst. Ich. Wir sprechen in der Ich-Form, so lernt man das. Ich sag den ganzen Tag ich, und es ist nie ich.
+STILLE|1.2 s
+MARTIN|Und wer spricht dann?
+ESTHER|[lacht leise] Frag Papas Heft.
+STILLE|1.0 s
+STILLE|0.8 s
+MARTIN|Weisst du, was ich ihm als Bub nachgerufen hab, wenn er sonntags mit dem Mantel an der Tür stand? Viel Spass im Schweigeverein.
+STILLE|0.8 s
+ESTHER|[lacht] Das weiss ich noch. Er hat nie reagiert.
+MARTIN|Nie. Das hat mich wahnsinnig gemacht.
+STILLE|1.6 s
+
+## V. DER HÜTER
+
+ESTHER|Hier steht dauernd «der Hüter». Der Hüter spricht, der Hüter mahnt. Wer ist das?
+MARTIN|Einer, der aufpasst. Wie beim Kinderhüten.
+ESTHER|Oder Schafe hüten.
+MARTIN|Oder: Hüte dich.
+STILLE|1.0 s
+MARTIN|[trocken] Ich weiss, wer das ist. Das ist der Verwalter, morgen um zehn. Der steht in der Tür und lässt dich nicht hinaus, bevor du nicht jedes Loch zugemacht hast, das du selber gebohrt hast.
+STILLE|1.6 s
+ESTHER|[lacht] Dreiundvierzig.
+STILLE|1.2 s
+ERZÄHLER|Zwanzig Jahre vor der Ersten Klasse, in einem Buch über den Weg zur Erkenntnis, lässt Steiner den Hüter der Schwelle selbst sagen, wer er ist. Er steht nicht draussen vor einem Tor. Er tritt aus dem Menschen heraus.
+STILLE|0.8 s
+HÜTER|Ich bin es selbst, die Wesenheit, die sich einen Leib gebildet hat aus deinen edlen und deinen üblen Verrichtungen. Meine gespenstige Gestalt ist aus dem Kontobuche deines eigenen Lebens gewoben. Unsichtbar hast du mich bisher in dir selbst getragen.
+STILLE|1.8 s
+ESTHER|[langsam] Aus dem Kontobuch. Dann ist es doch der Verwalter.
+MARTIN|Wie meinst du?
+ESTHER|Er zählt nur die Löcher, die man selber gebohrt hat. Und er zählt nicht, um einen zu strafen. Er zählt, damit man gehen kann.
+STILLE|1.4 s
+MARTIN|Und wo steht er, der Hüter?
+ESTHER|An einer Schwelle. Warte, hier, gleich danach.
+STILLE|0.6 s
+HÜTER|Meine Schwelle aber ist gezimmert aus einem jeglichen Furchtgefühl, das noch in dir ist, und aus einer jeglichen Scheu vor der Kraft, die volle Verantwortung für all dein Tun und Denken selbst zu übernehmen.
+STILLE|1.8 s
+MARTIN|[langsam] Gezimmert.
+STILLE|1.0 s
+MARTIN|Eine Schwelle macht man aus Eiche. Weil alle drauftreten. Ich hab in meinem Leben vielleicht dreihundert Schwellen gemacht, und keiner hat je eine angeschaut.
+STILLE|1.4 s
+ESTHER|In Papas Heft spricht der Hüter von drei Tieren. Die stehen da, wo man hinüber will, am Abgrund. Hier ist das zweite.
+STILLE|0.6 s
+HÜTER|Schau das zweite Tier, es zeigt die Zähne[Atem] Im verzerrten Angesicht, es lügt im Spotten,[Atem] Gelb mit grauem Einschlag ist sein Leib;[Pause] Dein Hass auf Geistes-Offenbarung[Atem] Schuf den Schwächling dir im Fühlen;[Atem] Dein Erkenntnisfeuer muss ihn zähmen.
+STILLE|2.0 s
+MARTIN|[langsam] Es lügt im Spotten.
+STILLE|1.4 s
+MARTIN|Viel Spass im Schweigeverein.
+STILLE|2.2 s
+ESTHER|[ruhig] Und ich bin nach Lausanne gezogen. Das ist auch eine Art zu spotten. Man geht einfach.
+MARTIN|[trocken] Ja. Du bist nach Lausanne gezogen.
+STILLE|2.0 s
+ESTHER|Sag's.
+MARTIN|Was?
+ESTHER|Was du seit drei Jahren sagen willst.
+STILLE|1.4 s
+MARTIN|[ruhig] Ich hab ihn gewaschen. Die letzten zwei Jahre, jeden Mittwoch und jeden Samstag. Er hat dabei kein Wort gesagt, und ich auch nicht. Und du hast am Telefon gefragt, wie es ihm geht.
+STILLE|2.2 s
+ESTHER|[ruhig] Ich weiss.
+STILLE|2.0 s
+ERZÄHLER|Neunzehnhundertzehn, in seinem ersten Drama, lässt Steiner einen jungen Maler namens Johannes in sich hineinhorchen. Aus Quellen und Felsen hört er einen Satz, und im Abgrund sieht er ein Wesen.
+STILLE|0.8 s
+HÜTER|O Mensch, erkenne dich!
+STILLE|0.8 s
+JOHANNES|Da, aus dem finstern Abgrund,[Atem] Welch Wesen glotzt mich an?[Pause] Wer bist du, schauervolles Wesen?
+STILLE|1.0 s
+HÜTER|O Mensch, erkenne dich!
+STILLE|1.2 s
+JOHANNES|O, ich erkenne dich.[Pause] Ich bin es selbst.
+STILLE|2.6 s
+MARTIN|[ruhig] Komm, wir gehen runter an den Rhein. Ich brauch Luft. Nimm das Heft mit. Und den Goethe.
+GERÄUSCH|footsteps going down an old wooden staircase, a heavy house door opens and falls shut, then street sounds, 6 s
+
+## VI. DIE FÄHRE
+
+RAUM|draussen
+ATMO|a riverbank in a city at dusk, a wide fast river flowing past stone steps, water lapping, a few gulls far away, distant city, calm, no music, no voices, 30 s
+ERZÄHLER|Am Ufer, gleich unterhalb der Wohnung, hängt am Steg der Fähre eine Glocke. Wer hinüber will, läutet.
+GERÄUSCH|a small brass bell rung three times at a riverside ferry landing, outdoors, 3 s
+STILLE|2.5 s
+GERÄUSCH|a small wooden ferry boat bumps gently against a wooden landing stage, water splashing, outdoors, 3 s
+ATMO|on board a small wooden river ferry without engine crossing a fast river, water rushing along the wooden hull, a steel cable and pulley creaking softly overhead, light wind, calm, no voices, 25 s
+MARTIN|Siehst du das Seil da oben, quer über den Rhein? Die Fähre hat keinen Motor. Sie hängt an dem Seil, und der Fährmann stellt das Ruder schräg in die Strömung, und dann drückt der Rhein sie selber hinüber.
+ESTHER|Der Fluss, der die Ufer trennt, bringt einen hinüber.
+MARTIN|Wenn man schräg steht.
+STILLE|1.4 s
+ESTHER|[lacht] Schräg stehen kann ich.
+STILLE|1.2 s
+MARTIN|Zwei Franken. Der von Goethe hätte das Geld nicht genommen.
+ESTHER|Der von Goethe nimmt nur Kohl und Zwiebeln. Und er fährt nur in eine Richtung, nie zurück.
+MARTIN|Unserer fährt in beide Richtungen. Basel ist weiter als Goethe.
+STILLE|1.4 s
+ESTHER|[lacht] Sag das nicht zu laut.
+STILLE|1.6 s
+
+## VII. DAS ANDERE UFER
+
+ATMO|stone steps at a city riverbank at dusk turning to evening, a wide river flowing, water lapping softly, distant voices of a few people far away, very calm, no music, 30 s
+GERÄUSCH|a large old cathedral bell far away across a river strikes seven slow times in the evening, 9 s
+ERZÄHLER|Auf der anderen Seite setzen sie sich auf die Steinstufen am Wasser, unter dem Münster. Es wird dunkel.
+STILLE|0.8 s
+MARTIN|Und? Passt das zusammen, Goethe und Papas Heft?
+ESTHER|Es gibt Leute, die machen Listen. Drei Könige bei Goethe, drei Tiere bei Steiner. Weisheit, Schein und Gewalt hier, Weisheit, Schein und Tugend da.
+MARTIN|Und?
+ESTHER|Drei ist billig. Märchen zählen immer bis drei.
+STILLE|0.8 s
+MARTIN|[trocken] Steiner auch.
+STILLE|1.6 s
+ESTHER|[lacht] Ja. Was zusammenpasst, sind nicht die Wörter. Steiner hat das Märchen dreissig Jahre lang so gebraucht wie Papa sein Heft. Immer wieder.
+STILLE|1.4 s
+ESTHER|Weisst du, wer im Tempel noch auftaucht? Ein alter Mann mit einer Lampe. Und der goldene König fragt ihn etwas Seltsames.
+STILLE|0.6 s
+MÄRCHEN|Warum kommst du, da wir Licht haben?, fragte der goldene König. Ihr wisst, dass ich das Dunkle nicht erleuchten darf.
+STILLE|1.6 s
+MARTIN|Das versteh ich nicht. Er kommt erst, wenn es schon hell ist?
+ESTHER|Seine Lampe leuchtet nur da, wo schon ein Licht ist. Ins ganz Dunkle kann er nicht.
+MARTIN|[trocken] Das ist ungerecht.
+ESTHER|[lacht leise] Das ist Goethe.
+STILLE|1.2 s
+ESTHER|Und dann fragen die Könige den Alten nach seinen Geheimnissen.
+STILLE|0.6 s
+MÄRCHEN|Wie viel Geheimnisse weisst du? Drei, versetzte der Alte. Welches ist das wichtigste?, fragte der silberne König. Das offenbare, versetzte der Alte. Willst du es auch uns eröffnen?, fragte der eherne. Sobald ich das vierte weiss, sagte der Alte.
+STILLE|0.8 s
+MÄRCHEN|Ich weiss das vierte, sagte die Schlange, näherte sich dem Alten und zischte ihm etwas ins Ohr. Es ist an der Zeit!, rief der Alte mit gewaltiger Stimme.
+STILLE|1.8 s
+MARTIN|Und was ist das vierte?
+ESTHER|Steht nicht drin.
+STILLE|1.2 s
+MARTIN|[trocken] Typisch.
+STILLE|1.4 s
+ESTHER|Steiner meint, sie sagt ihm, dass sie bereit ist, sich zu opfern. Der Alte weiss das eigentlich schon. Aber das nützt nichts.
+STILLE|0.6 s
+STEINER|Er muss mit diesem Wissen warten, bis die Schlange aus den Tiefen ihres Wesens heraus zu dem Entschlusse der Aufopferung sich reif findet.
+STILLE|1.8 s
+ESTHER|[nachdenklich] Weisst du, warum ich Dolmetscherin geworden bin?
+MARTIN|Weil du fünf Sprachen kannst.
+ESTHER|Weil bei uns am Tisch keiner übersetzt hat. Er hat geschwiegen, und ich hab versucht herauszufinden, was er meint. Am Gesicht. An der Art, wie er die Zeitung zusammenfaltet. Zwanzig Jahre lang. Das war meine Ausbildung.
+STILLE|1.6 s
+ESTHER|Ich hab immer gedacht, er hört einfach nicht zu.
+STILLE|2.4 s
+MARTIN|[langsam] Ich hab ihn einmal gefragt.
+ESTHER|Was gefragt?
+MARTIN|Was ihr da oben macht, in Dornach. Da war ich vielleicht zwölf. Ich stand im Gang, mit meinem Schweigeverein, und er hatte schon den Mantel an. Und dann hat er sich umgedreht und gesagt:
+STILLE|1.8 s
+MARTIN|[ruhig] Wir hören zu.
+STILLE|2.6 s
+ESTHER|[überrascht] Das hat er gesagt?
+MARTIN|Ich hab gedacht, das heisst: Geht dich nichts an.
+STILLE|2.0 s
+ESTHER|[klar] Wir hören zu.
+STILLE|2.8 s
+HÜTER|O Mensch, erkenne dich selbst![Atem] So tönt das Weltenwort.[Pause] Du hörst es seelenkräftig,[Atem] Du fühlst es geistgewaltig.
+STILLE|2.2 s
+ESTHER|[langsam] Er hat zugehört. Und ich hab mein Leben lang anderen Leuten zugehört, damit ich nicht so werde wie er.
+STILLE|1.6 s
+MARTIN|[trocken, warm] Hat ja gut geklappt.
+STILLE|1.8 s
+ESTHER|[lacht] Idiot.
+STILLE|2.2 s
+HÜTER|Hat verstanden dein Geist?
+STILLE|1.0 s
+ICH|Der Weltengeist in mir[Atem] Er hielt den Atem an[Pause] Und seine Gegenwart[Atem] Mög' erleuchten mein Ich.
+STILLE|3.0 s
+MARTIN|[ruhig] Komm. Wir gehen über die Brücke zurück.
+STILLE|0.6 s
+MUSIK|Thema, Brücke 7 s
+
+## VIII. DIE BRÜCKE
+
+ATMO|an old stone bridge over a wide river in a city on a Saturday night, many people walking and talking in the distance, footsteps, an old tram passing slowly with a ringing bell, the river below, lively but not loud, no music, 30 s
+ESTHER|Weisst du, wie das Märchen ausgeht? Am Ende macht die Schlange sich zur Brücke, für immer. Sie sagt: Mich aufzuopfern, ehe ich aufgeopfert werde. Und dann zerfällt sie in lauter Edelsteine, und der Alte schüttet sie in den Fluss.
+MARTIN|In den Fluss.
+ESTHER|Und am Morgen steht da eine Brücke aus Stein, und die Steine von der Schlange sind die Pfeiler.
+STILLE|0.8 s
+MARTIN|[nachdenklich] Die Pfeiler sieht man nie. Was trägt, liegt immer unter Wasser.
+STILLE|1.4 s
+ESTHER|Bei Goethe gehen am Schluss Tausende über die Brücke, mit Maultieren und Wagen. Und in Papas Heft steht einer ganz allein vor einem Abgrund.
+MARTIN|Was steht auf der letzten Seite?
+GERÄUSCH|pages of a small notebook turned outdoors in light wind, 2 s
+ESTHER|Grossbuchstaben. Lies du die eine Hälfte, ich die andere.
+STILLE|0.6 s
+ESTHER|[ruhig] Seraphisch Feuermächte, aus meinem Herzen strahlet ihr.
+MARTIN|[ruhig] Cherubinisch Bildekräfte, in meinem Haupte scheinet ihr.
+ESTHER|[ruhig] Der Throne Traggewalten, in meinen Gliedern kraftet ihr.
+STILLE|1.0 s
+MARTIN|[langsam] Mein Ich ist Ihr.
+STILLE|2.0 s
+MARTIN|Wer ist ihr?
+ESTHER|Bei ihm? Engel. Feuermächte, Bildekräfte, Traggewalten.
+STILLE|1.0 s
+MARTIN|[ruhig] Traggewalten. Das versteh ich.
+STILLE|1.8 s
+ESTHER|Das Buch von Goethe hört mit dem Märchen auf. Man erfährt nicht, ob die Leute danach wieder miteinander geredet haben.
+STILLE|0.8 s
+MARTIN|[trocken] Wir schon.
+STILLE|2.0 s
+MÄRCHEN|Endlich verlief es sich allmählich, zog seine Strasse, und bis auf den heutigen Tag wimmelt die Brücke von Wanderern, und der Tempel ist der besuchteste auf der ganzen Erde.
+STILLE|1.6 s
+MARTIN|Morgen um zehn.
+ESTHER|[lacht] Dreiundvierzig.
+STILLE|0.8 s
+MUSIK|Thema, Schluss
+ANSAGE|Was die Schlange weiss. Ein Gespräch über Goethes Märchen und Rudolf Steiners mantrisches Spätwerk.
+STILLE|0.8 s
+ANSAGE|Esther, Martin und ihr Vater sind erfunden. Die Texte von Goethe und Steiner sind es nicht.
+STILLE|0.8 s
+ANSAGE|Idee, Auftrag und Redaktion: Philipp Tok. Text und Produktion: Claude, ein Sprachmodell von Anthropic. Stimmen, Musik und Geräusche: ElevenLabs. Alle Stimmen in diesem Stück sind synthetisch.
