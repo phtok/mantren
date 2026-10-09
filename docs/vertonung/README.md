@@ -97,6 +97,66 @@ Stimme. Niedrige Werte (15, 17, 20) zeigen eher, dass die Stimme Charakter
 hat (verschleift, nuschelt, ruft) als dass sie den Text verfehlt. Ob der
 Charakter trägt, hört Philipp.
 
+## Die Figuren-Studien (Runde 4)
+
+Rückmeldung auf Runde 2 und 3 (9. 10. 2026), gekürzt: Gesang, nicht
+Sprechen (Sprechen höchstens als I-Tüpfel). Nähe und tonale Objektivität.
+Kein Pathos, keine Sentimentalität. Gefühle aus den Grenzen des Erlebens,
+nicht aus Vertrautheit und Wiederholung: «Wacher werden ins Konkrete.»
+Gefällig und einladend bis zu einem Grad, dann die Wachheit steigernd.
+Berührt haben 2 (Litanei), 9 (Favorit: minimal, Stimme ohne Effekte,
+hingegeben an Rhythmus, Melodie und Text — es fehlen Pausen für den Sinn),
+11 (Harmonien der Stimmen), 17 (die Jazzerin; etwas weniger Klischee).
+Verworfen: 1, 3 (Chöre bleiben den Engeln der späteren Stunden
+vorbehalten), 4, 5, 6 (sentimental), 7 (kitschig), 8, 12. Vorbilder: Pärt,
+Rosalía, Einaudi (innerlich gesteigerte Räume), Bach, Mine (Stimme und
+Persona als Instrument, dienend), Björk (aus anderen Welten).
+
+**Drei Figurenarten:** der Hüter (differenziert als Weltenwort,
+Geistesbote …; erkennbar durch den ganzen Zyklus, eine grosse Seele in der
+Stimme — die Jazzerin ohne Klischee), der Mensch (in Nuancen, Rollen und
+Gesten), die Engel und Götter (neun Sphärengruppen; aus anderen Welten).
+Immer aus dem Sinn schöpfen. Die Studien sind kürzer (40 bis 80 s) und
+kommen aus dem ganzen Korpus, nicht nur aus den Stunden 1–7.
+
+| Nr | Figur · Text | Ansatz | Nachhören |
+|---|---|---|---|
+| 23 | Hüter · Erste Tafel «O Mensch, erkenne dich selbst» | **Tintinnabuli:** Stimme schrittweise, Bratsche nur auf dem Dreiklang, eine Glocke, Klavier in Einzeltönen; Pause nach jeder Zeile. | 92 %. |
+| 24 | Hüter · 1.4 «Doch du musst den Abgrund achten» | **Suite:** ein Solocello wie eine Sarabande, die Stimme im Kontrapunkt, sonst nichts. | 89 %. |
+| 25 | Hüter · 1.4 «Schau das erste Tier» | **Zuwendung:** Klavier-Ostinato, das den inneren Raum weitet; die Beschreibung des Tiers aus geduldigem, liebevollem Interesse statt aus Gefühl. | 93 %; «deine Furcht» bei 0:22 als «eine» gehört. |
+| 26 | Hüter · 9.1 «O Mensch, ertaste …» | **Ruf:** jeder Ruf «O Mensch» anders verziert (Melisma), sparsame Palmas, sauberer Subbass, sonst leer. | 95 %. |
+| 27 | Hüter und Mensch · 14.1 «Wo ist der Erde Festigkeit» | **Drei Antworten in einer Stimme:** christlich schlicht und offen, luziferisch hoch, verziert, zu schön (Glasharmonika), ahrimanisch tief, geklippt, hämmernd (col legno). | 96 %. |
+| 28 | Mensch · Dritte Tafel «Ich trat in diese Sinnes-Welt» | **Choral:** vierstimmige Choralharmonik am Klavier, ein Akkord je Zeile, die Stimme obenauf, silbisch. | 93 % (zweiter Lauf; der erste sang den Text falsch, 58 %). |
+| 29 | Hüter und Ich · 16.2 «Hat verstanden dein Geist?» | **Zwiegespräch:** der Hüter fragt über Harmonium und Cello (der Klang aus 2), das Ich antwortet über sparsamen Klavierakkorden. | 100 %. |
+| 30 | Hüter und Engel · 15.1 «Empfinde, wie wir empfinden» | **Andere Welt:** Angeloi, Archangeloi, Archai in einer einzigen hohen Stimme mit mikrotonalem Schimmer, jede Hierarchie eine Stufe höher; Glasharmonika, gestrichene Crotales. Kein Chor. | 95 %. |
+| 31 | Mensch · 19+ «Mein Ich ist IHR» | **Strahlend:** Klavier und Streicher schwellen langsam, sakral ohne Pathos, die letzte Zeile lang gehalten. | 85 %; im Nachspiel ein erfundenes «Herr» (0:42). |
+
+Zusammen 7,9 Minuten, rund 7 900 Credits samt einer Wiederholung (28).
+Alle auf −16 LUFS.
+
+### Credits sparen
+
+- **Kürzer.** Eine Minute kostet 900 Credits, egal was darin ist. Die
+  Studien dieser Runde haben 3 s Vorspiel und 4 s Nachspiel statt 10 und
+  12; das allein sparte je Stück ein Viertel.
+- **Speichern und weitertragen.** Seit Runde 4 wird jedes Stück bei
+  ElevenLabs gespeichert (`store_for_inpainting`), die `song_id` liegt im
+  Cache neben dem Plan. Eine gelungene Passage von höchstens 30 s wird
+  damit zur **Referenz** für neue Stücke (`conditioning_ref` im ersten
+  Abschnitt, `ref` im Eintrag): Stimme und Klang wandern mit, statt neu
+  gewürfelt zu werden. Das spart die Wiederholungen, die bisher jede dritte
+  Runde kosteten — und macht den Hüter über den Zyklus erkennbar.
+- **Ausbessern statt neu bauen.** Ein gespeichertes Stück lässt sich
+  abschnittweise ändern (Inpainting): die gebliebenen Teile werden als
+  Audio-Referenz eingesetzt, nur der geänderte Abschnitt wird neu erzeugt.
+  Noch nicht gebaut; der Weg ist derselbe Endpunkt.
+- **Nicht wiederholen, was die Prüfung bestätigt.** Scribe kostet fast
+  nichts und sagt, ob die Worte da sind; neu erzeugt wird nur bei
+  erfundenem Text (bisher 4, 5, 28).
+- **Credit-Stand:** der Schlüssel darf ihn nicht lesen. Ein Credit-Limit
+  je Schlüssel setzt Philipp unter
+  <https://elevenlabs.io/app/developers/api-keys>.
+
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
@@ -118,14 +178,15 @@ Charakter trägt, hört Philipp.
   (`bad_prompt`). Jede Inspiration ist darum als Klangbeschreibung
   übersetzt (unten).
 - **Nicht steuerbar:** die Stimme selbst (es gibt keine Stimm-ID wie beim
-  Vorlesen; «female alto, breathy, close» ist eine Bitte, keine Wahl), die
-  Melodie, und die Lautheit (die Stücke kamen zwischen −17 und −31 LUFS
+  Vorlesen; «female alto, breathy, close» ist eine Bitte, keine Wahl —
+  seit Runde 4 aber **übertragbar**: eine gespeicherte Passage als Referenz,
+  § Credits sparen), die Melodie, und die Lautheit (die Stücke kamen zwischen −17 und −31 LUFS
   aus dem Modell — der Master gleicht das aus). Eine Zeile ändern heisst
   das ganze Stück neu erzeugen; der Cache hilft nur bei unverändertem Plan.
 - **Preis:** 900 Credits je Minute Musik. Die Erstfassung (24,6 min) kostete
   rund 22 000 Credits, die zwölf Vorlagen samt zwei Wiederholungen rund
-  24 000, die Stimmenprobe rund 13 000; die Prüfläufe mit Scribe dazu
-  wenig. Der
+  24 000, die Stimmenprobe rund 13 000, die Figuren-Studien rund 7 900;
+  die Prüfläufe mit Scribe dazu wenig. Der
   Schlüssel darf den Zähler nicht lesen (`guthaben` meldet 401 ohne das
   Recht «User: Read»); der Stand steht im Konto:
   <https://elevenlabs.io/app/subscription>.
@@ -189,9 +250,8 @@ Abschnitte mit Quelle (Mantram-ID, Teil), Dauer, Stilen.
 
 ## Offen
 
-- Philipps Urteil über die zwölf Vorlagen und die zehn Stimmen: Welche
-  haben Resonanz? Daraus wird die Regel für die übrigen Sinneinheiten der
-  Stunden 1–7 (der Abgrund 1.4 Teil 1, Mantram 2) und dann für 8–19 und
-  die Tafeln.
+- Philipps Urteil über die Figuren-Studien 23–31: Welche Hüter-Passage
+  wird die Referenz für den Zyklus? Dann die Sinneinheiten der Stunden 1–7
+  in dieser Stimme, mit Referenz, aus dem Sinn.
 - Eine Hörseite im Werk (`src/pages/werkstatt/`), sobald die Stücke
   irgendwo liegen dürfen, wo die Site sie laden kann.
