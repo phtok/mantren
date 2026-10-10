@@ -241,3 +241,108 @@ Ob die Referenz die Stimme der 38 wirklich hält, zeigt erst das Hören
 die Gestalten unter dem Gesang als Gestalt oder als Störung wirken,
 entscheidet Philipp. Mantram 2 (die drei Tiere erklärt, rückwärts) folgt
 dann als Gegenstück mit denselben drei Gestalten in umgekehrter Folge.
+
+---
+
+## 19+ «Mein Ich ist IHR» — das Heraustreten (gebaut: Vorlage 40)
+
+*Zum Abschluss der Werkstatt, 10. 10. 2026. Auftrag: «Analysiere und
+interpretiere diese Zeilen mit Hingabe. Dann entwirf ein Konzept. Lass Dich
+nicht vom bisherigen festlegen, maximal anregen. Ich wünsche mir eine reiche
+Frauenstimme.»*
+
+### Der Text
+
+> Seraphisch Feuermächte
+> Aus meinem Herzen strahlet ihr
+> Cherubinisch Bildekräfte
+> In meinem Haupte scheinet ihr
+> Der Throne Traggewalten
+> In meinen Gliedern kraftet ihr
+> Mein Ich ist IHR.
+
+Sieben Zeilen: drei Paare und ein Siegel. Jedes Paar nennt eine Wesensreihe
+der ersten Hierarchie mit dem, was sie gibt (Feuermächte, Bildekräfte,
+Traggewalten), und sagt, wo im Menschen das wirkt und wie: im Herzen
+**strahlet**, im Haupte **scheinet**, in den Gliedern **kraftet**. Feuer,
+Licht, Kraft. Die Seraphim sind die Geister der Liebe, die Cherubim die der
+Harmonien, die Throne die des Willens; der Spruch gibt ihnen Herz, Haupt und
+Glieder — nicht in der üblichen Reihenfolge von oben nach unten, sondern
+**aus der Mitte heraus**: zuerst das Herz, dann hinauf zum Haupt, dann
+hinunter in die Glieder. Das ist die Gebärde eines Kreuzes aus der Mitte,
+und sie ist kein Zufall: Der Spruch ist auf einem **Notizblatt mit
+Eurythmieform** überliefert (Archiv-Nr. 6476, Faksimile GA 268). Er wurde
+nicht nur gesprochen gedacht, sondern bewegt. Ein Text, der geht.
+
+Die Präpositionen tragen den Sinn. Vom Herzen heisst es **aus**: Die
+Feuermächte strahlen aus dem Herzen heraus in die Welt. Vom Haupt und von
+den Gliedern heisst es **in**: Dort scheint und kraftet es im Menschen. Das
+Herz ist die Quelle; Haupt und Glieder sind die Stätten. Darum beginnt alles
+in der Mitte und darum ist das Herz warm, nicht hell: Es gibt ab.
+
+Die drei Verben sind drei Grade der Wirkung. «Strahlet» ist Ausgang,
+«scheinet» ist Gegenwart, «kraftet» — ein Wort, das es sonst nicht gibt —
+ist Tat. Steiner hat es gebildet, weil «wirkt» zu wenig und «arbeitet» zu
+irdisch gewesen wäre: Kraft als Tätigkeit, nicht als Besitz.
+
+Und dann die eine Zeile, die aus der Reihe fällt: **«Mein Ich ist IHR.»**
+Das einzige grossgeschriebene Wort des ganzen Korpus. Es ist das Gegenstück
+zum dreifachen «Es ist Ich» des Mantrams 19.1, mit dem die neunzehnte und
+letzte Stunde schliesst: Dort fragt der Hüter aus der Ferne, wer im
+Geistes-Wort spricht, denkt, kraftet, und die erste Hierarchie antwortet aus
+dem Herzen des Menschen heraus «Es ist Ich». Hier ist die Richtung
+umgekehrt: Der Mensch selbst spricht die Hierarchien an, «ihr», und bekennt
+am Ende, dass sein Ich das ihre ist. Nicht Auflösung — das Ich spricht den
+Satz, es bleibt der Sprechende. Sondern Zugehörigkeit: «Der verwandelte,
+seiner geistigen Umgebung bewusste Mensch, der mit den Göttern fühlt, denkt
+und handelt» (Arbeitsfassung des Mantrenbüchleins). Der ganze Weg der
+Klasse, der mit «O Mensch, erkenne dich selbst» begann, endet in diesem
+Satz: Selbsterkenntnis mündet nicht in ein Selbst, sondern in ein IHR.
+
+Was Philipp an der Vorlage 31 sagte, gilt darum als Leitsatz: «Die letzte
+Szene erzählt vom neuen Menschen, der aus diesen innersten Erlebnissen
+geboren wird und nun heraustritt zu neuen Taten, gewappnet mit neuen
+Verbindungen in die kosmischen Götterwelten.» Kein Kirchenhall, kein
+Verklingen. Ein Schritt.
+
+### Das Konzept: ein Lied, das geht
+
+**Eine Stimme.** Eine reiche Frauenstimme, Mezzo, dunkler warmer Kern mit
+hellem Glanz, voll, grosszügig, offene Vokale, mit natürlichem Vibrato und
+stiller Freude. Sie ist der Mensch, und sie ist nicht dienend-zurückhaltend
+wie bisher, sondern **gegenwärtig**: Wer «Mein Ich ist IHR» singt, hat
+etwas zu sagen. Kein Pathos, aber Überzeugung.
+
+**Ein Schritt.** Kein Bordun mehr; der Boden ist jetzt der Gang. Eine tiefe
+Rahmentrommel schlägt den Herzschlag, und der Herzschlag wird zum Schritt
+(84 Schläge, Gehtempo). Das ist die Eurythmieform im Klang: Der Text
+bewegt sich, der Mensch tritt heraus.
+
+**Drei Klänge für drei Stätten.** Herz: eine Harfe, die aus der Mitte in
+warmen Arpeggien ausstrahlt. Haupt: hohe Flageoletts der Geige und einzelne
+Glockentöne, Licht. Glieder: Cello-Pizzicato zur Trommel, der Schritt wird
+fest. E-Dur, offen und hell, modal gefärbt; nichts Kirchliches, nichts
+Episches.
+
+**Zweimal, und dann dreimal.** Das Lied geht den Spruch zweimal durch. Beim
+ersten Mal ist es innen: Die Stimme tritt allein auf dem ersten Wort ein,
+die Klänge kommen einzeln dazu, «Mein Ich ist IHR» wird einmal leise über
+dem Herzschlag gesungen. Dann ein Zwischenspiel: Cello und Trommel öffnen
+sich, eine Tür. Beim zweiten Mal ist es draussen: voll, strahlend, der
+Schritt kräftig, die Stimme offen. Und dann die Schlusszeile dreimal, offen,
+voller, mit allem — das letzte IHR lang gehalten, reich, ohne Verzierung.
+Die Wiederholung ist hier kein Mangel an Text, sondern der Vollzug: ein
+Mantram wird wiederholt, und wer es dreimal sagt, meint es.
+
+**Der Schluss.** Kein Verklingen. Der Schritt geht vier Schläge allein
+weiter und steht. Ein offener Akkord bleibt. Die Tür ist offen, der Mensch
+ist hindurch.
+
+### Ergebnis
+
+Vorlage 40, ein Lied aus einer Erzeugung (eine Stimme, darum keine
+Montage), 2:20, rund 1 950 Credits. Rückschrift 84 %: «Seraphisch» als
+«Serafisch», «Traggewalten» getrennt, und zweimal «Bildekräfte» als «milde
+Kräfte» gehört (0:22 und 1:19) — dieselbe Stelle wie in Vorlage 31; ob die
+Stimme das B verschleift oder die Erkennung es verhört, hört Philipp.
+−16,2 LUFS.

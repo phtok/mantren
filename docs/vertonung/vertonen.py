@@ -471,6 +471,32 @@ VORLAGEN += [
         'bett': 'bett', 'bett_db': -9, 'vorlauf': 3.0, 'schluss': 5.0,
      }},
 ]
+# ---------------------------------------------------------------- 19+ «Mein Ich ist IHR» (Runde 10, 10. 10. 2026) — siehe szenen.md
+# Das Lied zum Abschluss. Der Sonderspruch ist auf einem Notizblatt mit Eurythmieform überliefert: ein Text,
+# der sich bewegt. Der verwandelte Mensch tritt heraus. Eine Stimme, ein Lied, ein Schritt; kein Bordun.
+REICH = ['a rich mature mezzo-soprano: dark warm core with a bright ring, full-bodied, generous, open vowels',
+         'sung with conviction and quiet joy, natural warm vibrato, never breathy, no pop affect, no pathos',
+         'the voice present and serving the words, every word intelligible, German']
+SCHRITT = ['a steady walking pulse on a low frame drum, like footsteps, 84 BPM', 'acoustic instruments in a bright open room']
+NIE_LIED = NIE_KIRCHE + NICHT_SPRECH + ['pop ballad', 'EDM', 'epic', 'sentimental strings', 'fade out']
+VORLAGEN += [
+    {'nr': 40, 'slug': 'mein-ich-ist-ihr', 'titel': 'Mein Ich ist IHR', 'text': 'Mensch · 19+',
+     'ansatz': 'Ein Lied, das geht: Herzschlag, dann die reiche Frauenstimme allein auf dem ersten Wort; Herz strahlt (Harfe), Haupt scheint (Glocken, hohe Streicher), Glieder kraften (Schritt, Cello); erst innen, dann heraus; «Mein Ich ist IHR» dreimal, das letzte IHR lang; der Schritt geht vier Schläge allein weiter und steht.',
+     'stimme': [], 'tonart': 'E major, open and bright, modal colour', 'tempo': '84 BPM, walking',
+     'teile': [
+        ('Herzschlag', None, 6, SCHRITT + ['the low frame drum alone, a heartbeat, instrumental introduction'], ['vocals'], ''),
+        ('Herz I', ('19+', 0, 0, 2), 14, REICH + SCHRITT + ['the voice enters alone on the first word, then a harp begins to radiate outward in warm arpeggios', 'inward, warm'], NIE_LIED, ''),
+        ('Haupt I', ('19+', 0, 2, 4), 14, REICH + SCHRITT + ['light: high violin harmonics and single glockenspiel notes', 'brighter, clearer, the register rises a little'], NIE_LIED, ''),
+        ('Glieder I', ('19+', 0, 4, 6), 14, REICH + SCHRITT + ['the pulse becomes a stride: cello pizzicato joins the drum', 'grounded, firm'], NIE_LIED, ''),
+        ('Mein Ich I', ('19+', 0, 6, 7), 10, REICH + ['quiet, inward, the voice alone over the heartbeat', 'the line held'], NIE_LIED, ''),
+        ('Schritt', None, 6, SCHRITT + ['cello and drum open outward, instrumental, a door opening'], ['vocals'], ''),
+        ('Herz II', ('19+', 0, 0, 2), 14, REICH + SCHRITT + ['now outward: full and radiant, harp and warm strings', 'generous'], NIE_LIED, ''),
+        ('Haupt II', ('19+', 0, 2, 4), 14, REICH + SCHRITT + ['bells and high strings shining, the voice open and ringing'], NIE_LIED, ''),
+        ('Glieder II', ('19+', 0, 4, 6), 14, REICH + SCHRITT + ['full stride: deep drum, cello, strong and upright'], NIE_LIED, ''),
+        ('Mein Ich II', ('19+', 0, 6, 7), 26, REICH + SCHRITT + ['the line sung three times: first open, then fuller, the third with everything together', 'the last word held long, rich, no ornament'], NIE_LIED, ''),
+        ('Hinaus', None, 8, SCHRITT + ['the stride alone for four steps, then it stops clean', 'one open chord left ringing, no fade, instrumental'], ['vocals'], ''),
+     ]},
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
@@ -506,8 +532,10 @@ def plan(nr, mantren=None):
             text += '\n' + regie
         if quelle:
             text += '\n' + '\n'.join(zeilen(mantren, quelle))
-            if name == 'Das Daseinswort':   # die eine Wiederholung des Zyklus
+            if name == 'Das Daseinswort':   # Wiederholung (Lied darf wiederholen, Wortlaut bleibt)
                 text += '\n' + '\n'.join(zeilen(mantren, quelle))
+            if name == 'Mein Ich II':
+                text += ('\n' + '\n'.join(zeilen(mantren, quelle))) * 2
         stile = list(dict.fromkeys(((v['stimme'] + (v.get('haltung') or DIENT)) if quelle else []) + plus + ECHT + [v['tonart'], v['tempo']]))
         nicht = list(dict.fromkeys(NIE + minus))
         if not quelle and '(' not in regie:
