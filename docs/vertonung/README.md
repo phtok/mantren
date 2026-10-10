@@ -32,6 +32,35 @@ Vorlage 4. Die Musik erzeugt **Eleven Music** (`music_v2_5`) nach einem
 Kompositionsplan je Vorlage, den `vertonen.py` aus den Mantren baut. Die
 Audiodateien liegen nicht im Repo; sie lassen sich neu bauen, siehe unten.
 
+## Stand: pausiert (10. 10. 2026)
+
+Philipp, 10. 10. 2026: «Wir pausieren das Projekt jetzt. Ich habe nun einen
+Eindruck, was heute möglich ist. Es braucht noch etwas Entwicklungszeit. Das
+Experimentieren und Finetunen ist noch zu aufwändig und zu teuer. Der Griff
+aufs Ganze zu groß.»
+
+**Was da ist.** Vierzig Vorlagen in zehn Runden (Tabellen unten), rund
+80 000 Credits, etwa 90 Minuten Musik. Angenommen: Vorlage 38 (der Dialog
+16.2 als Montage, Hüter Bass und Mensch Mezzo) — die Stimme des Hüters und
+das Verfahren. Zuletzt gebaut: 39 (1.4 Drei Tiere, mit Gestalten unter den
+Zeilen) und 40 (19+ Mein Ich ist IHR, das Lied zum Abschluss). Die Methode
+steht in `szenen.md`; die Werkzeuge in `vertonen.py` (Vorlagen,
+Erzeugung mit gespeicherten Referenzen, Montage mit Stille, Bordun-Bett und
+Einlagen nach Wortzeiten, Rückschrift). Alle Pläne sind im Cache
+reproduzierbar; die MP3 hat Philipp.
+
+**Was gelernt ist, in einem Satz je Punkt:** Eine Stimme je Erzeugung,
+Rollen getrennt und montiert. Zuerst die Situation, dann die Mittel.
+Keine Sprech-Anweisungen an eine Sängerin. Kein Chor, keine Kirche, kein
+Pathos; Nähe und tonale Objektivität. Stille ist Gliederung. Gestalten
+gehören den Instrumenten, die Haltung der Stimme. 900 Credits je Minute,
+und jeder Versuch kostet.
+
+**Wo es weitergeht, wenn es weitergeht:** Mantram 2 und 3 mit den
+Gestalten der 39 (`szenen.md` § Der Tier-Zusammenhang); dann die
+Sinneinheiten der Stunden 1–7 mit Rollen aus dem Sinn. Oder mit einem
+reiferen Werkzeug, das zwei Stimmen in einem Stück hält.
+
 ## Die zwölf Vorlagen (Runde 2)
 
 | Nr | Text | Ansatz | Worauf hören | Dauer |
@@ -338,6 +367,19 @@ nur, was gebaut wurde. Zwei Mittel sind neu in der Montage:
 Die drei Gestalten sind damit festgelegt und liegen im Cache; Mantram 2
 und 3 verwenden sie wieder (§ Der Tier-Zusammenhang in `szenen.md`).
 
+## 19+ «Mein Ich ist IHR» (Runde 10)
+
+Das Lied zum Abschluss; Analyse, Interpretation und Konzept in `szenen.md`
+§ 19+. Eine reiche Frauenstimme, ein Lied aus einer Erzeugung, kein Bordun:
+Herzschlag auf der Rahmentrommel, der zum Schritt wird; Harfe fürs Herz,
+Glocken und Flageoletts fürs Haupt, Cello-Pizzicato für die Glieder; zweimal
+durch den Spruch (innen, dann heraus), «Mein Ich ist IHR» dreimal, der
+Schritt geht vier Schläge weiter und steht.
+
+| Nr | Stand |
+|---|---|
+| 40 | Erzeugt 10. 10. 2026, 2:20, rund 1 950 Credits. Rückschrift 84 % («Bildekräfte» zweimal als «milde Kräfte» gehört, 0:22 und 1:19 — nachhören). −16,2 LUFS. |
+
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
 - **Gesang mit vorgegebenem Text.** Eleven Music singt Liedtext in jeder
@@ -367,7 +409,8 @@ und 3 verwenden sie wieder (§ Der Tier-Zusammenhang in `szenen.md`).
 - **Preis:** 900 Credits je Minute Musik. Die Erstfassung (24,6 min) kostete
   rund 22 000 Credits, die zwölf Vorlagen samt zwei Wiederholungen rund
   24 000, die Stimmenprobe rund 13 000, die Figuren-Studien rund 7 900,
-  die Doppelstimme rund 2 600; die Prüfläufe mit Scribe dazu wenig. Der
+  die Doppelstimme rund 2 600, die Dialoge und Montagen (35–39) rund 9 000,
+  das Lied 19+ rund 1 950; die Prüfläufe mit Scribe dazu wenig. Der
   Schlüssel darf den Zähler nicht lesen (`guthaben` meldet 401 ohne das
   Recht «User: Read»); der Stand steht im Konto:
   <https://elevenlabs.io/app/subscription>.
