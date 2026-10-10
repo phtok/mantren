@@ -346,3 +346,45 @@ Montage), 2:20, rund 1 950 Credits. Rückschrift 84 %: «Seraphisch» als
 Kräfte» gehört (0:22 und 1:19) — dieselbe Stelle wie in Vorlage 31; ob die
 Stimme das B verschleift oder die Erkennung es verhört, hört Philipp.
 −16,2 LUFS.
+
+### Zweite Lesung: der Gekrönte (Vorlage 41)
+
+Philipp zur 40: «Das wurde ein Hippie-Tune mit Gitarre auf der Wiese. Ich
+dachte mehr an den frisch gekrönten Pharao, der durch ein provoziertes
+Nahtoderlebnis gegangen ist und mit allen Mitteln eingeweiht wurde und nun
+eine stabile Brücke zur geistigen Welt verkörpert. Er erlebt sich selbst nun
+als Werkzeug und ist im engen Kontakt mit den Göttinnen. Er sieht alles und
+liebt dienend.»
+
+Das korrigiert die erste Lesung an einer Stelle, und sie ist entscheidend:
+nicht **Aufbruch**, sondern **Krönung**. Der Eingeweihte tritt nicht hinaus,
+er steht. Das Nahtoderlebnis liegt hinter ihm, die Brücke ist gebaut und
+trägt; was er jetzt spricht, ist kein Weg, sondern ein Stand. «Aus meinem
+Herzen strahlet ihr» sagt einer, durch den hindurch gewirkt wird: Werkzeug.
+Darum darf nichts in der Musik gehen oder zupfen — der Schritt und die
+Harfe der 40 haben aus dem Thronsaal eine Wiese gemacht. Was bleibt, ist
+die Mitte als Quelle, das Hinauf und Hinunter, und das Siegel «Mein Ich ist
+IHR» — jetzt als **Eid** des Gekrönten, nicht als Ausruf.
+
+**Mittel.** Eine Schwelle aus Bronze: ein Gongschlag, aus dessen Ausklang
+der tiefe Bordun steigt. Die reiche Frauenstimme steht zwischen diesem
+Grund und dem Licht, hieratisch, lange Linien, eine kleine Kadenz am
+Zeilenende, souverän still. Herz: ein Trommelschlag, einmal das Sistrum
+(das Instrument der Hathor). Haupt: die Stimme eine Lage höher, eine hohe
+Flöte antwortet. Glieder: tiefer, zwei Trommelschläge, der Bordun trägt.
+Vier Sekunden Stille. Der Eid zweimal: erst leise als Wissen, dann mit
+voller Stimme, der Gong auf dem letzten Wort. Der Gong klingt aus.
+**Gegen:** Gitarre, Harfe, Gehrhythmus, Folk, Pop, Chor, Orgel, Kirchenhall,
+Hollywood-Ägypten.
+
+**Drei Läufe, drei Lehren** (rund 4 000 Credits):
+
+1. Der erste kam **ohne Stimme**: «very slow, no groove, no melody to fall
+   into» und ein langer Instrumentalkopf — das Modell machte ein
+   Instrumentalstück. Lehre: «no melody» nie an eine Sängerin.
+2. Der zweite **sang die Stile mit** («German hieratic Ceremongewalten») und
+   buchstabierte das grossgeschriebene IHR wie eine Abkürzung («die HL»).
+   Lehre: Stile kurz und nüchtern, keine Adjektive, die sich singen lassen;
+   Grossschreibung ist typographisch, für den Gesang steht «Ihr».
+3. Der dritte trägt: Rückschrift 88 %, alle Zeilen da («Bildekräfte» als
+   «bilde Kräfte», einmal «ihr» als «hier» gehört). 1:36, −16,3 LUFS.
