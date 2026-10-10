@@ -43,7 +43,8 @@ aufs Ganze zu groß.»
 80 000 Credits, etwa 90 Minuten Musik. Angenommen: Vorlage 38 (der Dialog
 16.2 als Montage, Hüter Bass und Mensch Mezzo) — die Stimme des Hüters und
 das Verfahren. Zuletzt gebaut: 39 (1.4 Drei Tiere, mit Gestalten unter den
-Zeilen) und 40 (19+ Mein Ich ist IHR, das Lied zum Abschluss). Die Methode
+Zeilen) und 41 (19+ Mein Ich ist IHR als der Gekrönte, das Lied zum
+Abschluss; 40 war der erste, verworfene Entwurf dazu). Die Methode
 steht in `szenen.md`; die Werkzeuge in `vertonen.py` (Vorlagen,
 Erzeugung mit gespeicherten Referenzen, Montage mit Stille, Bordun-Bett und
 Einlagen nach Wortzeiten, Rückschrift). Alle Pläne sind im Cache
@@ -51,8 +52,10 @@ reproduzierbar; die MP3 hat Philipp.
 
 **Was gelernt ist, in einem Satz je Punkt:** Eine Stimme je Erzeugung,
 Rollen getrennt und montiert. Zuerst die Situation, dann die Mittel.
-Keine Sprech-Anweisungen an eine Sängerin. Kein Chor, keine Kirche, kein
-Pathos; Nähe und tonale Objektivität. Stille ist Gliederung. Gestalten
+Keine Sprech-Anweisungen an eine Sängerin, kein «no melody», und Stile so
+kurz und nüchtern, dass sie nicht mitgesungen werden; Grossschreibung im
+Text wird buchstabiert. Kein Chor, keine Kirche, kein Pathos; Nähe und
+tonale Objektivität. Stille ist Gliederung. Gestalten
 gehören den Instrumenten, die Haltung der Stimme. 900 Credits je Minute,
 und jeder Versuch kostet.
 
@@ -378,7 +381,8 @@ Schritt geht vier Schläge weiter und steht.
 
 | Nr | Stand |
 |---|---|
-| 40 | Erzeugt 10. 10. 2026, 2:20, rund 1 950 Credits. Rückschrift 84 % («Bildekräfte» zweimal als «milde Kräfte» gehört, 0:22 und 1:19 — nachhören). −16,2 LUFS. |
+| 40 | Erzeugt 10. 10. 2026, 2:20, rund 1 950 Credits. Rückschrift 84 %. Philipp: «ein Hippie-Tune mit Gitarre auf der Wiese» — der Schritt und die Harfe machten aus der Krönung einen Aufbruch. Zurückgebaut. |
+| 41 | **Der Gekrönte** (zweite Lesung, `szenen.md` § 19+): Gong, Bordun, Sistrum, Flöte, zwei Trommelschläge, der Eid zweimal. Drei Läufe (ohne Stimme; Stile mitgesungen und IHR buchstabiert; dann tragfähig), rund 4 000 Credits. Rückschrift 88 %, 1:36, −16,3 LUFS. |
 
 ## Was mit ElevenLabs möglich ist (Stand 9. 10. 2026)
 
@@ -410,7 +414,8 @@ Schritt geht vier Schläge weiter und steht.
   rund 22 000 Credits, die zwölf Vorlagen samt zwei Wiederholungen rund
   24 000, die Stimmenprobe rund 13 000, die Figuren-Studien rund 7 900,
   die Doppelstimme rund 2 600, die Dialoge und Montagen (35–39) rund 9 000,
-  das Lied 19+ rund 1 950; die Prüfläufe mit Scribe dazu wenig. Der
+  das Lied 19+ rund 6 000 in zwei Fassungen; die Prüfläufe mit Scribe dazu
+  wenig. Der
   Schlüssel darf den Zähler nicht lesen (`guthaben` meldet 401 ohne das
   Recht «User: Read»); der Stand steht im Konto:
   <https://elevenlabs.io/app/subscription>.

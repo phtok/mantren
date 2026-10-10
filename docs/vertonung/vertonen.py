@@ -497,6 +497,32 @@ VORLAGEN += [
         ('Hinaus', None, 8, SCHRITT + ['the stride alone for four steps, then it stops clean', 'one open chord left ringing, no fade, instrumental'], ['vocals'], ''),
      ]},
 ]
+# ---------------------------------------------------------------- 19+ zweite Fassung: der Gekrönte (10. 10. 2026)
+# Rückmeldung auf 40: «Ein Hippie-Tune mit Gitarre auf der Wiese.» Das Bild: der frisch gekrönte Pharao,
+# durch ein provoziertes Nahtoderlebnis gegangen, mit allen Mitteln eingeweiht, verkörpert nun eine stabile
+# Brücke zur geistigen Welt; erlebt sich als Werkzeug, im engen Kontakt mit den Göttinnen; sieht alles und
+# liebt dienend. Also: kein Schritt, kein Zupfen. Stehen. Hieratisch. Bronze, Trommelschlag, Sistrum.
+GEKROENT = ['lead vocal: a rich mature mezzo-soprano, dark warm core, bright ring, full-bodied',
+            'sovereign calm, long sustained lines, a small cadence at the end of each line',
+            'no pathos, no breathiness', 'the singing begins within the first two seconds of the section']
+TEMPEL = ['deep bronze gong', 'large frame drum, single slow strokes, no pulse', 'sistrum rattle, brief shimmer',
+          'low sustained drone', 'very slow, free', 'Phrygian mode', 'dry stone room']
+NIE_TEMPEL = NIE_KIRCHE + NICHT_SPRECH + ['guitar', 'harp', 'folk', 'walking rhythm', 'pop', 'EDM', 'epic',
+                                         'belly dance', 'oud', 'sentimental strings', 'fade out', 'instrumental only']
+VORLAGEN += [
+    {'nr': 41, 'slug': 'mein-ich-ist-ihr-gekroent', 'titel': 'Mein Ich ist IHR', 'text': 'der Gekrönte · 19+',
+     'ansatz': 'Zweite Fassung: der Gekrönte. Ein Gongschlag als Schwelle, tiefer Bordun als Erde; die reiche Frauenstimme steht als Brücke dazwischen, hieratisch, lange Linien, eine kleine Kadenz je Zeile; Herz mit Sistrum, Haupt mit hoher Flöte, Glieder mit zwei Trommelschlägen; Stille; «Mein Ich ist IHR» zweimal, das zweite als Eid mit dem Gong auf IHR; der Gong klingt aus.',
+     'stimme': [], 'tonart': 'low D drone, Phrygian colour', 'tempo': 'very slow, free, no pulse',
+     'teile': [
+        ('Schwelle', None, 8, TEMPEL + ['one deep bronze gong stroke, then the low drone rises from its decay, instrumental introduction'], ['vocals'], ''),
+        ('Herz', ('19+', 0, 0, 2), 18, GEKROENT + TEMPEL + ['the voice enters low and full', 'one frame-drum stroke at the start of the line', 'a single sistrum shimmer on the second line'], NIE_TEMPEL, ''),
+        ('Haupt', ('19+', 0, 2, 4), 18, GEKROENT + TEMPEL + ['the voice rises a register, light', 'a high end-blown flute (nay) answers above, sparse'], NIE_TEMPEL, ''),
+        ('Glieder', ('19+', 0, 4, 6), 18, GEKROENT + TEMPEL + ['the voice lower again, weighty', 'two frame-drum strokes, the drone thickens, carrying'], NIE_TEMPEL, ''),
+        ('Stille', None, 4, TEMPEL + ['the drone alone, nothing else, instrumental'], ['vocals'], ''),
+        ('Der Eid', ('19+', 0, 6, 7), 22, GEKROENT + TEMPEL + ['the line sung twice: first quietly as inner knowing, then as an oath, full voice', 'on the last word the gong strikes once', 'the last word held long'], NIE_TEMPEL, ''),
+        ('Nachklang', None, 8, TEMPEL + ['gong decay and drone, thinning to silence, instrumental'], ['vocals'], ''),
+     ]},
+]
 VORLAGE = {v['nr']: v for v in VORLAGEN}
 
 
@@ -536,6 +562,9 @@ def plan(nr, mantren=None):
                 text += '\n' + '\n'.join(zeilen(mantren, quelle))
             if name == 'Mein Ich II':
                 text += ('\n' + '\n'.join(zeilen(mantren, quelle))) * 2
+            if name == 'Der Eid':
+                text += '\n' + '\n'.join(zeilen(mantren, quelle))
+                text = text.replace('IHR.', 'Ihr.')   # für den Gesang: sonst wird das Wort buchstabiert
         stile = list(dict.fromkeys(((v['stimme'] + (v.get('haltung') or DIENT)) if quelle else []) + plus + ECHT + [v['tonart'], v['tempo']]))
         nicht = list(dict.fromkeys(NIE + minus))
         if not quelle and '(' not in regie:
