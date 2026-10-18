@@ -48,8 +48,11 @@ export function isProtected(v: Vortrag): boolean {
 }
 
 // Öffentliche Vorträge — Index und Suche zeigen nur diese.
-// Geschützte Seiten (z. B. Breslau-Volltext) bleiben über die direkte
-// URL erreichbar, werden aber nicht in der Übersicht gelistet.
+// Geschützte Seiten (z. B. breslau-1, breslau-2 — Stenogramm-Wortlaut
+// nach Lilly Kolisko/Elena Gradenwitz, Perseus 2016) bleiben über die
+// direkte URL erreichbar, werden aber nicht in der Übersicht gelistet.
+// Der gemeinfreie /breslau-volltext (eigene Nacherzählung auf Basis des
+// gemeinfreien Steiner-Sprechwortlauts) wird hingegen öffentlich gelistet.
 export const vortraegePublic: Vortrag[] = vortraege.filter((v) => !isProtected(v));
 
 export function vortragById(id: string): Vortrag | undefined {
