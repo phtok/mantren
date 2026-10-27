@@ -75,8 +75,15 @@ Knöpfen, Listen, Meldungen, Mails und im Fuss.
 - **Titel und kurze Texte ausgleichen** (`text-wrap: balance`), Fliesstext
   ohne einzelnes Wort in der Schlusszeile (`text-wrap: pretty`, am `body`).
 - **Zusammenhalten, was zusammengehört**, mit festem Leerzeichen (`&nbsp;`,
-  in JSON `\u00a0`): Zahl und Wort (‹18 Folgen›, ‹S. 12›), Vor- und
-  Nachname, ‹je Folge›, ‹z. B.›.
+  in JSON `\u00a0`): Zahl und Wort (‹18 Folgen›, ‹S. 12›), ‹je Folge›,
+  ‹z. B.›. Vor- und Nachname nur in Namenslisten (Liste, Tabelle,
+  Impressum), nie im Fliesstext: Dort reisst der Block auf schmalen
+  Bildschirmen Löcher (Inhaber, 27. 10. 2026). Artikel und Präpositionen
+  nie ans nächste Wort binden — aus demselben Grund.
+- **Keine Cliffhanger:** kein kleines Wort (der, und, mit …) am
+  Zeilenende, unter dem die nächste Zeile schon aufgehört hat. Das sieht
+  nur, wer den ganzen Absatz kennt, darum rechnen statt binden (in
+  `designs`: `sks/www/umbruch.js`, Verfahren aus Prolog).
 - **Mit dem Auge prüfen**, bevor ein Bild gezeigt oder gemergt wird: schmal
   (375 px) und breit, hell und dunkel. Ein grüner Prüfer ersetzt den Blick
   nicht (in `designs` misst K19 nur einen Teil davon).
