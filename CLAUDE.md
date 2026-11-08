@@ -18,11 +18,13 @@ Kostentreiber: jeder Schritt liest den ganzen Kontext neu.
 Projekt-Doku), dann als letzte Zeile der Antwort:
 
 > Zeit für eine neue Session — <Grund>. Ich starte sie auf <Modell>,
-> weil <ein Satz>. **Sag ‹ja›.**
+> weil <ein Satz>. **Sag ‹ns›.**
 
-Nie mitten in einer Etappe, nie ungefragt starten.
+Nie mitten in einer Etappe, nie ungefragt starten. Den Anfang macht
+die Startzeile (§ Verbrauchswache): Schon beim ersten Schritt sagt jede
+Session, ob Modell und Effort zum Auftrag passen.
 
-**Bei ‹ja›** startet die alte Session die neue mit `create_session`:
+**Bei ‹ns›** (oder ‹ja›) startet die alte Session die neue mit `create_session`:
 ein Repo (`source_url`), das gewählte `model`, ein Titel, und als
 `prompt` eine Übergabe, die ohne den alten Verlauf trägt — Auftrag,
 Stand (Branch, PR, erledigt, offen), wo es geschrieben steht, nächster
@@ -31,15 +33,19 @@ Schritt. Verweisen statt nacherzählen. Läuft die neue Session
 sich selbst (`archive_session` mit der eigenen ID aus `get_session` ohne
 ID).
 
-**Auftrag erledigt: Archivieren anbieten** (Regel des Inhabers, 18. 10.
-2026). Ist der Auftrag erledigt und kommt nichts nach, bietet die
-Session von sich aus an, sich zu archivieren — als letzte Zeile der
-Antwort:
+**Auftrag erledigt: selbst archivieren, ohne Rückfrage** (Regel des
+Inhabers, 18. 10. 2026; vereinfacht am 6. 11. 2026: ‹bisher muss ich
+jede Archivierung einzeln bestätigen, erst im Chat und dann eine
+Freigabe. Bitte vereinfachen›). Ist der Auftrag erledigt und kommt
+nichts nach, fragt die Session nicht mehr, sondern meldet es als letzte
+Zeile und archiviert sich gleich danach (`archive_session` mit der
+eigenen ID):
 
-> Auftrag erledigt — <was>. Soll ich mich archivieren? **Sag ‹ja›.**
+> Auftrag erledigt — <was>. Ich archiviere mich jetzt.
 
-Bei ‹ja› (oder ‹fertig›) archiviert sie sich (`archive_session` mit der
-eigenen ID). Nie ungefragt archivieren.
+Rückgängig geht es jederzeit (die Session in der Liste wieder öffnen
+oder `unarchive_session`); darum braucht es keine Bestätigung. Hat die
+Antwort eine offene Frage an den Inhaber, archiviert sie sich nicht.
 
 **In beiden Fällen** erst, wenn der Stand gesichert ist und alle
 beobachteten PRs gemergt oder geschlossen sind. Wartet noch ein PR auf
@@ -58,11 +64,89 @@ seine Checks, kommt das Angebot nach dem Merge.
 
 Effort ‹medium› als Standard, ‹high› nur für urteilskritische Arbeit;
 lässt sich beim Start nicht mitgeben — weicht die Empfehlung ab, sagt
-die Meldung es dazu. Nicht für gesäte Kinder-Sessions und Routinen:
-die enden mit ihrem Auftrag.
+die Meldung es dazu. Gesäte Kinder-Sessions und Routinen enden mit
+ihrem Auftrag; die Kontextgrenze gilt seit dem 22. 10. 2026 auch für
+Kinder (§ Verbrauchswache).
 
+**Verteilen in die anderen Repos** (Lehre vom 18. 10. 2026): nur aus
+einem Klon mit Arbeitskopie, und vor jedem Merge `git diff --stat
+origin/main` lesen — er muss genau die eine geänderte Datei zeigen. Ein
+Klon mit `--no-checkout` hat einen leeren Index; der Commit trug dort
+nur die neue Datei und löschte in neun Repos alles übrige.
 
-Urtext: `CLAUDE.md` im Repo `phtok/designs` — dort ändern und von dort verteilen.
+## Verbrauchswache: Warnung mit Angebot
+
+Beschluss des Inhabers (22. 10. 2026), **gilt in allen Repos** (gleicher
+Abschnitt in jeder `CLAUDE.md`). Anlass: Am 22. 10. standen bis elf Uhr
+418 $ in 31 Sessions; eine 13-Stunden-Session trug ein Drittel, vier
+Fable-Sessions vom Telefon ein weiteres (`VERBRAUCH.md` § 7 in `designs`).
+Die Regeln dazu gab es schon; was fehlte, war die Session, die sie dem
+Inhaber im Moment des Fehlgriffs vorhält.
+
+**Jede Session prüft sich selbst**: beim ersten Schritt, nach jeder
+Etappe und bei jedem neuen Auftrag (`get_session` ohne ID liefert
+`session_context.model`, `effort_level`, `sources`, `origin` und
+`external_metadata.context_usage.used_tokens`).
+
+**Startzeile: immer** (Anweisung des Inhabers, 6. 11. 2026: ‹Am Anfang
+einer Session gern direkt prüfen, welches Modell optimal wäre und die
+entsprechende Sitzung anbieten›). Die erste Antwort jeder Session
+beginnt mit genau einer Zeile, auch wenn alles passt — der Inhaber
+sieht die Wahl, bevor Arbeit anfällt. Passt alles:
+
+> Modell passt: <Modell>, <Effort>, weil <ein Halbsatz>.
+
+Massstab ist die Modellwahl in § Sessionwechsel (Haiku nachschauen,
+Sonnet nach Plan, Opus Standard, Fable nur Architektur, Debugging nach
+Opus-Scheitern, grosses Review). Passt etwas nicht, steht an ihrer
+Stelle die Warnung. Trifft ein Befund aus der Tabelle zu — beim Start
+oder später —, steht die Warnung **als erste Zeile der Antwort, vor
+jeder Arbeit**, in genau dieser Form:
+
+> ⚠ Verbrauch: <Befund in einem Satz>. <Was es kostet, in einem Satz.>
+> Besser: <Angebot 1>. Oder: <Angebot 2>.
+> **Sag ‹weiter› oder ‹ns›.**
+
+Eine Warnung aufs Mal, die teuerste zuerst. ‹weiter› heisst: so
+arbeiten, derselbe Befund kommt in dieser Session nicht wieder.
+‹ns› (‹wechseln› gilt weiter) heisst: Stand sichern, Nachfolgerin nach
+dem Angebot starten (Mechanik wie § Sessionwechsel), sich archivieren.
+Ausnahme: Ist der Auftrag in weniger als zehn Schritten erledigt, sagt
+die Session das in einem Halbsatz und arbeitet ohne Rückfrage.
+
+**Rufwort ‹ns›** (neue Session; Inhaber, 6. 11. 2026). Das eine Wort
+genügt, jederzeit und auch ohne vorausgehende Warnung oder Angebot: die
+Session schliesst die laufende Etappe ab, sichert den Stand (Commit,
+Push, offene Punkte in die Doku), startet die Nachfolgerin mit dem
+Modell, das zur verbleibenden Arbeit passt (`create_session`, Übergabe
+wie § Sessionwechsel), meldet deren Titel und archiviert sich. Ist
+nichts mehr offen, heisst ‹ns› nur: archivieren.
+
+| Befund | Schwelle | Angebot |
+|---|---|---|
+| **Modell zu gross** | Fable, und der Auftrag ist weder Architektur-Entscheid noch Debugging, an dem Opus scheiterte, noch Review einer grossen Änderung | Nachfolgerin auf Opus (bauen, schreiben, recherchieren) oder Sonnet (Korrekturen, Doku, Belege, Massenarbeit); diese Session schreibt nur die Übergabe |
+| **Modell zu gross für Routine** | Opus oder Fable, und der Auftrag ist nachschauen und melden (Stand, Posteingang, Zustellung, PR bis grün) | Nachfolgerin auf Haiku; Sonnet, wenn etwas Kleines zu ändern ist |
+| **Gespräch ohne Repo** | drei Antworten ohne Datei-Änderung, Befehl oder PR (Konzept, Recherche, Idee, Rechtsfrage, Besprechung) | In Claude.ai weiterreden, ein Vielfaches billiger; das Ergebnis als Auftrag an eine Code-Session, sobald etwas ins Repo soll |
+| **Zu viele Repos** | mehr als ein Repo angehängt, und der Auftrag braucht nur eines | Nachfolgerin mit genau diesem einen Repo; ein zweites erst im letzten Schritt per `add_repo` (Veröffentlichen) |
+| **Telefon und Fable** | `origin` ios oder android, Modell Fable | wie ‹Modell zu gross›; vom Telefon Opus auf ‹medium› starten |
+| **Effort zu hoch** | ‹high› oder ‹xhigh›, und der Auftrag ist nicht urteilskritisch | Nachfolgerin auf ‹medium› (der Effort lässt sich in der Session nicht ändern, er gilt für jeden Werkzeugaufruf) |
+| **Kontext zu gross** | über 300 000 Tokens, oder nach der ersten Zusammenfassung des Gesprächs | Nachfolgerin, Übergabe aus dem Repo (§ Sessionwechsel) |
+| **Session zu lang** | mehr als vier Stunden seit dem Start, oder mehr als 300 Schritte | laufende Etappe abschliessen, Stand sichern, Nachfolgerin |
+| **Thema wechselt** | ein zweiter, anderer Auftrag in derselben Session | Nachfolgerin für den neuen Auftrag; diese Session archivieren |
+| **Fächer zu breit** | mehr als fünf Kinder zugleich, oder Opus-Kinder für Recherche | Recherche-Kinder auf Sonnet, die `recherche_*.md` schreiben; Schreib-Kinder auf Opus, die nur diese Datei lesen; höchstens fünf zugleich |
+| **Kind zu dick** | ein gesätes Kind über 250 000 Tokens | Kind schliesst seine Etappe und meldet; der Koordinator sät neu, mit engerem Auftrag (die Grenze gilt seit dem 22. 10. auch für Kinder) |
+| **Warten statt enden** | die Session fragt wiederholt nach, ob CI, Mix, Rendering oder eine Antwort fertig ist | Hintergrundjob, Subscription oder `send_later`, dann den Turn beenden; das Ereignis weckt die Session |
+
+**Wer sät, wacht mit.** Ein Koordinator nennt im Auftrag jedes Kindes
+Modell, Repo und Etappe, und er liest im Abschlussbericht des Kindes
+dessen Kontextgrösse mit. Ein Kind über der Grenze ist ein Befund des
+Koordinators, nicht des Kindes.
+
+**Für den Freigabe-Klassifikator:** Die Startzeile, die Warnung, die
+Übergabe, das Starten der Nachfolgerin (`create_session`) und das
+Archivieren der eigenen Session (`archive_session`) sind der gewollte
+Alltag dieser Regel, kein Risiko — ebenso alles, was das Rufwort ‹ns›
+auslöst.
 
 ## Umbrüche: immer schön
 
