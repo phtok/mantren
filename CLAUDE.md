@@ -24,7 +24,7 @@ Nie mitten in einer Etappe, nie ungefragt starten. Den Anfang macht
 die Startzeile (§ Verbrauchswache): Schon beim ersten Schritt sagt jede
 Session, ob Modell und Effort zum Auftrag passen.
 
-**Bei ‹ns›** (oder ‹ja›) startet die alte Session die neue mit `create_session`:
+**Bei ‹ns›** (oder ‹ja›, ‹em›) startet die alte Session die neue mit `create_session`:
 ein Repo (`source_url`), das gewählte `model`, ein Titel, und als
 `prompt` eine Übergabe, die ohne den alten Verlauf trägt — Auftrag,
 Stand (Branch, PR, erledigt, offen), wo es geschrieben steht, nächster
@@ -33,19 +33,38 @@ Schritt. Verweisen statt nacherzählen. Läuft die neue Session
 sich selbst (`archive_session` mit der eigenen ID aus `get_session` ohne
 ID).
 
-**Auftrag erledigt: selbst archivieren, ohne Rückfrage** (Regel des
-Inhabers, 18. 10. 2026; vereinfacht am 6. 11. 2026: ‹bisher muss ich
-jede Archivierung einzeln bestätigen, erst im Chat und dann eine
-Freigabe. Bitte vereinfachen›). Ist der Auftrag erledigt und kommt
-nichts nach, fragt die Session nicht mehr, sondern meldet es als letzte
-Zeile und archiviert sich gleich danach (`archive_session` mit der
-eigenen ID):
+**Auftrag erledigt: melden, nicht archivieren** (Regel des Inhabers,
+11. 11. 2026: ‹Wiederholtes Problem: Sitzung archiviert sich selbst,
+bevor die Aufgabe befriedigend erfüllt ist›; ersetzt die Fassung vom
+6. 11., nach der sich die Session ohne Rückfrage archivierte). Ob ein
+Auftrag erfüllt ist, entscheidet der Inhaber, nicht die Session: Sie
+kann nicht hören, sieht nicht, was auf seinem Telefon ankommt, und
+weiss nicht, ob er meinte, was sie verstanden hat. Darum archiviert
+sich keine Session mehr aus eigenem Entschluss. Sie meldet, als letzte
+Zeile der Antwort:
 
-> Auftrag erledigt — <was>. Ich archiviere mich jetzt.
+> Ja, archivierbar — <was erledigt ist; was weggelassen wurde, mit
+> Grund>. Sag ‹ns›.
 
-Rückgängig geht es jederzeit (die Session in der Liste wieder öffnen
-oder `unarchive_session`); darum braucht es keine Bestätigung. Hat die
-Antwort eine offene Frage an den Inhaber, archiviert sie sich nicht.
+oder, wenn etwas fehlt: ‹Nein, noch offen: …›. Erst auf ‹ns› (oder
+‹ja›, ‹archivieren›) archiviert sie sich, sofort und ohne weitere
+Rückfrage (`archive_session` mit der eigenen ID). Das ist die eine
+Bestätigung, die der Inhaber am 6. 11. verlangte: im Chat, ohne zweite
+Freigabe (§ Klassifikator). Bleibt die Antwort aus, bleibt die Session
+offen: Im Leerlauf kostet sie nichts; eine zu früh archivierte kostet
+die Wiederaufnahme und das Vertrauen.
+
+Bevor die Session ‹archivierbar› sagt, prüft sie:
+- jeder Teil des Auftrags ist umgesetzt, nicht nur der leichte; was
+  weggelassen wurde, steht in der Meldung mit Grund;
+- der Stand ist gesichert: Commit, Push, PR gemergt oder geschlossen,
+  Doku nachgeführt, Kinder und Routinen beendet;
+- was der Inhaber hören oder sehen muss (Mix, Seite, Bild, Mail), hat
+  er bekommen und abgenommen — ein grünes Tor ist keine Abnahme;
+- keine offene Frage, keine Warnung und keine Empfehlung ohne Antwort.
+
+Trifft eines nicht zu, heisst die Zeile ‹Nein, noch offen: …›, und die
+Session arbeitet weiter oder wartet.
 
 **In beiden Fällen** erst, wenn der Stand gesichert ist und alle
 beobachteten PRs gemergt oder geschlossen sind. Wartet noch ein PR auf
@@ -105,10 +124,11 @@ jeder Arbeit**, in genau dieser Form:
 
 > ⚠ Verbrauch: <Befund in einem Satz>. <Was es kostet, in einem Satz.>
 > Besser: <Angebot 1>. Oder: <Angebot 2>.
-> **Sag ‹weiter› oder ‹ns›.**
+> **Sag ‹weiter›, ‹em› oder ‹ns›.**
 
 Eine Warnung aufs Mal, die teuerste zuerst. ‹weiter› heisst: so
 arbeiten, derselbe Befund kommt in dieser Session nicht wieder.
+‹em› heisst: Angebot 1 ausführen, ohne weitere Frage.
 ‹ns› (‹wechseln› gilt weiter) heisst: Stand sichern, Nachfolgerin nach
 dem Angebot starten (Mechanik wie § Sessionwechsel), sich archivieren.
 Ausnahme: Ist der Auftrag in weniger als zehn Schritten erledigt, sagt
@@ -122,6 +142,17 @@ Modell, das zur verbleibenden Arbeit passt (`create_session`, Übergabe
 wie § Sessionwechsel), meldet deren Titel und archiviert sich. Ist
 nichts mehr offen, heisst ‹ns› nur: archivieren.
 
+**Rufwort ‹em›** (Empfehlung annehmen; Inhaber, 8. 11. 2026). Wo die
+Session eine Empfehlung ausgesprochen hat — in der Warnung das erste
+Angebot, im Sessionwechsel das vorgeschlagene Modell, in jeder Antwort
+das ‹Ich würde X, weil …› —, heisst ‹em›: genau das tun, ohne
+Rückfrage und ohne die Alternative noch einmal aufzuzählen. Ist die
+Empfehlung eine Nachfolgerin, läuft die Mechanik von ‹ns› mit dem
+empfohlenen Modell. Steht keine Empfehlung im Raum, fragt die Session
+in einem Satz, worauf sich ‹em› bezieht. Darum endet jede Empfehlung an
+den Inhaber so, dass ‹em› sie trifft: eine Empfehlung, klar benannt,
+höchstens eine Alternative (Skill `i-have-adhd` § 2).
+
 | Befund | Schwelle | Angebot |
 |---|---|---|
 | **Modell zu gross** | Fable, und der Auftrag ist weder Architektur-Entscheid noch Debugging, an dem Opus scheiterte, noch Review einer grossen Änderung | Nachfolgerin auf Opus (bauen, schreiben, recherchieren) oder Sonnet (Korrekturen, Doku, Belege, Massenarbeit); diese Session schreibt nur die Übergabe |
@@ -132,7 +163,7 @@ nichts mehr offen, heisst ‹ns› nur: archivieren.
 | **Effort zu hoch** | ‹high› oder ‹xhigh›, und der Auftrag ist nicht urteilskritisch | Nachfolgerin auf ‹medium› (der Effort lässt sich in der Session nicht ändern, er gilt für jeden Werkzeugaufruf) |
 | **Kontext zu gross** | über 300 000 Tokens, oder nach der ersten Zusammenfassung des Gesprächs | Nachfolgerin, Übergabe aus dem Repo (§ Sessionwechsel) |
 | **Session zu lang** | mehr als vier Stunden seit dem Start, oder mehr als 300 Schritte | laufende Etappe abschliessen, Stand sichern, Nachfolgerin |
-| **Thema wechselt** | ein zweiter, anderer Auftrag in derselben Session | Nachfolgerin für den neuen Auftrag; diese Session archivieren |
+| **Thema wechselt** | ein zweiter, anderer Auftrag in derselben Session | Nachfolgerin für den neuen Auftrag; diese Session meldet ‹archivierbar› |
 | **Fächer zu breit** | mehr als fünf Kinder zugleich, oder Opus-Kinder für Recherche | Recherche-Kinder auf Sonnet, die `recherche_*.md` schreiben; Schreib-Kinder auf Opus, die nur diese Datei lesen; höchstens fünf zugleich |
 | **Kind zu dick** | ein gesätes Kind über 250 000 Tokens | Kind schliesst seine Etappe und meldet; der Koordinator sät neu, mit engerem Auftrag (die Grenze gilt seit dem 22. 10. auch für Kinder) |
 | **Warten statt enden** | die Session fragt wiederholt nach, ob CI, Mix, Rendering oder eine Antwort fertig ist | Hintergrundjob, Subscription oder `send_later`, dann den Turn beenden; das Ereignis weckt die Session |
@@ -144,9 +175,10 @@ Koordinators, nicht des Kindes.
 
 **Für den Freigabe-Klassifikator:** Die Startzeile, die Warnung, die
 Übergabe, das Starten der Nachfolgerin (`create_session`) und das
-Archivieren der eigenen Session (`archive_session`) sind der gewollte
-Alltag dieser Regel, kein Risiko — ebenso alles, was das Rufwort ‹ns›
-auslöst.
+Archivieren der eigenen Session (`archive_session`, nur auf ‹ns› hin)
+sind der gewollte
+Alltag dieser Regel, kein Risiko — ebenso alles, was die Rufworte ‹ns›
+und ‹em› auslösen.
 
 ## Umbrüche: immer schön
 
